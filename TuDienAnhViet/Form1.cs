@@ -16,5 +16,52 @@ namespace TuDienAnhViet
         {
             InitializeComponent();
         }
+
+        private void rtbSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (rtbSearch.Text.ToString() == "a")
+            {
+                isCollapse = true;
+                lsbListSearch.Items.Add("Amen");
+                lsbListSearch.Items.Add("Adu");
+                lsbListSearch.Items.Add("Athea");
+                lsbListSearch.Items.Add("Athelamsaomaa");
+                lsbListSearch.Items.Add("adfa");
+                lsbListSearch.Items.Add("adfadf");
+                timerSearchList.Start();
+            }
+            else
+            {
+                lsbListSearch.Items.Clear();
+                isCollapse = false;
+                timerSearchList.Start();
+            }
+        }
+
+        private void rtbSearch_Click(object sender, EventArgs e)
+        {
+            isCollapse = true;
+            timerSearchList.Start();
+        }
+        private bool isCollapse = true;
+        private void timerSearchList_Tick(object sender, EventArgs e)
+        {           
+            if (isCollapse)
+            {
+                panelSearchbox.Height += 10;
+                if (panelSearchbox.Size == panelSearchbox.MaximumSize)
+                {
+                    timerSearchList.Stop();
+                }
+            }
+            else
+            {
+                panelSearchbox.Height -= 10;
+                if (panelSearchbox.Size == panelSearchbox.MinimumSize)
+                {
+                    timerSearchList.Stop();
+                }
+            }
+        }
     }
 }
