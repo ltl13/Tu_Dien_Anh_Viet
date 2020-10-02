@@ -12,10 +12,12 @@ namespace TuDienAnhViet
 {
     public partial class FormWordInfo : Form
     {
-        public FormWordInfo(string args)
+        public FormWordInfo(string args, FormSearch formSearch)
         {
             InitializeComponent();
+            this.Left = formSearch.Left + 818;
             Text = args;
+            labelWord.Text = args;
         }
     }
 }

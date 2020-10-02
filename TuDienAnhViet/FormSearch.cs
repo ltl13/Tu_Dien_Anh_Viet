@@ -66,8 +66,7 @@ namespace TuDienAnhViet
 
         private void lsbListSearch_Click(object sender, EventArgs e)
         {
-            FormWordInfo wordInfo = new FormWordInfo(lsbListSearch.SelectedItem.ToString());
-            //wordInfo.Text = lsbListSearch.SelectedItem.ToString();
+            FormWordInfo wordInfo = new FormWordInfo(lsbListSearch.SelectedItem.ToString(), this);
             wordInfo.Show();
         }
     }

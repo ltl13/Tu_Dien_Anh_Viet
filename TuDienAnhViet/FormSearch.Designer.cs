@@ -79,10 +79,11 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Orchid;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(218, 478);
+            this.panel2.Size = new System.Drawing.Size(220, 478);
             this.panel2.TabIndex = 2;
             // 
             // timerSearchList
