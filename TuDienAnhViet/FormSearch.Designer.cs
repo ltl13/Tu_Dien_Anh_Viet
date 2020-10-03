@@ -30,16 +30,72 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSearch));
-            this.rtbSearch = new System.Windows.Forms.RichTextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panelSearchbox = new System.Windows.Forms.Panel();
-            this.lsbListSearch = new System.Windows.Forms.ListBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelSelect = new System.Windows.Forms.Panel();
+            this.buttonRead = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
             this.timerSearchList = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSearchbox = new System.Windows.Forms.Panel();
+            this.rtbSearch = new System.Windows.Forms.RichTextBox();
+            this.lsbListSearch = new System.Windows.Forms.ListBox();
+            this.panelListRead = new System.Windows.Forms.Panel();
+            this.listboxRead = new System.Windows.Forms.ListBox();
+            this.panelSelect.SuspendLayout();
             this.panelSearchbox.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelListRead.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelSelect
+            // 
+            this.panelSelect.BackColor = System.Drawing.Color.Orchid;
+            this.panelSelect.Controls.Add(this.buttonRead);
+            this.panelSelect.Controls.Add(this.buttonSearch);
+            this.panelSelect.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSelect.Location = new System.Drawing.Point(0, 0);
+            this.panelSelect.Name = "panelSelect";
+            this.panelSelect.Size = new System.Drawing.Size(220, 478);
+            this.panelSelect.TabIndex = 2;
+            // 
+            // buttonRead
+            // 
+            this.buttonRead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonRead.Location = new System.Drawing.Point(0, 56);
+            this.buttonRead.Name = "buttonRead";
+            this.buttonRead.Size = new System.Drawing.Size(220, 56);
+            this.buttonRead.TabIndex = 5;
+            this.buttonRead.Text = "Bài đọc";
+            this.buttonRead.UseVisualStyleBackColor = true;
+            this.buttonRead.Click += new System.EventHandler(this.buttonRead_Click);
+            // 
+            // buttonSearch
+            // 
+            this.buttonSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonSearch.Location = new System.Drawing.Point(0, 0);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(220, 56);
+            this.buttonSearch.TabIndex = 4;
+            this.buttonSearch.Text = "Tra từ";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // timerSearchList
+            // 
+            this.timerSearchList.Interval = 1;
+            this.timerSearchList.Tick += new System.EventHandler(this.timerSearchList_Tick);
+            // 
+            // panelSearchbox
+            // 
+            this.panelSearchbox.Controls.Add(this.lsbListSearch);
+            this.panelSearchbox.Controls.Add(this.rtbSearch);
+            this.panelSearchbox.Location = new System.Drawing.Point(345, 111);
+            this.panelSearchbox.Margin = new System.Windows.Forms.Padding(10);
+            this.panelSearchbox.MaximumSize = new System.Drawing.Size(337, 279);
+            this.panelSearchbox.MinimumSize = new System.Drawing.Size(337, 29);
+            this.panelSearchbox.Name = "panelSearchbox";
+            this.panelSearchbox.Size = new System.Drawing.Size(337, 29);
+            this.panelSearchbox.TabIndex = 1;
             // 
             // rtbSearch
             // 
@@ -53,18 +109,6 @@
             this.rtbSearch.Text = "";
             this.rtbSearch.Click += new System.EventHandler(this.rtbSearch_Click);
             this.rtbSearch.TextChanged += new System.EventHandler(this.rtbSearch_TextChanged);
-            // 
-            // panelSearchbox
-            // 
-            this.panelSearchbox.Controls.Add(this.lsbListSearch);
-            this.panelSearchbox.Controls.Add(this.rtbSearch);
-            this.panelSearchbox.Location = new System.Drawing.Point(152, 108);
-            this.panelSearchbox.Margin = new System.Windows.Forms.Padding(10);
-            this.panelSearchbox.MaximumSize = new System.Drawing.Size(337, 279);
-            this.panelSearchbox.MinimumSize = new System.Drawing.Size(337, 29);
-            this.panelSearchbox.Name = "panelSearchbox";
-            this.panelSearchbox.Size = new System.Drawing.Size(337, 29);
-            this.panelSearchbox.TabIndex = 1;
             // 
             // lsbListSearch
             // 
@@ -80,28 +124,24 @@
             this.lsbListSearch.TabIndex = 1;
             this.lsbListSearch.Click += new System.EventHandler(this.lsbListSearch_Click);
             // 
-            // panel2
+            // panelListRead
             // 
-            this.panel2.BackColor = System.Drawing.Color.Orchid;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 478);
-            this.panel2.TabIndex = 2;
+            this.panelListRead.Controls.Add(this.listboxRead);
+            this.panelListRead.Location = new System.Drawing.Point(368, 71);
+            this.panelListRead.Name = "panelListRead";
+            this.panelListRead.Size = new System.Drawing.Size(286, 326);
+            this.panelListRead.TabIndex = 0;
             // 
-            // timerSearchList
+            // listboxRead
             // 
-            this.timerSearchList.Interval = 1;
-            this.timerSearchList.Tick += new System.EventHandler(this.timerSearchList_Tick);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panelSearchbox);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(219, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(581, 478);
-            this.panel1.TabIndex = 3;
+            this.listboxRead.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listboxRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.listboxRead.FormattingEnabled = true;
+            this.listboxRead.ItemHeight = 25;
+            this.listboxRead.Location = new System.Drawing.Point(0, 0);
+            this.listboxRead.Name = "listboxRead";
+            this.listboxRead.Size = new System.Drawing.Size(286, 326);
+            this.listboxRead.TabIndex = 0;
             // 
             // FormSearch
             // 
@@ -109,28 +149,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(167)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(800, 478);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelSearchbox);
+            this.Controls.Add(this.panelSelect);
+            this.Controls.Add(this.panelListRead);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(818, 525);
             this.Name = "FormSearch";
             this.Text = "Từ điển Anh-Việt";
+            this.panelSelect.ResumeLayout(false);
             this.panelSearchbox.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.panelListRead.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox rtbSearch;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel panelSelect;
+        private System.Windows.Forms.Timer timerSearchList;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Button buttonRead;
         private System.Windows.Forms.Panel panelSearchbox;
         private System.Windows.Forms.ListBox lsbListSearch;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Timer timerSearchList;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RichTextBox rtbSearch;
+        private System.Windows.Forms.Panel panelListRead;
+        private System.Windows.Forms.ListBox listboxRead;
     }
 }
 
