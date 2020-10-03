@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DictionaryItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+  	<DictionaryData>
+      <Key>Passion</Key>
+      <Meaning>Niềm đam mê</Meaning>
+      <Explaination>Một cảm giác yêu, ghét, giận dữ, nhiệt tình,... rất mạnh mẽ.</Explaination>
+    </DictionaryData>
+    <DictionaryData>
+      <Key>Ability</Key>
+      <Meaning>Khả năng, năng lực</Meaning>
+      <Explaination>Khả năng làm điều gì đó thực tế là ai đó, điều gì đó có thể làm điều gì đó.</Explaination>
+    </DictionaryData>
+    <DictionaryData>
+      <Key>Pass</Key>
+      <Meaning>Vượt qua, đi qua</Meaning>
+      <Explaination>Để đạt được tiêu chuẩn bắt buộc trong một kỳ thi, một bài kiểm tra,...</Explaination>
+    </DictionaryData>
+    <DictionaryData>
+      <Key>Hello</Key>
+      <Meaning>Xin chào</Meaning>
+      <Explaination>Từ mang ý nghĩa chào hỏi. Có thể dùng mỗi khi gặp một ai đó.</Explaination>
+    </DictionaryData>
+    <DictionaryData>
+      <Key>Good bye</Key>
+      <Meaning>Chào tạm biệt</Meaning>
+      <Explaination>Từ mang ý nghĩa chào tạm biệt. Có thể dùng mỗi khi tạm biệt một ai đó.</Explaination>
+    </DictionaryData>
+    <DictionaryData>
+      <Key>Dog</Key>
+      <Meaning>Con chó</Meaning>
+      <Explaination>Một động vật có bốn chân và một đuôi, thường được nuôi làm thú cưng hoặc huấn luyện để làm việc, ví dụ như săn bắn hoặc canh gác các tòa nhà. Có nhiều loại chó, một số trong số đó là hoang dã.</Explaination>
+    </DictionaryData>
+    <DictionaryData>
+      <Key>Cat</Key>
+      <Meaning>Con mèo</Meaning>
+      <Explaination>Một loài động vật nhỏ với bộ lông mềm mại mà mọi người thường nuôi làm thú cưng. Mèo bắt và giết chim, chuột.</Explaination>
+    </DictionaryData>
+    <DictionaryData>
+      <Key>Beach</Key>
+      <Meaning>Bãi biển</Meaning>
+      <Explaination>Một khu vực cát hoặc đá nhỏ (gọi là ván lợp), bên cạnh biển hoặc hồ.</Explaination>
+    </DictionaryData>
+  </Items>
+</DictionaryItem>

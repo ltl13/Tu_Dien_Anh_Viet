@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DictionaryData.cs" />
+    <Compile Include="DictionaryItems.cs" />
+    <Compile Include="DictionaryManager.cs" />
     <Compile Include="FormWordInfo.cs">
       <SubType>Form</SubType>
     </Compile>
