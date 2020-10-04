@@ -16,8 +16,9 @@ namespace TuDienAnhViet
         {
             InitializeComponent();
             AddBook();
-            panelListRead.Visible = false;
             panelSearchbox.Visible = true;
+            panelListRead.Visible = false;
+            tableLayoutPanelGrammar.Visible = false;
         }
         private void AddBook()
         {
@@ -58,7 +59,6 @@ namespace TuDienAnhViet
                 timerSearchList.Start();
             }
         }
-
         private void rtbSearch_Click(object sender, EventArgs e)
         {
             isCollapse = true;
@@ -89,17 +89,23 @@ namespace TuDienAnhViet
             FormWordInfo wordInfo = new FormWordInfo(lsbListSearch.SelectedItem.ToString(), this);
             wordInfo.Show();
         }
-
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             panelSearchbox.Show();
             panelListRead.Hide();
+            tableLayoutPanelGrammar.Hide();
         }
-
         private void buttonRead_Click(object sender, EventArgs e)
         {
             panelSearchbox.Hide();
             panelListRead.Show();
+            tableLayoutPanelGrammar.Hide();
+        }
+        private void buttonGrammar_Click(object sender, EventArgs e)
+        {
+            panelSearchbox.Hide();
+            panelListRead.Hide();
+            tableLayoutPanelGrammar.Show();
         }
     }
 }
