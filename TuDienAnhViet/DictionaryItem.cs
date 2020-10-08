@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TuDienAnhViet {
     [Serializable]
-    public class DictionaryItems {
+    public class DictionaryItem {
         private List<DictionaryData> items;
         public List<DictionaryData> Items { get => items; set => items = value; }
     }
