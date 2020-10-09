@@ -12,9 +12,13 @@ namespace TuDienAnhViet
 {
     public partial class FormSearch : Form
     {
+        DictionaryManager dictionary;
         public FormSearch()
         {
             InitializeComponent();
+            lsbListSearch.DisplayMember = "English";
+            dictionary = new DictionaryManager();
+            dictionary.LoadDataToListBox(lsbListSearch);
             AddBook();
             panelSearchbox.Visible = true;
             panelListRead.Visible = false;
@@ -44,12 +48,6 @@ namespace TuDienAnhViet
             if (rtbSearch.Text.ToString() == "a")
             {
                 isCollapse = true;
-                lsbListSearch.Items.Add("Amen");
-                lsbListSearch.Items.Add("Adu");
-                lsbListSearch.Items.Add("Athea");
-                lsbListSearch.Items.Add("Athelamsaomaa");
-                lsbListSearch.Items.Add("adfa");
-                lsbListSearch.Items.Add("adfadf");
                 timerSearchList.Start();
             }
             else

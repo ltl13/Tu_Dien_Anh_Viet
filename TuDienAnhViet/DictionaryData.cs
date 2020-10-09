@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace TuDienAnhViet {
     public class DictionaryData {
-        private string word;
-        public string Word { get => word; set => word = value; }
+        private string english;
+        private string vietnamese_analytics;
 
-        private string meaning;
-        public string Meaning { get => meaning; set => meaning = value; }
-        
-        private string explaination;
-        public string Explaination { get => explaination; set => explaination = value; }
+        public string English { get => english; set => english = value; }
+        public string Vietnamese_analytics { get => vietnamese_analytics; set => vietnamese_analytics = value; }
     }
 }
