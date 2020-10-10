@@ -23,6 +23,7 @@ namespace TuDienAnhViet
             panelSearchbox.Visible = true;
             panelListRead.Visible = false;
             tableLayoutPanelGrammar.Visible = false;
+            panelComboWords.Visible = false;
         }
         private void AddBook()
         {
@@ -92,18 +93,28 @@ namespace TuDienAnhViet
             panelSearchbox.Show();
             panelListRead.Hide();
             tableLayoutPanelGrammar.Hide();
+            panelComboWords.Hide();
         }
         private void buttonRead_Click(object sender, EventArgs e)
         {
             panelSearchbox.Hide();
             panelListRead.Show();
             tableLayoutPanelGrammar.Hide();
+            panelComboWords.Hide();
         }
         private void buttonGrammar_Click(object sender, EventArgs e)
         {
             panelSearchbox.Hide();
             panelListRead.Hide();
             tableLayoutPanelGrammar.Show();
+            panelComboWords.Hide();
+        }
+        private void buttonComboWord_Click(object sender, EventArgs e)
+        {
+            panelSearchbox.Hide();
+            panelListRead.Hide();
+            tableLayoutPanelGrammar.Hide();
+            panelComboWords.Show();
         }
     }
 }
