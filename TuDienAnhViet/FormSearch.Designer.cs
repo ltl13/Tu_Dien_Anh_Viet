@@ -33,7 +33,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelSelect = new System.Windows.Forms.Panel();
             this.buttonFlashcard = new System.Windows.Forms.Button();
-            this.buttonPractise = new System.Windows.Forms.Button();
+            this.buttonTest = new System.Windows.Forms.Button();
             this.buttonComboWord = new System.Windows.Forms.Button();
             this.buttonGrammar = new System.Windows.Forms.Button();
             this.buttonRead = new System.Windows.Forms.Button();
@@ -99,7 +99,7 @@
             // 
             this.panelSelect.BackColor = System.Drawing.Color.Orchid;
             this.panelSelect.Controls.Add(this.buttonFlashcard);
-            this.panelSelect.Controls.Add(this.buttonPractise);
+            this.panelSelect.Controls.Add(this.buttonTest);
             this.panelSelect.Controls.Add(this.buttonComboWord);
             this.panelSelect.Controls.Add(this.buttonGrammar);
             this.panelSelect.Controls.Add(this.buttonRead);
@@ -114,6 +114,9 @@
             // buttonFlashcard
             // 
             this.buttonFlashcard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonFlashcard.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.buttonFlashcard.FlatAppearance.BorderSize = 0;
+            this.buttonFlashcard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonFlashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonFlashcard.Location = new System.Drawing.Point(0, 285);
             this.buttonFlashcard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -124,21 +127,27 @@
             this.buttonFlashcard.UseVisualStyleBackColor = true;
             this.buttonFlashcard.Click += new System.EventHandler(this.buttonFlashcard_Click);
             // 
-            // buttonPractise
+            // buttonTest
             // 
-            this.buttonPractise.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonPractise.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.buttonPractise.Location = new System.Drawing.Point(0, 228);
-            this.buttonPractise.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonPractise.Name = "buttonPractise";
-            this.buttonPractise.Size = new System.Drawing.Size(220, 57);
-            this.buttonPractise.TabIndex = 8;
-            this.buttonPractise.Text = "Luyện tập";
-            this.buttonPractise.UseVisualStyleBackColor = true;
+            this.buttonTest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonTest.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.buttonTest.FlatAppearance.BorderSize = 0;
+            this.buttonTest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonTest.Location = new System.Drawing.Point(0, 228);
+            this.buttonTest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonTest.Name = "buttonTest";
+            this.buttonTest.Size = new System.Drawing.Size(220, 57);
+            this.buttonTest.TabIndex = 8;
+            this.buttonTest.Text = "Luyện tập";
+            this.buttonTest.UseVisualStyleBackColor = true;
             // 
             // buttonComboWord
             // 
             this.buttonComboWord.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonComboWord.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.buttonComboWord.FlatAppearance.BorderSize = 0;
+            this.buttonComboWord.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonComboWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonComboWord.Location = new System.Drawing.Point(0, 171);
             this.buttonComboWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -151,7 +160,11 @@
             // 
             // buttonGrammar
             // 
+            this.buttonGrammar.BackColor = System.Drawing.Color.Orchid;
             this.buttonGrammar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonGrammar.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.buttonGrammar.FlatAppearance.BorderSize = 0;
+            this.buttonGrammar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonGrammar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonGrammar.Location = new System.Drawing.Point(0, 114);
             this.buttonGrammar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -159,12 +172,16 @@
             this.buttonGrammar.Size = new System.Drawing.Size(220, 57);
             this.buttonGrammar.TabIndex = 6;
             this.buttonGrammar.Text = "Ngữ pháp";
-            this.buttonGrammar.UseVisualStyleBackColor = true;
+            this.buttonGrammar.UseVisualStyleBackColor = false;
             this.buttonGrammar.Click += new System.EventHandler(this.buttonGrammar_Click);
             // 
             // buttonRead
             // 
+            this.buttonRead.BackColor = System.Drawing.Color.Orchid;
             this.buttonRead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRead.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.buttonRead.FlatAppearance.BorderSize = 0;
+            this.buttonRead.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonRead.Location = new System.Drawing.Point(0, 57);
             this.buttonRead.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -172,12 +189,15 @@
             this.buttonRead.Size = new System.Drawing.Size(220, 57);
             this.buttonRead.TabIndex = 5;
             this.buttonRead.Text = "Bài đọc";
-            this.buttonRead.UseVisualStyleBackColor = true;
+            this.buttonRead.UseVisualStyleBackColor = false;
             this.buttonRead.Click += new System.EventHandler(this.buttonRead_Click);
             // 
             // buttonSearch
             // 
+            this.buttonSearch.BackColor = System.Drawing.Color.Orchid;
             this.buttonSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSearch.FlatAppearance.BorderSize = 0;
+            this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonSearch.Location = new System.Drawing.Point(0, 0);
             this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -185,7 +205,7 @@
             this.buttonSearch.Size = new System.Drawing.Size(220, 57);
             this.buttonSearch.TabIndex = 4;
             this.buttonSearch.Text = "Tra từ";
-            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // timerSearchList
@@ -251,6 +271,7 @@
             // 
             // listboxRead
             // 
+            this.listboxRead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(167)))), ((int)(((byte)(228)))));
             this.listboxRead.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listboxRead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.listboxRead.FormattingEnabled = true;
@@ -288,7 +309,7 @@
             this.tableLayoutPanelGrammar.Controls.Add(this.buttonBai12, 3, 2);
             this.tableLayoutPanelGrammar.Controls.Add(this.buttonBai15, 2, 3);
             this.tableLayoutPanelGrammar.Controls.Add(this.buttonBai16, 3, 3);
-            this.tableLayoutPanelGrammar.Location = new System.Drawing.Point(248, 12);
+            this.tableLayoutPanelGrammar.Location = new System.Drawing.Point(249, 12);
             this.tableLayoutPanelGrammar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanelGrammar.Name = "tableLayoutPanelGrammar";
             this.tableLayoutPanelGrammar.RowCount = 5;
@@ -554,7 +575,7 @@
             this.panelComboWords.Controls.Add(this.radioButton2);
             this.panelComboWords.Controls.Add(this.radioButton1);
             this.panelComboWords.Controls.Add(this.radiobuttonCW1);
-            this.panelComboWords.Location = new System.Drawing.Point(345, 71);
+            this.panelComboWords.Location = new System.Drawing.Point(345, 57);
             this.panelComboWords.Name = "panelComboWords";
             this.panelComboWords.Size = new System.Drawing.Size(337, 349);
             this.panelComboWords.TabIndex = 4;
@@ -651,7 +672,7 @@
             // 
             // splitcontainerFlashcard
             // 
-            this.splitcontainerFlashcard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitcontainerFlashcard.Dock = System.Windows.Forms.DockStyle.Left;
             this.splitcontainerFlashcard.Location = new System.Drawing.Point(220, 0);
             this.splitcontainerFlashcard.Name = "splitcontainerFlashcard";
             // 
@@ -667,8 +688,8 @@
             this.splitcontainerFlashcard.Panel2.Controls.Add(this.buttonMyFlashcard_Clear);
             this.splitcontainerFlashcard.Panel2.Controls.Add(this.listboxMyFlashcard);
             this.splitcontainerFlashcard.Panel2.Controls.Add(this.labelMyFlashcard);
-            this.splitcontainerFlashcard.Size = new System.Drawing.Size(580, 476);
-            this.splitcontainerFlashcard.SplitterDistance = 370;
+            this.splitcontainerFlashcard.Size = new System.Drawing.Size(573, 476);
+            this.splitcontainerFlashcard.SplitterDistance = 365;
             this.splitcontainerFlashcard.TabIndex = 5;
             // 
             // buttonFlashcardAdd
@@ -690,7 +711,7 @@
             this.panelSearchToAdd.Controls.Add(this.textboxSearchToAdd);
             this.panelSearchToAdd.Location = new System.Drawing.Point(53, 89);
             this.panelSearchToAdd.Name = "panelSearchToAdd";
-            this.panelSearchToAdd.Size = new System.Drawing.Size(262, 237);
+            this.panelSearchToAdd.Size = new System.Drawing.Size(257, 237);
             this.panelSearchToAdd.TabIndex = 0;
             // 
             // listboxSearchToAdd
@@ -701,7 +722,7 @@
             this.listboxSearchToAdd.ItemHeight = 25;
             this.listboxSearchToAdd.Location = new System.Drawing.Point(0, 30);
             this.listboxSearchToAdd.Name = "listboxSearchToAdd";
-            this.listboxSearchToAdd.Size = new System.Drawing.Size(262, 207);
+            this.listboxSearchToAdd.Size = new System.Drawing.Size(257, 207);
             this.listboxSearchToAdd.TabIndex = 1;
             // 
             // textboxSearchToAdd
@@ -710,7 +731,7 @@
             this.textboxSearchToAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textboxSearchToAdd.Location = new System.Drawing.Point(0, 0);
             this.textboxSearchToAdd.Name = "textboxSearchToAdd";
-            this.textboxSearchToAdd.Size = new System.Drawing.Size(262, 30);
+            this.textboxSearchToAdd.Size = new System.Drawing.Size(257, 30);
             this.textboxSearchToAdd.TabIndex = 0;
             // 
             // buttonMyFlashcard_Learn
@@ -719,7 +740,7 @@
             this.buttonMyFlashcard_Learn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.buttonMyFlashcard_Learn.Location = new System.Drawing.Point(0, 439);
             this.buttonMyFlashcard_Learn.Name = "buttonMyFlashcard_Learn";
-            this.buttonMyFlashcard_Learn.Size = new System.Drawing.Size(206, 37);
+            this.buttonMyFlashcard_Learn.Size = new System.Drawing.Size(204, 37);
             this.buttonMyFlashcard_Learn.TabIndex = 5;
             this.buttonMyFlashcard_Learn.Text = "Start";
             this.buttonMyFlashcard_Learn.UseVisualStyleBackColor = true;
@@ -732,7 +753,7 @@
             this.buttonMyFlashcard_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.buttonMyFlashcard_Delete.Location = new System.Drawing.Point(8, 387);
             this.buttonMyFlashcard_Delete.Name = "buttonMyFlashcard_Delete";
-            this.buttonMyFlashcard_Delete.Size = new System.Drawing.Size(80, 30);
+            this.buttonMyFlashcard_Delete.Size = new System.Drawing.Size(78, 30);
             this.buttonMyFlashcard_Delete.TabIndex = 4;
             this.buttonMyFlashcard_Delete.Text = "Delete";
             this.buttonMyFlashcard_Delete.UseVisualStyleBackColor = true;
@@ -745,7 +766,7 @@
             this.buttonMyFlashcard_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.buttonMyFlashcard_Clear.Location = new System.Drawing.Point(114, 387);
             this.buttonMyFlashcard_Clear.Name = "buttonMyFlashcard_Clear";
-            this.buttonMyFlashcard_Clear.Size = new System.Drawing.Size(80, 30);
+            this.buttonMyFlashcard_Clear.Size = new System.Drawing.Size(78, 30);
             this.buttonMyFlashcard_Clear.TabIndex = 3;
             this.buttonMyFlashcard_Clear.Text = "Clear";
             this.buttonMyFlashcard_Clear.UseVisualStyleBackColor = true;
@@ -758,7 +779,7 @@
             this.listboxMyFlashcard.ItemHeight = 20;
             this.listboxMyFlashcard.Location = new System.Drawing.Point(0, 46);
             this.listboxMyFlashcard.Name = "listboxMyFlashcard";
-            this.listboxMyFlashcard.Size = new System.Drawing.Size(206, 324);
+            this.listboxMyFlashcard.Size = new System.Drawing.Size(204, 324);
             this.listboxMyFlashcard.TabIndex = 1;
             // 
             // labelMyFlashcard
@@ -822,7 +843,7 @@
         private System.Windows.Forms.Panel panelListRead;
         private System.Windows.Forms.ListBox listboxRead;
         private System.Windows.Forms.Button buttonFlashcard;
-        private System.Windows.Forms.Button buttonPractise;
+        private System.Windows.Forms.Button buttonTest;
         private System.Windows.Forms.Button buttonComboWord;
         private System.Windows.Forms.Button buttonGrammar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelGrammar;

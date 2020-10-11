@@ -20,11 +20,30 @@ namespace TuDienAnhViet
             dictionary = new DictionaryManager();
             dictionary.LoadDataToListBox(lsbListSearch);
             AddBook();
-            panelSearchbox.Visible = true;
+            ReColor();
+            panelSearchbox.Show();
+            buttonSearch.BackColor = Color.FromArgb(250, 167, 228);
+            buttonSearch.FlatStyle = FlatStyle.Flat;
+        }
+        private void ReColor()
+        {
+            panelSearchbox.Visible = false;
             panelListRead.Visible = false;
             tableLayoutPanelGrammar.Visible = false;
             panelComboWords.Visible = false;
             splitcontainerFlashcard.Visible = false;
+            buttonSearch.BackColor = Color.Orchid;
+            buttonRead.BackColor = Color.Orchid;
+            buttonComboWord.BackColor = Color.Orchid;
+            buttonFlashcard.BackColor = Color.Orchid;
+            buttonTest.BackColor = Color.Orchid;
+            buttonGrammar.BackColor = Color.Orchid;
+            buttonSearch.FlatStyle = FlatStyle.Popup;
+            buttonRead.FlatStyle = FlatStyle.Popup;
+            buttonGrammar.FlatStyle = FlatStyle.Popup;
+            buttonTest.FlatStyle = FlatStyle.Popup;
+            buttonComboWord.FlatStyle = FlatStyle.Popup;
+            buttonFlashcard.FlatStyle = FlatStyle.Popup;
         }
         private void AddBook()
         {
@@ -91,35 +110,31 @@ namespace TuDienAnhViet
         }
         private void buttonSearch_Click(object sender, EventArgs e)
         {
+            ReColor();
             panelSearchbox.Show();
-            panelListRead.Hide();
-            tableLayoutPanelGrammar.Hide();
-            panelComboWords.Hide();
-            splitcontainerFlashcard.Hide();
+            buttonSearch.BackColor = Color.FromArgb(250, 167, 228);
+            buttonSearch.FlatStyle = FlatStyle.Flat;
         }
         private void buttonRead_Click(object sender, EventArgs e)
         {
-            panelSearchbox.Hide();
+            ReColor();
             panelListRead.Show();
-            tableLayoutPanelGrammar.Hide();
-            panelComboWords.Hide();
-            splitcontainerFlashcard.Hide();
+            buttonRead.BackColor = Color.FromArgb(250, 167, 228);
+            buttonRead.FlatStyle = FlatStyle.Flat;
         }
         private void buttonGrammar_Click(object sender, EventArgs e)
         {
-            panelSearchbox.Hide();
-            panelListRead.Hide();
+            ReColor();
             tableLayoutPanelGrammar.Show();
-            panelComboWords.Hide();
-            splitcontainerFlashcard.Hide();
+            buttonGrammar.BackColor = Color.FromArgb(250, 167, 228);
+            buttonGrammar.FlatStyle = FlatStyle.Flat;
         }
         private void buttonComboWord_Click(object sender, EventArgs e)
         {
-            panelSearchbox.Hide();
-            panelListRead.Hide();
-            tableLayoutPanelGrammar.Hide();
+            ReColor();
             panelComboWords.Show();
-            splitcontainerFlashcard.Hide();
+            buttonComboWord.BackColor = Color.FromArgb(250, 167, 228);
+            buttonComboWord.FlatStyle = FlatStyle.Flat;
         }
         private void tableLayoutPanelGrammar_Paint(object sender, PaintEventArgs e)
         {
@@ -127,11 +142,10 @@ namespace TuDienAnhViet
         }
         private void buttonFlashcard_Click(object sender, EventArgs e)
         {
-            panelSearchbox.Hide();
-            panelListRead.Hide();
-            tableLayoutPanelGrammar.Hide();
-            panelComboWords.Hide();
+            ReColor();
             splitcontainerFlashcard.Show();
+            buttonFlashcard.BackColor = Color.FromArgb(250, 167, 228);
+            buttonFlashcard.FlatStyle = FlatStyle.Flat;
         }
     }
 }
