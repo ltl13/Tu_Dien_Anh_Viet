@@ -74,15 +74,15 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radiobuttonCW1 = new System.Windows.Forms.RadioButton();
             this.splitcontainerFlashcard = new System.Windows.Forms.SplitContainer();
-            this.panelSearchToAdd = new System.Windows.Forms.Panel();
-            this.textboxSearchToAdd = new System.Windows.Forms.TextBox();
-            this.listboxSearchToAdd = new System.Windows.Forms.ListBox();
             this.buttonFlashcardAdd = new System.Windows.Forms.Button();
-            this.labelMyFlashcard = new System.Windows.Forms.Label();
-            this.listboxMyFlashcard = new System.Windows.Forms.ListBox();
-            this.buttonMyFlashcard_Clear = new System.Windows.Forms.Button();
-            this.buttonMyFlashcard_Delete = new System.Windows.Forms.Button();
+            this.panelSearchToAdd = new System.Windows.Forms.Panel();
+            this.listboxSearchToAdd = new System.Windows.Forms.ListBox();
+            this.textboxSearchToAdd = new System.Windows.Forms.TextBox();
             this.buttonMyFlashcard_Learn = new System.Windows.Forms.Button();
+            this.buttonMyFlashcard_Delete = new System.Windows.Forms.Button();
+            this.buttonMyFlashcard_Clear = new System.Windows.Forms.Button();
+            this.listboxMyFlashcard = new System.Windows.Forms.ListBox();
+            this.labelMyFlashcard = new System.Windows.Forms.Label();
             this.panelSelect.SuspendLayout();
             this.panelSearchbox.SuspendLayout();
             this.panelListRead.SuspendLayout();
@@ -671,6 +671,16 @@
             this.splitcontainerFlashcard.SplitterDistance = 370;
             this.splitcontainerFlashcard.TabIndex = 5;
             // 
+            // buttonFlashcardAdd
+            // 
+            this.buttonFlashcardAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonFlashcardAdd.Location = new System.Drawing.Point(151, 359);
+            this.buttonFlashcardAdd.Name = "buttonFlashcardAdd";
+            this.buttonFlashcardAdd.Size = new System.Drawing.Size(66, 34);
+            this.buttonFlashcardAdd.TabIndex = 0;
+            this.buttonFlashcardAdd.Text = "Add";
+            this.buttonFlashcardAdd.UseVisualStyleBackColor = true;
+            // 
             // panelSearchToAdd
             // 
             this.panelSearchToAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -683,15 +693,6 @@
             this.panelSearchToAdd.Size = new System.Drawing.Size(262, 237);
             this.panelSearchToAdd.TabIndex = 0;
             // 
-            // textboxSearchToAdd
-            // 
-            this.textboxSearchToAdd.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textboxSearchToAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textboxSearchToAdd.Location = new System.Drawing.Point(0, 0);
-            this.textboxSearchToAdd.Name = "textboxSearchToAdd";
-            this.textboxSearchToAdd.Size = new System.Drawing.Size(262, 30);
-            this.textboxSearchToAdd.TabIndex = 0;
-            // 
             // listboxSearchToAdd
             // 
             this.listboxSearchToAdd.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -703,53 +704,25 @@
             this.listboxSearchToAdd.Size = new System.Drawing.Size(262, 207);
             this.listboxSearchToAdd.TabIndex = 1;
             // 
-            // buttonFlashcardAdd
+            // textboxSearchToAdd
             // 
-            this.buttonFlashcardAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.buttonFlashcardAdd.Location = new System.Drawing.Point(151, 359);
-            this.buttonFlashcardAdd.Name = "buttonFlashcardAdd";
-            this.buttonFlashcardAdd.Size = new System.Drawing.Size(66, 34);
-            this.buttonFlashcardAdd.TabIndex = 0;
-            this.buttonFlashcardAdd.Text = "Add";
-            this.buttonFlashcardAdd.UseVisualStyleBackColor = true;
+            this.textboxSearchToAdd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textboxSearchToAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textboxSearchToAdd.Location = new System.Drawing.Point(0, 0);
+            this.textboxSearchToAdd.Name = "textboxSearchToAdd";
+            this.textboxSearchToAdd.Size = new System.Drawing.Size(262, 30);
+            this.textboxSearchToAdd.TabIndex = 0;
             // 
-            // labelMyFlashcard
+            // buttonMyFlashcard_Learn
             // 
-            this.labelMyFlashcard.AutoSize = true;
-            this.labelMyFlashcard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(167)))), ((int)(((byte)(228)))));
-            this.labelMyFlashcard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelMyFlashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.labelMyFlashcard.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelMyFlashcard.Location = new System.Drawing.Point(0, 0);
-            this.labelMyFlashcard.Name = "labelMyFlashcard";
-            this.labelMyFlashcard.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.labelMyFlashcard.Size = new System.Drawing.Size(194, 46);
-            this.labelMyFlashcard.TabIndex = 0;
-            this.labelMyFlashcard.Text = "My Flashcard";
-            // 
-            // listboxMyFlashcard
-            // 
-            this.listboxMyFlashcard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.listboxMyFlashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.listboxMyFlashcard.FormattingEnabled = true;
-            this.listboxMyFlashcard.ItemHeight = 20;
-            this.listboxMyFlashcard.Location = new System.Drawing.Point(0, 46);
-            this.listboxMyFlashcard.Name = "listboxMyFlashcard";
-            this.listboxMyFlashcard.Size = new System.Drawing.Size(206, 324);
-            this.listboxMyFlashcard.TabIndex = 1;
-            // 
-            // buttonMyFlashcard_Clear
-            // 
-            this.buttonMyFlashcard_Clear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonMyFlashcard_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.buttonMyFlashcard_Clear.Location = new System.Drawing.Point(114, 387);
-            this.buttonMyFlashcard_Clear.Name = "buttonMyFlashcard_Clear";
-            this.buttonMyFlashcard_Clear.Size = new System.Drawing.Size(80, 30);
-            this.buttonMyFlashcard_Clear.TabIndex = 3;
-            this.buttonMyFlashcard_Clear.Text = "Clear";
-            this.buttonMyFlashcard_Clear.UseVisualStyleBackColor = true;
+            this.buttonMyFlashcard_Learn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttonMyFlashcard_Learn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonMyFlashcard_Learn.Location = new System.Drawing.Point(0, 439);
+            this.buttonMyFlashcard_Learn.Name = "buttonMyFlashcard_Learn";
+            this.buttonMyFlashcard_Learn.Size = new System.Drawing.Size(206, 37);
+            this.buttonMyFlashcard_Learn.TabIndex = 5;
+            this.buttonMyFlashcard_Learn.Text = "Start";
+            this.buttonMyFlashcard_Learn.UseVisualStyleBackColor = true;
             // 
             // buttonMyFlashcard_Delete
             // 
@@ -764,16 +737,43 @@
             this.buttonMyFlashcard_Delete.Text = "Delete";
             this.buttonMyFlashcard_Delete.UseVisualStyleBackColor = true;
             // 
-            // buttonMyFlashcard_Learn
+            // buttonMyFlashcard_Clear
             // 
-            this.buttonMyFlashcard_Learn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonMyFlashcard_Learn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.buttonMyFlashcard_Learn.Location = new System.Drawing.Point(0, 439);
-            this.buttonMyFlashcard_Learn.Name = "buttonMyFlashcard_Learn";
-            this.buttonMyFlashcard_Learn.Size = new System.Drawing.Size(206, 37);
-            this.buttonMyFlashcard_Learn.TabIndex = 5;
-            this.buttonMyFlashcard_Learn.Text = "Start";
-            this.buttonMyFlashcard_Learn.UseVisualStyleBackColor = true;
+            this.buttonMyFlashcard_Clear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMyFlashcard_Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.buttonMyFlashcard_Clear.Location = new System.Drawing.Point(114, 387);
+            this.buttonMyFlashcard_Clear.Name = "buttonMyFlashcard_Clear";
+            this.buttonMyFlashcard_Clear.Size = new System.Drawing.Size(80, 30);
+            this.buttonMyFlashcard_Clear.TabIndex = 3;
+            this.buttonMyFlashcard_Clear.Text = "Clear";
+            this.buttonMyFlashcard_Clear.UseVisualStyleBackColor = true;
+            // 
+            // listboxMyFlashcard
+            // 
+            this.listboxMyFlashcard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.listboxMyFlashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.listboxMyFlashcard.FormattingEnabled = true;
+            this.listboxMyFlashcard.ItemHeight = 20;
+            this.listboxMyFlashcard.Location = new System.Drawing.Point(0, 46);
+            this.listboxMyFlashcard.Name = "listboxMyFlashcard";
+            this.listboxMyFlashcard.Size = new System.Drawing.Size(206, 324);
+            this.listboxMyFlashcard.TabIndex = 1;
+            // 
+            // labelMyFlashcard
+            // 
+            this.labelMyFlashcard.AutoSize = true;
+            this.labelMyFlashcard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(167)))), ((int)(((byte)(228)))));
+            this.labelMyFlashcard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelMyFlashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.labelMyFlashcard.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelMyFlashcard.Location = new System.Drawing.Point(0, 0);
+            this.labelMyFlashcard.Name = "labelMyFlashcard";
+            this.labelMyFlashcard.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.labelMyFlashcard.Size = new System.Drawing.Size(194, 46);
+            this.labelMyFlashcard.TabIndex = 0;
+            this.labelMyFlashcard.Text = "My Flashcard";
             // 
             // FormSearch
             // 
