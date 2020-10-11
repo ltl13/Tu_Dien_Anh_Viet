@@ -24,6 +24,7 @@ namespace TuDienAnhViet
             panelListRead.Visible = false;
             tableLayoutPanelGrammar.Visible = false;
             panelComboWords.Visible = false;
+            splitcontainerFlashcard.Visible = false;
         }
         private void AddBook()
         {
@@ -94,6 +95,7 @@ namespace TuDienAnhViet
             panelListRead.Hide();
             tableLayoutPanelGrammar.Hide();
             panelComboWords.Hide();
+            splitcontainerFlashcard.Hide();
         }
         private void buttonRead_Click(object sender, EventArgs e)
         {
@@ -101,6 +103,7 @@ namespace TuDienAnhViet
             panelListRead.Show();
             tableLayoutPanelGrammar.Hide();
             panelComboWords.Hide();
+            splitcontainerFlashcard.Hide();
         }
         private void buttonGrammar_Click(object sender, EventArgs e)
         {
@@ -108,6 +111,7 @@ namespace TuDienAnhViet
             panelListRead.Hide();
             tableLayoutPanelGrammar.Show();
             panelComboWords.Hide();
+            splitcontainerFlashcard.Hide();
         }
         private void buttonComboWord_Click(object sender, EventArgs e)
         {
@@ -115,6 +119,19 @@ namespace TuDienAnhViet
             panelListRead.Hide();
             tableLayoutPanelGrammar.Hide();
             panelComboWords.Show();
+            splitcontainerFlashcard.Hide();
+        }
+        private void tableLayoutPanelGrammar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void buttonFlashcard_Click(object sender, EventArgs e)
+        {
+            panelSearchbox.Hide();
+            panelListRead.Hide();
+            tableLayoutPanelGrammar.Hide();
+            panelComboWords.Hide();
+            splitcontainerFlashcard.Show();
         }
     }
 }
