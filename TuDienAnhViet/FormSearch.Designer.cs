@@ -66,13 +66,13 @@
             this.buttonBai15 = new System.Windows.Forms.Button();
             this.buttonBai16 = new System.Windows.Forms.Button();
             this.panelComboWords = new System.Windows.Forms.Panel();
-            this.radiobuttonCW1 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.buttonLearn = new System.Windows.Forms.Button();
             this.buttonPractice = new System.Windows.Forms.Button();
+            this.buttonLearn = new System.Windows.Forms.Button();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radiobuttonCW1 = new System.Windows.Forms.RadioButton();
             this.panelSelect.SuspendLayout();
             this.panelSearchbox.SuspendLayout();
             this.panelListRead.SuspendLayout();
@@ -179,6 +179,9 @@
             // 
             // panelSearchbox
             // 
+            this.panelSearchbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelSearchbox.Controls.Add(this.lsbListSearch);
             this.panelSearchbox.Controls.Add(this.rtbSearch);
             this.panelSearchbox.Location = new System.Drawing.Point(345, 111);
@@ -220,6 +223,9 @@
             // 
             // panelListRead
             // 
+            this.panelListRead.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelListRead.Controls.Add(this.listboxRead);
             this.panelListRead.Location = new System.Drawing.Point(368, 71);
             this.panelListRead.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -241,6 +247,9 @@
             // 
             // tableLayoutPanelGrammar
             // 
+            this.tableLayoutPanelGrammar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanelGrammar.ColumnCount = 4;
             this.tableLayoutPanelGrammar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanelGrammar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -266,7 +275,7 @@
             this.tableLayoutPanelGrammar.Controls.Add(this.buttonBai12, 3, 2);
             this.tableLayoutPanelGrammar.Controls.Add(this.buttonBai15, 2, 3);
             this.tableLayoutPanelGrammar.Controls.Add(this.buttonBai16, 3, 3);
-            this.tableLayoutPanelGrammar.Location = new System.Drawing.Point(249, 12);
+            this.tableLayoutPanelGrammar.Location = new System.Drawing.Point(248, 12);
             this.tableLayoutPanelGrammar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanelGrammar.Name = "tableLayoutPanelGrammar";
             this.tableLayoutPanelGrammar.RowCount = 5;
@@ -521,6 +530,9 @@
             // 
             // panelComboWords
             // 
+            this.panelComboWords.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelComboWords.Controls.Add(this.buttonPractice);
             this.panelComboWords.Controls.Add(this.buttonLearn);
             this.panelComboWords.Controls.Add(this.radioButton4);
@@ -528,80 +540,20 @@
             this.panelComboWords.Controls.Add(this.radioButton2);
             this.panelComboWords.Controls.Add(this.radioButton1);
             this.panelComboWords.Controls.Add(this.radiobuttonCW1);
-            this.panelComboWords.Location = new System.Drawing.Point(348, 57);
+            this.panelComboWords.Location = new System.Drawing.Point(345, 71);
             this.panelComboWords.Name = "panelComboWords";
-            this.panelComboWords.Size = new System.Drawing.Size(333, 349);
+            this.panelComboWords.Size = new System.Drawing.Size(337, 349);
             this.panelComboWords.TabIndex = 4;
             // 
-            // radiobuttonCW1
+            // buttonPractice
             // 
-            this.radiobuttonCW1.AutoSize = true;
-            this.radiobuttonCW1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radiobuttonCW1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.radiobuttonCW1.Location = new System.Drawing.Point(0, 0);
-            this.radiobuttonCW1.Name = "radiobuttonCW1";
-            this.radiobuttonCW1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.radiobuttonCW1.Size = new System.Drawing.Size(333, 55);
-            this.radiobuttonCW1.TabIndex = 9;
-            this.radiobuttonCW1.TabStop = true;
-            this.radiobuttonCW1.Text = "3000 Oxford Words";
-            this.radiobuttonCW1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.radioButton1.Location = new System.Drawing.Point(0, 55);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.radioButton1.Size = new System.Drawing.Size(333, 55);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "IELTS Words";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.radioButton2.Location = new System.Drawing.Point(0, 110);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.radioButton2.Size = new System.Drawing.Size(333, 55);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "TOEIC Words";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.radioButton3.Location = new System.Drawing.Point(0, 165);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.radioButton3.Size = new System.Drawing.Size(333, 55);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "TOEFL Words";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.radioButton4.Location = new System.Drawing.Point(0, 220);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.radioButton4.Size = new System.Drawing.Size(333, 55);
-            this.radioButton4.TabIndex = 13;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Irregular Verbs";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.buttonPractice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.buttonPractice.Location = new System.Drawing.Point(200, 291);
+            this.buttonPractice.Name = "buttonPractice";
+            this.buttonPractice.Size = new System.Drawing.Size(133, 46);
+            this.buttonPractice.TabIndex = 15;
+            this.buttonPractice.Text = "Luyện tập";
+            this.buttonPractice.UseVisualStyleBackColor = true;
             // 
             // buttonLearn
             // 
@@ -613,15 +565,75 @@
             this.buttonLearn.Text = "Học từ";
             this.buttonLearn.UseVisualStyleBackColor = true;
             // 
-            // buttonPractice
+            // radioButton4
             // 
-            this.buttonPractice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.buttonPractice.Location = new System.Drawing.Point(200, 291);
-            this.buttonPractice.Name = "buttonPractice";
-            this.buttonPractice.Size = new System.Drawing.Size(133, 46);
-            this.buttonPractice.TabIndex = 15;
-            this.buttonPractice.Text = "Luyện tập";
-            this.buttonPractice.UseVisualStyleBackColor = true;
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.radioButton4.Location = new System.Drawing.Point(0, 220);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.radioButton4.Size = new System.Drawing.Size(337, 55);
+            this.radioButton4.TabIndex = 13;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Irregular Verbs";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.radioButton3.Location = new System.Drawing.Point(0, 165);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.radioButton3.Size = new System.Drawing.Size(337, 55);
+            this.radioButton3.TabIndex = 12;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "TOEFL Words";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.radioButton2.Location = new System.Drawing.Point(0, 110);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.radioButton2.Size = new System.Drawing.Size(337, 55);
+            this.radioButton2.TabIndex = 11;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "TOEIC Words";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.radioButton1.Location = new System.Drawing.Point(0, 55);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.radioButton1.Size = new System.Drawing.Size(337, 55);
+            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "IELTS Words";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radiobuttonCW1
+            // 
+            this.radiobuttonCW1.AutoSize = true;
+            this.radiobuttonCW1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radiobuttonCW1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.radiobuttonCW1.Location = new System.Drawing.Point(0, 0);
+            this.radiobuttonCW1.Name = "radiobuttonCW1";
+            this.radiobuttonCW1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.radiobuttonCW1.Size = new System.Drawing.Size(337, 55);
+            this.radiobuttonCW1.TabIndex = 9;
+            this.radiobuttonCW1.TabStop = true;
+            this.radiobuttonCW1.Text = "3000 Oxford Words";
+            this.radiobuttonCW1.UseVisualStyleBackColor = true;
             // 
             // FormSearch
             // 
