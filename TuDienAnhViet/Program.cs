@@ -16,7 +16,7 @@ namespace TuDienAnhViet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSearch());
+            Application.Run(new FormLogin());
         }
     }
 }

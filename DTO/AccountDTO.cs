@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DTO {
-    public class UserDTO {
+    public class AccountDTO {
         private string id;
         private string name;
         private string info;
@@ -18,7 +18,7 @@ namespace DTO {
         public DateTime DateOfBirth1 { get => DateOfBirth; set => DateOfBirth = value; }
         public string Gender { get => gender; set => gender = value; }
 
-        public UserDTO(string id, string name, string info, DateTime dob, string gender) {
+        public AccountDTO(string id, string name, string info, DateTime dob, string gender) {
             this.id = id;
             this.name = name;
             this.info = info;
