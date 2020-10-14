@@ -1,6 +1,6 @@
 ﻿namespace TuDienAnhViet
 {
-    partial class Form_Main : MetroFramework.Forms.MetroForm
+    partial class Form_Main
     {
         /// <summary>
         /// Required designer variable.
