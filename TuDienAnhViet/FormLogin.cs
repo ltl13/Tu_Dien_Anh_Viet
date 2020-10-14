@@ -22,9 +22,9 @@ namespace TuDienAnhViet {
             if (Login(userName, passWord)) {
                 tbUsername.Text = string.Empty;
                 tbPassword.Text = string.Empty;
-                FormSearch fSearch = new FormSearch();
+                Form_Main fMain = new Form_Main();
                 this.Hide();
-                fSearch.ShowDialog();
+                fMain.ShowDialog();
                 this.Show();
             }
             else {
