@@ -13,21 +13,24 @@ namespace TuDienAnhViet
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
         DictionaryManager dictionary;
-        UserControl_Search mainPanel;
+        UserControl mainPanel;
         public Form_Main()
         {
             InitializeComponent();
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
+
             mainPanel = search;
 
             metroPanel_Main.Controls.Add(mainPanel);
 
-            mainPanel.Visible = false;
+            mainPanel.Visible = true;
         }
         private void metroTile_Search_Click(object sender, EventArgs e)
         {
-            metroTile_Search.Style = MetroFramework.MetroColorStyle.White;
+            panel_SelectCursor1.BackColor = Color.FromArgb(209, 17, 65);
+            panel_SelectCursor2.BackColor = Color.White;
+            metroPanel_Main.Focus();
             mainPanel.Visible = true;
         }
         private void button_Exit_Click(object sender, EventArgs e)
@@ -48,9 +51,12 @@ namespace TuDienAnhViet
             button_Exit.BackColor = Color.White;
             button_Exit.ForeColor = Color.Black;
         }
-        public void ShowWordInfo(DictionaryData word)
+        private void metroTile_Grammar_Click(object sender, EventArgs e)
         {
-
+            panel_SelectCursor1.BackColor = Color.White;
+            panel_SelectCursor2.BackColor = Color.FromArgb(243, 119, 53);
+            metroPanel_Main.Focus();
+            mainPanel.Visible = false;
         }
         /*private void ReColor()
 {

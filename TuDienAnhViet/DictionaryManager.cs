@@ -22,7 +22,7 @@ namespace TuDienAnhViet {
             dicItem = (DictionaryItem)DeserializeFromJson(filePath);
         }
 
-        public void LoadDataToListBox(ListBox listbox) {
+        public void LoadDataToComboBox(ComboBox listbox) {
             listbox.DataSource = dicItem.Items;
         }
 

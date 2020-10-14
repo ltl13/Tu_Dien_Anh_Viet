@@ -41,6 +41,8 @@
             this.metroTile_Grammar = new MetroFramework.Controls.MetroTile();
             this.metroTile_Search = new MetroFramework.Controls.MetroTile();
             this.metroPanel_Main = new MetroFramework.Controls.MetroPanel();
+            this.panel_SelectCursor1 = new System.Windows.Forms.Panel();
+            this.panel_SelectCursor2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             this.metroPanel_Menu.SuspendLayout();
             this.SuspendLayout();
@@ -186,6 +188,7 @@
             this.metroTile_Grammar.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile_Grammar.UseSelectable = true;
             this.metroTile_Grammar.UseTileImage = true;
+            this.metroTile_Grammar.Click += new System.EventHandler(this.metroTile_Grammar_Click);
             // 
             // metroTile_Search
             // 
@@ -224,12 +227,30 @@
             this.metroPanel_Main.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_Main.VerticalScrollbarSize = 11;
             // 
+            // panel_SelectCursor1
+            // 
+            this.panel_SelectCursor1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_SelectCursor1.Location = new System.Drawing.Point(221, 74);
+            this.panel_SelectCursor1.Name = "panel_SelectCursor1";
+            this.panel_SelectCursor1.Size = new System.Drawing.Size(31, 86);
+            this.panel_SelectCursor1.TabIndex = 4;
+            // 
+            // panel_SelectCursor2
+            // 
+            this.panel_SelectCursor2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_SelectCursor2.Location = new System.Drawing.Point(221, 160);
+            this.panel_SelectCursor2.Name = "panel_SelectCursor2";
+            this.panel_SelectCursor2.Size = new System.Drawing.Size(31, 86);
+            this.panel_SelectCursor2.TabIndex = 5;
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.panel_SelectCursor2);
+            this.Controls.Add(this.panel_SelectCursor1);
             this.Controls.Add(this.metroPanel_Main);
             this.Controls.Add(this.metroPanel_Menu);
             this.Controls.Add(this.button_Exit);
@@ -264,6 +285,8 @@
         private MetroFramework.Controls.MetroTile metroTile_ComboWords;
         private MetroFramework.Controls.MetroTile metroTile_Grammar;
         public MetroFramework.Controls.MetroPanel metroPanel_Main;
+        private System.Windows.Forms.Panel panel_SelectCursor1;
+        private System.Windows.Forms.Panel panel_SelectCursor2;
     }
 }
 
