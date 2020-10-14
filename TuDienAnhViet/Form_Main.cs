@@ -13,12 +13,13 @@ namespace TuDienAnhViet
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
         DictionaryManager dictionary;
-        UserControl_Search mainPanel;
+        UserControl mainPanel;
         public Form_Main()
         {
             InitializeComponent();
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
+            search.InitCombobox();
             mainPanel = search;
 
             metroPanel_Main.Controls.Add(mainPanel);
@@ -47,10 +48,6 @@ namespace TuDienAnhViet
         {
             button_Exit.BackColor = Color.White;
             button_Exit.ForeColor = Color.Black;
-        }
-        public void ShowWordInfo(DictionaryData word)
-        {
-
         }
         /*private void ReColor()
 {

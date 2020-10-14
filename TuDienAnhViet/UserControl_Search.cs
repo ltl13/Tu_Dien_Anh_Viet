@@ -9,44 +9,31 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TuDienAnhViet
-{
+{   
     public partial class UserControl_Search : UserControl
     {
-        private bool isDrop = false;
+        private bool checkLoadCombobox = false;
         Form_Main father;
+        DictionaryManager dictionary;
         public UserControl_Search(Form_Main formMain)
         {
             InitializeComponent();
-            father = formMain;
+            father = formMain;          
         }
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
         {
-            if (metroTextBox_Searchbar.Text.ToString() != "") { isDrop = true; }
-            else { isDrop = false; }
-            listBox_Search.Items.Add("a");
-            listBox_Search.Items.Add("b");
-            listBox_Search.Items.Add("c");
-            timer_SearchDrop.Start();
-        }
-        private void timer_SearchDrop_Tick(object sender, EventArgs e)
-        {
-            if (isDrop)
+            comboBox_Search.Text = metroTextBox_Searchbar.Text;
+            if (metroTextBox_Searchbar.Text.ToString() != "")
             {
-                metroPanel_Searchbox.Height += 10;
-                if (metroPanel_Searchbox.Size == metroPanel_Searchbox.MaximumSize) { timer_SearchDrop.Stop(); }
-            }
-            else
-            {
-                metroPanel_Searchbox.Height -= 10;
-                if (metroPanel_Searchbox.Size == metroPanel_Searchbox.MinimumSize) { timer_SearchDrop.Stop(); }
+                comboBox_Search.DroppedDown = true;
             }
         }
-        private void listBox_Search_Click(object sender, EventArgs e)
+        public void InitCombobox()
         {
-            UserControl_WordInfo wordInfo = new UserControl_WordInfo(listBox_Search.SelectedItem.ToString(), this);
-            father.metroPanel_Main.Controls.Add(wordInfo);
-            wordInfo.Show();
-            this.Hide();
+            comboBox_Search.DisplayMember = "English";
+            dictionary = new DictionaryManager();
+            dictionary.LoadDataToComboBox(comboBox_Search);
+            checkLoadCombobox = true;
         }
     }
 }

@@ -120,17 +120,14 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="metroTextBox_Searchbar.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAH
-        qAAAB6gBuRybzQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEsSURBVDhPhZKt
-        TkNBEIW3DlODw1T3EfoINU3qSJOavkNFZV+AB2hqagnBIxA8ALKShCYIEBAsAnL7ncnsMvd2k07yJbOz
-        58z+pqZpCsQV3MATfMML3MECelFbPCVJ6Rq+QIMajzCIZvMFcxa+wgrGMIct/IHmDtBvNSC07bzyPbQE
-        LhrBJ2iw6czZmZVp5RNzhpi5TpSjKHRhylbRUIP4cO001Oy2lY2juAbx4Np1qNlTKZtHcQ3i2bXLULN3
-        VraN4i7EJfy4dhLq9kmU/cIomiLEznVvcBHqqQf6JBrpqWYdo1bOZlG2b/MuGoA+SRbptnVhOnPeduYd
-        hq0G3qQPG4jijLa9BJk1Lk1Kg9BIu5nCGmSagJ2ZGEKryUmDc5jpv8m+KjqHN9mnlG6P3sTGF//QEjgA
-        AAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAB6gAAAeoAbkcm80AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABLElEQVQ4T4WSrU5DQRCFtw5Tg8NU9xH6CDVN6kiTmr5DRWVfgAdoamoJwSMQPACykoQmCBAQLAJy
+        +53J7DL3dpNO8iWzs+fM/qamaQrEFdzAE3zDC9zBAnpRWzwlSekavkCDGo8wiGbzBXMWvsIKxjCHLfyB
+        5g7QbzUgtO288j20BC4awSdosOnM2ZmVaeUTc4aYuU6Uoyh0YcpW0VCD+HDtNNTstpWNo7gG8eDadajZ
+        UymbR3EN4tm1y1Czd1a2jeIuxCX8uHYS6vZJlP3CKJoixM51b3AR6qkH+iQa6almHaNWzmZRtm/zLhqA
+        PkkW6bZ1YTpz3nbmHYatBt6kDxuI4oy2vQSZNS5NSoPQSLuZwhpkmoCdmRhCq8lJg3OY6b/Jvio6hzfZ
+        p5Ruj97Exhf/0BI4AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="timer_SearchDrop.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>
