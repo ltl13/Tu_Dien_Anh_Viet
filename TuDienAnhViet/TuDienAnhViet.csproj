@@ -82,30 +82,34 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DictionaryData.cs" />
     <Compile Include="DictionaryItem.cs" />
     <Compile Include="DictionaryManager.cs" />
-    <Compile Include="FormWordInfo.cs">
+    <Compile Include="Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormWordInfo.Designer.cs">
-      <DependentUpon>FormWordInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormSearch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSearch.Designer.cs">
-      <DependentUpon>FormSearch.cs</DependentUpon>
+    <Compile Include="Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormSearch.resx">
-      <DependentUpon>FormSearch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormWordInfo.resx">
-      <DependentUpon>FormWordInfo.cs</DependentUpon>
+    <Compile Include="UserControl_WordInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_WordInfo.Designer.cs">
+      <DependentUpon>UserControl_WordInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Search.Designer.cs">
+      <DependentUpon>UserControl_Search.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +120,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl_Search.resx">
+      <DependentUpon>UserControl_Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_WordInfo.resx">
+      <DependentUpon>UserControl_WordInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
