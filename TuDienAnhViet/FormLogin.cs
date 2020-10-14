@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TuDienAnhViet {
-    public partial class Form_Login : Form {
-        public Form_Login() {
+    public partial class FormLogin : Form {
+        public FormLogin() {
             InitializeComponent();
         }
 

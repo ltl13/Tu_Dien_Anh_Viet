@@ -1,5 +1,5 @@
 ﻿namespace TuDienAnhViet {
-    partial class Form_Login {
+    partial class FormLogin {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,7 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbMotto = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
