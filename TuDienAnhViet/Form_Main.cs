@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace TuDienAnhViet
 {
-    public partial class Form_Main : MetroFramework.Forms.MetroForm
+    public partial class Form_Main : MetroForm
     {
         DictionaryManager dictionary;
         UserControl_Search mainPanel;
