@@ -1,5 +1,5 @@
-﻿namespace TuDienAnhViet {
-    partial class Form_Signup {
+﻿namespace GUI {
+    partial class Form_Login {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,23 +23,21 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Signup));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login));
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbMotto = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.icon = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.btLogin = new System.Windows.Forms.Button();
             this.lbUsername = new System.Windows.Forms.Label();
-            this.tbUsername = new System.Windows.Forms.TextBox();
             this.lbPassword = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
-            this.lbConfirm = new System.Windows.Forms.Label();
-            this.tbConfirm = new System.Windows.Forms.TextBox();
-            this.btLogin = new System.Windows.Forms.Button();
-            this.btCancel = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.tbUsername = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btExit = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbCreateNewAccount = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel4.SuspendLayout();
@@ -57,7 +55,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(300, 190);
-            this.panel3.TabIndex = 10;
+            this.panel3.TabIndex = 9;
             // 
             // lbMotto
             // 
@@ -89,24 +87,20 @@
             this.icon.TabIndex = 0;
             this.icon.TabStop = false;
             // 
-            // panel4
+            // btLogin
             // 
-            this.panel4.Controls.Add(this.lbUsername);
-            this.panel4.Controls.Add(this.tbUsername);
-            this.panel4.Controls.Add(this.lbPassword);
-            this.panel4.Controls.Add(this.tbPassword);
-            this.panel4.Controls.Add(this.lbConfirm);
-            this.panel4.Controls.Add(this.tbConfirm);
-            this.panel4.Controls.Add(this.btLogin);
-            this.panel4.Controls.Add(this.btCancel);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.panel1);
-            this.panel4.Controls.Add(this.panel2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 190);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 260);
-            this.panel4.TabIndex = 13;
+            this.btLogin.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btLogin.FlatAppearance.BorderSize = 0;
+            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLogin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLogin.ForeColor = System.Drawing.SystemColors.Control;
+            this.btLogin.Location = new System.Drawing.Point(24, 155);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(115, 45);
+            this.btLogin.TabIndex = 8;
+            this.btLogin.Text = "Login";
+            this.btLogin.UseVisualStyleBackColor = false;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // lbUsername
             // 
@@ -119,22 +113,12 @@
             this.lbUsername.TabIndex = 6;
             this.lbUsername.Text = "Username";
             // 
-            // tbUsername
-            // 
-            this.tbUsername.BackColor = System.Drawing.SystemColors.Control;
-            this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbUsername.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(42, 38);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(216, 22);
-            this.tbUsername.TabIndex = 4;
-            // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPassword.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbPassword.Location = new System.Drawing.Point(38, 70);
+            this.lbPassword.Location = new System.Drawing.Point(38, 80);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(77, 21);
             this.lbPassword.TabIndex = 7;
@@ -145,71 +129,30 @@
             this.tbPassword.BackColor = System.Drawing.SystemColors.Control;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(42, 98);
+            this.tbPassword.Location = new System.Drawing.Point(42, 108);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '•';
             this.tbPassword.Size = new System.Drawing.Size(216, 22);
             this.tbPassword.TabIndex = 5;
             // 
-            // lbConfirm
+            // tbUsername
             // 
-            this.lbConfirm.AutoSize = true;
-            this.lbConfirm.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbConfirm.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbConfirm.Location = new System.Drawing.Point(38, 130);
-            this.lbConfirm.Name = "lbConfirm";
-            this.lbConfirm.Size = new System.Drawing.Size(66, 21);
-            this.lbConfirm.TabIndex = 11;
-            this.lbConfirm.Text = "Confirm";
+            this.tbUsername.BackColor = System.Drawing.SystemColors.Control;
+            this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbUsername.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.Location = new System.Drawing.Point(42, 38);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(216, 22);
+            this.tbUsername.TabIndex = 4;
+            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
-            // tbConfirm
+            // panel2
             // 
-            this.tbConfirm.BackColor = System.Drawing.SystemColors.Control;
-            this.tbConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbConfirm.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbConfirm.Location = new System.Drawing.Point(42, 158);
-            this.tbConfirm.Name = "tbConfirm";
-            this.tbConfirm.PasswordChar = '•';
-            this.tbConfirm.Size = new System.Drawing.Size(216, 22);
-            this.tbConfirm.TabIndex = 12;
-            // 
-            // btLogin
-            // 
-            this.btLogin.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btLogin.FlatAppearance.BorderSize = 0;
-            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLogin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btLogin.Location = new System.Drawing.Point(24, 195);
-            this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(115, 45);
-            this.btLogin.TabIndex = 8;
-            this.btLogin.Text = "Login";
-            this.btLogin.UseVisualStyleBackColor = false;
-            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
-            // 
-            // btCancel
-            // 
-            this.btCancel.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btCancel.FlatAppearance.BorderSize = 0;
-            this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCancel.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btCancel.Location = new System.Drawing.Point(162, 195);
-            this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(115, 45);
-            this.btCancel.TabIndex = 10;
-            this.btCancel.Text = "Cancel";
-            this.btCancel.UseVisualStyleBackColor = false;
-            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel5.Location = new System.Drawing.Point(42, 180);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(216, 1);
-            this.panel5.TabIndex = 4;
+            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel2.Location = new System.Drawing.Point(42, 130);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(216, 1);
+            this.panel2.TabIndex = 3;
             // 
             // panel1
             // 
@@ -219,15 +162,52 @@
             this.panel1.Size = new System.Drawing.Size(216, 1);
             this.panel1.TabIndex = 2;
             // 
-            // panel2
+            // btExit
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Location = new System.Drawing.Point(42, 120);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 1);
-            this.panel2.TabIndex = 3;
+            this.btExit.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btExit.FlatAppearance.BorderSize = 0;
+            this.btExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExit.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExit.ForeColor = System.Drawing.SystemColors.Control;
+            this.btExit.Location = new System.Drawing.Point(162, 155);
+            this.btExit.Name = "btExit";
+            this.btExit.Size = new System.Drawing.Size(115, 45);
+            this.btExit.TabIndex = 10;
+            this.btExit.Text = "Exit";
+            this.btExit.UseVisualStyleBackColor = false;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
-            // Form_Signup
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbUsername);
+            this.panel4.Controls.Add(this.tbUsername);
+            this.panel4.Controls.Add(this.lbPassword);
+            this.panel4.Controls.Add(this.tbPassword);
+            this.panel4.Controls.Add(this.btLogin);
+            this.panel4.Controls.Add(this.btExit);
+            this.panel4.Controls.Add(this.lbCreateNewAccount);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 190);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(300, 260);
+            this.panel4.TabIndex = 12;
+            // 
+            // lbCreateNewAccount
+            // 
+            this.lbCreateNewAccount.AutoSize = true;
+            this.lbCreateNewAccount.Font = new System.Drawing.Font("Calibri", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCreateNewAccount.Location = new System.Drawing.Point(73, 215);
+            this.lbCreateNewAccount.Name = "lbCreateNewAccount";
+            this.lbCreateNewAccount.Size = new System.Drawing.Size(164, 23);
+            this.lbCreateNewAccount.TabIndex = 12;
+            this.lbCreateNewAccount.Text = "Create new account";
+            this.lbCreateNewAccount.Click += new System.EventHandler(this.lbCreateNewAccount_Click);
+            this.lbCreateNewAccount.MouseLeave += new System.EventHandler(this.lbCreateNewAccount_MouseLeave);
+            this.lbCreateNewAccount.MouseHover += new System.EventHandler(this.lbCreateNewAccount_MouseHover);
+            // 
+            // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -236,9 +216,10 @@
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "Form_Signup";
+            this.Name = "Form_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Signup";
+            this.Text = "Form_Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLogin_FormClosing);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
@@ -249,22 +230,19 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lbMotto;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.PictureBox icon;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btLogin;
         private System.Windows.Forms.Label lbUsername;
-        private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.Button btLogin;
-        private System.Windows.Forms.Button btCancel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbConfirm;
-        private System.Windows.Forms.TextBox tbConfirm;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btExit;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lbCreateNewAccount;
     }
 }

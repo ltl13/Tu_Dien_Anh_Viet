@@ -9,10 +9,10 @@ using System.Text.Json;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace TuDienAnhViet {
+namespace GUI {
     public class DictionaryManager {
         #region properties
-        private string filePath = @"..\..\resources\data.json";
+        private string filePath = @"..\..\..\resources\data.json";
         private DictionaryItem dicItem;
         public DictionaryItem DicItem { get => dicItem; set => dicItem = value; }
         #endregion

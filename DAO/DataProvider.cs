@@ -23,7 +23,7 @@ namespace DAO {
 
         }
 
-        private string connectionSTR = "Data Source=DESKTOP-45NJQVA\\SQLEXPRESS;Initial Catalog=UserManagement;User ID=sa;Password=101001";
+        private string connectionSTR = "Data Source=ngoduongkhakg2001.database.windows.net;Initial Catalog=DailyDictionay;User ID=ngoduongkhakg2001;Password=0842837917Kha;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null) {
             DataTable data = new DataTable();

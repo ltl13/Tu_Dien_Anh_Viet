@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TuDienAnhViet
+namespace GUI
 {
     public partial class UserControl_WordInfo : UserControl
     {

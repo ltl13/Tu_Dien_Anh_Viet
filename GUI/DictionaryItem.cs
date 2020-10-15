@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TuDienAnhViet {
+namespace GUI {
     [Serializable]
     public class DictionaryItem {
         private List<DictionaryData> items;
