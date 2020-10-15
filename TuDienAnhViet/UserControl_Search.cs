@@ -35,7 +35,7 @@ namespace TuDienAnhViet
             DictionaryData wordSelected = (DictionaryData)comboBox_Search.SelectedItem;
             metroTextBox_Searchbar.Text = wordSelected.English;
             UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
-            father.metroPanel_Main.Controls.Add(wordInfo);
+            father.panel_Main.Controls.Add(wordInfo);
             wordInfo.Show();
             this.Hide();
         }

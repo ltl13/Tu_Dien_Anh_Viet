@@ -12,7 +12,7 @@ namespace TuDienAnhViet
 {
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
-        UserControl mainSearch;
+        private UserControl mainSearch;
         public Form_Main()
         {
             InitializeComponent();
@@ -20,18 +20,11 @@ namespace TuDienAnhViet
             UserControl_Search search = new UserControl_Search(this);
             mainSearch = search;
 
-            metroPanel_Main.Controls.Add(mainSearch);
+            panel_Main.Controls.Add(mainSearch);
 
             mainSearch.Visible = true;
-            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
         }
-        private void metroTile_Search_Click(object sender, EventArgs e)
-        {
-            mainSearch.Visible = true;
-            mainSearch.Focus();
-            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 60);
-            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
-        }
+        #region ButtonExit
         private void button_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -41,51 +34,39 @@ namespace TuDienAnhViet
             button_Exit.BackColor = Color.Red;
             button_Exit.ForeColor = Color.White;
         }
-        private void Form_Main_MouseLeave(object sender, EventArgs e)
-        {
-            
-        }
         private void button_Exit_MouseLeave(object sender, EventArgs e)
         {
             button_Exit.BackColor = Color.White;
             button_Exit.ForeColor = Color.Black;
         }
-        private void metroTile_Grammar_Click(object sender, EventArgs e)
-        {
-            mainSearch.Visible = false;
-            mainSearch.Focus();
-            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 130);
-            panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
-        }
-        private void metroTile_ComboWords_Click(object sender, EventArgs e)
-        {
-            mainSearch.Visible = false;
-            mainSearch.Focus();
-            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 200);
-            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
-        }
-        private void metroTile_Flashcard_Click(object sender, EventArgs e)
-        {
-            mainSearch.Visible = false;
-            mainSearch.Focus();
-            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 270);
-            panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
-        }
-        private void metroTile_Reading_Click(object sender, EventArgs e)
-        {
-            mainSearch.Visible = false;
-            mainSearch.Focus();
-            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 340);
-            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
-        }
-        private void metroTile_Exam_Click(object sender, EventArgs e)
-        {
-            mainSearch.Visible = false;
-            mainSearch.Focus();
-            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 410);
-            panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
-        }
+        #endregion
 
+        #region PanelSearch
+        private bool isMouseEnter_PanelSearch = false;
+        private void pictureBox_Search_MouseEnter(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelSearch = true;
+            timer_PanelSearch.Start();
+        }
+        private void pictureBox_Search_MouseLeave(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelSearch = false;
+            timer_PanelSearch.Start();
+        }
+        private void timer_PanelSearch_Tick(object sender, EventArgs e)
+        {
+            if (isMouseEnter_PanelSearch)
+            {
+                panel_Search.Width += 5;
+                if (panel_Search.Size == panel_Search.MaximumSize) { timer_PanelSearch.Stop(); }
+            }
+            else
+            {
+                panel_Search.Width -= 5;
+                if (panel_Search.Size == panel_Search.MinimumSize) { timer_PanelSearch.Stop(); }
+            }
+        }
+        #endregion
         /*private void ReColor()
 {
 panelSearchbox.Visible = false;
