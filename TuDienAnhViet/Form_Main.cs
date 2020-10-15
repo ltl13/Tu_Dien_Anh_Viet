@@ -12,8 +12,7 @@ namespace TuDienAnhViet
 {
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
-        DictionaryManager dictionary;
-        UserControl_Search mainPanel;
+        UserControl mainPanel;
         public Form_Main()
         {
             InitializeComponent();
@@ -23,7 +22,7 @@ namespace TuDienAnhViet
 
             metroPanel_Main.Controls.Add(mainPanel);
 
-            mainPanel.Visible = false;
+            mainPanel.Visible = true;
         }
         private void metroTile_Search_Click(object sender, EventArgs e)
         {            
@@ -47,10 +46,7 @@ namespace TuDienAnhViet
             button_Exit.BackColor = Color.White;
             button_Exit.ForeColor = Color.Black;
         }
-        public void ShowWordInfo(DictionaryData word)
-        {
 
-        }
         /*private void ReColor()
 {
 panelSearchbox.Visible = false;
