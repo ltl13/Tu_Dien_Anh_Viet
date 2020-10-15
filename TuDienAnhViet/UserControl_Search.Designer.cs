@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Search));
             this.metroTextBox_Searchbar = new MetroFramework.Controls.MetroTextBox();
-            this.timer_SearchDrop = new System.Windows.Forms.Timer(this.components);
             this.comboBox_Search = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -75,11 +73,6 @@
             this.metroTextBox_Searchbar.WaterMarkFont = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Italic);
             this.metroTextBox_Searchbar.TextChanged += new System.EventHandler(this.metroTextBox_Searchbar_TextChanged);
             // 
-            // timer_SearchDrop
-            // 
-            this.timer_SearchDrop.Interval = 1;
-            this.timer_SearchDrop.Tick += new System.EventHandler(this.timer_SearchDrop_Tick);
-            // 
             // comboBox_Search
             // 
             this.comboBox_Search.DropDownHeight = 150;
@@ -90,6 +83,7 @@
             this.comboBox_Search.Name = "comboBox_Search";
             this.comboBox_Search.Size = new System.Drawing.Size(363, 28);
             this.comboBox_Search.TabIndex = 1;
+            this.comboBox_Search.SelectionChangeCommitted += new System.EventHandler(this.comboBox_Search_SelectionChangeCommitted);
             // 
             // UserControl_Search
             // 
@@ -107,7 +101,6 @@
         #endregion
 
         private MetroFramework.Controls.MetroTextBox metroTextBox_Searchbar;
-        private System.Windows.Forms.Timer timer_SearchDrop;
         private System.Windows.Forms.ComboBox comboBox_Search;
     }
 }

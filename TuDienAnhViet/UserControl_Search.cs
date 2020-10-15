@@ -23,22 +23,25 @@ namespace TuDienAnhViet
             dictionaryManager = new DictionaryManager();
             dictionaryManager.LoadDataToComboBox(comboBox_Search);
             isComboBoxLoaded = true;
-            comboBox_Search.Visible = true;
         }
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
         {
-            
+            comboBox_Search.Text = metroTextBox_Searchbar.Text;
+            if (comboBox_Search.Text.ToString() != "") { comboBox_Search.DroppedDown = true; }
+            else { comboBox_Search.DroppedDown = false; }
         }
-        private void timer_SearchDrop_Tick(object sender, EventArgs e)
+        private void comboBox_Search_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            
-        }
-        /*private void listBox_Search_Click(object sender, EventArgs e)
-        {
-            UserControl_WordInfo wordInfo = new UserControl_WordInfo(comboBox_Search.SelectedItem.ToString(), this);
+            DictionaryData wordSelected = (DictionaryData)comboBox_Search.SelectedItem;
+            metroTextBox_Searchbar.Text = wordSelected.English;
+            UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
             father.metroPanel_Main.Controls.Add(wordInfo);
             wordInfo.Show();
             this.Hide();
-        }*/
+        }
+        /*private void listBox_Search_Click(object sender, EventArgs e)
+{
+   
+}*/
     }
 }

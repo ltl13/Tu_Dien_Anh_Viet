@@ -13,11 +13,13 @@ namespace TuDienAnhViet
     public partial class UserControl_WordInfo : UserControl
     {
         UserControl_Search father;
-        public UserControl_WordInfo(string args, UserControl_Search usercontrolSearch)
+        DictionaryData word;
+        public UserControl_WordInfo(DictionaryData args, UserControl_Search usercontrolSearch)
         {
             InitializeComponent();
             father = usercontrolSearch;
-            label_Word.Text = args;
+            word = args;
+            label_Word.Text = word.English;
         }
         private void metroTile_Back_Click(object sender, EventArgs e)
         {

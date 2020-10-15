@@ -95,7 +95,7 @@
             this.metroTile_Exam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTile_Exam.Name = "metroTile_Exam";
             this.metroTile_Exam.Size = new System.Drawing.Size(201, 86);
-            this.metroTile_Exam.Style = MetroFramework.MetroColorStyle.Purple;
+            this.metroTile_Exam.Style = MetroFramework.MetroColorStyle.Teal;
             this.metroTile_Exam.TabIndex = 8;
             this.metroTile_Exam.Text = "Luyện tập";
             this.metroTile_Exam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -135,7 +135,7 @@
             this.metroTile_Flashcard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTile_Flashcard.Name = "metroTile_Flashcard";
             this.metroTile_Flashcard.Size = new System.Drawing.Size(201, 86);
-            this.metroTile_Flashcard.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile_Flashcard.Style = MetroFramework.MetroColorStyle.Teal;
             this.metroTile_Flashcard.TabIndex = 6;
             this.metroTile_Flashcard.Text = "Flash card";
             this.metroTile_Flashcard.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -155,7 +155,7 @@
             this.metroTile_ComboWords.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTile_ComboWords.Name = "metroTile_ComboWords";
             this.metroTile_ComboWords.Size = new System.Drawing.Size(201, 86);
-            this.metroTile_ComboWords.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.metroTile_ComboWords.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTile_ComboWords.TabIndex = 5;
             this.metroTile_ComboWords.Text = "Bộ từ vựng";
             this.metroTile_ComboWords.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -175,7 +175,7 @@
             this.metroTile_Grammar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTile_Grammar.Name = "metroTile_Grammar";
             this.metroTile_Grammar.Size = new System.Drawing.Size(201, 86);
-            this.metroTile_Grammar.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile_Grammar.Style = MetroFramework.MetroColorStyle.Teal;
             this.metroTile_Grammar.TabIndex = 4;
             this.metroTile_Grammar.Text = "Ngữ pháp";
             this.metroTile_Grammar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -196,7 +196,7 @@
             this.metroTile_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroTile_Search.Name = "metroTile_Search";
             this.metroTile_Search.Size = new System.Drawing.Size(201, 86);
-            this.metroTile_Search.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroTile_Search.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTile_Search.TabIndex = 3;
             this.metroTile_Search.Text = "Tra từ";
             this.metroTile_Search.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -242,7 +242,7 @@
             this.Name = "Form_Main";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.ShowInTaskbar = false;
-            this.Style = MetroFramework.MetroColorStyle.Silver;
+            this.Style = MetroFramework.MetroColorStyle.Default;
             this.Text = "Từ điển Anh-Việt";
             this.TransparencyKey = System.Drawing.Color.LightSteelBlue;
             this.MouseLeave += new System.EventHandler(this.Form_Main_MouseLeave);
