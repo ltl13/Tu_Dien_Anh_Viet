@@ -38,7 +38,7 @@ namespace GUI {
                 tbPassword.Text = string.Empty;
                 tbUsername.Focus();
                 tbUsername.TextChanged += tbUsername_TextChanged;
-                Form1 fMain = new Form1();
+                Form_Main fMain = new Form_Main();
                 fMain.Owner = this;
                 this.Hide();
                 fMain.Show();
