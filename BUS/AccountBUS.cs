@@ -22,8 +22,8 @@ namespace BUS {
 
         }
 
-        public void Xem(DataGridView data) {
-            data.DataSource = AccountDAO.Instance.Xem();
-        }
+        //public void Xem(DataGridView data) {
+        //    data.DataSource = AccountDAO.Instance.Xem();
+        //}
     }
 }

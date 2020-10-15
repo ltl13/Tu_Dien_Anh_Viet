@@ -1,4 +1,5 @@
 ﻿using DAO;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TuDienAnhViet {
+namespace GUI {
     public partial class Form_Login : Form {
         public Form_Login() {
             InitializeComponent();
@@ -17,14 +18,27 @@ namespace TuDienAnhViet {
             this.CancelButton = btExit;
         }
 
+        /* ---------- Đăng nhập ---------- */
+        private bool Login(string userName, string passWord) {
+            return AccountDAO.Instance.Login(userName, passWord);
+        }
+
         private void btLogin_Click(object sender, EventArgs e) {
             string userName = tbUsername.Text;
             string passWord = tbPassword.Text;
 
+            if (userName.Length == 0 || passWord.Length == 0) {
+                MessageBox.Show("Không được bỏ trống!", "Thông báo");
+                return;
+            }
+
             if (Login(userName, passWord)) {
+                tbUsername.TextChanged -= tbUsername_TextChanged;
                 tbUsername.Text = string.Empty;
                 tbPassword.Text = string.Empty;
-                Form_Main fMain = new Form_Main();
+                tbUsername.Focus();
+                tbUsername.TextChanged += tbUsername_TextChanged;
+                Form1 fMain = new Form1();
                 fMain.Owner = this;
                 this.Hide();
                 fMain.Show();
@@ -35,12 +49,9 @@ namespace TuDienAnhViet {
                 MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Thông báo");
             }
         }
+        /* ------------------------------- */
 
-        bool Login(string userName, string passWord) {
-            return AccountDAO.Instance.Login(userName, passWord);
-        }
-
-        private void lbCreateNewAccount_Click(object sender, EventArgs e) {
+        private void lbCreateNewAccount_Click(object sender, EventArgs e) {          
             tbUsername.Text = string.Empty;
             tbPassword.Text = string.Empty;
             Form_Signup fSignup = new Form_Signup();

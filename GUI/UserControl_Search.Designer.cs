@@ -1,4 +1,4 @@
-﻿namespace TuDienAnhViet
+﻿namespace GUI
 {
     partial class UserControl_Search
     {

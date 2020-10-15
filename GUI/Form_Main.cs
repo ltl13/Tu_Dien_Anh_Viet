@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,14 +9,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TuDienAnhViet
+namespace GUI
 {
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
         private UserControl mainSearch;
+
         public Form_Main()
         {
             InitializeComponent();
+
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
             mainSearch = search;
@@ -42,7 +45,8 @@ namespace TuDienAnhViet
         #endregion
 
         #region PanelSearch
-        private bool isMouseEnter_PanelSearch = false;
+        private bool isMouseEnter_PanelSearch = false;      
+
         private void pictureBox_Search_MouseEnter(object sender, EventArgs e)
         {
             isMouseEnter_PanelSearch = true;

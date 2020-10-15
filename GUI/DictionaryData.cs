@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TuDienAnhViet {
+namespace GUI {
     public class DictionaryData {
         private string english;
         private string vietnamese_analytics;
