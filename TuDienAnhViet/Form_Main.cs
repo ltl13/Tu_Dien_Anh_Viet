@@ -23,10 +23,14 @@ namespace TuDienAnhViet
             metroPanel_Main.Controls.Add(mainPanel);
 
             mainPanel.Visible = true;
+            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
         }
         private void metroTile_Search_Click(object sender, EventArgs e)
         {            
             mainPanel.Visible = true;
+            mainPanel.Focus();
+            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 60);
+            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
         }
         private void button_Exit_Click(object sender, EventArgs e)
         {
@@ -45,6 +49,41 @@ namespace TuDienAnhViet
         {
             button_Exit.BackColor = Color.White;
             button_Exit.ForeColor = Color.Black;
+        }
+        private void metroTile_Grammar_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            mainPanel.Focus();
+            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 130);
+            panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
+        }
+        private void metroTile_ComboWords_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            mainPanel.Focus();
+            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 200);
+            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
+        }
+        private void metroTile_Flashcard_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            mainPanel.Focus();
+            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 270);
+            panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
+        }
+        private void metroTile_Reading_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            mainPanel.Focus();
+            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 340);
+            panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
+        }
+        private void metroTile_Exam_Click(object sender, EventArgs e)
+        {
+            mainPanel.Visible = true;
+            mainPanel.Focus();
+            panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 410);
+            panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
         }
 
         /*private void ReColor()

@@ -40,7 +40,7 @@
             // 
             // 
             this.metroTextBox_Searchbar.CustomButton.Image = null;
-            this.metroTextBox_Searchbar.CustomButton.Location = new System.Drawing.Point(331, 2);
+            this.metroTextBox_Searchbar.CustomButton.Location = new System.Drawing.Point(337, 2);
             this.metroTextBox_Searchbar.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox_Searchbar.CustomButton.Name = "";
             this.metroTextBox_Searchbar.CustomButton.Size = new System.Drawing.Size(29, 29);
@@ -53,7 +53,7 @@
             this.metroTextBox_Searchbar.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.metroTextBox_Searchbar.Icon = ((System.Drawing.Image)(resources.GetObject("metroTextBox_Searchbar.Icon")));
             this.metroTextBox_Searchbar.Lines = new string[0];
-            this.metroTextBox_Searchbar.Location = new System.Drawing.Point(126, 122);
+            this.metroTextBox_Searchbar.Location = new System.Drawing.Point(122, 150);
             this.metroTextBox_Searchbar.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox_Searchbar.MaxLength = 32;
             this.metroTextBox_Searchbar.Name = "metroTextBox_Searchbar";
@@ -64,7 +64,7 @@
             this.metroTextBox_Searchbar.SelectionLength = 0;
             this.metroTextBox_Searchbar.SelectionStart = 0;
             this.metroTextBox_Searchbar.ShortcutsEnabled = true;
-            this.metroTextBox_Searchbar.Size = new System.Drawing.Size(363, 34);
+            this.metroTextBox_Searchbar.Size = new System.Drawing.Size(369, 34);
             this.metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox_Searchbar.TabIndex = 0;
             this.metroTextBox_Searchbar.UseSelectable = true;
@@ -79,7 +79,7 @@
             this.comboBox_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.comboBox_Search.FormattingEnabled = true;
             this.comboBox_Search.IntegralHeight = false;
-            this.comboBox_Search.Location = new System.Drawing.Point(126, 163);
+            this.comboBox_Search.Location = new System.Drawing.Point(122, 150);
             this.comboBox_Search.Name = "comboBox_Search";
             this.comboBox_Search.Size = new System.Drawing.Size(363, 28);
             this.comboBox_Search.TabIndex = 1;
