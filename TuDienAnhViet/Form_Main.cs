@@ -26,8 +26,7 @@ namespace TuDienAnhViet
             mainPanel.Visible = false;
         }
         private void metroTile_Search_Click(object sender, EventArgs e)
-        {
-            metroTile_Search.Style = MetroFramework.MetroColorStyle.White;
+        {            
             mainPanel.Visible = true;
         }
         private void button_Exit_Click(object sender, EventArgs e)
