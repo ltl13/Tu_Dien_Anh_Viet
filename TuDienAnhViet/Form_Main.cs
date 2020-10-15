@@ -12,23 +12,23 @@ namespace TuDienAnhViet
 {
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
-        UserControl mainPanel;
+        UserControl mainSearch;
         public Form_Main()
         {
             InitializeComponent();
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
-            mainPanel = search;
+            mainSearch = search;
 
-            metroPanel_Main.Controls.Add(mainPanel);
+            metroPanel_Main.Controls.Add(mainSearch);
 
-            mainPanel.Visible = true;
+            mainSearch.Visible = true;
             panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
         }
         private void metroTile_Search_Click(object sender, EventArgs e)
-        {            
-            mainPanel.Visible = true;
-            mainPanel.Focus();
+        {
+            mainSearch.Visible = true;
+            mainSearch.Focus();
             panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 60);
             panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
         }
@@ -52,36 +52,36 @@ namespace TuDienAnhViet
         }
         private void metroTile_Grammar_Click(object sender, EventArgs e)
         {
-            mainPanel.Visible = true;
-            mainPanel.Focus();
+            mainSearch.Visible = false;
+            mainSearch.Focus();
             panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 130);
             panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
         }
         private void metroTile_ComboWords_Click(object sender, EventArgs e)
         {
-            mainPanel.Visible = true;
-            mainPanel.Focus();
+            mainSearch.Visible = false;
+            mainSearch.Focus();
             panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 200);
             panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
         }
         private void metroTile_Flashcard_Click(object sender, EventArgs e)
         {
-            mainPanel.Visible = true;
-            mainPanel.Focus();
+            mainSearch.Visible = false;
+            mainSearch.Focus();
             panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 270);
             panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
         }
         private void metroTile_Reading_Click(object sender, EventArgs e)
         {
-            mainPanel.Visible = true;
-            mainPanel.Focus();
+            mainSearch.Visible = false;
+            mainSearch.Focus();
             panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 340);
             panel_SelectedCursor.BackColor = Color.FromArgb(0, 174, 219);
         }
         private void metroTile_Exam_Click(object sender, EventArgs e)
         {
-            mainPanel.Visible = true;
-            mainPanel.Focus();
+            mainSearch.Visible = false;
+            mainSearch.Focus();
             panel_SelectedCursor.Location = new Point(panel_SelectedCursor.Location.X, 410);
             panel_SelectedCursor.BackColor = Color.FromArgb(0, 170, 173);
         }
