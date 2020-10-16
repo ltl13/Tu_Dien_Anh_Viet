@@ -54,10 +54,13 @@ namespace GUI
         {
             isSearchClick = false;
             isGrammarClick = false;
+            isComboWordClick = false;
+
             mainSearch.Visible = false;
 
             timer_PanelSearch.Start();
             timer_PanelGrammar.Start();
+            timer_PanelComboWord.Start();
 
             selected.Size = selected.MaximumSize;
         }
@@ -126,7 +129,7 @@ namespace GUI
                 ReturnClick(panel_Grammar);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isGrammarClick = true;
-                mainSearch.Visible = false;
+                //mainGrammar.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(253, 255, 209);
                 timer_MainPanel.Start();
             }
@@ -146,6 +149,50 @@ namespace GUI
                     if (panel_Grammar.Size == panel_Grammar.MinimumSize) { timer_PanelGrammar.Stop(); }
                 }
                 else { timer_PanelGrammar.Stop(); }
+            }
+        }
+        #endregion
+
+        #region PanelComboWord
+        private bool isMouseEnter_PanelComboWord = false;
+        private bool isComboWordClick = false;
+        private void pictureBox_ComboWord_MouseEnter(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelComboWord = true;
+            timer_PanelComboWord.Start();
+        }
+        private void pictureBox_ComboWord_MouseLeave(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelComboWord = false;
+            timer_PanelComboWord.Start();
+        }
+        private void pictureBox_ComboWord_Click(object sender, EventArgs e)
+        {
+            if (!isComboWordClick)
+            {
+                ReturnClick(panel_ComboWord);
+                panel_Main.Size = panel_Main.MinimumSize;
+                isComboWordClick = true;
+                //mainComboWord.Visible = true;
+                panel_Main.BackColor = Color.FromArgb(255, 212, 212);
+                timer_MainPanel.Start();
+            }
+        }
+        private void timer_PanelComboWord_Tick(object sender, EventArgs e)
+        {
+            if (isMouseEnter_PanelComboWord)
+            {
+                panel_ComboWord.Width += 10;
+                if (panel_ComboWord.Size == panel_ComboWord.MaximumSize) { timer_PanelComboWord.Stop(); }
+            }
+            else
+            {
+                if (!isComboWordClick)
+                {
+                    panel_ComboWord.Width -= 10;
+                    if (panel_ComboWord.Size == panel_ComboWord.MinimumSize) { timer_PanelComboWord.Stop(); }
+                }
+                else { timer_PanelComboWord.Stop(); }
             }
         }
         #endregion
