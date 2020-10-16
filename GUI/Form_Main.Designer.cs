@@ -39,9 +39,15 @@
             this.panel_Search = new System.Windows.Forms.Panel();
             this.label_Search = new System.Windows.Forms.Label();
             this.timer_MainPanel = new System.Windows.Forms.Timer(this.components);
+            this.panel_Grammar = new System.Windows.Forms.Panel();
+            this.label_Grammar = new System.Windows.Forms.Label();
+            this.pictureBox_Grammar = new System.Windows.Forms.PictureBox();
+            this.timer_PanelGrammar = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
+            this.panel_Grammar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Grammar)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -84,7 +90,7 @@
             this.pictureBox_Search.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Search.InitialImage")));
             this.pictureBox_Search.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Search.Name = "pictureBox_Search";
-            this.pictureBox_Search.Size = new System.Drawing.Size(81, 77);
+            this.pictureBox_Search.Size = new System.Drawing.Size(85, 77);
             this.pictureBox_Search.TabIndex = 0;
             this.pictureBox_Search.TabStop = false;
             this.pictureBox_Search.Click += new System.EventHandler(this.pictureBox_Search_Click);
@@ -98,14 +104,14 @@
             // 
             // panel_Search
             // 
-            this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.panel_Search.Controls.Add(this.label_Search);
             this.panel_Search.Controls.Add(this.pictureBox_Search);
             this.panel_Search.Location = new System.Drawing.Point(0, 74);
             this.panel_Search.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Search.MinimumSize = new System.Drawing.Size(81, 77);
+            this.panel_Search.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Search.Name = "panel_Search";
-            this.panel_Search.Size = new System.Drawing.Size(81, 77);
+            this.panel_Search.Size = new System.Drawing.Size(85, 77);
             this.panel_Search.TabIndex = 6;
             // 
             // label_Search
@@ -124,12 +130,57 @@
             this.timer_MainPanel.Interval = 1;
             this.timer_MainPanel.Tick += new System.EventHandler(this.timer_MainPanel_Tick);
             // 
+            // panel_Grammar
+            // 
+            this.panel_Grammar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(209)))));
+            this.panel_Grammar.Controls.Add(this.label_Grammar);
+            this.panel_Grammar.Controls.Add(this.pictureBox_Grammar);
+            this.panel_Grammar.Location = new System.Drawing.Point(0, 157);
+            this.panel_Grammar.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_Grammar.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_Grammar.Name = "panel_Grammar";
+            this.panel_Grammar.Size = new System.Drawing.Size(85, 77);
+            this.panel_Grammar.TabIndex = 7;
+            // 
+            // label_Grammar
+            // 
+            this.label_Grammar.AutoSize = true;
+            this.label_Grammar.BackColor = System.Drawing.Color.Transparent;
+            this.label_Grammar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_Grammar.Location = new System.Drawing.Point(128, 24);
+            this.label_Grammar.Name = "label_Grammar";
+            this.label_Grammar.Size = new System.Drawing.Size(122, 29);
+            this.label_Grammar.TabIndex = 1;
+            this.label_Grammar.Text = "Ngữ pháp";
+            // 
+            // pictureBox_Grammar
+            // 
+            this.pictureBox_Grammar.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Grammar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_Grammar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Grammar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.Image")));
+            this.pictureBox_Grammar.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.InitialImage")));
+            this.pictureBox_Grammar.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Grammar.Name = "pictureBox_Grammar";
+            this.pictureBox_Grammar.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Grammar.TabIndex = 0;
+            this.pictureBox_Grammar.TabStop = false;
+            this.pictureBox_Grammar.Click += new System.EventHandler(this.pictureBox_Grammar_Click);
+            this.pictureBox_Grammar.MouseEnter += new System.EventHandler(this.pictureBox_Grammar_MouseEnter);
+            this.pictureBox_Grammar.MouseLeave += new System.EventHandler(this.pictureBox_Grammar_MouseLeave);
+            // 
+            // timer_PanelGrammar
+            // 
+            this.timer_PanelGrammar.Interval = 1;
+            this.timer_PanelGrammar.Tick += new System.EventHandler(this.timer_PanelGrammar_Tick);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.panel_Grammar);
             this.Controls.Add(this.panel_Search);
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.panel_Main);
@@ -149,6 +200,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).EndInit();
             this.panel_Search.ResumeLayout(false);
             this.panel_Search.PerformLayout();
+            this.panel_Grammar.ResumeLayout(false);
+            this.panel_Grammar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Grammar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -163,6 +217,10 @@
         private System.Windows.Forms.Panel panel_Search;
         private System.Windows.Forms.Label label_Search;
         private System.Windows.Forms.Timer timer_MainPanel;
+        private System.Windows.Forms.Panel panel_Grammar;
+        private System.Windows.Forms.Label label_Grammar;
+        private System.Windows.Forms.PictureBox pictureBox_Grammar;
+        private System.Windows.Forms.Timer timer_PanelGrammar;
     }
 }
 
