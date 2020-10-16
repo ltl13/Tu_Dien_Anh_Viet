@@ -43,11 +43,25 @@ namespace GUI
             button_Exit.ForeColor = Color.Black;
         }
         #endregion
+
         private void timer_MainPanel_Tick(object sender, EventArgs e)
         {
             panel_Main.Width += 45;
             if (panel_Main.Size == panel_Main.MaximumSize) { timer_MainPanel.Stop(); }
         }
+
+        private void ReturnClick(Panel selected)
+        {
+            isSearchClick = false;
+            isGrammarClick = false;
+            mainSearch.Visible = false;
+
+            timer_PanelSearch.Start();
+            timer_PanelGrammar.Start();
+
+            selected.Size = selected.MaximumSize;
+        }
+
         #region PanelSearch
         private bool isMouseEnter_PanelSearch = false;
         private bool isSearchClick = false;
@@ -65,25 +79,74 @@ namespace GUI
         {
             if (isMouseEnter_PanelSearch)
             {
-                panel_Search.Width += 8;
+                panel_Search.Width += 10;
                 if (panel_Search.Size == panel_Search.MaximumSize) { timer_PanelSearch.Stop(); }
             }
             else
             {
                 if (!isSearchClick)
                 {
-                    panel_Search.Width -= 8;
+                    panel_Search.Width -= 10;
                     if (panel_Search.Size == panel_Search.MinimumSize) { timer_PanelSearch.Stop(); }
                 }
                 else { timer_PanelSearch.Stop(); }
             }
         }
         private void pictureBox_Search_Click(object sender, EventArgs e)
+        {           
+            if (!isSearchClick)
+            {
+                ReturnClick(panel_Search);
+                panel_Main.Size = panel_Main.MinimumSize;
+                isSearchClick = true;
+                mainSearch.Visible = true;
+                panel_Main.BackColor = Color.FromArgb(204, 253, 255);
+                timer_MainPanel.Start();
+            }
+        }
+        #endregion
+
+        #region PanelGrammar
+        private bool isMouseEnter_PanelGrammar = false;
+        private bool isGrammarClick = false;
+        private void pictureBox_Grammar_MouseEnter(object sender, EventArgs e)
         {
-            isSearchClick = true;
-            panel_Main.Size = panel_Main.MinimumSize;
-            panel_Main.BackColor = Color.FromArgb(204, 253, 255);
-            timer_MainPanel.Start();
+            isMouseEnter_PanelGrammar = true;
+            timer_PanelGrammar.Start();
+        }
+        private void pictureBox_Grammar_MouseLeave(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelGrammar = false;
+            timer_PanelGrammar.Start();
+        }
+        private void pictureBox_Grammar_Click(object sender, EventArgs e)
+        {
+            if (!isGrammarClick)
+            {                
+                ReturnClick(panel_Grammar);
+                panel_Main.Size = panel_Main.MinimumSize;
+                isGrammarClick = true;
+                mainSearch.Visible = false;
+                panel_Main.BackColor = Color.FromArgb(253, 255, 209);
+                timer_MainPanel.Start();
+            }
+        }
+        private void timer_PanelGrammar_Tick(object sender, EventArgs e)
+        {
+            if (isMouseEnter_PanelGrammar)
+            {
+                panel_Grammar.Width += 10;
+                if (panel_Grammar.Size == panel_Grammar.MaximumSize) { timer_PanelGrammar.Stop(); }
+            }
+            else
+            {
+                if (!isGrammarClick)
+                {
+                    panel_Grammar.Width -= 10;
+                    if (panel_Grammar.Size == panel_Grammar.MinimumSize) { timer_PanelGrammar.Stop(); }
+                }
+                else { timer_PanelGrammar.Stop(); }
+            }
         }
         #endregion
         /*private void ReColor()
