@@ -37,6 +37,8 @@
             this.pictureBox_Search = new System.Windows.Forms.PictureBox();
             this.timer_PanelSearch = new System.Windows.Forms.Timer(this.components);
             this.panel_Search = new System.Windows.Forms.Panel();
+            this.label_Search = new System.Windows.Forms.Label();
+            this.timer_MainPanel = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -67,12 +69,16 @@
             // 
             this.panel_Main.BackColor = System.Drawing.Color.White;
             this.panel_Main.Location = new System.Drawing.Point(249, 74);
+            this.panel_Main.MaximumSize = new System.Drawing.Size(624, 516);
+            this.panel_Main.MinimumSize = new System.Drawing.Size(0, 516);
             this.panel_Main.Name = "panel_Main";
-            this.panel_Main.Size = new System.Drawing.Size(624, 516);
+            this.panel_Main.Size = new System.Drawing.Size(0, 516);
             this.panel_Main.TabIndex = 5;
             // 
             // pictureBox_Search
             // 
+            this.pictureBox_Search.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox_Search.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox_Search.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Search.Image")));
             this.pictureBox_Search.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Search.InitialImage")));
@@ -81,6 +87,7 @@
             this.pictureBox_Search.Size = new System.Drawing.Size(81, 77);
             this.pictureBox_Search.TabIndex = 0;
             this.pictureBox_Search.TabStop = false;
+            this.pictureBox_Search.Click += new System.EventHandler(this.pictureBox_Search_Click);
             this.pictureBox_Search.MouseEnter += new System.EventHandler(this.pictureBox_Search_MouseEnter);
             this.pictureBox_Search.MouseLeave += new System.EventHandler(this.pictureBox_Search_MouseLeave);
             // 
@@ -92,13 +99,30 @@
             // panel_Search
             // 
             this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
+            this.panel_Search.Controls.Add(this.label_Search);
             this.panel_Search.Controls.Add(this.pictureBox_Search);
-            this.panel_Search.Location = new System.Drawing.Point(23, 74);
-            this.panel_Search.MaximumSize = new System.Drawing.Size(227, 77);
+            this.panel_Search.Location = new System.Drawing.Point(0, 74);
+            this.panel_Search.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Search.MinimumSize = new System.Drawing.Size(81, 77);
             this.panel_Search.Name = "panel_Search";
             this.panel_Search.Size = new System.Drawing.Size(81, 77);
             this.panel_Search.TabIndex = 6;
+            // 
+            // label_Search
+            // 
+            this.label_Search.AutoSize = true;
+            this.label_Search.BackColor = System.Drawing.Color.Transparent;
+            this.label_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_Search.Location = new System.Drawing.Point(128, 24);
+            this.label_Search.Name = "label_Search";
+            this.label_Search.Size = new System.Drawing.Size(78, 29);
+            this.label_Search.TabIndex = 1;
+            this.label_Search.Text = "Tra từ";
+            // 
+            // timer_MainPanel
+            // 
+            this.timer_MainPanel.Interval = 1;
+            this.timer_MainPanel.Tick += new System.EventHandler(this.timer_MainPanel_Tick);
             // 
             // Form_Main
             // 
@@ -124,6 +148,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).EndInit();
             this.panel_Search.ResumeLayout(false);
+            this.panel_Search.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -136,6 +161,8 @@
         private System.Windows.Forms.PictureBox pictureBox_Search;
         private System.Windows.Forms.Timer timer_PanelSearch;
         private System.Windows.Forms.Panel panel_Search;
+        private System.Windows.Forms.Label label_Search;
+        private System.Windows.Forms.Timer timer_MainPanel;
     }
 }
 
