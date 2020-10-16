@@ -125,6 +125,9 @@
             this.panel_Search.Name = "panel_Search";
             this.panel_Search.Size = new System.Drawing.Size(85, 77);
             this.panel_Search.TabIndex = 6;
+            this.panel_Search.Click += new System.EventHandler(this.panel_Search_Click);
+            this.panel_Search.MouseEnter += new System.EventHandler(this.panel_Search_MouseEnter);
+            this.panel_Search.MouseLeave += new System.EventHandler(this.panel_Search_MouseLeave);
             // 
             // label_Search
             // 
@@ -136,6 +139,8 @@
             this.label_Search.Size = new System.Drawing.Size(78, 29);
             this.label_Search.TabIndex = 1;
             this.label_Search.Text = "Tra từ";
+            this.label_Search.Click += new System.EventHandler(this.label_Search_Click);
+            this.label_Search.MouseEnter += new System.EventHandler(this.label_Search_MouseEnter);
             // 
             // timer_MainPanel
             // 
@@ -153,6 +158,9 @@
             this.panel_Grammar.Name = "panel_Grammar";
             this.panel_Grammar.Size = new System.Drawing.Size(85, 77);
             this.panel_Grammar.TabIndex = 7;
+            this.panel_Grammar.Click += new System.EventHandler(this.panel_Grammar_Click);
+            this.panel_Grammar.MouseEnter += new System.EventHandler(this.panel_Grammar_MouseEnter);
+            this.panel_Grammar.MouseLeave += new System.EventHandler(this.panel_Grammar_MouseLeave);
             // 
             // label_Grammar
             // 
@@ -164,6 +172,8 @@
             this.label_Grammar.Size = new System.Drawing.Size(122, 29);
             this.label_Grammar.TabIndex = 1;
             this.label_Grammar.Text = "Ngữ pháp";
+            this.label_Grammar.Click += new System.EventHandler(this.label_Grammar_Click);
+            this.label_Grammar.MouseEnter += new System.EventHandler(this.label_Grammar_MouseEnter);
             // 
             // pictureBox_Grammar
             // 
@@ -197,6 +207,9 @@
             this.panel_ComboWord.Name = "panel_ComboWord";
             this.panel_ComboWord.Size = new System.Drawing.Size(85, 77);
             this.panel_ComboWord.TabIndex = 8;
+            this.panel_ComboWord.Click += new System.EventHandler(this.panel_ComboWord_Click);
+            this.panel_ComboWord.MouseEnter += new System.EventHandler(this.panel_ComboWord_MouseEnter);
+            this.panel_ComboWord.MouseLeave += new System.EventHandler(this.panel_ComboWord_MouseLeave);
             // 
             // label_ComboWord
             // 
@@ -208,6 +221,8 @@
             this.label_ComboWord.Size = new System.Drawing.Size(134, 29);
             this.label_ComboWord.TabIndex = 1;
             this.label_ComboWord.Text = "Bộ từ vựng";
+            this.label_ComboWord.Click += new System.EventHandler(this.label_ComboWord_Click);
+            this.label_ComboWord.MouseEnter += new System.EventHandler(this.label_ComboWord_MouseEnter);
             // 
             // pictureBox_ComboWord
             // 
@@ -241,6 +256,7 @@
             this.panel_Flashcard.Name = "panel_Flashcard";
             this.panel_Flashcard.Size = new System.Drawing.Size(85, 77);
             this.panel_Flashcard.TabIndex = 9;
+            this.panel_Flashcard.Click += new System.EventHandler(this.panel_Flashcard_Click);
             this.panel_Flashcard.MouseEnter += new System.EventHandler(this.panel_Flashcard_MouseEnter);
             this.panel_Flashcard.MouseLeave += new System.EventHandler(this.panel_Flashcard_MouseLeave);
             // 
@@ -254,6 +270,8 @@
             this.label_Flashcard.Size = new System.Drawing.Size(137, 29);
             this.label_Flashcard.TabIndex = 1;
             this.label_Flashcard.Text = "Flashcards";
+            this.label_Flashcard.Click += new System.EventHandler(this.label_Flashcard_Click);
+            this.label_Flashcard.MouseEnter += new System.EventHandler(this.label_Flashcard_MouseEnter);
             // 
             // pictureBox_Flashcard
             // 
