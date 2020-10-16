@@ -1,13 +1,6 @@
 ﻿using DAO;
 using DTO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GUI {
@@ -33,13 +26,14 @@ namespace GUI {
             }
 
             if (Login(userName, passWord)) {
-                tbPassword.Text = string.Empty;
-                tbUsername.Text = string.Empty;               
-                tbUsername.Focus();
-                Form_Main fMain = new Form_Main();
-                fMain.Owner = this;
+                AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);           
+                Form_Main fMain = new Form_Main(loginAccount);
                 this.Hide();
-                fMain.Show();
+                fMain.ShowDialog();
+                tbPassword.Text = string.Empty;
+                tbUsername.Text = string.Empty;
+                tbUsername.Select();
+                this.Show();
             }
             else {
                 tbUsername.Text = string.Empty;

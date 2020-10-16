@@ -153,9 +153,9 @@
             this.tbPassword.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.Location = new System.Drawing.Point(42, 103);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '•';
             this.tbPassword.Size = new System.Drawing.Size(216, 22);
             this.tbPassword.TabIndex = 1;
+            this.tbPassword.UseSystemPasswordChar = true;
             this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             this.tbPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tbPassword_MouseDown);
             // 
@@ -177,9 +177,9 @@
             this.tbConfirm.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbConfirm.Location = new System.Drawing.Point(42, 168);
             this.tbConfirm.Name = "tbConfirm";
-            this.tbConfirm.PasswordChar = '•';
             this.tbConfirm.Size = new System.Drawing.Size(216, 22);
             this.tbConfirm.TabIndex = 2;
+            this.tbConfirm.UseSystemPasswordChar = true;
             // 
             // lbName
             // 

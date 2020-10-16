@@ -58,6 +58,7 @@
             this.panel_Exam = new System.Windows.Forms.Panel();
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
+            this.btLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -392,12 +393,23 @@
             this.pictureBox_Exam.TabIndex = 0;
             this.pictureBox_Exam.TabStop = false;
             // 
+            // btLogout
+            // 
+            this.btLogout.Location = new System.Drawing.Point(653, 559);
+            this.btLogout.Name = "btLogout";
+            this.btLogout.Size = new System.Drawing.Size(120, 30);
+            this.btLogout.TabIndex = 12;
+            this.btLogout.Text = "Logout";
+            this.btLogout.UseVisualStyleBackColor = true;
+            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.btLogout);
             this.Controls.Add(this.panel_Exam);
             this.Controls.Add(this.panel_Read);
             this.Controls.Add(this.panel_Flashcard);
@@ -471,6 +483,7 @@
         private System.Windows.Forms.Panel panel_Exam;
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
+        private System.Windows.Forms.Button btLogout;
     }
 }
 

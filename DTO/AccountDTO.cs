@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 
 namespace DTO {
-    public class AccountDTO {
-        private string id;
-        private string name;
-        private string info;
-        private DateTime DateOfBirth;
-        private string gender;
+    public class AccountDTO {       
+        private string userName;
+        private string displayName;
+        private string passWord;
+        private int type;
 
-        public string Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
-        public string Info { get => info; set => info = value; }
-        public DateTime DateOfBirth1 { get => DateOfBirth; set => DateOfBirth = value; }
-        public string Gender { get => gender; set => gender = value; }
+        public string UserName { get => userName; set => userName = value; }
+        public string DisplayName { get => displayName; set => displayName = value; }
+        public string PassWord { get => passWord; set => passWord = value; }
+        public int Type { get => type; set => type = value; }
 
-        public AccountDTO(string id, string name, string info, DateTime dob, string gender) {
-            this.id = id;
-            this.name = name;
-            this.info = info;
-            this.DateOfBirth = dob;
-            this.gender = gender;
+        public AccountDTO(string userName, string displayName, int type, string passWord = null) {
+            this.userName = userName;
+            this.displayName = displayName;
+            this.type = type;
+            this.passWord = passWord;
+        }
+
+        public AccountDTO(DataRow row) {
+            this.userName = row["UserName"].ToString();
+            this.displayName = row["DisplayName"].ToString();
+            this.type = (int)row["Type"];
+            this.passWord = row["PassWord"].ToString();
         }
     }
 }
