@@ -25,7 +25,7 @@ namespace GUI
 
             panel_Main.Controls.Add(mainSearch);
 
-            mainSearch.Visible = true;
+            pictureBox_Search_Click(null, null);
         }
         #region ButtonExit
         private void button_Exit_Click(object sender, EventArgs e)
@@ -56,6 +56,7 @@ namespace GUI
             isGrammarClick = false;
             isComboWordClick = false;
             isFlashcardClick = false;
+            isReadClick = false;
 
             mainSearch.Visible = false;
 
@@ -63,6 +64,7 @@ namespace GUI
             timer_PanelGrammar.Start();
             timer_PanelComboWord.Start();
             timer_PanelFlashcard.Start();
+            timer_PanelRead.Start();
 
             selected.Size = selected.MaximumSize;
         }
@@ -279,7 +281,7 @@ namespace GUI
                 ReturnClick(panel_Flashcard);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isFlashcardClick = true;
-                //mainComboWord.Visible = true;
+                //mainFlashcard.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(219, 255, 212);
                 timer_MainPanel.Start();
             }
@@ -320,7 +322,71 @@ namespace GUI
         private void label_Flashcard_Click(object sender, EventArgs e)
         {
             pictureBox_Flashcard_Click(null, null);
-        }        
+        }
         #endregion
+
+        #region PanelRead
+        private bool isMouseEnter_PanelRead = false;
+        private bool isReadClick = false;
+        private void timer_PanelRead_Tick(object sender, EventArgs e)
+        {
+            if (isMouseEnter_PanelRead)
+            {
+                panel_Read.Width += 10;
+                if (panel_Read.Size == panel_Read.MaximumSize) { timer_PanelRead.Stop(); }
+            }
+            else
+            {
+                if (!isReadClick)
+                {
+                    panel_Read.Width -= 10;
+                    if (panel_Read.Size == panel_Read.MinimumSize) { timer_PanelRead.Stop(); }
+                }
+                else { timer_PanelRead.Stop(); }
+            }
+        }
+        private void pictureBox_Read_Click(object sender, EventArgs e)
+        {
+            if (!isReadClick)
+            {
+                ReturnClick(panel_Read);
+                panel_Main.Size = panel_Main.MinimumSize;
+                isReadClick = true;
+                //mainRead.Visible = true;
+                panel_Main.BackColor = Color.FromArgb(226, 219, 255);
+                timer_MainPanel.Start();
+            }
+        }
+        private void pictureBox_Read_MouseEnter(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelRead = true;
+            timer_PanelRead.Start();
+        }
+        private void pictureBox_Read_MouseLeave(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelRead = false;
+            timer_PanelRead.Start();
+        }
+        private void panel_Read_Click(object sender, EventArgs e)
+        {
+            pictureBox_Read_Click(null, null);
+        }
+        private void panel_Read_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox_Read_MouseEnter(null, null);
+        }
+        private void panel_Read_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox_Read_MouseLeave(null, null);
+        }
+        private void label_Read_Click(object sender, EventArgs e)
+        {
+            pictureBox_Read_Click(null, null);
+        }
+        private void label_Read_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox_Read_MouseEnter(null, null);
+        }
+        #endregion        
     }
 }
