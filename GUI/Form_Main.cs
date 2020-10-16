@@ -15,14 +15,16 @@ namespace GUI
     {
         private UserControl mainSearch;
         private AccountDTO loginAccount;
+        Form father;
 
         public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
 
-        public Form_Main(AccountDTO loginAccount)
+        public Form_Main(AccountDTO loginAccount, Form login)
         {
             InitializeComponent();
 
             this.loginAccount = loginAccount;
+            father = login;
 
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
@@ -35,6 +37,7 @@ namespace GUI
         #region ButtonExit
         private void button_Exit_Click(object sender, EventArgs e)
         {
+            father.Show();
             this.Close();
         }
         private void button_Exit_MouseEnter(object sender, EventArgs e)
@@ -394,9 +397,5 @@ namespace GUI
             pictureBox_Read_MouseEnter(null, null);
         }
         #endregion
-
-        private void btLogout_Click(object sender, EventArgs e) {
-            this.Close();
-        }
     }
 }

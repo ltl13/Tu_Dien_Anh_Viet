@@ -27,13 +27,12 @@ namespace GUI {
 
             if (Login(userName, passWord)) {
                 AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);           
-                Form_Main fMain = new Form_Main(loginAccount);
+                Form_Main fMain = new Form_Main(loginAccount, this);
+                fMain.Show();
                 this.Hide();
-                fMain.ShowDialog();
                 tbPassword.Text = string.Empty;
                 tbUsername.Text = string.Empty;
                 tbUsername.Select();
-                this.Show();
             }
             else {
                 tbUsername.Text = string.Empty;
@@ -46,7 +45,7 @@ namespace GUI {
         private void lbCreateNewAccount_Click(object sender, EventArgs e) {          
             tbUsername.Text = string.Empty;
             tbPassword.Text = string.Empty;
-            Form_Signup fSignup = new Form_Signup();
+            Form_Signup fSignup = new Form_Signup(this);
             fSignup.Owner = this;
             this.Hide();
             fSignup.Show();
