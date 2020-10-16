@@ -575,6 +575,9 @@
         TZVy/2Hgzdf+gTZ1qv2HofRH7KlT+h8GKP0DbaZ2DQb/ADfyigA3fd9FAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="timer_PanelExam.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>387, 27</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>53</value>
   </metadata>

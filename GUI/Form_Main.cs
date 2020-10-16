@@ -57,6 +57,7 @@ namespace GUI
             isComboWordClick = false;
             isFlashcardClick = false;
             isReadClick = false;
+            isExamClick = false;
 
             mainSearch.Visible = false;
 
@@ -65,6 +66,7 @@ namespace GUI
             timer_PanelComboWord.Start();
             timer_PanelFlashcard.Start();
             timer_PanelRead.Start();
+            timer_PanelExam.Start();
 
             selected.Size = selected.MaximumSize;
         }
@@ -387,6 +389,70 @@ namespace GUI
         {
             pictureBox_Read_MouseEnter(null, null);
         }
-        #endregion        
+        #endregion
+
+        #region PanelExam
+        private bool isMouseEnter_PanelExam = false;
+        private bool isExamClick = false;
+        private void timer_PanelExam_Tick(object sender, EventArgs e)
+        {
+            if (isMouseEnter_PanelExam)
+            {
+                panel_Exam.Width += 10;
+                if (panel_Exam.Size == panel_Exam.MaximumSize) { timer_PanelExam.Stop(); }
+            }
+            else
+            {
+                if (!isExamClick)
+                {
+                    panel_Exam.Width -= 10;
+                    if (panel_Exam.Size == panel_Exam.MinimumSize) { timer_PanelExam.Stop(); }
+                }
+                else { timer_PanelExam.Stop(); }
+            }
+        }
+        private void pictureBox_Exam_Click(object sender, EventArgs e)
+        {
+            if (!isExamClick)
+            {
+                ReturnClick(panel_Exam);
+                panel_Main.Size = panel_Main.MinimumSize;
+                isExamClick = true;
+                //mainRead.Visible = true;
+                panel_Main.BackColor = Color.FromArgb(255, 227, 255);
+                timer_MainPanel.Start();
+            }
+        }
+        private void pictureBox_Exam_MouseEnter(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelExam = true;
+            timer_PanelExam.Start();
+        }
+        private void pictureBox_Exam_MouseLeave(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelExam = false;
+            timer_PanelExam.Start();
+        }
+        private void panel_Exam_Click(object sender, EventArgs e)
+        {
+            pictureBox_Exam_Click(null, null);
+        }
+        private void panel_Exam_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox_Exam_MouseEnter(null, null);
+        }
+        private void panel_Exam_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox_Exam_MouseLeave(null, null);
+        }
+        private void label_Exam_Click(object sender, EventArgs e)
+        {
+            pictureBox_Exam_Click(null, null);
+        }
+        private void label_Exam_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox_Exam_MouseEnter(null, null);
+        }
+        #endregion
     }
 }
