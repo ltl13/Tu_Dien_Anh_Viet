@@ -51,6 +51,13 @@
             this.label_Flashcard = new System.Windows.Forms.Label();
             this.pictureBox_Flashcard = new System.Windows.Forms.PictureBox();
             this.timer_PanelFlashcard = new System.Windows.Forms.Timer(this.components);
+            this.panel_Read = new System.Windows.Forms.Panel();
+            this.label_Read = new System.Windows.Forms.Label();
+            this.pictureBox_Read = new System.Windows.Forms.PictureBox();
+            this.timer_PanelRead = new System.Windows.Forms.Timer(this.components);
+            this.panel_Exam = new System.Windows.Forms.Panel();
+            this.label_Exam = new System.Windows.Forms.Label();
+            this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -60,6 +67,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).BeginInit();
             this.panel_Flashcard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).BeginInit();
+            this.panel_Read.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Read)).BeginInit();
+            this.panel_Exam.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -294,12 +305,99 @@
             this.timer_PanelFlashcard.Interval = 1;
             this.timer_PanelFlashcard.Tick += new System.EventHandler(this.timer_PanelFlashcard_Tick);
             // 
+            // panel_Read
+            // 
+            this.panel_Read.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this.panel_Read.Controls.Add(this.label_Read);
+            this.panel_Read.Controls.Add(this.pictureBox_Read);
+            this.panel_Read.Location = new System.Drawing.Point(0, 406);
+            this.panel_Read.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_Read.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_Read.Name = "panel_Read";
+            this.panel_Read.Size = new System.Drawing.Size(85, 77);
+            this.panel_Read.TabIndex = 10;
+            this.panel_Read.Click += new System.EventHandler(this.panel_Read_Click);
+            this.panel_Read.MouseEnter += new System.EventHandler(this.panel_Read_MouseEnter);
+            this.panel_Read.MouseLeave += new System.EventHandler(this.panel_Read_MouseLeave);
+            // 
+            // label_Read
+            // 
+            this.label_Read.AutoSize = true;
+            this.label_Read.BackColor = System.Drawing.Color.Transparent;
+            this.label_Read.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_Read.Location = new System.Drawing.Point(118, 24);
+            this.label_Read.Name = "label_Read";
+            this.label_Read.Size = new System.Drawing.Size(98, 29);
+            this.label_Read.TabIndex = 1;
+            this.label_Read.Text = "Bài đọc";
+            this.label_Read.Click += new System.EventHandler(this.label_Read_Click);
+            this.label_Read.MouseEnter += new System.EventHandler(this.label_Read_MouseEnter);
+            // 
+            // pictureBox_Read
+            // 
+            this.pictureBox_Read.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Read.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_Read.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Read.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Read.Image")));
+            this.pictureBox_Read.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Read.InitialImage")));
+            this.pictureBox_Read.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Read.Name = "pictureBox_Read";
+            this.pictureBox_Read.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Read.TabIndex = 0;
+            this.pictureBox_Read.TabStop = false;
+            this.pictureBox_Read.Click += new System.EventHandler(this.pictureBox_Read_Click);
+            this.pictureBox_Read.MouseEnter += new System.EventHandler(this.pictureBox_Read_MouseEnter);
+            this.pictureBox_Read.MouseLeave += new System.EventHandler(this.pictureBox_Read_MouseLeave);
+            // 
+            // timer_PanelRead
+            // 
+            this.timer_PanelRead.Interval = 1;
+            this.timer_PanelRead.Tick += new System.EventHandler(this.timer_PanelRead_Tick);
+            // 
+            // panel_Exam
+            // 
+            this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.panel_Exam.Controls.Add(this.label_Exam);
+            this.panel_Exam.Controls.Add(this.pictureBox_Exam);
+            this.panel_Exam.Location = new System.Drawing.Point(0, 489);
+            this.panel_Exam.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_Exam.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_Exam.Name = "panel_Exam";
+            this.panel_Exam.Size = new System.Drawing.Size(85, 77);
+            this.panel_Exam.TabIndex = 11;
+            // 
+            // label_Exam
+            // 
+            this.label_Exam.AutoSize = true;
+            this.label_Exam.BackColor = System.Drawing.Color.Transparent;
+            this.label_Exam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_Exam.Location = new System.Drawing.Point(118, 24);
+            this.label_Exam.Name = "label_Exam";
+            this.label_Exam.Size = new System.Drawing.Size(124, 29);
+            this.label_Exam.TabIndex = 1;
+            this.label_Exam.Text = "Luyện tập";
+            // 
+            // pictureBox_Exam
+            // 
+            this.pictureBox_Exam.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Exam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_Exam.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Exam.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Exam.Image")));
+            this.pictureBox_Exam.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Exam.InitialImage")));
+            this.pictureBox_Exam.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Exam.Name = "pictureBox_Exam";
+            this.pictureBox_Exam.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Exam.TabIndex = 0;
+            this.pictureBox_Exam.TabStop = false;
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.panel_Exam);
+            this.Controls.Add(this.panel_Read);
             this.Controls.Add(this.panel_Flashcard);
             this.Controls.Add(this.panel_ComboWord);
             this.Controls.Add(this.panel_Grammar);
@@ -331,6 +429,12 @@
             this.panel_Flashcard.ResumeLayout(false);
             this.panel_Flashcard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).EndInit();
+            this.panel_Read.ResumeLayout(false);
+            this.panel_Read.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Read)).EndInit();
+            this.panel_Exam.ResumeLayout(false);
+            this.panel_Exam.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,6 +461,13 @@
         private System.Windows.Forms.Label label_Flashcard;
         private System.Windows.Forms.PictureBox pictureBox_Flashcard;
         private System.Windows.Forms.Timer timer_PanelFlashcard;
+        private System.Windows.Forms.Panel panel_Read;
+        private System.Windows.Forms.Label label_Read;
+        private System.Windows.Forms.PictureBox pictureBox_Read;
+        private System.Windows.Forms.Timer timer_PanelRead;
+        private System.Windows.Forms.Panel panel_Exam;
+        private System.Windows.Forms.Label label_Exam;
+        private System.Windows.Forms.PictureBox pictureBox_Exam;
     }
 }
 
