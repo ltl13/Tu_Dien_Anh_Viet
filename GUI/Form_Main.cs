@@ -43,10 +43,14 @@ namespace GUI
             button_Exit.ForeColor = Color.Black;
         }
         #endregion
-
+        private void timer_MainPanel_Tick(object sender, EventArgs e)
+        {
+            panel_Main.Width += 45;
+            if (panel_Main.Size == panel_Main.MaximumSize) { timer_MainPanel.Stop(); }
+        }
         #region PanelSearch
-        private bool isMouseEnter_PanelSearch = false;      
-
+        private bool isMouseEnter_PanelSearch = false;
+        private bool isSearchClick = false;
         private void pictureBox_Search_MouseEnter(object sender, EventArgs e)
         {
             isMouseEnter_PanelSearch = true;
@@ -61,14 +65,25 @@ namespace GUI
         {
             if (isMouseEnter_PanelSearch)
             {
-                panel_Search.Width += 5;
+                panel_Search.Width += 8;
                 if (panel_Search.Size == panel_Search.MaximumSize) { timer_PanelSearch.Stop(); }
             }
             else
             {
-                panel_Search.Width -= 5;
-                if (panel_Search.Size == panel_Search.MinimumSize) { timer_PanelSearch.Stop(); }
+                if (!isSearchClick)
+                {
+                    panel_Search.Width -= 8;
+                    if (panel_Search.Size == panel_Search.MinimumSize) { timer_PanelSearch.Stop(); }
+                }
+                else { timer_PanelSearch.Stop(); }
             }
+        }
+        private void pictureBox_Search_Click(object sender, EventArgs e)
+        {
+            isSearchClick = true;
+            panel_Main.Size = panel_Main.MinimumSize;
+            panel_Main.BackColor = Color.FromArgb(204, 253, 255);
+            timer_MainPanel.Start();
         }
         #endregion
         /*private void ReColor()
