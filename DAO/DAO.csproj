@@ -74,7 +74,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="resources\data.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -84,9 +83,6 @@
       <Project>{211906b6-5022-4dbd-8a71-844aae635955}</Project>
       <Name>DTO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="resources\user.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
