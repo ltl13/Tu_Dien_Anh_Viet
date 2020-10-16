@@ -58,6 +58,7 @@
             this.panel_Exam = new System.Windows.Forms.Panel();
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
+            this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -367,6 +368,9 @@
             this.panel_Exam.Name = "panel_Exam";
             this.panel_Exam.Size = new System.Drawing.Size(85, 77);
             this.panel_Exam.TabIndex = 11;
+            this.panel_Exam.Click += new System.EventHandler(this.panel_Exam_Click);
+            this.panel_Exam.MouseEnter += new System.EventHandler(this.panel_Exam_MouseEnter);
+            this.panel_Exam.MouseLeave += new System.EventHandler(this.panel_Exam_MouseLeave);
             // 
             // label_Exam
             // 
@@ -378,6 +382,8 @@
             this.label_Exam.Size = new System.Drawing.Size(124, 29);
             this.label_Exam.TabIndex = 1;
             this.label_Exam.Text = "Luyện tập";
+            this.label_Exam.Click += new System.EventHandler(this.label_Exam_Click);
+            this.label_Exam.MouseEnter += new System.EventHandler(this.label_Exam_MouseEnter);
             // 
             // pictureBox_Exam
             // 
@@ -391,6 +397,14 @@
             this.pictureBox_Exam.Size = new System.Drawing.Size(85, 77);
             this.pictureBox_Exam.TabIndex = 0;
             this.pictureBox_Exam.TabStop = false;
+            this.pictureBox_Exam.Click += new System.EventHandler(this.pictureBox_Exam_Click);
+            this.pictureBox_Exam.MouseEnter += new System.EventHandler(this.pictureBox_Exam_MouseEnter);
+            this.pictureBox_Exam.MouseLeave += new System.EventHandler(this.pictureBox_Exam_MouseLeave);
+            // 
+            // timer_PanelExam
+            // 
+            this.timer_PanelExam.Interval = 1;
+            this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
             // 
             // Form_Main
             // 
@@ -471,6 +485,7 @@
         private System.Windows.Forms.Panel panel_Exam;
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
+        private System.Windows.Forms.Timer timer_PanelExam;
     }
 }
 
