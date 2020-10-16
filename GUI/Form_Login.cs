@@ -33,6 +33,7 @@ namespace GUI {
             }
 
             if (Login(userName, passWord)) {
+<<<<<<< Updated upstream
                 tbUsername.TextChanged -= tbUsername_TextChanged;
                 tbUsername.Text = string.Empty;
                 tbPassword.Text = string.Empty;
@@ -42,6 +43,15 @@ namespace GUI {
                 fMain.Owner = this;
                 this.Hide();
                 fMain.Show();
+=======
+                AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);           
+                Form_Main fMain = new Form_Main(loginAccount, this);
+                fMain.Show();
+                this.Hide();
+                tbPassword.Text = string.Empty;
+                tbUsername.Text = string.Empty;
+                tbUsername.Select();
+>>>>>>> Stashed changes
             }
             else {
                 tbUsername.Text = string.Empty;
@@ -54,7 +64,7 @@ namespace GUI {
         private void lbCreateNewAccount_Click(object sender, EventArgs e) {          
             tbUsername.Text = string.Empty;
             tbPassword.Text = string.Empty;
-            Form_Signup fSignup = new Form_Signup();
+            Form_Signup fSignup = new Form_Signup(this);
             fSignup.Owner = this;
             this.Hide();
             fSignup.Show();

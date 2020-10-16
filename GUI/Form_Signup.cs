@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace GUI {
     public partial class Form_Signup : Form {
-        public Form_Signup() {
+        public Form_Signup(Form login) {
             InitializeComponent();
             this.AcceptButton = btLogin;
             this.CancelButton = btCancel;
+            father = login;
         }
-
+        private Form father;
         private void btCancel_Click(object sender, EventArgs e) {
-            var owner = this.Owner;
+            father.Show();
             this.Close();
-            owner.Show();
         }
 
         /* ----- Đăng ký ----- */
@@ -46,6 +46,7 @@ namespace GUI {
                 return;
             }
 
+<<<<<<< Updated upstream
             if (Register(userName, displayName, type, passWord)) {
                 tbUsername.Text = string.Empty;
                 tbPassword.Text = string.Empty;
@@ -58,6 +59,33 @@ namespace GUI {
                 tbUsername.Text = string.Empty;
                 tbPassword.Text = string.Empty;
                 MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
+=======
+            if (displayName.Length != 0) {
+                if (Register(userName, displayName, passWord)) {
+                    AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
+                    Form_Main fMain = new Form_Main(loginAccount, father);
+                    fMain.Show();
+                    this.Close();
+                }
+                else {
+                    tbUsername.Text = string.Empty;
+                    tbPassword.Text = string.Empty;
+                    MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
+                }
+            }
+            else {
+                if (Register(userName, passWord)) {
+                    AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
+                    Form_Main fMain = new Form_Main(loginAccount, father);
+                    fMain.Show();
+                    this.Close();
+                }
+                else {
+                    tbUsername.Text = string.Empty;
+                    tbPassword.Text = string.Empty;
+                    MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
+                }
+>>>>>>> Stashed changes
             }
         }
         /* ------------------- */

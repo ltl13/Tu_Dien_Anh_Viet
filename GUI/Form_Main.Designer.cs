@@ -58,7 +58,10 @@
             this.panel_Exam = new System.Windows.Forms.Panel();
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
+<<<<<<< Updated upstream
             this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
+=======
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -401,11 +404,14 @@
             this.pictureBox_Exam.MouseEnter += new System.EventHandler(this.pictureBox_Exam_MouseEnter);
             this.pictureBox_Exam.MouseLeave += new System.EventHandler(this.pictureBox_Exam_MouseLeave);
             // 
+<<<<<<< Updated upstream
             // timer_PanelExam
             // 
             this.timer_PanelExam.Interval = 1;
             this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
             // 
+=======
+>>>>>>> Stashed changes
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -485,7 +491,10 @@
         private System.Windows.Forms.Panel panel_Exam;
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
+<<<<<<< Updated upstream
         private System.Windows.Forms.Timer timer_PanelExam;
+=======
+>>>>>>> Stashed changes
     }
 }
 
