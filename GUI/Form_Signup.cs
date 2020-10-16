@@ -1,12 +1,6 @@
 ﻿using DAO;
+using DTO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GUI {
@@ -24,6 +18,14 @@ namespace GUI {
         }
 
         /* ----- Đăng ký ----- */
+        private bool Register(string userName, string passWord) {
+            return AccountDAO.Instance.Register(userName, passWord);
+        }
+
+        private bool Register(string userName, string displayName, string passWord) {
+            return AccountDAO.Instance.Register(userName, displayName, passWord);
+        }
+
         private bool Register(string userName, string displayName, int type, string passWord) {
             return AccountDAO.Instance.Register(userName, displayName, type, passWord);
         }
@@ -33,9 +35,8 @@ namespace GUI {
             string passWord = tbPassword.Text;
             string confirm = tbConfirm.Text;
             string displayName = tbName.Text;
-            int type = 1;
 
-            if (userName.Length == 0 || passWord.Length == 0 || confirm.Length == 0 || displayName.Length == 0) {
+            if (userName.Length == 0 || passWord.Length == 0 || confirm.Length == 0) {
                 MessageBox.Show("Không được bỏ trống!", "Thông báo");
                 return;
             }
@@ -46,18 +47,31 @@ namespace GUI {
                 return;
             }
 
-            if (Register(userName, displayName, type, passWord)) {
-                tbUsername.Text = string.Empty;
-                tbPassword.Text = string.Empty;
-                Form_Main fMain = new Form_Main();
-                fMain.Owner = this;
-                this.Hide();
-                fMain.Show();
+            if (displayName.Length != 0) {
+                if (Register(userName, displayName, passWord)) {
+                    AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
+                    Form_Main fMain = new Form_Main(loginAccount);
+                    this.Close();
+                    fMain.Show();
+                }
+                else {
+                    tbUsername.Text = string.Empty;
+                    tbPassword.Text = string.Empty;
+                    MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
+                }
             }
             else {
-                tbUsername.Text = string.Empty;
-                tbPassword.Text = string.Empty;
-                MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
+                if (Register(userName, passWord)) {
+                    AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
+                    Form_Main fMain = new Form_Main(loginAccount);
+                    this.Close();
+                    fMain.Show();
+                }
+                else {
+                    tbUsername.Text = string.Empty;
+                    tbPassword.Text = string.Empty;
+                    MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
+                }
             }
         }
         /* ------------------- */

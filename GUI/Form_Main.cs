@@ -14,10 +14,15 @@ namespace GUI
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
         private UserControl mainSearch;
+        private AccountDTO loginAccount;
 
-        public Form_Main()
+        public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
+
+        public Form_Main(AccountDTO loginAccount)
         {
             InitializeComponent();
+
+            this.loginAccount = loginAccount;
 
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
@@ -328,6 +333,7 @@ namespace GUI
         #region PanelRead
         private bool isMouseEnter_PanelRead = false;
         private bool isReadClick = false;
+
         private void timer_PanelRead_Tick(object sender, EventArgs e)
         {
             if (isMouseEnter_PanelRead)
@@ -387,6 +393,10 @@ namespace GUI
         {
             pictureBox_Read_MouseEnter(null, null);
         }
-        #endregion        
+        #endregion
+
+        private void btLogout_Click(object sender, EventArgs e) {
+            this.Close();
+        }
     }
 }
