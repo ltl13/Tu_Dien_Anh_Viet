@@ -33,11 +33,9 @@ namespace GUI {
             }
 
             if (Login(userName, passWord)) {
-                tbUsername.TextChanged -= tbUsername_TextChanged;
-                tbUsername.Text = string.Empty;
                 tbPassword.Text = string.Empty;
+                tbUsername.Text = string.Empty;               
                 tbUsername.Focus();
-                tbUsername.TextChanged += tbUsername_TextChanged;
                 Form_Main fMain = new Form_Main();
                 fMain.Owner = this;
                 this.Hide();
