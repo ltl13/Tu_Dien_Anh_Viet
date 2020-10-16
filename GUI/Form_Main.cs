@@ -55,12 +55,14 @@ namespace GUI
             isSearchClick = false;
             isGrammarClick = false;
             isComboWordClick = false;
+            isFlashcardClick = false;
 
             mainSearch.Visible = false;
 
             timer_PanelSearch.Start();
             timer_PanelGrammar.Start();
             timer_PanelComboWord.Start();
+            timer_PanelFlashcard.Start();
 
             selected.Size = selected.MaximumSize;
         }
@@ -174,7 +176,7 @@ namespace GUI
                 panel_Main.Size = panel_Main.MinimumSize;
                 isComboWordClick = true;
                 //mainComboWord.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(255, 212, 212);
+                panel_Main.BackColor = Color.FromArgb(255, 223, 212);
                 timer_MainPanel.Start();
             }
         }
@@ -194,6 +196,58 @@ namespace GUI
                 }
                 else { timer_PanelComboWord.Stop(); }
             }
+        }
+        #endregion
+
+        #region PanelFlashcards
+        private bool isMouseEnter_PanelFlashcard = false;
+        private bool isFlashcardClick = false;
+        private void pictureBox_Flashcard_MouseEnter(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelFlashcard = true;
+            timer_PanelFlashcard.Start();
+        }
+        private void pictureBox_Flashcard_MouseLeave(object sender, EventArgs e)
+        {
+            isMouseEnter_PanelFlashcard = false;
+            timer_PanelFlashcard.Start();
+        }
+        private void pictureBox_Flashcard_Click(object sender, EventArgs e)
+        {
+            if (!isFlashcardClick)
+            {
+                ReturnClick(panel_Flashcard);
+                panel_Main.Size = panel_Main.MinimumSize;
+                isFlashcardClick = true;
+                //mainComboWord.Visible = true;
+                panel_Main.BackColor = Color.FromArgb(219, 255, 212);
+                timer_MainPanel.Start();
+            }
+        }
+        private void timer_PanelFlashcard_Tick(object sender, EventArgs e)
+        {
+            if (isMouseEnter_PanelFlashcard)
+            {
+                panel_Flashcard.Width += 10;
+                if (panel_Flashcard.Size == panel_Flashcard.MaximumSize) { timer_PanelFlashcard.Stop(); }
+            }
+            else
+            {
+                if (!isFlashcardClick)
+                {
+                    panel_Flashcard.Width -= 10;
+                    if (panel_Flashcard.Size == panel_Flashcard.MinimumSize) { timer_PanelFlashcard.Stop(); }
+                }
+                else { timer_PanelFlashcard.Stop(); }
+            }
+        }
+        private void panel_Flashcard_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox_Flashcard_MouseEnter(null, null);
+        }
+        private void panel_Flashcard_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox_Flashcard_MouseLeave(null, null);
         }
         #endregion
         /*private void ReColor()

@@ -47,6 +47,10 @@
             this.label_ComboWord = new System.Windows.Forms.Label();
             this.pictureBox_ComboWord = new System.Windows.Forms.PictureBox();
             this.timer_PanelComboWord = new System.Windows.Forms.Timer(this.components);
+            this.panel_Flashcard = new System.Windows.Forms.Panel();
+            this.label_Flashcard = new System.Windows.Forms.Label();
+            this.pictureBox_Flashcard = new System.Windows.Forms.PictureBox();
+            this.timer_PanelFlashcard = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -54,6 +58,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Grammar)).BeginInit();
             this.panel_ComboWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).BeginInit();
+            this.panel_Flashcard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -182,7 +188,7 @@
             // 
             // panel_ComboWord
             // 
-            this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(223)))), ((int)(((byte)(212)))));
             this.panel_ComboWord.Controls.Add(this.label_ComboWord);
             this.panel_ComboWord.Controls.Add(this.pictureBox_ComboWord);
             this.panel_ComboWord.Location = new System.Drawing.Point(0, 240);
@@ -224,12 +230,59 @@
             this.timer_PanelComboWord.Interval = 1;
             this.timer_PanelComboWord.Tick += new System.EventHandler(this.timer_PanelComboWord_Tick);
             // 
+            // panel_Flashcard
+            // 
+            this.panel_Flashcard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(255)))), ((int)(((byte)(212)))));
+            this.panel_Flashcard.Controls.Add(this.label_Flashcard);
+            this.panel_Flashcard.Controls.Add(this.pictureBox_Flashcard);
+            this.panel_Flashcard.Location = new System.Drawing.Point(0, 323);
+            this.panel_Flashcard.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_Flashcard.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_Flashcard.Name = "panel_Flashcard";
+            this.panel_Flashcard.Size = new System.Drawing.Size(85, 77);
+            this.panel_Flashcard.TabIndex = 9;
+            this.panel_Flashcard.MouseEnter += new System.EventHandler(this.panel_Flashcard_MouseEnter);
+            this.panel_Flashcard.MouseLeave += new System.EventHandler(this.panel_Flashcard_MouseLeave);
+            // 
+            // label_Flashcard
+            // 
+            this.label_Flashcard.AutoSize = true;
+            this.label_Flashcard.BackColor = System.Drawing.Color.Transparent;
+            this.label_Flashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_Flashcard.Location = new System.Drawing.Point(100, 24);
+            this.label_Flashcard.Name = "label_Flashcard";
+            this.label_Flashcard.Size = new System.Drawing.Size(137, 29);
+            this.label_Flashcard.TabIndex = 1;
+            this.label_Flashcard.Text = "Flashcards";
+            // 
+            // pictureBox_Flashcard
+            // 
+            this.pictureBox_Flashcard.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Flashcard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_Flashcard.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Flashcard.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Flashcard.Image")));
+            this.pictureBox_Flashcard.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Flashcard.InitialImage")));
+            this.pictureBox_Flashcard.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Flashcard.Name = "pictureBox_Flashcard";
+            this.pictureBox_Flashcard.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Flashcard.TabIndex = 0;
+            this.pictureBox_Flashcard.TabStop = false;
+            this.pictureBox_Flashcard.Click += new System.EventHandler(this.pictureBox_Flashcard_Click);
+            this.pictureBox_Flashcard.MouseEnter += new System.EventHandler(this.pictureBox_Flashcard_MouseEnter);
+            this.pictureBox_Flashcard.MouseLeave += new System.EventHandler(this.pictureBox_Flashcard_MouseLeave);
+            // 
+            // timer_PanelFlashcard
+            // 
+            this.timer_PanelFlashcard.Interval = 1;
+            this.timer_PanelFlashcard.Tick += new System.EventHandler(this.timer_PanelFlashcard_Tick);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.panel_Flashcard);
             this.Controls.Add(this.panel_ComboWord);
             this.Controls.Add(this.panel_Grammar);
             this.Controls.Add(this.panel_Search);
@@ -257,6 +310,9 @@
             this.panel_ComboWord.ResumeLayout(false);
             this.panel_ComboWord.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).EndInit();
+            this.panel_Flashcard.ResumeLayout(false);
+            this.panel_Flashcard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,6 +335,10 @@
         private System.Windows.Forms.Label label_ComboWord;
         private System.Windows.Forms.PictureBox pictureBox_ComboWord;
         private System.Windows.Forms.Timer timer_PanelComboWord;
+        private System.Windows.Forms.Panel panel_Flashcard;
+        private System.Windows.Forms.Label label_Flashcard;
+        private System.Windows.Forms.PictureBox pictureBox_Flashcard;
+        private System.Windows.Forms.Timer timer_PanelFlashcard;
     }
 }
 
