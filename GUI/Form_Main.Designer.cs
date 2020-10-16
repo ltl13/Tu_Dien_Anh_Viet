@@ -43,11 +43,17 @@
             this.label_Grammar = new System.Windows.Forms.Label();
             this.pictureBox_Grammar = new System.Windows.Forms.PictureBox();
             this.timer_PanelGrammar = new System.Windows.Forms.Timer(this.components);
+            this.panel_ComboWord = new System.Windows.Forms.Panel();
+            this.label_ComboWord = new System.Windows.Forms.Label();
+            this.pictureBox_ComboWord = new System.Windows.Forms.PictureBox();
+            this.timer_PanelComboWord = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
             this.panel_Grammar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Grammar)).BeginInit();
+            this.panel_ComboWord.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -147,7 +153,7 @@
             this.label_Grammar.AutoSize = true;
             this.label_Grammar.BackColor = System.Drawing.Color.Transparent;
             this.label_Grammar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Grammar.Location = new System.Drawing.Point(128, 24);
+            this.label_Grammar.Location = new System.Drawing.Point(107, 25);
             this.label_Grammar.Name = "label_Grammar";
             this.label_Grammar.Size = new System.Drawing.Size(122, 29);
             this.label_Grammar.TabIndex = 1;
@@ -174,12 +180,57 @@
             this.timer_PanelGrammar.Interval = 1;
             this.timer_PanelGrammar.Tick += new System.EventHandler(this.timer_PanelGrammar_Tick);
             // 
+            // panel_ComboWord
+            // 
+            this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.panel_ComboWord.Controls.Add(this.label_ComboWord);
+            this.panel_ComboWord.Controls.Add(this.pictureBox_ComboWord);
+            this.panel_ComboWord.Location = new System.Drawing.Point(0, 240);
+            this.panel_ComboWord.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_ComboWord.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_ComboWord.Name = "panel_ComboWord";
+            this.panel_ComboWord.Size = new System.Drawing.Size(85, 77);
+            this.panel_ComboWord.TabIndex = 8;
+            // 
+            // label_ComboWord
+            // 
+            this.label_ComboWord.AutoSize = true;
+            this.label_ComboWord.BackColor = System.Drawing.Color.Transparent;
+            this.label_ComboWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_ComboWord.Location = new System.Drawing.Point(100, 24);
+            this.label_ComboWord.Name = "label_ComboWord";
+            this.label_ComboWord.Size = new System.Drawing.Size(134, 29);
+            this.label_ComboWord.TabIndex = 1;
+            this.label_ComboWord.Text = "Bộ từ vựng";
+            // 
+            // pictureBox_ComboWord
+            // 
+            this.pictureBox_ComboWord.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_ComboWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_ComboWord.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_ComboWord.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_ComboWord.Image")));
+            this.pictureBox_ComboWord.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_ComboWord.InitialImage")));
+            this.pictureBox_ComboWord.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
+            this.pictureBox_ComboWord.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_ComboWord.TabIndex = 0;
+            this.pictureBox_ComboWord.TabStop = false;
+            this.pictureBox_ComboWord.Click += new System.EventHandler(this.pictureBox_ComboWord_Click);
+            this.pictureBox_ComboWord.MouseEnter += new System.EventHandler(this.pictureBox_ComboWord_MouseEnter);
+            this.pictureBox_ComboWord.MouseLeave += new System.EventHandler(this.pictureBox_ComboWord_MouseLeave);
+            // 
+            // timer_PanelComboWord
+            // 
+            this.timer_PanelComboWord.Interval = 1;
+            this.timer_PanelComboWord.Tick += new System.EventHandler(this.timer_PanelComboWord_Tick);
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.panel_ComboWord);
             this.Controls.Add(this.panel_Grammar);
             this.Controls.Add(this.panel_Search);
             this.Controls.Add(this.button_Exit);
@@ -203,6 +254,9 @@
             this.panel_Grammar.ResumeLayout(false);
             this.panel_Grammar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Grammar)).EndInit();
+            this.panel_ComboWord.ResumeLayout(false);
+            this.panel_ComboWord.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,6 +275,10 @@
         private System.Windows.Forms.Label label_Grammar;
         private System.Windows.Forms.PictureBox pictureBox_Grammar;
         private System.Windows.Forms.Timer timer_PanelGrammar;
+        private System.Windows.Forms.Panel panel_ComboWord;
+        private System.Windows.Forms.Label label_ComboWord;
+        private System.Windows.Forms.PictureBox pictureBox_ComboWord;
+        private System.Windows.Forms.Timer timer_PanelComboWord;
     }
 }
 
