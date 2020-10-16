@@ -80,16 +80,18 @@
             // button_Exit
             // 
             this.button_Exit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Exit.BackColor = System.Drawing.SystemColors.Window;
             this.button_Exit.FlatAppearance.BorderSize = 0;
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button_Exit.Location = new System.Drawing.Point(852, 9);
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Exit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button_Exit.Location = new System.Drawing.Point(855, 6);
             this.button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(40, 44);
+            this.button_Exit.Size = new System.Drawing.Size(41, 38);
             this.button_Exit.TabIndex = 1;
             this.button_Exit.Text = "X";
-            this.button_Exit.UseVisualStyleBackColor = true;
+            this.button_Exit.UseVisualStyleBackColor = false;
             this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
             this.button_Exit.MouseEnter += new System.EventHandler(this.button_Exit_MouseEnter);
             this.button_Exit.MouseLeave += new System.EventHandler(this.button_Exit_MouseLeave);
@@ -404,6 +406,7 @@
             this.Controls.Add(this.panel_Search);
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.panel_Main);
+            this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
@@ -411,8 +414,8 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(896, 610);
             this.Name = "Form_Main";
-            this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
-            this.ShowInTaskbar = false;
+            this.Padding = new System.Windows.Forms.Padding(20, 44, 20, 20);
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Default;
             this.Text = "Từ điển Anh-Việt";
             this.TransparencyKey = System.Drawing.Color.LightSteelBlue;
