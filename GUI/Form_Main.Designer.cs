@@ -404,7 +404,7 @@
             // timer_PanelExam
             // 
             this.timer_PanelExam.Interval = 1;
-            this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
+            this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);           
             // 
             // Form_Main
             // 
