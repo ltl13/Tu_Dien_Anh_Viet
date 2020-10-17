@@ -518,6 +518,6 @@ namespace GUI
             if (isPanelUserShow) { label_User.Location = new Point(45, 22); }
             else { pictureBox_User_MouseLeave(null, null); }
         }
-        #endregion     
+        #endregion       
     }
 }
