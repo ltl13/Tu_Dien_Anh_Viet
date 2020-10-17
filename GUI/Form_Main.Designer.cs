@@ -59,11 +59,6 @@
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
             this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox_User = new System.Windows.Forms.PictureBox();
-            this.label_User = new System.Windows.Forms.Label();
-            this.panel_User = new System.Windows.Forms.Panel();
-            this.timer_LabelUser = new System.Windows.Forms.Timer(this.components);
-            this.timer_PanelUser = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -410,55 +405,6 @@
             // 
             this.timer_PanelExam.Interval = 1;
             this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
-            //
-            // pictureBox_User
-            // 
-            this.pictureBox_User.BackColor = System.Drawing.Color.White;
-            this.pictureBox_User.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_User.Image")));
-            this.pictureBox_User.Location = new System.Drawing.Point(0, 6);
-            this.pictureBox_User.Name = "pictureBox_User";
-            this.pictureBox_User.Size = new System.Drawing.Size(45, 41);
-            this.pictureBox_User.TabIndex = 12;
-            this.pictureBox_User.TabStop = false;
-            this.pictureBox_User.Click += new System.EventHandler(this.pictureBox_User_Click);
-            this.pictureBox_User.MouseEnter += new System.EventHandler(this.pictureBox_User_MouseEnter);
-            this.pictureBox_User.MouseLeave += new System.EventHandler(this.pictureBox_User_MouseLeave);
-            // 
-            // label_User
-            // 
-            this.label_User.AutoSize = true;
-            this.label_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.label_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label_User.Location = new System.Drawing.Point(-135, 22);
-            this.label_User.Name = "label_User";
-            this.label_User.Size = new System.Drawing.Size(158, 25);
-            this.label_User.TabIndex = 15;
-            this.label_User.Text = "Quản lí tài khoản";
-            this.label_User.Click += new System.EventHandler(this.label_User_Click);
-            this.label_User.MouseEnter += new System.EventHandler(this.label_User_MouseEnter);
-            this.label_User.MouseLeave += new System.EventHandler(this.label_User_MouseLeave);
-            // 
-            // panel_User
-            // 
-            this.panel_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.panel_User.Location = new System.Drawing.Point(0, 47);
-            this.panel_User.MaximumSize = new System.Drawing.Size(216, 270);
-            this.panel_User.MinimumSize = new System.Drawing.Size(216, 0);
-            this.panel_User.Name = "panel_User";
-            this.panel_User.Size = new System.Drawing.Size(216, 0);
-            this.panel_User.TabIndex = 16;
-            this.panel_User.MouseEnter += new System.EventHandler(this.panel_User_MouseEnter);
-            this.panel_User.MouseLeave += new System.EventHandler(this.panel_User_MouseLeave);
-            // 
-            // timer_LabelUser
-            // 
-            this.timer_LabelUser.Interval = 1;
-            this.timer_LabelUser.Tick += new System.EventHandler(this.timer_LabelUser_Tick);
-            // 
-            // timer_PanelUser
-            // 
-            this.timer_PanelUser.Interval = 1;
-            this.timer_PanelUser.Tick += new System.EventHandler(this.timer_PanelUser_Tick);
             // 
             // Form_Main
             // 
@@ -466,8 +412,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
-            this.Controls.Add(this.panel_User);
-            this.Controls.Add(this.pictureBox_User);
             this.Controls.Add(this.panel_Exam);
             this.Controls.Add(this.panel_Read);
             this.Controls.Add(this.panel_Flashcard);
@@ -542,11 +486,6 @@
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
         private System.Windows.Forms.Timer timer_PanelExam;
-        private System.Windows.Forms.PictureBox pictureBox_User;
-        private System.Windows.Forms.Label label_User;
-        private System.Windows.Forms.Panel panel_User;
-        private System.Windows.Forms.Timer timer_LabelUser;
-        private System.Windows.Forms.Timer timer_PanelUser;
     }
 }
 
