@@ -1,43 +1,51 @@
-﻿using DAO;
+﻿using BUS;
 using DTO;
 using System;
 using System.Windows.Forms;
 
 namespace GUI {
     public partial class Form_Signup : Form {
+        #region properties
+        private Form father;
+
         public Form_Signup(Form login) {
             InitializeComponent();
             this.AcceptButton = btLogin;
             this.CancelButton = btCancel;
             father = login;
         }
-        private Form father;
-        private void btCancel_Click(object sender, EventArgs e) {
-            father.Show();
-            this.Close();
-        }
+        #endregion
 
-        /* ----- Đăng ký ----- */
-        private bool Register(string userName, string passWord) {
-            return AccountDAO.Instance.Register(userName, passWord);
-        }
-
-        private bool Register(string userName, string displayName, string passWord) {
-            return AccountDAO.Instance.Register(userName, displayName, passWord);
-        }
-
-        private bool Register(string userName, string displayName, int type, string passWord) {
-            return AccountDAO.Instance.Register(userName, displayName, type, passWord);
+        #region method
+        private bool Register(string userName, int type, string passWord, string displayName = null) {
+            return AccountBUS.Instance.Register(userName, type, passWord, displayName);
         }
 
         private void btLogin_Click(object sender, EventArgs e) {
             string userName = tbUsername.Text;
             string passWord = tbPassword.Text;
             string confirm = tbConfirm.Text;
-            string displayName = tbName.Text;
+            string displayName = tbName.Text;           
+            int type = (rdbAdmin.Checked ? 1 : (rdbGuest.Checked ? 0 : -1));
 
-            if (userName.Length == 0 || passWord.Length == 0 || confirm.Length == 0) {
-                MessageBox.Show("Không được bỏ trống!", "Thông báo");
+            if (displayName.Length == 0) {
+                displayName = null;
+            }
+
+            if (userName.Length == 0) {
+                MessageBox.Show("Vui lòng điền tên đăng nhập!", "Thông báo");
+                return;
+            }
+            else if (passWord.Length == 0) {
+                MessageBox.Show("Vui lòng điền mật khẩu!", "Thông báo");
+                return;
+            }
+            else if (confirm.Length == 0) {
+                MessageBox.Show("Vui lòng điền xác nhận mật khẩu!", "Thông báo");
+                return;
+            }
+            else if (type == -1) {
+                MessageBox.Show("Vui lòng chọn vị trí!", "Thông báo");
                 return;
             }
             else if (passWord != confirm) {
@@ -47,34 +55,24 @@ namespace GUI {
                 return;
             }
 
-            if (displayName.Length != 0) {
-                if (Register(userName, displayName, passWord)) {
-                    AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
-                    Form_Main fMain = new Form_Main(loginAccount, father);
-                    fMain.Show();
-                    this.Close();
-                }
-                else {
-                    tbUsername.Text = string.Empty;
-                    tbPassword.Text = string.Empty;
-                    MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
-                }
+
+            if (Register(userName, type, passWord, displayName)) {
+                AccountDTO loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);
+                Form_Main fMain = new Form_Main(loginAccount, father);
+                fMain.Show();
+                this.Close();
             }
             else {
-                if (Register(userName, passWord)) {
-                    AccountDTO loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
-                    Form_Main fMain = new Form_Main(loginAccount, father);
-                    fMain.Show();
-                    this.Close();
-                }
-                else {
-                    tbUsername.Text = string.Empty;
-                    tbPassword.Text = string.Empty;
-                    MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
-                }
+                tbUsername.Text = string.Empty;
+                tbPassword.Text = string.Empty;
+                MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
             }
         }
-        /* ------------------- */
+
+        private void btCancel_Click(object sender, EventArgs e) {
+            father.Show();
+            this.Close();
+        }
 
         private void tbPassword_TextChanged(object sender, EventArgs e) {
             if (tbConfirm.Text.Length != 0) {
@@ -87,5 +85,6 @@ namespace GUI {
                 tbPassword.Text = string.Empty;
             }
         }
+        #endregion
     }
 }
