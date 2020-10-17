@@ -59,9 +59,6 @@
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
             this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox_User = new System.Windows.Forms.PictureBox();
-            this.label_User = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -75,7 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Read)).BeginInit();
             this.panel_Exam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_User)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -410,46 +406,12 @@
             this.timer_PanelExam.Interval = 1;
             this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
             // 
-            // pictureBox_User
-            // 
-            this.pictureBox_User.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_User.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_User.Image")));
-            this.pictureBox_User.Location = new System.Drawing.Point(0, 6);
-            this.pictureBox_User.Name = "pictureBox_User";
-            this.pictureBox_User.Size = new System.Drawing.Size(45, 41);
-            this.pictureBox_User.TabIndex = 12;
-            this.pictureBox_User.TabStop = false;
-            this.pictureBox_User.MouseEnter += new System.EventHandler(this.pictureBox_User_MouseEnter);
-            this.pictureBox_User.MouseLeave += new System.EventHandler(this.pictureBox_User_MouseLeave);
-            // 
-            // label_User
-            // 
-            this.label_User.AutoSize = true;
-            this.label_User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.label_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label_User.Location = new System.Drawing.Point(45, 22);
-            this.label_User.Name = "label_User";
-            this.label_User.Size = new System.Drawing.Size(158, 25);
-            this.label_User.TabIndex = 15;
-            this.label_User.Text = "Quản lí tài khoản";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.panel1.Location = new System.Drawing.Point(0, 47);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 270);
-            this.panel1.TabIndex = 16;
-            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label_User);
-            this.Controls.Add(this.pictureBox_User);
             this.Controls.Add(this.panel_Exam);
             this.Controls.Add(this.panel_Read);
             this.Controls.Add(this.panel_Flashcard);
@@ -490,9 +452,7 @@
             this.panel_Exam.ResumeLayout(false);
             this.panel_Exam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_User)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -526,9 +486,6 @@
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
         private System.Windows.Forms.Timer timer_PanelExam;
-        private System.Windows.Forms.PictureBox pictureBox_User;
-        private System.Windows.Forms.Label label_User;
-        private System.Windows.Forms.Panel panel1;
     }
 }
 

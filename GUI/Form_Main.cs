@@ -467,12 +467,12 @@ namespace GUI
         #region PanelUser
         private void pictureBox_User_MouseEnter(object sender, EventArgs e)
         {
-            pictureBox_User.BackColor = Color.FromArgb(222, 238, 255);
+            //pictureBox_User.BackColor = Color.FromArgb(222, 238, 255);
         }
         #endregion
         private void pictureBox_User_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox_User.BackColor = Color.Transparent;
+            //pictureBox_User.BackColor = Color.Transparent;
         }
     }
 }

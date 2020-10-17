@@ -12,6 +12,8 @@ namespace DTO {
         public string PassWord { get => passWord; set => passWord = value; }
         public int Type { get => type; set => type = value; }
 
+        public AccountDTO() { }
+
         public AccountDTO(string userName, string displayName, int type, string passWord = null) {
             this.userName = userName;
             this.displayName = displayName;

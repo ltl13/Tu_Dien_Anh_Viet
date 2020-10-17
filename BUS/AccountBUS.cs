@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DAO;
+﻿using DAO;
+using DTO;
 
 namespace BUS {
     public class AccountBUS {
+        #region properties
         private static AccountBUS instance;
 
         public static AccountBUS Instance {
@@ -18,12 +14,29 @@ namespace BUS {
             }
         }
 
-        private AccountBUS() {
+        private AccountBUS() { }
+        #endregion
 
+        #region method
+        public bool Login(string userName, string passWord) {
+            return AccountDAO.Instance.Login(userName, passWord);
         }
 
-        //public void Xem(DataGridView data) {
-        //    data.DataSource = AccountDAO.Instance.Xem();
-        //}
+        public bool Register(string userName, int type, string passWord, string displayName = null) {
+            if (displayName == null) {
+                return AccountDAO.Instance.Register(userName, type, passWord);
+            }
+
+            return AccountDAO.Instance.Register(userName, type, passWord, displayName);
+        }
+
+        public bool UpdateAccount(string userName, string displayName, string passWord, string newPass) {
+            return AccountDAO.Instance.UpdateAccount(userName, displayName, passWord, newPass);
+        }
+
+        public AccountDTO GetAccountByUserName(string userName) {
+            return AccountDAO.Instance.GetAccountByUserName(userName);
+        }
+        #endregion
     }
 }

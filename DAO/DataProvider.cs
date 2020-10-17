@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace DAO {
     public class DataProvider {
+        #region properties
         private static DataProvider instance;
         private string connectionSTR = "Server=tcp:ngoduongkhakg2001.database.windows.net,1433;Initial Catalog=DailyDictionay;Persist Security Info=False;User ID=ngoduongkhakg2001;Password=0842837917Kha;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
@@ -17,11 +18,10 @@ namespace DAO {
             }
         }
 
-        private DataProvider() { 
+        private DataProvider() { }
+        #endregion
 
-        }
-
-        #region Method
+        #region method
         public DataTable ExecuteQuery(string query, object[] parameter = null) {
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionSTR)) {

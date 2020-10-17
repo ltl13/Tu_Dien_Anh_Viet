@@ -43,9 +43,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.rdbAdmin = new System.Windows.Forms.RadioButton();
+            this.rdbGuest = new System.Windows.Forms.RadioButton();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -94,6 +98,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.lbUsername);
             this.panel4.Controls.Add(this.tbUsername);
             this.panel4.Controls.Add(this.lbPassword);
@@ -199,7 +204,7 @@
             this.tbName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbName.Location = new System.Drawing.Point(42, 228);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(216, 22);
+            this.tbName.Size = new System.Drawing.Size(130, 22);
             this.tbName.TabIndex = 3;
             // 
             // btLogin
@@ -237,7 +242,7 @@
             this.panel6.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel6.Location = new System.Drawing.Point(42, 255);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(216, 1);
+            this.panel6.Size = new System.Drawing.Size(130, 1);
             this.panel6.TabIndex = 5;
             // 
             // panel5
@@ -264,6 +269,39 @@
             this.panel2.Size = new System.Drawing.Size(216, 1);
             this.panel2.TabIndex = 3;
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.rdbGuest);
+            this.panel7.Controls.Add(this.rdbAdmin);
+            this.panel7.Location = new System.Drawing.Point(186, 210);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(88, 67);
+            this.panel7.TabIndex = 14;
+            // 
+            // rdbAdmin
+            // 
+            this.rdbAdmin.AutoSize = true;
+            this.rdbAdmin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbAdmin.Location = new System.Drawing.Point(5, 3);
+            this.rdbAdmin.Name = "rdbAdmin";
+            this.rdbAdmin.Size = new System.Drawing.Size(77, 25);
+            this.rdbAdmin.TabIndex = 0;
+            this.rdbAdmin.TabStop = true;
+            this.rdbAdmin.Text = "Admin";
+            this.rdbAdmin.UseVisualStyleBackColor = true;
+            // 
+            // rdbGuest
+            // 
+            this.rdbGuest.AutoSize = true;
+            this.rdbGuest.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbGuest.Location = new System.Drawing.Point(5, 31);
+            this.rdbGuest.Name = "rdbGuest";
+            this.rdbGuest.Size = new System.Drawing.Size(72, 25);
+            this.rdbGuest.TabIndex = 1;
+            this.rdbGuest.TabStop = true;
+            this.rdbGuest.Text = "Guest";
+            this.rdbGuest.UseVisualStyleBackColor = true;
+            // 
             // Form_Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -281,6 +319,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -306,5 +346,8 @@
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.RadioButton rdbGuest;
+        private System.Windows.Forms.RadioButton rdbAdmin;
     }
 }
