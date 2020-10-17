@@ -459,7 +459,6 @@
             // 
             this.timer_PanelUser.Interval = 1;
             this.timer_PanelUser.Tick += new System.EventHandler(this.timer_PanelUser_Tick);
-
             // 
             // Form_Main
             // 

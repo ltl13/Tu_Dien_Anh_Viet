@@ -467,17 +467,20 @@ namespace GUI
         #region PanelUser
         private bool isLabelUserShow = false;
         private bool isPanelUserShow = false;
-        private void pictureBox_User_MouseEnter(object sender, EventArgs e) {
+        private void pictureBox_User_MouseEnter(object sender, EventArgs e)
+        {
             pictureBox_User.BackColor = Color.FromArgb(222, 238, 255);
             isLabelUserShow = false;
             timer_LabelUser.Start();
         }
-        private void pictureBox_User_MouseLeave(object sender, EventArgs e) {
+        private void pictureBox_User_MouseLeave(object sender, EventArgs e)
+        {
             pictureBox_User.BackColor = Color.White;
             isLabelUserShow = true;
             timer_LabelUser.Start();
         }
-        private void timer_LabelUser_Tick(object sender, EventArgs e) {
+        private void timer_LabelUser_Tick(object sender, EventArgs e)
+        {
             if (!isLabelUserShow) {
                 label_User.Left += 10;
                 if (label_User.Location.X >= 25) { timer_LabelUser.Stop(); }
@@ -487,7 +490,8 @@ namespace GUI
                 if (label_User.Location.X <= -115) { timer_LabelUser.Stop(); }
             }
         }
-        private void timer_PanelUser_Tick(object sender, EventArgs e) {
+        private void timer_PanelUser_Tick(object sender, EventArgs e)
+        {
             if (!isPanelUserShow) {
                 panel_User.Height += 10;
                 if (panel_User.Size == panel_User.MaximumSize) { timer_PanelUser.Stop(); }
@@ -497,24 +501,30 @@ namespace GUI
                 if (panel_User.Size == panel_User.MinimumSize) { timer_PanelUser.Stop(); }
             }
         }
-        private void pictureBox_User_Click(object sender, EventArgs e) {
+        private void pictureBox_User_Click(object sender, EventArgs e)
+        {
             timer_PanelUser.Start();
             isPanelUserShow = !isPanelUserShow;
         }
-        private void panel_User_MouseEnter(object sender, EventArgs e) {
+        private void panel_User_MouseEnter(object sender, EventArgs e)
+        {
             label_User.Location = new Point(45, 22);
             panel_User.Size = panel_User.MaximumSize;
         }
-        private void panel_User_MouseLeave(object sender, EventArgs e) {
+        private void panel_User_MouseLeave(object sender, EventArgs e)
+        {
 
         }
-        private void label_User_Click(object sender, EventArgs e) {
+        private void label_User_Click(object sender, EventArgs e)
+            {
             pictureBox_User_Click(null, null);
         }
-        private void label_User_MouseEnter(object sender, EventArgs e) {
+        private void label_User_MouseEnter(object sender, EventArgs e)
+        {
             label_User.Location = new Point(45, 22);
         }
-        private void label_User_MouseLeave(object sender, EventArgs e) {
+        private void label_User_MouseLeave(object sender, EventArgs e)
+        {
             if (isPanelUserShow) { label_User.Location = new Point(45, 22); }
             else { pictureBox_User_MouseLeave(null, null); }
         }
