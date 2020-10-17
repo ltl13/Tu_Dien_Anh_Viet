@@ -483,13 +483,13 @@ namespace GUI
         {
             if (!isLabelUserShow)
             {
-                label_User.Left += 10;
                 if (label_User.Location.X >= 25) { timer_LabelUser.Stop(); }
+                else { label_User.Left += 10; }
             }
             else
             {
-                label_User.Left -= 10;
                 if (label_User.Location.X <= -115) { timer_LabelUser.Stop(); }
+                else { label_User.Left -= 10; }
             }
         }
         private void timer_PanelUser_Tick(object sender, EventArgs e)
@@ -512,12 +512,8 @@ namespace GUI
         }
         private void panel_User_MouseEnter(object sender, EventArgs e)
         {
-            label_User.Location = new Point(45, 22);
+            pictureBox_User_MouseEnter(null, null);
             panel_User.Size = panel_User.MaximumSize;
-        }
-        private void panel_User_MouseLeave(object sender, EventArgs e)
-        {
-            
         }
         private void label_User_Click(object sender, EventArgs e)
         {
@@ -529,7 +525,7 @@ namespace GUI
         }
         private void label_User_MouseLeave(object sender, EventArgs e)
         {
-            if (isPanelUserShow) { label_User.Location = new Point(45, 22); }
+            if (isPanelUserShow) { pictureBox_User_MouseEnter(null, null); }
             else { pictureBox_User_MouseLeave(null, null); }
         }
         #endregion       

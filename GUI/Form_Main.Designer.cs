@@ -449,7 +449,6 @@
             this.panel_User.Size = new System.Drawing.Size(216, 0);
             this.panel_User.TabIndex = 16;
             this.panel_User.MouseEnter += new System.EventHandler(this.panel_User_MouseEnter);
-            this.panel_User.MouseLeave += new System.EventHandler(this.panel_User_MouseLeave);
             // 
             // timer_LabelUser
             // 
