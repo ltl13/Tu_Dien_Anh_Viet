@@ -462,24 +462,6 @@ namespace GUI
         {
             pictureBox_Exam_MouseEnter(null, null);
         }
-        #endregion
-
-        #region PanelUser
-        private bool isLabelUserShow = false;
-        private bool isPanelUserShow = false; 
-        private void pictureBox_User_Click(object sender, EventArgs e)
-        {           
-            timer_PanelUser.Start();
-            isPanelUserShow = !isPanelUserShow;
-        }
-        private void panel_User_MouseLeave(object sender, EventArgs e)
-        {
-            
-        }
-        private void label_User_Click(object sender, EventArgs e)
-        {
-            pictureBox_User_Click(null, null);
-        }
-        #endregion       
+        #endregion   
     }
 }
