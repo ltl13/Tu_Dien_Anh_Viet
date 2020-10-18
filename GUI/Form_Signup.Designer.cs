@@ -29,6 +29,9 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.icon = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.rdbGuest = new System.Windows.Forms.RadioButton();
+            this.rdbAdmin = new System.Windows.Forms.RadioButton();
             this.lbUsername = new System.Windows.Forms.Label();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.lbPassword = new System.Windows.Forms.Label();
@@ -43,9 +46,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.rdbAdmin = new System.Windows.Forms.RadioButton();
-            this.rdbGuest = new System.Windows.Forms.RadioButton();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel4.SuspendLayout();
@@ -118,6 +118,39 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(300, 360);
             this.panel4.TabIndex = 13;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.rdbGuest);
+            this.panel7.Controls.Add(this.rdbAdmin);
+            this.panel7.Location = new System.Drawing.Point(186, 210);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(88, 67);
+            this.panel7.TabIndex = 14;
+            // 
+            // rdbGuest
+            // 
+            this.rdbGuest.AutoSize = true;
+            this.rdbGuest.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbGuest.Location = new System.Drawing.Point(5, 31);
+            this.rdbGuest.Name = "rdbGuest";
+            this.rdbGuest.Size = new System.Drawing.Size(72, 25);
+            this.rdbGuest.TabIndex = 1;
+            this.rdbGuest.TabStop = true;
+            this.rdbGuest.Text = "Guest";
+            this.rdbGuest.UseVisualStyleBackColor = true;
+            // 
+            // rdbAdmin
+            // 
+            this.rdbAdmin.AutoSize = true;
+            this.rdbAdmin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbAdmin.Location = new System.Drawing.Point(5, 3);
+            this.rdbAdmin.Name = "rdbAdmin";
+            this.rdbAdmin.Size = new System.Drawing.Size(77, 25);
+            this.rdbAdmin.TabIndex = 0;
+            this.rdbAdmin.TabStop = true;
+            this.rdbAdmin.Text = "Admin";
+            this.rdbAdmin.UseVisualStyleBackColor = true;
             // 
             // lbUsername
             // 
@@ -269,39 +302,6 @@
             this.panel2.Size = new System.Drawing.Size(216, 1);
             this.panel2.TabIndex = 3;
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.rdbGuest);
-            this.panel7.Controls.Add(this.rdbAdmin);
-            this.panel7.Location = new System.Drawing.Point(186, 210);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(88, 67);
-            this.panel7.TabIndex = 14;
-            // 
-            // rdbAdmin
-            // 
-            this.rdbAdmin.AutoSize = true;
-            this.rdbAdmin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbAdmin.Location = new System.Drawing.Point(5, 3);
-            this.rdbAdmin.Name = "rdbAdmin";
-            this.rdbAdmin.Size = new System.Drawing.Size(77, 25);
-            this.rdbAdmin.TabIndex = 0;
-            this.rdbAdmin.TabStop = true;
-            this.rdbAdmin.Text = "Admin";
-            this.rdbAdmin.UseVisualStyleBackColor = true;
-            // 
-            // rdbGuest
-            // 
-            this.rdbGuest.AutoSize = true;
-            this.rdbGuest.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbGuest.Location = new System.Drawing.Point(5, 31);
-            this.rdbGuest.Name = "rdbGuest";
-            this.rdbGuest.Size = new System.Drawing.Size(72, 25);
-            this.rdbGuest.TabIndex = 1;
-            this.rdbGuest.TabStop = true;
-            this.rdbGuest.Text = "Guest";
-            this.rdbGuest.UseVisualStyleBackColor = true;
-            // 
             // Form_Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -310,6 +310,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Form_Signup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

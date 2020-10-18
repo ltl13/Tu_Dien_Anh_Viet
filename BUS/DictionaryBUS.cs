@@ -24,7 +24,10 @@ namespace BUS {
             return DictionaryDAO.Instance.GetListItem(input);
         }
 
-        public void LoadDataToComboBox(ComboBox listbox, string input) {
+        public void LoadDataToComboBox(ComboBox listbox, string input = null) {
+            if (input == null || input == "")
+                return;
+
             listbox.DataSource = GetListItem(input);
         }
         #endregion

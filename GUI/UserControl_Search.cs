@@ -21,7 +21,7 @@ namespace GUI
             InitializeComponent();
             father = formMain;
             comboBox_Search.DisplayMember = "English";
-            //DictionaryBUS.Instance.LoadDataToComboBox(comboBox_Search, "ð,dʒ,θ,tʃ");
+            DictionaryBUS.Instance.LoadDataToComboBox(comboBox_Search, "");
             isComboBoxLoaded = true;
         }
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
@@ -34,7 +34,8 @@ namespace GUI
             else { comboBox_Search.DroppedDown = false; }
         }
         private void comboBox_Search_SelectionChangeCommitted(object sender, EventArgs e) {
-            DictionaryDTO wordSelected = (DictionaryDTO)comboBox_Search.SelectedItem;
+            DataRowView row = (DataRowView)comboBox_Search.SelectedItem;
+            DictionaryDTO wordSelected = new DictionaryDTO(row);
             metroTextBox_Searchbar.Text = wordSelected.English;
             UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
             father.panel_Main.Controls.Add(wordInfo);
