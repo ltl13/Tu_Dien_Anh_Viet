@@ -16,7 +16,7 @@ namespace DTO {
             this.vietNamese = vietNamese;
         }
 
-        public DictionaryDTO(DataRow row) {
+        public DictionaryDTO(DataRowView row) {
             this.english = row["English"].ToString();
             this.vietNamese = row["VietNamese"].ToString();
         }
