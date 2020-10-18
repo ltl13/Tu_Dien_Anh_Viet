@@ -463,10 +463,6 @@ namespace GUI
             pictureBox_Exam_MouseEnter(null, null);
         }
         #endregion
-
-        #region PanelUser
-        private bool isLabelUserShow = false;
-        private bool isPanelUserShow = false;
-        #endregion       
+      
     }
 }

@@ -59,8 +59,6 @@
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
             this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
-            this.timer_LabelUser = new System.Windows.Forms.Timer(this.components);
-            this.timer_PanelUser = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -408,14 +406,6 @@
             this.timer_PanelExam.Interval = 1;
             this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
             // 
-            // timer_LabelUser
-            // 
-            this.timer_LabelUser.Interval = 1;
-            // 
-            // timer_PanelUser
-            // 
-            this.timer_PanelUser.Interval = 1;
-            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -496,8 +486,6 @@
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
         private System.Windows.Forms.Timer timer_PanelExam;
-        private System.Windows.Forms.Timer timer_LabelUser;
-        private System.Windows.Forms.Timer timer_PanelUser;
     }
 }
 
