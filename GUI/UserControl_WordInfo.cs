@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
+using SpeechLib;
 
 namespace GUI
 {
@@ -25,13 +26,15 @@ namespace GUI
             this.Dispose();
         }
         private void metroTile_Back_MouseEnter(object sender, EventArgs e) {
-            metroTile_Back.Style = MetroFramework.MetroColorStyle.Red;
+            metroTile_Back.Style = MetroFramework.MetroColorStyle.Silver;
         }
         private void metroTile_Back_MouseLeave(object sender, EventArgs e) {
             metroTile_Back.Style = MetroFramework.MetroColorStyle.White;
         }
-        private void UserControl_WordInfo_KeyPress(object sender, KeyPressEventArgs e) {
-
+        private void metroTile_Speaker_Click(object sender, EventArgs e)
+        {
+            SpVoice speakEnglish = new SpVoice();
+            speakEnglish.Speak(label_Word.Text, SpeechVoiceSpeakFlags.SVSFDefault);
         }
     }
 }
