@@ -34,9 +34,9 @@
             this.metroTile_Speaker = new MetroFramework.Controls.MetroTile();
             this.label_Word = new System.Windows.Forms.Label();
             this.metroTabControl_WordInfo = new MetroFramework.Controls.MetroTabControl();
-            this.tabPage_Synonym = new System.Windows.Forms.TabPage();
             this.tabPage_Meaning = new MetroFramework.Controls.MetroTabPage();
             this.tabPage_Example = new System.Windows.Forms.TabPage();
+            this.tabPage_Synonym = new System.Windows.Forms.TabPage();
             this.tabPage_Antonym = new System.Windows.Forms.TabPage();
             this.tabPage_Technical = new System.Windows.Forms.TabPage();
             this.tabPage_Note = new System.Windows.Forms.TabPage();
@@ -72,9 +72,9 @@
             // metroTile_Back
             // 
             this.metroTile_Back.ActiveControl = null;
-            this.metroTile_Back.Location = new System.Drawing.Point(568, 3);
+            this.metroTile_Back.Location = new System.Drawing.Point(556, 3);
             this.metroTile_Back.Name = "metroTile_Back";
-            this.metroTile_Back.Size = new System.Drawing.Size(52, 43);
+            this.metroTile_Back.Size = new System.Drawing.Size(64, 43);
             this.metroTile_Back.Style = MetroFramework.MetroColorStyle.White;
             this.metroTile_Back.TabIndex = 3;
             this.metroTile_Back.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile_Back.TileImage")));
@@ -97,6 +97,7 @@
             this.metroTile_Speaker.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile_Speaker.UseSelectable = true;
             this.metroTile_Speaker.UseTileImage = true;
+            this.metroTile_Speaker.Click += new System.EventHandler(this.metroTile_Speaker_Click);
             // 
             // label_Word
             // 
@@ -122,18 +123,10 @@
             this.metroTabControl_WordInfo.Name = "metroTabControl_WordInfo";
             this.metroTabControl_WordInfo.SelectedIndex = 0;
             this.metroTabControl_WordInfo.Size = new System.Drawing.Size(624, 396);
-            this.metroTabControl_WordInfo.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroTabControl_WordInfo.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTabControl_WordInfo.TabIndex = 0;
             this.metroTabControl_WordInfo.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabControl_WordInfo.UseSelectable = true;
-            // 
-            // tabPage_Synonym
-            // 
-            this.tabPage_Synonym.Location = new System.Drawing.Point(4, 38);
-            this.tabPage_Synonym.Name = "tabPage_Synonym";
-            this.tabPage_Synonym.Size = new System.Drawing.Size(616, 354);
-            this.tabPage_Synonym.TabIndex = 3;
-            this.tabPage_Synonym.Text = "Đồng nghĩa";
             // 
             // tabPage_Meaning
             // 
@@ -158,6 +151,14 @@
             this.tabPage_Example.Size = new System.Drawing.Size(616, 354);
             this.tabPage_Example.TabIndex = 2;
             this.tabPage_Example.Text = "Ví dụ";
+            // 
+            // tabPage_Synonym
+            // 
+            this.tabPage_Synonym.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Synonym.Name = "tabPage_Synonym";
+            this.tabPage_Synonym.Size = new System.Drawing.Size(616, 354);
+            this.tabPage_Synonym.TabIndex = 3;
+            this.tabPage_Synonym.Text = "Đồng nghĩa";
             // 
             // tabPage_Antonym
             // 
@@ -200,7 +201,6 @@
             this.Controls.Add(this.splitContainer_WordInfo);
             this.Name = "UserControl_WordInfo";
             this.Size = new System.Drawing.Size(624, 516);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UserControl_WordInfo_KeyPress);
             this.splitContainer_WordInfo.Panel1.ResumeLayout(false);
             this.splitContainer_WordInfo.Panel1.PerformLayout();
             this.splitContainer_WordInfo.Panel2.ResumeLayout(false);
