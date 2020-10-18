@@ -59,6 +59,9 @@
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
             this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
+            this.panel_Account = new System.Windows.Forms.Panel();
+            this.xuiButton_Account = new XanderUI.XUIButton();
+            this.timer_MenuAccount = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -72,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Read)).BeginInit();
             this.panel_Exam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).BeginInit();
+            this.panel_Account.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -404,7 +408,49 @@
             // timer_PanelExam
             // 
             this.timer_PanelExam.Interval = 1;
-            this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);           
+            this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
+            // 
+            // panel_Account
+            // 
+            this.panel_Account.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Account.Controls.Add(this.xuiButton_Account);
+            this.panel_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.panel_Account.Location = new System.Drawing.Point(0, 6);
+            this.panel_Account.MaximumSize = new System.Drawing.Size(205, 230);
+            this.panel_Account.MinimumSize = new System.Drawing.Size(205, 39);
+            this.panel_Account.Name = "panel_Account";
+            this.panel_Account.Size = new System.Drawing.Size(205, 230);
+            this.panel_Account.TabIndex = 12;
+            this.panel_Account.MouseLeave += new System.EventHandler(this.panel_Account_MouseLeave);
+            // 
+            // xuiButton_Account
+            // 
+            this.xuiButton_Account.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Account.ButtonImage")));
+            this.xuiButton_Account.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Account.ButtonText = "Quản lí tài khoản";
+            this.xuiButton_Account.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.ClickTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Account.CornerRadius = 5;
+            this.xuiButton_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.xuiButton_Account.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Account.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Account.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Account.Location = new System.Drawing.Point(0, 5);
+            this.xuiButton_Account.Name = "xuiButton_Account";
+            this.xuiButton_Account.Size = new System.Drawing.Size(200, 36);
+            this.xuiButton_Account.TabIndex = 0;
+            this.xuiButton_Account.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Account.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Account.Click += new System.EventHandler(this.xuiButton_Account_Click);
+            this.xuiButton_Account.MouseEnter += new System.EventHandler(this.xuiButton_Account_MouseEnter);
+            this.xuiButton_Account.MouseLeave += new System.EventHandler(this.xuiButton_Account_MouseLeave);
+            // 
+            // timer_MenuAccount
+            // 
+            this.timer_MenuAccount.Interval = 1;
+            this.timer_MenuAccount.Tick += new System.EventHandler(this.timer_MenuAccount_Tick);
             // 
             // Form_Main
             // 
@@ -412,6 +458,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.panel_Account);
             this.Controls.Add(this.panel_Exam);
             this.Controls.Add(this.panel_Read);
             this.Controls.Add(this.panel_Flashcard);
@@ -452,6 +499,7 @@
             this.panel_Exam.ResumeLayout(false);
             this.panel_Exam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).EndInit();
+            this.panel_Account.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -486,6 +534,9 @@
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
         private System.Windows.Forms.Timer timer_PanelExam;
+        private System.Windows.Forms.Panel panel_Account;
+        private XanderUI.XUIButton xuiButton_Account;
+        private System.Windows.Forms.Timer timer_MenuAccount;
     }
 }
 
