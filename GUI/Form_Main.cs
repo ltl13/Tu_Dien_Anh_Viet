@@ -465,6 +465,7 @@ namespace GUI
 
         #endregion
 
+        #region MenuAccount
         private bool isButtonAccountClick = false;
         private void timer_MenuAccount_Tick(object sender, EventArgs e)
         {
@@ -481,6 +482,7 @@ namespace GUI
         }
         private void xuiButton_Account_Click(object sender, EventArgs e)
         {
+            xuiButton_Account_MouseEnter(null, null);
             isButtonAccountClick = true;
             timer_MenuAccount.Start();
         }
@@ -504,6 +506,33 @@ namespace GUI
         {
             isButtonAccountClick = false;
             timer_MenuAccount.Start();
+            xuiButton_Account_MouseLeave(null, null);
         }
+
+        private void xuiButton_UpdateInfo_MouseEnter(object sender, EventArgs e)
+        {
+            xuiButton_Account_Click(null, null);
+        }
+
+        private void xuiButton_ResetAccount_MouseEnter(object sender, EventArgs e)
+        {
+            xuiButton_Account_Click(null, null);
+        }
+
+        private void xuiButton_DeleteAccount_MouseEnter(object sender, EventArgs e)
+        {
+            xuiButton_Account_Click(null, null);
+        }
+
+        private void xuiButton_ListAccount_MouseEnter(object sender, EventArgs e)
+        {
+            xuiButton_Account_Click(null, null);
+        }
+
+        private void xuiButton_FindUser_MouseEnter(object sender, EventArgs e)
+        {
+            xuiButton_Account_Click(null, null);
+        }
+        #endregion
     }
 }
