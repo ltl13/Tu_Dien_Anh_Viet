@@ -59,6 +59,7 @@
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
             this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
+            this.panel_Account = new System.Windows.Forms.Panel();
             this.xuiButton_Account = new XanderUI.XUIButton();
             this.timer_MenuAccount = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
