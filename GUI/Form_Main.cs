@@ -462,6 +462,48 @@ namespace GUI
         {
             pictureBox_Exam_MouseEnter(null, null);
         }
-        #endregion   
+
+        #endregion
+
+        private bool isButtonAccountClick = false;
+        private void timer_MenuAccount_Tick(object sender, EventArgs e)
+        {
+            if (isButtonAccountClick)
+            {
+                panel_Account.Height += 20;
+                if (panel_Account.Size == panel_Account.MaximumSize) { timer_MenuAccount.Stop(); }
+            }
+            else
+            {
+                panel_Account.Height -= 20;
+                if (panel_Account.Size == panel_Account.MinimumSize) { timer_MenuAccount.Stop(); }
+            }
+        }
+        private void xuiButton_Account_Click(object sender, EventArgs e)
+        {
+            isButtonAccountClick = true;
+            timer_MenuAccount.Start();
+        }
+
+        private void xuiButton_Account_MouseEnter(object sender, EventArgs e)
+        {
+            xuiButton_Account.BackgroundColor = Color.FromArgb(199, 233, 255);
+            xuiButton_Account.TextColor = Color.Black;
+        }
+
+        private void xuiButton_Account_MouseLeave(object sender, EventArgs e)
+        {
+            if (!isButtonAccountClick) 
+            {
+                xuiButton_Account.BackgroundColor = Color.White;
+                xuiButton_Account.TextColor = Color.White;
+            }
+        }
+
+        private void panel_Account_MouseLeave(object sender, EventArgs e)
+        {
+            isButtonAccountClick = false;
+            timer_MenuAccount.Start();
+        }
     }
 }
