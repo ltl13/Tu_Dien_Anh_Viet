@@ -19,18 +19,24 @@ namespace GUI
             InitializeComponent();
             father = usercontrolSearch;
             word = args;
-            label_Word.Text = word.English;
+            string english = word.English.Substring(0, 0 + word.English.IndexOf(" ["));
+            label_Word.Text = english;
+            label_VietNamese.Text = word.VietNamese;
         }
+
         private void metroTile_Back_Click(object sender, EventArgs e) {
             father.Show();
             this.Dispose();
         }
+
         private void metroTile_Back_MouseEnter(object sender, EventArgs e) {
             metroTile_Back.Style = MetroFramework.MetroColorStyle.Silver;
         }
+
         private void metroTile_Back_MouseLeave(object sender, EventArgs e) {
             metroTile_Back.Style = MetroFramework.MetroColorStyle.White;
         }
+
         private void metroTile_Speaker_Click(object sender, EventArgs e)
         {
             SpVoice speakEnglish = new SpVoice();

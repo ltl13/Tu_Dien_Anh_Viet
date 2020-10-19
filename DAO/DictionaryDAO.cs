@@ -36,19 +36,23 @@ namespace DAO {
         public static byte[] FromHex(string hex) {
             hex = hex.Replace("-", "");
             byte[] raw = new byte[hex.Length / 2];
+
             for (int i = 0; i < raw.Length; i++) {
                 raw[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
             }
+
             return raw;
         }
 
         public DataTable GetListItem(string input) {
             string encode = StringToHexString(input) + "%";
             DataTable DT = DataProvider.Instance.ExecuteQuery("SELECT English, VietNamese FROM dbo.Word WHERE English LIKE '" + encode + "'");
+
             for (int i = 0; i < DT.Rows.Count; i++) {
                 DT.Rows[i][0] = HexStringToString(DT.Rows[i][0].ToString());
                 DT.Rows[i][1] = HexStringToString(DT.Rows[i][1].ToString());
             }
+
             return DT;
         }
         #endregion
