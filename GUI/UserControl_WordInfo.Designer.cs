@@ -41,11 +41,13 @@
             this.tabPage_Technical = new System.Windows.Forms.TabPage();
             this.tabPage_Note = new System.Windows.Forms.TabPage();
             this.tabPage_Image = new System.Windows.Forms.TabPage();
+            this.label_VietNamese = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_WordInfo)).BeginInit();
             this.splitContainer_WordInfo.Panel1.SuspendLayout();
             this.splitContainer_WordInfo.Panel2.SuspendLayout();
             this.splitContainer_WordInfo.SuspendLayout();
             this.metroTabControl_WordInfo.SuspendLayout();
+            this.tabPage_Meaning.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer_WordInfo
@@ -105,9 +107,9 @@
             this.label_Word.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.label_Word.Location = new System.Drawing.Point(16, 17);
             this.label_Word.Name = "label_Word";
-            this.label_Word.Size = new System.Drawing.Size(126, 46);
+            this.label_Word.Size = new System.Drawing.Size(151, 46);
             this.label_Word.TabIndex = 0;
-            this.label_Word.Text = "label1";
+            this.label_Word.Text = "English";
             // 
             // metroTabControl_WordInfo
             // 
@@ -131,6 +133,7 @@
             // tabPage_Meaning
             // 
             this.tabPage_Meaning.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage_Meaning.Controls.Add(this.label_VietNamese);
             this.tabPage_Meaning.HorizontalScrollbarBarColor = true;
             this.tabPage_Meaning.HorizontalScrollbarHighlightOnWheel = false;
             this.tabPage_Meaning.HorizontalScrollbarSize = 10;
@@ -194,6 +197,16 @@
             this.tabPage_Image.TabIndex = 6;
             this.tabPage_Image.Text = "Ảnh minh họa";
             // 
+            // label_VietNamese
+            // 
+            this.label_VietNamese.AutoSize = true;
+            this.label_VietNamese.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label_VietNamese.Location = new System.Drawing.Point(3, 28);
+            this.label_VietNamese.Name = "label_VietNamese";
+            this.label_VietNamese.Size = new System.Drawing.Size(237, 46);
+            this.label_VietNamese.TabIndex = 4;
+            this.label_VietNamese.Text = "VietNamese";
+            // 
             // UserControl_WordInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -207,6 +220,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_WordInfo)).EndInit();
             this.splitContainer_WordInfo.ResumeLayout(false);
             this.metroTabControl_WordInfo.ResumeLayout(false);
+            this.tabPage_Meaning.ResumeLayout(false);
+            this.tabPage_Meaning.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -225,5 +240,6 @@
         private System.Windows.Forms.TabPage tabPage_Note;
         private System.Windows.Forms.TabPage tabPage_Image;
         private MetroFramework.Controls.MetroTile metroTile_Back;
+        private System.Windows.Forms.Label label_VietNamese;
     }
 }

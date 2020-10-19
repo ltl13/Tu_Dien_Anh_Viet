@@ -14,8 +14,10 @@ namespace GUI
 {
     public partial class UserControl_Search : UserControl
     {
+        #region properties
         private bool isComboBoxLoaded = false;
         Form_Main father;
+
         public UserControl_Search(Form_Main formMain)
         {
             InitializeComponent();
@@ -24,6 +26,9 @@ namespace GUI
             DictionaryBUS.Instance.LoadDataToComboBox(comboBox_Search, "");
             isComboBoxLoaded = true;
         }
+        #endregion
+
+        #region method
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
         {
             comboBox_Search.Text = metroTextBox_Searchbar.Text;
@@ -33,6 +38,7 @@ namespace GUI
             }
             else { comboBox_Search.DroppedDown = false; }
         }
+
         private void comboBox_Search_SelectionChangeCommitted(object sender, EventArgs e) {
             DataRowView row = (DataRowView)comboBox_Search.SelectedItem;
             DictionaryDTO wordSelected = new DictionaryDTO(row);
@@ -46,5 +52,6 @@ namespace GUI
 {
    
 }*/
+        #endregion
     }
 }
