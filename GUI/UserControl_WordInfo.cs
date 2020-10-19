@@ -19,7 +19,11 @@ namespace GUI
             InitializeComponent();
             father = usercontrolSearch;
             word = args;
-            string english = word.English.Substring(0, 0 + word.English.IndexOf(" ["));
+            string english = word.English;
+
+            if (english.Contains(" ["))
+                english = word.English.Substring(0, 0 + word.English.IndexOf(" ["));
+
             label_Word.Text = english;
             label_VietNamese.Text = word.VietNamese;
         }

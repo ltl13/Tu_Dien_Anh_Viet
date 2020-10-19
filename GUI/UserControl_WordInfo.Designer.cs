@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_WordInfo));
             this.splitContainer_WordInfo = new System.Windows.Forms.SplitContainer();
+            this.xuiButton_Interest = new XanderUI.XUIButton();
+            this.xuiButton_NotInterest = new XanderUI.XUIButton();
             this.metroTile_Back = new MetroFramework.Controls.MetroTile();
             this.metroTile_Speaker = new MetroFramework.Controls.MetroTile();
             this.label_Word = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@
             this.tabPage_Technical = new System.Windows.Forms.TabPage();
             this.tabPage_Note = new System.Windows.Forms.TabPage();
             this.tabPage_Image = new System.Windows.Forms.TabPage();
-            this.xuiButton_NotInterest = new XanderUI.XUIButton();
-            this.xuiButton_Interest = new XanderUI.XUIButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_WordInfo)).BeginInit();
             this.splitContainer_WordInfo.Panel1.SuspendLayout();
             this.splitContainer_WordInfo.Panel2.SuspendLayout();
@@ -74,6 +74,49 @@
             this.splitContainer_WordInfo.Size = new System.Drawing.Size(624, 516);
             this.splitContainer_WordInfo.SplitterDistance = 116;
             this.splitContainer_WordInfo.TabIndex = 0;
+            // 
+            // xuiButton_Interest
+            // 
+            this.xuiButton_Interest.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Interest.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Interest.ButtonImage")));
+            this.xuiButton_Interest.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Interest.ButtonText = "";
+            this.xuiButton_Interest.ClickBackColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Interest.ClickTextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Interest.CornerRadius = 5;
+            this.xuiButton_Interest.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Interest.HoverBackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Interest.HoverTextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Interest.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Interest.Location = new System.Drawing.Point(580, 72);
+            this.xuiButton_Interest.Name = "xuiButton_Interest";
+            this.xuiButton_Interest.Size = new System.Drawing.Size(40, 41);
+            this.xuiButton_Interest.TabIndex = 5;
+            this.xuiButton_Interest.TextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Interest.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Interest.Visible = false;
+            this.xuiButton_Interest.Click += new System.EventHandler(this.xuiButton_Interest_Click);
+            // 
+            // xuiButton_NotInterest
+            // 
+            this.xuiButton_NotInterest.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_NotInterest.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_NotInterest.ButtonImage")));
+            this.xuiButton_NotInterest.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_NotInterest.ButtonText = "";
+            this.xuiButton_NotInterest.ClickBackColor = System.Drawing.Color.Transparent;
+            this.xuiButton_NotInterest.ClickTextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_NotInterest.CornerRadius = 5;
+            this.xuiButton_NotInterest.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_NotInterest.HoverBackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_NotInterest.HoverTextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_NotInterest.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_NotInterest.Location = new System.Drawing.Point(580, 72);
+            this.xuiButton_NotInterest.Name = "xuiButton_NotInterest";
+            this.xuiButton_NotInterest.Size = new System.Drawing.Size(40, 41);
+            this.xuiButton_NotInterest.TabIndex = 4;
+            this.xuiButton_NotInterest.TextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_NotInterest.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_NotInterest.Click += new System.EventHandler(this.xuiButton_NotInterest_Click);
             // 
             // metroTile_Back
             // 
@@ -153,11 +196,11 @@
             // 
             // label_VietNamese
             // 
-            this.label_VietNamese.AutoSize = true;
+            this.label_VietNamese.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_VietNamese.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label_VietNamese.Location = new System.Drawing.Point(3, 28);
+            this.label_VietNamese.Location = new System.Drawing.Point(0, 0);
             this.label_VietNamese.Name = "label_VietNamese";
-            this.label_VietNamese.Size = new System.Drawing.Size(237, 46);
+            this.label_VietNamese.Size = new System.Drawing.Size(616, 354);
             this.label_VietNamese.TabIndex = 4;
             this.label_VietNamese.Text = "VietNamese";
             // 
@@ -211,49 +254,6 @@
             this.tabPage_Image.TabIndex = 6;
             this.tabPage_Image.Text = "Ảnh minh họa";
             // 
-            // xuiButton_NotInterest
-            // 
-            this.xuiButton_NotInterest.BackgroundColor = System.Drawing.Color.Transparent;
-            this.xuiButton_NotInterest.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_NotInterest.ButtonImage")));
-            this.xuiButton_NotInterest.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton_NotInterest.ButtonText = "";
-            this.xuiButton_NotInterest.ClickBackColor = System.Drawing.Color.Transparent;
-            this.xuiButton_NotInterest.ClickTextColor = System.Drawing.Color.Transparent;
-            this.xuiButton_NotInterest.CornerRadius = 5;
-            this.xuiButton_NotInterest.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_NotInterest.HoverBackgroundColor = System.Drawing.Color.Transparent;
-            this.xuiButton_NotInterest.HoverTextColor = System.Drawing.Color.Transparent;
-            this.xuiButton_NotInterest.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_NotInterest.Location = new System.Drawing.Point(580, 72);
-            this.xuiButton_NotInterest.Name = "xuiButton_NotInterest";
-            this.xuiButton_NotInterest.Size = new System.Drawing.Size(40, 41);
-            this.xuiButton_NotInterest.TabIndex = 4;
-            this.xuiButton_NotInterest.TextColor = System.Drawing.Color.Transparent;
-            this.xuiButton_NotInterest.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_NotInterest.Click += new System.EventHandler(this.xuiButton_NotInterest_Click);
-            // 
-            // xuiButton_Interest
-            // 
-            this.xuiButton_Interest.BackgroundColor = System.Drawing.Color.Transparent;
-            this.xuiButton_Interest.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Interest.ButtonImage")));
-            this.xuiButton_Interest.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton_Interest.ButtonText = "";
-            this.xuiButton_Interest.ClickBackColor = System.Drawing.Color.Transparent;
-            this.xuiButton_Interest.ClickTextColor = System.Drawing.Color.Transparent;
-            this.xuiButton_Interest.CornerRadius = 5;
-            this.xuiButton_Interest.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Interest.HoverBackgroundColor = System.Drawing.Color.Transparent;
-            this.xuiButton_Interest.HoverTextColor = System.Drawing.Color.Transparent;
-            this.xuiButton_Interest.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Interest.Location = new System.Drawing.Point(580, 72);
-            this.xuiButton_Interest.Name = "xuiButton_Interest";
-            this.xuiButton_Interest.Size = new System.Drawing.Size(40, 41);
-            this.xuiButton_Interest.TabIndex = 5;
-            this.xuiButton_Interest.TextColor = System.Drawing.Color.Transparent;
-            this.xuiButton_Interest.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Interest.Visible = false;
-            this.xuiButton_Interest.Click += new System.EventHandler(this.xuiButton_Interest_Click);
-            // 
             // UserControl_WordInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -268,7 +268,6 @@
             this.splitContainer_WordInfo.ResumeLayout(false);
             this.metroTabControl_WordInfo.ResumeLayout(false);
             this.tabPage_Meaning.ResumeLayout(false);
-            this.tabPage_Meaning.PerformLayout();
             this.ResumeLayout(false);
 
         }
