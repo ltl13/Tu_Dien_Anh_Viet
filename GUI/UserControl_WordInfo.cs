@@ -42,5 +42,17 @@ namespace GUI
             SpVoice speakEnglish = new SpVoice();
             speakEnglish.Speak(label_Word.Text, SpeechVoiceSpeakFlags.SVSFDefault);
         }
+
+        private void xuiButton_Interest_Click(object sender, EventArgs e)
+        {
+            xuiButton_Interest.Visible = false;
+            xuiButton_NotInterest.Visible = true;
+        }
+
+        private void xuiButton_NotInterest_Click(object sender, EventArgs e)
+        {
+            xuiButton_Interest.Visible = true;
+            xuiButton_NotInterest.Visible = false;
+        }
     }
 }
