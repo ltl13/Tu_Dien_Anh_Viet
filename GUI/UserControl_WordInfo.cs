@@ -15,16 +15,12 @@ namespace GUI
     public partial class UserControl_WordInfo : UserControl {
         UserControl_Search father;
         DictionaryDTO word;
+
         public UserControl_WordInfo(DictionaryDTO args, UserControl_Search usercontrolSearch) {
             InitializeComponent();
             father = usercontrolSearch;
             word = args;
-            string english = word.English;
-
-            if (english.Contains(" ["))
-                english = word.English.Substring(0, 0 + word.English.IndexOf(" ["));
-
-            label_Word.Text = english;
+            label_Word.Text = word.getEnglishDisplay();
             label_VietNamese.Text = word.VietNamese;
         }
 

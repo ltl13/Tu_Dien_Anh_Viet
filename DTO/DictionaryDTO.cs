@@ -1,6 +1,4 @@
-﻿using System.Data;
-
-namespace DTO {
+﻿namespace DTO {
     public class DictionaryDTO {
         #region properties
         private string english;
@@ -16,9 +14,19 @@ namespace DTO {
             this.vietNamese = vietNamese;
         }
 
-        public DictionaryDTO(DataRowView row) {
+        public DictionaryDTO(System.Data.DataRowView row) {
             this.english = row["English"].ToString();
             this.vietNamese = row["VietNamese"].ToString();
+        }
+
+        public string getEnglishDisplay() {
+            string englishDisplay = english;
+            
+            if (englishDisplay.Contains("[")) {
+                englishDisplay = englishDisplay.Substring(0, englishDisplay.IndexOf('['));
+            }
+
+            return englishDisplay;
         }
         #endregion
     }
