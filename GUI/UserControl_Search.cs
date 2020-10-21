@@ -41,7 +41,7 @@ namespace GUI
 
         private void comboBox_Search_SelectionChangeCommitted(object sender, EventArgs e) {
             DataRowView row = (DataRowView)comboBox_Search.SelectedItem;
-            DictionaryDTO wordSelected = new DictionaryDTO(row);
+            EnViDTO wordSelected = new EnViDTO(row);
             metroTextBox_Searchbar.Text = wordSelected.English;
             UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
             father.panel_Main.Controls.Add(wordInfo);
