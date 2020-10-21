@@ -14,9 +14,9 @@ namespace GUI
 {
     public partial class UserControl_WordInfo : UserControl {
         UserControl_Search father;
-        DictionaryDTO word;
+        EnViDTO word;
 
-        public UserControl_WordInfo(DictionaryDTO args, UserControl_Search usercontrolSearch) {
+        public UserControl_WordInfo(EnViDTO args, UserControl_Search usercontrolSearch) {
             InitializeComponent();
             father = usercontrolSearch;
             word = args;

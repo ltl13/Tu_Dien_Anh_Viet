@@ -54,7 +54,7 @@
             return DT;
         }
 
-        public bool AddFavorite(DTO.AccountDTO loginAccount, DTO.DictionaryDTO word) {
+        public bool AddFavorite(DTO.AccountDTO loginAccount, DTO.EnViDTO word) {
             word.English = StringToHexString(word.English);
             string query = string.Format("INSERT dbo.Favorite_Word (ID_User, ID_Word) VALUE ({0}, '{1}')", loginAccount.ID, word.English);
             int result = DataProvider.Instance.ExecuteNonQuery(query);

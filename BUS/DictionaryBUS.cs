@@ -1,4 +1,7 @@
 ﻿using DAO;
+using DTO;
+using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 
@@ -31,20 +34,35 @@ namespace BUS {
             listbox.DataSource = GetListItem(input);
         }
 
-        public bool AddFavorite(DTO.AccountDTO loginAccount, DTO.DictionaryDTO word) {
+        public bool AddFavorite(AccountDTO loginAccount, EnViDTO word) {
             return DictionaryDAO.Instance.AddFavorite(loginAccount, word);
         }
 
-        public System.Data.DataTable GetListFavorite(DTO.AccountDTO loginAccount) {
+        public DataTable GetListFavorite(AccountDTO loginAccount) {
             return DictionaryDAO.Instance.GetListFavorite(loginAccount);
         }
 
-        //public void LoadJsonToComboBox() {
-        //    using (System.IO.StreamReader r = new System.IO.StreamReader(@"..\..\..\resources\en-vi.json")) {
-        //        string json = r.ReadToEnd();
-        //        List<Item> items = JsonConvert.DeserializeObject<List<Item>>(json);
-        //    }
-        //}
+        public List<EnViDTO> LoadJsonEnVi() {
+            List<EnViDTO> DicEnVi = new List<EnViDTO>();
+
+            using (System.IO.StreamReader r = new System.IO.StreamReader(@"..\..\..\resources\en-vi.json")) {
+                string json = r.ReadToEnd();
+                DicEnVi = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
+            }
+
+            return DicEnVi;
+        }
+
+        public List<ViEnDTO> LoadJsonViEn() {
+            List<ViEnDTO> DicViEn = new List<ViEnDTO>();
+
+            using (System.IO.StreamReader r = new System.IO.StreamReader(@"..\..\..\resources\vi-en.json")) {
+                string json = r.ReadToEnd();
+                DicViEn = JsonConvert.DeserializeObject<List<ViEnDTO>>(json);
+            }
+
+            return DicViEn;
+        }
         #endregion
     }
 }

@@ -1,5 +1,5 @@
 ﻿namespace DTO {
-    public class DictionaryDTO {
+    public class EnViDTO {
         #region properties
         private string english;
         private string vietNamese;
@@ -7,14 +7,14 @@
         public string English { get => english; set => english = value; }
         public string VietNamese { get => vietNamese; set => vietNamese = value; }
 
-        public DictionaryDTO() { }
+        public EnViDTO() { }
 
-        public DictionaryDTO(string english, string vietNamese) {
+        public EnViDTO(string english, string vietNamese) {
             this.english = english;
             this.vietNamese = vietNamese;
         }
 
-        public DictionaryDTO(System.Data.DataRowView row) {
+        public EnViDTO(System.Data.DataRowView row) {
             this.english = row["English"].ToString();
             this.vietNamese = row["VietNamese"].ToString();
         }
