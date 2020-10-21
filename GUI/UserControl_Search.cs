@@ -16,7 +16,7 @@ namespace GUI
     {
         #region properties
         private bool isComboBoxLoaded = false;
-        Form_Main father;
+        public Form_Main father;
 
         public UserControl_Search(Form_Main formMain)
         {

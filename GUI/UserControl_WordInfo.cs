@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using SpeechLib;
+using BUS;
 
 namespace GUI
 {
     public partial class UserControl_WordInfo : UserControl {
-        UserControl_Search father;
+        private UserControl_Search father;
         EnViDTO word;
 
         public UserControl_WordInfo(EnViDTO args, UserControl_Search usercontrolSearch) {
@@ -47,12 +48,14 @@ namespace GUI
         {
             xuiButton_Interest.Visible = false;
             xuiButton_NotInterest.Visible = true;
+            
         }
-
         private void xuiButton_NotInterest_Click(object sender, EventArgs e)
         {
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
+            DictionaryBUS dictionaryBUS = new DictionaryBUS();
+            dictionaryBUS.AddFavorite(father.father.LoginAccount, word);
         }
     }
 }
