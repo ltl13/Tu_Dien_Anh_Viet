@@ -14,6 +14,7 @@ namespace GUI
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
         private UserControl mainSearch;
+        private UserControl mainFlashcard;
         private AccountDTO loginAccount;
         Form father;
 
@@ -28,9 +29,15 @@ namespace GUI
 
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
+            UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount);
             mainSearch = search;
+            mainFlashcard = flashcard;
 
             panel_Main.Controls.Add(mainSearch);
+            panel_Main.Controls.Add(mainFlashcard);
+
+            mainSearch.Visible = true;
+            mainFlashcard.Visible = false;
 
             pictureBox_Search_Click(null, null);
         }
@@ -291,7 +298,7 @@ namespace GUI
                 ReturnClick(panel_Flashcard);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isFlashcardClick = true;
-                //mainFlashcard.Visible = true;
+                mainFlashcard.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(219, 255, 212);
                 timer_MainPanel.Start();
             }
