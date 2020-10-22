@@ -29,25 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Flashcard));
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroPanel_Eng = new MetroFramework.Controls.MetroPanel();
             this.xuiButton_Next = new XanderUI.XUIButton();
             this.xuiButton_Previous = new XanderUI.XUIButton();
             this.metroLabel_Number = new MetroFramework.Controls.MetroLabel();
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.xuiButton_Delete = new XanderUI.XUIButton();
+            this.textBox_Eng = new System.Windows.Forms.TextBox();
+            this.comboBox_FavoriteList = new System.Windows.Forms.ComboBox();
+            this.metroPanel_Eng.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroPanel1
+            // metroPanel_Eng
             // 
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(61, 47);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(504, 309);
-            this.metroPanel1.TabIndex = 0;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel_Eng.Controls.Add(this.textBox_Eng);
+            this.metroPanel_Eng.HorizontalScrollbarBarColor = true;
+            this.metroPanel_Eng.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel_Eng.HorizontalScrollbarSize = 10;
+            this.metroPanel_Eng.Location = new System.Drawing.Point(61, 47);
+            this.metroPanel_Eng.Name = "metroPanel_Eng";
+            this.metroPanel_Eng.Size = new System.Drawing.Size(504, 309);
+            this.metroPanel_Eng.TabIndex = 0;
+            this.metroPanel_Eng.VerticalScrollbarBarColor = true;
+            this.metroPanel_Eng.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel_Eng.VerticalScrollbarSize = 10;
             // 
             // xuiButton_Next
             // 
@@ -100,37 +104,64 @@
             this.metroLabel_Number.Text = "1000/1000";
             this.metroLabel_Number.WrapToLine = true;
             // 
-            // xuiButton1
+            // xuiButton_Delete
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.xuiButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton1.ButtonImage")));
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton1.ButtonText = "Button";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.Red;
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.Transparent;
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.Red;
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.Transparent;
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(532, 452);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(33, 32);
-            this.xuiButton1.TabIndex = 4;
-            this.xuiButton1.TextColor = System.Drawing.Color.Transparent;
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Delete.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Delete.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Delete.ButtonImage")));
+            this.xuiButton_Delete.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Delete.ButtonText = "Button";
+            this.xuiButton_Delete.ClickBackColor = System.Drawing.Color.Red;
+            this.xuiButton_Delete.ClickTextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Delete.CornerRadius = 5;
+            this.xuiButton_Delete.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Delete.HoverBackgroundColor = System.Drawing.Color.Red;
+            this.xuiButton_Delete.HoverTextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Delete.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Delete.Location = new System.Drawing.Point(532, 452);
+            this.xuiButton_Delete.Name = "xuiButton_Delete";
+            this.xuiButton_Delete.Size = new System.Drawing.Size(33, 32);
+            this.xuiButton_Delete.TabIndex = 4;
+            this.xuiButton_Delete.TextColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Delete.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // textBox_Eng
+            // 
+            this.textBox_Eng.BackColor = System.Drawing.Color.White;
+            this.textBox_Eng.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Eng.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBox_Eng.Location = new System.Drawing.Point(61, 125);
+            this.textBox_Eng.MaxLength = 32;
+            this.textBox_Eng.Name = "textBox_Eng";
+            this.textBox_Eng.ReadOnly = true;
+            this.textBox_Eng.Size = new System.Drawing.Size(383, 38);
+            this.textBox_Eng.TabIndex = 2;
+            this.textBox_Eng.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBox_FavoriteList
+            // 
+            this.comboBox_FavoriteList.DropDownHeight = 150;
+            this.comboBox_FavoriteList.FormattingEnabled = true;
+            this.comboBox_FavoriteList.IntegralHeight = false;
+            this.comboBox_FavoriteList.Location = new System.Drawing.Point(614, 492);
+            this.comboBox_FavoriteList.Name = "comboBox_FavoriteList";
+            this.comboBox_FavoriteList.Size = new System.Drawing.Size(10, 24);
+            this.comboBox_FavoriteList.TabIndex = 5;
+            this.comboBox_FavoriteList.Visible = false;
             // 
             // UserControl_Flashcard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.xuiButton1);
+            this.Controls.Add(this.xuiButton_Delete);
             this.Controls.Add(this.metroLabel_Number);
             this.Controls.Add(this.xuiButton_Previous);
+            this.Controls.Add(this.comboBox_FavoriteList);
             this.Controls.Add(this.xuiButton_Next);
-            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.metroPanel_Eng);
             this.Name = "UserControl_Flashcard";
             this.Size = new System.Drawing.Size(624, 516);
+            this.metroPanel_Eng.ResumeLayout(false);
+            this.metroPanel_Eng.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,10 +169,12 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroPanel metroPanel_Eng;
         private XanderUI.XUIButton xuiButton_Next;
         private XanderUI.XUIButton xuiButton_Previous;
         private MetroFramework.Controls.MetroLabel metroLabel_Number;
-        private XanderUI.XUIButton xuiButton1;
+        private XanderUI.XUIButton xuiButton_Delete;
+        private System.Windows.Forms.TextBox textBox_Eng;
+        private System.Windows.Forms.ComboBox comboBox_FavoriteList;
     }
 }
