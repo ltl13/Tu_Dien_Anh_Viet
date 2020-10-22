@@ -19,7 +19,7 @@ namespace BUS {
             private set { instance = value; }
         }
 
-        private DictionaryBUS() { }
+        public DictionaryBUS() { }
         #endregion
 
         #region method
