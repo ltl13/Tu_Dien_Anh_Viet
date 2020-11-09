@@ -55,7 +55,7 @@ namespace GUI
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
             DictionaryBUS dictionaryBUS = new DictionaryBUS();
-            dictionaryBUS.AddFavorite(father.father.LoginAccount, word);
+            //dictionaryBUS.AddFavorite(father.father.LoginAccount, word);
         }
     }
 }

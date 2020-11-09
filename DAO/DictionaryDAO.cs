@@ -1,4 +1,11 @@
-﻿namespace DAO {
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
+using DTO;
+using System.Data;
+using FastMember;
+
+namespace DAO {
     public class DictionaryDAO {
         #region properties
         private static DictionaryDAO instance;
@@ -17,60 +24,77 @@
         #endregion
 
         #region method
-        public static string StringToHexString(string plainText) {
-            var bb = System.Text.Encoding.UTF8.GetBytes(plainText);
-            var hexString = System.BitConverter.ToString(bb);
-            string s = HexStringToString(hexString);
+        public List<EnViDTO> GetEnViList() {
+            List<EnViDTO> items = new List<EnViDTO>();
 
-            return hexString;
-        }
-
-        public static string HexStringToString(string HexString) {
-            byte[] bb = FromHex(HexString);
-
-            return System.Text.Encoding.UTF8.GetString(bb);
-        }
-
-        public static byte[] FromHex(string hex) {
-            hex = hex.Replace("-", "");
-            byte[] raw = new byte[hex.Length / 2];
-
-            for (int i = 0; i < raw.Length; i++) {
-                raw[i] = System.Convert.ToByte(hex.Substring(i * 2, 2), 16);
+            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\en-vi.json")) {
+                string json = r.ReadToEnd();
+                items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
             }
 
-            return raw;
+            return items;
         }
 
-        public System.Data.DataTable GetListItem(string input) {
-            string encode = StringToHexString(input) + "%";
-            System.Data.DataTable DT = DataProvider.Instance.ExecuteQuery("SELECT English, VietNamese FROM dbo.Word WHERE English LIKE '" + encode + "'");
+        public DataTable GetEnViTable() {
+            DataTable table = new DataTable();
 
-            for (int i = 0; i < DT.Rows.Count; i++) {
-                DT.Rows[i][0] = HexStringToString(DT.Rows[i][0].ToString());
-                DT.Rows[i][1] = HexStringToString(DT.Rows[i][1].ToString());
+            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\en-vi.json")) {
+                string json = r.ReadToEnd();
+                table = (DataTable) JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             }
 
-            return DT;
+            return table;
         }
 
-        public bool AddFavorite(DTO.AccountDTO loginAccount, DTO.EnViDTO word) {
-            word.English = StringToHexString(word.English);
-            string query = string.Format("INSERT dbo.Favorite_Word (ID_User, ID_Word) VALUE ({0}, '{1}')", loginAccount.ID, word.English);
-            int result = DataProvider.Instance.ExecuteNonQuery(query);
-
-            return result > 0;
+        public List<ViEnDTO> GetViEnList() {
+            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\vi-en.json")) {
+                string json = r.ReadToEnd();
+                List<ViEnDTO> items = JsonConvert.DeserializeObject<List<ViEnDTO>>(json);
+                return items;
+            }
         }
 
-        public System.Data.DataTable GetListFavorite(DTO.AccountDTO loginAccount) {
-            System.Data.DataTable DT = DataProvider.Instance.ExecuteQuery("SELECT ID_Word FROM dbo.Favorite_English WHERE ID_User = " + loginAccount.ID.ToString());
+        public DataTable GetViEnTable() {
+            DataTable table = new DataTable();
 
-            for (int i = 0; i < DT.Rows.Count; i++) {
-                DT.Rows[i][1] = HexStringToString(DT.Rows[i][1].ToString());
+            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\vi-en.json")) {
+                string json = r.ReadToEnd();
+                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             }
 
-            return DT;
+            return table;
         }
+
+        //public bool AddFavorite(AccountDTO loginAccount, EnViDTO word) {
+        //    //word.English = StringToHexString(word.English);
+        //    string query = string.Format("INSERT dbo.Favorite_Word (ID_User, ID_Word) VALUE ({0}, '{1}')", loginAccount.ID, word.English);
+        //    int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+        //    return result > 0;
+        //}
+
+        //public DataTable GetListFavorite(AccountDTO loginAccount) {
+        //    DataTable DT = DataProvider.Instance.ExecuteQuery("SELECT ID_Word FROM dbo.Favorite_English WHERE ID_User = " + loginAccount.ID.ToString());
+
+        //    for (int i = 0; i < DT.Rows.Count; i++) {
+        //        //DT.Rows[i][1] = HexStringToString(DT.Rows[i][1].ToString());
+        //    }
+
+        //    return DT;
+        //}
+
+        //public DataTable GetListItem(string input) {
+        //    //string encode = StringToHexString(input) + "%";
+        //    DataTable DT = DataProvider.Instance.ExecuteQuery("SELECT English, VietNamese FROM dbo.Word WHERE English LIKE '" + encode + "'");
+
+        //    for (int i = 0; i < DT.Rows.Count; i++) {
+        //        //DT.Rows[i][0] = HexStringToString(DT.Rows[i][0].ToString());
+        //        //DT.Rows[i][1] = HexStringToString(DT.Rows[i][1].ToString());
+        //    }
+
+        //    return DT;
+        //}
+
         #endregion
     }
 }
