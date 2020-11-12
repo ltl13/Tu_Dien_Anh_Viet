@@ -6,7 +6,7 @@ namespace DAO {
     public class DataProvider {
         #region properties
         private static DataProvider instance;
-        private string connectionSTR = "Data Source=.\\SQLEXPRESS;Initial Catalog=DailyDictionary;User ID=sa;Password=0842837917101001";
+        private string connectionSTR = @"Data Source=DESKTOP-NMD2KH7;Initial Catalog=DailyDictionary;User ID=sa;Password=123456";
 
         public static DataProvider Instance {
             get { 
