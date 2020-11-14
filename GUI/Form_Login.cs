@@ -10,6 +10,7 @@ namespace GUI {
             InitializeComponent();
             this.AcceptButton = btLogin;
             this.CancelButton = btExit;
+            this.FocusMe();
         }
         #endregion
 

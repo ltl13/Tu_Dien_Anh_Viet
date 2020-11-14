@@ -18,6 +18,7 @@ namespace GUI
         private bool isListBoxLoaded = false;
         public Form_Main father;
         DataTable dataTable = new DataTable();
+        List<EnViDTO> favorite = DictionaryBUS.Instance.LoadSavedFavoriteWord();
 
         public UserControl_Search(Form_Main formMain)
         {
@@ -48,7 +49,7 @@ namespace GUI
             DataRowView row = (DataRowView)listBox_Search.SelectedItem;
             EnViDTO wordSelected = new EnViDTO(row);
             //metroTextBox_Searchbar.Text = wordSelected.English;
-            UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
+            UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this, favorite);
             father.panel_Main.Controls.Add(wordInfo);
             wordInfo.Show();
             this.Hide();

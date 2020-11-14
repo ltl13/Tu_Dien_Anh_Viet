@@ -30,6 +30,14 @@ namespace BUS {
             return DictionaryDAO.Instance.GetEnViTable();
         }
 
+        public void SaveFavoriteWord(List<EnViDTO> Favorite) {
+            DictionaryDAO.Instance.SaveFavoriteWord(Favorite);
+        }
+
+        public List<EnViDTO> LoadSavedFavoriteWord() {
+            return DictionaryDAO.Instance.LoadSavedFavoriteWord();
+        }
+
         //public bool AddFavorite(AccountDTO loginAccount, EnViDTO word) {
         //    return DictionaryDAO.Instance.AddFavorite(loginAccount, word);
         //}
