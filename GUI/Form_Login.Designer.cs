@@ -46,22 +46,21 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.lbMotto);
             this.panel3.Controls.Add(this.lbTitle);
             this.panel3.Controls.Add(this.icon);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(20, 60);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 190);
+            this.panel3.Size = new System.Drawing.Size(287, 148);
             this.panel3.TabIndex = 9;
             // 
             // lbMotto
             // 
             this.lbMotto.AutoSize = true;
             this.lbMotto.Font = new System.Drawing.Font("Calibri Light", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMotto.Location = new System.Drawing.Point(52, 123);
+            this.lbMotto.Location = new System.Drawing.Point(41, 100);
             this.lbMotto.Name = "lbMotto";
             this.lbMotto.Size = new System.Drawing.Size(196, 23);
             this.lbMotto.TabIndex = 2;
@@ -71,7 +70,7 @@
             // 
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.Location = new System.Drawing.Point(108, 76);
+            this.lbTitle.Location = new System.Drawing.Point(102, 32);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(135, 23);
             this.lbTitle.TabIndex = 1;
@@ -80,7 +79,7 @@
             // icon
             // 
             this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
-            this.icon.Location = new System.Drawing.Point(47, 63);
+            this.icon.Location = new System.Drawing.Point(41, 19);
             this.icon.Name = "icon";
             this.icon.Size = new System.Drawing.Size(50, 50);
             this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +125,7 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.BackColor = System.Drawing.SystemColors.Control;
+            this.tbPassword.BackColor = System.Drawing.Color.White;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.Location = new System.Drawing.Point(42, 108);
@@ -137,7 +136,7 @@
             // 
             // tbUsername
             // 
-            this.tbUsername.BackColor = System.Drawing.SystemColors.Control;
+            this.tbUsername.BackColor = System.Drawing.Color.White;
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsername.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsername.Location = new System.Drawing.Point(42, 38);
@@ -189,9 +188,9 @@
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 190);
+            this.panel4.Location = new System.Drawing.Point(20, 208);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 260);
+            this.panel4.Size = new System.Drawing.Size(287, 254);
             this.panel4.TabIndex = 12;
             // 
             // lbCreateNewAccount
@@ -211,15 +210,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 450);
+            this.ClientSize = new System.Drawing.Size(327, 482);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Form_Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLogin_FormClosing);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

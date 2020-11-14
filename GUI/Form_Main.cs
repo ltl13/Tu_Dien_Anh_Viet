@@ -75,6 +75,7 @@ namespace GUI
             isExamClick = false;
 
             mainSearch.Visible = false;
+            mainFlashcard.Visible = false;
 
             timer_PanelSearch.Start();
             timer_PanelGrammar.Start();
@@ -350,15 +351,15 @@ namespace GUI
         {
             if (isMouseEnter_PanelRead)
             {
-                panel_Read.Width += 10;
-                if (panel_Read.Size == panel_Read.MaximumSize) { timer_PanelRead.Stop(); }
+                panel_Translate.Width += 10;
+                if (panel_Translate.Size == panel_Translate.MaximumSize) { timer_PanelRead.Stop(); }
             }
             else
             {
                 if (!isReadClick)
                 {
-                    panel_Read.Width -= 10;
-                    if (panel_Read.Size == panel_Read.MinimumSize) { timer_PanelRead.Stop(); }
+                    panel_Translate.Width -= 10;
+                    if (panel_Translate.Size == panel_Translate.MinimumSize) { timer_PanelRead.Stop(); }
                 }
                 else { timer_PanelRead.Stop(); }
             }
@@ -367,7 +368,7 @@ namespace GUI
         {
             if (!isReadClick)
             {
-                ReturnClick(panel_Read);
+                ReturnClick(panel_Translate);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isReadClick = true;
                 //mainRead.Visible = true;

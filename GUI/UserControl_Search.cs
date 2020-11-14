@@ -15,7 +15,7 @@ namespace GUI
     public partial class UserControl_Search : UserControl
     {
         #region properties
-        private bool isComboBoxLoaded = false;
+        private bool isListBoxLoaded = false;
         public Form_Main father;
         DataTable dataTable = new DataTable();
 
@@ -23,9 +23,10 @@ namespace GUI
         {
             InitializeComponent();
             father = formMain;
-            comboBox_Search.DisplayMember = "English";
+            listBox_Search.DisplayMember = "English";
             dataTable = DictionaryBUS.Instance.GetEnViTable();
-            isComboBoxLoaded = true;
+            isListBoxLoaded = true;
+            listBox_Search.Visible = false;
         }
         #endregion
 
@@ -37,13 +38,14 @@ namespace GUI
                 DataView dataView = new DataView(data);
                 dataView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
                 data = dataView.ToTable();
-                comboBox_Search.DataSource = data;
-                comboBox_Search.DroppedDown = true;
-            }          
+                listBox_Search.DataSource = data;
+                listBox_Search.Visible = true;
+            }
+            else { listBox_Search.Visible = false; }
         }
 
-        private void comboBox_Search_SelectionChangeCommitted(object sender, EventArgs e) {
-            DataRowView row = (DataRowView)comboBox_Search.SelectedItem;
+        private void listBox_Search_Click(object sender, EventArgs e) {
+            DataRowView row = (DataRowView)listBox_Search.SelectedItem;
             EnViDTO wordSelected = new EnViDTO(row);
             //metroTextBox_Searchbar.Text = wordSelected.English;
             UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
@@ -57,7 +59,7 @@ namespace GUI
 }*/
         #endregion
 
-        private void bt_trans_EngToViet_Click(object sender, EventArgs e)
+        /*private void bt_trans_EngToViet_Click(object sender, EventArgs e)
         {
             string strTranslatedText = null;
             try
@@ -87,6 +89,6 @@ namespace GUI
             {
                 MessageBox.Show(ex.Message);
             }
-        }
+        }*/
     }
 }
