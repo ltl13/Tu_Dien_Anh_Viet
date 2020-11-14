@@ -27,7 +27,7 @@ namespace DAO {
         public List<EnViDTO> GetEnViList() {
             List<EnViDTO> items = new List<EnViDTO>();
 
-            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\en-vi.json")) {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\en-vi.json")) {
                 string json = r.ReadToEnd();
                 items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
             }
@@ -38,16 +38,16 @@ namespace DAO {
         public DataTable GetEnViTable() {
             DataTable table = new DataTable();
 
-            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\en-vi.json")) {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\en-vi.json")) {
                 string json = r.ReadToEnd();
-                table = (DataTable) JsonConvert.DeserializeObject(json, (typeof(DataTable)));
+                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             }
 
             return table;
         }
 
         public List<ViEnDTO> GetViEnList() {
-            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\vi-en.json")) {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\vi-en.json")) {
                 string json = r.ReadToEnd();
                 List<ViEnDTO> items = JsonConvert.DeserializeObject<List<ViEnDTO>>(json);
                 return items;
@@ -57,12 +57,25 @@ namespace DAO {
         public DataTable GetViEnTable() {
             DataTable table = new DataTable();
 
-            using (StreamReader r = new StreamReader("..\\..\\..\\resources\\vi-en.json")) {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\vi-en.json")) {
                 string json = r.ReadToEnd();
                 table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             }
 
             return table;
+        }
+
+        public void SaveFavoriteWord(List<EnViDTO> Favorite) {
+            string json = JsonConvert.SerializeObject(Favorite.ToArray());
+            File.WriteAllText(@"..\..\..\resources\favorite.json", json);
+        }
+
+        public List<EnViDTO> LoadSavedFavoriteWord() {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\favorite.json")) {
+                string json = r.ReadToEnd();
+                List<EnViDTO> items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
+                return items;
+            }
         }
 
         //public bool AddFavorite(AccountDTO loginAccount, EnViDTO word) {

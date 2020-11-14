@@ -6,15 +6,15 @@ namespace DAO {
     public class DataProvider {
         #region properties
         private static DataProvider instance;
-        private string connectionSTR = @"Data Source=.\SQLEXPRESS01;Initial Catalog=DailyDictionary;Persist Security Info=True;User ID=sa;Password=Luan130201";
+        private string connectionSTR = @"Data Source=.\SQLEXPRESS;Initial Catalog=DailyDictionary;Persist Security Info=True;User ID=sa;Password=0842837917101001";
 
         public static DataProvider Instance {
-            get { 
-                if (instance == null) instance = new DataProvider(); 
-                return DataProvider.instance; 
+            get {
+                if (instance == null) instance = new DataProvider();
+                return DataProvider.instance;
             }
-            private set { 
-                DataProvider.instance = value; 
+            private set {
+                DataProvider.instance = value;
             }
         }
 
