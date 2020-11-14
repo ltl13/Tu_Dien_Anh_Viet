@@ -34,14 +34,16 @@
             this.xuiButton_Previous = new XanderUI.XUIButton();
             this.metroLabel_Number = new MetroFramework.Controls.MetroLabel();
             this.xuiButton_Delete = new XanderUI.XUIButton();
-            this.textBox_Eng = new System.Windows.Forms.TextBox();
             this.comboBox_FavoriteList = new System.Windows.Forms.ComboBox();
+            this.label_Eng = new System.Windows.Forms.Label();
+            this.panel_Eng = new System.Windows.Forms.Panel();
             this.metroPanel_Eng.SuspendLayout();
+            this.panel_Eng.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel_Eng
             // 
-            this.metroPanel_Eng.Controls.Add(this.textBox_Eng);
+            this.metroPanel_Eng.Controls.Add(this.panel_Eng);
             this.metroPanel_Eng.HorizontalScrollbarBarColor = true;
             this.metroPanel_Eng.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel_Eng.HorizontalScrollbarSize = 10;
@@ -124,19 +126,6 @@
             this.xuiButton_Delete.TextColor = System.Drawing.Color.Transparent;
             this.xuiButton_Delete.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // textBox_Eng
-            // 
-            this.textBox_Eng.BackColor = System.Drawing.Color.White;
-            this.textBox_Eng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_Eng.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox_Eng.Location = new System.Drawing.Point(61, 125);
-            this.textBox_Eng.MaxLength = 32;
-            this.textBox_Eng.Name = "textBox_Eng";
-            this.textBox_Eng.ReadOnly = true;
-            this.textBox_Eng.Size = new System.Drawing.Size(383, 38);
-            this.textBox_Eng.TabIndex = 2;
-            this.textBox_Eng.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // comboBox_FavoriteList
             // 
             this.comboBox_FavoriteList.DropDownHeight = 150;
@@ -147,6 +136,27 @@
             this.comboBox_FavoriteList.Size = new System.Drawing.Size(10, 24);
             this.comboBox_FavoriteList.TabIndex = 5;
             this.comboBox_FavoriteList.Visible = false;
+            // 
+            // label_Eng
+            // 
+            this.label_Eng.BackColor = System.Drawing.Color.Transparent;
+            this.label_Eng.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Eng.Location = new System.Drawing.Point(0, 0);
+            this.label_Eng.Name = "label_Eng";
+            this.label_Eng.Size = new System.Drawing.Size(419, 54);
+            this.label_Eng.TabIndex = 2;
+            this.label_Eng.Text = "label1";
+            this.label_Eng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_Eng
+            // 
+            this.panel_Eng.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Eng.Controls.Add(this.label_Eng);
+            this.panel_Eng.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_Eng.Location = new System.Drawing.Point(43, 107);
+            this.panel_Eng.Name = "panel_Eng";
+            this.panel_Eng.Size = new System.Drawing.Size(419, 54);
+            this.panel_Eng.TabIndex = 3;
             // 
             // UserControl_Flashcard
             // 
@@ -161,7 +171,7 @@
             this.Name = "UserControl_Flashcard";
             this.Size = new System.Drawing.Size(624, 516);
             this.metroPanel_Eng.ResumeLayout(false);
-            this.metroPanel_Eng.PerformLayout();
+            this.panel_Eng.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,7 +184,8 @@
         private XanderUI.XUIButton xuiButton_Previous;
         private MetroFramework.Controls.MetroLabel metroLabel_Number;
         private XanderUI.XUIButton xuiButton_Delete;
-        private System.Windows.Forms.TextBox textBox_Eng;
         private System.Windows.Forms.ComboBox comboBox_FavoriteList;
+        private System.Windows.Forms.Panel panel_Eng;
+        private System.Windows.Forms.Label label_Eng;
     }
 }
