@@ -14,10 +14,11 @@ namespace GUI
 {
     public partial class UserControl_Flashcard : UserControl
     {
-        DictionaryBUS dictionaryBUS = new DictionaryBUS();
+        public List<EnViDTO> favorite;
         public UserControl_Flashcard(AccountDTO account)
         {
             InitializeComponent();
+            favorite = DictionaryBUS.Instance.LoadSavedFavoriteWord();
             //textBox_Eng.Text =  dictionaryBUS.GetListFavorite(account).ToString();
         }
     }
