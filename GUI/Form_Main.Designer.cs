@@ -51,9 +51,9 @@
             this.label_Flashcard = new System.Windows.Forms.Label();
             this.pictureBox_Flashcard = new System.Windows.Forms.PictureBox();
             this.timer_PanelFlashcard = new System.Windows.Forms.Timer(this.components);
-            this.panel_Read = new System.Windows.Forms.Panel();
-            this.label_Read = new System.Windows.Forms.Label();
-            this.pictureBox_Read = new System.Windows.Forms.PictureBox();
+            this.panel_Translate = new System.Windows.Forms.Panel();
+            this.label_Translate = new System.Windows.Forms.Label();
+            this.pictureBox_Translate = new System.Windows.Forms.PictureBox();
             this.timer_PanelRead = new System.Windows.Forms.Timer(this.components);
             this.panel_Exam = new System.Windows.Forms.Panel();
             this.label_Exam = new System.Windows.Forms.Label();
@@ -67,6 +67,9 @@
             this.xuiButton_UpdateInfo = new XanderUI.XUIButton();
             this.xuiButton_Account = new XanderUI.XUIButton();
             this.timer_MenuAccount = new System.Windows.Forms.Timer(this.components);
+            this.xuiSwitch_Language = new XanderUI.XUISwitch();
+            this.label_English = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -76,8 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).BeginInit();
             this.panel_Flashcard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).BeginInit();
-            this.panel_Read.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Read)).BeginInit();
+            this.panel_Translate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Translate)).BeginInit();
             this.panel_Exam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).BeginInit();
             this.panel_Account.SuspendLayout();
@@ -175,7 +178,7 @@
             this.panel_Grammar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(209)))));
             this.panel_Grammar.Controls.Add(this.label_Grammar);
             this.panel_Grammar.Controls.Add(this.pictureBox_Grammar);
-            this.panel_Grammar.Location = new System.Drawing.Point(0, 157);
+            this.panel_Grammar.Location = new System.Drawing.Point(0, 406);
             this.panel_Grammar.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Grammar.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Grammar.Name = "panel_Grammar";
@@ -317,49 +320,49 @@
             this.timer_PanelFlashcard.Interval = 1;
             this.timer_PanelFlashcard.Tick += new System.EventHandler(this.timer_PanelFlashcard_Tick);
             // 
-            // panel_Read
+            // panel_Translate
             // 
-            this.panel_Read.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
-            this.panel_Read.Controls.Add(this.label_Read);
-            this.panel_Read.Controls.Add(this.pictureBox_Read);
-            this.panel_Read.Location = new System.Drawing.Point(0, 406);
-            this.panel_Read.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Read.MinimumSize = new System.Drawing.Size(85, 77);
-            this.panel_Read.Name = "panel_Read";
-            this.panel_Read.Size = new System.Drawing.Size(85, 77);
-            this.panel_Read.TabIndex = 10;
-            this.panel_Read.Click += new System.EventHandler(this.panel_Read_Click);
-            this.panel_Read.MouseEnter += new System.EventHandler(this.panel_Read_MouseEnter);
-            this.panel_Read.MouseLeave += new System.EventHandler(this.panel_Read_MouseLeave);
+            this.panel_Translate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this.panel_Translate.Controls.Add(this.label_Translate);
+            this.panel_Translate.Controls.Add(this.pictureBox_Translate);
+            this.panel_Translate.Location = new System.Drawing.Point(0, 157);
+            this.panel_Translate.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_Translate.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_Translate.Name = "panel_Translate";
+            this.panel_Translate.Size = new System.Drawing.Size(85, 77);
+            this.panel_Translate.TabIndex = 10;
+            this.panel_Translate.Click += new System.EventHandler(this.panel_Read_Click);
+            this.panel_Translate.MouseEnter += new System.EventHandler(this.panel_Read_MouseEnter);
+            this.panel_Translate.MouseLeave += new System.EventHandler(this.panel_Read_MouseLeave);
             // 
-            // label_Read
+            // label_Translate
             // 
-            this.label_Read.AutoSize = true;
-            this.label_Read.BackColor = System.Drawing.Color.Transparent;
-            this.label_Read.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Read.Location = new System.Drawing.Point(118, 24);
-            this.label_Read.Name = "label_Read";
-            this.label_Read.Size = new System.Drawing.Size(98, 29);
-            this.label_Read.TabIndex = 1;
-            this.label_Read.Text = "Bài đọc";
-            this.label_Read.Click += new System.EventHandler(this.label_Read_Click);
-            this.label_Read.MouseEnter += new System.EventHandler(this.label_Read_MouseEnter);
+            this.label_Translate.AutoSize = true;
+            this.label_Translate.BackColor = System.Drawing.Color.Transparent;
+            this.label_Translate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_Translate.Location = new System.Drawing.Point(136, 20);
+            this.label_Translate.Name = "label_Translate";
+            this.label_Translate.Size = new System.Drawing.Size(64, 29);
+            this.label_Translate.TabIndex = 1;
+            this.label_Translate.Text = "Dịch";
+            this.label_Translate.Click += new System.EventHandler(this.label_Read_Click);
+            this.label_Translate.MouseEnter += new System.EventHandler(this.label_Read_MouseEnter);
             // 
-            // pictureBox_Read
+            // pictureBox_Translate
             // 
-            this.pictureBox_Read.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Read.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox_Read.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Read.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Read.Image")));
-            this.pictureBox_Read.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Read.InitialImage")));
-            this.pictureBox_Read.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_Read.Name = "pictureBox_Read";
-            this.pictureBox_Read.Size = new System.Drawing.Size(85, 77);
-            this.pictureBox_Read.TabIndex = 0;
-            this.pictureBox_Read.TabStop = false;
-            this.pictureBox_Read.Click += new System.EventHandler(this.pictureBox_Read_Click);
-            this.pictureBox_Read.MouseEnter += new System.EventHandler(this.pictureBox_Read_MouseEnter);
-            this.pictureBox_Read.MouseLeave += new System.EventHandler(this.pictureBox_Read_MouseLeave);
+            this.pictureBox_Translate.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Translate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_Translate.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Translate.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Translate.Image")));
+            this.pictureBox_Translate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Translate.InitialImage")));
+            this.pictureBox_Translate.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Translate.Name = "pictureBox_Translate";
+            this.pictureBox_Translate.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Translate.TabIndex = 0;
+            this.pictureBox_Translate.TabStop = false;
+            this.pictureBox_Translate.Click += new System.EventHandler(this.pictureBox_Read_Click);
+            this.pictureBox_Translate.MouseEnter += new System.EventHandler(this.pictureBox_Read_MouseEnter);
+            this.pictureBox_Translate.MouseLeave += new System.EventHandler(this.pictureBox_Read_MouseLeave);
             // 
             // timer_PanelRead
             // 
@@ -572,15 +575,53 @@
             this.timer_MenuAccount.Interval = 1;
             this.timer_MenuAccount.Tick += new System.EventHandler(this.timer_MenuAccount_Tick);
             // 
+            // xuiSwitch_Language
+            // 
+            this.xuiSwitch_Language.BackColor = System.Drawing.Color.Transparent;
+            this.xuiSwitch_Language.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
+            this.xuiSwitch_Language.HandleOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(180)))), ((int)(((byte)(120)))));
+            this.xuiSwitch_Language.Location = new System.Drawing.Point(734, 11);
+            this.xuiSwitch_Language.Name = "xuiSwitch_Language";
+            this.xuiSwitch_Language.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(129)))), ((int)(((byte)(136)))));
+            this.xuiSwitch_Language.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
+            this.xuiSwitch_Language.Size = new System.Drawing.Size(70, 33);
+            this.xuiSwitch_Language.SwitchState = XanderUI.XUISwitch.State.On;
+            this.xuiSwitch_Language.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
+            this.xuiSwitch_Language.TabIndex = 13;
+            this.xuiSwitch_Language.Text = "xuiSwitch1";
+            // 
+            // label_English
+            // 
+            this.label_English.AutoSize = true;
+            this.label_English.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.label_English.Location = new System.Drawing.Point(810, 16);
+            this.label_English.Name = "label_English";
+            this.label_English.Size = new System.Drawing.Size(37, 24);
+            this.label_English.TabIndex = 14;
+            this.label_English.Text = "EN";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.label1.Location = new System.Drawing.Point(701, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 24);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "VI";
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_English);
+            this.Controls.Add(this.xuiSwitch_Language);
             this.Controls.Add(this.panel_Account);
             this.Controls.Add(this.panel_Exam);
-            this.Controls.Add(this.panel_Read);
+            this.Controls.Add(this.panel_Translate);
             this.Controls.Add(this.panel_Flashcard);
             this.Controls.Add(this.panel_ComboWord);
             this.Controls.Add(this.panel_Grammar);
@@ -598,7 +639,6 @@
             this.Padding = new System.Windows.Forms.Padding(20, 44, 20, 20);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Default;
-            this.Text = "Từ điển Anh-Việt";
             this.TransparencyKey = System.Drawing.Color.LightSteelBlue;
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).EndInit();
@@ -613,14 +653,15 @@
             this.panel_Flashcard.ResumeLayout(false);
             this.panel_Flashcard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).EndInit();
-            this.panel_Read.ResumeLayout(false);
-            this.panel_Read.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Read)).EndInit();
+            this.panel_Translate.ResumeLayout(false);
+            this.panel_Translate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Translate)).EndInit();
             this.panel_Exam.ResumeLayout(false);
             this.panel_Exam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).EndInit();
             this.panel_Account.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -646,9 +687,9 @@
         private System.Windows.Forms.Label label_Flashcard;
         private System.Windows.Forms.PictureBox pictureBox_Flashcard;
         private System.Windows.Forms.Timer timer_PanelFlashcard;
-        private System.Windows.Forms.Panel panel_Read;
-        private System.Windows.Forms.Label label_Read;
-        private System.Windows.Forms.PictureBox pictureBox_Read;
+        private System.Windows.Forms.Panel panel_Translate;
+        private System.Windows.Forms.Label label_Translate;
+        private System.Windows.Forms.PictureBox pictureBox_Translate;
         private System.Windows.Forms.Timer timer_PanelRead;
         private System.Windows.Forms.Panel panel_Exam;
         private System.Windows.Forms.Label label_Exam;
@@ -662,6 +703,9 @@
         private XanderUI.XUIButton xuiButton_DeleteAccount;
         private XanderUI.XUIButton xuiButton_FindUser;
         private XanderUI.XUIButton xuiButton_ListAccount;
+        private XanderUI.XUISwitch xuiSwitch_Language;
+        private System.Windows.Forms.Label label_English;
+        private System.Windows.Forms.Label label1;
     }
 }
 
