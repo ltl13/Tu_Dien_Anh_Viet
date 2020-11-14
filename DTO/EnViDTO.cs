@@ -28,6 +28,26 @@
 
             return englishDisplay;
         }
+
+        //public static bool operator ==(EnViDTO temp1, EnViDTO temp2) {
+        //    if (temp1.English == temp2.English && temp1.VietNamese == temp2.VietNamese)
+        //        return true;
+        //    return false;
+        //}
+
+        //public static bool operator !=(EnViDTO temp1, EnViDTO temp2) {
+        //    if (temp2 == null && temp1.English == null && temp1.VietNamese == null)
+        //        return true;
+        //    if (temp1.English == temp2.English && temp1.VietNamese == temp2.VietNamese)
+        //        return false;
+        //    return true;
+        //}
+
+        //public bool Equals(EnViDTO obj) {
+        //    if (this.English == obj.English && this.VietNamese == obj.VietNamese)
+        //        return true;
+        //    return false;
+        //}
         #endregion
     }
 }
