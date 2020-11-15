@@ -11,8 +11,6 @@ CREATE TABLE Account
 	Type TINYINT NOT NULL  DEFAULT 0 -- 1: admin && 0: staff
 )
 
-DROP TABLE Account
-
 CREATE PROC USP_Login
 @userName varchar(50), @passWord char(64)
 AS

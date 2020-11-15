@@ -18,10 +18,10 @@ namespace GUI
         EnViDTO word;
         List<EnViDTO> favorite;
 
-        public UserControl_WordInfo(EnViDTO args, UserControl_Search usercontrolSearch, List<EnViDTO> Favorite) {
+        public UserControl_WordInfo(EnViDTO args, UserControl_Search usercontrolSearch) {
             InitializeComponent();
             father = usercontrolSearch;
-            favorite = Favorite;
+            favorite = father.Favorite;
             word = args;
             label_Word.Text = word.getEnglishDisplay();
             label_VietNamese.Text = word.VietNamese;
@@ -60,16 +60,12 @@ namespace GUI
             var itemToRemove = favorite.SingleOrDefault(r => r.English == word.English);
             if (itemToRemove != null)
                 favorite.Remove(itemToRemove);
-            DictionaryBUS.Instance.SaveFavoriteWord(favorite);
         }
         private void xuiButton_NotInterest_Click(object sender, EventArgs e)
         {
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
             favorite.Add(word);
-            DictionaryBUS.Instance.SaveFavoriteWord(favorite);
-            
-            //dictionaryBUS.AddFavorite(father.father.LoginAccount, word);
         }
     }
 }

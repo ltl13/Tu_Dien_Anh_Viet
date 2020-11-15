@@ -13,20 +13,23 @@ namespace GUI
 {
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
+        #region properties
         private UserControl mainSearch;
         private UserControl mainFlashcard;
         private AccountDTO loginAccount;
-        Form father;
+        private List<EnViDTO> favorite;
+        private Form father;
 
         public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
+        public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
 
         public Form_Main(AccountDTO loginAccount, Form login)
         {
             InitializeComponent();
 
             this.loginAccount = loginAccount;
-            father = login;
-
+            this.Favorite = BUS.DictionaryBUS.Instance.LoadSavedFavoriteWord();
+            this.father = login;
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
             UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount);
@@ -40,12 +43,14 @@ namespace GUI
             mainFlashcard.Visible = false;
 
             pictureBox_Search_Click(null, null);
+
+            this.CancelButton = button_Exit;
         }
+        #endregion
         #region ButtonExit
         private void button_Exit_Click(object sender, EventArgs e)
         {
-            father.Show();
-            this.Close();
+            Application.Exit();
         }
         private void button_Exit_MouseEnter(object sender, EventArgs e)
         {

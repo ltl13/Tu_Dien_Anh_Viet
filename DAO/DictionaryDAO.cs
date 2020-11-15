@@ -66,7 +66,7 @@ namespace DAO {
         }
 
         public void SaveFavoriteWord(List<EnViDTO> Favorite) {
-            string json = JsonConvert.SerializeObject(Favorite.ToArray());
+            string json = JsonConvert.SerializeObject(Favorite.ToArray(), Formatting.Indented);
             File.WriteAllText(@"..\..\..\resources\favorite.json", json);
         }
 
