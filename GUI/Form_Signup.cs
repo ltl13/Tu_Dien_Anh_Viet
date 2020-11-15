@@ -12,7 +12,7 @@ namespace GUI {
             InitializeComponent();
             this.AcceptButton = btLogin;
             this.CancelButton = btCancel;
-            father = login;
+            this.father = login;
         }
         #endregion
 
@@ -58,7 +58,7 @@ namespace GUI {
 
             if (Register(userName, type, passWord, displayName)) {
                 AccountDTO loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);
-                Form_Main fMain = new Form_Main(loginAccount, father);
+                Form_Main fMain = new Form_Main(loginAccount, this);
                 fMain.Show();
                 this.Close();
             }

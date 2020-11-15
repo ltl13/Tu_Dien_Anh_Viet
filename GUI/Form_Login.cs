@@ -34,12 +34,9 @@ namespace GUI {
 
             if (Login(userName, passWord)) {
                 AccountDTO loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);           
-                Form_Main fMain = new Form_Main(loginAccount, this);
+                Form_Main fMain = new Form_Main(loginAccount, this);                
                 fMain.Show();
                 this.Hide();
-                tbPassword.Text = string.Empty;
-                tbUsername.Text = string.Empty;
-                tbUsername.Select();
             }
             else {
                 tbUsername.Text = string.Empty;
@@ -58,13 +55,7 @@ namespace GUI {
         }
 
         private void btExit_Click(object sender, EventArgs e) {
-            Application.Exit();
-        }
-
-        private void FormLogin_FormClosing(object sender, FormClosingEventArgs e) {
-            if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK) {
-                e.Cancel = true;
-            }
+            this.Close();
         }
 
         private void tbUsername_TextChanged(object sender, EventArgs e) {

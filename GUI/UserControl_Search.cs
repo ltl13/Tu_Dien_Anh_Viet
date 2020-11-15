@@ -16,16 +16,21 @@ namespace GUI
     {
         #region properties
         private bool isListBoxLoaded = false;
-        public Form_Main father;
-        DataTable dataTable = new DataTable();
-        List<EnViDTO> favorite = DictionaryBUS.Instance.LoadSavedFavoriteWord();
+        private Form_Main father;
+        private DataTable dataTable = new DataTable();
+        private List<EnViDTO> favorite;
+
+        public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
 
         public UserControl_Search(Form_Main formMain)
         {
             InitializeComponent();
-            father = formMain;
-            listBox_Search.DisplayMember = "English";
-            dataTable = DictionaryBUS.Instance.GetEnViTable();
+
+            this.father = formMain;
+            this.favorite = father.Favorite;
+            this.dataTable = DictionaryBUS.Instance.GetEnViTable();
+
+            listBox_Search.DisplayMember = "English";          
             isListBoxLoaded = true;
             listBox_Search.Visible = false;
         }
@@ -35,7 +40,7 @@ namespace GUI
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
         {
             if (metroTextBox_Searchbar.Text != string.Empty) {
-                DataTable data = dataTable;
+                DataTable data = this.dataTable;
                 DataView dataView = new DataView(data);
                 dataView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
                 data = dataView.ToTable();
@@ -48,8 +53,7 @@ namespace GUI
         private void listBox_Search_Click(object sender, EventArgs e) {
             DataRowView row = (DataRowView)listBox_Search.SelectedItem;
             EnViDTO wordSelected = new EnViDTO(row);
-            //metroTextBox_Searchbar.Text = wordSelected.English;
-            UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this, favorite);
+            UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
             father.panel_Main.Controls.Add(wordInfo);
             wordInfo.Show();
             this.Hide();
