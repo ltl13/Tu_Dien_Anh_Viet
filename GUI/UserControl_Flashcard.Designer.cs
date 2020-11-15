@@ -30,19 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Flashcard));
             this.metroPanel_Eng = new MetroFramework.Controls.MetroPanel();
+            this.panel_Eng = new System.Windows.Forms.Panel();
+            this.label_Eng = new System.Windows.Forms.Label();
             this.xuiButton_Next = new XanderUI.XUIButton();
             this.xuiButton_Previous = new XanderUI.XUIButton();
-            this.metroLabel_Number = new MetroFramework.Controls.MetroLabel();
             this.xuiButton_Delete = new XanderUI.XUIButton();
             this.comboBox_FavoriteList = new System.Windows.Forms.ComboBox();
-            this.label_Eng = new System.Windows.Forms.Label();
-            this.panel_Eng = new System.Windows.Forms.Panel();
+            this.panel_Viet = new System.Windows.Forms.Panel();
+            this.label_Viet = new System.Windows.Forms.Label();
+            this.label_Number = new System.Windows.Forms.Label();
+            this.panel_Number = new System.Windows.Forms.Panel();
             this.metroPanel_Eng.SuspendLayout();
             this.panel_Eng.SuspendLayout();
+            this.panel_Viet.SuspendLayout();
+            this.panel_Number.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroPanel_Eng
             // 
+            this.metroPanel_Eng.Controls.Add(this.panel_Viet);
             this.metroPanel_Eng.Controls.Add(this.panel_Eng);
             this.metroPanel_Eng.HorizontalScrollbarBarColor = true;
             this.metroPanel_Eng.HorizontalScrollbarHighlightOnWheel = false;
@@ -54,6 +60,28 @@
             this.metroPanel_Eng.VerticalScrollbarBarColor = true;
             this.metroPanel_Eng.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_Eng.VerticalScrollbarSize = 10;
+            this.metroPanel_Eng.Click += new System.EventHandler(this.metroPanel_Eng_Click);
+            // 
+            // panel_Eng
+            // 
+            this.panel_Eng.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Eng.Controls.Add(this.label_Eng);
+            this.panel_Eng.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_Eng.Location = new System.Drawing.Point(43, 107);
+            this.panel_Eng.Name = "panel_Eng";
+            this.panel_Eng.Size = new System.Drawing.Size(419, 54);
+            this.panel_Eng.TabIndex = 3;
+            // 
+            // label_Eng
+            // 
+            this.label_Eng.BackColor = System.Drawing.Color.Transparent;
+            this.label_Eng.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Eng.Location = new System.Drawing.Point(0, 0);
+            this.label_Eng.Name = "label_Eng";
+            this.label_Eng.Size = new System.Drawing.Size(419, 54);
+            this.label_Eng.TabIndex = 2;
+            this.label_Eng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Eng.Click += new System.EventHandler(this.label_Eng_Click);
             // 
             // xuiButton_Next
             // 
@@ -74,6 +102,7 @@
             this.xuiButton_Next.TabIndex = 1;
             this.xuiButton_Next.TextColor = System.Drawing.Color.Transparent;
             this.xuiButton_Next.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Next.Click += new System.EventHandler(this.xuiButton_Next_Click);
             // 
             // xuiButton_Previous
             // 
@@ -94,17 +123,7 @@
             this.xuiButton_Previous.TabIndex = 2;
             this.xuiButton_Previous.TextColor = System.Drawing.Color.Transparent;
             this.xuiButton_Previous.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // metroLabel_Number
-            // 
-            this.metroLabel_Number.AutoSize = true;
-            this.metroLabel_Number.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel_Number.Location = new System.Drawing.Point(267, 391);
-            this.metroLabel_Number.Name = "metroLabel_Number";
-            this.metroLabel_Number.Size = new System.Drawing.Size(79, 20);
-            this.metroLabel_Number.TabIndex = 3;
-            this.metroLabel_Number.Text = "1000/1000";
-            this.metroLabel_Number.WrapToLine = true;
+            this.xuiButton_Previous.Click += new System.EventHandler(this.xuiButton_Previous_Click);
             // 
             // xuiButton_Delete
             // 
@@ -137,33 +156,53 @@
             this.comboBox_FavoriteList.TabIndex = 5;
             this.comboBox_FavoriteList.Visible = false;
             // 
-            // label_Eng
+            // panel_Viet
             // 
-            this.label_Eng.BackColor = System.Drawing.Color.Transparent;
-            this.label_Eng.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_Eng.Location = new System.Drawing.Point(0, 0);
-            this.label_Eng.Name = "label_Eng";
-            this.label_Eng.Size = new System.Drawing.Size(419, 54);
-            this.label_Eng.TabIndex = 2;
-            this.label_Eng.Text = "label1";
-            this.label_Eng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel_Viet.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Viet.Controls.Add(this.label_Viet);
+            this.panel_Viet.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_Viet.Location = new System.Drawing.Point(43, 107);
+            this.panel_Viet.Name = "panel_Viet";
+            this.panel_Viet.Size = new System.Drawing.Size(419, 54);
+            this.panel_Viet.TabIndex = 4;
             // 
-            // panel_Eng
+            // label_Viet
             // 
-            this.panel_Eng.BackColor = System.Drawing.Color.Transparent;
-            this.panel_Eng.Controls.Add(this.label_Eng);
-            this.panel_Eng.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Eng.Location = new System.Drawing.Point(43, 107);
-            this.panel_Eng.Name = "panel_Eng";
-            this.panel_Eng.Size = new System.Drawing.Size(419, 54);
-            this.panel_Eng.TabIndex = 3;
+            this.label_Viet.BackColor = System.Drawing.Color.Transparent;
+            this.label_Viet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Viet.Location = new System.Drawing.Point(0, 0);
+            this.label_Viet.Name = "label_Viet";
+            this.label_Viet.Size = new System.Drawing.Size(419, 54);
+            this.label_Viet.TabIndex = 2;
+            this.label_Viet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Viet.Click += new System.EventHandler(this.label_Viet_Click);
+            // 
+            // label_Number
+            // 
+            this.label_Number.BackColor = System.Drawing.SystemColors.Control;
+            this.label_Number.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Number.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Number.Location = new System.Drawing.Point(0, 0);
+            this.label_Number.Name = "label_Number";
+            this.label_Number.Size = new System.Drawing.Size(101, 24);
+            this.label_Number.TabIndex = 6;
+            this.label_Number.Text = "1000/1000";
+            this.label_Number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel_Number
+            // 
+            this.panel_Number.Controls.Add(this.label_Number);
+            this.panel_Number.Location = new System.Drawing.Point(269, 390);
+            this.panel_Number.Name = "panel_Number";
+            this.panel_Number.Size = new System.Drawing.Size(101, 24);
+            this.panel_Number.TabIndex = 7;
             // 
             // UserControl_Flashcard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel_Number);
             this.Controls.Add(this.xuiButton_Delete);
-            this.Controls.Add(this.metroLabel_Number);
             this.Controls.Add(this.xuiButton_Previous);
             this.Controls.Add(this.comboBox_FavoriteList);
             this.Controls.Add(this.xuiButton_Next);
@@ -172,8 +211,9 @@
             this.Size = new System.Drawing.Size(624, 516);
             this.metroPanel_Eng.ResumeLayout(false);
             this.panel_Eng.ResumeLayout(false);
+            this.panel_Viet.ResumeLayout(false);
+            this.panel_Number.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -182,10 +222,13 @@
         private MetroFramework.Controls.MetroPanel metroPanel_Eng;
         private XanderUI.XUIButton xuiButton_Next;
         private XanderUI.XUIButton xuiButton_Previous;
-        private MetroFramework.Controls.MetroLabel metroLabel_Number;
         private XanderUI.XUIButton xuiButton_Delete;
         private System.Windows.Forms.ComboBox comboBox_FavoriteList;
         private System.Windows.Forms.Panel panel_Eng;
         private System.Windows.Forms.Label label_Eng;
+        private System.Windows.Forms.Panel panel_Viet;
+        private System.Windows.Forms.Label label_Viet;
+        private System.Windows.Forms.Label label_Number;
+        private System.Windows.Forms.Panel panel_Number;
     }
 }

@@ -32,7 +32,7 @@ namespace GUI
             this.father = login;
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
-            UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount);
+            UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount, this);
             mainSearch = search;
             mainFlashcard = flashcard;
 
@@ -547,5 +547,10 @@ namespace GUI
             xuiButton_Account_Click(null, null);
         }
         #endregion
+
+        private void Form_Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
+        }
     }
 }
