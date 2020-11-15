@@ -1,0 +1,918 @@
+﻿{
+    "Một số từ thường gặp": [
+        {
+            "Vocabulary": "Operating system",
+            "Pronunciation": "/ˈɒpəreɪtɪŋ ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ điều hành"
+        },
+        {
+            "Vocabulary": "Information",
+            "Pronunciation": "/ˌɪnfəˈmeɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "thông tin"
+        },
+        {
+            "Vocabulary": "Data",
+            "Pronunciation": "/ˈdeɪtə/",
+            "Types of words": "Noun",
+            "Meaning": "dữ liệu"
+        },
+        {
+            "Vocabulary": "Programming language",
+            "Pronunciation": "/ˈprəʊɡræmɪŋ ˈlæŋɡwɪdʒ/",
+            "Types of words": "Noun",
+            "Meaning": "ngôn ngữ lập trình"
+        },
+        {
+            "Vocabulary": "Browser",
+            "Pronunciation": "/ˈbraʊzə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "trình duyệt"
+        },
+        {
+            "Vocabulary": "Application",
+            "Pronunciation": "/ˌæplɪˈkeɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "ứng dụng"
+        },
+        {
+            "Vocabulary": "Storage",
+            "Pronunciation": "/ˈstɔːrɪdʒ/",
+            "Types of words": "Noun",
+            "Meaning": "lưu trữ"
+        },
+        {
+            "Vocabulary": "Version",
+            "Pronunciation": "/ˈvɜːʃn/",
+            "Types of words": "Noun",
+            "Meaning": "phiên bản"
+        },
+        {
+            "Vocabulary": "Beta",
+            "Pronunciation": "/ˈbiːtə/",
+            "Types of words": "Noun",
+            "Meaning": "thử nghiệm"
+        },
+        {
+            "Vocabulary": "Customer",
+            "Pronunciation": "/ˈkʌstəmə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "khách hàng"
+        },
+        {
+            "Vocabulary": "Matrix",
+            "Pronunciation": "/ˈmeɪtrɪks/",
+            "Types of words": "Noun",
+            "Meaning": "ma trận"
+        },
+        {
+            "Vocabulary": "Signal",
+            "Pronunciation": "/ˈsɪɡnəl/",
+            "Types of words": "Noun",
+            "Meaning": "tín hiệu"
+        },
+        {
+            "Vocabulary": "Addition",
+            "Pronunciation": "/əˈdɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "Phép cộng"
+        },
+        {
+            "Vocabulary": "Subtraction",
+            "Pronunciation": "/səbˈtrækʃn/",
+            "Types of words": "Noun",
+            "Meaning": "Phép trừ"
+        },
+        {
+            "Vocabulary": "Multiplication",
+            "Pronunciation": "/ˌmʌltɪplɪˈkeɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "Phép nhân"
+        },
+        {
+            "Vocabulary": "Division",
+            "Pronunciation": "/dɪˈvɪʒn/",
+            "Types of words": "Noun",
+            "Meaning": "Phép chia"
+        },
+        {
+            "Vocabulary": "Device",
+            "Pronunciation": "/dɪˈvaɪs/",
+            "Types of words": "Noun",
+            "Meaning": "thiết bị"
+        },
+        {
+            "Vocabulary": "Function",
+            "Pronunciation": "/ˈfʌŋkʃn/",
+            "Types of words": "Noun",
+            "Meaning": "chức năng"
+        },
+        {
+            "Vocabulary": "Setting",
+            "Pronunciation": "/ˈsetɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "cài đặt"
+        },
+        {
+            "Vocabulary": "Feature",
+            "Pronunciation": "/ˈfiːtʃə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "thuộc tính"
+        },
+        {
+            "Vocabulary": "Font",
+            "Pronunciation": "/fɒnt/",
+            "Types of words": "Noun",
+            "Meaning": "phông"
+        },
+        {
+            "Vocabulary": "Bug",
+            "Pronunciation": "/bʌɡ/",
+            "Types of words": "Noun",
+            "Meaning": "lỗi"
+        },
+        {
+            "Vocabulary": "Crash",
+            "Pronunciation": "/kræʃ/",
+            "Types of words": "Noun",
+            "Meaning": "hỏng chương trình"
+        },
+        {
+            "Vocabulary": "Security",
+            "Pronunciation": "/sɪˈkjʊərəti/",
+            "Types of words": "Noun",
+            "Meaning": "bảo mật"
+        },
+        {
+            "Vocabulary": "Database",
+            "Pronunciation": "/ˈdeɪtəbeɪs/",
+            "Types of words": "Noun",
+            "Meaning": "cơ sở dữ liệu"
+        },
+        {
+            "Vocabulary": "Algorithm",
+            "Pronunciation": "/ˈælɡərɪðəm/",
+            "Types of words": "Noun",
+            "Meaning": "thuật toán"
+        },
+        {
+            "Vocabulary": "Source Code",
+            "Pronunciation": "/sɔːs kəʊd/",
+            "Types of words": "Noun",
+            "Meaning": "mã nguồn"
+        },
+        {
+            "Vocabulary": "Pulse",
+            "Pronunciation": "/pʌls/",
+            "Types of words": "Noun",
+            "Meaning": "xung"
+        },
+        {
+            "Vocabulary": "Gateway",
+            "Pronunciation": "/ˈɡeɪtweɪ/",
+            "Types of words": "Noun",
+            "Meaning": "cổng kết nối Internet cho những mạng lớn"
+        },
+        {
+            "Vocabulary": "Protocol",
+            "Pronunciation": "/ˈprəʊtəkɒl/",
+            "Types of words": "Noun",
+            "Meaning": "giao thức"
+        },
+        {
+            "Vocabulary": "Configuration",
+            "Pronunciation": "/kənˌfɪɡəˈreɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "cấu hình"
+        },
+        {
+            "Vocabulary": "Adware",
+            "Pronunciation": "/ˈædweə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "phần mềm quảng cáo"
+        },
+        {
+            "Vocabulary": "Buffer overflow",
+            "Pronunciation": "/ˈbʌfə(r) ˌəʊvəˈfləʊ/",
+            "Types of words": "Noun",
+            "Meaning": "lỗi tràn bộ nhớ đệm"
+        },
+        {
+            "Vocabulary": "Debugging",
+            "Pronunciation": "/ˌdiːˈbʌɡɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "gỡ lỗi"
+        },
+        {
+            "Vocabulary": "Machine language",
+            "Pronunciation": "/məˈʃiːn ˈlæŋɡwɪdʒ/",
+            "Types of words": "Noun",
+            "Meaning": "ngôn ngữ máy"
+        },
+        {
+            "Vocabulary": "Interpreter",
+            "Pronunciation": "/ɪnˈtɜːprətə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "trình thông dịch"
+        },
+        {
+            "Vocabulary": "Firewall",
+            "Pronunciation": "/ˈfaɪəwɔːl/",
+            "Types of words": "Noun",
+            "Meaning": "tường lửa"
+        },
+        {
+            "Vocabulary": "Cursor",
+            "Pronunciation": "/ˈkɜːsə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "con trỏ trong cơ sở dữ liệu"
+        },
+        {
+            "Vocabulary": "Backup",
+            "Pronunciation": "/ˈbækʌp/",
+            "Types of words": "Noun",
+            "Meaning": "sao lưu"
+        },
+        {
+            "Vocabulary": "Format",
+            "Pronunciation": "/ˈfɔːmæt/",
+            "Types of words": "Noun",
+            "Meaning": "định dạng"
+        },
+        {
+            "Vocabulary": "Unplugged",
+            "Pronunciation": "/ˌʌnˈplʌɡd/",
+            "Types of words": "Noun",
+            "Meaning": "chưa được kết nối"
+        },
+        {
+            "Vocabulary": "Spyware",
+            "Pronunciation": "/ˈspaɪweə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "phần mềm gián điệp"
+        },
+        {
+            "Vocabulary": "Administration",
+            "Pronunciation": "/ədˌmɪnɪˈstreɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "quyền quản trị"
+        },
+        {
+            "Vocabulary": "Domain",
+            "Pronunciation": "/dəˈmeɪn/",
+            "Types of words": "Noun",
+            "Meaning": "tên miền"
+        },
+        {
+            "Vocabulary": "Malware",
+            "Pronunciation": "/ˈmælweə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "phần mềm độc hại"
+        },
+        {
+            "Vocabulary": "Cloud computing",
+            "Pronunciation": "/klaʊd kəmˈpjuːtɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "điện toán đám mây"
+        },
+        {
+            "Vocabulary": "Antivirus software",
+            "Pronunciation": "/ˈæntivaɪrəs ˈsɒftweə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "phần mềm chống virus"
+        },
+        {
+            "Vocabulary": "Internet service provider",
+            "Pronunciation": "/ˈɪntənet ˈsɜːvɪs prəˈvaɪdə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "nhà cung cấp dịch vụ mạng"
+        },
+        {
+            "Vocabulary": "Speech recognition",
+            "Pronunciation": "/spiːtʃ ˌrekəɡˈnɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "nhận dạng tiếng nói"
+        },
+        {
+            "Vocabulary": "Quantum computing",
+            "Pronunciation": "/ˈkwɒntəm kəmˈpjuːtɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "máy tính lượng tử"
+        },
+        {
+            "Vocabulary": "Structured programming",
+            "Pronunciation": "/ˈstrʌktʃə(r)d ˈprəʊɡræmɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "lập trình cấu trúc"
+        },
+        {
+            "Vocabulary": "Command",
+            "Pronunciation": "/kəˈmɑːnd/",
+            "Types of words": "Noun",
+            "Meaning": "mệnh lệnh"
+        },
+        {
+            "Vocabulary": "Prolog",
+            "Pronunciation": "/ˈprəʊlɒɡ/",
+            "Types of words": "Noun",
+            "Meaning": "lập trình theo lôgic"
+        },
+        {
+            "Vocabulary": "Concurrency control",
+            "Pronunciation": "/kənˈkʌr(ə)nsɪ kənˈtrəʊl/",
+            "Types of words": "Noun",
+            "Meaning": "kiểm soát truy cập đồng thời"
+        },
+        {
+            "Vocabulary": "Grid computing",
+            "Pronunciation": "/ɡrɪd kəmˈpjuːtɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "điện toán lưới"
+        },
+        {
+            "Vocabulary": "Multiprocessing",
+            "Pronunciation": "/ˈmʌlti ˈprəʊsesɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "đa xử lí"
+        },
+        {
+            "Vocabulary": "Software development process",
+            "Pronunciation": "/ˈsɒftweə(r) dɪˈveləpmənt ˈprəʊses/",
+            "Types of words": "Noun",
+            "Meaning": "quy trình phát triển phần mềm"
+        },
+        {
+            "Vocabulary": "Software testing",
+            "Pronunciation": "/ˈsɒftweə(r) ˈtestɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "kiểm thử phần mềm"
+        },
+        {
+            "Vocabulary": "Analysis",
+            "Pronunciation": "/əˈnæləsɪs/",
+            "Types of words": "Noun",
+            "Meaning": "phân tích"
+        },
+        {
+            "Vocabulary": "Computer architecture",
+            "Pronunciation": "/kəmˈpjuːtə(r) ˈɑːkɪtektʃə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "kiến trúc máy tính"
+        },
+        {
+            "Vocabulary": "User interface",
+            "Pronunciation": "/ˈjuːzə(r) ˈɪntəfeɪs/",
+            "Types of words": "Noun",
+            "Meaning": "giao diện người dùng"
+        },
+        {
+            "Vocabulary": "Computer animation",
+            "Pronunciation": "/kəmˈpjuːtə(r) ˌænɪˈmeɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "hoạt hình máy tính"
+        },
+        {
+            "Vocabulary": "Digital image processing",
+            "Pronunciation": "/ˈdɪdʒɪtl ˈɪmɪdʒ ˈprəʊsesɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "xử lí ảnh"
+        },
+        {
+            "Vocabulary": "Information retrieval",
+            "Pronunciation": "/ˌɪnfəˈmeɪʃn rɪˈtriːvl/",
+            "Types of words": "Noun",
+            "Meaning": "truy hồi thông tin"
+        },
+        {
+            "Vocabulary": "Data compression",
+            "Pronunciation": "/ˈdeɪtə kəmˈpreʃn/",
+            "Types of words": "Noun",
+            "Meaning": "nén dữ liệu"
+        },
+        {
+            "Vocabulary": "Encryption",
+            "Pronunciation": "/ɪnˈkrɪpʃn/",
+            "Types of words": "Noun",
+            "Meaning": "mã hóa dữ liệu"
+        },
+        {
+            "Vocabulary": "Information theory",
+            "Pronunciation": "/ˌɪnfəˈmeɪʃn ˈθɪəri/",
+            "Types of words": "Noun",
+            "Meaning": "lý thuyết thông tin"
+        },
+        {
+            "Vocabulary": "Data recovery",
+            "Pronunciation": "/ˈdeɪtə rɪˈkʌvəri/",
+            "Types of words": "Noun",
+            "Meaning": "khôi phục dữ liệu"
+        },
+        {
+            "Vocabulary": "Database management system",
+            "Pronunciation": "/ˈdeɪtəbeɪs ˈmænɪdʒmənt ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ quản trị cơ sở dữ liệu"
+        },
+        {
+            "Vocabulary": "Network topology",
+            "Pronunciation": "/ˈnetwɜːk təˈpɒlədʒi/",
+            "Types of words": "Noun",
+            "Meaning": "cấu trúc liên kết mạng"
+        },
+        {
+            "Vocabulary": "Bus",
+            "Pronunciation": "/bʌs/",
+            "Types of words": "Noun",
+            "Meaning": "mạng trục tuyến"
+        },
+        {
+            "Vocabulary": "Star",
+            "Pronunciation": "/stɑː(r)/",
+            "Types of words": "Noun",
+            "Meaning": "mạng hình sao"
+        },
+        {
+            "Vocabulary": "Ring",
+            "Pronunciation": "/rɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "mạng hình vòng"
+        },
+        {
+            "Vocabulary": "Digital signal processing",
+            "Pronunciation": "/ˈdɪdʒɪtl ˈsɪɡnəl ˈprəʊsesɪŋ/",
+            "Types of words": "Noun",
+            "Meaning": "xử lí tín hiệu thông tin"
+        },
+        {
+            "Vocabulary": "Transistor",
+            "Pronunciation": "/trænˈzɪstə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "linh kiện bán dẫn"
+        },
+        {
+            "Vocabulary": "Trojan horse",
+            "Pronunciation": "/ˌtrəʊdʒən ˈhɔːs/",
+            "Types of words": "Noun",
+            "Meaning": "mã độc Trojan"
+        },
+        {
+            "Vocabulary": "Keylogger",
+            "Pronunciation": "/ˈkiːlɒɡə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "trình theo dõi thao tác bàn phím"
+        },
+        {
+            "Vocabulary": "Worm",
+            "Pronunciation": "/wɜːm/",
+            "Types of words": "Noun",
+            "Meaning": "sâu máy tính"
+        },
+        {
+            "Vocabulary": "I/O operations",
+            "Pronunciation": "/ˈɪnpʊt ˈaʊtpʊt ˌɒpəˈreɪʃnz/",
+            "Types of words": "Noun",
+            "Meaning": "tổ chức và quản lý xuất nhập"
+        },
+        {
+            "Vocabulary": "Hyperlink",
+            "Pronunciation": "/ˈhaɪpəlɪŋk/",
+            "Types of words": "Noun",
+            "Meaning": "siêu liên kết"
+        },
+        {
+            "Vocabulary": "File-system manipulation",
+            "Pronunciation": "/faɪl ˈsɪstəm məˌnɪpjuˈleɪʃn/",
+            "Types of words": "Noun",
+            "Meaning": "quản lý hệ thống File"
+        },
+        {
+            "Vocabulary": "Real-time system",
+            "Pronunciation": "/ˌriːəl ˈtaɪm ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ thống xử lí thời gian thực"
+        },
+        {
+            "Vocabulary": "Embedded system",
+            "Pronunciation": "/ɪmˈbedɪd ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ thống nhúng"
+        },
+        {
+            "Vocabulary": "Program execution",
+            "Pronunciation": "/ˈprəʊɡræm ˌeksɪˈkjuːʃn/",
+            "Types of words": "Noun",
+            "Meaning": "thực thi chương trình"
+        },
+        {
+            "Vocabulary": "Vocabulary",
+            "Pronunciation": "Pronunciation",
+            "Types of words": "Types of words",
+            "Meaning": "Meaning"
+        },
+        {
+            "Vocabulary": "Convert",
+            "Pronunciation": "/kənˈvɜːt/",
+            "Types of words": "Verb",
+            "Meaning": "chuyển đổi"
+        },
+        {
+            "Vocabulary": "Multi – user",
+            "Pronunciation": "/ˈmʌlti ˈjuːzə(r)/",
+            "Types of words": "Adjective",
+            "Meaning": "đa người dùng"
+        },
+        {
+            "Vocabulary": "Single -user",
+            "Pronunciation": "/ˈsɪŋɡl ˈjuːzə(r)/",
+            "Types of words": "Adjective",
+            "Meaning": "đơn người dùng"
+        },
+        {
+            "Vocabulary": "Available",
+            "Pronunciation": "/əˈveɪləbl/",
+            "Types of words": "Adjective",
+            "Meaning": "có sẵn"
+        },
+        {
+            "Vocabulary": "Official",
+            "Pronunciation": "/əˈfɪʃl/",
+            "Types of words": "Adjective",
+            "Meaning": "chính thức"
+        },
+        {
+            "Vocabulary": "Compatible",
+            "Pronunciation": "/kəmˈpætəbl/",
+            "Types of words": "Adjective",
+            "Meaning": "tương thích"
+        },
+        {
+            "Vocabulary": "Develop",
+            "Pronunciation": "/dɪˈveləp/",
+            "Types of words": "Verb",
+            "Meaning": "phát triển"
+        },
+        {
+            "Vocabulary": "Interrupt",
+            "Pronunciation": "/ˌɪntəˈrʌpt/",
+            "Types of words": "Verb",
+            "Meaning": "cản trở, gián đoạn"
+        },
+        {
+            "Vocabulary": "Install",
+            "Pronunciation": "/ɪnˈstɔːl/",
+            "Types of words": "Verb",
+            "Meaning": "cài đặt"
+        },
+        {
+            "Vocabulary": "Latest",
+            "Pronunciation": "/ˈleɪtɪst/",
+            "Types of words": "Adjective",
+            "Meaning": "mới nhất"
+        },
+        {
+            "Vocabulary": "Maintain",
+            "Pronunciation": "/meɪnˈteɪn/",
+            "Types of words": "Verb",
+            "Meaning": "duy trì"
+        },
+        {
+            "Vocabulary": "Respond",
+            "Pronunciation": "/rɪˈspɒnd/",
+            "Types of words": "Verb",
+            "Meaning": "phản hồi"
+        },
+        {
+            "Vocabulary": "Multi-task",
+            "Pronunciation": "/ˈmʌlti tɑːsk/",
+            "Types of words": "Adjective",
+            "Meaning": "đa nhiệm"
+        },
+        {
+            "Vocabulary": "Transmit",
+            "Pronunciation": "/trænzˈmɪt/",
+            "Types of words": "Verb",
+            "Meaning": "truyền"
+        },
+        {
+            "Vocabulary": "Personalize",
+            "Pronunciation": "/ˈpɜːsənəlaɪz/",
+            "Types of words": "Verb",
+            "Meaning": "cá nhân hóa"
+        },
+        {
+            "Vocabulary": "Fundamental",
+            "Pronunciation": "/ˌfʌndəˈmentl/",
+            "Types of words": "Adjective",
+            "Meaning": "cơ bản"
+        },
+        {
+            "Vocabulary": "Internal",
+            "Pronunciation": "/ɪnˈtɜːnl/",
+            "Types of words": "Adjective",
+            "Meaning": "bên trong"
+        },
+        {
+            "Vocabulary": "Intricate",
+            "Pronunciation": "/ˈɪntrɪkət/",
+            "Types of words": "Adjective",
+            "Meaning": "phức tạp"
+        },
+        {
+            "Vocabulary": "Modify",
+            "Pronunciation": "/ˈmɒdɪfaɪ/",
+            "Types of words": "Verb",
+            "Meaning": "phân loại"
+        },
+        {
+            "Vocabulary": "Optimize",
+            "Pronunciation": "/ˈɒptɪmaɪz/",
+            "Types of words": "Verb",
+            "Meaning": "tối ưu hóa"
+        },
+        {
+            "Vocabulary": "Single-tasking",
+            "Pronunciation": "/ˈsɪŋɡl tɑːskɪŋ/",
+            "Types of words": "Adjective",
+            "Meaning": "đơn nhiệm"
+        }
+    ],
+    "Các hệ đếm": [
+        {
+            "Vocabulary": "Positional numeral system",
+            "Pronunciation": "/pəˈzɪʃənəl ˈnjuːmərəl ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ đếm định vị"
+        },
+        {
+            "Vocabulary": "Decimal numeral system",
+            "Pronunciation": "/ˈdesɪm ˈnjuːmərəl ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ đếm thập phân"
+        },
+        {
+            "Vocabulary": "Binary numeral system",
+            "Pronunciation": "/ˈbaɪnəri ˈnjuːmərəl ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ nhị phân"
+        },
+        {
+            "Vocabulary": "Octal number display",
+            "Pronunciation": "/ˈɒkt(ə)l ˈnʌmbə(r) dɪˈspleɪ/",
+            "Types of words": "Noun",
+            "Meaning": "hệ bát phân"
+        },
+        {
+            "Vocabulary": "Hex number display",
+            "Pronunciation": "/hɛks ˈnʌmbə(r) dɪˈspleɪ/",
+            "Types of words": "Noun",
+            "Meaning": "hệ thập lục phân"
+        }
+    ],
+    "Các ngành nghề": [
+        {
+            "Vocabulary": "Software developer",
+            "Pronunciation": "/ˈsɒftweə(r) dɪˈveləpə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "nhà phát triển phần mềm"
+        },
+        {
+            "Vocabulary": "Computer and information research scientist",
+            "Pronunciation": "/kəmˈpjuːtə(r) ənd ˌɪnfəˈmeɪʃn rɪˈsɜːtʃ ˈsaɪəntɪst/",
+            "Types of words": "Noun",
+            "Meaning": "nhà nghiên cứu khoa học máy tính"
+        },
+        {
+            "Vocabulary": "Computer programmer",
+            "Pronunciation": "/kəmˈpjuːtə(r) ˈprəʊɡræmə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "nhà lập trình máy tính"
+        },
+        {
+            "Vocabulary": "Computer system analyst",
+            "Pronunciation": "/kəmˈpjuːtə(r) ˈsɪstəm ˈænəlɪst/",
+            "Types of words": "Noun",
+            "Meaning": "Chuyên gia phân tích hệ thống máy tính"
+        },
+        {
+            "Vocabulary": "Web developer",
+            "Pronunciation": "/web dɪˈveləpə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "nhà phát triển trang web"
+        }
+    ],
+    "Cấu tạo máy tính": [
+        {
+            "Vocabulary": "Hardware",
+            "Pronunciation": "/ˈhɑːdweə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "phần cứng"
+        },
+        {
+            "Vocabulary": "Software",
+            "Pronunciation": "/ˈsɒftweə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "phần mềm"
+        },
+        {
+            "Vocabulary": "Main memory system",
+            "Pronunciation": "/meɪn ˈmeməri ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ thống bộ nhớ chính"
+        },
+        {
+            "Vocabulary": "Registers",
+            "Pronunciation": "/ˈredʒɪstə(r)z/",
+            "Types of words": "Noun",
+            "Meaning": "các thanh ghi"
+        },
+        {
+            "Vocabulary": "Input",
+            "Pronunciation": "/ˈɪnpʊt/",
+            "Types of words": "Noun",
+            "Meaning": "bộ vào"
+        },
+        {
+            "Vocabulary": "Output",
+            "Pronunciation": "/ˈaʊtpʊt/",
+            "Types of words": "Noun",
+            "Meaning": "bộ ra"
+        },
+        {
+            "Vocabulary": "Cache memory",
+            "Pronunciation": "/kæʃ ˈmeməri/",
+            "Types of words": "Noun",
+            "Meaning": "bộ nhớ Cache"
+        },
+        {
+            "Vocabulary": "Instruction",
+            "Pronunciation": "/ɪnˈstrʌkʃn/",
+            "Types of words": "Noun",
+            "Meaning": "hướng dẫn"
+        },
+        {
+            "Vocabulary": "Program",
+            "Pronunciation": "/ˈprəʊɡræm/",
+            "Types of words": "Noun",
+            "Meaning": "chương trình"
+        },
+        {
+            "Vocabulary": "Secondary memory",
+            "Pronunciation": "/ˈsekəndri ˈmeməri/",
+            "Types of words": "Noun",
+            "Meaning": "bộ nhớ phụ"
+        },
+        {
+            "Vocabulary": "Floppy disk",
+            "Pronunciation": "/ˈflɒpi dɪsk/",
+            "Types of words": "Noun",
+            "Meaning": "đĩa mềm"
+        },
+        {
+            "Vocabulary": "Hard disk",
+            "Pronunciation": "/hɑːd dɪsk/",
+            "Types of words": "Noun",
+            "Meaning": "đĩa cứng"
+        },
+        {
+            "Vocabulary": "Compact disk",
+            "Pronunciation": "/kəmˈpækt dɪsk/",
+            "Types of words": "Noun",
+            "Meaning": "đĩa quang"
+        },
+        {
+            "Vocabulary": "Memory stick",
+            "Pronunciation": "/ˈmeməri stɪk/",
+            "Types of words": "Noun",
+            "Meaning": "thẻ nhớ"
+        },
+        {
+            "Vocabulary": "USB Flash Drive",
+            "Pronunciation": "/ˌjuː es ˈbiː flæʃ draɪv/",
+            "Types of words": "Noun",
+            "Meaning": "USB"
+        },
+        {
+            "Vocabulary": "Function keypad",
+            "Pronunciation": "/ˈfʌŋkʃn ˈkiːpæd/",
+            "Types of words": "Noun",
+            "Meaning": "nhóm phím chức năng"
+        },
+        {
+            "Vocabulary": "Numeric keypad",
+            "Pronunciation": "/njuːˈmerɪk ˈkiːpæd/",
+            "Types of words": "Noun",
+            "Meaning": "nhóm phím số"
+        },
+        {
+            "Vocabulary": "Text",
+            "Pronunciation": "/tekst/",
+            "Types of words": "Noun",
+            "Meaning": "văn bản"
+        },
+        {
+            "Vocabulary": "Graphics",
+            "Pronunciation": "/ˈɡræfɪks/",
+            "Types of words": "Noun",
+            "Meaning": "đồ họa"
+        },
+        {
+            "Vocabulary": "Microprocessor",
+            "Pronunciation": "/ˌmaɪkrəʊˈprəʊsesə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "bộ vi xử lý"
+        },
+        {
+            "Vocabulary": "Port",
+            "Pronunciation": "/pɔːt/",
+            "Types of words": "Noun",
+            "Meaning": "cổng"
+        }
+    ],
+    "Thuật ngữ": [
+        {
+            "Vocabulary": "BIT (binary digit)",
+            "Pronunciation": "/ˈbaɪnəri ˈdɪdʒɪt/",
+            "Types of words": "Noun",
+            "Meaning": "đơn vị 0 hoặc 1"
+        },
+        {
+            "Vocabulary": "ASCII (American Standard Code for Information Interchange)",
+            "Pronunciation": "/ˈaski/",
+            "Types of words": "Noun",
+            "Meaning": "Hệ chuyển đổi thông tin theo mã chuẩn của Mỹ"
+        },
+        {
+            "Vocabulary": "ROM (Read only memory)",
+            "Pronunciation": "/rɒm//riːd ˈəʊnli ˈmeməri/",
+            "Types of words": "Noun",
+            "Meaning": "bộ nhớ trong"
+        },
+        {
+            "Vocabulary": "RAM (Random access memory)",
+            "Pronunciation": "/ræm//ˈrændəm ˈækses ˈmeməri/",
+            "Types of words": "Noun",
+            "Meaning": "bộ nhớ ngoài"
+        },
+        {
+            "Vocabulary": "CPU (Central processing unit)",
+            "Pronunciation": "/ˌsiː piː ˈjuː//ˈsentrəl ˈprəʊsesɪŋ ˈjuːnɪt/",
+            "Types of words": "Noun",
+            "Meaning": "bộ xử lí trung tâm"
+        },
+        {
+            "Vocabulary": "CU (Control unit)",
+            "Pronunciation": "/siː ˈjuː//kənˈtrəʊl ˈjuːnɪt/",
+            "Types of words": "Noun",
+            "Meaning": "bộ điều khiển"
+        },
+        {
+            "Vocabulary": "ALU ( Arithmetic logic unit)",
+            "Pronunciation": "/əˈrɪθmətɪk ˈlɒdʒɪk ˈjuːnɪt/",
+            "Types of words": "Noun",
+            "Meaning": "bộ số học và logic"
+        },
+        {
+            "Vocabulary": "LAN (Local area network)",
+            "Pronunciation": "/læn//ˈləʊkl ˈeəriə ‘netwɜːk/",
+            "Types of words": "Noun",
+            "Meaning": "mạng nội bộ"
+        },
+        {
+            "Vocabulary": "HTML (HyperText Markup Language)",
+            "Pronunciation": "/ˌeɪtʃ tiː em ˈel//ˈhaɪpətekst ˈmɑːkʌp ˈlæŋɡwɪdʒ/",
+            "Types of words": "Noun",
+            "Meaning": "ngôn ngữ đánh dấu siêu văn bản"
+        },
+        {
+            "Vocabulary": "WAN (Wide area network)",
+            "Pronunciation": "/wɒn//waɪd ˈeəriə ˈnetwɜːk/",
+            "Types of words": "Noun",
+            "Meaning": "mạng diện rộng"
+        },
+        {
+            "Vocabulary": "DNS (Domain Name System)",
+            "Pronunciation": "/dəˈmeɪn neɪm ˈsɪstəm/",
+            "Types of words": "Noun",
+            "Meaning": "hệ thống tên miền"
+        },
+        {
+            "Vocabulary": "IC (integrated circuit)",
+            "Pronunciation": "/ˈɪntɪɡreɪtɪd ˈsɜːkɪt/",
+            "Types of words": "Noun",
+            "Meaning": "vi mạch"
+        },
+        {
+            "Vocabulary": "URL (Uniform Resource Locator)",
+            "Pronunciation": "/ˌjuː ɑːr ˈel/\r\r\n/ˈjuːnɪfɔːm rɪˈsɔːs ləʊˈkeɪtə(r)/",
+            "Types of words": "Noun",
+            "Meaning": "đường link"
+        },
+        {
+            "Vocabulary": "IT (Information Technology)",
+            "Pronunciation": "/ˌɪnfəˈmeɪʃn tekˈnɒlədʒi/",
+            "Types of words": "Noun",
+            "Meaning": "công nghệ thông tin"
+        }
+    ]
+}

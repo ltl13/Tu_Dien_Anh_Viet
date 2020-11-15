@@ -1,0 +1,433 @@
+﻿{
+    "Thảo mộc, gia vị": [
+        {
+            "Vocabulary": "Cilantro – Coriander",
+            "Pronunciation": "/səˈlæn.troʊ/ – /ˈkɔːr.i.æn.dɚ/",
+            "Meaning": "Rau mùi"
+        },
+        {
+            "Vocabulary": "Artichoke",
+            "Pronunciation": "/ˈɑːr.t̬ə.tʃoʊk/",
+            "Meaning": "Cây a-ti-sô"
+        },
+        {
+            "Vocabulary": "Rosemary",
+            "Pronunciation": "/ˈroʊz.mer.i/",
+            "Meaning": "Cây mê điệt, hương thảo"
+        },
+        {
+            "Vocabulary": "Bay leaf",
+            "Pronunciation": "/ˈbeɪ ˌliːf/",
+            "Meaning": "Lá nguyệt quế"
+        },
+        {
+            "Vocabulary": "Mint leaves",
+            "Pronunciation": "/mɪnt liːvz/",
+            "Meaning": "Lá bạc hà"
+        },
+        {
+            "Vocabulary": "Basil",
+            "Pronunciation": "/ˈbeɪ.zəl/",
+            "Meaning": "Húng quế"
+        },
+        {
+            "Vocabulary": "Clove",
+            "Pronunciation": "/kloʊv/",
+            "Meaning": "Đinh hương"
+        },
+        {
+            "Vocabulary": "Olive",
+            "Pronunciation": "/ˈɑː.lɪv/",
+            "Meaning": "Ô liu"
+        },
+        {
+            "Vocabulary": "Shallot",
+            "Pronunciation": "/ʃəˈlɑːt/",
+            "Meaning": "Hành tím"
+        },
+        {
+            "Vocabulary": "Turmeric",
+            "Pronunciation": "/ˈtɝː.mər.ɪk/",
+            "Meaning": "Nghệ"
+        },
+        {
+            "Vocabulary": "Garlic",
+            "Pronunciation": "/ˈɡɑːr.lɪk/",
+            "Meaning": "Tỏi"
+        },
+        {
+            "Vocabulary": "Ginger",
+            "Pronunciation": "/ˈdʒɪn.dʒɚ/",
+            "Meaning": "Gừng"
+        },
+        {
+            "Vocabulary": "Onion",
+            "Pronunciation": "/ˈʌn.jən/",
+            "Meaning": "Củ hành"
+        },
+        {
+            "Vocabulary": "Spring onions – Green onions",
+            "Pronunciation": "/ˌsprɪŋ ˈʌn.jən/ – /ˌɡriːn ʌn.jən/",
+            "Meaning": "Hành lá"
+        },
+        {
+            "Vocabulary": "Lemongrass",
+            "Pronunciation": "/ˈlem.ən ˌɡræs/",
+            "Meaning": "Cây sả"
+        },
+        {
+            "Vocabulary": "Chives",
+            "Pronunciation": "/tʃaɪvz/",
+            "Meaning": "Lá hẹ"
+        },
+        {
+            "Vocabulary": "Green chili",
+            "Pronunciation": "/ɡriːn ˈtʃɪl.i/",
+            "Meaning": "Ớt xanh"
+        }
+    ],
+    "Rau củ": [
+        {
+            "Vocabulary": "Corn",
+            "Pronunciation": "/kɔːrn/",
+            "Meaning": "Ngô"
+        },
+        {
+            "Vocabulary": "Mushroom",
+            "Pronunciation": "/ˈmʌʃ.ruːm/",
+            "Meaning": "Nấm"
+        },
+        {
+            "Vocabulary": "Broccoli",
+            "Pronunciation": "/ˈbrɑː.kəl.i/",
+            "Meaning": "Bông cải xanh"
+        },
+        {
+            "Vocabulary": "Cucumber",
+            "Pronunciation": "/ˈkjuː.kʌm.bɚ/",
+            "Meaning": "Quả dưa chuột"
+        },
+        {
+            "Vocabulary": "Red pepper – Red bell pepper",
+            "Pronunciation": "/ˌred ˈpep.ɚ/ – /ˌredˈbel ˌpep.ɚ/",
+            "Meaning": "Ớt chuông đỏ"
+        },
+        {
+            "Vocabulary": "Pineapple",
+            "Pronunciation": "/ˈpaɪnˌæp.əl/",
+            "Meaning": "Trái dứa"
+        },
+        {
+            "Vocabulary": "Tomato",
+            "Pronunciation": "/təˈmeɪ.t̬oʊ/",
+            "Meaning": "Cà chua"
+        },
+        {
+            "Vocabulary": "Swede – Rutabaga (U.S.)",
+            "Pronunciation": "/swiːd/ – /ˌruː.t̬əˈbeɪ.ɡə/",
+            "Meaning": "Củ cải"
+        },
+        {
+            "Vocabulary": "Carrot",
+            "Pronunciation": "/ˈker.ət/",
+            "Meaning": "Cà rốt"
+        },
+        {
+            "Vocabulary": "Brussels sprout",
+            "Pronunciation": "/ˌbrʌs.əlz ˈspraʊt/",
+            "Meaning": "Cải brussel"
+        },
+        {
+            "Vocabulary": "Pumpkin",
+            "Pronunciation": "/ˈpʌmp.kɪn/",
+            "Meaning": "Quả bí ngô"
+        },
+        {
+            "Vocabulary": "Cabbage",
+            "Pronunciation": "/ˈkæb.ɪdʒ/",
+            "Meaning": "Cải bắp"
+        },
+        {
+            "Vocabulary": "Potato",
+            "Pronunciation": "/pəˈteɪ.t̬oʊ/",
+            "Meaning": "Khoai tây"
+        },
+        {
+            "Vocabulary": "Eggplant",
+            "Pronunciation": "/ˈeɡ.plænt/",
+            "Meaning": "Cà tím"
+        },
+        {
+            "Vocabulary": "Sweet potato",
+            "Pronunciation": "/ˌswiːt pəˈteɪ.t̬oʊ/",
+            "Meaning": "Khoai lang"
+        },
+        {
+            "Vocabulary": "Turnip",
+            "Pronunciation": "/ˈtɝː.nɪp/",
+            "Meaning": "Cây củ cải"
+        },
+        {
+            "Vocabulary": "Courgette (U.K.) – Zucchini (U.S.)",
+            "Pronunciation": "/kʊrˈʒet/ – /zuːˈkiː.ni/",
+            "Meaning": "Bí xanh"
+        },
+        {
+            "Vocabulary": "Green chilli",
+            "Pronunciation": "/ɡriːn ˈtʃɪl.i/",
+            "Meaning": "Ớt xanh"
+        },
+        {
+            "Vocabulary": "Onion",
+            "Pronunciation": "/ˈʌn.jən/",
+            "Meaning": "Củ hành"
+        },
+        {
+            "Vocabulary": "Lettuce",
+            "Pronunciation": "/ˈlet̬.ɪs/",
+            "Meaning": "Rau diếp"
+        },
+        {
+            "Vocabulary": "Radish",
+            "Pronunciation": "/ˈræd.ɪʃ/",
+            "Meaning": "Củ cải"
+        },
+        {
+            "Vocabulary": "Pea",
+            "Pronunciation": "/piː/",
+            "Meaning": "Đậu xanh"
+        },
+        {
+            "Vocabulary": "Asparagus",
+            "Pronunciation": "/əˈsper.ə.ɡəs/",
+            "Meaning": "Măng tây"
+        },
+        {
+            "Vocabulary": "Celery",
+            "Pronunciation": "/ˈsel.ɚ.i/",
+            "Meaning": "Rau cần tây"
+        },
+        {
+            "Vocabulary": "Green pepper",
+            "Pronunciation": "/ˌɡriːn ˈpep.ɚ/",
+            "Meaning": "Tiêu xanh"
+        },
+        {
+            "Vocabulary": "French beans",
+            "Pronunciation": "/ˌfrentʃ ˈbiːn/",
+            "Meaning": "Đậu cô ve"
+        },
+        {
+            "Vocabulary": "Spinach",
+            "Pronunciation": "/ˈspɪn.ɪtʃ/",
+            "Meaning": "Rau chân vịt"
+        },
+        {
+            "Vocabulary": "Beetroot – Beet (U.S.)",
+            "Pronunciation": "/ˈbiːt.ruːt/ – /biːt/",
+            "Meaning": "Củ dền"
+        },
+        {
+            "Vocabulary": "Red chillies – Red chili peppers (U.S.)",
+            "Pronunciation": "/red ˈtʃɪl.i/ – /red ˈtʃɪl.i ˈpep.ɚ/",
+            "Meaning": "Ớt đỏ"
+        },
+        {
+            "Vocabulary": "Bean",
+            "Pronunciation": "/biːn/",
+            "Meaning": "Hạt đậu"
+        }
+    ],
+    "Nấm": [
+        {
+            "Vocabulary": "mushroom",
+            "Meaning": "Nấm"
+        },
+        {
+            "Vocabulary": "Ganoderma",
+            "Meaning": "Nấm linh chi"
+        },
+        {
+            "Vocabulary": "Abalone mushrooms",
+            "Meaning": "Nấm bào ngư"
+        },
+        {
+            "Vocabulary": "Termite mushrooms",
+            "Meaning": "Nấm mối"
+        },
+        {
+            "Vocabulary": "Fatty mushrooms",
+            "Meaning": "Nấm mỡ"
+        },
+        {
+            "Vocabulary": "Seafood Mushrooms",
+            "Meaning": "Nấm hải sản"
+        },
+        {
+            "Vocabulary": "Pearl mushrooms soaked",
+            "Meaning": "Nấm ngọc tẩm"
+        },
+        {
+            "Vocabulary": "King oyster mushroom",
+            "Meaning": "Nấm đùi gà"
+        },
+        {
+            "Vocabulary": "Enokitake",
+            "Meaning": "Nấm kim châm"
+        },
+        {
+            "Vocabulary": "Bamboo shoot mushroom",
+            "Meaning": "Nấm măng hoa"
+        },
+        {
+            "Vocabulary": "Melaleuca mushroom",
+            "Meaning": "Nấm tràm"
+        },
+        {
+            "Vocabulary": "White wood-ear mushroom hoặc white fungus",
+            "Meaning": "Nấm tuyết"
+        }
+    ],
+    "Trái cây": [
+        {
+            "Vocabulary": "Apple",
+            "Pronunciation": "/ˈæp.əl/",
+            "Meaning": "Quả táo"
+        },
+        {
+            "Vocabulary": "Watermelon",
+            "Pronunciation": "/ˈwɑː.t̬ɚˌmel.ən/",
+            "Meaning": "Quả dưa hấu"
+        },
+        {
+            "Vocabulary": "Orange",
+            "Pronunciation": "/ˈɔːr.ɪndʒ/",
+            "Meaning": "Quả cam"
+        },
+        {
+            "Vocabulary": "Pear",
+            "Pronunciation": "/per/",
+            "Meaning": "Quả lê"
+        },
+        {
+            "Vocabulary": "Cherry",
+            "Pronunciation": "/ˈtʃer.i/",
+            "Meaning": "Quả anh đào"
+        },
+        {
+            "Vocabulary": "Strawberry",
+            "Pronunciation": "/ˈstrɑːˌber.i/",
+            "Meaning": "Quả dâu"
+        },
+        {
+            "Vocabulary": "Nectarine",
+            "Pronunciation": "/ˌnek.təˈriːn/",
+            "Meaning": "Quả xuân đào"
+        },
+        {
+            "Vocabulary": "Grape",
+            "Pronunciation": "/ɡreɪp/",
+            "Meaning": "Quả nho"
+        },
+        {
+            "Vocabulary": "Mango",
+            "Pronunciation": "/ˈmæŋ.ɡoʊ/",
+            "Meaning": "Quả xoài"
+        },
+        {
+            "Vocabulary": "Blueberry",
+            "Pronunciation": "/ˈbluːˌbər.i/",
+            "Meaning": "Quả việt quất"
+        },
+        {
+            "Vocabulary": "Pomegranate",
+            "Pronunciation": "/ˈpɑː.məˌɡræn.ɪt/",
+            "Meaning": "Quả lựu"
+        },
+        {
+            "Vocabulary": "Carambola(U.K) – Starfruit (U.S)",
+            "Pronunciation": "/ˌkær.əmˈbəʊ.lə/ – /ˈstɑːr.fruːt/",
+            "Meaning": "Quả khế"
+        },
+        {
+            "Vocabulary": "Plum",
+            "Pronunciation": "/plʌm/",
+            "Meaning": "Quả mận"
+        },
+        {
+            "Vocabulary": "Banana",
+            "Pronunciation": "/bəˈnæn.ə/",
+            "Meaning": "Quả chuối"
+        },
+        {
+            "Vocabulary": "Raspberry",
+            "Pronunciation": "/ˈræz.ber.i/",
+            "Meaning": "Phúc bồn tử"
+        },
+        {
+            "Vocabulary": "Mandarin",
+            "Pronunciation": "/ˈmæn.dɚ.ɪn/",
+            "Meaning": "Quả quýt"
+        },
+        {
+            "Vocabulary": "Jackfruit",
+            "Pronunciation": "/ˈdʒæk.fruːt/",
+            "Meaning": "Quả mít"
+        },
+        {
+            "Vocabulary": "Papaya",
+            "Pronunciation": "/pəˈpaɪ.ə/",
+            "Meaning": "Quả đu đủ"
+        },
+        {
+            "Vocabulary": "Kiwi",
+            "Pronunciation": "/ˈkiː.wiː/",
+            "Meaning": "Quả kiwi"
+        },
+        {
+            "Vocabulary": "Pineapple",
+            "Pronunciation": "/ˈpaɪnˌæp.əl/",
+            "Meaning": "Quả dứa, quả thơm"
+        },
+        {
+            "Vocabulary": "Lime",
+            "Pronunciation": "/laɪm/",
+            "Meaning": "Quả chanh vỏ xanh"
+        },
+        {
+            "Vocabulary": "Lemon",
+            "Pronunciation": "/ˈlem.ən/",
+            "Meaning": "Quả chanh vỏ vàng"
+        },
+        {
+            "Vocabulary": "Apricot",
+            "Pronunciation": "/ˈeɪ.prɪ.kɑːt/",
+            "Meaning": "Quả mơ"
+        },
+        {
+            "Vocabulary": "Grapefruit",
+            "Pronunciation": "/ˈɡreɪp.fruːt/",
+            "Meaning": "Quả bưởi chùm"
+        },
+        {
+            "Vocabulary": "Melon",
+            "Pronunciation": "/ˈmel.ən/",
+            "Meaning": "Quả dưa lưới"
+        },
+        {
+            "Vocabulary": "Coconut",
+            "Pronunciation": "/ˈkoʊ.kə.nʌt/",
+            "Meaning": "Quả dừa"
+        },
+        {
+            "Vocabulary": "Avocado",
+            "Pronunciation": "/ˌæv.əˈkɑː.doʊ/",
+            "Meaning": "Quả bơ"
+        },
+        {
+            "Vocabulary": "Peach",
+            "Pronunciation": "/piːtʃ/",
+            "Meaning": "Quả đào"
+        }
+    ]
+}
