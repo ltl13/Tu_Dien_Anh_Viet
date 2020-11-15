@@ -640,6 +640,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Default;
             this.TransparencyKey = System.Drawing.Color.LightSteelBlue;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Main_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).EndInit();
             this.panel_Search.ResumeLayout(false);
