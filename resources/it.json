@@ -1,0 +1,942 @@
+﻿{
+    "Một số từ thường gặp": [
+        {
+            "Column1": "Operating system",
+            "Column2": "/ˈɒpəreɪtɪŋ ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ điều hành"
+        },
+        {
+            "Column1": "Information",
+            "Column2": "/ˌɪnfəˈmeɪʃn/",
+            "Column3": "Noun",
+            "Column4": "thông tin"
+        },
+        {
+            "Column1": "Data",
+            "Column2": "/ˈdeɪtə/",
+            "Column3": "Noun",
+            "Column4": "dữ liệu"
+        },
+        {
+            "Column1": "Programming language",
+            "Column2": "/ˈprəʊɡræmɪŋ ˈlæŋɡwɪdʒ/",
+            "Column3": "Noun",
+            "Column4": "ngôn ngữ lập trình"
+        },
+        {
+            "Column1": "Browser",
+            "Column2": "/ˈbraʊzə(r)/",
+            "Column3": "Noun",
+            "Column4": "trình duyệt"
+        },
+        {
+            "Column1": "Application",
+            "Column2": "/ˌæplɪˈkeɪʃn/",
+            "Column3": "Noun",
+            "Column4": "ứng dụng"
+        },
+        {
+            "Column1": "Storage",
+            "Column2": "/ˈstɔːrɪdʒ/",
+            "Column3": "Noun",
+            "Column4": "lưu trữ"
+        },
+        {
+            "Column1": "Version",
+            "Column2": "/ˈvɜːʃn/",
+            "Column3": "Noun",
+            "Column4": "phiên bản"
+        },
+        {
+            "Column1": "Beta",
+            "Column2": "/ˈbiːtə/",
+            "Column3": "Noun",
+            "Column4": "thử nghiệm"
+        },
+        {
+            "Column1": "Customer",
+            "Column2": "/ˈkʌstəmə(r)/",
+            "Column3": "Noun",
+            "Column4": "khách hàng"
+        },
+        {
+            "Column1": "Matrix",
+            "Column2": "/ˈmeɪtrɪks/",
+            "Column3": "Noun",
+            "Column4": "ma trận"
+        },
+        {
+            "Column1": "Signal",
+            "Column2": "/ˈsɪɡnəl/",
+            "Column3": "Noun",
+            "Column4": "tín hiệu"
+        },
+        {
+            "Column1": "Addition",
+            "Column2": "/əˈdɪʃn/",
+            "Column3": "Noun",
+            "Column4": "Phép cộng"
+        },
+        {
+            "Column1": "Subtraction",
+            "Column2": "/səbˈtrækʃn/",
+            "Column3": "Noun",
+            "Column4": "Phép trừ"
+        },
+        {
+            "Column1": "Multiplication",
+            "Column2": "/ˌmʌltɪplɪˈkeɪʃn/",
+            "Column3": "Noun",
+            "Column4": "Phép nhân"
+        },
+        {
+            "Column1": "Division",
+            "Column2": "/dɪˈvɪʒn/",
+            "Column3": "Noun",
+            "Column4": "Phép chia"
+        },
+        {
+            "Column1": "Device",
+            "Column2": "/dɪˈvaɪs/",
+            "Column3": "Noun",
+            "Column4": "thiết bị"
+        },
+        {
+            "Column1": "Function",
+            "Column2": "/ˈfʌŋkʃn/",
+            "Column3": "Noun",
+            "Column4": "chức năng"
+        },
+        {
+            "Column1": "Setting",
+            "Column2": "/ˈsetɪŋ/",
+            "Column3": "Noun",
+            "Column4": "cài đặt"
+        },
+        {
+            "Column1": "Feature",
+            "Column2": "/ˈfiːtʃə(r)/",
+            "Column3": "Noun",
+            "Column4": "thuộc tính"
+        },
+        {
+            "Column1": "Font",
+            "Column2": "/fɒnt/",
+            "Column3": "Noun",
+            "Column4": "phông"
+        },
+        {
+            "Column1": "Bug",
+            "Column2": "/bʌɡ/",
+            "Column3": "Noun",
+            "Column4": "lỗi"
+        },
+        {
+            "Column1": "Crash",
+            "Column2": "/kræʃ/",
+            "Column3": "Noun",
+            "Column4": "hỏng chương trình"
+        },
+        {
+            "Column1": "Security",
+            "Column2": "/sɪˈkjʊərəti/",
+            "Column3": "Noun",
+            "Column4": "bảo mật"
+        },
+        {
+            "Column1": "Database",
+            "Column2": "/ˈdeɪtəbeɪs/",
+            "Column3": "Noun",
+            "Column4": "cơ sở dữ liệu"
+        },
+        {
+            "Column1": "Algorithm",
+            "Column2": "/ˈælɡərɪðəm/",
+            "Column3": "Noun",
+            "Column4": "thuật toán"
+        },
+        {
+            "Column1": "Source Code",
+            "Column2": "/sɔːs kəʊd/",
+            "Column3": "Noun",
+            "Column4": "mã nguồn"
+        },
+        {
+            "Column1": "Pulse",
+            "Column2": "/pʌls/",
+            "Column3": "Noun",
+            "Column4": "xung"
+        },
+        {
+            "Column1": "Gateway",
+            "Column2": "/ˈɡeɪtweɪ/",
+            "Column3": "Noun",
+            "Column4": "cổng kết nối Internet cho những mạng lớn"
+        },
+        {
+            "Column1": "Protocol",
+            "Column2": "/ˈprəʊtəkɒl/",
+            "Column3": "Noun",
+            "Column4": "giao thức"
+        },
+        {
+            "Column1": "Configuration",
+            "Column2": "/kənˌfɪɡəˈreɪʃn/",
+            "Column3": "Noun",
+            "Column4": "cấu hình"
+        },
+        {
+            "Column1": "Adware",
+            "Column2": "/ˈædweə(r)/",
+            "Column3": "Noun",
+            "Column4": "phần mềm quảng cáo"
+        },
+        {
+            "Column1": "Buffer overflow",
+            "Column2": "/ˈbʌfə(r) ˌəʊvəˈfləʊ/",
+            "Column3": "Noun",
+            "Column4": "lỗi tràn bộ nhớ đệm"
+        },
+        {
+            "Column1": "Debugging",
+            "Column2": "/ˌdiːˈbʌɡɪŋ/",
+            "Column3": "Noun",
+            "Column4": "gỡ lỗi"
+        },
+        {
+            "Column1": "Machine language",
+            "Column2": "/məˈʃiːn ˈlæŋɡwɪdʒ/",
+            "Column3": "Noun",
+            "Column4": "ngôn ngữ máy"
+        },
+        {
+            "Column1": "Interpreter",
+            "Column2": "/ɪnˈtɜːprətə(r)/",
+            "Column3": "Noun",
+            "Column4": "trình thông dịch"
+        },
+        {
+            "Column1": "Firewall",
+            "Column2": "/ˈfaɪəwɔːl/",
+            "Column3": "Noun",
+            "Column4": "tường lửa"
+        },
+        {
+            "Column1": "Cursor",
+            "Column2": "/ˈkɜːsə(r)/",
+            "Column3": "Noun",
+            "Column4": "con trỏ trong cơ sở dữ liệu"
+        },
+        {
+            "Column1": "Backup",
+            "Column2": "/ˈbækʌp/",
+            "Column3": "Noun",
+            "Column4": "sao lưu"
+        },
+        {
+            "Column1": "Format",
+            "Column2": "/ˈfɔːmæt/",
+            "Column3": "Noun",
+            "Column4": "định dạng"
+        },
+        {
+            "Column1": "Unplugged",
+            "Column2": "/ˌʌnˈplʌɡd/",
+            "Column3": "Noun",
+            "Column4": "chưa được kết nối"
+        },
+        {
+            "Column1": "Spyware",
+            "Column2": "/ˈspaɪweə(r)/",
+            "Column3": "Noun",
+            "Column4": "phần mềm gián điệp"
+        },
+        {
+            "Column1": "Administration",
+            "Column2": "/ədˌmɪnɪˈstreɪʃn/",
+            "Column3": "Noun",
+            "Column4": "quyền quản trị"
+        },
+        {
+            "Column1": "Domain",
+            "Column2": "/dəˈmeɪn/",
+            "Column3": "Noun",
+            "Column4": "tên miền"
+        },
+        {
+            "Column1": "Malware",
+            "Column2": "/ˈmælweə(r)/",
+            "Column3": "Noun",
+            "Column4": "phần mềm độc hại"
+        },
+        {
+            "Column1": "Cloud computing",
+            "Column2": "/klaʊd kəmˈpjuːtɪŋ/",
+            "Column3": "Noun",
+            "Column4": "điện toán đám mây"
+        },
+        {
+            "Column1": "Antivirus software",
+            "Column2": "/ˈæntivaɪrəs ˈsɒftweə(r)/",
+            "Column3": "Noun",
+            "Column4": "phần mềm chống virus"
+        },
+        {
+            "Column1": "Internet service provider",
+            "Column2": "/ˈɪntənet ˈsɜːvɪs prəˈvaɪdə(r)/",
+            "Column3": "Noun",
+            "Column4": "nhà cung cấp dịch vụ mạng"
+        },
+        {
+            "Column1": "Speech recognition",
+            "Column2": "/spiːtʃ ˌrekəɡˈnɪʃn/",
+            "Column3": "Noun",
+            "Column4": "nhận dạng tiếng nói"
+        },
+        {
+            "Column1": "Quantum computing",
+            "Column2": "/ˈkwɒntəm kəmˈpjuːtɪŋ/",
+            "Column3": "Noun",
+            "Column4": "máy tính lượng tử"
+        },
+        {
+            "Column1": "Structured programming",
+            "Column2": "/ˈstrʌktʃə(r)d ˈprəʊɡræmɪŋ/",
+            "Column3": "Noun",
+            "Column4": "lập trình cấu trúc"
+        },
+        {
+            "Column1": "Command",
+            "Column2": "/kəˈmɑːnd/",
+            "Column3": "Noun",
+            "Column4": "mệnh lệnh"
+        },
+        {
+            "Column1": "Prolog",
+            "Column2": "/ˈprəʊlɒɡ/",
+            "Column3": "Noun",
+            "Column4": "lập trình theo lôgic"
+        },
+        {
+            "Column1": "Concurrency control",
+            "Column2": "/kənˈkʌr(ə)nsɪ kənˈtrəʊl/",
+            "Column3": "Noun",
+            "Column4": "kiểm soát truy cập đồng thời"
+        },
+        {
+            "Column1": "Grid computing",
+            "Column2": "/ɡrɪd kəmˈpjuːtɪŋ/",
+            "Column3": "Noun",
+            "Column4": "điện toán lưới"
+        },
+        {
+            "Column1": "Multiprocessing",
+            "Column2": "/ˈmʌlti ˈprəʊsesɪŋ/",
+            "Column3": "Noun",
+            "Column4": "đa xử lí"
+        },
+        {
+            "Column1": "Software development process",
+            "Column2": "/ˈsɒftweə(r) dɪˈveləpmənt ˈprəʊses/",
+            "Column3": "Noun",
+            "Column4": "quy trình phát triển phần mềm"
+        },
+        {
+            "Column1": "Software testing",
+            "Column2": "/ˈsɒftweə(r) ˈtestɪŋ/",
+            "Column3": "Noun",
+            "Column4": "kiểm thử phần mềm"
+        },
+        {
+            "Column1": "Analysis",
+            "Column2": "/əˈnæləsɪs/",
+            "Column3": "Noun",
+            "Column4": "phân tích"
+        },
+        {
+            "Column1": "Computer architecture",
+            "Column2": "/kəmˈpjuːtə(r) ˈɑːkɪtektʃə(r)/",
+            "Column3": "Noun",
+            "Column4": "kiến trúc máy tính"
+        },
+        {
+            "Column1": "User interface",
+            "Column2": "/ˈjuːzə(r) ˈɪntəfeɪs/",
+            "Column3": "Noun",
+            "Column4": "giao diện người dùng"
+        },
+        {
+            "Column1": "Computer animation",
+            "Column2": "/kəmˈpjuːtə(r) ˌænɪˈmeɪʃn/",
+            "Column3": "Noun",
+            "Column4": "hoạt hình máy tính"
+        },
+        {
+            "Column1": "Digital image processing",
+            "Column2": "/ˈdɪdʒɪtl ˈɪmɪdʒ ˈprəʊsesɪŋ/",
+            "Column3": "Noun",
+            "Column4": "xử lí ảnh"
+        },
+        {
+            "Column1": "Information retrieval",
+            "Column2": "/ˌɪnfəˈmeɪʃn rɪˈtriːvl/",
+            "Column3": "Noun",
+            "Column4": "truy hồi thông tin"
+        },
+        {
+            "Column1": "Data compression",
+            "Column2": "/ˈdeɪtə kəmˈpreʃn/",
+            "Column3": "Noun",
+            "Column4": "nén dữ liệu"
+        },
+        {
+            "Column1": "Encryption",
+            "Column2": "/ɪnˈkrɪpʃn/",
+            "Column3": "Noun",
+            "Column4": "mã hóa dữ liệu"
+        },
+        {
+            "Column1": "Information theory",
+            "Column2": "/ˌɪnfəˈmeɪʃn ˈθɪəri/",
+            "Column3": "Noun",
+            "Column4": "lý thuyết thông tin"
+        },
+        {
+            "Column1": "Data recovery",
+            "Column2": "/ˈdeɪtə rɪˈkʌvəri/",
+            "Column3": "Noun",
+            "Column4": "khôi phục dữ liệu"
+        },
+        {
+            "Column1": "Database management system",
+            "Column2": "/ˈdeɪtəbeɪs ˈmænɪdʒmənt ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ quản trị cơ sở dữ liệu"
+        },
+        {
+            "Column1": "Network topology",
+            "Column2": "/ˈnetwɜːk təˈpɒlədʒi/",
+            "Column3": "Noun",
+            "Column4": "cấu trúc liên kết mạng"
+        },
+        {
+            "Column1": "Bus",
+            "Column2": "/bʌs/",
+            "Column3": "Noun",
+            "Column4": "mạng trục tuyến"
+        },
+        {
+            "Column1": "Star",
+            "Column2": "/stɑː(r)/",
+            "Column3": "Noun",
+            "Column4": "mạng hình sao"
+        },
+        {
+            "Column1": "Ring",
+            "Column2": "/rɪŋ/",
+            "Column3": "Noun",
+            "Column4": "mạng hình vòng"
+        },
+        {
+            "Column1": "Digital signal processing",
+            "Column2": "/ˈdɪdʒɪtl ˈsɪɡnəl ˈprəʊsesɪŋ/",
+            "Column3": "Noun",
+            "Column4": "xử lí tín hiệu thông tin"
+        },
+        {
+            "Column1": "Transistor",
+            "Column2": "/trænˈzɪstə(r)/",
+            "Column3": "Noun",
+            "Column4": "linh kiện bán dẫn"
+        },
+        {
+            "Column1": "Trojan horse",
+            "Column2": "/ˌtrəʊdʒən ˈhɔːs/",
+            "Column3": "Noun",
+            "Column4": "mã độc Trojan"
+        },
+        {
+            "Column1": "Keylogger",
+            "Column2": "/ˈkiːlɒɡə(r)/",
+            "Column3": "Noun",
+            "Column4": "trình theo dõi thao tác bàn phím"
+        },
+        {
+            "Column1": "Worm",
+            "Column2": "/wɜːm/",
+            "Column3": "Noun",
+            "Column4": "sâu máy tính"
+        },
+        {
+            "Column1": "I/O operations",
+            "Column2": "/ˈɪnpʊt ˈaʊtpʊt ˌɒpəˈreɪʃnz/",
+            "Column3": "Noun",
+            "Column4": "tổ chức và quản lý xuất nhập"
+        },
+        {
+            "Column1": "Hyperlink",
+            "Column2": "/ˈhaɪpəlɪŋk/",
+            "Column3": "Noun",
+            "Column4": "siêu liên kết"
+        },
+        {
+            "Column1": "File-system manipulation",
+            "Column2": "/faɪl ˈsɪstəm məˌnɪpjuˈleɪʃn/",
+            "Column3": "Noun",
+            "Column4": "quản lý hệ thống File"
+        },
+        {
+            "Column1": "Real-time system",
+            "Column2": "/ˌriːəl ˈtaɪm ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ thống xử lí thời gian thực"
+        },
+        {
+            "Column1": "Embedded system",
+            "Column2": "/ɪmˈbedɪd ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ thống nhúng"
+        },
+        {
+            "Column1": "Program execution",
+            "Column2": "/ˈprəʊɡræm ˌeksɪˈkjuːʃn/",
+            "Column3": "Noun",
+            "Column4": "thực thi chương trình"
+        },
+        {
+            "Column1": "Vocabulary",
+            "Column2": "Pronunciation",
+            "Column3": "Types of words",
+            "Column4": "Meaning"
+        },
+        {
+            "Column1": "Convert",
+            "Column2": "/kənˈvɜːt/",
+            "Column3": "Verb",
+            "Column4": "chuyển đổi"
+        },
+        {
+            "Column1": "Multi – user",
+            "Column2": "/ˈmʌlti ˈjuːzə(r)/",
+            "Column3": "Adjective",
+            "Column4": "đa người dùng"
+        },
+        {
+            "Column1": "Single -user",
+            "Column2": "/ˈsɪŋɡl ˈjuːzə(r)/",
+            "Column3": "Adjective",
+            "Column4": "đơn người dùng"
+        },
+        {
+            "Column1": "Available",
+            "Column2": "/əˈveɪləbl/",
+            "Column3": "Adjective",
+            "Column4": "có sẵn"
+        },
+        {
+            "Column1": "Official",
+            "Column2": "/əˈfɪʃl/",
+            "Column3": "Adjective",
+            "Column4": "chính thức"
+        },
+        {
+            "Column1": "Compatible",
+            "Column2": "/kəmˈpætəbl/",
+            "Column3": "Adjective",
+            "Column4": "tương thích"
+        },
+        {
+            "Column1": "Develop",
+            "Column2": "/dɪˈveləp/",
+            "Column3": "Verb",
+            "Column4": "phát triển"
+        },
+        {
+            "Column1": "Interrupt",
+            "Column2": "/ˌɪntəˈrʌpt/",
+            "Column3": "Verb",
+            "Column4": "cản trở, gián đoạn"
+        },
+        {
+            "Column1": "Install",
+            "Column2": "/ɪnˈstɔːl/",
+            "Column3": "Verb",
+            "Column4": "cài đặt"
+        },
+        {
+            "Column1": "Latest",
+            "Column2": "/ˈleɪtɪst/",
+            "Column3": "Adjective",
+            "Column4": "mới nhất"
+        },
+        {
+            "Column1": "Maintain",
+            "Column2": "/meɪnˈteɪn/",
+            "Column3": "Verb",
+            "Column4": "duy trì"
+        },
+        {
+            "Column1": "Respond",
+            "Column2": "/rɪˈspɒnd/",
+            "Column3": "Verb",
+            "Column4": "phản hồi"
+        },
+        {
+            "Column1": "Multi-task",
+            "Column2": "/ˈmʌlti tɑːsk/",
+            "Column3": "Adjective",
+            "Column4": "đa nhiệm"
+        },
+        {
+            "Column1": "Transmit",
+            "Column2": "/trænzˈmɪt/",
+            "Column3": "Verb",
+            "Column4": "truyền"
+        },
+        {
+            "Column1": "Personalize",
+            "Column2": "/ˈpɜːsənəlaɪz/",
+            "Column3": "Verb",
+            "Column4": "cá nhân hóa"
+        },
+        {
+            "Column1": "Fundamental",
+            "Column2": "/ˌfʌndəˈmentl/",
+            "Column3": "Adjective",
+            "Column4": "cơ bản"
+        },
+        {
+            "Column1": "Internal",
+            "Column2": "/ɪnˈtɜːnl/",
+            "Column3": "Adjective",
+            "Column4": "bên trong"
+        },
+        {
+            "Column1": "Intricate",
+            "Column2": "/ˈɪntrɪkət/",
+            "Column3": "Adjective",
+            "Column4": "phức tạp"
+        },
+        {
+            "Column1": "Modify",
+            "Column2": "/ˈmɒdɪfaɪ/",
+            "Column3": "Verb",
+            "Column4": "phân loại"
+        },
+        {
+            "Column1": "Optimize",
+            "Column2": "/ˈɒptɪmaɪz/",
+            "Column3": "Verb",
+            "Column4": "tối ưu hóa"
+        },
+        {
+            "Column1": "Single-tasking",
+            "Column2": "/ˈsɪŋɡl tɑːskɪŋ/",
+            "Column3": "Adjective",
+            "Column4": "đơn nhiệm"
+        }
+    ],
+    "Các hệ đếm": [
+        {
+            "Column1": "Vocabulary",
+            "Column2": "Pronunciation",
+            "Column3": "Types of words",
+            "Column4": "Meaning"
+        },
+        {
+            "Column1": "Positional numeral system",
+            "Column2": "/pəˈzɪʃənəl ˈnjuːmərəl ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ đếm định vị"
+        },
+        {
+            "Column1": "Decimal numeral system",
+            "Column2": "/ˈdesɪm ˈnjuːmərəl ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ đếm thập phân"
+        },
+        {
+            "Column1": "Binary numeral system",
+            "Column2": "/ˈbaɪnəri ˈnjuːmərəl ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ nhị phân"
+        },
+        {
+            "Column1": "Octal number display",
+            "Column2": "/ˈɒkt(ə)l ˈnʌmbə(r) dɪˈspleɪ/",
+            "Column3": "Noun",
+            "Column4": "hệ bát phân"
+        },
+        {
+            "Column1": "Hex number display",
+            "Column2": "/hɛks ˈnʌmbə(r) dɪˈspleɪ/",
+            "Column3": "Noun",
+            "Column4": "hệ thập lục phân"
+        }
+    ],
+    "Các ngành nghề": [
+        {
+            "Column1": "Vocabulary",
+            "Column2": "Pronunciation",
+            "Column3": "Types of words",
+            "Column4": "Meaning"
+        },
+        {
+            "Column1": "Software developer",
+            "Column2": "/ˈsɒftweə(r) dɪˈveləpə(r)/",
+            "Column3": "Noun",
+            "Column4": "nhà phát triển phần mềm"
+        },
+        {
+            "Column1": "Computer and information research scientist",
+            "Column2": "/kəmˈpjuːtə(r) ənd ˌɪnfəˈmeɪʃn rɪˈsɜːtʃ ˈsaɪəntɪst/",
+            "Column3": "Noun",
+            "Column4": "nhà nghiên cứu khoa học máy tính"
+        },
+        {
+            "Column1": "Computer programmer",
+            "Column2": "/kəmˈpjuːtə(r) ˈprəʊɡræmə(r)/",
+            "Column3": "Noun",
+            "Column4": "nhà lập trình máy tính"
+        },
+        {
+            "Column1": "Computer system analyst",
+            "Column2": "/kəmˈpjuːtə(r) ˈsɪstəm ˈænəlɪst/",
+            "Column3": "Noun",
+            "Column4": "Chuyên gia phân tích hệ thống máy tính"
+        },
+        {
+            "Column1": "Web developer",
+            "Column2": "/web dɪˈveləpə(r)/",
+            "Column3": "Noun",
+            "Column4": "nhà phát triển trang web"
+        }
+    ],
+    "Cấu tạo máy tính": [
+        {
+            "Column1": "Vocabulary",
+            "Column2": "Pronunciation",
+            "Column3": "Types of words",
+            "Column4": "Meaning"
+        },
+        {
+            "Column1": "Hardware",
+            "Column2": "/ˈhɑːdweə(r)/",
+            "Column3": "Noun",
+            "Column4": "phần cứng"
+        },
+        {
+            "Column1": "Software",
+            "Column2": "/ˈsɒftweə(r)/",
+            "Column3": "Noun",
+            "Column4": "phần mềm"
+        },
+        {
+            "Column1": "Main memory system",
+            "Column2": "/meɪn ˈmeməri ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ thống bộ nhớ chính"
+        },
+        {
+            "Column1": "Registers",
+            "Column2": "/ˈredʒɪstə(r)z/",
+            "Column3": "Noun",
+            "Column4": "các thanh ghi"
+        },
+        {
+            "Column1": "Input",
+            "Column2": "/ˈɪnpʊt/",
+            "Column3": "Noun",
+            "Column4": "bộ vào"
+        },
+        {
+            "Column1": "Output",
+            "Column2": "/ˈaʊtpʊt/",
+            "Column3": "Noun",
+            "Column4": "bộ ra"
+        },
+        {
+            "Column1": "Cache memory",
+            "Column2": "/kæʃ ˈmeməri/",
+            "Column3": "Noun",
+            "Column4": "bộ nhớ Cache"
+        },
+        {
+            "Column1": "Instruction",
+            "Column2": "/ɪnˈstrʌkʃn/",
+            "Column3": "Noun",
+            "Column4": "hướng dẫn"
+        },
+        {
+            "Column1": "Program",
+            "Column2": "/ˈprəʊɡræm/",
+            "Column3": "Noun",
+            "Column4": "chương trình"
+        },
+        {
+            "Column1": "Secondary memory",
+            "Column2": "/ˈsekəndri ˈmeməri/",
+            "Column3": "Noun",
+            "Column4": "bộ nhớ phụ"
+        },
+        {
+            "Column1": "Floppy disk",
+            "Column2": "/ˈflɒpi dɪsk/",
+            "Column3": "Noun",
+            "Column4": "đĩa mềm"
+        },
+        {
+            "Column1": "Hard disk",
+            "Column2": "/hɑːd dɪsk/",
+            "Column3": "Noun",
+            "Column4": "đĩa cứng"
+        },
+        {
+            "Column1": "Compact disk",
+            "Column2": "/kəmˈpækt dɪsk/",
+            "Column3": "Noun",
+            "Column4": "đĩa quang"
+        },
+        {
+            "Column1": "Memory stick",
+            "Column2": "/ˈmeməri stɪk/",
+            "Column3": "Noun",
+            "Column4": "thẻ nhớ"
+        },
+        {
+            "Column1": "USB Flash Drive",
+            "Column2": "/ˌjuː es ˈbiː flæʃ draɪv/",
+            "Column3": "Noun",
+            "Column4": "USB"
+        },
+        {
+            "Column1": "Function keypad",
+            "Column2": "/ˈfʌŋkʃn ˈkiːpæd/",
+            "Column3": "Noun",
+            "Column4": "nhóm phím chức năng"
+        },
+        {
+            "Column1": "Numeric keypad",
+            "Column2": "/njuːˈmerɪk ˈkiːpæd/",
+            "Column3": "Noun",
+            "Column4": "nhóm phím số"
+        },
+        {
+            "Column1": "Text",
+            "Column2": "/tekst/",
+            "Column3": "Noun",
+            "Column4": "văn bản"
+        },
+        {
+            "Column1": "Graphics",
+            "Column2": "/ˈɡræfɪks/",
+            "Column3": "Noun",
+            "Column4": "đồ họa"
+        },
+        {
+            "Column1": "Microprocessor",
+            "Column2": "/ˌmaɪkrəʊˈprəʊsesə(r)/",
+            "Column3": "Noun",
+            "Column4": "bộ vi xử lý"
+        },
+        {
+            "Column1": "Port",
+            "Column2": "/pɔːt/",
+            "Column3": "Noun",
+            "Column4": "cổng"
+        }
+    ],
+    "Thuật ngữ": [
+        {
+            "Column1": "Vocabulary",
+            "Column2": "Pronunciation",
+            "Column3": "Types of words",
+            "Column4": "Meaning"
+        },
+        {
+            "Column1": "BIT (binary digit)",
+            "Column2": "/ˈbaɪnəri ˈdɪdʒɪt/",
+            "Column3": "Noun",
+            "Column4": "đơn vị 0 hoặc 1"
+        },
+        {
+            "Column1": "ASCII (American Standard Code for Information Interchange)",
+            "Column2": "/ˈaski/",
+            "Column3": "Noun",
+            "Column4": "Hệ chuyển đổi thông tin theo mã chuẩn của Mỹ"
+        },
+        {
+            "Column1": "ROM (Read only memory)",
+            "Column2": "/rɒm//riːd ˈəʊnli ˈmeməri/",
+            "Column3": "Noun",
+            "Column4": "bộ nhớ trong"
+        },
+        {
+            "Column1": "RAM (Random access memory)",
+            "Column2": "/ræm//ˈrændəm ˈækses ˈmeməri/",
+            "Column3": "Noun",
+            "Column4": "bộ nhớ ngoài"
+        },
+        {
+            "Column1": "CPU (Central processing unit)",
+            "Column2": "/ˌsiː piː ˈjuː//ˈsentrəl ˈprəʊsesɪŋ ˈjuːnɪt/",
+            "Column3": "Noun",
+            "Column4": "bộ xử lí trung tâm"
+        },
+        {
+            "Column1": "CU (Control unit)",
+            "Column2": "/siː ˈjuː//kənˈtrəʊl ˈjuːnɪt/",
+            "Column3": "Noun",
+            "Column4": "bộ điều khiển"
+        },
+        {
+            "Column1": "ALU ( Arithmetic logic unit)",
+            "Column2": "/əˈrɪθmətɪk ˈlɒdʒɪk ˈjuːnɪt/",
+            "Column3": "Noun",
+            "Column4": "bộ số học và logic"
+        },
+        {
+            "Column1": "LAN (Local area network)",
+            "Column2": "/læn//ˈləʊkl ˈeəriə ‘netwɜːk/",
+            "Column3": "Noun",
+            "Column4": "mạng nội bộ"
+        },
+        {
+            "Column1": "HTML (HyperText Markup Language)",
+            "Column2": "/ˌeɪtʃ tiː em ˈel//ˈhaɪpətekst ˈmɑːkʌp ˈlæŋɡwɪdʒ/",
+            "Column3": "Noun",
+            "Column4": "ngôn ngữ đánh dấu siêu văn bản"
+        },
+        {
+            "Column1": "WAN (Wide area network)",
+            "Column2": "/wɒn//waɪd ˈeəriə ˈnetwɜːk/",
+            "Column3": "Noun",
+            "Column4": "mạng diện rộng"
+        },
+        {
+            "Column1": "DNS (Domain Name System)",
+            "Column2": "/dəˈmeɪn neɪm ˈsɪstəm/",
+            "Column3": "Noun",
+            "Column4": "hệ thống tên miền"
+        },
+        {
+            "Column1": "IC (integrated circuit)",
+            "Column2": "/ˈɪntɪɡreɪtɪd ˈsɜːkɪt/",
+            "Column3": "Noun",
+            "Column4": "vi mạch"
+        },
+        {
+            "Column1": "URL (Uniform Resource Locator)",
+            "Column2": "/ˌjuː ɑːr ˈel/\r\r\n/ˈjuːnɪfɔːm rɪˈsɔːs ləʊˈkeɪtə(r)/",
+            "Column3": "Noun",
+            "Column4": "đường link"
+        },
+        {
+            "Column1": "IT (Information Technology)",
+            "Column2": "/ˌɪnfəˈmeɪʃn tekˈnɒlədʒi/",
+            "Column3": "Noun",
+            "Column4": "công nghệ thông tin"
+        }
+    ]
+}

@@ -1,0 +1,1164 @@
+﻿{
+    "Kinh tế": [
+        {
+            "STT": "1",
+            "Tên": "debit",
+            "Ý nghĩa": "Sự ghi nợ, món nợ, khoản nợ, bên nợ"
+        },
+        {
+            "STT": "2",
+            "Tên": "Convertible debenture",
+            "Ý nghĩa": "Trái khoán có thể đổi thành vàng hoặc thành đôla"
+        },
+        {
+            "STT": "3",
+            "Tên": "Debenture holder",
+            "Ý nghĩa": "Người giữ trái khoán"
+        },
+        {
+            "STT": "4",
+            "Tên": "Fixed interest bearing debenture",
+            "Ý nghĩa": "Trái khoán chịu tiền lãi cố định"
+        },
+        {
+            "STT": "5",
+            "Tên": "Graduated interest debebtures",
+            "Ý nghĩa": "Trái khoán chịu tiền lãi lũy tiến"
+        },
+        {
+            "STT": "6",
+            "Tên": "Issue of debenture",
+            "Ý nghĩa": "Sự phát hành trái khoán"
+        },
+        {
+            "STT": "7",
+            "Tên": "Redeem debenture",
+            "Ý nghĩa": "Trái khoán trả dần"
+        },
+        {
+            "STT": "8",
+            "Tên": "Registered debenture",
+            "Ý nghĩa": "Trái khoán ký danh"
+        },
+        {
+            "STT": "9",
+            "Tên": "Unissued debenture",
+            "Ý nghĩa": "Cuống trái khoán"
+        },
+        {
+            "STT": "10",
+            "Tên": "Variable interest debenture",
+            "Ý nghĩa": "Trái khoán chịu tiền lãi thay đổi"
+        },
+        {
+            "STT": "11",
+            "Tên": "Debit advice",
+            "Ý nghĩa": "Giấy báo nợ"
+        },
+        {
+            "STT": "12",
+            "Tên": "Debit balance",
+            "Ý nghĩa": "Số dư nợ"
+        },
+        {
+            "STT": "13",
+            "Tên": "Debit request",
+            "Ý nghĩa": "Giấy đòi nợ"
+        },
+        {
+            "STT": "14",
+            "Tên": "Debit side",
+            "Ý nghĩa": "Bên nợ"
+        },
+        {
+            "STT": "15",
+            "Tên": "Settlement",
+            "Ý nghĩa": "Sự giải quyết, sự thanh toán, sự quyết toán"
+        },
+        {
+            "STT": "16",
+            "Tên": "Settlement of accounts",
+            "Ý nghĩa": "Sự quyết toán tài khoản"
+        },
+        {
+            "STT": "17",
+            "Tên": "Settlement of a claim",
+            "Ý nghĩa": "Sự giải quyết khiếu nại"
+        },
+        {
+            "STT": "18",
+            "Tên": "Settlement of a debt",
+            "Ý nghĩa": "Sự thanh toán nợ"
+        },
+        {
+            "STT": "19",
+            "Tên": "Settlement of a dispute",
+            "Ý nghĩa": "Sự giải quyết tranh chấp"
+        },
+        {
+            "STT": "20",
+            "Tên": "Amicable settlement",
+            "Ý nghĩa": "Sự hòa giải, sự giải quyết thỏa thuận"
+        },
+        {
+            "STT": "21",
+            "Tên": "Budget settlement",
+            "Ý nghĩa": "Sự quyết toán ngân sách"
+        },
+        {
+            "STT": "22",
+            "Tên": "Cash settlement",
+            "Ý nghĩa": "Sự thanh toán ngay; sự thanh toán bằng tiền mặt"
+        },
+        {
+            "STT": "23",
+            "Tên": "International settlement",
+            "Ý nghĩa": "Sự thanh toán quốc tế"
+        },
+        {
+            "STT": "24",
+            "Tên": "Multilateral settlement",
+            "Ý nghĩa": "Sự thanh toán nhiều bên, việc thanh toán nhiều bên"
+        },
+        {
+            "STT": "25",
+            "Tên": "Friendly settlement / Amicable settlement",
+            "Ý nghĩa": "Sự hòa giải, sự giải quyết thỏa thuận"
+        },
+        {
+            "STT": "26",
+            "Tên": "End month settlement",
+            "Ý nghĩa": "Sự quyết toán cuối tháng"
+        },
+        {
+            "STT": "27",
+            "Tên": "Monthly settlement",
+            "Ý nghĩa": "Sự quyết toán hàng tháng"
+        },
+        {
+            "STT": "28",
+            "Tên": "Settlement of a transaction",
+            "Ý nghĩa": "Sự kết thúc một công việc giao dịch"
+        },
+        {
+            "STT": "29",
+            "Tên": "Settlement of an invoice",
+            "Ý nghĩa": "Sự thanh toán một hóa đơn"
+        },
+        {
+            "STT": "30",
+            "Tên": "Settlement market",
+            "Ý nghĩa": "Sự mua hoặc bán"
+        },
+        {
+            "STT": "31",
+            "Tên": "Debenture",
+            "Ý nghĩa": "Trái khoán công ty, giấy nợ, phiếu nợ"
+        },
+        {
+            "STT": "32",
+            "Tên": "Bearer debenture",
+            "Ý nghĩa": "Trái khoán vô danh"
+        },
+        {
+            "STT": "33",
+            "Tên": "Mortgage debenture",
+            "Ý nghĩa": "Trái khoán cầm cố, giấy nợ được đảm bào bằng văn tự cầm đồ"
+        },
+        {
+            "STT": "34",
+            "Tên": "Naked debenture",
+            "Ý nghĩa": "Trái khoán trần, trái khoán không đảm bảo"
+        },
+        {
+            "STT": "35",
+            "Tên": "Preference debenture",
+            "Ý nghĩa": "Trái khoán ưu đãi"
+        },
+        {
+            "STT": "36",
+            "Tên": "Secured debenture",
+            "Ý nghĩa": "Trái khoán công ty có đảm bảo"
+        },
+        {
+            "STT": "37",
+            "Tên": "Unsecured debenture",
+            "Ý nghĩa": "Trái khoán công ty không có đảm bảo"
+        },
+        {
+            "STT": "38",
+            "Tên": "Company",
+            "Ý nghĩa": "Công ty, hội"
+        },
+        {
+            "STT": "39",
+            "Tên": "Company of limited liability",
+            "Ý nghĩa": "Công ty trách nhiệm hữu hạn"
+        },
+        {
+            "STT": "40",
+            "Tên": "Affiliated company",
+            "Ý nghĩa": "Công ty con, công ty dự phần"
+        },
+        {
+            "STT": "41",
+            "Tên": "Holding company",
+            "Ý nghĩa": "Công ty mẹ"
+        },
+        {
+            "STT": "42",
+            "Tên": "Insurance company",
+            "Ý nghĩa": "Công ty bảo hiểm"
+        },
+        {
+            "STT": "43",
+            "Tên": "Join stock company",
+            "Ý nghĩa": "Công ty cổ phần"
+        },
+        {
+            "STT": "44",
+            "Tên": "Multinational company",
+            "Ý nghĩa": "Công ty đa quốc gia"
+        },
+        {
+            "STT": "45",
+            "Tên": "One – man company",
+            "Ý nghĩa": "Công ty một người"
+        },
+        {
+            "STT": "46",
+            "Tên": "Private company",
+            "Ý nghĩa": "Công ty riêng"
+        },
+        {
+            "STT": "47",
+            "Tên": "Private – owned company",
+            "Ý nghĩa": "Công ty tư nhân"
+        },
+        {
+            "STT": "48",
+            "Tên": "Public company",
+            "Ý nghĩa": "Công ty công cộng, công ty nhà nước"
+        },
+        {
+            "STT": "49",
+            "Tên": "Shipping company",
+            "Ý nghĩa": "Công ty hàng hải, công ty vận tải biển"
+        },
+        {
+            "STT": "50",
+            "Tên": "State – owned company",
+            "Ý nghĩa": "Công ty quốc doanh, công ty nhà nước"
+        },
+        {
+            "STT": "51",
+            "Tên": "Transnational company",
+            "Ý nghĩa": "Công ty xuyên quốc gia"
+        },
+        {
+            "STT": "52",
+            "Tên": "Subsidiary company",
+            "Ý nghĩa": "Công ty con"
+        },
+        {
+            "STT": "53",
+            "Tên": "Unlimited (liability) company",
+            "Ý nghĩa": "Công ty trách nhiệm vô hạn"
+        },
+        {
+            "STT": "54",
+            "Tên": "Warehouse company",
+            "Ý nghĩa": "Công ty kho"
+        },
+        {
+            "STT": "55",
+            "Tên": "Express company",
+            "Ý nghĩa": "Công ty vận tải tốc hành"
+        },
+        {
+            "STT": "56",
+            "Tên": "Foreign trade company",
+            "Ý nghĩa": "Công ty ngoại thương"
+        },
+        {
+            "STT": "57",
+            "Tên": "Joint state – private company",
+            "Ý nghĩa": "Công ty công tư hợp doanh"
+        },
+        {
+            "STT": "58",
+            "Tên": "Investment service company",
+            "Ý nghĩa": "Công ty dịch vụ đầu tư"
+        },
+        {
+            "STT": "59",
+            "Tên": "Trading company",
+            "Ý nghĩa": "Công ty thương mại"
+        },
+        {
+            "STT": "60",
+            "Tên": "Limited (liability) company",
+            "Ý nghĩa": "Công ty trách nhiệm hữu hạn"
+        },
+        {
+            "STT": "61",
+            "Tên": "Bubble company",
+            "Ý nghĩa": "Công ty ma"
+        },
+        {
+            "STT": "62",
+            "Tên": "Mixed owenership company",
+            "Ý nghĩa": "Công ty hợp doanh"
+        },
+        {
+            "STT": "63",
+            "Tên": "Company limited by shares",
+            "Ý nghĩa": "Công ty trách nhiệm hữu hạn cổ phần"
+        },
+        {
+            "STT": "64",
+            "Tên": "Limited partnership",
+            "Ý nghĩa": "Công ty hợp danh hữu hạn"
+        },
+        {
+            "STT": "65",
+            "Tên": "The merge of companies/Amagation",
+            "Ý nghĩa": "Sự hợp nhất các công ty"
+        },
+        {
+            "STT": "66",
+            "Tên": "To form a company",
+            "Ý nghĩa": "Thành lập một công ty"
+        },
+        {
+            "STT": "67",
+            "Tên": "To dissolve a company",
+            "Ý nghĩa": "Giải thể một công ty"
+        },
+        {
+            "STT": "68",
+            "Tên": "To wind up a company",
+            "Ý nghĩa": "Thanh toán một công ty"
+        },
+        {
+            "STT": "69",
+            "Tên": "Industrial company",
+            "Ý nghĩa": "Công ty kỹ nghệ (sản xuất)"
+        },
+        {
+            "STT": "70",
+            "Tên": "Build – in – department",
+            "Ý nghĩa": "Bộ phận ghép nhỏ lo việc xuất khẩu"
+        },
+        {
+            "STT": "71",
+            "Tên": "Build – in export department",
+            "Ý nghĩa": "Bộ phận xuất khẩu"
+        },
+        {
+            "STT": "72",
+            "Tên": "Build – in import department",
+            "Ý nghĩa": "Bộ phận nhập khẩu"
+        },
+        {
+            "STT": "73",
+            "Tên": "Separated department",
+            "Ý nghĩa": "Bộ phận riêng biệt"
+        },
+        {
+            "STT": "74",
+            "Tên": "Export subsidiary company",
+            "Ý nghĩa": "Công ty con xuất khẩu"
+        },
+        {
+            "STT": "75",
+            "Tên": "Branch",
+            "Ý nghĩa": "Chi nhánh"
+        },
+        {
+            "STT": "76",
+            "Tên": "Prefabrication plant",
+            "Ý nghĩa": "Phân xưởng gia công"
+        },
+        {
+            "STT": "77",
+            "Tên": "Associated/Affiliated company",
+            "Ý nghĩa": "Công ty dự phần của một công ty mẹ ở nước ngoài"
+        },
+        {
+            "STT": "78",
+            "Tên": "Travelling agent",
+            "Ý nghĩa": "Nhân viên lưu động"
+        },
+        {
+            "STT": "79",
+            "Tên": "Comprador",
+            "Ý nghĩa": "Người mại bản"
+        },
+        {
+            "STT": "80",
+            "Tên": "Universal agent",
+            "Ý nghĩa": "Đại lý toàn quyền"
+        },
+        {
+            "STT": "81",
+            "Tên": "Carrrier’s agent",
+            "Ý nghĩa": "Đại lý vận tải"
+        },
+        {
+            "STT": "82",
+            "Tên": "Shipping agent",
+            "Ý nghĩa": "Đại lý giao nhận"
+        },
+        {
+            "STT": "83",
+            "Tên": "Charterer’s/Chartering agent",
+            "Ý nghĩa": "Đại lý thuê tàu"
+        },
+        {
+            "STT": "84",
+            "Tên": "Collecting agent",
+            "Ý nghĩa": "Đại lý thu hộ"
+        },
+        {
+            "STT": "85",
+            "Tên": "Insurance agent",
+            "Ý nghĩa": "Đại lý bảo hiểm"
+        },
+        {
+            "STT": "86",
+            "Tên": "Special agent",
+            "Ý nghĩa": "Đại lý đặc biệt"
+        },
+        {
+            "STT": "87",
+            "Tên": "To be out of business",
+            "Ý nghĩa": "vỡ nợ, phá sản"
+        },
+        {
+            "STT": "88",
+            "Tên": "To do business with somebody",
+            "Ý nghĩa": "buôn bán với ai"
+        },
+        {
+            "STT": "89",
+            "Tên": "Banking business",
+            "Ý nghĩa": "nghiệp vụ ngân hàng"
+        },
+        {
+            "STT": "90",
+            "Tên": "Forwarding business",
+            "Ý nghĩa": "hãng đại lý giao nhận, công tác giao nhận"
+        },
+        {
+            "STT": "91",
+            "Tên": "Retail business",
+            "Ý nghĩa": "thương nghiệp bán lẻ, việc kinh doanh bán lẻ"
+        },
+        {
+            "STT": "92",
+            "Tên": "Businessman",
+            "Ý nghĩa": "nhà kinh doanh"
+        },
+        {
+            "STT": "93",
+            "Tên": "Business is business",
+            "Ý nghĩa": "Công việc là công việc"
+        },
+        {
+            "STT": "94",
+            "Tên": "Cash business",
+            "Ý nghĩa": "việc mua bán bằng tiền mặt"
+        },
+        {
+            "STT": "95",
+            "Tên": "Complicated business",
+            "Ý nghĩa": "công việc làm ăn rắc rối"
+        },
+        {
+            "STT": "96",
+            "Tên": "Credit in business",
+            "Ý nghĩa": "tín dụng trong kinh doanh"
+        },
+        {
+            "STT": "97",
+            "Tên": "International business",
+            "Ý nghĩa": "Việc kinh doanh quốc tế"
+        },
+        {
+            "STT": "98",
+            "Tên": "Increase of business",
+            "Ý nghĩa": "Sự tăng cường buôn bán"
+        },
+        {
+            "STT": "99",
+            "Tên": "Man of business",
+            "Ý nghĩa": "Người thay mặt để giao dịch"
+        },
+        {
+            "STT": "100",
+            "Tên": "Stagnation of business",
+            "Ý nghĩa": "Sự đình trệ việc kinh doanh"
+        },
+        {
+            "STT": "101",
+            "Tên": "Business co-operation",
+            "Ý nghĩa": "sự hợp tác kinh doanh"
+        },
+        {
+            "STT": "102",
+            "Tên": "Business coordinator",
+            "Ý nghĩa": "người điều phối công việc kinh doanh"
+        },
+        {
+            "STT": "103",
+            "Tên": "Business circles/world",
+            "Ý nghĩa": "giới kinh doanh"
+        },
+        {
+            "STT": "104",
+            "Tên": "Business expansion",
+            "Ý nghĩa": "sự khuếch trương kinh doanh"
+        },
+        {
+            "STT": "105",
+            "Tên": "Business forecasting",
+            "Ý nghĩa": "dự đoán thương mại"
+        },
+        {
+            "STT": "106",
+            "Tên": "Business experience",
+            "Ý nghĩa": "kinh nghiệm trong kinh doanh"
+        },
+        {
+            "STT": "107",
+            "Tên": "Business is thriving",
+            "Ý nghĩa": "Sự buôn bán phát đạt"
+        },
+        {
+            "STT": "108",
+            "Tên": "Business is bad",
+            "Ý nghĩa": "Sự buôn bán ế ẩm"
+        },
+        {
+            "STT": "109",
+            "Tên": "Business knowledge",
+            "Ý nghĩa": "kiến thức kinh doanh"
+        },
+        {
+            "STT": "110",
+            "Tên": "Business license",
+            "Ý nghĩa": "giấy phép kinh doanh"
+        },
+        {
+            "STT": "111",
+            "Tên": "Business organization",
+            "Ý nghĩa": "tổ chức kinh doanh"
+        },
+        {
+            "STT": "112",
+            "Tên": "Business relations",
+            "Ý nghĩa": "các mối quan hệ kinh doanh"
+        },
+        {
+            "STT": "113",
+            "Tên": "Business tax",
+            "Ý nghĩa": "thuế doanh nghiệp"
+        },
+        {
+            "STT": "114",
+            "Tên": "Business trip",
+            "Ý nghĩa": "cuộc đi làm ăn"
+        },
+        {
+            "STT": "115",
+            "Tên": "To be in business",
+            "Ý nghĩa": "đang trong ngành kinh doanh"
+        },
+        {
+            "STT": "116",
+            "Tên": "Credit against goods",
+            "Ý nghĩa": "Tín dụng trả bằng hàng"
+        },
+        {
+            "STT": "117",
+            "Tên": "Acceptance credit",
+            "Ý nghĩa": "Tín dụng chấp nhận"
+        },
+        {
+            "STT": "118",
+            "Tên": "Back-to-back credit",
+            "Ý nghĩa": "Thư tín dụng giáp lưng"
+        },
+        {
+            "STT": "119",
+            "Tên": "Blank credit",
+            "Ý nghĩa": "Tín dụng không bảo đảm, tín dụng để trống"
+        },
+        {
+            "STT": "120",
+            "Tên": "Cash credit",
+            "Ý nghĩa": "Tín dụng tiền mặt"
+        },
+        {
+            "STT": "121",
+            "Tên": "Circular credit",
+            "Ý nghĩa": "Thư tín dụng lưu động"
+        },
+        {
+            "STT": "122",
+            "Tên": "Clean credit",
+            "Ý nghĩa": "Tín dụng trơn, tín dụng để trống"
+        },
+        {
+            "STT": "123",
+            "Tên": "Commercial credit",
+            "Ý nghĩa": "Tín dụng thương mại, tín dụng thương nghiệp"
+        },
+        {
+            "STT": "124",
+            "Tên": "Confirmed credit",
+            "Ý nghĩa": "Thư tín dụng xác nhận"
+        },
+        {
+            "STT": "125",
+            "Tên": "Confirmed irrevocable credit",
+            "Ý nghĩa": "Thư tín dụng không hủy ngang có xác nhận"
+        },
+        {
+            "STT": "126",
+            "Tên": "Countervailing credit",
+            "Ý nghĩa": "Tín dụng giáp lưng"
+        },
+        {
+            "STT": "127",
+            "Tên": "Divisible credit",
+            "Ý nghĩa": "Thư tín dụng chia nhỏ"
+        },
+        {
+            "STT": "128",
+            "Tên": "Documentary credit",
+            "Ý nghĩa": "Tín dụng chứng từ, thư tín dụng chứng từ"
+        },
+        {
+            "STT": "129",
+            "Tên": "Export credit",
+            "Ý nghĩa": "Tín dụng xuất khẩu"
+        },
+        {
+            "STT": "130",
+            "Tên": "Fractionable credit",
+            "Ý nghĩa": "Tín dụng chia nhỏ, thư tín dụng chia nhỏ"
+        },
+        {
+            "STT": "131",
+            "Tên": "Goverment credit",
+            "Ý nghĩa": "Tín dụng nhà nước"
+        },
+        {
+            "STT": "132",
+            "Tên": "Import credit",
+            "Ý nghĩa": "Tín dụng nhập khẩu"
+        },
+        {
+            "STT": "133",
+            "Tên": "Preference debenture",
+            "Ý nghĩa": "Trái khoán ưu đãi"
+        },
+        {
+            "STT": "134",
+            "Tên": "Secured debenture",
+            "Ý nghĩa": "Trái khoán công ty có đảm bảo"
+        },
+        {
+            "STT": "135",
+            "Tên": "Irrevocable credit",
+            "Ý nghĩa": "Thư tín dụng không hủy ngang"
+        },
+        {
+            "STT": "136",
+            "Tên": "Instalment credit",
+            "Ý nghĩa": "Tín dụng trả dần, tín dụng trả nhiều lần"
+        },
+        {
+            "STT": "137",
+            "Tên": "Long term credit",
+            "Ý nghĩa": "Tín dụng dài hạn"
+        },
+        {
+            "STT": "138",
+            "Tên": "Medium credit",
+            "Ý nghĩa": "Tín dụng trung hạn (thời hạn\r\r\n1 đến 5 năm)"
+        },
+        {
+            "STT": "139",
+            "Tên": "Medium term",
+            "Ý nghĩa": "Tín dụng trung hạn"
+        },
+        {
+            "STT": "140",
+            "Tên": "Mercantile credit",
+            "Ý nghĩa": "Tín dụng thương nghiệp, thư tín dụng thương nghiệp"
+        },
+        {
+            "STT": "141",
+            "Tên": "Open credit",
+            "Ý nghĩa": "Tín dụng không đảm bảo, tín dụng trơn, tín dụng để trống"
+        },
+        {
+            "STT": "142",
+            "Tên": "Negotiation credit",
+            "Ý nghĩa": "Tín dụng chiết khấu, thư tín dụng chiết khấu"
+        },
+        {
+            "STT": "143",
+            "Tên": "Packing credit",
+            "Ý nghĩa": "Tín dụng trả trước, thư tín dụng trả trước"
+        },
+        {
+            "STT": "144",
+            "Tên": "Public credit",
+            "Ý nghĩa": "Tín dụng nhà nước"
+        },
+        {
+            "STT": "145",
+            "Tên": "Revocable credit",
+            "Ý nghĩa": "Thư tín dụng hủy ngang"
+        },
+        {
+            "STT": "146",
+            "Tên": "Revolving credit",
+            "Ý nghĩa": "Thư tín dụng tuần hoàn"
+        },
+        {
+            "STT": "147",
+            "Tên": "Short term credit",
+            "Ý nghĩa": "Tín dụng ngắn hạn"
+        },
+        {
+            "STT": "148",
+            "Tên": "Stand by credit",
+            "Ý nghĩa": "Tín dụng dự phòng, tín dụng có hiệu quả"
+        },
+        {
+            "STT": "149",
+            "Tên": "Supplier credit",
+            "Ý nghĩa": "Tín dụng người bán"
+        },
+        {
+            "STT": "150",
+            "Tên": "Swing credit",
+            "Ý nghĩa": "Tín dụng kỹ thuật, tín dụng chi trội"
+        },
+        {
+            "STT": "151",
+            "Tên": "Transferable credit",
+            "Ý nghĩa": "Tín dụng chuyển nhượng"
+        },
+        {
+            "STT": "152",
+            "Tên": "Transmissible credit",
+            "Ý nghĩa": "Thư tín dụng chuyển nhượng"
+        },
+        {
+            "STT": "153",
+            "Tên": "Unconfirmed credit",
+            "Ý nghĩa": "Tín dụng không xác nhận"
+        },
+        {
+            "STT": "154",
+            "Tên": "Creditor",
+            "Ý nghĩa": "Chủ nợ, người cho vay, trái chủ, bên cấp tín dụng"
+        },
+        {
+            "STT": "155",
+            "Tên": "Credit advice",
+            "Ý nghĩa": "Giấy báo có"
+        },
+        {
+            "STT": "156",
+            "Tên": "Credit business",
+            "Ý nghĩa": "Sự kinh doanh tín dụng"
+        },
+        {
+            "STT": "157",
+            "Tên": "Credit card",
+            "Ý nghĩa": "Thẻ tín dụng"
+        },
+        {
+            "STT": "158",
+            "Tên": "Credit balance",
+            "Ý nghĩa": "Số dư có"
+        },
+        {
+            "STT": "159",
+            "Tên": "Credit co-op",
+            "Ý nghĩa": "Hợp tác xã tín dụng"
+        },
+        {
+            "STT": "160",
+            "Tên": "Credit institution",
+            "Ý nghĩa": "Định chế tín dụng"
+        },
+        {
+            "STT": "161",
+            "Tên": "To incur",
+            "Ý nghĩa": "Chịu, gánh, bị (chi phí, tổn thất, trách nhiệm…)"
+        },
+        {
+            "STT": "162",
+            "Tên": "Indebted",
+            "Ý nghĩa": "Mắc nợ, còn thiếu lại"
+        },
+        {
+            "STT": "163",
+            "Tên": "Indebtedness",
+            "Ý nghĩa": "Sự mắc nợ, công nợ, số tiền nợ"
+        },
+        {
+            "STT": "164",
+            "Tên": "Certificate of indebtedness",
+            "Ý nghĩa": "Giấy chứng nhận thiếu nợ"
+        },
+        {
+            "STT": "165",
+            "Tên": "Premium",
+            "Ý nghĩa": "Tiền thưởng, tiền đóng bảo hiểm, tiền bù"
+        },
+        {
+            "STT": "166",
+            "Tên": "Premium as agreed",
+            "Ý nghĩa": "Phí bảo hiểm như đã thỏa thuận"
+        },
+        {
+            "STT": "167",
+            "Tên": "Premium for double optiony",
+            "Ý nghĩa": "Tiền cược mua hoặc bán"
+        },
+        {
+            "STT": "168",
+            "Tên": "Premium for the call",
+            "Ý nghĩa": "Tiền cược mua, tiền cược thuận"
+        },
+        {
+            "STT": "169",
+            "Tên": "Premium for the put",
+            "Ý nghĩa": "Tiền cược bán, tiền cược nghịch"
+        },
+        {
+            "STT": "170",
+            "Tên": "Premium on gold",
+            "Ý nghĩa": "Bù giá vàng"
+        },
+        {
+            "STT": "171",
+            "Tên": "Additional premium",
+            "Ý nghĩa": "Phí bảo hiểm phụ, phí bảo hiểm bổ sung"
+        },
+        {
+            "STT": "172",
+            "Tên": "Export premium",
+            "Ý nghĩa": "Tiền thưởng xuất khẩu"
+        },
+        {
+            "STT": "173",
+            "Tên": "Extra premium",
+            "Ý nghĩa": "Phí bảo hiểm phụ"
+        },
+        {
+            "STT": "174",
+            "Tên": "Hull premium",
+            "Ý nghĩa": "Phí bảo hiểm mộc (không khấu trừ hoa hồng môi giới), phí bảo hiểm toàn bộ"
+        },
+        {
+            "STT": "175",
+            "Tên": "Insurance premium",
+            "Ý nghĩa": "Phí bảo hiểm"
+        },
+        {
+            "STT": "176",
+            "Tên": "Lumpsum premium",
+            "Ý nghĩa": "Phí bảo hiêm xô, phí bảo hiểm khoán"
+        },
+        {
+            "STT": "177",
+            "Tên": "Net premium",
+            "Ý nghĩa": "Phí bảo hiểm thuần túy (đã khấu trừ hoa hồng, môi giới), phí bảo hiểm tịnh"
+        },
+        {
+            "STT": "178",
+            "Tên": "Unearned premium",
+            "Ý nghĩa": "Phí bảo hiểm không thu được"
+        },
+        {
+            "STT": "179",
+            "Tên": "Voyage premium",
+            "Ý nghĩa": "Phí bảo hiểm chuyến"
+        },
+        {
+            "STT": "180",
+            "Tên": "At a premium",
+            "Ý nghĩa": "Cao hơn giá quy định (phát hành cổ phiếu)"
+        },
+        {
+            "STT": "181",
+            "Tên": "Exchange premium",
+            "Ý nghĩa": "Tiền lời đổi tiền"
+        },
+        {
+            "STT": "182",
+            "Tên": "Premium bond",
+            "Ý nghĩa": "Trái khoán có thưởng khích lệ"
+        },
+        {
+            "STT": "183",
+            "Tên": "Loan",
+            "Ý nghĩa": "Sự cho vay, sự cho mượn, tiền cho vay; công trái"
+        },
+        {
+            "STT": "184",
+            "Tên": "Loan at call",
+            "Ý nghĩa": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
+        },
+        {
+            "STT": "185",
+            "Tên": "Loan on bottomry",
+            "Ý nghĩa": "Khoản cho vay cầm tàu"
+        },
+        {
+            "STT": "186",
+            "Tên": "Loan on mortgage",
+            "Ý nghĩa": "Sự cho vay cầm cố"
+        },
+        {
+            "STT": "187",
+            "Tên": "Loan on overdraft",
+            "Ý nghĩa": "Khoản cho vay chi trội"
+        },
+        {
+            "STT": "188",
+            "Tên": "Loan of money",
+            "Ý nghĩa": "Sự cho vay tiền"
+        },
+        {
+            "STT": "189",
+            "Tên": "Bottomry loan",
+            "Ý nghĩa": "Khoản cho vay cầm tàu"
+        },
+        {
+            "STT": "190",
+            "Tên": "Call loan",
+            "Ý nghĩa": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
+        },
+        {
+            "STT": "191",
+            "Tên": "Demand loan",
+            "Ý nghĩa": "Khoản vay không kỳ hạn, sự cho vay không kỳ hạn"
+        },
+        {
+            "STT": "192",
+            "Tên": "Fiduciary loan",
+            "Ý nghĩa": "Khoản cho vay không có đảm bảo"
+        },
+        {
+            "STT": "193",
+            "Tên": "Long loan",
+            "Ý nghĩa": "Khoản vay dài hạn, sự cho vay dài hạn"
+        },
+        {
+            "STT": "194",
+            "Tên": "Short loan",
+            "Ý nghĩa": "Khoản vay ngắn hạn, sự cho vay ngắn hạn"
+        },
+        {
+            "STT": "195",
+            "Tên": "Unsecured insurance",
+            "Ý nghĩa": "Sự cho vay không bảo đảm, không thế chấp"
+        },
+        {
+            "STT": "196",
+            "Tên": "Warehouse insurance",
+            "Ý nghĩa": "Sự cho vay cầm hàng, lưu kho"
+        },
+        {
+            "STT": "197",
+            "Tên": "Loan on interest",
+            "Ý nghĩa": "Sự cho vay có lãi"
+        },
+        {
+            "STT": "198",
+            "Tên": "Loan on security",
+            "Ý nghĩa": "Sự vay, mượn có thế chấp"
+        },
+        {
+            "STT": "199",
+            "Tên": "Loan-office",
+            "Ý nghĩa": "Sổ giao dịch vay mượn, sổ nhận tiền mua công trái"
+        },
+        {
+            "STT": "200",
+            "Tên": "To apply for a plan",
+            "Ý nghĩa": "Làm đơn xin vay"
+        },
+        {
+            "STT": "201",
+            "Tên": "To loan for someone",
+            "Ý nghĩa": "Cho ai vay"
+        },
+        {
+            "STT": "202",
+            "Tên": "To raise/ secure a loan",
+            "Ý nghĩa": "sự khuếch trương kinh doanh"
+        },
+        {
+            "STT": "203",
+            "Tên": "Tonnage",
+            "Ý nghĩa": "Cước chuyên chở, dung tải, dung tích (tàu), trọng tải, lượng choán nước"
+        },
+        {
+            "STT": "204",
+            "Tên": "Cargo deadweight tonnage",
+            "Ý nghĩa": "Cước chuyên chở hàng hóa"
+        },
+        {
+            "STT": "205",
+            "Tên": "Stevedorage",
+            "Ý nghĩa": "Phí bốc dở"
+        },
+        {
+            "STT": "206",
+            "Tên": "Landing account",
+            "Ý nghĩa": "Bản kê khai bốc dỡ"
+        },
+        {
+            "STT": "207",
+            "Tên": "Leakage account",
+            "Ý nghĩa": "Bản kê khai thất thoát"
+        },
+        {
+            "STT": "208",
+            "Tên": "Liquidating account",
+            "Ý nghĩa": "Tài khoản thanh toán"
+        },
+        {
+            "STT": "209",
+            "Tên": "Mid – month account",
+            "Ý nghĩa": "Sự quyết toán giữa tháng"
+        },
+        {
+            "STT": "210",
+            "Tên": "Profit and loss account",
+            "Ý nghĩa": "Tài khoản lỗ lãi"
+        },
+        {
+            "STT": "211",
+            "Tên": "Private account",
+            "Ý nghĩa": "Tài khoản cá nhân"
+        },
+        {
+            "STT": "212",
+            "Tên": "Account of charges",
+            "Ý nghĩa": "Bản quyết toán chi phí"
+        },
+        {
+            "STT": "213",
+            "Tên": "Account of trade and navigation",
+            "Ý nghĩa": "Bảng thống kê thương mại và hàng hải"
+        },
+        {
+            "STT": "214",
+            "Tên": "Clearing account",
+            "Ý nghĩa": "Tài khoản (thanh toán) bù trừ"
+        },
+        {
+            "STT": "215",
+            "Tên": "Exchange equalisation account",
+            "Ý nghĩa": "Tài khoản bình ổn hối đoái"
+        },
+        {
+            "STT": "216",
+            "Tên": "Freight account",
+            "Ý nghĩa": "Phiếu cước"
+        },
+        {
+            "STT": "217",
+            "Tên": "Frozen account",
+            "Ý nghĩa": "Tài khoản phong tỏa"
+        },
+        {
+            "STT": "218",
+            "Tên": "Suspense account",
+            "Ý nghĩa": "tài khoản treo"
+        },
+        {
+            "STT": "219",
+            "Tên": "Tallyman’s account",
+            "Ý nghĩa": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
+        },
+        {
+            "STT": "220",
+            "Tên": "Unsettle account",
+            "Ý nghĩa": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
+        },
+        {
+            "STT": "221",
+            "Tên": "Running account",
+            "Ý nghĩa": "Tài khoản vãng lai"
+        },
+        {
+            "STT": "222",
+            "Tên": "Weight account",
+            "Ý nghĩa": "Bản tính trọng lượng, bản chi tiết trọng lượng, phiếu trọng lượng"
+        },
+        {
+            "STT": "223",
+            "Tên": "Account purchases",
+            "Ý nghĩa": "Báo cáo mua hàng"
+        },
+        {
+            "STT": "224",
+            "Tên": "Opening of an account with a bank",
+            "Ý nghĩa": "Việc mở một tài khoản ở ngân hàng"
+        },
+        {
+            "STT": "225",
+            "Tên": "Overdraw account",
+            "Ý nghĩa": "Tài khoản rút quá số dư với sự đồng ý của ngân hàng, tài khoản thấu chi"
+        },
+        {
+            "STT": "226",
+            "Tên": "Outstanding account",
+            "Ý nghĩa": "Tài khoản chưa thanh toán"
+        },
+        {
+            "STT": "227",
+            "Tên": "Rendering of account",
+            "Ý nghĩa": "Sự khai trình tài khoản"
+        },
+        {
+            "STT": "228",
+            "Tên": "Reserve account",
+            "Ý nghĩa": "Tài khoản dự trữ"
+        },
+        {
+            "STT": "229",
+            "Tên": "Accounts payable control",
+            "Ý nghĩa": "Khoản phải trả tổng quát"
+        },
+        {
+            "STT": "230",
+            "Tên": "Account receivable",
+            "Ý nghĩa": "Khoản sẽ thu, khoản sẽ nhận"
+        },
+        {
+            "STT": "231",
+            "Tên": "Account receivable control",
+            "Ý nghĩa": "Khoản sẽ thu tổng quát"
+        },
+        {
+            "STT": "232",
+            "Tên": "Account receivable summary",
+            "Ý nghĩa": "Tóm tắt khoản sẽ thu"
+        }
+    ]
+}

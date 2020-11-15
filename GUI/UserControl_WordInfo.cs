@@ -16,22 +16,21 @@ namespace GUI
     public partial class UserControl_WordInfo : UserControl {
         private UserControl_Search father;
         EnViDTO word;
-        List<EnViDTO> favorite;
 
         public UserControl_WordInfo(EnViDTO args, UserControl_Search usercontrolSearch) {
             InitializeComponent();
             father = usercontrolSearch;
-            favorite = father.Favorite;
             word = args;
             label_Word.Text = word.getEnglishDisplay();
-            label_VietNamese.Text = word.VietNamese;
-            foreach (var fa in favorite) {
-                if (fa.English == word.English) {
-                    xuiButton_Interest.Visible = true;
-                    xuiButton_NotInterest.Visible = false;
-                    break;
-                }
-            }
+            //label_VietNamese.Text = word.VietNamese;
+            string s = word.VietNamese;
+            s = s.Replace("||@", "\n");
+            s = s.Replace("|*", "\n");
+            s = s.Replace("#-", "\n");
+            s = s.Replace("|-", "\n=>");
+            s = s.Replace("|=", "\n Ex: ");
+            s = s.Replace("|+", "\n Mean: ");
+            label_VietNamese.Text = s;
         }
 
         private void metroTile_Back_Click(object sender, EventArgs e) {
@@ -57,15 +56,14 @@ namespace GUI
         {
             xuiButton_Interest.Visible = false;
             xuiButton_NotInterest.Visible = true;
-            var itemToRemove = favorite.SingleOrDefault(r => r.English == word.English);
-            if (itemToRemove != null)
-                favorite.Remove(itemToRemove);
+            
         }
         private void xuiButton_NotInterest_Click(object sender, EventArgs e)
         {
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
-            favorite.Add(word);
+            DictionaryBUS dictionaryBUS = new DictionaryBUS();
+            //dictionaryBUS.AddFavorite(father.father.LoginAccount, word);
         }
     }
 }
