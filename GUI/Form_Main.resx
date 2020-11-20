@@ -504,7 +504,7 @@
         TZVy/2Hgzdf+gTZ1qv2HofRH7KlT+h8GKP0DbaZ2DQb/ADfyigA3fd9FAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="timer_PanelRead.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timer_PanelTranslate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>217, 27</value>
   </metadata>
   <data name="pictureBox_Exam.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
