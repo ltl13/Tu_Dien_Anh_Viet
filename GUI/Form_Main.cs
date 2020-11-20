@@ -552,5 +552,11 @@ namespace GUI
         {
             BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
         }
+
+        private bool isEnToVi = true;
+        private void xuiSwitch_Language_Click(object sender, EventArgs e)
+        {
+            isEnToVi = !isEnToVi;
+        }
     }
 }

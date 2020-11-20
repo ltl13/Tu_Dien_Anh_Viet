@@ -564,7 +564,7 @@
             this.xuiButton_Account.Name = "xuiButton_Account";
             this.xuiButton_Account.Size = new System.Drawing.Size(200, 36);
             this.xuiButton_Account.TabIndex = 0;
-            this.xuiButton_Account.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Account.TextColor = System.Drawing.Color.White;
             this.xuiButton_Account.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Account.Click += new System.EventHandler(this.xuiButton_Account_Click);
             this.xuiButton_Account.MouseEnter += new System.EventHandler(this.xuiButton_Account_MouseEnter);
@@ -589,6 +589,7 @@
             this.xuiSwitch_Language.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
             this.xuiSwitch_Language.TabIndex = 13;
             this.xuiSwitch_Language.Text = "xuiSwitch1";
+            this.xuiSwitch_Language.Click += new System.EventHandler(this.xuiSwitch_Language_Click);
             // 
             // label_English
             // 
