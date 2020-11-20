@@ -54,7 +54,7 @@
             this.panel_Translate = new System.Windows.Forms.Panel();
             this.label_Translate = new System.Windows.Forms.Label();
             this.pictureBox_Translate = new System.Windows.Forms.PictureBox();
-            this.timer_PanelRead = new System.Windows.Forms.Timer(this.components);
+            this.timer_PanelTranslate = new System.Windows.Forms.Timer(this.components);
             this.panel_Exam = new System.Windows.Forms.Panel();
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
@@ -331,9 +331,9 @@
             this.panel_Translate.Name = "panel_Translate";
             this.panel_Translate.Size = new System.Drawing.Size(85, 77);
             this.panel_Translate.TabIndex = 10;
-            this.panel_Translate.Click += new System.EventHandler(this.panel_Read_Click);
-            this.panel_Translate.MouseEnter += new System.EventHandler(this.panel_Read_MouseEnter);
-            this.panel_Translate.MouseLeave += new System.EventHandler(this.panel_Read_MouseLeave);
+            this.panel_Translate.Click += new System.EventHandler(this.panel_Translate_Click);
+            this.panel_Translate.MouseEnter += new System.EventHandler(this.panel_Translate_MouseEnter);
+            this.panel_Translate.MouseLeave += new System.EventHandler(this.panel_Translate_MouseLeave);
             // 
             // label_Translate
             // 
@@ -345,8 +345,8 @@
             this.label_Translate.Size = new System.Drawing.Size(64, 29);
             this.label_Translate.TabIndex = 1;
             this.label_Translate.Text = "Dịch";
-            this.label_Translate.Click += new System.EventHandler(this.label_Read_Click);
-            this.label_Translate.MouseEnter += new System.EventHandler(this.label_Read_MouseEnter);
+            this.label_Translate.Click += new System.EventHandler(this.label_Translate_Click);
+            this.label_Translate.MouseEnter += new System.EventHandler(this.label_Translate_MouseEnter);
             // 
             // pictureBox_Translate
             // 
@@ -360,14 +360,14 @@
             this.pictureBox_Translate.Size = new System.Drawing.Size(85, 77);
             this.pictureBox_Translate.TabIndex = 0;
             this.pictureBox_Translate.TabStop = false;
-            this.pictureBox_Translate.Click += new System.EventHandler(this.pictureBox_Read_Click);
-            this.pictureBox_Translate.MouseEnter += new System.EventHandler(this.pictureBox_Read_MouseEnter);
-            this.pictureBox_Translate.MouseLeave += new System.EventHandler(this.pictureBox_Read_MouseLeave);
+            this.pictureBox_Translate.Click += new System.EventHandler(this.pictureBox_Translate_Click);
+            this.pictureBox_Translate.MouseEnter += new System.EventHandler(this.pictureBox_Translate_MouseEnter);
+            this.pictureBox_Translate.MouseLeave += new System.EventHandler(this.pictureBox_Translate_MouseLeave);
             // 
-            // timer_PanelRead
+            // timer_PanelTranslate
             // 
-            this.timer_PanelRead.Interval = 1;
-            this.timer_PanelRead.Tick += new System.EventHandler(this.timer_PanelRead_Tick);
+            this.timer_PanelTranslate.Interval = 1;
+            this.timer_PanelTranslate.Tick += new System.EventHandler(this.timer_PanelTranslate_Tick);
             // 
             // panel_Exam
             // 
@@ -692,7 +692,7 @@
         private System.Windows.Forms.Panel panel_Translate;
         private System.Windows.Forms.Label label_Translate;
         private System.Windows.Forms.PictureBox pictureBox_Translate;
-        private System.Windows.Forms.Timer timer_PanelRead;
+        private System.Windows.Forms.Timer timer_PanelTranslate;
         private System.Windows.Forms.Panel panel_Exam;
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;

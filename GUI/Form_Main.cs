@@ -76,7 +76,7 @@ namespace GUI
             isGrammarClick = false;
             isComboWordClick = false;
             isFlashcardClick = false;
-            isReadClick = false;
+            isTranslateClick = false;
             isExamClick = false;
 
             mainSearch.Visible = false;
@@ -86,7 +86,7 @@ namespace GUI
             timer_PanelGrammar.Start();
             timer_PanelComboWord.Start();
             timer_PanelFlashcard.Start();
-            timer_PanelRead.Start();
+            timer_PanelTranslate.Start();
             timer_PanelExam.Start();
 
             selected.Size = selected.MaximumSize;
@@ -348,68 +348,68 @@ namespace GUI
         }
         #endregion
 
-        #region PanelRead
-        private bool isMouseEnter_PanelRead = false;
-        private bool isReadClick = false;
+        #region PanelTranslate
+        private bool isMouseEnter_PanelTranslate = false;
+        private bool isTranslateClick = false;
 
-        private void timer_PanelRead_Tick(object sender, EventArgs e)
+        private void timer_PanelTranslate_Tick(object sender, EventArgs e)
         {
-            if (isMouseEnter_PanelRead)
+            if (isMouseEnter_PanelTranslate)
             {
                 panel_Translate.Width += 10;
-                if (panel_Translate.Size == panel_Translate.MaximumSize) { timer_PanelRead.Stop(); }
+                if (panel_Translate.Size == panel_Translate.MaximumSize) { timer_PanelTranslate.Stop(); }
             }
             else
             {
-                if (!isReadClick)
+                if (!isTranslateClick)
                 {
                     panel_Translate.Width -= 10;
-                    if (panel_Translate.Size == panel_Translate.MinimumSize) { timer_PanelRead.Stop(); }
+                    if (panel_Translate.Size == panel_Translate.MinimumSize) { timer_PanelTranslate.Stop(); }
                 }
-                else { timer_PanelRead.Stop(); }
+                else { timer_PanelTranslate.Stop(); }
             }
         }
-        private void pictureBox_Read_Click(object sender, EventArgs e)
+        private void pictureBox_Translate_Click(object sender, EventArgs e)
         {
-            if (!isReadClick)
+            if (!isTranslateClick)
             {
                 ReturnClick(panel_Translate);
                 panel_Main.Size = panel_Main.MinimumSize;
-                isReadClick = true;
-                //mainRead.Visible = true;
+                isTranslateClick = true;
+                //mainTranslate.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(226, 219, 255);
                 timer_MainPanel.Start();
             }
         }
-        private void pictureBox_Read_MouseEnter(object sender, EventArgs e)
+        private void pictureBox_Translate_MouseEnter(object sender, EventArgs e)
         {
-            isMouseEnter_PanelRead = true;
-            timer_PanelRead.Start();
+            isMouseEnter_PanelTranslate = true;
+            timer_PanelTranslate.Start();
         }
-        private void pictureBox_Read_MouseLeave(object sender, EventArgs e)
+        private void pictureBox_Translate_MouseLeave(object sender, EventArgs e)
         {
-            isMouseEnter_PanelRead = false;
-            timer_PanelRead.Start();
+            isMouseEnter_PanelTranslate = false;
+            timer_PanelTranslate.Start();
         }
-        private void panel_Read_Click(object sender, EventArgs e)
+        private void panel_Translate_Click(object sender, EventArgs e)
         {
-            pictureBox_Read_Click(null, null);
+            pictureBox_Translate_Click(null, null);
         }
-        private void panel_Read_MouseEnter(object sender, EventArgs e)
+        private void panel_Translate_MouseEnter(object sender, EventArgs e)
         {
-            pictureBox_Read_MouseEnter(null, null);
+            pictureBox_Translate_MouseEnter(null, null);
         }
-        private void panel_Read_MouseLeave(object sender, EventArgs e)
+        private void panel_Translate_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox_Read_MouseLeave(null, null);
+            pictureBox_Translate_MouseLeave(null, null);
         }
-        private void label_Read_Click(object sender, EventArgs e)
+        private void label_Translate_Click(object sender, EventArgs e)
         {
-            pictureBox_Read_Click(null, null);
+            pictureBox_Translate_Click(null, null);
         }
-        private void label_Read_MouseEnter(object sender, EventArgs e)
+        private void label_Translate_MouseEnter(object sender, EventArgs e)
         {
-            pictureBox_Read_MouseEnter(null, null);
+            pictureBox_Translate_MouseEnter(null, null);
         }
         #endregion
 
