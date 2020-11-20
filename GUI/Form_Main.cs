@@ -14,8 +14,9 @@ namespace GUI
     public partial class Form_Main : MetroFramework.Forms.MetroForm
     {
         #region properties
-        private UserControl mainSearch;
-        private UserControl mainFlashcard;
+        private UserControl_Search mainSearch;
+        private UserControl_Flashcard mainFlashcard;
+        private UserControl_Translate mainTranslate;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private Form father;
@@ -33,14 +34,18 @@ namespace GUI
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
             UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount, this);
+            UserControl_Translate translate = new UserControl_Translate();
             mainSearch = search;
             mainFlashcard = flashcard;
+            mainTranslate = translate;
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
+            panel_Main.Controls.Add(mainTranslate);
 
             mainSearch.Visible = true;
             mainFlashcard.Visible = false;
+            mainTranslate.Visible = false;
 
             pictureBox_Search_Click(null, null);
 
@@ -81,6 +86,7 @@ namespace GUI
 
             mainSearch.Visible = false;
             mainFlashcard.Visible = false;
+            mainTranslate.Visible = false;
 
             timer_PanelSearch.Start();
             timer_PanelGrammar.Start();
@@ -374,9 +380,10 @@ namespace GUI
             if (!isTranslateClick)
             {
                 ReturnClick(panel_Translate);
+                changeLanguage(isEnToVi);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isTranslateClick = true;
-                //mainTranslate.Visible = true;
+                mainTranslate.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(226, 219, 255);
                 timer_MainPanel.Start();
             }
@@ -557,6 +564,13 @@ namespace GUI
         private void xuiSwitch_Language_Click(object sender, EventArgs e)
         {
             isEnToVi = !isEnToVi;
+            changeLanguage(isEnToVi);
+        }
+
+        private void changeLanguage(bool EnToVi)
+        {
+            if (EnToVi) { mainTranslate.button_Translate.Text = "Translate"; }
+            else { mainTranslate.button_Translate.Text = "Dịch"; }
         }
     }
 }
