@@ -1,6 +1,6 @@
 CREATE DATABASE DailyDictionary
 
-USE DailyDictionay
+USE DailyDictionary
 
 CREATE TABLE Account
 (
