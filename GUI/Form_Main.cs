@@ -34,7 +34,7 @@ namespace GUI
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
             UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount, this);
-            UserControl_Translate translate = new UserControl_Translate();
+            UserControl_Translate translate = new UserControl_Translate(this);
             mainSearch = search;
             mainFlashcard = flashcard;
             mainTranslate = translate;
@@ -563,6 +563,12 @@ namespace GUI
         }
 
         private bool isEnToVi = true;
+        public bool IsEnToVi
+        {
+            get { return isEnToVi; }
+            set { isEnToVi = value; }
+        }
+
         private void xuiSwitch_Language_Click(object sender, EventArgs e)
         {
             isEnToVi = !isEnToVi;
