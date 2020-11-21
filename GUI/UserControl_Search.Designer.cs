@@ -36,6 +36,7 @@
             // metroTextBox_Searchbar
             // 
             this.metroTextBox_Searchbar.AllowDrop = true;
+            this.metroTextBox_Searchbar.BackColor = System.Drawing.SystemColors.Control;
             // 
             // 
             // 

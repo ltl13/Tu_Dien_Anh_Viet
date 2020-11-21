@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
+using System.Text.RegularExpressions;
 
 namespace GUI
 {
@@ -39,12 +40,37 @@ namespace GUI
         #region method
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
         {
-            if (metroTextBox_Searchbar.Text != string.Empty) {
-                dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);               
-                listBox_Search.DataSource = dataTable;
-                listBox_Search.Visible = true;
+            try
+            {
+                if (metroTextBox_Searchbar.Text != string.Empty)
+                {
+                    dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
+                    listBox_Search.DataSource = dataTable;
+                    listBox_Search.Visible = true;
+                    Regex regex = new Regex(@"^[a-zA-Z0-9-]*$");
+
+                    if (!regex.IsMatch(metroTextBox_Searchbar.Text))
+                    {
+                        throw new FormatException();
+                        
+                    }
+                    else
+                    {
+                        //metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Blue;
+                        metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+                        dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
+                        listBox_Search.DataSource = dataTable;
+                        listBox_Search.Visible = true;
+                    }
+                }
+                else { listBox_Search.Visible = false; }
             }
-            else { listBox_Search.Visible = false; }
+            catch (FormatException)
+            {
+                metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Red;
+                metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Red;
+                listBox_Search.Visible = false;
+            }
         }
 
         private void listBox_Search_Click(object sender, EventArgs e) {

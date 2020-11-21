@@ -71,8 +71,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button_Translate);
             this.Controls.Add(this.richTextBox_To);
+            this.Controls.Add(this.button_Translate);
             this.Controls.Add(this.richTextBox_From);
             this.Name = "UserControl_Translate";
             this.Size = new System.Drawing.Size(624, 516);
