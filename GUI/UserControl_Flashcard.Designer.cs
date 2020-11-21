@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Flashcard));
             this.metroPanel_Eng = new MetroFramework.Controls.MetroPanel();
+            this.panel_Viet = new System.Windows.Forms.Panel();
+            this.label_Viet = new System.Windows.Forms.Label();
             this.panel_Eng = new System.Windows.Forms.Panel();
             this.label_Eng = new System.Windows.Forms.Label();
             this.xuiButton_Next = new XanderUI.XUIButton();
             this.xuiButton_Previous = new XanderUI.XUIButton();
             this.xuiButton_Delete = new XanderUI.XUIButton();
             this.comboBox_FavoriteList = new System.Windows.Forms.ComboBox();
-            this.panel_Viet = new System.Windows.Forms.Panel();
-            this.label_Viet = new System.Windows.Forms.Label();
             this.label_Number = new System.Windows.Forms.Label();
             this.panel_Number = new System.Windows.Forms.Panel();
             this.metroPanel_Eng.SuspendLayout();
-            this.panel_Eng.SuspendLayout();
             this.panel_Viet.SuspendLayout();
+            this.panel_Eng.SuspendLayout();
             this.panel_Number.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,27 @@
             this.metroPanel_Eng.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel_Eng.VerticalScrollbarSize = 10;
             this.metroPanel_Eng.Click += new System.EventHandler(this.metroPanel_Eng_Click);
+            // 
+            // panel_Viet
+            // 
+            this.panel_Viet.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Viet.Controls.Add(this.label_Viet);
+            this.panel_Viet.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_Viet.Location = new System.Drawing.Point(43, 107);
+            this.panel_Viet.Name = "panel_Viet";
+            this.panel_Viet.Size = new System.Drawing.Size(419, 54);
+            this.panel_Viet.TabIndex = 4;
+            // 
+            // label_Viet
+            // 
+            this.label_Viet.BackColor = System.Drawing.Color.Transparent;
+            this.label_Viet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Viet.Location = new System.Drawing.Point(0, 0);
+            this.label_Viet.Name = "label_Viet";
+            this.label_Viet.Size = new System.Drawing.Size(419, 54);
+            this.label_Viet.TabIndex = 2;
+            this.label_Viet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Viet.Click += new System.EventHandler(this.label_Viet_Click);
             // 
             // panel_Eng
             // 
@@ -144,6 +165,7 @@
             this.xuiButton_Delete.TabIndex = 4;
             this.xuiButton_Delete.TextColor = System.Drawing.Color.Transparent;
             this.xuiButton_Delete.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Delete.Click += new System.EventHandler(this.xuiButton_Delete_Click);
             // 
             // comboBox_FavoriteList
             // 
@@ -155,27 +177,6 @@
             this.comboBox_FavoriteList.Size = new System.Drawing.Size(10, 24);
             this.comboBox_FavoriteList.TabIndex = 5;
             this.comboBox_FavoriteList.Visible = false;
-            // 
-            // panel_Viet
-            // 
-            this.panel_Viet.BackColor = System.Drawing.Color.Transparent;
-            this.panel_Viet.Controls.Add(this.label_Viet);
-            this.panel_Viet.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Viet.Location = new System.Drawing.Point(43, 107);
-            this.panel_Viet.Name = "panel_Viet";
-            this.panel_Viet.Size = new System.Drawing.Size(419, 54);
-            this.panel_Viet.TabIndex = 4;
-            // 
-            // label_Viet
-            // 
-            this.label_Viet.BackColor = System.Drawing.Color.Transparent;
-            this.label_Viet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_Viet.Location = new System.Drawing.Point(0, 0);
-            this.label_Viet.Name = "label_Viet";
-            this.label_Viet.Size = new System.Drawing.Size(419, 54);
-            this.label_Viet.TabIndex = 2;
-            this.label_Viet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_Viet.Click += new System.EventHandler(this.label_Viet_Click);
             // 
             // label_Number
             // 
@@ -210,8 +211,8 @@
             this.Name = "UserControl_Flashcard";
             this.Size = new System.Drawing.Size(624, 516);
             this.metroPanel_Eng.ResumeLayout(false);
-            this.panel_Eng.ResumeLayout(false);
             this.panel_Viet.ResumeLayout(false);
+            this.panel_Eng.ResumeLayout(false);
             this.panel_Number.ResumeLayout(false);
             this.ResumeLayout(false);
 
