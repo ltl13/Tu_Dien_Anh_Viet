@@ -23,6 +23,15 @@ namespace GUI
             word = args;
             label_Word.Text = word.getEnglishDisplay();
             label_VietNamese.Text = word.VietNamese;
+
+            foreach (var fa in father.Father.Favorite) {
+                if (fa.English == word.English) {
+                    xuiButton_Interest.Visible = true;
+                    xuiButton_NotInterest.Visible = false;
+                    break;
+                }
+            }
+
             string s = word.VietNamese;
             s = s.Replace("||@", "\n");
             s = s.Replace("|*", "\n");
@@ -66,7 +75,6 @@ namespace GUI
         {
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
-            DictionaryBUS dictionaryBUS = new DictionaryBUS();
             father.Father.Favorite.Add(word);
             DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
