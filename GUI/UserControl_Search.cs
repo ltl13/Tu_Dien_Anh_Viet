@@ -18,16 +18,14 @@ namespace GUI
         private bool isListBoxLoaded = false;
         private Form_Main father;
         private DataTable dataTable = new DataTable();
-        private List<EnViDTO> favorite;
 
-        public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
+        public Form_Main Father { get => father; }
 
         public UserControl_Search(Form_Main formMain)
         {
             InitializeComponent();
 
             this.father = formMain;
-            this.favorite = father.Favorite;
             this.dataTable = DictionaryBUS.Instance.GetEnViTable();
 
             listBox_Search.DisplayMember = "English";          
@@ -54,7 +52,7 @@ namespace GUI
             DataRowView row = (DataRowView)listBox_Search.SelectedItem;
             EnViDTO wordSelected = new EnViDTO(row);
             UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
-            father.panel_Main.Controls.Add(wordInfo);
+            Father.panel_Main.Controls.Add(wordInfo);
             wordInfo.Show();
             this.Hide();
         }

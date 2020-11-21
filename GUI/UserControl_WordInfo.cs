@@ -22,7 +22,7 @@ namespace GUI
             father = usercontrolSearch;
             word = args;
             label_Word.Text = word.getEnglishDisplay();
-            //label_VietNamese.Text = word.VietNamese;
+            label_VietNamese.Text = word.VietNamese;
             string s = word.VietNamese;
             s = s.Replace("||@", "\n");
             s = s.Replace("|*", "\n");
@@ -56,14 +56,19 @@ namespace GUI
         {
             xuiButton_Interest.Visible = false;
             xuiButton_NotInterest.Visible = true;
-            
+
+            var itemToRemove = father.Father.Favorite.SingleOrDefault(r => r.English == word.English);
+            if (itemToRemove != null)
+                father.Father.Favorite.Remove(itemToRemove);
+            DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
         private void xuiButton_NotInterest_Click(object sender, EventArgs e)
         {
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
             DictionaryBUS dictionaryBUS = new DictionaryBUS();
-            //dictionaryBUS.AddFavorite(father.father.LoginAccount, word);
+            father.Father.Favorite.Add(word);
+            DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
     }
 }
