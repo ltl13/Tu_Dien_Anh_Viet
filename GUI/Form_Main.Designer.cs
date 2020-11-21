@@ -589,7 +589,7 @@
             this.xuiSwitch_Language.SwitchStyle = XanderUI.XUISwitch.Style.Horizontal;
             this.xuiSwitch_Language.TabIndex = 13;
             this.xuiSwitch_Language.Text = "xuiSwitch1";
-            this.xuiSwitch_Language.Click += new System.EventHandler(this.xuiSwitch_Language_Click);
+            this.xuiSwitch_Language.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiSwitch_Language_MouseDown);
             // 
             // label_English
             // 
