@@ -70,8 +70,28 @@ namespace GUI
         }
 
         private void xuiButton_Delete_Click(object sender, EventArgs e)
-        {
+        {           
+            var itemToRemove = favorite.SingleOrDefault(r => r.English == favorite[numCard].English);
+            if (itemToRemove != null)
+                favorite.Remove(itemToRemove);
+            DictionaryBUS.Instance.SaveFavoriteWord(favorite);
+            if (numCard == favorite.Count)
+            {
+                xuiButton_Previous_Click(null, null);
+            }
+            else
+            {
+                xuiButton_Next_Click(null, null);
+            }
+        }
 
+        private void UserControl_Flashcard_VisibleChanged(object sender, EventArgs e)
+        {
+            label_Eng.Text = favorite[numCard].English;
+            label_Viet.Text = favorite[numCard].VietNamese;
+            panel_Viet.Visible = false;
+            panel_Eng.Visible = true;
+            label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
         }
     }
 }

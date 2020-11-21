@@ -210,6 +210,7 @@
             this.Controls.Add(this.metroPanel_Eng);
             this.Name = "UserControl_Flashcard";
             this.Size = new System.Drawing.Size(624, 516);
+            this.VisibleChanged += new System.EventHandler(this.UserControl_Flashcard_VisibleChanged);
             this.metroPanel_Eng.ResumeLayout(false);
             this.panel_Viet.ResumeLayout(false);
             this.panel_Eng.ResumeLayout(false);

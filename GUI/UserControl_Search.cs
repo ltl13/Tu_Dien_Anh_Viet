@@ -18,6 +18,8 @@ namespace GUI
         private bool isListBoxLoaded = false;
         private Form_Main father;
         private DataTable dataTable = new DataTable();
+        public UserControl_WordInfo wordInfo;
+        public bool isWordInfoOn = false;
 
         public Form_Main Father { get => father; }
 
@@ -38,27 +40,32 @@ namespace GUI
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
         {
             if (metroTextBox_Searchbar.Text != string.Empty) {
-                DataTable data = this.dataTable;
-                DataView dataView = new DataView(data);
-                dataView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
-                data = dataView.ToTable();
-                listBox_Search.DataSource = data;
+                dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);               
+                listBox_Search.DataSource = dataTable;
                 listBox_Search.Visible = true;
             }
             else { listBox_Search.Visible = false; }
         }
 
         private void listBox_Search_Click(object sender, EventArgs e) {
+            isWordInfoOn = true;
             DataRowView row = (DataRowView)listBox_Search.SelectedItem;
             EnViDTO wordSelected = new EnViDTO(row);
-            UserControl_WordInfo wordInfo = new UserControl_WordInfo(wordSelected, this);
+            wordInfo = new UserControl_WordInfo(wordSelected, this);
+            metroTextBox_Searchbar.Text = wordSelected.English;
             Father.panel_Main.Controls.Add(wordInfo);
             wordInfo.Show();
             this.Hide();
         }
+
+        private void UserControl_Search_VisibleChanged(object sender, EventArgs e)
+        {
+            listBox_Search.Visible = false;
+            metroTextBox_Searchbar.Text = "";
+        }
         /*private void listBox_Search_Click(object sender, EventArgs e)
 {
-   
+
 }*/
         #endregion
 

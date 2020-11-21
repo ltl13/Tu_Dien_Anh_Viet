@@ -93,6 +93,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControl_Search";
             this.Size = new System.Drawing.Size(624, 516);
+            this.VisibleChanged += new System.EventHandler(this.UserControl_Search_VisibleChanged);
             this.ResumeLayout(false);
 
         }
