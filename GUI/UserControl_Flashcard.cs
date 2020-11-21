@@ -68,5 +68,10 @@ namespace GUI
         {
             metroPanel_Eng_Click(null, null);
         }
+
+        private void xuiButton_Delete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

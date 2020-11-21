@@ -4,7 +4,7 @@ using System;
 using System.Windows.Forms;
 
 namespace GUI {
-    public partial class Form_Signup : Form {
+    public partial class Form_Signup : MetroFramework.Forms.MetroForm {
         #region properties
         private Form father;
 
