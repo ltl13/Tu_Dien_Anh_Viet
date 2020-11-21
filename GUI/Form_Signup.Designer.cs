@@ -29,9 +29,6 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.icon = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.rdbGuest = new System.Windows.Forms.RadioButton();
-            this.rdbAdmin = new System.Windows.Forms.RadioButton();
             this.lbUsername = new System.Windows.Forms.Label();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.lbPassword = new System.Windows.Forms.Label();
@@ -39,17 +36,16 @@
             this.lbConfirm = new System.Windows.Forms.Label();
             this.tbConfirm = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
-            this.tbName = new System.Windows.Forms.TextBox();
             this.btLogin = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlConfirm = new System.Windows.Forms.Panel();
+            this.pnlUsername = new System.Windows.Forms.Panel();
+            this.pnlPassword = new System.Windows.Forms.Panel();
+            this.pnlName = new System.Windows.Forms.Panel();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -98,7 +94,8 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.tbName);
+            this.panel4.Controls.Add(this.pnlName);
             this.panel4.Controls.Add(this.lbUsername);
             this.panel4.Controls.Add(this.tbUsername);
             this.panel4.Controls.Add(this.lbPassword);
@@ -106,51 +103,16 @@
             this.panel4.Controls.Add(this.lbConfirm);
             this.panel4.Controls.Add(this.tbConfirm);
             this.panel4.Controls.Add(this.lbName);
-            this.panel4.Controls.Add(this.tbName);
             this.panel4.Controls.Add(this.btLogin);
             this.panel4.Controls.Add(this.btCancel);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.panel1);
-            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.pnlConfirm);
+            this.panel4.Controls.Add(this.pnlUsername);
+            this.panel4.Controls.Add(this.pnlPassword);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 190);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(300, 360);
             this.panel4.TabIndex = 13;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.rdbGuest);
-            this.panel7.Controls.Add(this.rdbAdmin);
-            this.panel7.Location = new System.Drawing.Point(186, 210);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(88, 67);
-            this.panel7.TabIndex = 14;
-            // 
-            // rdbGuest
-            // 
-            this.rdbGuest.AutoSize = true;
-            this.rdbGuest.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbGuest.Location = new System.Drawing.Point(5, 31);
-            this.rdbGuest.Name = "rdbGuest";
-            this.rdbGuest.Size = new System.Drawing.Size(72, 25);
-            this.rdbGuest.TabIndex = 1;
-            this.rdbGuest.TabStop = true;
-            this.rdbGuest.Text = "Guest";
-            this.rdbGuest.UseVisualStyleBackColor = true;
-            // 
-            // rdbAdmin
-            // 
-            this.rdbAdmin.AutoSize = true;
-            this.rdbAdmin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbAdmin.Location = new System.Drawing.Point(5, 3);
-            this.rdbAdmin.Name = "rdbAdmin";
-            this.rdbAdmin.Size = new System.Drawing.Size(77, 25);
-            this.rdbAdmin.TabIndex = 0;
-            this.rdbAdmin.TabStop = true;
-            this.rdbAdmin.Text = "Admin";
-            this.rdbAdmin.UseVisualStyleBackColor = true;
             // 
             // lbUsername
             // 
@@ -230,16 +192,6 @@
             this.lbName.TabIndex = 13;
             this.lbName.Text = "Name";
             // 
-            // tbName
-            // 
-            this.tbName.BackColor = System.Drawing.SystemColors.Control;
-            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbName.Location = new System.Drawing.Point(42, 228);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(130, 22);
-            this.tbName.TabIndex = 3;
-            // 
             // btLogin
             // 
             this.btLogin.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -270,37 +222,48 @@
             this.btCancel.UseVisualStyleBackColor = false;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
-            // panel6
+            // pnlConfirm
             // 
-            this.panel6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel6.Location = new System.Drawing.Point(42, 255);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(130, 1);
-            this.panel6.TabIndex = 5;
+            this.pnlConfirm.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlConfirm.Location = new System.Drawing.Point(42, 194);
+            this.pnlConfirm.Name = "pnlConfirm";
+            this.pnlConfirm.Size = new System.Drawing.Size(216, 1);
+            this.pnlConfirm.TabIndex = 4;
             // 
-            // panel5
+            // pnlUsername
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel5.Location = new System.Drawing.Point(42, 194);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(216, 1);
-            this.panel5.TabIndex = 4;
+            this.pnlUsername.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlUsername.Location = new System.Drawing.Point(42, 60);
+            this.pnlUsername.Name = "pnlUsername";
+            this.pnlUsername.Size = new System.Drawing.Size(216, 1);
+            this.pnlUsername.TabIndex = 2;
             // 
-            // panel1
+            // pnlPassword
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel1.Location = new System.Drawing.Point(42, 60);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 1);
-            this.panel1.TabIndex = 2;
+            this.pnlPassword.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlPassword.Location = new System.Drawing.Point(42, 125);
+            this.pnlPassword.Name = "pnlPassword";
+            this.pnlPassword.Size = new System.Drawing.Size(216, 1);
+            this.pnlPassword.TabIndex = 3;
             // 
-            // panel2
+            // pnlName
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Location = new System.Drawing.Point(42, 125);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 1);
-            this.panel2.TabIndex = 3;
+            this.pnlName.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlName.Location = new System.Drawing.Point(42, 259);
+            this.pnlName.Name = "pnlName";
+            this.pnlName.Size = new System.Drawing.Size(216, 1);
+            this.pnlName.TabIndex = 14;
+            // 
+            // tbName
+            // 
+            this.tbName.BackColor = System.Drawing.SystemColors.Control;
+            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName.Location = new System.Drawing.Point(42, 233);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(216, 22);
+            this.tbName.TabIndex = 15;
+            this.tbName.UseSystemPasswordChar = true;
             // 
             // Form_Signup
             // 
@@ -320,8 +283,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -339,16 +300,13 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Button btLogin;
         private System.Windows.Forms.Button btCancel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlUsername;
+        private System.Windows.Forms.Panel pnlPassword;
         private System.Windows.Forms.Label lbConfirm;
         private System.Windows.Forms.TextBox tbConfirm;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnlConfirm;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox tbName;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.RadioButton rdbGuest;
-        private System.Windows.Forms.RadioButton rdbAdmin;
+        private System.Windows.Forms.Panel pnlName;
     }
 }

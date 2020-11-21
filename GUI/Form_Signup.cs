@@ -25,8 +25,8 @@ namespace GUI {
             string userName = tbUsername.Text;
             string passWord = tbPassword.Text;
             string confirm = tbConfirm.Text;
-            string displayName = tbName.Text;           
-            int type = (rdbAdmin.Checked ? 1 : (rdbGuest.Checked ? 0 : -1));
+            string displayName = tbName.Text;
+            int type = 0;
 
             if (displayName.Length == 0) {
                 displayName = null;
@@ -42,10 +42,6 @@ namespace GUI {
             }
             else if (confirm.Length == 0) {
                 MessageBox.Show("Vui lòng điền xác nhận mật khẩu!", "Thông báo");
-                return;
-            }
-            else if (type == -1) {
-                MessageBox.Show("Vui lòng chọn vị trí!", "Thông báo");
                 return;
             }
             else if (passWord != confirm) {
