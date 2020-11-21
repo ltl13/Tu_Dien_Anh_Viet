@@ -78,5 +78,6 @@ namespace GUI
             father.Father.Favorite.Add(word);
             DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
+
     }
 }

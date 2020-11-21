@@ -84,6 +84,8 @@ namespace GUI
             isTranslateClick = false;
             isExamClick = false;
 
+            if (mainSearch.isWordInfoOn) { mainSearch.isWordInfoOn = false; mainSearch.wordInfo.Dispose(); }
+
             mainSearch.Visible = false;
             mainFlashcard.Visible = false;
             mainTranslate.Visible = false;
