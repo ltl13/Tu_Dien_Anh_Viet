@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_From = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_To = new System.Windows.Forms.RichTextBox();
             this.button_Translate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // richTextBox_From
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(28, 27);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(564, 199);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.richTextBox_From.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_From.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox_From.Location = new System.Drawing.Point(28, 27);
+            this.richTextBox_From.Name = "richTextBox_From";
+            this.richTextBox_From.Size = new System.Drawing.Size(564, 199);
+            this.richTextBox_From.TabIndex = 0;
+            this.richTextBox_From.Text = "";
             // 
-            // richTextBox2
+            // richTextBox_To
             // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(28, 288);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(564, 199);
-            this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "";
+            this.richTextBox_To.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_To.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox_To.Location = new System.Drawing.Point(28, 288);
+            this.richTextBox_To.Name = "richTextBox_To";
+            this.richTextBox_To.ReadOnly = true;
+            this.richTextBox_To.Size = new System.Drawing.Size(564, 199);
+            this.richTextBox_To.TabIndex = 1;
+            this.richTextBox_To.Text = "";
             // 
             // button_Translate
             // 
@@ -64,14 +65,15 @@
             this.button_Translate.TabIndex = 2;
             this.button_Translate.Text = "Translate";
             this.button_Translate.UseVisualStyleBackColor = false;
+            this.button_Translate.Click += new System.EventHandler(this.button_Translate_Click);
             // 
             // UserControl_Translate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button_Translate);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.richTextBox_To);
+            this.Controls.Add(this.richTextBox_From);
             this.Name = "UserControl_Translate";
             this.Size = new System.Drawing.Size(624, 516);
             this.ResumeLayout(false);
@@ -80,8 +82,8 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox_From;
+        private System.Windows.Forms.RichTextBox richTextBox_To;
         public System.Windows.Forms.Button button_Translate;
     }
 }
