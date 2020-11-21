@@ -52,7 +52,6 @@ namespace GUI
             DataRowView row = (DataRowView)listBox_Search.SelectedItem;
             EnViDTO wordSelected = new EnViDTO(row);
             wordInfo = new UserControl_WordInfo(wordSelected, this);
-            metroTextBox_Searchbar.Text = wordSelected.English;
             Father.panel_Main.Controls.Add(wordInfo);
             wordInfo.Show();
             this.Hide();
