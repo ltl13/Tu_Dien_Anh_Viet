@@ -81,14 +81,14 @@
             this.button_ComboWord2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord2.BackgroundImage")));
             this.button_ComboWord2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_ComboWord2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ComboWord2.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ComboWord2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ComboWord2.ForeColor = System.Drawing.Color.Black;
             this.button_ComboWord2.Location = new System.Drawing.Point(3, 3);
             this.button_ComboWord2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.button_ComboWord2.Name = "button_ComboWord2";
             this.button_ComboWord2.Size = new System.Drawing.Size(478, 79);
             this.button_ComboWord2.TabIndex = 1;
-            this.button_ComboWord2.Text = "Animal";
+            this.button_ComboWord2.Text = "Economic & Foreign trade";
             this.button_ComboWord2.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel_ComboWord1
