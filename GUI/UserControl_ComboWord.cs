@@ -16,5 +16,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void button_ComboWord1_MouseDown(object sender, MouseEventArgs e)
+        {
+            flowLayoutPanel_ComboWord1.Size = flowLayoutPanel_ComboWord1.MaximumSize;
+        }
     }
 }
