@@ -20,11 +20,7 @@ namespace GUI
         {
             InitializeComponent();
             favorite = formMain.Favorite;
-            label_Eng.Text = favorite[numCard].English;
-            label_Viet.Text = favorite[numCard].VietNamese;
-            panel_Viet.Visible = false;
-            panel_Eng.Visible = true;
-            label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
+            UserControl_Flashcard_VisibleChanged(null, null);
         }
 
         private void xuiButton_Next_Click(object sender, EventArgs e)
@@ -77,21 +73,37 @@ namespace GUI
             DictionaryBUS.Instance.SaveFavoriteWord(favorite);
             if (numCard == favorite.Count)
             {
-                xuiButton_Previous_Click(null, null);
+                if (favorite.Count == 0)
+                {
+                    label_Eng.Text = "Not add words yet =((";
+                    label_Viet.Text = "Bạn chưa thêm từ =((";
+                    label_Number.Text = "--/--";
+                }
+                else { xuiButton_Previous_Click(null, null); }              
             }
             else
             {
-                xuiButton_Next_Click(null, null);
+
+                    xuiButton_Next_Click(null, null);
             }
         }
 
         private void UserControl_Flashcard_VisibleChanged(object sender, EventArgs e)
         {
-            label_Eng.Text = favorite[numCard].English;
-            label_Viet.Text = favorite[numCard].VietNamese;
             panel_Viet.Visible = false;
             panel_Eng.Visible = true;
-            label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
+            if (favorite.Count == 0)
+            {
+                label_Eng.Text = "Not add words yet =((";
+                label_Viet.Text = "Bạn chưa thêm từ =((";
+                label_Number.Text = "--/--";
+            }
+            else
+            {
+                label_Eng.Text = favorite[numCard].English;
+                label_Viet.Text = favorite[numCard].VietNamese;
+                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
+            }
         }
     }
 }

@@ -136,6 +136,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl_ComboWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_ComboWord.Designer.cs">
+      <DependentUpon>UserControl_ComboWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Translate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl_ComboWord.resx">
+      <DependentUpon>UserControl_ComboWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Flashcard.resx">
       <DependentUpon>UserControl_Flashcard.cs</DependentUpon>
     </EmbeddedResource>
