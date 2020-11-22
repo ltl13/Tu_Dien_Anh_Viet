@@ -29,37 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_ComboWord));
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_ComboWord1 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel_ComboWord = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel_ComboWord.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // button_ComboWord1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(79, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(481, 79);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Animal";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_ComboWord1.BackColor = System.Drawing.Color.Transparent;
+            this.button_ComboWord1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord1.BackgroundImage")));
+            this.button_ComboWord1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_ComboWord1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ComboWord1.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ComboWord1.ForeColor = System.Drawing.Color.Black;
+            this.button_ComboWord1.Location = new System.Drawing.Point(3, 3);
+            this.button_ComboWord1.Name = "button_ComboWord1";
+            this.button_ComboWord1.Size = new System.Drawing.Size(481, 79);
+            this.button_ComboWord1.TabIndex = 0;
+            this.button_ComboWord1.Text = "Animal";
+            this.button_ComboWord1.UseVisualStyleBackColor = false;
+            // 
+            // flowLayoutPanel_ComboWord
+            // 
+            this.flowLayoutPanel_ComboWord.Controls.Add(this.button_ComboWord1);
+            this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(73, 20);
+            this.flowLayoutPanel_ComboWord.Name = "flowLayoutPanel_ComboWord";
+            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(485, 476);
+            this.flowLayoutPanel_ComboWord.TabIndex = 1;
             // 
             // UserControl_ComboWord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.flowLayoutPanel_ComboWord);
             this.Name = "UserControl_ComboWord";
             this.Size = new System.Drawing.Size(624, 516);
+            this.flowLayoutPanel_ComboWord.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_ComboWord1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord;
     }
 }
