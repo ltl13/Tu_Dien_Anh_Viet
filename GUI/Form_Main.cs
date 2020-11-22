@@ -17,6 +17,7 @@ namespace GUI
         private UserControl_Search mainSearch;
         private UserControl_Flashcard mainFlashcard;
         private UserControl_Translate mainTranslate;
+        private UserControl_ComboWord mainComboWord;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private Form father;
@@ -35,17 +36,21 @@ namespace GUI
             UserControl_Search search = new UserControl_Search(this);
             UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount, this);
             UserControl_Translate translate = new UserControl_Translate(this);
+            UserControl_ComboWord comboWord = new UserControl_ComboWord();
             mainSearch = search;
             mainFlashcard = flashcard;
             mainTranslate = translate;
+            mainComboWord = comboWord;
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
             panel_Main.Controls.Add(mainTranslate);
+            panel_Main.Controls.Add(mainComboWord);
 
             mainSearch.Visible = true;
             mainFlashcard.Visible = false;
             mainTranslate.Visible = false;
+            mainComboWord.Visible = false;
 
             pictureBox_Search_Click(null, null);
 
@@ -89,6 +94,7 @@ namespace GUI
             mainSearch.Visible = false;
             mainFlashcard.Visible = false;
             mainTranslate.Visible = false;
+            mainComboWord.Visible = false;
 
             timer_PanelSearch.Start();
             timer_PanelGrammar.Start();
@@ -248,7 +254,7 @@ namespace GUI
                 ReturnClick(panel_ComboWord);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isComboWordClick = true;
-                //mainComboWord.Visible = true;
+                mainComboWord.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(255, 223, 212);
                 timer_MainPanel.Start();
             }
