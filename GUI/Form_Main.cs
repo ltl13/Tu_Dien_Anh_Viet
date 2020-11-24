@@ -586,5 +586,10 @@ namespace GUI
             isEnToVi = !isEnToVi;
             changeLanguage(isEnToVi);
         }
+
+        private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {
+            father.Show();
+            this.Close();
+        }
     }
 }

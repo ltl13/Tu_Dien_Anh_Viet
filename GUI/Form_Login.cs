@@ -2,12 +2,16 @@
 using DTO;
 using System;
 using System.Windows.Forms;
+using MetroFramework;
+using MetroFramework.Forms;
 
 namespace GUI {
     public partial class Form_Login : MetroFramework.Forms.MetroForm {
         #region properties
         public Form_Login() {
             InitializeComponent();
+            this.tbUsername.Text = string.Empty;
+            this.tbPassword.Text = string.Empty;
             this.AcceptButton = btLogin;
             this.CancelButton = btExit;
             this.FocusMe();
@@ -37,6 +41,9 @@ namespace GUI {
                 Form_Main fMain = new Form_Main(loginAccount, this);                
                 fMain.Show();
                 this.Hide();
+                this.tbUsername.Text = string.Empty;
+                this.tbPassword.Text = string.Empty;
+                this.tbUsername.Focus();
             }
             else {
                 tbUsername.Text = string.Empty;
@@ -46,8 +53,8 @@ namespace GUI {
         }
 
         private void lbCreateNewAccount_Click(object sender, EventArgs e) {          
-            tbUsername.Text = string.Empty;
-            tbPassword.Text = string.Empty;
+            this.tbUsername.Text = string.Empty;
+            this.tbPassword.Text = string.Empty;
             Form_Signup fSignup = new Form_Signup(this);
             fSignup.Owner = this;
             this.Hide();

@@ -60,7 +60,7 @@
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
             this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
             this.panel_Account = new System.Windows.Forms.Panel();
-            this.xuiButton_FindUser = new XanderUI.XUIButton();
+            this.xuiButton_Logout = new XanderUI.XUIButton();
             this.xuiButton_ListAccount = new XanderUI.XUIButton();
             this.xuiButton_DeleteAccount = new XanderUI.XUIButton();
             this.xuiButton_ResetAccount = new XanderUI.XUIButton();
@@ -421,7 +421,7 @@
             // panel_Account
             // 
             this.panel_Account.BackColor = System.Drawing.Color.Transparent;
-            this.panel_Account.Controls.Add(this.xuiButton_FindUser);
+            this.panel_Account.Controls.Add(this.xuiButton_Logout);
             this.panel_Account.Controls.Add(this.xuiButton_ListAccount);
             this.panel_Account.Controls.Add(this.xuiButton_DeleteAccount);
             this.panel_Account.Controls.Add(this.xuiButton_ResetAccount);
@@ -436,27 +436,28 @@
             this.panel_Account.TabIndex = 12;
             this.panel_Account.MouseLeave += new System.EventHandler(this.panel_Account_MouseLeave);
             // 
-            // xuiButton_FindUser
+            // xuiButton_Logout
             // 
-            this.xuiButton_FindUser.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
-            this.xuiButton_FindUser.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_FindUser.ButtonImage")));
-            this.xuiButton_FindUser.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton_FindUser.ButtonText = "Find user";
-            this.xuiButton_FindUser.ClickBackColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_FindUser.ClickTextColor = System.Drawing.Color.White;
-            this.xuiButton_FindUser.CornerRadius = 5;
-            this.xuiButton_FindUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuiButton_FindUser.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_FindUser.HoverBackgroundColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_FindUser.HoverTextColor = System.Drawing.Color.White;
-            this.xuiButton_FindUser.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_FindUser.Location = new System.Drawing.Point(0, 171);
-            this.xuiButton_FindUser.Name = "xuiButton_FindUser";
-            this.xuiButton_FindUser.Size = new System.Drawing.Size(200, 25);
-            this.xuiButton_FindUser.TabIndex = 5;
-            this.xuiButton_FindUser.TextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_FindUser.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_FindUser.MouseEnter += new System.EventHandler(this.xuiButton_FindUser_MouseEnter);
+            this.xuiButton_Logout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.xuiButton_Logout.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Logout.ButtonImage")));
+            this.xuiButton_Logout.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Logout.ButtonText = "Logout";
+            this.xuiButton_Logout.ClickBackColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Logout.ClickTextColor = System.Drawing.Color.White;
+            this.xuiButton_Logout.CornerRadius = 5;
+            this.xuiButton_Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiButton_Logout.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Logout.HoverBackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Logout.HoverTextColor = System.Drawing.Color.White;
+            this.xuiButton_Logout.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Logout.Location = new System.Drawing.Point(0, 171);
+            this.xuiButton_Logout.Name = "xuiButton_Logout";
+            this.xuiButton_Logout.Size = new System.Drawing.Size(200, 25);
+            this.xuiButton_Logout.TabIndex = 5;
+            this.xuiButton_Logout.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Logout.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Logout.MouseClick += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Logout_MouseClick);
+            this.xuiButton_Logout.MouseEnter += new System.EventHandler(this.xuiButton_FindUser_MouseEnter);
             // 
             // xuiButton_ListAccount
             // 
@@ -703,7 +704,7 @@
         private XanderUI.XUIButton xuiButton_UpdateInfo;
         private XanderUI.XUIButton xuiButton_ResetAccount;
         private XanderUI.XUIButton xuiButton_DeleteAccount;
-        private XanderUI.XUIButton xuiButton_FindUser;
+        private XanderUI.XUIButton xuiButton_Logout;
         private XanderUI.XUIButton xuiButton_ListAccount;
         private XanderUI.XUISwitch xuiSwitch_Language;
         private System.Windows.Forms.Label label_English;
