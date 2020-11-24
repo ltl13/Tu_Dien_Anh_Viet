@@ -23,48 +23,6 @@ namespace GUI
             UserControl_Flashcard_VisibleChanged(null, null);
         }
 
-        private void xuiButton_Next_Click(object sender, EventArgs e)
-        {
-            if (numCard < favorite.Count - 1) 
-            { 
-                numCard++;
-                label_Eng.Text = favorite[numCard].English;
-                label_Viet.Text = favorite[numCard].VietNamese;
-                panel_Viet.Visible = false;
-                panel_Eng.Visible = true;
-                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
-            }
-        }
-
-        private void xuiButton_Previous_Click(object sender, EventArgs e)
-        {
-            if (numCard > 0)
-            {
-                numCard--;
-                label_Eng.Text = favorite[numCard].English;
-                label_Viet.Text = favorite[numCard].VietNamese;
-                panel_Viet.Visible = false;
-                panel_Eng.Visible = true;
-                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
-            }
-        }
-
-        private void metroPanel_Eng_Click(object sender, EventArgs e)
-        {
-            panel_Eng.Visible = !panel_Eng.Visible;
-            panel_Viet.Visible = !panel_Viet.Visible;
-        }
-
-        private void label_Viet_Click(object sender, EventArgs e)
-        {
-            metroPanel_Eng_Click(null, null);
-        }
-
-        private void label_Eng_Click(object sender, EventArgs e)
-        {
-            metroPanel_Eng_Click(null, null);
-        }
-
         private void xuiButton_Delete_Click(object sender, EventArgs e)
         {           
             var itemToRemove = favorite.SingleOrDefault(r => r.English == favorite[numCard].English);
@@ -79,12 +37,11 @@ namespace GUI
                     label_Viet.Text = "Bạn chưa thêm từ =((";
                     label_Number.Text = "--/--";
                 }
-                else { xuiButton_Previous_Click(null, null); }              
+                else { xuiButton_Previous_MouseDown(null, null); }              
             }
             else
             {
-
-                    xuiButton_Next_Click(null, null);
+                    xuiButton_Next_MouseDown(null, null);
             }
         }
 
@@ -104,6 +61,50 @@ namespace GUI
                 label_Viet.Text = favorite[numCard].VietNamese;
                 label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
             }
+        }
+
+        private void xuiButton_Next_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (numCard < favorite.Count - 1)
+            {
+                numCard++;
+                label_Eng.Text = favorite[numCard].English;
+                label_Viet.Text = favorite[numCard].VietNamese;
+                panel_Viet.Visible = false;
+                panel_Eng.Visible = true;
+                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
+            }
+        }
+
+        private void xuiButton_Previous_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (numCard > 0)
+            {
+                numCard--;
+                label_Eng.Text = favorite[numCard].English;
+                label_Viet.Text = favorite[numCard].VietNamese;
+                panel_Viet.Visible = false;
+                panel_Eng.Visible = true;
+                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
+            }
+        }
+
+        private void metroPanel_Eng_MouseDown(object sender, MouseEventArgs e)
+        {
+            panel_Eng.Visible = !panel_Eng.Visible;
+            panel_Viet.Visible = !panel_Viet.Visible;
+        }
+
+        private void label_Viet_MouseDown(object sender, MouseEventArgs e)
+        {
+            panel_Eng.Visible = !panel_Eng.Visible;
+            panel_Viet.Visible = !panel_Viet.Visible;
+        }
+
+        private void label_Eng_MouseDown(object sender, MouseEventArgs e)
+        {
+            panel_Eng.Visible = !panel_Eng.Visible;
+            panel_Viet.Visible = !panel_Viet.Visible;
         }
     }
 }
