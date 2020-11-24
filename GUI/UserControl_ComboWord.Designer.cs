@@ -41,9 +41,12 @@
             this.xuiButton_ComboWord1_7 = new XanderUI.XUIButton();
             this.flowLayoutPanel_ComboWord2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button_ComboWord2 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel_ComboWord3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button_ComboWord3 = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ComboWord.SuspendLayout();
             this.flowLayoutPanel_ComboWord1.SuspendLayout();
             this.flowLayoutPanel_ComboWord2.SuspendLayout();
+            this.flowLayoutPanel_ComboWord3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_ComboWord1
@@ -63,10 +66,13 @@
             this.button_ComboWord1.Text = "Animal";
             this.button_ComboWord1.UseVisualStyleBackColor = false;
             this.button_ComboWord1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord1_MouseDown);
+            this.button_ComboWord1.MouseEnter += new System.EventHandler(this.button_ComboWord1_MouseEnter);
+            this.button_ComboWord1.MouseLeave += new System.EventHandler(this.button_ComboWord1_MouseLeave);
             // 
             // flowLayoutPanel_ComboWord
             // 
             this.flowLayoutPanel_ComboWord.AutoScroll = true;
+            this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord3);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord1);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord2);
             this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(73, 20);
@@ -84,7 +90,7 @@
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_ComboWord1_5);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_ComboWord1_6);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_ComboWord1_7);
-            this.flowLayoutPanel_ComboWord1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel_ComboWord1.Location = new System.Drawing.Point(3, 90);
             this.flowLayoutPanel_ComboWord1.MaximumSize = new System.Drawing.Size(481, 560);
             this.flowLayoutPanel_ComboWord1.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord1.Name = "flowLayoutPanel_ComboWord1";
@@ -241,7 +247,7 @@
             // flowLayoutPanel_ComboWord2
             // 
             this.flowLayoutPanel_ComboWord2.Controls.Add(this.button_ComboWord2);
-            this.flowLayoutPanel_ComboWord2.Location = new System.Drawing.Point(3, 90);
+            this.flowLayoutPanel_ComboWord2.Location = new System.Drawing.Point(3, 177);
             this.flowLayoutPanel_ComboWord2.MaximumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord2.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord2.Name = "flowLayoutPanel_ComboWord2";
@@ -264,6 +270,38 @@
             this.button_ComboWord2.TabIndex = 1;
             this.button_ComboWord2.Text = "Economic - Foreign Trade";
             this.button_ComboWord2.UseVisualStyleBackColor = false;
+            this.button_ComboWord2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord2_MouseDown);
+            this.button_ComboWord2.MouseEnter += new System.EventHandler(this.button_ComboWord2_MouseEnter);
+            this.button_ComboWord2.MouseLeave += new System.EventHandler(this.button_ComboWord2_MouseLeave);
+            // 
+            // flowLayoutPanel_ComboWord3
+            // 
+            this.flowLayoutPanel_ComboWord3.Controls.Add(this.button_ComboWord3);
+            this.flowLayoutPanel_ComboWord3.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel_ComboWord3.MaximumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord3.MinimumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord3.Name = "flowLayoutPanel_ComboWord3";
+            this.flowLayoutPanel_ComboWord3.Size = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord3.TabIndex = 3;
+            // 
+            // button_ComboWord3
+            // 
+            this.button_ComboWord3.BackColor = System.Drawing.Color.Transparent;
+            this.button_ComboWord3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord3.BackgroundImage")));
+            this.button_ComboWord3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_ComboWord3.FlatAppearance.BorderSize = 0;
+            this.button_ComboWord3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ComboWord3.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ComboWord3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button_ComboWord3.Location = new System.Drawing.Point(3, 3);
+            this.button_ComboWord3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.button_ComboWord3.Name = "button_ComboWord3";
+            this.button_ComboWord3.Size = new System.Drawing.Size(478, 79);
+            this.button_ComboWord3.TabIndex = 1;
+            this.button_ComboWord3.UseVisualStyleBackColor = false;
+            this.button_ComboWord3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord3_MouseDown);
+            this.button_ComboWord3.MouseEnter += new System.EventHandler(this.button_ComboWord3_MouseEnter);
+            this.button_ComboWord3.MouseLeave += new System.EventHandler(this.button_ComboWord3_MouseLeave);
             // 
             // UserControl_ComboWord
             // 
@@ -275,6 +313,7 @@
             this.flowLayoutPanel_ComboWord.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord1.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord2.ResumeLayout(false);
+            this.flowLayoutPanel_ComboWord3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -293,5 +332,7 @@
         private XanderUI.XUIButton xuiButton_ComboWord1_5;
         private XanderUI.XUIButton xuiButton_ComboWord1_6;
         private XanderUI.XUIButton xuiButton_ComboWord1_7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord3;
+        private System.Windows.Forms.Button button_ComboWord3;
     }
 }
