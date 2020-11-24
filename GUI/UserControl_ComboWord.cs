@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace GUI
 {
@@ -15,6 +16,9 @@ namespace GUI
         public UserControl_ComboWord()
         {
             InitializeComponent();
+            bt_back.Hide();
+            dataGridView1.Hide();
+            lb_comboWords.Hide();
         }
 
         #region Animal
@@ -29,45 +33,238 @@ namespace GUI
 
         private void button_ComboWord1_MouseEnter(object sender, EventArgs e)
         {
-            button_ComboWord1.FlatStyle = FlatStyle.Popup;
+            bt_animal.FlatStyle = FlatStyle.Popup;
         }
         private void button_ComboWord1_MouseLeave(object sender, EventArgs e)
         {
-            button_ComboWord1.FlatStyle = FlatStyle.Flat;
+            bt_animal.FlatStyle = FlatStyle.Flat;
+        }
+
+        private void xuiButton_Birds_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "birds" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Birds";
+            lb_comboWords.Show();
+        }
+        private void xuiButton_insects_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "insects" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Insects";
+            lb_comboWords.Show();
+        }
+        private void xuiButton_marines_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "marines" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Marines";
+            lb_comboWords.Show();
+        }
+        private void xuiButton_mammals_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "mammals" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Mammals";
+            lb_comboWords.Show();
+        }
+        private void xuiButton_breedingAnimals_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "breeding animals" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Breeding animals";
+            lb_comboWords.Show();
+        }
+        private void xuiButton_wildAnimal_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "wild animals" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Wild animals";
+            lb_comboWords.Show();
+        }
+        private void xuiButton_Pets_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "pets" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Pets";
+            lb_comboWords.Show();
+        }
+        private void xuiButton_AnimalGroups_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "animal" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "animal groups" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Animal groups";
+            lb_comboWords.Show();
         }
         #endregion
 
         #region Economic&ForeignTrade
         private void button_ComboWord2_MouseDown(object sender, MouseEventArgs e)
         {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "economicAndForeignTrade" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
 
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Economic And Foreign Trade" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Economic And Foreign Trade";
+            lb_comboWords.Show();
         }
 
         private void button_ComboWord2_MouseEnter(object sender, EventArgs e)
         {
-            button_ComboWord2.FlatStyle = FlatStyle.Popup;
+            bt_Economic_ForeignTrade.FlatStyle = FlatStyle.Popup;
         }
 
         private void button_ComboWord2_MouseLeave(object sender, EventArgs e)
         {
-            button_ComboWord2.FlatStyle = FlatStyle.Flat;
+            bt_Economic_ForeignTrade.FlatStyle = FlatStyle.Flat;
         }
         #endregion
 
         #region IrregularVerbs
         private void button_ComboWord3_MouseDown(object sender, MouseEventArgs e)
         {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Irregular Verb" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
 
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Irregular Verb" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Irregular Verb";
+            lb_comboWords.Show();
         }
 
         private void button_ComboWord3_MouseEnter(object sender, EventArgs e)
         {
-            button_ComboWord3.FlatStyle = FlatStyle.Popup;
+            bt_irregularverb.FlatStyle = FlatStyle.Popup;
         }
 
         private void button_ComboWord3_MouseLeave(object sender, EventArgs e)
         {
-            button_ComboWord3.FlatStyle = FlatStyle.Flat;
+            bt_irregularverb.FlatStyle = FlatStyle.Flat;
         }
         #endregion
 
@@ -83,12 +280,116 @@ namespace GUI
 
         private void button_ComboWord4_MouseEnter(object sender, EventArgs e)
         {
-            button_ComboWord4.FlatStyle = FlatStyle.Popup;
+            bt_IT.FlatStyle = FlatStyle.Popup;
         }
 
         private void button_ComboWord4_MouseLeave(object sender, EventArgs e)
         {
-            button_ComboWord4.FlatStyle = FlatStyle.Flat;
+            bt_IT.FlatStyle = FlatStyle.Flat;
+        }
+        private void xuiButton_numeralSystems_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "IT" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Numeral Systems" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Numeral Systems";
+            lb_comboWords.Show();
+        }
+
+        private void xuiButton_branches_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "IT" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Branches" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Branches";
+            lb_comboWords.Show();
+        }
+
+        private void xuiButton_computerConstruction_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "IT" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Computer Construction" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Computer construction";
+            lb_comboWords.Show();
+        }
+
+        private void xuiButton_commonWords_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "IT" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Common Words" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Common words";
+            lb_comboWords.Show();
+        }
+
+        private void xuiButton_Terminologies_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "IT" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Terminologies" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Terminologies";
+            lb_comboWords.Show();
         }
         #endregion
 
@@ -104,13 +405,104 @@ namespace GUI
 
         private void button_ComboWord5_MouseEnter(object sender, EventArgs e)
         {
-            button_ComboWord5.FlatStyle = FlatStyle.Popup;
+            bt_vegetables.FlatStyle = FlatStyle.Popup;
         }
 
         private void button_ComboWord5_MouseLeave(object sender, EventArgs e)
         {
-            button_ComboWord5.FlatStyle = FlatStyle.Flat;
+            bt_vegetables.FlatStyle = FlatStyle.Flat;
+        }
+
+        private void xuiButton_mushrooms_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Vegetable" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Mushrooms" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Mushrooms";
+            lb_comboWords.Show();
+        }
+
+        private void xuiButton_vegetables_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Vegetable" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Vegetables" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Vegetables";
+            lb_comboWords.Show();
+        }
+
+        private void xuiButton_Herbs_Spices_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Vegetable" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Herbs and spices" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Herbs and spices";
+            lb_comboWords.Show();
+        }
+
+        private void xuiButton_fruits_MouseDown(object sender, MouseEventArgs e)
+        {
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Vegetable" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            OleDbConnection conn = new OleDbConnection(pathConn);
+            conn.Open();
+
+            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Fruits" + "$]", conn);
+            DataTable dt = new DataTable();
+
+            myDataAdapter.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Show();
+            bt_back.Show();
+            lb_comboWords.Text = "Fruits";
+            lb_comboWords.Show();
         }
         #endregion
+
+        private void bt_back_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Hide();
+            bt_back.Hide();
+            lb_comboWords.Hide();
+        }
     }
 }

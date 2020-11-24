@@ -22,7 +22,7 @@ namespace GUI
             father = usercontrolSearch;
             word = args;
             label_Word.Text = word.getEnglishDisplay();
-            label_VietNamese.Text = word.VietNamese;
+            tb_vietnamese.Text = word.VietNamese;
 
             foreach (var fa in father.Father.Favorite) {
                 if (fa.English == word.English) {
@@ -39,7 +39,7 @@ namespace GUI
             s = s.Replace("|-", "\n=>");
             s = s.Replace("|=", "\n Ex: ");
             s = s.Replace("|+", "\n Mean: ");
-            label_VietNamese.Text = s;
+            tb_vietnamese.Text = s;
         }
 
         private void metroTile_Back_Click(object sender, EventArgs e) {
