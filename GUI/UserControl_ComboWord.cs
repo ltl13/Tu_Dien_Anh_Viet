@@ -91,5 +91,26 @@ namespace GUI
             button_ComboWord4.FlatStyle = FlatStyle.Flat;
         }
         #endregion
+
+        #region Vegetables
+        private void button_ComboWord5_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (flowLayoutPanel_ComboWord5.Size == flowLayoutPanel_ComboWord5.MaximumSize)
+            {
+                flowLayoutPanel_ComboWord5.Size = flowLayoutPanel_ComboWord5.MinimumSize;
+            }
+            else { flowLayoutPanel_ComboWord5.Size = flowLayoutPanel_ComboWord5.MaximumSize; }
+        }
+
+        private void button_ComboWord5_MouseEnter(object sender, EventArgs e)
+        {
+            button_ComboWord5.FlatStyle = FlatStyle.Popup;
+        }
+
+        private void button_ComboWord5_MouseLeave(object sender, EventArgs e)
+        {
+            button_ComboWord5.FlatStyle = FlatStyle.Flat;
+        }
+        #endregion
     }
 }
