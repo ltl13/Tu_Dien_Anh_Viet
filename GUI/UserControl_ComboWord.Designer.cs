@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_ComboWord));
             this.button_ComboWord1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ComboWord = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel_ComboWord3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button_ComboWord3 = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ComboWord1 = new System.Windows.Forms.FlowLayoutPanel();
             this.xuiButton_ComboWord1_1 = new XanderUI.XUIButton();
             this.xuiButton_ComboWord1_2 = new XanderUI.XUIButton();
@@ -41,12 +43,19 @@
             this.xuiButton_ComboWord1_7 = new XanderUI.XUIButton();
             this.flowLayoutPanel_ComboWord2 = new System.Windows.Forms.FlowLayoutPanel();
             this.button_ComboWord2 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel_ComboWord3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button_ComboWord3 = new System.Windows.Forms.Button();
+            this.xuiButton_ComboWord1_8 = new XanderUI.XUIButton();
+            this.flowLayoutPanel_ComboWord4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button_ComboWord4 = new System.Windows.Forms.Button();
+            this.xuiButton_ComboWord4_1 = new XanderUI.XUIButton();
+            this.xuiButton_ComboWord4_2 = new XanderUI.XUIButton();
+            this.xuiButton_ComboWord4_3 = new XanderUI.XUIButton();
+            this.xuiButton_ComboWord4_4 = new XanderUI.XUIButton();
+            this.xuiButton_ComboWord4_5 = new XanderUI.XUIButton();
             this.flowLayoutPanel_ComboWord.SuspendLayout();
+            this.flowLayoutPanel_ComboWord3.SuspendLayout();
             this.flowLayoutPanel_ComboWord1.SuspendLayout();
             this.flowLayoutPanel_ComboWord2.SuspendLayout();
-            this.flowLayoutPanel_ComboWord3.SuspendLayout();
+            this.flowLayoutPanel_ComboWord4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_ComboWord1
@@ -75,10 +84,40 @@
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord3);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord1);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord2);
+            this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord4);
             this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(73, 20);
             this.flowLayoutPanel_ComboWord.Name = "flowLayoutPanel_ComboWord";
-            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(579, 475);
+            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(521, 475);
             this.flowLayoutPanel_ComboWord.TabIndex = 1;
+            // 
+            // flowLayoutPanel_ComboWord3
+            // 
+            this.flowLayoutPanel_ComboWord3.Controls.Add(this.button_ComboWord3);
+            this.flowLayoutPanel_ComboWord3.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel_ComboWord3.MaximumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord3.MinimumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord3.Name = "flowLayoutPanel_ComboWord3";
+            this.flowLayoutPanel_ComboWord3.Size = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord3.TabIndex = 3;
+            // 
+            // button_ComboWord3
+            // 
+            this.button_ComboWord3.BackColor = System.Drawing.Color.Transparent;
+            this.button_ComboWord3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord3.BackgroundImage")));
+            this.button_ComboWord3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_ComboWord3.FlatAppearance.BorderSize = 0;
+            this.button_ComboWord3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ComboWord3.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ComboWord3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button_ComboWord3.Location = new System.Drawing.Point(3, 3);
+            this.button_ComboWord3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.button_ComboWord3.Name = "button_ComboWord3";
+            this.button_ComboWord3.Size = new System.Drawing.Size(478, 79);
+            this.button_ComboWord3.TabIndex = 1;
+            this.button_ComboWord3.UseVisualStyleBackColor = false;
+            this.button_ComboWord3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord3_MouseDown);
+            this.button_ComboWord3.MouseEnter += new System.EventHandler(this.button_ComboWord3_MouseEnter);
+            this.button_ComboWord3.MouseLeave += new System.EventHandler(this.button_ComboWord3_MouseLeave);
             // 
             // flowLayoutPanel_ComboWord1
             // 
@@ -90,8 +129,9 @@
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_ComboWord1_5);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_ComboWord1_6);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_ComboWord1_7);
+            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_ComboWord1_8);
             this.flowLayoutPanel_ComboWord1.Location = new System.Drawing.Point(3, 90);
-            this.flowLayoutPanel_ComboWord1.MaximumSize = new System.Drawing.Size(481, 560);
+            this.flowLayoutPanel_ComboWord1.MaximumSize = new System.Drawing.Size(481, 625);
             this.flowLayoutPanel_ComboWord1.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord1.Name = "flowLayoutPanel_ComboWord1";
             this.flowLayoutPanel_ComboWord1.Size = new System.Drawing.Size(481, 81);
@@ -262,7 +302,7 @@
             this.button_ComboWord2.FlatAppearance.BorderSize = 0;
             this.button_ComboWord2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ComboWord2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_ComboWord2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button_ComboWord2.ForeColor = System.Drawing.Color.Blue;
             this.button_ComboWord2.Location = new System.Drawing.Point(3, 3);
             this.button_ComboWord2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.button_ComboWord2.Name = "button_ComboWord2";
@@ -274,34 +314,166 @@
             this.button_ComboWord2.MouseEnter += new System.EventHandler(this.button_ComboWord2_MouseEnter);
             this.button_ComboWord2.MouseLeave += new System.EventHandler(this.button_ComboWord2_MouseLeave);
             // 
-            // flowLayoutPanel_ComboWord3
+            // xuiButton_ComboWord1_8
             // 
-            this.flowLayoutPanel_ComboWord3.Controls.Add(this.button_ComboWord3);
-            this.flowLayoutPanel_ComboWord3.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel_ComboWord3.MaximumSize = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord3.MinimumSize = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord3.Name = "flowLayoutPanel_ComboWord3";
-            this.flowLayoutPanel_ComboWord3.Size = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord3.TabIndex = 3;
+            this.xuiButton_ComboWord1_8.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_ComboWord1_8.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ComboWord1_8.ButtonImage")));
+            this.xuiButton_ComboWord1_8.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_ComboWord1_8.ButtonText = "Animal groups";
+            this.xuiButton_ComboWord1_8.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord1_8.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_ComboWord1_8.CornerRadius = 5;
+            this.xuiButton_ComboWord1_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_ComboWord1_8.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComboWord1_8.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord1_8.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord1_8.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_ComboWord1_8.Location = new System.Drawing.Point(3, 564);
+            this.xuiButton_ComboWord1_8.Name = "xuiButton_ComboWord1_8";
+            this.xuiButton_ComboWord1_8.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_ComboWord1_8.TabIndex = 8;
+            this.xuiButton_ComboWord1_8.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord1_8.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // button_ComboWord3
+            // flowLayoutPanel_ComboWord4
             // 
-            this.button_ComboWord3.BackColor = System.Drawing.Color.Transparent;
-            this.button_ComboWord3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord3.BackgroundImage")));
-            this.button_ComboWord3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_ComboWord3.FlatAppearance.BorderSize = 0;
-            this.button_ComboWord3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ComboWord3.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_ComboWord3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button_ComboWord3.Location = new System.Drawing.Point(3, 3);
-            this.button_ComboWord3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.button_ComboWord3.Name = "button_ComboWord3";
-            this.button_ComboWord3.Size = new System.Drawing.Size(478, 79);
-            this.button_ComboWord3.TabIndex = 1;
-            this.button_ComboWord3.UseVisualStyleBackColor = false;
-            this.button_ComboWord3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord3_MouseDown);
-            this.button_ComboWord3.MouseEnter += new System.EventHandler(this.button_ComboWord3_MouseEnter);
-            this.button_ComboWord3.MouseLeave += new System.EventHandler(this.button_ComboWord3_MouseLeave);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.button_ComboWord4);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_ComboWord4_1);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_ComboWord4_2);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_ComboWord4_3);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_ComboWord4_4);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_ComboWord4_5);
+            this.flowLayoutPanel_ComboWord4.Location = new System.Drawing.Point(3, 264);
+            this.flowLayoutPanel_ComboWord4.MaximumSize = new System.Drawing.Size(481, 424);
+            this.flowLayoutPanel_ComboWord4.MinimumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord4.Name = "flowLayoutPanel_ComboWord4";
+            this.flowLayoutPanel_ComboWord4.Size = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord4.TabIndex = 4;
+            // 
+            // button_ComboWord4
+            // 
+            this.button_ComboWord4.BackColor = System.Drawing.Color.Transparent;
+            this.button_ComboWord4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord4.BackgroundImage")));
+            this.button_ComboWord4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_ComboWord4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_ComboWord4.FlatAppearance.BorderSize = 0;
+            this.button_ComboWord4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_ComboWord4.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_ComboWord4.ForeColor = System.Drawing.Color.White;
+            this.button_ComboWord4.Location = new System.Drawing.Point(3, 3);
+            this.button_ComboWord4.Name = "button_ComboWord4";
+            this.button_ComboWord4.Size = new System.Drawing.Size(478, 79);
+            this.button_ComboWord4.TabIndex = 0;
+            this.button_ComboWord4.Text = "Infomation Technology";
+            this.button_ComboWord4.UseVisualStyleBackColor = false;
+            this.button_ComboWord4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord4_MouseDown);
+            this.button_ComboWord4.MouseEnter += new System.EventHandler(this.button_ComboWord4_MouseEnter);
+            this.button_ComboWord4.MouseLeave += new System.EventHandler(this.button_ComboWord4_MouseLeave);
+            // 
+            // xuiButton_ComboWord4_1
+            // 
+            this.xuiButton_ComboWord4_1.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_ComboWord4_1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ComboWord4_1.ButtonImage")));
+            this.xuiButton_ComboWord4_1.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_ComboWord4_1.ButtonText = "Numeral systems";
+            this.xuiButton_ComboWord4_1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_1.ClickTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_1.CornerRadius = 5;
+            this.xuiButton_ComboWord4_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_ComboWord4_1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComboWord4_1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_1.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_ComboWord4_1.Location = new System.Drawing.Point(3, 88);
+            this.xuiButton_ComboWord4_1.Name = "xuiButton_ComboWord4_1";
+            this.xuiButton_ComboWord4_1.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_ComboWord4_1.TabIndex = 1;
+            this.xuiButton_ComboWord4_1.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // xuiButton_ComboWord4_2
+            // 
+            this.xuiButton_ComboWord4_2.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_ComboWord4_2.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ComboWord4_2.ButtonImage")));
+            this.xuiButton_ComboWord4_2.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_ComboWord4_2.ButtonText = "Branches ";
+            this.xuiButton_ComboWord4_2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_2.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_ComboWord4_2.CornerRadius = 5;
+            this.xuiButton_ComboWord4_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_ComboWord4_2.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComboWord4_2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_2.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_ComboWord4_2.Location = new System.Drawing.Point(3, 156);
+            this.xuiButton_ComboWord4_2.Name = "xuiButton_ComboWord4_2";
+            this.xuiButton_ComboWord4_2.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_ComboWord4_2.TabIndex = 2;
+            this.xuiButton_ComboWord4_2.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // xuiButton_ComboWord4_3
+            // 
+            this.xuiButton_ComboWord4_3.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_ComboWord4_3.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ComboWord4_3.ButtonImage")));
+            this.xuiButton_ComboWord4_3.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_ComboWord4_3.ButtonText = "Computer construction";
+            this.xuiButton_ComboWord4_3.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_3.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_ComboWord4_3.CornerRadius = 5;
+            this.xuiButton_ComboWord4_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_ComboWord4_3.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComboWord4_3.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_3.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_ComboWord4_3.Location = new System.Drawing.Point(3, 224);
+            this.xuiButton_ComboWord4_3.Name = "xuiButton_ComboWord4_3";
+            this.xuiButton_ComboWord4_3.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_ComboWord4_3.TabIndex = 3;
+            this.xuiButton_ComboWord4_3.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_3.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // xuiButton_ComboWord4_4
+            // 
+            this.xuiButton_ComboWord4_4.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_ComboWord4_4.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ComboWord4_4.ButtonImage")));
+            this.xuiButton_ComboWord4_4.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_ComboWord4_4.ButtonText = "Common words";
+            this.xuiButton_ComboWord4_4.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_4.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_ComboWord4_4.CornerRadius = 5;
+            this.xuiButton_ComboWord4_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_ComboWord4_4.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComboWord4_4.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_4.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_4.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_ComboWord4_4.Location = new System.Drawing.Point(3, 292);
+            this.xuiButton_ComboWord4_4.Name = "xuiButton_ComboWord4_4";
+            this.xuiButton_ComboWord4_4.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_ComboWord4_4.TabIndex = 4;
+            this.xuiButton_ComboWord4_4.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_4.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // xuiButton_ComboWord4_5
+            // 
+            this.xuiButton_ComboWord4_5.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_ComboWord4_5.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ComboWord4_5.ButtonImage")));
+            this.xuiButton_ComboWord4_5.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_ComboWord4_5.ButtonText = "Terminologies";
+            this.xuiButton_ComboWord4_5.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_5.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_ComboWord4_5.CornerRadius = 5;
+            this.xuiButton_ComboWord4_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_ComboWord4_5.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComboWord4_5.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComboWord4_5.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_5.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_ComboWord4_5.Location = new System.Drawing.Point(3, 360);
+            this.xuiButton_ComboWord4_5.Name = "xuiButton_ComboWord4_5";
+            this.xuiButton_ComboWord4_5.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_ComboWord4_5.TabIndex = 5;
+            this.xuiButton_ComboWord4_5.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComboWord4_5.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // UserControl_ComboWord
             // 
@@ -311,9 +483,10 @@
             this.Name = "UserControl_ComboWord";
             this.Size = new System.Drawing.Size(624, 516);
             this.flowLayoutPanel_ComboWord.ResumeLayout(false);
+            this.flowLayoutPanel_ComboWord3.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord1.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord2.ResumeLayout(false);
-            this.flowLayoutPanel_ComboWord3.ResumeLayout(false);
+            this.flowLayoutPanel_ComboWord4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -334,5 +507,13 @@
         private XanderUI.XUIButton xuiButton_ComboWord1_7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord3;
         private System.Windows.Forms.Button button_ComboWord3;
+        private XanderUI.XUIButton xuiButton_ComboWord1_8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord4;
+        private System.Windows.Forms.Button button_ComboWord4;
+        private XanderUI.XUIButton xuiButton_ComboWord4_1;
+        private XanderUI.XUIButton xuiButton_ComboWord4_2;
+        private XanderUI.XUIButton xuiButton_ComboWord4_3;
+        private XanderUI.XUIButton xuiButton_ComboWord4_4;
+        private XanderUI.XUIButton xuiButton_ComboWord4_5;
     }
 }

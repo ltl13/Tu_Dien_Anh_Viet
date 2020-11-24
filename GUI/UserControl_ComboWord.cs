@@ -70,5 +70,26 @@ namespace GUI
             button_ComboWord3.FlatStyle = FlatStyle.Flat;
         }
         #endregion
+
+        #region InformationTechnology
+        private void button_ComboWord4_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (flowLayoutPanel_ComboWord4.Size == flowLayoutPanel_ComboWord4.MaximumSize)
+            {
+                flowLayoutPanel_ComboWord4.Size = flowLayoutPanel_ComboWord4.MinimumSize;
+            }
+            else { flowLayoutPanel_ComboWord4.Size = flowLayoutPanel_ComboWord4.MaximumSize; }
+        }
+
+        private void button_ComboWord4_MouseEnter(object sender, EventArgs e)
+        {
+            button_ComboWord4.FlatStyle = FlatStyle.Popup;
+        }
+
+        private void button_ComboWord4_MouseLeave(object sender, EventArgs e)
+        {
+            button_ComboWord4.FlatStyle = FlatStyle.Flat;
+        }
+        #endregion
     }
 }
