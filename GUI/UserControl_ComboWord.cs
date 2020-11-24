@@ -19,7 +19,11 @@ namespace GUI
 
         private void button_ComboWord1_MouseDown(object sender, MouseEventArgs e)
         {
-            flowLayoutPanel_ComboWord1.Size = flowLayoutPanel_ComboWord1.MaximumSize;
+            if (flowLayoutPanel_ComboWord1.Size == flowLayoutPanel_ComboWord1.MaximumSize)
+            {
+                flowLayoutPanel_ComboWord1.Size = flowLayoutPanel_ComboWord1.MinimumSize;
+            }
+            else { flowLayoutPanel_ComboWord1.Size = flowLayoutPanel_ComboWord1.MaximumSize; }
         }
     }
 }

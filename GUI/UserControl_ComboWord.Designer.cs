@@ -51,6 +51,8 @@
             this.button_ComboWord1.BackColor = System.Drawing.Color.Transparent;
             this.button_ComboWord1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord1.BackgroundImage")));
             this.button_ComboWord1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_ComboWord1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_ComboWord1.FlatAppearance.BorderSize = 0;
             this.button_ComboWord1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ComboWord1.Font = new System.Drawing.Font("Calibri", 24F);
             this.button_ComboWord1.ForeColor = System.Drawing.Color.Black;
@@ -251,6 +253,7 @@
             this.button_ComboWord2.BackColor = System.Drawing.Color.Transparent;
             this.button_ComboWord2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_ComboWord2.BackgroundImage")));
             this.button_ComboWord2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_ComboWord2.FlatAppearance.BorderSize = 0;
             this.button_ComboWord2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_ComboWord2.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ComboWord2.ForeColor = System.Drawing.Color.MidnightBlue;
