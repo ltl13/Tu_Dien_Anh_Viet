@@ -21,7 +21,7 @@ namespace GUI
             InitializeComponent();
             father = usercontrolSearch;
             word = args;
-            label_Word.Text = word.getEnglishDisplay();
+            label_Word.Text = word.English + " " + word.getPronunciation();
             tb_vietnamese.Text = word.VietNamese;
 
             foreach (var fa in father.Father.Favorite) {
@@ -33,10 +33,10 @@ namespace GUI
             }
 
             string s = word.VietNamese;
-            s = s.Replace("||@", "\n");
+            s = s.Replace("|@", "\n");
             s = s.Replace("|*", "\n");
             s = s.Replace("#-", "\n");
-            s = s.Replace("|-", "\n=>");
+            s = s.Replace("|-", "\n =>");
             s = s.Replace("|=", "\n Ex: ");
             s = s.Replace("|+", "\n Mean: ");
             tb_vietnamese.Text = s;

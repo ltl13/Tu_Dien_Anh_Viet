@@ -19,14 +19,8 @@
             this.vietNamese = row["VietNamese"].ToString();
         }
 
-        public string getEnglishDisplay() {
-            string englishDisplay = english;
-            
-            if (englishDisplay.Contains("[")) {
-                englishDisplay = englishDisplay.Substring(0, englishDisplay.IndexOf('['));
-            }
-
-            return englishDisplay;
+        public string getPronunciation() {
+            return vietNamese.Substring(0, vietNamese.IndexOf('|', vietNamese.IndexOf('|') + 1)).Replace("|@", "").Replace(english, "").Trim();
         }
 
         //public static bool operator ==(EnViDTO temp1, EnViDTO temp2) {
