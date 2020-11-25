@@ -14,7 +14,7 @@ using System.Text.RegularExpressions;
 namespace GUI {
     public partial class UserControl_Search : UserControl {
         #region properties
-        private DataTable dataTable = new DataTable();
+        private readonly DataTable dataTable = new DataTable();
         public UserControl_WordInfo wordInfo;
         public bool isWordInfoOn = false;
 
@@ -25,9 +25,8 @@ namespace GUI {
 
             this.Father = formMain;
             this.dataTable = DictionaryBUS.Instance.GetEnViTable();
+
             listBox_Search.DataSource = dataTable;
-
-
             listBox_Search.Visible = false;
         }
         #endregion
@@ -35,8 +34,7 @@ namespace GUI {
         #region method
         private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e) {
             if (metroTextBox_Searchbar.Text != string.Empty) {
-
-                Regex regex = new Regex(@"^[a-zA-Z0-9-]*$");
+                Regex regex = new Regex(@"^[a-zA-Z0-9-.]*$");
 
                 if (!regex.IsMatch(metroTextBox_Searchbar.Text)) {
                     metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Red;
