@@ -11,64 +11,58 @@ using BUS;
 using DTO;
 using System.Text.RegularExpressions;
 
-namespace GUI
-{
-    public partial class UserControl_Search : UserControl
-    {
+namespace GUI {
+    public partial class UserControl_Search : UserControl {
         #region properties
-        private bool isListBoxLoaded = false;
-        private Form_Main father;
         private DataTable dataTable = new DataTable();
         public UserControl_WordInfo wordInfo;
         public bool isWordInfoOn = false;
 
-        public Form_Main Father { get => father; }
+        public Form_Main Father { get; }
 
-        public UserControl_Search(Form_Main formMain)
-        {
+        public UserControl_Search(Form_Main formMain) {
             InitializeComponent();
 
-            this.father = formMain;
+            this.Father = formMain;
             this.dataTable = DictionaryBUS.Instance.GetEnViTable();
+            listBox_Search.DataSource = dataTable;
 
-            listBox_Search.DisplayMember = "English";          
-            isListBoxLoaded = true;
+
             listBox_Search.Visible = false;
         }
         #endregion
 
         #region method
-        private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if (metroTextBox_Searchbar.Text != string.Empty)
-                {
-                    dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
-                    listBox_Search.DataSource = dataTable;
-                    listBox_Search.Visible = true;
-                    Regex regex = new Regex(@"^[a-zA-Z0-9-]*$");
+        private void metroTextBox_Searchbar_TextChanged(object sender, EventArgs e) {
+            if (metroTextBox_Searchbar.Text != string.Empty) {
 
-                    if (!regex.IsMatch(metroTextBox_Searchbar.Text))
-                    {
-                        throw new FormatException();
-                        
-                    }
-                    else
-                    {
-                        //metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Blue;
-                        metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-                        dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
-                        listBox_Search.DataSource = dataTable;
-                        listBox_Search.Visible = true;
-                    }
+                Regex regex = new Regex(@"^[a-zA-Z0-9-]*$");
+
+                if (!regex.IsMatch(metroTextBox_Searchbar.Text)) {
+                    metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Red;
+                    metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Red;
+                    listBox_Search.Visible = false;
                 }
-                else { listBox_Search.Visible = false; }
+                else {
+                    metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Blue;
+                    metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+                    dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
+                    var visibleDataTable = dataTable.DefaultView.ToTable().AsEnumerable().Take(12);
+
+                    if (visibleDataTable.Count() > 0) {
+                        listBox_Search.DataSource = visibleDataTable.CopyToDataTable();
+                        listBox_Search.DisplayMember = "English";
+                    }
+                    else {
+                        listBox_Search.DataSource = null;
+                    }
+
+                    listBox_Search.Visible = true;
+                }
             }
-            catch (FormatException)
-            {
-                metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Red;
-                metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Red;
+            else {
+                metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Blue;
+                metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
                 listBox_Search.Visible = false;
             }
         }
@@ -83,14 +77,11 @@ namespace GUI
             this.Hide();
         }
 
-        private void UserControl_Search_VisibleChanged(object sender, EventArgs e)
-        {
+        private void UserControl_Search_VisibleChanged(object sender, EventArgs e) {
             listBox_Search.Visible = false;
             metroTextBox_Searchbar.Text = "";
         }
 
         #endregion
-
-        
     }
 }
