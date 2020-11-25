@@ -1,0 +1,753 @@
+﻿{
+    "pets": [
+        {
+            "Vocabulary": "Dog",
+            "Pronunciation": "/dɑːɡ/",
+            "Meaning": "Con chó"
+        },
+        {
+            "Vocabulary": "Puppy",
+            "Pronunciation": "/ˈpʌp.i/",
+            "Meaning": "Chó con, cún con"
+        },
+        {
+            "Vocabulary": "Turtle",
+            "Pronunciation": "/ˈtɝː.t̬əl/",
+            "Meaning": "Rùa"
+        },
+        {
+            "Vocabulary": "Rabbit",
+            "Pronunciation": "/ˈræb.ɪt/",
+            "Meaning": "Con thỏ"
+        },
+        {
+            "Vocabulary": "Parrot",
+            "Pronunciation": "/ˈper.ət/",
+            "Meaning": "Con vẹt"
+        },
+        {
+            "Vocabulary": "Cat",
+            "Pronunciation": "/kæt/",
+            "Meaning": "Con mèo"
+        },
+        {
+            "Vocabulary": "Kitten",
+            "Pronunciation": "/ˈkɪt̬.ən/",
+            "Meaning": "Mèo con"
+        },
+        {
+            "Vocabulary": "Goldfish",
+            "Pronunciation": "/ˈɡoʊld.fɪʃ/",
+            "Meaning": "Cá vàng"
+        },
+        {
+            "Vocabulary": "Mouse",
+            "Pronunciation": "/maʊs/",
+            "Meaning": "Chuột"
+        },
+        {
+            "Vocabulary": "Tropical fish",
+            "Pronunciation": "/ˈtrɑː.pɪ.kəl fɪʃ/",
+            "Meaning": "Cá nhiệt đới"
+        },
+        {
+            "Vocabulary": "Hamster",
+            "Pronunciation": "/ˈhæm.stɚ/",
+            "Meaning": "Chuột Hamster"
+        }
+    ],
+    "breeding animals": [
+        {
+            "Vocabulary": "Cow",
+            "Pronunciation": "/kaʊ/",
+            "Meaning": "Con bò"
+        },
+        {
+            "Vocabulary": "Rabbit",
+            "Pronunciation": "/ˈræb.ɪt/",
+            "Meaning": "Con thỏ"
+        },
+        {
+            "Vocabulary": "Ducks",
+            "Pronunciation": "/dʌk/",
+            "Meaning": "Con vịt"
+        },
+        {
+            "Vocabulary": "Shrimp",
+            "Pronunciation": "/ʃrɪmp/",
+            "Meaning": "Con tôm"
+        },
+        {
+            "Vocabulary": "Pig",
+            "Pronunciation": "/pɪɡ/",
+            "Meaning": "Con lợn"
+        },
+        {
+            "Vocabulary": "Goat",
+            "Pronunciation": "/ɡoʊt/",
+            "Meaning": "Con dê"
+        },
+        {
+            "Vocabulary": "Crab",
+            "Pronunciation": "/kræb/",
+            "Meaning": "Cua"
+        },
+        {
+            "Vocabulary": "Deer",
+            "Pronunciation": "/dɪr/",
+            "Meaning": "Con nai"
+        },
+        {
+            "Vocabulary": "Bee",
+            "Pronunciation": "/biː/",
+            "Meaning": "Con ong"
+        },
+        {
+            "Vocabulary": "Sheep",
+            "Pronunciation": "/ʃiːp/",
+            "Meaning": "Cừu"
+        },
+        {
+            "Vocabulary": "Fish",
+            "Pronunciation": "/fɪʃ/",
+            "Meaning": "Cá"
+        },
+        {
+            "Vocabulary": "Turkey",
+            "Pronunciation": "/ˈtɝː.ki/",
+            "Meaning": "Gà tây"
+        },
+        {
+            "Vocabulary": "Dove",
+            "Pronunciation": "/dʌv/",
+            "Meaning": "Chim bồ câu"
+        },
+        {
+            "Vocabulary": "Chicken",
+            "Pronunciation": "/ˈtʃɪk.ɪn/",
+            "Meaning": "Con gà"
+        },
+        {
+            "Vocabulary": "Horse",
+            "Pronunciation": "/hɔːrs/",
+            "Meaning": "Con ngựa"
+        }
+    ],
+    "animal groups": [
+        {
+            "Vocabulary": "Pets",
+            "Pronunciation": "/pet/",
+            "Meaning": "Vật nuôi"
+        },
+        {
+            "Vocabulary": "Farm & Domestic Animals",
+            "Pronunciation": "/fɑːrm/ /dəˌmes.tɪk ˈæn.ɪ.məl/",
+            "Meaning": "Gia súc"
+        },
+        {
+            "Vocabulary": "Wild Animals",
+            "Pronunciation": "/waɪld ˈæn.ɪ.məl/",
+            "Meaning": "Động vật hoang dã"
+        },
+        {
+            "Vocabulary": "Mammals",
+            "Pronunciation": "/ˈmæm.əl/",
+            "Meaning": "Động vật có vú"
+        },
+        {
+            "Vocabulary": "Sea Animals",
+            "Pronunciation": "/siː ˈæn.ɪ.məl/",
+            "Meaning": "Động vật thủy sinh"
+        },
+        {
+            "Vocabulary": "Birds",
+            "Pronunciation": "/bɝːd/",
+            "Meaning": "Chim"
+        },
+        {
+            "Vocabulary": "Insects",
+            "Pronunciation": "/ˈɪn.sekt/",
+            "Meaning": "Côn trùng"
+        }
+    ],
+    "wild animals": [
+        {
+            "Vocabulary": "Alligator",
+            "Pronunciation": "/ˈæl.ɪ.geɪ.təʳ/",
+            "Meaning": "Cá sấu Mĩ"
+        },
+        {
+            "Vocabulary": "Baboon ",
+            "Pronunciation": "/bəˈbuːn/",
+            "Meaning": " Khỉ đầu chó"
+        },
+        {
+            "Vocabulary": "Beaver",
+            "Pronunciation": "/ˈbiː.vəʳ/",
+            "Meaning": "Con hải ly"
+        },
+        {
+            "Vocabulary": "Boar",
+            "Pronunciation": "/bɔːʳ/",
+            "Meaning": "Lợn hoang (giống đực)"
+        },
+        {
+            "Vocabulary": "Buffalo",
+            "Pronunciation": "/ˈbʌf.ə.ləʊ/",
+            "Meaning": "Trâu nước"
+        },
+        {
+            "Vocabulary": "Cobra",
+            "Pronunciation": "/ˈkəʊ.brə. fæŋ/",
+            "Meaning": "Rắn hổ mang-răng nanh"
+        },
+        {
+            "Vocabulary": "Crocodile ",
+            "Pronunciation": "/ˈkrɒk.ə.daɪl/",
+            "Meaning": "Cá sấu"
+        },
+        {
+            "Vocabulary": "Chameleon ",
+            "Pronunciation": "/kəˈmiː.li.ən/",
+            "Meaning": "Tắc kè hoa"
+        },
+        {
+            "Vocabulary": "Cheetah ",
+            "Pronunciation": "/ˈtʃiː.tə/",
+            "Meaning": "Báo Gêpa"
+        },
+        {
+            "Vocabulary": "Chipmunk",
+            "Pronunciation": "/ˈtʃɪp.mʌŋk/",
+            "Meaning": "Sóc chuột"
+        },
+        {
+            "Vocabulary": "Elephant ",
+            "Pronunciation": "/ˈel.ɪ.fənt/",
+            "Meaning": "Von voi"
+        },
+        {
+            "Vocabulary": "Frog ",
+            "Pronunciation": "/frɒg/",
+            "Meaning": "Con ếch"
+        },
+        {
+            "Vocabulary": "Gazelle ",
+            "Pronunciation": "/gəˈzel/",
+            "Meaning": "Linh dương Gazen"
+        },
+        {
+            "Vocabulary": "Gnu",
+            "Pronunciation": "/nuː/",
+            "Meaning": "Linh dương đầu bò"
+        },
+        {
+            "Vocabulary": "Hyena ",
+            "Pronunciation": "/haɪˈiː.nə/",
+            "Meaning": "Con linh cẩu"
+        },
+        {
+            "Vocabulary": "Koala bear",
+            "Pronunciation": "/kəʊˈɑː.lə beəʳ/",
+            "Meaning": "Gấu túi"
+        },
+        {
+            "Vocabulary": "Lion ",
+            "Pronunciation": "/ˈlaɪ.ən/",
+            "Meaning": "Sư tử (đực)"
+        },
+        {
+            "Vocabulary": "Lioness",
+            "Pronunciation": "/ˈlaɪ.ənis/",
+            "Meaning": "Sư tử (cái)"
+        },
+        {
+            "Vocabulary": "Lizard ",
+            "Pronunciation": "/ˈlɪz.əd/",
+            "Meaning": "Thằn lằn"
+        },
+        {
+            "Vocabulary": "Lynx",
+            "Pronunciation": "/lɪŋks/",
+            "Meaning": "Mèo rừng Mĩ"
+        },
+        {
+            "Vocabulary": "Moose",
+            "Pronunciation": "/muːs/",
+            "Meaning": "Nai sừng tấm {ở phía bắc châu Phi, Âu, Á)"
+        },
+        {
+            "Vocabulary": "Polar bear",
+            "Pronunciation": "/pəʊl beəʳ/",
+            "Meaning": "Gấu bắc cực"
+        },
+        {
+            "Vocabulary": "Porcupine",
+            "Pronunciation": "/ˈpɔː.kjʊ.paɪn/",
+            "Meaning": "Con nhím"
+        },
+        {
+            "Vocabulary": "Rhinoceros ",
+            "Pronunciation": "/raɪˈnɒs.ər.əs/",
+            "Meaning": "Con tê giác"
+        },
+        {
+            "Vocabulary": "Skunk",
+            "Pronunciation": "/skʌŋk/",
+            "Meaning": "Chồn hôi"
+        },
+        {
+            "Vocabulary": "Toad ",
+            "Pronunciation": "/təʊd/",
+            "Meaning": "Con cóc"
+        },
+        {
+            "Vocabulary": "Zebra",
+            "Pronunciation": "/ˈziː.brə/",
+            "Meaning": "Con ngựa vằn"
+        }
+    ],
+    "birds": [
+        {
+            "Vocabulary": "Crow",
+            "Pronunciation": "/kroʊ/",
+            "Meaning": "Con quạ"
+        },
+        {
+            "Vocabulary": "Peacock",
+            "Pronunciation": "/ˈpiː.kɑːk/",
+            "Meaning": "Con công"
+        },
+        {
+            "Vocabulary": "Dove",
+            "Pronunciation": "/dʌv/",
+            "Meaning": "Chim bồ câu"
+        },
+        {
+            "Vocabulary": "Sparrow",
+            "Pronunciation": "/ˈsper.oʊ/",
+            "Meaning": "Chim sẻ"
+        },
+        {
+            "Vocabulary": "Goose",
+            "Pronunciation": "/ɡuːs/",
+            "Meaning": "Ngỗng"
+        },
+        {
+            "Vocabulary": "Stork",
+            "Pronunciation": "/stɔːrk/",
+            "Meaning": "Con cò"
+        },
+        {
+            "Vocabulary": "Pigeon",
+            "Pronunciation": "/ˈpɪdʒ.ən/",
+            "Meaning": "Bồ câu"
+        },
+        {
+            "Vocabulary": "Turkey",
+            "Pronunciation": "/ˈtɝː.ki/",
+            "Meaning": "Gà tây"
+        },
+        {
+            "Vocabulary": "Hawk",
+            "Pronunciation": "/hɑːk/",
+            "Meaning": "Chim ưng"
+        },
+        {
+            "Vocabulary": "Bald eagle",
+            "Pronunciation": "/ˌbɑːld ˈiː.ɡəl/",
+            "Meaning": "Đại bàng đầu trắng"
+        },
+        {
+            "Vocabulary": "Raven",
+            "Pronunciation": "/ˈreɪ.vən/",
+            "Meaning": "Quạ"
+        },
+        {
+            "Vocabulary": "Parrot",
+            "Pronunciation": "/ˈper.ət/",
+            "Meaning": "Con vẹt"
+        },
+        {
+            "Vocabulary": "Flamingo",
+            "Pronunciation": "/fləˈmɪŋ.ɡoʊ/",
+            "Meaning": "Chim hồng hạc"
+        },
+        {
+            "Vocabulary": "Seagull",
+            "Pronunciation": "/ˈsiː.ɡʌl/",
+            "Meaning": "Mòng biển"
+        },
+        {
+            "Vocabulary": "Ostrich",
+            "Pronunciation": "/ˈɑː.strɪtʃ/",
+            "Meaning": "Đà điểu"
+        },
+        {
+            "Vocabulary": "Swallow",
+            "Pronunciation": "/ˈswɑː.loʊ/",
+            "Meaning": "Chim én, chim nhạn"
+        },
+        {
+            "Vocabulary": "Black bird",
+            "Pronunciation": "/blæk bɝːd/",
+            "Meaning": "Chim sáo"
+        },
+        {
+            "Vocabulary": "Penguin",
+            "Pronunciation": "/ˈpeŋ.ɡwɪn/",
+            "Meaning": "Chim cánh cụt"
+        },
+        {
+            "Vocabulary": "Robin",
+            "Pronunciation": "/ˈrɑː.bɪn/",
+            "Meaning": "Chim cổ đỏ"
+        },
+        {
+            "Vocabulary": "Swan",
+            "Pronunciation": "/swɑːn/",
+            "Meaning": "Thiên nga"
+        },
+        {
+            "Vocabulary": "Owl",
+            "Pronunciation": "/aʊl/",
+            "Meaning": "Cú mèo"
+        },
+        {
+            "Vocabulary": "Woodpecker",
+            "Pronunciation": "/ˈwʊdˌpek.ɚ/",
+            "Meaning": "Chim gõ kiến"
+        }
+    ],
+    "marines": [
+        {
+            "Vocabulary": "Crab",
+            "Pronunciation": "/kræb/",
+            "Meaning": "Cua"
+        },
+        {
+            "Vocabulary": "Fish",
+            "Pronunciation": "/fɪʃ/",
+            "Meaning": "Cá"
+        },
+        {
+            "Vocabulary": "Seal",
+            "Pronunciation": "/siːl/",
+            "Meaning": "Hải cẩu"
+        },
+        {
+            "Vocabulary": "Octopus",
+            "Pronunciation": "/ˈɑːk.tə.pəs/",
+            "Meaning": "Bạch tuộc"
+        },
+        {
+            "Vocabulary": "Shark",
+            "Pronunciation": "/ʃɑːrk/",
+            "Meaning": "Cá mập"
+        },
+        {
+            "Vocabulary": "Seahorse",
+            "Pronunciation": "/ˈsiː.hɔːrs/",
+            "Meaning": "Cá ngựa"
+        },
+        {
+            "Vocabulary": "Walrus",
+            "Pronunciation": "/ˈwɑːl.rəs/",
+            "Meaning": "Hải mã, con moóc"
+        },
+        {
+            "Vocabulary": "Starfish",
+            "Pronunciation": "/ˈstɑːr.fɪʃ/",
+            "Meaning": "Sao biển"
+        },
+        {
+            "Vocabulary": "Whale",
+            "Pronunciation": "/weɪl/",
+            "Meaning": "Cá voi"
+        },
+        {
+            "Vocabulary": "Penguin",
+            "Pronunciation": "/ˈpeŋ.ɡwɪn/",
+            "Meaning": "Chim cánh cụt"
+        },
+        {
+            "Vocabulary": "Jellyfish",
+            "Pronunciation": "/ˈdʒel.i.fɪʃ/",
+            "Meaning": "Con sứa"
+        },
+        {
+            "Vocabulary": "Squid",
+            "Pronunciation": "/skwɪd/",
+            "Meaning": "Mực ống"
+        },
+        {
+            "Vocabulary": "Lobster",
+            "Pronunciation": "/ˈlɑːb.stɚ/",
+            "Meaning": "Tôm hùm"
+        },
+        {
+            "Vocabulary": "Pelican",
+            "Pronunciation": "/ˈpel.ə.kən/",
+            "Meaning": "Bồ nông"
+        },
+        {
+            "Vocabulary": "Clams",
+            "Pronunciation": "/klæm/",
+            "Meaning": "Sò"
+        },
+        {
+            "Vocabulary": "Seagull",
+            "Pronunciation": "/klæm/",
+            "Meaning": "Mòng biển"
+        },
+        {
+            "Vocabulary": "Dolphin",
+            "Pronunciation": "/ˈdɑːl.fɪn/",
+            "Meaning": "Cá heo"
+        },
+        {
+            "Vocabulary": "Shells",
+            "Pronunciation": "/ʃel/",
+            "Meaning": "Vỏ sò"
+        },
+        {
+            "Vocabulary": "Sea urchin",
+            "Pronunciation": "/ˈsiː ˌɝː.tʃɪn/",
+            "Meaning": "Nhím Biển"
+        },
+        {
+            "Vocabulary": "Cormorant",
+            "Pronunciation": "/ˈkɔːr.mɚ.ənt/",
+            "Meaning": "Chim cốc"
+        },
+        {
+            "Vocabulary": "Otter",
+            "Pronunciation": "/ˈɑː.t̬ɚ/",
+            "Meaning": "Rái cá"
+        },
+        {
+            "Vocabulary": "Sea anemone",
+            "Pronunciation": "/ˈsiː əˌnem.ə.ni/",
+            "Meaning": "Hải quỳ"
+        },
+        {
+            "Vocabulary": "Sea turtle",
+            "Pronunciation": "/siː ˈtɝː.t̬əl/",
+            "Meaning": "Rùa biển"
+        },
+        {
+            "Vocabulary": "Sea lion",
+            "Pronunciation": "/ˈsiː laɪ.ən/",
+            "Meaning": "Sư tử biển"
+        },
+        {
+            "Vocabulary": "Coral",
+            "Pronunciation": "/ˈkɔːr.əl/",
+            "Meaning": "San hô"
+        }
+    ],
+    "mammals": [
+        {
+            "Vocabulary": "Squirrel",
+            "Pronunciation": "/ˈskwɝː.əl/",
+            "Meaning": "Con sóc"
+        },
+        {
+            "Vocabulary": "Dog",
+            "Pronunciation": "/dɑːɡ/",
+            "Meaning": "Con chó"
+        },
+        {
+            "Vocabulary": "Chimpanzee",
+            "Pronunciation": "/ˌtʃɪm.pænˈziː/",
+            "Meaning": "Tinh tinh"
+        },
+        {
+            "Vocabulary": "Ox",
+            "Pronunciation": "/ɑːks/",
+            "Meaning": "Con bò"
+        },
+        {
+            "Vocabulary": "Lion",
+            "Pronunciation": "/ˈlaɪ.ən/",
+            "Meaning": "Sư tử"
+        },
+        {
+            "Vocabulary": "Panda",
+            "Pronunciation": "/ˈpæn.də/",
+            "Meaning": "Gấu trúc"
+        },
+        {
+            "Vocabulary": "Walrus",
+            "Pronunciation": "/ˈwɑːl.rəs/",
+            "Meaning": "Hải mã, con moóc"
+        },
+        {
+            "Vocabulary": "Otter",
+            "Pronunciation": "/ˈɑː.t̬ɚ/",
+            "Meaning": "Rái cá"
+        },
+        {
+            "Vocabulary": "Mouse",
+            "Pronunciation": "/maʊs/",
+            "Meaning": "Chuột"
+        },
+        {
+            "Vocabulary": "Kangaroo",
+            "Pronunciation": "/ˌkæŋ.ɡəˈruː/",
+            "Meaning": "Con chuột túi"
+        },
+        {
+            "Vocabulary": "Goat",
+            "Pronunciation": "/ɡoʊt/",
+            "Meaning": "Con dê"
+        },
+        {
+            "Vocabulary": "Horse",
+            "Pronunciation": "/hɔːrs/",
+            "Meaning": "Con ngựa"
+        },
+        {
+            "Vocabulary": "Monkey",
+            "Pronunciation": "/ˈmʌŋ.ki/",
+            "Meaning": "Con khỉ"
+        },
+        {
+            "Vocabulary": "Cow",
+            "Pronunciation": "/kaʊ/",
+            "Meaning": "Bò"
+        },
+        {
+            "Vocabulary": "Koala",
+            "Pronunciation": "/koʊˈɑː.lə/",
+            "Meaning": "Gấu túi"
+        },
+        {
+            "Vocabulary": "Mole",
+            "Pronunciation": "/moʊl/",
+            "Meaning": "Chuột chũi"
+        },
+        {
+            "Vocabulary": "Elephant",
+            "Pronunciation": "/ˈel.ə.fənt/",
+            "Meaning": "Con voi"
+        },
+        {
+            "Vocabulary": "Leopard",
+            "Pronunciation": "/ˈlep.ɚd/",
+            "Meaning": "Báo"
+        },
+        {
+            "Vocabulary": "Hippopotamus",
+            "Pronunciation": "/ˌhɪp.əˈpɑː.t̬ə.məs/",
+            "Meaning": "Hà mã"
+        },
+        {
+            "Vocabulary": "Giraffe",
+            "Pronunciation": "/dʒɪˈræf/",
+            "Meaning": "Hươu cao cổ"
+        },
+        {
+            "Vocabulary": "Fox",
+            "Pronunciation": "/fɑːks/",
+            "Meaning": "Cáo"
+        },
+        {
+            "Vocabulary": "Coyote",
+            "Pronunciation": "/kaɪˈoʊ.t̬i/",
+            "Meaning": "Chó sói"
+        },
+        {
+            "Vocabulary": "Hedgehog",
+            "Pronunciation": "/ˈhedʒ.hɑːɡ/",
+            "Meaning": "Nhím"
+        },
+        {
+            "Vocabulary": "Sheep",
+            "Pronunciation": "/ʃiːp/",
+            "Meaning": "Cừu"
+        },
+        {
+            "Vocabulary": "Deer",
+            "Pronunciation": "/dɪr/",
+            "Meaning": "Con nai"
+        }
+    ],
+    "insects": [
+        {
+            "Vocabulary": "Moth",
+            "Pronunciation": "/mɑːθ/",
+            "Meaning": "Bướm đêm"
+        },
+        {
+            "Vocabulary": "Bee",
+            "Pronunciation": "/biː/",
+            "Meaning": "Con ong"
+        },
+        {
+            "Vocabulary": "Butterfly",
+            "Pronunciation": "/ˈbʌt̬.ɚ.flaɪ/",
+            "Meaning": "Bươm bướm"
+        },
+        {
+            "Vocabulary": "Spider",
+            "Pronunciation": "/ˈspaɪ.dɚ/",
+            "Meaning": "Nhện"
+        },
+        {
+            "Vocabulary": "Ladybird (Bre) – Ladybug (Name)",
+            "Pronunciation": "/ˈleɪ.di.bɝːd/ – /ˈleɪ.di.bʌɡ/",
+            "Meaning": "Bọ rùa"
+        },
+        {
+            "Vocabulary": "Ant",
+            "Pronunciation": "/ænt/",
+            "Meaning": "Con kiến"
+        },
+        {
+            "Vocabulary": "Dragonfly",
+            "Pronunciation": "/ˈdræɡ.ən.flaɪ/",
+            "Meaning": "Con chuồn chuồn"
+        },
+        {
+            "Vocabulary": "Fly",
+            "Pronunciation": "/flaɪ/",
+            "Meaning": "Con ruồi"
+        },
+        {
+            "Vocabulary": "Mosquito",
+            "Pronunciation": "/məˈskiː.t̬oʊ/",
+            "Meaning": "Muỗi"
+        },
+        {
+            "Vocabulary": "Grasshopper",
+            "Pronunciation": "/ˈɡræsˌhɑː.pɚ/",
+            "Meaning": "Con châu chấu"
+        },
+        {
+            "Vocabulary": "Beetle",
+            "Pronunciation": "/ˈbiː.t̬əl/",
+            "Meaning": "Bọ cánh cứng"
+        },
+        {
+            "Vocabulary": "Cockroach",
+            "Pronunciation": "/ˈkɑːk.roʊtʃ/",
+            "Meaning": "Con gián"
+        },
+        {
+            "Vocabulary": "Centipede",
+            "Pronunciation": "/ˈsen.t̬ə.piːd/",
+            "Meaning": "Con rết"
+        },
+        {
+            "Vocabulary": "Worm",
+            "Pronunciation": "/wɝːm/",
+            "Meaning": "Giun đất"
+        },
+        {
+            "Vocabulary": "Louse",
+            "Pronunciation": "/laʊs/",
+            "Meaning": "Rận"
+        }
+    ]
+}

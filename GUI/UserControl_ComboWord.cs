@@ -209,8 +209,6 @@ namespace GUI
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
 
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Economic And Foreign Trade" + "$]", conn);
             DataTable dt = new DataTable();
 
@@ -241,8 +239,6 @@ namespace GUI
             string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Irregular Verb" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
-
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
 
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Irregular Verb" + "$]", conn);
             DataTable dt = new DataTable();
@@ -293,8 +289,6 @@ namespace GUI
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
 
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Numeral Systems" + "$]", conn);
             DataTable dt = new DataTable();
 
@@ -313,8 +307,6 @@ namespace GUI
             string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "IT" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
-
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
 
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Branches" + "$]", conn);
             DataTable dt = new DataTable();
@@ -335,8 +327,6 @@ namespace GUI
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
 
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Computer Construction" + "$]", conn);
             DataTable dt = new DataTable();
 
@@ -356,8 +346,6 @@ namespace GUI
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
 
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Common Words" + "$]", conn);
             DataTable dt = new DataTable();
 
@@ -376,8 +364,6 @@ namespace GUI
             string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "IT" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
-
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
 
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Terminologies" + "$]", conn);
             DataTable dt = new DataTable();
@@ -419,8 +405,6 @@ namespace GUI
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
 
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Mushrooms" + "$]", conn);
             DataTable dt = new DataTable();
 
@@ -439,8 +423,6 @@ namespace GUI
             string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Vegetable" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
-
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
 
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Vegetables" + "$]", conn);
             DataTable dt = new DataTable();
@@ -461,8 +443,6 @@ namespace GUI
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
 
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Herbs and spices" + "$]", conn);
             DataTable dt = new DataTable();
 
@@ -481,8 +461,6 @@ namespace GUI
             string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Vegetable" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
-
-            System.Data.DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
 
             OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + "Fruits" + "$]", conn);
             DataTable dt = new DataTable();

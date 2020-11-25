@@ -1,5 +1,5 @@
 ﻿{
-    "Một số từ thường gặp": [
+    "Common Words": [
         {
             "Vocabulary": "Operating system",
             "Pronunciation": "/ˈɒpəreɪtɪŋ ˈsɪstəm/",
@@ -637,7 +637,7 @@
             "Meaning": "đơn nhiệm"
         }
     ],
-    "Các hệ đếm": [
+    "Numeral Systems": [
         {
             "Vocabulary": "Positional numeral system",
             "Pronunciation": "/pəˈzɪʃənəl ˈnjuːmərəl ˈsɪstəm/",
@@ -669,7 +669,7 @@
             "Meaning": "hệ thập lục phân"
         }
     ],
-    "Các ngành nghề": [
+    "Branches": [
         {
             "Vocabulary": "Software developer",
             "Pronunciation": "/ˈsɒftweə(r) dɪˈveləpə(r)/",
@@ -701,7 +701,7 @@
             "Meaning": "nhà phát triển trang web"
         }
     ],
-    "Cấu tạo máy tính": [
+    "Computer Construction": [
         {
             "Vocabulary": "Hardware",
             "Pronunciation": "/ˈhɑːdweə(r)/",
@@ -829,7 +829,7 @@
             "Meaning": "cổng"
         }
     ],
-    "Thuật ngữ": [
+    "Terminologies": [
         {
             "Vocabulary": "BIT (binary digit)",
             "Pronunciation": "/ˈbaɪnəri ˈdɪdʒɪt/",
@@ -904,7 +904,7 @@
         },
         {
             "Vocabulary": "URL (Uniform Resource Locator)",
-            "Pronunciation": "/ˌjuː ɑːr ˈel/\r\r\n/ˈjuːnɪfɔːm rɪˈsɔːs ləʊˈkeɪtə(r)/",
+            "Pronunciation": "/ˌjuː ɑːr ˈel/\r\n/ˈjuːnɪfɔːm rɪˈsɔːs ləʊˈkeɪtə(r)/",
             "Types of words": "Noun",
             "Meaning": "đường link"
         },

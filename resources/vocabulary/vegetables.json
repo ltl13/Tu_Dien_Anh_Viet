@@ -1,5 +1,5 @@
 ﻿{
-    "Thảo mộc, gia vị": [
+    "Herbs and spices": [
         {
             "Vocabulary": "Cilantro – Coriander",
             "Pronunciation": "/səˈlæn.troʊ/ – /ˈkɔːr.i.æn.dɚ/",
@@ -86,7 +86,7 @@
             "Meaning": "Ớt xanh"
         }
     ],
-    "Rau củ": [
+    "Vegetables": [
         {
             "Vocabulary": "Corn",
             "Pronunciation": "/kɔːrn/",
@@ -238,7 +238,7 @@
             "Meaning": "Hạt đậu"
         }
     ],
-    "Nấm": [
+    "Mushrooms": [
         {
             "Vocabulary": "mushroom",
             "Meaning": "Nấm"
@@ -288,7 +288,7 @@
             "Meaning": "Nấm tuyết"
         }
     ],
-    "Trái cây": [
+    "Fruits": [
         {
             "Vocabulary": "Apple",
             "Pronunciation": "/ˈæp.əl/",
