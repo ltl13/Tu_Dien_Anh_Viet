@@ -58,8 +58,8 @@
             this.xuiButton_Herbs_Spices = new XanderUI.XUIButton();
             this.xuiButton_fruits = new XanderUI.XUIButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bt_back = new System.Windows.Forms.Button();
             this.lb_comboWords = new System.Windows.Forms.Label();
+            this.xuiButton_Back = new XanderUI.XUIButton();
             this.flowLayoutPanel_ComboWord.SuspendLayout();
             this.flowLayoutPanel_ComboWord3.SuspendLayout();
             this.flowLayoutPanel_ComboWord1.SuspendLayout();
@@ -79,10 +79,9 @@
             this.bt_animal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_animal.Font = new System.Drawing.Font("Calibri", 24F);
             this.bt_animal.ForeColor = System.Drawing.Color.Black;
-            this.bt_animal.Location = new System.Drawing.Point(5, 5);
-            this.bt_animal.Margin = new System.Windows.Forms.Padding(5);
+            this.bt_animal.Location = new System.Drawing.Point(3, 3);
             this.bt_animal.Name = "bt_animal";
-            this.bt_animal.Size = new System.Drawing.Size(836, 143);
+            this.bt_animal.Size = new System.Drawing.Size(478, 79);
             this.bt_animal.TabIndex = 0;
             this.bt_animal.Text = "Animal";
             this.bt_animal.UseVisualStyleBackColor = false;
@@ -98,21 +97,19 @@
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord2);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord4);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord5);
-            this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(128, 69);
-            this.flowLayoutPanel_ComboWord.Margin = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(73, 38);
             this.flowLayoutPanel_ComboWord.Name = "flowLayoutPanel_ComboWord";
-            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(1022, 861);
+            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(584, 475);
             this.flowLayoutPanel_ComboWord.TabIndex = 1;
             // 
             // flowLayoutPanel_ComboWord3
             // 
             this.flowLayoutPanel_ComboWord3.Controls.Add(this.bt_irregularverb);
-            this.flowLayoutPanel_ComboWord3.Location = new System.Drawing.Point(5, 5);
-            this.flowLayoutPanel_ComboWord3.Margin = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel_ComboWord3.MaximumSize = new System.Drawing.Size(842, 147);
-            this.flowLayoutPanel_ComboWord3.MinimumSize = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord3.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel_ComboWord3.MaximumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord3.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord3.Name = "flowLayoutPanel_ComboWord3";
-            this.flowLayoutPanel_ComboWord3.Size = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord3.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord3.TabIndex = 3;
             // 
             // bt_irregularverb
@@ -124,10 +121,10 @@
             this.bt_irregularverb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_irregularverb.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_irregularverb.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_irregularverb.Location = new System.Drawing.Point(5, 5);
-            this.bt_irregularverb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.bt_irregularverb.Location = new System.Drawing.Point(3, 3);
+            this.bt_irregularverb.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.bt_irregularverb.Name = "bt_irregularverb";
-            this.bt_irregularverb.Size = new System.Drawing.Size(836, 143);
+            this.bt_irregularverb.Size = new System.Drawing.Size(478, 79);
             this.bt_irregularverb.TabIndex = 1;
             this.bt_irregularverb.UseVisualStyleBackColor = false;
             this.bt_irregularverb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord3_MouseDown);
@@ -145,12 +142,11 @@
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_wildAnimal);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_Pets);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_AnimalGroups);
-            this.flowLayoutPanel_ComboWord1.Location = new System.Drawing.Point(5, 162);
-            this.flowLayoutPanel_ComboWord1.Margin = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel_ComboWord1.MaximumSize = new System.Drawing.Size(842, 1133);
-            this.flowLayoutPanel_ComboWord1.MinimumSize = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord1.Location = new System.Drawing.Point(3, 90);
+            this.flowLayoutPanel_ComboWord1.MaximumSize = new System.Drawing.Size(481, 625);
+            this.flowLayoutPanel_ComboWord1.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord1.Name = "flowLayoutPanel_ComboWord1";
-            this.flowLayoutPanel_ComboWord1.Size = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord1.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord1.TabIndex = 2;
             // 
             // xuiButton_Birds
@@ -167,10 +163,9 @@
             this.xuiButton_Birds.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_Birds.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_Birds.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Birds.Location = new System.Drawing.Point(5, 158);
-            this.xuiButton_Birds.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Birds.Location = new System.Drawing.Point(3, 88);
             this.xuiButton_Birds.Name = "xuiButton_Birds";
-            this.xuiButton_Birds.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_Birds.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_Birds.TabIndex = 1;
             this.xuiButton_Birds.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Birds.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -190,10 +185,9 @@
             this.xuiButton_insects.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_insects.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_insects.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_insects.Location = new System.Drawing.Point(5, 280);
-            this.xuiButton_insects.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_insects.Location = new System.Drawing.Point(3, 156);
             this.xuiButton_insects.Name = "xuiButton_insects";
-            this.xuiButton_insects.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_insects.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_insects.TabIndex = 2;
             this.xuiButton_insects.TextColor = System.Drawing.Color.Black;
             this.xuiButton_insects.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -213,10 +207,9 @@
             this.xuiButton_marines.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_marines.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_marines.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_marines.Location = new System.Drawing.Point(5, 402);
-            this.xuiButton_marines.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_marines.Location = new System.Drawing.Point(3, 224);
             this.xuiButton_marines.Name = "xuiButton_marines";
-            this.xuiButton_marines.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_marines.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_marines.TabIndex = 3;
             this.xuiButton_marines.TextColor = System.Drawing.Color.Black;
             this.xuiButton_marines.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -236,10 +229,9 @@
             this.xuiButton_mammals.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_mammals.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_mammals.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_mammals.Location = new System.Drawing.Point(5, 524);
-            this.xuiButton_mammals.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_mammals.Location = new System.Drawing.Point(3, 292);
             this.xuiButton_mammals.Name = "xuiButton_mammals";
-            this.xuiButton_mammals.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_mammals.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_mammals.TabIndex = 4;
             this.xuiButton_mammals.TextColor = System.Drawing.Color.Black;
             this.xuiButton_mammals.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -259,10 +251,9 @@
             this.xuiButton_breedingAnimals.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_breedingAnimals.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_breedingAnimals.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_breedingAnimals.Location = new System.Drawing.Point(5, 646);
-            this.xuiButton_breedingAnimals.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_breedingAnimals.Location = new System.Drawing.Point(3, 360);
             this.xuiButton_breedingAnimals.Name = "xuiButton_breedingAnimals";
-            this.xuiButton_breedingAnimals.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_breedingAnimals.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_breedingAnimals.TabIndex = 5;
             this.xuiButton_breedingAnimals.TextColor = System.Drawing.Color.Black;
             this.xuiButton_breedingAnimals.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -282,10 +273,9 @@
             this.xuiButton_wildAnimal.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_wildAnimal.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_wildAnimal.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_wildAnimal.Location = new System.Drawing.Point(5, 768);
-            this.xuiButton_wildAnimal.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_wildAnimal.Location = new System.Drawing.Point(3, 428);
             this.xuiButton_wildAnimal.Name = "xuiButton_wildAnimal";
-            this.xuiButton_wildAnimal.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_wildAnimal.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_wildAnimal.TabIndex = 6;
             this.xuiButton_wildAnimal.TextColor = System.Drawing.Color.Black;
             this.xuiButton_wildAnimal.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -305,10 +295,9 @@
             this.xuiButton_Pets.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_Pets.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_Pets.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Pets.Location = new System.Drawing.Point(5, 890);
-            this.xuiButton_Pets.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Pets.Location = new System.Drawing.Point(3, 496);
             this.xuiButton_Pets.Name = "xuiButton_Pets";
-            this.xuiButton_Pets.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_Pets.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_Pets.TabIndex = 7;
             this.xuiButton_Pets.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Pets.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -328,10 +317,9 @@
             this.xuiButton_AnimalGroups.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_AnimalGroups.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_AnimalGroups.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_AnimalGroups.Location = new System.Drawing.Point(5, 1012);
-            this.xuiButton_AnimalGroups.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_AnimalGroups.Location = new System.Drawing.Point(3, 564);
             this.xuiButton_AnimalGroups.Name = "xuiButton_AnimalGroups";
-            this.xuiButton_AnimalGroups.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_AnimalGroups.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_AnimalGroups.TabIndex = 8;
             this.xuiButton_AnimalGroups.TextColor = System.Drawing.Color.Black;
             this.xuiButton_AnimalGroups.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -340,12 +328,11 @@
             // flowLayoutPanel_ComboWord2
             // 
             this.flowLayoutPanel_ComboWord2.Controls.Add(this.bt_Economic_ForeignTrade);
-            this.flowLayoutPanel_ComboWord2.Location = new System.Drawing.Point(5, 319);
-            this.flowLayoutPanel_ComboWord2.Margin = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel_ComboWord2.MaximumSize = new System.Drawing.Size(842, 147);
-            this.flowLayoutPanel_ComboWord2.MinimumSize = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord2.Location = new System.Drawing.Point(3, 177);
+            this.flowLayoutPanel_ComboWord2.MaximumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord2.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord2.Name = "flowLayoutPanel_ComboWord2";
-            this.flowLayoutPanel_ComboWord2.Size = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord2.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord2.TabIndex = 2;
             // 
             // bt_Economic_ForeignTrade
@@ -357,10 +344,10 @@
             this.bt_Economic_ForeignTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Economic_ForeignTrade.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Economic_ForeignTrade.ForeColor = System.Drawing.Color.Blue;
-            this.bt_Economic_ForeignTrade.Location = new System.Drawing.Point(5, 5);
-            this.bt_Economic_ForeignTrade.Margin = new System.Windows.Forms.Padding(5, 5, 5, 0);
+            this.bt_Economic_ForeignTrade.Location = new System.Drawing.Point(3, 3);
+            this.bt_Economic_ForeignTrade.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.bt_Economic_ForeignTrade.Name = "bt_Economic_ForeignTrade";
-            this.bt_Economic_ForeignTrade.Size = new System.Drawing.Size(836, 143);
+            this.bt_Economic_ForeignTrade.Size = new System.Drawing.Size(478, 79);
             this.bt_Economic_ForeignTrade.TabIndex = 1;
             this.bt_Economic_ForeignTrade.Text = "Economic - Foreign Trade";
             this.bt_Economic_ForeignTrade.UseVisualStyleBackColor = false;
@@ -376,12 +363,11 @@
             this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_computerConstruction);
             this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_commonWords);
             this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_Terminologies);
-            this.flowLayoutPanel_ComboWord4.Location = new System.Drawing.Point(5, 476);
-            this.flowLayoutPanel_ComboWord4.Margin = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel_ComboWord4.MaximumSize = new System.Drawing.Size(842, 768);
-            this.flowLayoutPanel_ComboWord4.MinimumSize = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord4.Location = new System.Drawing.Point(3, 264);
+            this.flowLayoutPanel_ComboWord4.MaximumSize = new System.Drawing.Size(481, 424);
+            this.flowLayoutPanel_ComboWord4.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord4.Name = "flowLayoutPanel_ComboWord4";
-            this.flowLayoutPanel_ComboWord4.Size = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord4.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord4.TabIndex = 4;
             // 
             // bt_IT
@@ -394,10 +380,9 @@
             this.bt_IT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_IT.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_IT.ForeColor = System.Drawing.Color.White;
-            this.bt_IT.Location = new System.Drawing.Point(5, 5);
-            this.bt_IT.Margin = new System.Windows.Forms.Padding(5);
+            this.bt_IT.Location = new System.Drawing.Point(3, 3);
             this.bt_IT.Name = "bt_IT";
-            this.bt_IT.Size = new System.Drawing.Size(836, 143);
+            this.bt_IT.Size = new System.Drawing.Size(478, 79);
             this.bt_IT.TabIndex = 0;
             this.bt_IT.Text = "Infomation Technology";
             this.bt_IT.UseVisualStyleBackColor = false;
@@ -419,10 +404,9 @@
             this.xuiButton_numeralSystems.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_numeralSystems.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_numeralSystems.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_numeralSystems.Location = new System.Drawing.Point(5, 158);
-            this.xuiButton_numeralSystems.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_numeralSystems.Location = new System.Drawing.Point(3, 88);
             this.xuiButton_numeralSystems.Name = "xuiButton_numeralSystems";
-            this.xuiButton_numeralSystems.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_numeralSystems.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_numeralSystems.TabIndex = 1;
             this.xuiButton_numeralSystems.TextColor = System.Drawing.Color.Black;
             this.xuiButton_numeralSystems.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -442,10 +426,9 @@
             this.xuiButton_branches.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_branches.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_branches.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_branches.Location = new System.Drawing.Point(5, 280);
-            this.xuiButton_branches.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_branches.Location = new System.Drawing.Point(3, 156);
             this.xuiButton_branches.Name = "xuiButton_branches";
-            this.xuiButton_branches.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_branches.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_branches.TabIndex = 2;
             this.xuiButton_branches.TextColor = System.Drawing.Color.Black;
             this.xuiButton_branches.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -465,10 +448,9 @@
             this.xuiButton_computerConstruction.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_computerConstruction.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_computerConstruction.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_computerConstruction.Location = new System.Drawing.Point(5, 402);
-            this.xuiButton_computerConstruction.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_computerConstruction.Location = new System.Drawing.Point(3, 224);
             this.xuiButton_computerConstruction.Name = "xuiButton_computerConstruction";
-            this.xuiButton_computerConstruction.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_computerConstruction.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_computerConstruction.TabIndex = 3;
             this.xuiButton_computerConstruction.TextColor = System.Drawing.Color.Black;
             this.xuiButton_computerConstruction.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -488,10 +470,9 @@
             this.xuiButton_commonWords.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_commonWords.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_commonWords.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_commonWords.Location = new System.Drawing.Point(5, 524);
-            this.xuiButton_commonWords.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_commonWords.Location = new System.Drawing.Point(3, 292);
             this.xuiButton_commonWords.Name = "xuiButton_commonWords";
-            this.xuiButton_commonWords.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_commonWords.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_commonWords.TabIndex = 4;
             this.xuiButton_commonWords.TextColor = System.Drawing.Color.Black;
             this.xuiButton_commonWords.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -511,10 +492,9 @@
             this.xuiButton_Terminologies.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_Terminologies.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_Terminologies.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Terminologies.Location = new System.Drawing.Point(5, 646);
-            this.xuiButton_Terminologies.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Terminologies.Location = new System.Drawing.Point(3, 360);
             this.xuiButton_Terminologies.Name = "xuiButton_Terminologies";
-            this.xuiButton_Terminologies.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_Terminologies.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_Terminologies.TabIndex = 5;
             this.xuiButton_Terminologies.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Terminologies.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -527,12 +507,11 @@
             this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_vegetables);
             this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_Herbs_Spices);
             this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_fruits);
-            this.flowLayoutPanel_ComboWord5.Location = new System.Drawing.Point(5, 633);
-            this.flowLayoutPanel_ComboWord5.Margin = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel_ComboWord5.MaximumSize = new System.Drawing.Size(842, 645);
-            this.flowLayoutPanel_ComboWord5.MinimumSize = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord5.Location = new System.Drawing.Point(3, 351);
+            this.flowLayoutPanel_ComboWord5.MaximumSize = new System.Drawing.Size(481, 356);
+            this.flowLayoutPanel_ComboWord5.MinimumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord5.Name = "flowLayoutPanel_ComboWord5";
-            this.flowLayoutPanel_ComboWord5.Size = new System.Drawing.Size(842, 147);
+            this.flowLayoutPanel_ComboWord5.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord5.TabIndex = 5;
             // 
             // bt_vegetables
@@ -545,10 +524,9 @@
             this.bt_vegetables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_vegetables.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_vegetables.ForeColor = System.Drawing.Color.Cyan;
-            this.bt_vegetables.Location = new System.Drawing.Point(5, 5);
-            this.bt_vegetables.Margin = new System.Windows.Forms.Padding(5);
+            this.bt_vegetables.Location = new System.Drawing.Point(3, 3);
             this.bt_vegetables.Name = "bt_vegetables";
-            this.bt_vegetables.Size = new System.Drawing.Size(836, 143);
+            this.bt_vegetables.Size = new System.Drawing.Size(478, 79);
             this.bt_vegetables.TabIndex = 0;
             this.bt_vegetables.Text = "Vegetables";
             this.bt_vegetables.UseVisualStyleBackColor = false;
@@ -570,10 +548,9 @@
             this.xuiButton_mushrooms.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_mushrooms.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_mushrooms.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_mushrooms.Location = new System.Drawing.Point(5, 158);
-            this.xuiButton_mushrooms.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_mushrooms.Location = new System.Drawing.Point(3, 88);
             this.xuiButton_mushrooms.Name = "xuiButton_mushrooms";
-            this.xuiButton_mushrooms.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_mushrooms.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_mushrooms.TabIndex = 1;
             this.xuiButton_mushrooms.TextColor = System.Drawing.Color.Black;
             this.xuiButton_mushrooms.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -593,10 +570,9 @@
             this.xuiButton_vegetables.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_vegetables.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_vegetables.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_vegetables.Location = new System.Drawing.Point(5, 280);
-            this.xuiButton_vegetables.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_vegetables.Location = new System.Drawing.Point(3, 156);
             this.xuiButton_vegetables.Name = "xuiButton_vegetables";
-            this.xuiButton_vegetables.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_vegetables.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_vegetables.TabIndex = 2;
             this.xuiButton_vegetables.TextColor = System.Drawing.Color.Black;
             this.xuiButton_vegetables.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -616,10 +592,9 @@
             this.xuiButton_Herbs_Spices.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_Herbs_Spices.HoverTextColor = System.Drawing.Color.BlanchedAlmond;
             this.xuiButton_Herbs_Spices.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Herbs_Spices.Location = new System.Drawing.Point(5, 402);
-            this.xuiButton_Herbs_Spices.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Herbs_Spices.Location = new System.Drawing.Point(3, 224);
             this.xuiButton_Herbs_Spices.Name = "xuiButton_Herbs_Spices";
-            this.xuiButton_Herbs_Spices.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_Herbs_Spices.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_Herbs_Spices.TabIndex = 3;
             this.xuiButton_Herbs_Spices.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Herbs_Spices.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -639,10 +614,9 @@
             this.xuiButton_fruits.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.xuiButton_fruits.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_fruits.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_fruits.Location = new System.Drawing.Point(5, 524);
-            this.xuiButton_fruits.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_fruits.Location = new System.Drawing.Point(3, 292);
             this.xuiButton_fruits.Name = "xuiButton_fruits";
-            this.xuiButton_fruits.Size = new System.Drawing.Size(836, 112);
+            this.xuiButton_fruits.Size = new System.Drawing.Size(478, 62);
             this.xuiButton_fruits.TabIndex = 4;
             this.xuiButton_fruits.TextColor = System.Drawing.Color.Black;
             this.xuiButton_fruits.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -651,45 +625,57 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 38);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 92;
             this.dataGridView1.RowTemplate.Height = 37;
-            this.dataGridView1.Size = new System.Drawing.Size(1053, 861);
+            this.dataGridView1.Size = new System.Drawing.Size(602, 475);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // bt_back
-            // 
-            this.bt_back.Location = new System.Drawing.Point(850, 3);
-            this.bt_back.Name = "bt_back";
-            this.bt_back.Size = new System.Drawing.Size(221, 60);
-            this.bt_back.TabIndex = 3;
-            this.bt_back.Text = "Back";
-            this.bt_back.UseVisualStyleBackColor = true;
-            this.bt_back.Click += new System.EventHandler(this.bt_back_Click);
             // 
             // lb_comboWords
             // 
             this.lb_comboWords.AutoSize = true;
             this.lb_comboWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_comboWords.Location = new System.Drawing.Point(38, 19);
+            this.lb_comboWords.Location = new System.Drawing.Point(22, 10);
+            this.lb_comboWords.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_comboWords.Name = "lb_comboWords";
-            this.lb_comboWords.Size = new System.Drawing.Size(81, 36);
+            this.lb_comboWords.Size = new System.Drawing.Size(45, 20);
             this.lb_comboWords.TabIndex = 4;
             this.lb_comboWords.Text = "word";
             // 
+            // xuiButton_Back
+            // 
+            this.xuiButton_Back.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton_Back.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Back.ButtonImage")));
+            this.xuiButton_Back.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Back.ButtonText = "";
+            this.xuiButton_Back.ClickBackColor = System.Drawing.Color.White;
+            this.xuiButton_Back.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Back.CornerRadius = 5;
+            this.xuiButton_Back.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Back.HoverBackgroundColor = System.Drawing.Color.Red;
+            this.xuiButton_Back.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Back.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Back.Location = new System.Drawing.Point(584, 1);
+            this.xuiButton_Back.Name = "xuiButton_Back";
+            this.xuiButton_Back.Size = new System.Drawing.Size(37, 33);
+            this.xuiButton_Back.TabIndex = 5;
+            this.xuiButton_Back.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Back.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Back.Click += new System.EventHandler(this.xuiButton_Back_Click);
+            // 
             // UserControl_ComboWord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.xuiButton_Back);
             this.Controls.Add(this.lb_comboWords);
-            this.Controls.Add(this.bt_back);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.flowLayoutPanel_ComboWord);
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UserControl_ComboWord";
-            this.Size = new System.Drawing.Size(1092, 935);
+            this.Size = new System.Drawing.Size(624, 516);
             this.flowLayoutPanel_ComboWord.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord3.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord1.ResumeLayout(false);
@@ -733,7 +719,7 @@
         private XanderUI.XUIButton xuiButton_Herbs_Spices;
         private XanderUI.XUIButton xuiButton_fruits;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button bt_back;
         private System.Windows.Forms.Label lb_comboWords;
+        private XanderUI.XUIButton xuiButton_Back;
     }
 }
