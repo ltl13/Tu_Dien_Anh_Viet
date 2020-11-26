@@ -27,20 +27,36 @@ namespace DTO {
         }
 
         public string getVietNameseFormat() {
-            vietNamese = vietNamese.Replace("|@", "");
-            vietNamese = vietNamese.Replace("&quot;", "\"");
-            vietNamese = vietNamese.Replace("&amp;", "&");
-            vietNamese = vietNamese.Replace("|*", "\n");
-            vietNamese = vietNamese.Replace("|-!", "\n\t➡ ");
-            vietNamese = vietNamese.Replace("|-", "\n\t➡ ");
-            vietNamese = vietNamese.Replace("|=", "\n\t• ");
-            for (var i = vietNamese.IndexOf('\n'); i < vietNamese.Length - 2; i++) {
-                if (vietNamese[i] == ':' && vietNamese[i + 1] != ' ') {
-                    vietNamese = vietNamese.Remove(i, 1);
-                    vietNamese = vietNamese.Insert(i, "\n\t   ");
+            string temp = vietNamese;
+            temp = temp.Replace("|@", "");
+            temp = temp.Replace("&quot;", "\"");
+            temp = temp.Replace("&amp;", "&");
+            temp = temp.Replace("&lt;y&gt;", "(y học)");
+            temp = temp.Replace("|*", "\n");
+            temp = temp.Replace("|-!", "\n\t➡ ");
+            temp = temp.Replace("|-", "\n\t➡ ");
+            temp = temp.Replace("|=", "\n\t• ");
+            for (var i = temp.IndexOf('\n'); i < temp.Length - 2; i++) {
+                if (temp[i] == ':' && temp[i + 1] != ' ') {
+                    temp = temp.Remove(i, 1);
+                    temp = temp.Insert(i, "\n\t   ");
                 }
             }
-            return vietNamese;
+            return temp;
+        }
+
+        public string getCommonMeaning() {
+            string temp = vietNamese;
+            temp = temp.Replace("&quot;", "\"");
+            temp = temp.Replace("&amp;", "&");
+            temp = temp.Replace("&lt;y&gt;", "(y học)");
+            string[] arr = temp.Split('|');
+
+            foreach (string str in arr)
+                if(str.Insert(0, "|").Contains("|-"))
+                    return str.Replace("-", "");
+                
+            return null;
         }
 
         //public static bool operator ==(EnViDTO temp1, EnViDTO temp2) {
