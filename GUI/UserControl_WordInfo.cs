@@ -22,8 +22,8 @@ namespace GUI
             father = usercontrolSearch;
             word = args;
             label_Word.Text = word.English;
-            rtb_vietnamese.Text = word.VietNamese;
-
+            //rtb_vietnamese.Text = word.getVietNameseFormat();
+            rtb_vietnamese.Text = word.getVietNameseFormat();
             foreach (var fa in father.Father.Favorite) {
                 if (fa.English == word.English) {
                     xuiButton_Interest.Visible = true;
@@ -32,7 +32,7 @@ namespace GUI
                 }
             }
 
-            rtb_vietnamese.Text = word.getVietNameseFormat();
+            
         }
 
         private void metroTile_Back_Click(object sender, EventArgs e) {

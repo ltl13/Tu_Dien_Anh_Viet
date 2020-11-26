@@ -36,14 +36,13 @@
             this.metroTile_Speaker = new MetroFramework.Controls.MetroTile();
             this.label_Word = new System.Windows.Forms.Label();
             this.metroTabControl_WordInfo = new MetroFramework.Controls.MetroTabControl();
-            this.tabPage_Meaning = new MetroFramework.Controls.MetroTabPage();
-            this.tabPage_Example = new System.Windows.Forms.TabPage();
-            this.tabPage_Synonym = new System.Windows.Forms.TabPage();
+            this.tabPage_Meaning = new System.Windows.Forms.TabPage();
+            this.rtb_vietnamese = new System.Windows.Forms.RichTextBox();
+            this.tabPage_Synonymous = new System.Windows.Forms.TabPage();
             this.tabPage_Antonym = new System.Windows.Forms.TabPage();
             this.tabPage_Technical = new System.Windows.Forms.TabPage();
-            this.tabPage_Note = new System.Windows.Forms.TabPage();
             this.tabPage_Image = new System.Windows.Forms.TabPage();
-            this.rtb_vietnamese = new System.Windows.Forms.RichTextBox();
+            this.tabPage_Note = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_WordInfo)).BeginInit();
             this.splitContainer_WordInfo.Panel1.SuspendLayout();
             this.splitContainer_WordInfo.Panel2.SuspendLayout();
@@ -161,8 +160,7 @@
             // metroTabControl_WordInfo
             // 
             this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Meaning);
-            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Synonym);
-            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Example);
+            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Synonymous);
             this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Antonym);
             this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Technical);
             this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Image);
@@ -179,36 +177,34 @@
             // 
             // tabPage_Meaning
             // 
-            this.tabPage_Meaning.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage_Meaning.Controls.Add(this.rtb_vietnamese);
-            this.tabPage_Meaning.HorizontalScrollbarBarColor = true;
-            this.tabPage_Meaning.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabPage_Meaning.HorizontalScrollbarSize = 10;
             this.tabPage_Meaning.Location = new System.Drawing.Point(4, 38);
             this.tabPage_Meaning.Name = "tabPage_Meaning";
             this.tabPage_Meaning.Size = new System.Drawing.Size(616, 355);
-            this.tabPage_Meaning.TabIndex = 0;
+            this.tabPage_Meaning.TabIndex = 3;
             this.tabPage_Meaning.Text = "Nghĩa";
-            this.tabPage_Meaning.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.tabPage_Meaning.VerticalScrollbarBarColor = true;
-            this.tabPage_Meaning.VerticalScrollbarHighlightOnWheel = false;
-            this.tabPage_Meaning.VerticalScrollbarSize = 10;
             // 
-            // tabPage_Example
+            // rtb_vietnamese
             // 
-            this.tabPage_Example.Location = new System.Drawing.Point(4, 38);
-            this.tabPage_Example.Name = "tabPage_Example";
-            this.tabPage_Example.Size = new System.Drawing.Size(616, 355);
-            this.tabPage_Example.TabIndex = 2;
-            this.tabPage_Example.Text = "Ví dụ";
+            this.rtb_vietnamese.BackColor = System.Drawing.SystemColors.Window;
+            this.rtb_vietnamese.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtb_vietnamese.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtb_vietnamese.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtb_vietnamese.Location = new System.Drawing.Point(0, 0);
+            this.rtb_vietnamese.Name = "rtb_vietnamese";
+            this.rtb_vietnamese.ReadOnly = true;
+            this.rtb_vietnamese.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.rtb_vietnamese.Size = new System.Drawing.Size(616, 355);
+            this.rtb_vietnamese.TabIndex = 0;
+            this.rtb_vietnamese.Text = "";
             // 
-            // tabPage_Synonym
+            // tabPage_Synonymous
             // 
-            this.tabPage_Synonym.Location = new System.Drawing.Point(4, 38);
-            this.tabPage_Synonym.Name = "tabPage_Synonym";
-            this.tabPage_Synonym.Size = new System.Drawing.Size(616, 355);
-            this.tabPage_Synonym.TabIndex = 3;
-            this.tabPage_Synonym.Text = "Đồng nghĩa";
+            this.tabPage_Synonymous.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Synonymous.Name = "tabPage_Synonymous";
+            this.tabPage_Synonymous.Size = new System.Drawing.Size(616, 355);
+            this.tabPage_Synonymous.TabIndex = 2;
+            this.tabPage_Synonymous.Text = "Đồng nghĩa";
             // 
             // tabPage_Antonym
             // 
@@ -228,14 +224,6 @@
             this.tabPage_Technical.TabIndex = 1;
             this.tabPage_Technical.Text = "Chuyên ngành";
             // 
-            // tabPage_Note
-            // 
-            this.tabPage_Note.Location = new System.Drawing.Point(4, 38);
-            this.tabPage_Note.Name = "tabPage_Note";
-            this.tabPage_Note.Size = new System.Drawing.Size(616, 355);
-            this.tabPage_Note.TabIndex = 5;
-            this.tabPage_Note.Text = "Ghi chú";
-            // 
             // tabPage_Image
             // 
             this.tabPage_Image.Location = new System.Drawing.Point(4, 38);
@@ -244,20 +232,13 @@
             this.tabPage_Image.TabIndex = 6;
             this.tabPage_Image.Text = "Ảnh minh họa";
             // 
-            // rtb_vietnamese
+            // tabPage_Note
             // 
-            this.rtb_vietnamese.BackColor = System.Drawing.Color.White;
-            this.rtb_vietnamese.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtb_vietnamese.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.rtb_vietnamese.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtb_vietnamese.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtb_vietnamese.Location = new System.Drawing.Point(0, 0);
-            this.rtb_vietnamese.Name = "rtb_vietnamese";
-            this.rtb_vietnamese.ReadOnly = true;
-            this.rtb_vietnamese.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rtb_vietnamese.Size = new System.Drawing.Size(616, 355);
-            this.rtb_vietnamese.TabIndex = 2;
-            this.rtb_vietnamese.Text = "";
+            this.tabPage_Note.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Note.Name = "tabPage_Note";
+            this.tabPage_Note.Size = new System.Drawing.Size(616, 355);
+            this.tabPage_Note.TabIndex = 5;
+            this.tabPage_Note.Text = "Ghi chú";
             // 
             // UserControl_WordInfo
             // 
@@ -282,9 +263,8 @@
         private MetroFramework.Controls.MetroTile metroTile_Speaker;
         private System.Windows.Forms.Label label_Word;
         private MetroFramework.Controls.MetroTabControl metroTabControl_WordInfo;
-        private MetroFramework.Controls.MetroTabPage tabPage_Meaning;
-        private System.Windows.Forms.TabPage tabPage_Example;
-        private System.Windows.Forms.TabPage tabPage_Synonym;
+        private System.Windows.Forms.TabPage tabPage_Synonymous;
+        private System.Windows.Forms.TabPage tabPage_Meaning;
         private System.Windows.Forms.TabPage tabPage_Antonym;
         private System.Windows.Forms.TabPage tabPage_Technical;
         private System.Windows.Forms.TabPage tabPage_Note;
