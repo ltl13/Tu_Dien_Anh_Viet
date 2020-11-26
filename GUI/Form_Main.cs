@@ -18,6 +18,7 @@ namespace GUI
         private UserControl_Flashcard mainFlashcard;
         private UserControl_Translate mainTranslate;
         private UserControl_ComboWord mainComboWord;
+        private UserControl_Exam mainExam;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private Form father;
@@ -37,20 +38,24 @@ namespace GUI
             UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount, this);
             UserControl_Translate translate = new UserControl_Translate(this);
             UserControl_ComboWord comboWord = new UserControl_ComboWord();
+            UserControl_Exam exam = new UserControl_Exam();
             mainSearch = search;
             mainFlashcard = flashcard;
             mainTranslate = translate;
             mainComboWord = comboWord;
+            mainExam = exam;
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
             panel_Main.Controls.Add(mainTranslate);
             panel_Main.Controls.Add(mainComboWord);
+            panel_Main.Controls.Add(mainExam);
 
             mainSearch.Visible = true;
             mainFlashcard.Visible = false;
             mainTranslate.Visible = false;
             mainComboWord.Visible = false;
+            mainExam.Visible = false;
 
             pictureBox_Search_Click(null, null);
 
@@ -95,6 +100,7 @@ namespace GUI
             mainFlashcard.Visible = false;
             mainTranslate.Visible = false;
             mainComboWord.Visible = false;
+            mainExam.Visible = false;
 
             timer_PanelSearch.Start();
             timer_PanelGrammar.Start();
@@ -455,7 +461,7 @@ namespace GUI
                 ReturnClick(panel_Exam);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isExamClick = true;
-                //mainRead.Visible = true;
+                mainExam.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(255, 227, 255);
                 timer_MainPanel.Start();
             }
