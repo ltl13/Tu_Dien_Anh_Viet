@@ -139,6 +139,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl_Exam1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Exam1.Designer.cs">
+      <DependentUpon>UserControl_Exam1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Exam.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_ComboWord.resx">
       <DependentUpon>UserControl_ComboWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Exam1.resx">
+      <DependentUpon>UserControl_Exam1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Flashcard.resx">
       <DependentUpon>UserControl_Flashcard.cs</DependentUpon>
