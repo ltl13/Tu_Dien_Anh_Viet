@@ -15,6 +15,7 @@ namespace GUI
         public UserControl_Exam()
         {
             InitializeComponent();
+            metroTile_Favorite.Enabled = false;
         }
         
     }
