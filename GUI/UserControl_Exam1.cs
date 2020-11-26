@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class UserControl_Exam : UserControl
+    public partial class UserControl_Exam1 : UserControl
     {
-        public UserControl_Exam()
+        public UserControl_Exam1()
         {
             InitializeComponent();
-            metroTile_Favorite.Enabled = false;
         }
-        
     }
 }
