@@ -58,7 +58,7 @@ namespace GUI
             else
             {
                 label_Eng.Text = favorite[numCard].English;
-                label_Viet.Text = favorite[numCard].VietNamese;
+                label_Viet.Text = favorite[numCard].getCommonMeaning();
                 label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
             }
         }
@@ -69,7 +69,7 @@ namespace GUI
             {
                 numCard++;
                 label_Eng.Text = favorite[numCard].English;
-                label_Viet.Text = favorite[numCard].VietNamese;
+                label_Viet.Text = favorite[numCard].getCommonMeaning();
                 panel_Viet.Visible = false;
                 panel_Eng.Visible = true;
                 label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
@@ -82,7 +82,7 @@ namespace GUI
             {
                 numCard--;
                 label_Eng.Text = favorite[numCard].English;
-                label_Viet.Text = favorite[numCard].VietNamese;
+                label_Viet.Text = favorite[numCard].getCommonMeaning();
                 panel_Viet.Visible = false;
                 panel_Eng.Visible = true;
                 label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
