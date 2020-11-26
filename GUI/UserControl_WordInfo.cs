@@ -21,8 +21,8 @@ namespace GUI
             InitializeComponent();
             father = usercontrolSearch;
             word = args;
-            label_Word.Text = word.English + " " + word.getPronunciation();
-            tb_vietnamese.Text = word.VietNamese;
+            label_Word.Text = word.English;
+            rtb_vietnamese.Text = word.VietNamese;
 
             foreach (var fa in father.Father.Favorite) {
                 if (fa.English == word.English) {
@@ -32,14 +32,7 @@ namespace GUI
                 }
             }
 
-            string s = word.VietNamese;
-            s = s.Replace("|@", "\n");
-            s = s.Replace("|*", "\n");
-            s = s.Replace("#-", "\n");
-            s = s.Replace("|-", "\n =>");
-            s = s.Replace("|=", "\n Ex: ");
-            s = s.Replace("|+", "\n Mean: ");
-            tb_vietnamese.Text = s;
+            rtb_vietnamese.Text = word.getVietNameseFormat();
         }
 
         private void metroTile_Back_Click(object sender, EventArgs e) {
@@ -78,6 +71,5 @@ namespace GUI
             father.Father.Favorite.Add(word);
             DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
-
     }
 }
