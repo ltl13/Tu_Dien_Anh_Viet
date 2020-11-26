@@ -1,4 +1,7 @@
-﻿namespace DTO {
+﻿using System;
+using System.Text;
+
+namespace DTO {
     public class EnViDTO {
         #region properties
         private string english;
@@ -21,6 +24,23 @@
 
         public string getPronunciation() {
             return vietNamese.Substring(0, vietNamese.IndexOf('|', vietNamese.IndexOf('|') + 1)).Replace("|@", "").Replace(english, "").Trim();
+        }
+
+        public string getVietNameseFormat() {
+            vietNamese = vietNamese.Replace("|@", "");
+            vietNamese = vietNamese.Replace("&quot;", "\"");
+            vietNamese = vietNamese.Replace("&amp;", "&");
+            vietNamese = vietNamese.Replace("|*", "\n");
+            vietNamese = vietNamese.Replace("|-!", "\n\t➡ ");
+            vietNamese = vietNamese.Replace("|-", "\n\t➡ ");
+            vietNamese = vietNamese.Replace("|=", "\n\t• ");
+            for (var i = vietNamese.IndexOf('\n'); i < vietNamese.Length - 2; i++) {
+                if (vietNamese[i] == ':' && vietNamese[i + 1] != ' ') {
+                    vietNamese = vietNamese.Remove(i, 1);
+                    vietNamese = vietNamese.Insert(i, "\n\t   ");
+                }
+            }
+            return vietNamese;
         }
 
         //public static bool operator ==(EnViDTO temp1, EnViDTO temp2) {
