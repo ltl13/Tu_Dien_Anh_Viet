@@ -16,6 +16,7 @@ namespace GUI
     public partial class UserControl_WordInfo : UserControl {
         private UserControl_Search father;
         EnViDTO word;
+        ViEnDTO word1;
 
         public UserControl_WordInfo(EnViDTO args, UserControl_Search usercontrolSearch) {
             InitializeComponent();
@@ -31,6 +32,16 @@ namespace GUI
                     break;
                 }
             }
+        }
+
+        public UserControl_WordInfo(ViEnDTO args, UserControl_Search usercontrolSearch) {
+            InitializeComponent();
+            father = usercontrolSearch;
+            word1 = args;
+            label_Word.Text = word1.VietNamese;
+            rtb_vietnamese.Text = word1.English;
+            xuiButton_Interest.Visible = true;
+            xuiButton_NotInterest.Visible = true;
         }
 
         private void metroTile_Back_Click(object sender, EventArgs e) {
