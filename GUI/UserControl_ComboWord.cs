@@ -16,7 +16,7 @@ namespace GUI
         public UserControl_ComboWord()
         {
             InitializeComponent();
-            bt_back.Hide();
+            xuiButton_Back.Hide();
             dataGridView1.Hide();
             lb_comboWords.Hide();
         }
@@ -56,7 +56,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Birds";
             lb_comboWords.Show();
         }
@@ -76,7 +76,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Insects";
             lb_comboWords.Show();
         }
@@ -96,7 +96,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Marines";
             lb_comboWords.Show();
         }
@@ -116,7 +116,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Mammals";
             lb_comboWords.Show();
         }
@@ -136,7 +136,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Breeding animals";
             lb_comboWords.Show();
         }
@@ -156,7 +156,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Wild animals";
             lb_comboWords.Show();
         }
@@ -176,7 +176,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Pets";
             lb_comboWords.Show();
         }
@@ -196,7 +196,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Animal groups";
             lb_comboWords.Show();
         }
@@ -217,7 +217,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Economic And Foreign Trade";
             lb_comboWords.Show();
         }
@@ -248,7 +248,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Irregular Verb";
             lb_comboWords.Show();
         }
@@ -297,7 +297,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Numeral Systems";
             lb_comboWords.Show();
         }
@@ -316,7 +316,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Branches";
             lb_comboWords.Show();
         }
@@ -335,7 +335,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Computer construction";
             lb_comboWords.Show();
         }
@@ -354,7 +354,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Common words";
             lb_comboWords.Show();
         }
@@ -373,7 +373,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Terminologies";
             lb_comboWords.Show();
         }
@@ -413,7 +413,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Mushrooms";
             lb_comboWords.Show();
         }
@@ -432,7 +432,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Vegetables";
             lb_comboWords.Show();
         }
@@ -451,7 +451,7 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Herbs and spices";
             lb_comboWords.Show();
         }
@@ -470,16 +470,17 @@ namespace GUI
             dataGridView1.DataSource = dt;
 
             dataGridView1.Show();
-            bt_back.Show();
+            xuiButton_Back.Show();
             lb_comboWords.Text = "Fruits";
             lb_comboWords.Show();
         }
         #endregion
 
-        private void bt_back_Click(object sender, EventArgs e)
+
+        private void xuiButton_Back_Click(object sender, EventArgs e)
         {
             dataGridView1.Hide();
-            bt_back.Hide();
+            xuiButton_Back.Hide();
             lb_comboWords.Hide();
         }
     }
