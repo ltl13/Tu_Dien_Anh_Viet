@@ -30,6 +30,7 @@ namespace GUI
         {
             InitializeComponent();
 
+            this.FocusMe();
             this.loginAccount = loginAccount;
             this.Favorite = BUS.DictionaryBUS.Instance.LoadSavedFavoriteWord();
             this.father = login;

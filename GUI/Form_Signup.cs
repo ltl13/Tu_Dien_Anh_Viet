@@ -10,6 +10,7 @@ namespace GUI {
 
         public Form_Signup(Form login) {
             InitializeComponent();
+            this.FocusMe();
             this.father = login;
         }
         #endregion

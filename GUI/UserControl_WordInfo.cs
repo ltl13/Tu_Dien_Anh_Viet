@@ -40,6 +40,7 @@ namespace GUI
             word1 = args;
             label_Word.Text = word1.VietNamese;
             rtb_vietnamese.Text = word1.English;
+            metroTile_Speaker.Visible = false;
             xuiButton_Interest.Visible = false;
             xuiButton_NotInterest.Visible = false;
         }
