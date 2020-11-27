@@ -29,6 +29,8 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.icon = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.pnlName = new System.Windows.Forms.Panel();
             this.lbUsername = new System.Windows.Forms.Label();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.lbPassword = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.pnlConfirm = new System.Windows.Forms.Panel();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
-            this.pnlName = new System.Windows.Forms.Panel();
-            this.tbName = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel4.SuspendLayout();
@@ -51,43 +51,43 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.lbMotto);
             this.panel3.Controls.Add(this.lbTitle);
             this.panel3.Controls.Add(this.icon);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(20, 30);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 190);
+            this.panel3.Size = new System.Drawing.Size(290, 148);
             this.panel3.TabIndex = 10;
             // 
             // lbMotto
             // 
-            this.lbMotto.AutoSize = true;
+            this.lbMotto.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbMotto.Font = new System.Drawing.Font("Calibri Light", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMotto.Location = new System.Drawing.Point(52, 123);
+            this.lbMotto.Location = new System.Drawing.Point(0, 98);
             this.lbMotto.Name = "lbMotto";
-            this.lbMotto.Size = new System.Drawing.Size(196, 23);
+            this.lbMotto.Size = new System.Drawing.Size(290, 50);
             this.lbMotto.TabIndex = 2;
             this.lbMotto.Text = "Your english, your future";
+            this.lbMotto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbTitle
             // 
             this.lbTitle.AutoSize = true;
-            this.lbTitle.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.Location = new System.Drawing.Point(108, 76);
+            this.lbTitle.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Location = new System.Drawing.Point(100, 45);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(135, 23);
+            this.lbTitle.Size = new System.Drawing.Size(171, 29);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Daily Dictionary";
             // 
             // icon
             // 
             this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
-            this.icon.Location = new System.Drawing.Point(47, 63);
+            this.icon.Location = new System.Drawing.Point(30, 25);
             this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(50, 50);
+            this.icon.Size = new System.Drawing.Size(65, 65);
             this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.icon.TabIndex = 0;
             this.icon.TabStop = false;
@@ -109,10 +109,29 @@
             this.panel4.Controls.Add(this.pnlUsername);
             this.panel4.Controls.Add(this.pnlPassword);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 190);
+            this.panel4.Location = new System.Drawing.Point(20, 178);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 360);
+            this.panel4.Size = new System.Drawing.Size(290, 352);
             this.panel4.TabIndex = 13;
+            // 
+            // tbName
+            // 
+            this.tbName.BackColor = System.Drawing.Color.White;
+            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName.Location = new System.Drawing.Point(42, 248);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(216, 22);
+            this.tbName.TabIndex = 15;
+            this.tbName.UseSystemPasswordChar = true;
+            // 
+            // pnlName
+            // 
+            this.pnlName.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlName.Location = new System.Drawing.Point(42, 274);
+            this.pnlName.Name = "pnlName";
+            this.pnlName.Size = new System.Drawing.Size(216, 1);
+            this.pnlName.TabIndex = 14;
             // 
             // lbUsername
             // 
@@ -127,7 +146,7 @@
             // 
             // tbUsername
             // 
-            this.tbUsername.BackColor = System.Drawing.SystemColors.Control;
+            this.tbUsername.BackColor = System.Drawing.Color.White;
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsername.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsername.Location = new System.Drawing.Point(42, 38);
@@ -140,7 +159,7 @@
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPassword.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbPassword.Location = new System.Drawing.Point(38, 75);
+            this.lbPassword.Location = new System.Drawing.Point(38, 80);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(77, 21);
             this.lbPassword.TabIndex = 7;
@@ -148,10 +167,10 @@
             // 
             // tbPassword
             // 
-            this.tbPassword.BackColor = System.Drawing.SystemColors.Control;
+            this.tbPassword.BackColor = System.Drawing.Color.White;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(42, 103);
+            this.tbPassword.Location = new System.Drawing.Point(42, 108);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(216, 22);
             this.tbPassword.TabIndex = 1;
@@ -164,7 +183,7 @@
             this.lbConfirm.AutoSize = true;
             this.lbConfirm.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbConfirm.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbConfirm.Location = new System.Drawing.Point(38, 140);
+            this.lbConfirm.Location = new System.Drawing.Point(38, 150);
             this.lbConfirm.Name = "lbConfirm";
             this.lbConfirm.Size = new System.Drawing.Size(137, 21);
             this.lbConfirm.TabIndex = 11;
@@ -172,10 +191,10 @@
             // 
             // tbConfirm
             // 
-            this.tbConfirm.BackColor = System.Drawing.SystemColors.Control;
+            this.tbConfirm.BackColor = System.Drawing.Color.White;
             this.tbConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbConfirm.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbConfirm.Location = new System.Drawing.Point(42, 168);
+            this.tbConfirm.Location = new System.Drawing.Point(42, 178);
             this.tbConfirm.Name = "tbConfirm";
             this.tbConfirm.Size = new System.Drawing.Size(216, 22);
             this.tbConfirm.TabIndex = 2;
@@ -186,7 +205,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lbName.Location = new System.Drawing.Point(38, 205);
+            this.lbName.Location = new System.Drawing.Point(38, 220);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(51, 21);
             this.lbName.TabIndex = 13;
@@ -199,7 +218,7 @@
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btLogin.Location = new System.Drawing.Point(24, 295);
+            this.btLogin.Location = new System.Drawing.Point(20, 295);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(115, 45);
             this.btLogin.TabIndex = 4;
@@ -210,11 +229,12 @@
             // btCancel
             // 
             this.btCancel.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btCancel.FlatAppearance.BorderSize = 0;
             this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCancel.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btCancel.Location = new System.Drawing.Point(162, 295);
+            this.btCancel.Location = new System.Drawing.Point(155, 295);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(115, 45);
             this.btCancel.TabIndex = 5;
@@ -225,7 +245,7 @@
             // pnlConfirm
             // 
             this.pnlConfirm.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pnlConfirm.Location = new System.Drawing.Point(42, 194);
+            this.pnlConfirm.Location = new System.Drawing.Point(42, 204);
             this.pnlConfirm.Name = "pnlConfirm";
             this.pnlConfirm.Size = new System.Drawing.Size(216, 1);
             this.pnlConfirm.TabIndex = 4;
@@ -241,42 +261,27 @@
             // pnlPassword
             // 
             this.pnlPassword.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pnlPassword.Location = new System.Drawing.Point(42, 125);
+            this.pnlPassword.Location = new System.Drawing.Point(42, 130);
             this.pnlPassword.Name = "pnlPassword";
             this.pnlPassword.Size = new System.Drawing.Size(216, 1);
             this.pnlPassword.TabIndex = 3;
             // 
-            // pnlName
-            // 
-            this.pnlName.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pnlName.Location = new System.Drawing.Point(42, 259);
-            this.pnlName.Name = "pnlName";
-            this.pnlName.Size = new System.Drawing.Size(216, 1);
-            this.pnlName.TabIndex = 14;
-            // 
-            // tbName
-            // 
-            this.tbName.BackColor = System.Drawing.SystemColors.Control;
-            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbName.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbName.Location = new System.Drawing.Point(42, 233);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(216, 22);
-            this.tbName.TabIndex = 15;
-            this.tbName.UseSystemPasswordChar = true;
-            // 
             // Form_Signup
             // 
+            this.AcceptButton = this.btLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 550);
+            this.CancelButton = this.btCancel;
+            this.ClientSize = new System.Drawing.Size(330, 550);
+            this.ControlBox = false;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Form_Signup";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
+            this.Resizable = false;
             this.Text = "Form_Signup";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

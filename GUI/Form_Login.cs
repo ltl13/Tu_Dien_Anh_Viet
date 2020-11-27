@@ -4,16 +4,13 @@ using System;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
+using System.Threading;
 
 namespace GUI {
     public partial class Form_Login : MetroFramework.Forms.MetroForm {
         #region properties
         public Form_Login() {
             InitializeComponent();
-            this.tbUsername.Text = string.Empty;
-            this.tbPassword.Text = string.Empty;
-            this.AcceptButton = btLogin;
-            this.CancelButton = btExit;
             this.FocusMe();
         }
         #endregion
@@ -37,13 +34,23 @@ namespace GUI {
             }
 
             if (Login(userName, passWord)) {
-                AccountDTO loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);           
-                Form_Main fMain = new Form_Main(loginAccount, this);                
+                this.metroProgressSpinnerWait.Visible = true;
+                for (int i = 0; i <= 100; i++) {
+                    Thread.Sleep(5);
+                    metroProgressSpinnerWait.Value = i;
+                    metroProgressSpinnerWait.Update();
+                }
+
+                AccountDTO loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);
+                Form_Main fMain = new Form_Main(loginAccount, this);
                 fMain.Show();
+                this.tbUsername.Select();
                 this.Hide();
+                this.metroProgressSpinnerWait.Visible = false;
+                this.tbUsername.Focus();
                 this.tbUsername.Text = string.Empty;
                 this.tbPassword.Text = string.Empty;
-                this.tbUsername.Focus();
+                
             }
             else {
                 tbUsername.Text = string.Empty;

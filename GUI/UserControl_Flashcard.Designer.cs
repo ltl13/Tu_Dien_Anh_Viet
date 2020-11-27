@@ -65,10 +65,11 @@
             // 
             this.panel_Viet.BackColor = System.Drawing.Color.Transparent;
             this.panel_Viet.Controls.Add(this.label_Viet);
+            this.panel_Viet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Viet.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Viet.Location = new System.Drawing.Point(43, 107);
+            this.panel_Viet.Location = new System.Drawing.Point(0, 0);
             this.panel_Viet.Name = "panel_Viet";
-            this.panel_Viet.Size = new System.Drawing.Size(419, 54);
+            this.panel_Viet.Size = new System.Drawing.Size(504, 309);
             this.panel_Viet.TabIndex = 4;
             // 
             // label_Viet
@@ -77,7 +78,7 @@
             this.label_Viet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_Viet.Location = new System.Drawing.Point(0, 0);
             this.label_Viet.Name = "label_Viet";
-            this.label_Viet.Size = new System.Drawing.Size(419, 54);
+            this.label_Viet.Size = new System.Drawing.Size(504, 309);
             this.label_Viet.TabIndex = 2;
             this.label_Viet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Viet.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Viet_MouseDown);
@@ -86,10 +87,11 @@
             // 
             this.panel_Eng.BackColor = System.Drawing.Color.Transparent;
             this.panel_Eng.Controls.Add(this.label_Eng);
+            this.panel_Eng.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Eng.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Eng.Location = new System.Drawing.Point(43, 107);
+            this.panel_Eng.Location = new System.Drawing.Point(0, 0);
             this.panel_Eng.Name = "panel_Eng";
-            this.panel_Eng.Size = new System.Drawing.Size(419, 54);
+            this.panel_Eng.Size = new System.Drawing.Size(504, 309);
             this.panel_Eng.TabIndex = 3;
             // 
             // label_Eng
@@ -98,7 +100,7 @@
             this.label_Eng.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_Eng.Location = new System.Drawing.Point(0, 0);
             this.label_Eng.Name = "label_Eng";
-            this.label_Eng.Size = new System.Drawing.Size(419, 54);
+            this.label_Eng.Size = new System.Drawing.Size(504, 309);
             this.label_Eng.TabIndex = 2;
             this.label_Eng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Eng.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Eng_MouseDown);

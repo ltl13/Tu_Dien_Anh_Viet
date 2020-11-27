@@ -10,8 +10,6 @@ namespace GUI {
 
         public Form_Signup(Form login) {
             InitializeComponent();
-            this.AcceptButton = btLogin;
-            this.CancelButton = btCancel;
             this.father = login;
         }
         #endregion
