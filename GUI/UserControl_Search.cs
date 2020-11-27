@@ -10,13 +10,12 @@ using System.Windows.Forms;
 using BUS;
 using DTO;
 using System.Text.RegularExpressions;
-using MetroFramework.Controls;
 
 namespace GUI {
     public partial class UserControl_Search : UserControl {
         #region properties
-        private readonly DataTable dataTable = new DataTable();
-        private readonly DataTable dataTable1 = new DataTable();
+        private readonly DataTable dataTableEnVi = new DataTable();
+        private readonly DataTable dataTableViEn = new DataTable();
         public UserControl_WordInfo wordInfo;
         public bool isWordInfoOn = false;
         Timer _typingTimer;
@@ -27,10 +26,10 @@ namespace GUI {
             InitializeComponent();
 
             this.Father = formMain;
-            this.dataTable = DictionaryBUS.Instance.GetEnViTable();
-            this.dataTable1 = DictionaryBUS.Instance.GetViEnTable();
+            this.dataTableEnVi = DictionaryBUS.Instance.GetEnViTable();
+            this.dataTableViEn = DictionaryBUS.Instance.GetViEnTable();
 
-            listBox_Search.DataSource = dataTable;
+            listBox_Search.DataSource = dataTableEnVi;
             listBox_Search.Visible = false;
         }
         #endregion
@@ -43,7 +42,7 @@ namespace GUI {
                 _typingTimer.Tick += new EventHandler(this.handleTypingTimerTimeout);
             }
             _typingTimer.Stop();
-            _typingTimer.Tag = (sender as MetroTextBox).Text;
+            _typingTimer.Tag = (sender as MetroFramework.Controls.MetroTextBox).Text;
             _typingTimer.Start();
         }
 
@@ -70,8 +69,8 @@ namespace GUI {
 
                         metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Blue;
                         metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-                        dataTable.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
-                        var visibleDataTable = dataTable.DefaultView.ToTable().AsEnumerable().Take(12);
+                        dataTableEnVi.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
+                        var visibleDataTable = dataTableEnVi.DefaultView.ToTable().AsEnumerable().Take(12);
 
                         if (visibleDataTable.Count() > 0) {
                             listBox_Search.DataSource = visibleDataTable.CopyToDataTable();
@@ -87,16 +86,16 @@ namespace GUI {
                 else {
                     metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Blue;
                     metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-                    dataTable1.DefaultView.RowFilter = string.Format("VietNamese Like '{0}%'", metroTextBox_Searchbar.Text);
-                    var visibleDataTable = dataTable1.DefaultView.ToTable().AsEnumerable().Take(12);
+                    dataTableViEn.DefaultView.RowFilter = string.Format("VietNamese Like '{0}%'", metroTextBox_Searchbar.Text);
+                    var visibleDataTable = dataTableViEn.DefaultView.ToTable().AsEnumerable().Take(12);
 
                     if (visibleDataTable.Count() > 0) {
                         listBox_Search.DataSource = visibleDataTable.CopyToDataTable();
                         listBox_Search.DisplayMember = "VietNamese";
                     }
                     else if (visibleDataTable.Count() == 0) {
-                        dataTable1.DefaultView.RowFilter = string.Format("No_Accents_Mark_VietNamese Like '{0}%'", metroTextBox_Searchbar.Text);
-                        visibleDataTable = dataTable1.DefaultView.ToTable().AsEnumerable().Take(12);
+                        dataTableViEn.DefaultView.RowFilter = string.Format("No_Accents_Mark_VietNamese Like '{0}%'", metroTextBox_Searchbar.Text);
+                        visibleDataTable = dataTableViEn.DefaultView.ToTable().AsEnumerable().Take(12);
                         if (visibleDataTable.Count() > 0) {
                             listBox_Search.DataSource = visibleDataTable.CopyToDataTable();
                             listBox_Search.DisplayMember = "VietNamese";

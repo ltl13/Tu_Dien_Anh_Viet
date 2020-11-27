@@ -40,8 +40,8 @@ namespace GUI
             word1 = args;
             label_Word.Text = word1.VietNamese;
             rtb_vietnamese.Text = word1.English;
-            xuiButton_Interest.Visible = true;
-            xuiButton_NotInterest.Visible = true;
+            xuiButton_Interest.Visible = false;
+            xuiButton_NotInterest.Visible = false;
         }
 
         private void metroTile_Back_Click(object sender, EventArgs e) {
