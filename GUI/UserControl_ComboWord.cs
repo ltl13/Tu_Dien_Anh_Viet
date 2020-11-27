@@ -21,9 +21,24 @@ namespace GUI
             lb_comboWords.Hide();
         }
 
+        private void ResetSize(FlowLayoutPanel p)
+        {
+            if (p != flowLayoutPanel_ComboWord1)
+            { flowLayoutPanel_ComboWord1.Size = flowLayoutPanel_ComboWord1.MinimumSize; }
+            if (p != flowLayoutPanel_ComboWord2)
+            { flowLayoutPanel_ComboWord2.Size = flowLayoutPanel_ComboWord2.MinimumSize; }
+            if (p != flowLayoutPanel_ComboWord3)
+            { flowLayoutPanel_ComboWord3.Size = flowLayoutPanel_ComboWord3.MinimumSize; }
+            if (p != flowLayoutPanel_ComboWord4)
+            { flowLayoutPanel_ComboWord4.Size = flowLayoutPanel_ComboWord4.MinimumSize; }
+            if (p != flowLayoutPanel_ComboWord5)
+            { flowLayoutPanel_ComboWord5.Size = flowLayoutPanel_ComboWord5.MinimumSize; }
+        }
+
         #region Animal
         private void button_ComboWord1_MouseDown(object sender, MouseEventArgs e)
         {
+            ResetSize(flowLayoutPanel_ComboWord1);
             if (flowLayoutPanel_ComboWord1.Size == flowLayoutPanel_ComboWord1.MaximumSize)
             {
                 flowLayoutPanel_ComboWord1.Size = flowLayoutPanel_ComboWord1.MinimumSize;
@@ -205,6 +220,7 @@ namespace GUI
         #region Economic&ForeignTrade
         private void button_ComboWord2_MouseDown(object sender, MouseEventArgs e)
         {
+            ResetSize(flowLayoutPanel_ComboWord2);
             string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "economicAndForeignTrade" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
@@ -236,6 +252,7 @@ namespace GUI
         #region IrregularVerbs
         private void button_ComboWord3_MouseDown(object sender, MouseEventArgs e)
         {
+            ResetSize(flowLayoutPanel_ComboWord3);
             string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + "Irregular Verb" + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
@@ -267,6 +284,7 @@ namespace GUI
         #region InformationTechnology
         private void button_ComboWord4_MouseDown(object sender, MouseEventArgs e)
         {
+            ResetSize(flowLayoutPanel_ComboWord4);
             if (flowLayoutPanel_ComboWord4.Size == flowLayoutPanel_ComboWord4.MaximumSize)
             {
                 flowLayoutPanel_ComboWord4.Size = flowLayoutPanel_ComboWord4.MinimumSize;
@@ -382,6 +400,7 @@ namespace GUI
         #region Vegetables
         private void button_ComboWord5_MouseDown(object sender, MouseEventArgs e)
         {
+            ResetSize(flowLayoutPanel_ComboWord5);
             if (flowLayoutPanel_ComboWord5.Size == flowLayoutPanel_ComboWord5.MaximumSize)
             {
                 flowLayoutPanel_ComboWord5.Size = flowLayoutPanel_ComboWord5.MinimumSize;
