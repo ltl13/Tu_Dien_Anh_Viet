@@ -39,7 +39,7 @@ namespace GUI
             UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount, this);
             UserControl_Translate translate = new UserControl_Translate(this);
             UserControl_ComboWord comboWord = new UserControl_ComboWord();
-            UserControl_Exam exam = new UserControl_Exam();
+            UserControl_Exam exam = new UserControl_Exam(this);
             mainSearch = search;
             mainFlashcard = flashcard;
             mainTranslate = translate;

@@ -139,11 +139,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl_Exam1.cs">
+    <Compile Include="UserControl_Exam_Favorite.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl_Exam1.Designer.cs">
-      <DependentUpon>UserControl_Exam1.cs</DependentUpon>
+    <Compile Include="UserControl_Exam_Favorite.Designer.cs">
+      <DependentUpon>UserControl_Exam_Favorite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Exam_Combo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Exam_Combo.Designer.cs">
+      <DependentUpon>UserControl_Exam_Combo.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl_Exam.cs">
       <SubType>UserControl</SubType>
@@ -200,14 +206,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl_Exam_Favorite.resx">
+      <DependentUpon>UserControl_Exam_Favorite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Exam.resx">
       <DependentUpon>UserControl_Exam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_ComboWord.resx">
       <DependentUpon>UserControl_ComboWord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_Exam1.resx">
-      <DependentUpon>UserControl_Exam1.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl_Exam_Combo.resx">
+      <DependentUpon>UserControl_Exam_Combo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Flashcard.resx">
       <DependentUpon>UserControl_Flashcard.cs</DependentUpon>

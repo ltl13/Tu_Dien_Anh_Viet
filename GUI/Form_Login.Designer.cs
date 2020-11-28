@@ -34,11 +34,11 @@
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.btExit = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.metroProgressSpinnerWait = new MetroFramework.Controls.MetroProgressSpinner();
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbCreateNewAccount = new System.Windows.Forms.Label();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
+            this.xuiFlatProgressBar_Login = new XanderUI.XUIFlatProgressBar();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel4.SuspendLayout();
@@ -156,7 +156,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.metroProgressSpinnerWait);
             this.panel4.Controls.Add(this.lbUsername);
             this.panel4.Controls.Add(this.tbUsername);
             this.panel4.Controls.Add(this.lbPassword);
@@ -171,17 +170,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(290, 352);
             this.panel4.TabIndex = 12;
-            // 
-            // metroProgressSpinnerWait
-            // 
-            this.metroProgressSpinnerWait.Enabled = false;
-            this.metroProgressSpinnerWait.Location = new System.Drawing.Point(95, 89);
-            this.metroProgressSpinnerWait.Maximum = 100;
-            this.metroProgressSpinnerWait.Name = "metroProgressSpinnerWait";
-            this.metroProgressSpinnerWait.Size = new System.Drawing.Size(100, 100);
-            this.metroProgressSpinnerWait.TabIndex = 13;
-            this.metroProgressSpinnerWait.UseSelectable = true;
-            this.metroProgressSpinnerWait.Visible = false;
             // 
             // lbUsername
             // 
@@ -223,6 +211,19 @@
             this.pnlPassword.Size = new System.Drawing.Size(216, 1);
             this.pnlPassword.TabIndex = 3;
             // 
+            // xuiFlatProgressBar_Login
+            // 
+            this.xuiFlatProgressBar_Login.BarStyle = XanderUI.XUIFlatProgressBar.Style.Flat;
+            this.xuiFlatProgressBar_Login.BarThickness = 5;
+            this.xuiFlatProgressBar_Login.CompleteColor = System.Drawing.Color.LightSeaGreen;
+            this.xuiFlatProgressBar_Login.InocmpletedColor = System.Drawing.Color.Transparent;
+            this.xuiFlatProgressBar_Login.Location = new System.Drawing.Point(-7, 542);
+            this.xuiFlatProgressBar_Login.MaxValue = 100;
+            this.xuiFlatProgressBar_Login.Name = "xuiFlatProgressBar_Login";
+            this.xuiFlatProgressBar_Login.Size = new System.Drawing.Size(345, 10);
+            this.xuiFlatProgressBar_Login.TabIndex = 14;
+            this.xuiFlatProgressBar_Login.Value = 0;
+            // 
             // Form_Login
             // 
             this.AcceptButton = this.btLogin;
@@ -231,6 +232,7 @@
             this.CancelButton = this.btExit;
             this.ClientSize = new System.Drawing.Size(330, 550);
             this.ControlBox = false;
+            this.Controls.Add(this.xuiFlatProgressBar_Login);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.DisplayHeader = false;
@@ -264,6 +266,6 @@
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.Panel pnlUsername;
         private System.Windows.Forms.Panel pnlPassword;
-        private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinnerWait;
+        private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Login;
     }
 }
