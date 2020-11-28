@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Exam));
             this.splitContainer_Exam = new System.Windows.Forms.SplitContainer();
             this.metroTile_ComboWord = new MetroFramework.Controls.MetroTile();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_ComboWord = new System.Windows.Forms.Label();
             this.pictureBox_ComboWord = new System.Windows.Forms.PictureBox();
             this.metroTile_Favorite = new MetroFramework.Controls.MetroTile();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label_Favorite = new System.Windows.Forms.Label();
+            this.pictureBox_Favorite = new System.Windows.Forms.PictureBox();
             this.panel_Lock = new System.Windows.Forms.Panel();
             this.label_Lock = new System.Windows.Forms.Label();
             this.pictureBox_Lock = new System.Windows.Forms.PictureBox();
@@ -46,7 +46,7 @@
             this.metroTile_ComboWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).BeginInit();
             this.metroTile_Favorite.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Favorite)).BeginInit();
             this.panel_Lock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Lock)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             // metroTile_ComboWord
             // 
             this.metroTile_ComboWord.ActiveControl = null;
-            this.metroTile_ComboWord.Controls.Add(this.label1);
+            this.metroTile_ComboWord.Controls.Add(this.label_ComboWord);
             this.metroTile_ComboWord.Controls.Add(this.pictureBox_ComboWord);
             this.metroTile_ComboWord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile_ComboWord.Location = new System.Drawing.Point(0, 0);
@@ -83,18 +83,20 @@
             this.metroTile_ComboWord.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile_ComboWord.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile_ComboWord.UseSelectable = true;
+            this.metroTile_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.metroTile_ComboWord_MouseDown);
             // 
-            // label1
+            // label_ComboWord
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(46, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 40);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bộ từ vựng";
+            this.label_ComboWord.AutoSize = true;
+            this.label_ComboWord.BackColor = System.Drawing.Color.Transparent;
+            this.label_ComboWord.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ComboWord.ForeColor = System.Drawing.Color.White;
+            this.label_ComboWord.Location = new System.Drawing.Point(46, 85);
+            this.label_ComboWord.Name = "label_ComboWord";
+            this.label_ComboWord.Size = new System.Drawing.Size(171, 40);
+            this.label_ComboWord.TabIndex = 1;
+            this.label_ComboWord.Text = "Bộ từ vựng";
+            this.label_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_ComboWord_MouseDown);
             // 
             // pictureBox_ComboWord
             // 
@@ -105,12 +107,13 @@
             this.pictureBox_ComboWord.Size = new System.Drawing.Size(65, 71);
             this.pictureBox_ComboWord.TabIndex = 0;
             this.pictureBox_ComboWord.TabStop = false;
+            this.pictureBox_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_ComboWord_MouseDown);
             // 
             // metroTile_Favorite
             // 
             this.metroTile_Favorite.ActiveControl = null;
-            this.metroTile_Favorite.Controls.Add(this.label2);
-            this.metroTile_Favorite.Controls.Add(this.pictureBox1);
+            this.metroTile_Favorite.Controls.Add(this.label_Favorite);
+            this.metroTile_Favorite.Controls.Add(this.pictureBox_Favorite);
             this.metroTile_Favorite.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile_Favorite.Location = new System.Drawing.Point(0, 0);
             this.metroTile_Favorite.Name = "metroTile_Favorite";
@@ -123,28 +126,31 @@
             this.metroTile_Favorite.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile_Favorite.UseSelectable = true;
             this.metroTile_Favorite.UseStyleColors = true;
+            this.metroTile_Favorite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.metroTile_Favorite_MouseDown);
             // 
-            // label2
+            // label_Favorite
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(49, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 40);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Từ yêu thích";
+            this.label_Favorite.AutoSize = true;
+            this.label_Favorite.BackColor = System.Drawing.Color.Transparent;
+            this.label_Favorite.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Favorite.ForeColor = System.Drawing.Color.White;
+            this.label_Favorite.Location = new System.Drawing.Point(49, 84);
+            this.label_Favorite.Name = "label_Favorite";
+            this.label_Favorite.Size = new System.Drawing.Size(186, 40);
+            this.label_Favorite.TabIndex = 1;
+            this.label_Favorite.Text = "Từ yêu thích";
+            this.label_Favorite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Favorite_MouseDown);
             // 
-            // pictureBox1
+            // pictureBox_Favorite
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(105, 172);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 71);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_Favorite.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Favorite.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Favorite.Image")));
+            this.pictureBox_Favorite.Location = new System.Drawing.Point(105, 172);
+            this.pictureBox_Favorite.Name = "pictureBox_Favorite";
+            this.pictureBox_Favorite.Size = new System.Drawing.Size(65, 71);
+            this.pictureBox_Favorite.TabIndex = 0;
+            this.pictureBox_Favorite.TabStop = false;
+            this.pictureBox_Favorite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Favorite_MouseDown);
             // 
             // panel_Lock
             // 
@@ -187,6 +193,7 @@
             this.Controls.Add(this.splitContainer_Exam);
             this.Name = "UserControl_Exam";
             this.Size = new System.Drawing.Size(624, 516);
+            this.VisibleChanged += new System.EventHandler(this.UserControl_Exam_VisibleChanged);
             this.splitContainer_Exam.Panel1.ResumeLayout(false);
             this.splitContainer_Exam.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_Exam)).EndInit();
@@ -196,7 +203,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).EndInit();
             this.metroTile_Favorite.ResumeLayout(false);
             this.metroTile_Favorite.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Favorite)).EndInit();
             this.panel_Lock.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Lock)).EndInit();
             this.ResumeLayout(false);
@@ -208,10 +215,10 @@
         private System.Windows.Forms.SplitContainer splitContainer_Exam;
         private MetroFramework.Controls.MetroTile metroTile_ComboWord;
         private System.Windows.Forms.PictureBox pictureBox_ComboWord;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_ComboWord;
         private MetroFramework.Controls.MetroTile metroTile_Favorite;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label_Favorite;
+        private System.Windows.Forms.PictureBox pictureBox_Favorite;
         private System.Windows.Forms.Panel panel_Lock;
         private System.Windows.Forms.Label label_Lock;
         private System.Windows.Forms.PictureBox pictureBox_Lock;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class UserControl_Exam1 : UserControl
+    public partial class UserControl_Exam_Favorite : UserControl
     {
-        public UserControl_Exam1()
+        public UserControl_Exam_Favorite(UserControl_Exam previous)
         {
             InitializeComponent();
         }

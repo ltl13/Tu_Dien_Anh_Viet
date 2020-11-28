@@ -34,11 +34,12 @@ namespace GUI {
             }
 
             if (Login(userName, passWord)) {
-                this.metroProgressSpinnerWait.Visible = true;
-                for (int i = 0; i <= 100; i++) {
-                    Thread.Sleep(5);
-                    metroProgressSpinnerWait.Value = i;
-                    metroProgressSpinnerWait.Update();
+                xuiFlatProgressBar_Login.Visible = true;
+                for(int i = 0; i < 100; i++)
+                {
+                    Thread.Sleep(10);
+                    xuiFlatProgressBar_Login.Value = i;
+                    xuiFlatProgressBar_Login.Update();
                 }
 
                 AccountDTO loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);
@@ -46,7 +47,7 @@ namespace GUI {
                 fMain.Show();
                 this.tbUsername.Select();
                 this.Hide();
-                this.metroProgressSpinnerWait.Visible = false;
+                xuiFlatProgressBar_Login.Visible = false;
                 this.tbUsername.Focus();
                 this.tbUsername.Text = string.Empty;
                 this.tbPassword.Text = string.Empty;
