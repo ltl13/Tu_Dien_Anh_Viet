@@ -14,6 +14,9 @@ namespace GUI
     {
         private UserControl_Exam father;
         private UserControl_Exam_Do doExam;
+        private string time;
+        private string number;
+
         public UserControl_Exam_Favorite(UserControl_Exam previous)
         {
             InitializeComponent();
@@ -21,10 +24,12 @@ namespace GUI
         }
 
         public UserControl_Exam_Do DoExam { get => doExam; set => doExam = value; }
+        public string Time { get => time; set => time = value; }
+        public string Number { get => number; set => number = value; }
 
         private void xuiButton_Start_Click(object sender, EventArgs e)
         {
-            DoExam = new UserControl_Exam_Do(father);
+            doExam = new UserControl_Exam_Do(father, false);
             father.father.panel_Main.Controls.Add(doExam);
             DoExam.BringToFront();
         }
