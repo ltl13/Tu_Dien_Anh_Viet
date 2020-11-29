@@ -46,13 +46,9 @@ namespace BUS {
             return DictionaryDAO.Instance.LoadSavedFavoriteWord();
         }
 
-        //public bool AddFavorite(AccountDTO loginAccount, EnViDTO word) {
-        //    return DictionaryDAO.Instance.AddFavorite(loginAccount, word);
-        //}
-
-        //public DataTable GetListFavorite(AccountDTO loginAccount) {
-        //    return DictionaryDAO.Instance.GetListFavorite(loginAccount);
-        //}
+        public string run_cmd(string cmd, string args) {
+            return DictionaryDAO.Instance.run_cmd(cmd, args);
+        }
         #endregion
     }
 }

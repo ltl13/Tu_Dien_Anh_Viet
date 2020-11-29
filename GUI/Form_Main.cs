@@ -22,6 +22,7 @@ namespace GUI
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private Form father;
+        private bool isEnToVi = true;
 
         public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
         public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
@@ -32,7 +33,7 @@ namespace GUI
 
             this.FocusMe();
             this.loginAccount = loginAccount;
-            this.Favorite = BUS.DictionaryBUS.Instance.LoadSavedFavoriteWord();
+            this.favorite = BUS.DictionaryBUS.Instance.LoadSavedFavoriteWord();
             this.father = login;
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
@@ -395,7 +396,6 @@ namespace GUI
             if (!isTranslateClick)
             {
                 ReturnClick(panel_Translate);
-                changeLanguage(isEnToVi);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isTranslateClick = true;
                 mainTranslate.Visible = true;
@@ -575,23 +575,15 @@ namespace GUI
             BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
         }
 
-        private bool isEnToVi = true;
         public bool IsEnToVi
         {
             get { return isEnToVi; }
             set { isEnToVi = value; }
         }
 
-        private void changeLanguage(bool EnToVi)
-        {
-            if (EnToVi) { mainTranslate.button_Translate.Text = "Translate"; }
-            else { mainTranslate.button_Translate.Text = "Dịch"; }
-        }
-
         private void xuiSwitch_Language_MouseDown(object sender, MouseEventArgs e) 
         {
             isEnToVi = !isEnToVi;
-            changeLanguage(isEnToVi);
         }
 
         private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {
