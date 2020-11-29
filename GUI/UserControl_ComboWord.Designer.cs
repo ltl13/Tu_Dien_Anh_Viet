@@ -590,7 +590,7 @@
             this.xuiButton_Herbs_Spices.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.xuiButton_Herbs_Spices.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Herbs_Spices.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_Herbs_Spices.HoverTextColor = System.Drawing.Color.BlanchedAlmond;
+            this.xuiButton_Herbs_Spices.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_Herbs_Spices.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton_Herbs_Spices.Location = new System.Drawing.Point(3, 224);
             this.xuiButton_Herbs_Spices.Name = "xuiButton_Herbs_Spices";
@@ -626,7 +626,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(10, 38);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 92;
