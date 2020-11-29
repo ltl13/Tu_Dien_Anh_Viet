@@ -15,6 +15,7 @@ namespace GUI
         #region properties
         Form_Main father;
         string _translatedText;
+        Timer _typingTimer;
 
         public UserControl_Translate(Form_Main form_Main) {
             InitializeComponent();
@@ -23,39 +24,46 @@ namespace GUI
         #endregion
 
         #region method
-        private void xuiButton_Translate_Click(object sender, EventArgs e)
-        {
-            if (richTextBox_From.Text == string.Empty)
-            {
+        private void richTextBox_From_TextChanged(object sender, EventArgs e) {
+            if (_typingTimer == null) {
+                _typingTimer = new Timer();
+                _typingTimer.Interval = 1000;
+                _typingTimer.Tick += new EventHandler(this.handleTypingTimerTimeout);
+            }
+            _typingTimer.Stop();
+            _typingTimer.Tag = (sender as RichTextBox).Text;
+            _typingTimer.Start();
+        }
+
+        private void handleTypingTimerTimeout(object sender, EventArgs e) {
+            var timer = sender as Timer;
+            if (timer == null) {
+                return;
+            }
+            if (richTextBox_From.Text == string.Empty) {
                 richTextBox_To.Text = string.Empty;
                 return;
             }
 
-            if (father.IsEnToVi)
-            {
-                try
-                {
+            if (father.IsEnToVi) {
+                try {
                     TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
                     client = new TranslatorService.LanguageServiceClient();
                     _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "vi");
                     richTextBox_To.Text = _translatedText;
                 }
-                catch (Exception ex)
-                {
+                catch (Exception ex) {
                     MessageBox.Show(ex.Message);
                 }
             }
-            else
-            {
-                try
-                {
+            else {
+                try {
                     TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
                     client = new TranslatorService.LanguageServiceClient();
                     _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "en");
                     richTextBox_To.Text = _translatedText;
                 }
-                catch (Exception ex)
-                {
+                catch (Exception ex) {
                     MessageBox.Show(ex.Message);
                 }
             }
