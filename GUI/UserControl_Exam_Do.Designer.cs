@@ -38,9 +38,9 @@
             this.xuiButton_Back = new XanderUI.XUIButton();
             this.label_Question = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroProgressSpinner1 = new MetroFramework.Controls.MetroProgressSpinner();
+            this.metroProgressSpinner_Time = new MetroFramework.Controls.MetroProgressSpinner();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label_RightAnswer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // xuiButton_Answer1
@@ -195,14 +195,16 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // metroProgressSpinner1
+            // metroProgressSpinner_Time
             // 
-            this.metroProgressSpinner1.Location = new System.Drawing.Point(3, 3);
-            this.metroProgressSpinner1.Maximum = 100;
-            this.metroProgressSpinner1.Name = "metroProgressSpinner1";
-            this.metroProgressSpinner1.Size = new System.Drawing.Size(48, 51);
-            this.metroProgressSpinner1.TabIndex = 7;
-            this.metroProgressSpinner1.UseSelectable = true;
+            this.metroProgressSpinner_Time.Location = new System.Drawing.Point(3, 3);
+            this.metroProgressSpinner_Time.Maximum = 100;
+            this.metroProgressSpinner_Time.Name = "metroProgressSpinner_Time";
+            this.metroProgressSpinner_Time.Size = new System.Drawing.Size(48, 51);
+            this.metroProgressSpinner_Time.Spinning = false;
+            this.metroProgressSpinner_Time.TabIndex = 7;
+            this.metroProgressSpinner_Time.UseSelectable = true;
+            this.metroProgressSpinner_Time.Value = 100;
             // 
             // label1
             // 
@@ -213,22 +215,21 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Right answers:";
             // 
-            // label2
+            // label_RightAnswer
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(254, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 29);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Right answers:";
+            this.label_RightAnswer.AutoSize = true;
+            this.label_RightAnswer.Location = new System.Drawing.Point(254, 25);
+            this.label_RightAnswer.Name = "label_RightAnswer";
+            this.label_RightAnswer.Size = new System.Drawing.Size(0, 29);
+            this.label_RightAnswer.TabIndex = 9;
             // 
             // UserControl_Exam_Do
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label_RightAnswer);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.metroProgressSpinner1);
+            this.Controls.Add(this.metroProgressSpinner_Time);
             this.Controls.Add(this.label_Question);
             this.Controls.Add(this.xuiButton_Back);
             this.Controls.Add(this.xuiButton_Answer4);
@@ -254,8 +255,8 @@
         private XanderUI.XUIButton xuiButton_Back;
         private System.Windows.Forms.Label label_Question;
         private System.Windows.Forms.Timer timer1;
-        private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinner1;
+        private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinner_Time;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_RightAnswer;
     }
 }

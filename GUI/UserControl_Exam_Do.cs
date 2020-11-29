@@ -75,13 +75,13 @@ namespace GUI
             label_Question.Text = grandfather.key[0].ToString();
             grandfather.listQuestion.Add(grandfather.key);
 
-            //timer1.Start();
-            //lb_thoigian.Text = counter.ToString();
+            timer1.Start();
+            metroProgressSpinner_Time.Value = 100;
         }
 
         public void ketthuc()
         {
-            //timer1.Stop();
+            timer1.Stop();
             MessageBox.Show("Điểm của bạn là: " + socaudung.ToString());
             xuiButton_Answer1.Enabled = false;
             xuiButton_Answer2.Enabled = false;
@@ -96,7 +96,7 @@ namespace GUI
         {
             socaudung = 0;
             socau = grandfather.Number;
-            //lb_socaudung.Text = "0";
+            label_RightAnswer.Text = "0";
             grandfather.listQuestion.Clear();
             grandfather.listAnswer.Clear();
             xuiButton_Answer1.Enabled = true;
@@ -109,7 +109,7 @@ namespace GUI
         private void timer1_Tick(object sender, EventArgs e)
         {
             time--;
-            //lb_thoigian.Text = time.ToString();
+            metroProgressSpinner_Time.Value = (time / (time + 1)) * 100;
             if (time == 0)
             {
                 taotrachnghiem();
@@ -122,7 +122,7 @@ namespace GUI
             if (grandfather.key[2] == xuiButton_Answer1.ButtonText)
             {
                 socaudung++;
-                //lb_socaudung.Text = socaudung.ToString();
+                label_RightAnswer.Text = socaudung.ToString();
             }
             if (socau-- > 1) taotrachnghiem();
             else ketthuc();
@@ -133,7 +133,7 @@ namespace GUI
             if (grandfather.key[2] == xuiButton_Answer2.ButtonText)
             {
                 socaudung++;
-                //lb_socaudung.Text = socaudung.ToString();
+                label_RightAnswer.Text = socaudung.ToString();
             }
             if (socau-- > 1) taotrachnghiem();
             else ketthuc();
@@ -144,7 +144,7 @@ namespace GUI
             if (grandfather.key[2] == xuiButton_Answer3.ButtonText)
             {
                 socaudung++;
-                //lb_socaudung.Text = socaudung.ToString();
+                label_RightAnswer.Text = socaudung.ToString();
             }
             if (socau-- > 1) taotrachnghiem();
             else ketthuc();
@@ -155,7 +155,7 @@ namespace GUI
             if (grandfather.key[2] == xuiButton_Answer4.ButtonText)
             {
                 socaudung++;
-                //lb_socaudung.Text = socaudung.ToString();
+                label_RightAnswer.Text = socaudung.ToString();
             }
             if (socau-- > 1) taotrachnghiem();
             else ketthuc();
