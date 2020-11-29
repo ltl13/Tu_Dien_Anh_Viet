@@ -151,7 +151,7 @@
             // 
             this.xuiButton_Delete.BackgroundColor = System.Drawing.Color.Transparent;
             this.xuiButton_Delete.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Delete.ButtonImage")));
-            this.xuiButton_Delete.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Delete.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_Delete.ButtonText = "Button";
             this.xuiButton_Delete.ClickBackColor = System.Drawing.Color.Red;
             this.xuiButton_Delete.ClickTextColor = System.Drawing.Color.Transparent;

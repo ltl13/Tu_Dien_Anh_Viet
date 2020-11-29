@@ -12,9 +12,9 @@ namespace GUI
 {
     public partial class UserControl_Exam : UserControl
     {
-        Form_Main father;
-        UserControl_Exam_Combo examCombo;
-        UserControl_Exam_Favorite examFavorite;
+        public Form_Main father;
+        private UserControl_Exam_Combo examCombo;
+        private UserControl_Exam_Favorite examFavorite;
         public UserControl_Exam(Form_Main main)
         {
             InitializeComponent();
@@ -52,8 +52,14 @@ namespace GUI
                 metroTile_Favorite.Enabled = true;
                 panel_Lock.Visible = false;
             }
-            if(examCombo != null) { examCombo.Dispose(); }
-            if(examFavorite != null) { examFavorite.Dispose(); }
+            if(examCombo != null) { 
+                examCombo.Dispose();
+                if(examCombo.DoExam != null) { examCombo.DoExam.Dispose(); }
+            }
+            if(examFavorite != null) { 
+                examFavorite.Dispose();
+                if(examFavorite.DoExam != null) { examFavorite.DoExam.Dispose(); }
+            }
         }
 
         private void metroTile_Favorite_MouseDown(object sender, MouseEventArgs e)

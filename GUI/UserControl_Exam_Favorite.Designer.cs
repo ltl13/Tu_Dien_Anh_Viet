@@ -56,6 +56,7 @@
             this.xuiButton_Start.TabIndex = 14;
             this.xuiButton_Start.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Start.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Start.Click += new System.EventHandler(this.xuiButton_Start_Click);
             // 
             // metroLabel_Time
             // 
