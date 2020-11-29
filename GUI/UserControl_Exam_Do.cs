@@ -13,7 +13,7 @@ namespace GUI
     public partial class UserControl_Exam_Do : UserControl
     {
         private UserControl_Exam grandfather;
-        public UserControl_Exam_Do(UserControl_Exam exam)
+        public UserControl_Exam_Do(UserControl_Exam exam, bool whatToDo)
         {
             InitializeComponent();
             grandfather = exam;
