@@ -143,7 +143,6 @@ namespace GUI {
             listBox_Search.Visible = false;
             metroTextBox_Searchbar.Text = "";
         }
-
         #endregion
     }
 }

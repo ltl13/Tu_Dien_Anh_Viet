@@ -12,76 +12,62 @@ namespace GUI
 {
     public partial class UserControl_Translate : UserControl
     {
+        #region properties
         Form_Main father;
-        public UserControl_Translate(Form_Main form_Main)
-        {
+        string _translatedText;
+        Timer _typingTimer;
+
+        public UserControl_Translate(Form_Main form_Main) {
             InitializeComponent();
             father = form_Main;
         }
+        #endregion
 
-        private void button_Translate_Click(object sender, EventArgs e)
-        {
-            if (father.IsEnToVi)
-            {
-                string strTranslatedText = null;
-                try
-                {
+        #region method
+        private void richTextBox_From_TextChanged(object sender, EventArgs e) {
+            if (_typingTimer == null) {
+                _typingTimer = new Timer();
+                _typingTimer.Interval = 1000;
+                _typingTimer.Tick += new EventHandler(this.handleTypingTimerTimeout);
+            }
+            _typingTimer.Stop();
+            _typingTimer.Tag = (sender as RichTextBox).Text;
+            _typingTimer.Start();
+        }
+
+        private void handleTypingTimerTimeout(object sender, EventArgs e) {
+            var timer = sender as Timer;
+            if (timer == null) {
+                return;
+            }
+            if (richTextBox_From.Text == string.Empty) {
+                richTextBox_To.Text = string.Empty;
+                return;
+            }
+
+            if (father.IsEnToVi) {
+                try {
                     TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
                     client = new TranslatorService.LanguageServiceClient();
-                    strTranslatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "vi");
-                    richTextBox_To.Text = strTranslatedText;
+                    _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "vi");
+                    richTextBox_To.Text = _translatedText;
                 }
-                catch (Exception ex)
-                {
+                catch (Exception ex) {
                     MessageBox.Show(ex.Message);
                 }
             }
-            else
-            {
-                string strTranslatedText = null;
-                try
-                {
+            else {
+                try {
                     TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
                     client = new TranslatorService.LanguageServiceClient();
-                    strTranslatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "en");
-                    richTextBox_To.Text = strTranslatedText;
+                    _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "en");
+                    richTextBox_To.Text = _translatedText;
                 }
-                catch (Exception ex)
-                {
+                catch (Exception ex) {
                     MessageBox.Show(ex.Message);
                 }
             }
         }
     }
-    /*private void bt_trans_EngToViet_Click(object sender, EventArgs e)
-        {
-            string strTranslatedText = null;
-            try
-            {
-                TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
-                client = new TranslatorService.LanguageServiceClient();
-                strTranslatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", tb_sensten.Text, "", "vi");
-                tb_translate.Text = strTranslatedText;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void bt_dich_VietToEng_Click(object sender, EventArgs e)
-        {
-            string strTranslatedText = null;
-            try
-            {
-                TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
-                client = new TranslatorService.LanguageServiceClient();
-                strTranslatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", tb_sensten.Text, "", "en");
-                tb_translate.Text = strTranslatedText;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }*/
+    #endregion
 }
