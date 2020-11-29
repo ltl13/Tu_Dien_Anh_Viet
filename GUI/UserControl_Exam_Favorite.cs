@@ -12,9 +12,21 @@ namespace GUI
 {
     public partial class UserControl_Exam_Favorite : UserControl
     {
+        private UserControl_Exam father;
+        private UserControl_Exam_Do doExam;
         public UserControl_Exam_Favorite(UserControl_Exam previous)
         {
             InitializeComponent();
+            father = previous;
+        }
+
+        public UserControl_Exam_Do DoExam { get => doExam; set => doExam = value; }
+
+        private void xuiButton_Start_Click(object sender, EventArgs e)
+        {
+            DoExam = new UserControl_Exam_Do(father);
+            father.father.panel_Main.Controls.Add(doExam);
+            DoExam.BringToFront();
         }
     }
 }
