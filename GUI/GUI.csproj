@@ -139,6 +139,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl_Exam_Do.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Exam_Do.Designer.cs">
+      <DependentUpon>UserControl_Exam_Do.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Exam_Favorite.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,6 +212,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl_Exam_Do.resx">
+      <DependentUpon>UserControl_Exam_Do.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Exam_Favorite.resx">
       <DependentUpon>UserControl_Exam_Favorite.cs</DependentUpon>
     </EmbeddedResource>
