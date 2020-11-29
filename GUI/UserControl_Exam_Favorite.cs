@@ -24,7 +24,7 @@ namespace GUI
 
         private void xuiButton_Start_Click(object sender, EventArgs e)
         {
-            DoExam = new UserControl_Exam_Do(father);
+            DoExam = new UserControl_Exam_Do(father, false);
             father.father.panel_Main.Controls.Add(doExam);
             DoExam.BringToFront();
         }
