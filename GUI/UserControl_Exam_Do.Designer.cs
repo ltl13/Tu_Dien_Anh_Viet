@@ -41,6 +41,7 @@
             this.metroProgressSpinner_Time = new MetroFramework.Controls.MetroProgressSpinner();
             this.label1 = new System.Windows.Forms.Label();
             this.label_RightAnswer = new System.Windows.Forms.Label();
+            this.label_time = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // xuiButton_Answer1
@@ -223,10 +224,19 @@
             this.label_RightAnswer.Size = new System.Drawing.Size(0, 29);
             this.label_RightAnswer.TabIndex = 9;
             // 
+            // label_time
+            // 
+            this.label_time.AutoSize = true;
+            this.label_time.Location = new System.Drawing.Point(12, 76);
+            this.label_time.Name = "label_time";
+            this.label_time.Size = new System.Drawing.Size(0, 29);
+            this.label_time.TabIndex = 10;
+            // 
             // UserControl_Exam_Do
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label_time);
             this.Controls.Add(this.label_RightAnswer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroProgressSpinner_Time);
@@ -258,5 +268,6 @@
         private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinner_Time;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_RightAnswer;
+        private System.Windows.Forms.Label label_time;
     }
 }

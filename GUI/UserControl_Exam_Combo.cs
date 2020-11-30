@@ -31,10 +31,8 @@ namespace GUI
             father.Time = Int32.Parse(metroTextBox_Time.Text);
             father.Number = Int32.Parse(metroTextBox_Number.Text);
 
-
-
             doExam = new UserControl_Exam_Do(father,true);
-            Father.father.panel_Main.Controls.Add(doExam);
+            Father.Father.panel_Main.Controls.Add(doExam);
             DoExam.BringToFront();
         }
 
@@ -42,7 +40,7 @@ namespace GUI
         {
             comboBox_Branch.Items.Clear();
 
-            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + comboBox_Main.SelectedItem.ToString() + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\Exam\\" + comboBox_Main.SelectedItem.ToString() + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
 
             conn.Open();
@@ -69,7 +67,7 @@ namespace GUI
             father.listQuestion.Clear();
             father.dt.Clear();
 
-            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\" + comboBox_Main.SelectedItem.ToString() + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
+            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\Exam\\" + comboBox_Main.SelectedItem.ToString() + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
             OleDbConnection conn = new OleDbConnection(pathConn);
             conn.Open();
 

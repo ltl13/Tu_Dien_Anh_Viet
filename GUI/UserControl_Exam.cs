@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class UserControl_Exam : UserControl
     {
-        public Form_Main father;
+        private Form_Main father;
         private UserControl_Exam_Combo examCombo;
         private UserControl_Exam_Favorite examFavorite;
         private int time;
@@ -25,22 +25,23 @@ namespace GUI
 
         public int Time { get => time; set => time = value; }
         public int Number { get => number; set => number = value; }
+        public Form_Main Father { get => father; set => father = value; }
 
         public UserControl_Exam(Form_Main main)
         {
             InitializeComponent();
-            father = main;
+            Father = main;
             
         }
 
         private void metroTile_ComboWord_MouseDown(object sender, MouseEventArgs e)
         {
             examCombo = new UserControl_Exam_Combo(this);
-            father.panel_Main.Controls.Add(examCombo);
+            Father.panel_Main.Controls.Add(examCombo);
             examCombo.Show();
             examCombo.BringToFront();
 
-            foreach (var child in Directory.GetFiles("..\\..\\..\\resources\\vocabulary"))
+            foreach (var child in Directory.GetFiles("..\\..\\..\\resources\\vocabulary\\Exam"))
             {
                 string name = Path.GetFileName(child);
                 if (name.Contains(".xls")) examCombo.comboBox_Main.Items.Add(name.Substring(0, name.Length - 4));
@@ -59,7 +60,7 @@ namespace GUI
 
         private void UserControl_Exam_VisibleChanged(object sender, EventArgs e)
         {
-            if (father.Favorite.Count < 10)
+            if (Father.Favorite.Count < 10)
             {
                 metroTile_Favorite.Enabled = false;
                 panel_Lock.Visible = true;
@@ -82,7 +83,7 @@ namespace GUI
         private void metroTile_Favorite_MouseDown(object sender, MouseEventArgs e)
         {
             examFavorite = new UserControl_Exam_Favorite(this);
-            father.panel_Main.Controls.Add(examFavorite);
+            Father.panel_Main.Controls.Add(examFavorite);
             examFavorite.Show();
             examFavorite.BringToFront();
         }
