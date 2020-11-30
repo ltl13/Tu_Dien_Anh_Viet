@@ -91,6 +91,7 @@ namespace GUI
             time = grandfather.Time;
             grandfather.listAnswer.Clear();
             var rand = new Random();
+            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / grandfather.Number * 100);
 
             for (int i = 0; i < 4; i++)
             {
@@ -126,6 +127,7 @@ namespace GUI
         public void ketthuc()
         {
             timer1.Stop();
+            xuiFlatProgressBar_Question.Value = 0;
             MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2));
 
             xuiButton_Answer1.Enabled = false;

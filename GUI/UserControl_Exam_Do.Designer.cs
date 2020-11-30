@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label_RightAnswer = new System.Windows.Forms.Label();
             this.label_time = new System.Windows.Forms.Label();
+            this.xuiFlatProgressBar_Question = new XanderUI.XUIFlatProgressBar();
             this.SuspendLayout();
             // 
             // xuiButton_Answer1
@@ -233,10 +234,24 @@
             this.label_time.Size = new System.Drawing.Size(0, 16);
             this.label_time.TabIndex = 10;
             // 
+            // xuiFlatProgressBar_Question
+            // 
+            this.xuiFlatProgressBar_Question.BarStyle = XanderUI.XUIFlatProgressBar.Style.Flat;
+            this.xuiFlatProgressBar_Question.BarThickness = 2;
+            this.xuiFlatProgressBar_Question.CompleteColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.xuiFlatProgressBar_Question.InocmpletedColor = System.Drawing.Color.Transparent;
+            this.xuiFlatProgressBar_Question.Location = new System.Drawing.Point(13, 48);
+            this.xuiFlatProgressBar_Question.MaxValue = 100;
+            this.xuiFlatProgressBar_Question.Name = "xuiFlatProgressBar_Question";
+            this.xuiFlatProgressBar_Question.Size = new System.Drawing.Size(597, 10);
+            this.xuiFlatProgressBar_Question.TabIndex = 11;
+            this.xuiFlatProgressBar_Question.Value = 100;
+            // 
             // UserControl_Exam_Do
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.xuiFlatProgressBar_Question);
             this.Controls.Add(this.label_time);
             this.Controls.Add(this.label_RightAnswer);
             this.Controls.Add(this.label1);
@@ -269,5 +284,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_RightAnswer;
         private System.Windows.Forms.Label label_time;
+        private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Question;
     }
 }
