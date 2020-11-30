@@ -78,5 +78,10 @@ namespace GUI
 
             metroTextBox_Number.WaterMark = "less than " + father.dt.Rows.Count.ToString();
         }
+
+        private void metroTextBox_Time_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)13) { xuiButton_Start_Click(null, null); }
+        }
     }
 }

@@ -177,7 +177,7 @@
             // label_Question
             // 
             this.label_Question.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Question.Location = new System.Drawing.Point(34, 58);
+            this.label_Question.Location = new System.Drawing.Point(34, 79);
             this.label_Question.Name = "label_Question";
             this.label_Question.Size = new System.Drawing.Size(548, 83);
             this.label_Question.TabIndex = 6;
@@ -204,20 +204,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 12);
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(260, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 17);
+            this.label1.Size = new System.Drawing.Size(61, 24);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Right answers:";
+            this.label1.Text = "Score:";
             // 
             // label_RightAnswer
             // 
             this.label_RightAnswer.AutoSize = true;
-            this.label_RightAnswer.Location = new System.Drawing.Point(158, 16);
+            this.label_RightAnswer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_RightAnswer.Location = new System.Drawing.Point(319, 0);
             this.label_RightAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_RightAnswer.Name = "label_RightAnswer";
-            this.label_RightAnswer.Size = new System.Drawing.Size(0, 17);
+            this.label_RightAnswer.Size = new System.Drawing.Size(0, 24);
             this.label_RightAnswer.TabIndex = 9;
             // 
             // label_time

@@ -126,7 +126,7 @@ namespace GUI
         public void ketthuc()
         {
             timer1.Stop();
-            MessageBox.Show("Điểm của bạn là: " + socaudung.ToString());
+            MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2));
 
             xuiButton_Answer1.Enabled = false;
             xuiButton_Answer2.Enabled = false;
@@ -141,7 +141,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer1.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number),2).ToString();
                 }
             }
             else
@@ -149,7 +149,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer1.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 
@@ -167,7 +167,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer2.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
             else
@@ -175,7 +175,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer2.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 
@@ -193,7 +193,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer3.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
             else
@@ -201,7 +201,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer3.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 
@@ -219,7 +219,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer4.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
             else
@@ -227,7 +227,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer4.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 
