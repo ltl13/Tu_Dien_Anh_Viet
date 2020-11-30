@@ -37,5 +37,15 @@ namespace GUI
             father.Father.panel_Main.Controls.Add(doExam);
             DoExam.BringToFront();
         }
+
+        private void metroTextBox_Number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter) { xuiButton_Start_Click(null, null); }
+        }
+
+        private void metroTextBox_Time_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) { xuiButton_Start_Click(null, null); }
+        }
     }
 }

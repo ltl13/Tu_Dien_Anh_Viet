@@ -63,7 +63,8 @@ namespace GUI
         private void timer1_Tick(object sender, EventArgs e)
         {
             time--;
-            metroProgressSpinner_Time.Value = (time / (time + 1)) * 100; label_time.Text = time.ToString();
+            metroProgressSpinner_Time.Value = (int)((1.0*time / grandfather.Time) * 100); 
+            label_time.Text = time.ToString();
             if (time == 0)
             {
                 if (--socau == 0) ketthuc();
@@ -90,6 +91,7 @@ namespace GUI
             time = grandfather.Time;
             grandfather.listAnswer.Clear();
             var rand = new Random();
+            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / grandfather.Number * 100);
 
             for (int i = 0; i < 4; i++)
             {
@@ -125,7 +127,8 @@ namespace GUI
         public void ketthuc()
         {
             timer1.Stop();
-            MessageBox.Show("Điểm của bạn là: " + socaudung.ToString());
+            xuiFlatProgressBar_Question.Value = 0;
+            MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2));
 
             xuiButton_Answer1.Enabled = false;
             xuiButton_Answer2.Enabled = false;
@@ -140,7 +143,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer1.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number),2).ToString();
                 }
             }
             else
@@ -148,7 +151,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer1.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 
@@ -166,7 +169,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer2.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
             else
@@ -174,7 +177,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer2.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 
@@ -192,7 +195,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer3.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
             else
@@ -200,7 +203,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer3.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 
@@ -218,7 +221,7 @@ namespace GUI
                 if (grandfather.key[2] == xuiButton_Answer4.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
             else
@@ -226,7 +229,7 @@ namespace GUI
                 if (key.VietNamese == xuiButton_Answer4.ButtonText)
                 {
                     socaudung++;
-                    label_RightAnswer.Text = socaudung.ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
 

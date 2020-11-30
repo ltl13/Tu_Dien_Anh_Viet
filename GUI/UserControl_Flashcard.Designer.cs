@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Flashcard));
-            this.metroPanel_Eng = new MetroFramework.Controls.MetroPanel();
             this.panel_Viet = new System.Windows.Forms.Panel();
             this.label_Viet = new System.Windows.Forms.Label();
             this.panel_Eng = new System.Windows.Forms.Panel();
@@ -39,68 +38,50 @@
             this.xuiButton_Delete = new XanderUI.XUIButton();
             this.label_Number = new System.Windows.Forms.Label();
             this.panel_Number = new System.Windows.Forms.Panel();
-            this.metroPanel_Eng.SuspendLayout();
+            this.xuiButton1 = new XanderUI.XUIButton();
             this.panel_Viet.SuspendLayout();
             this.panel_Eng.SuspendLayout();
             this.panel_Number.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroPanel_Eng
-            // 
-            this.metroPanel_Eng.Controls.Add(this.panel_Viet);
-            this.metroPanel_Eng.Controls.Add(this.panel_Eng);
-            this.metroPanel_Eng.HorizontalScrollbarBarColor = true;
-            this.metroPanel_Eng.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel_Eng.HorizontalScrollbarSize = 10;
-            this.metroPanel_Eng.Location = new System.Drawing.Point(61, 47);
-            this.metroPanel_Eng.Name = "metroPanel_Eng";
-            this.metroPanel_Eng.Size = new System.Drawing.Size(504, 309);
-            this.metroPanel_Eng.TabIndex = 0;
-            this.metroPanel_Eng.VerticalScrollbarBarColor = true;
-            this.metroPanel_Eng.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel_Eng.VerticalScrollbarSize = 10;
-            this.metroPanel_Eng.MouseDown += new System.Windows.Forms.MouseEventHandler(this.metroPanel_Eng_MouseDown);
-            // 
             // panel_Viet
             // 
-            this.panel_Viet.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Viet.BackColor = System.Drawing.Color.White;
             this.panel_Viet.Controls.Add(this.label_Viet);
-            this.panel_Viet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Viet.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Viet.Location = new System.Drawing.Point(0, 0);
+            this.panel_Viet.Location = new System.Drawing.Point(69, 43);
             this.panel_Viet.Name = "panel_Viet";
-            this.panel_Viet.Size = new System.Drawing.Size(504, 309);
+            this.panel_Viet.Size = new System.Drawing.Size(495, 321);
             this.panel_Viet.TabIndex = 4;
             // 
             // label_Viet
             // 
-            this.label_Viet.BackColor = System.Drawing.Color.Transparent;
+            this.label_Viet.BackColor = System.Drawing.Color.White;
             this.label_Viet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_Viet.Location = new System.Drawing.Point(0, 0);
             this.label_Viet.Name = "label_Viet";
-            this.label_Viet.Size = new System.Drawing.Size(504, 309);
+            this.label_Viet.Size = new System.Drawing.Size(495, 321);
             this.label_Viet.TabIndex = 2;
             this.label_Viet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Viet.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Viet_MouseDown);
             // 
             // panel_Eng
             // 
-            this.panel_Eng.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Eng.BackColor = System.Drawing.Color.White;
             this.panel_Eng.Controls.Add(this.label_Eng);
-            this.panel_Eng.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Eng.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_Eng.Location = new System.Drawing.Point(0, 0);
+            this.panel_Eng.Location = new System.Drawing.Point(69, 43);
             this.panel_Eng.Name = "panel_Eng";
-            this.panel_Eng.Size = new System.Drawing.Size(504, 309);
+            this.panel_Eng.Size = new System.Drawing.Size(495, 321);
             this.panel_Eng.TabIndex = 3;
             // 
             // label_Eng
             // 
-            this.label_Eng.BackColor = System.Drawing.Color.Transparent;
+            this.label_Eng.BackColor = System.Drawing.Color.White;
             this.label_Eng.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label_Eng.Location = new System.Drawing.Point(0, 0);
             this.label_Eng.Name = "label_Eng";
-            this.label_Eng.Size = new System.Drawing.Size(504, 309);
+            this.label_Eng.Size = new System.Drawing.Size(495, 321);
             this.label_Eng.TabIndex = 2;
             this.label_Eng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Eng.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Eng_MouseDown);
@@ -188,19 +169,42 @@
             this.panel_Number.Size = new System.Drawing.Size(101, 24);
             this.panel_Number.TabIndex = 7;
             // 
+            // xuiButton1
+            // 
+            this.xuiButton1.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton1.ButtonImage")));
+            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton1.ButtonText = "";
+            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.CornerRadius = 5;
+            this.xuiButton1.Enabled = false;
+            this.xuiButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton1.Location = new System.Drawing.Point(60, 34);
+            this.xuiButton1.Name = "xuiButton1";
+            this.xuiButton1.Size = new System.Drawing.Size(515, 339);
+            this.xuiButton1.TabIndex = 5;
+            this.xuiButton1.TextColor = System.Drawing.Color.Black;
+            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // UserControl_Flashcard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel_Eng);
             this.Controls.Add(this.panel_Number);
+            this.Controls.Add(this.panel_Viet);
             this.Controls.Add(this.xuiButton_Delete);
             this.Controls.Add(this.xuiButton_Previous);
             this.Controls.Add(this.xuiButton_Next);
-            this.Controls.Add(this.metroPanel_Eng);
+            this.Controls.Add(this.xuiButton1);
             this.Name = "UserControl_Flashcard";
             this.Size = new System.Drawing.Size(624, 516);
             this.VisibleChanged += new System.EventHandler(this.UserControl_Flashcard_VisibleChanged);
-            this.metroPanel_Eng.ResumeLayout(false);
             this.panel_Viet.ResumeLayout(false);
             this.panel_Eng.ResumeLayout(false);
             this.panel_Number.ResumeLayout(false);
@@ -209,8 +213,6 @@
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroPanel metroPanel_Eng;
         private XanderUI.XUIButton xuiButton_Next;
         private XanderUI.XUIButton xuiButton_Previous;
         private XanderUI.XUIButton xuiButton_Delete;
@@ -220,5 +222,6 @@
         private System.Windows.Forms.Label label_Viet;
         private System.Windows.Forms.Label label_Number;
         private System.Windows.Forms.Panel panel_Number;
+        private XanderUI.XUIButton xuiButton1;
     }
 }
