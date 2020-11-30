@@ -79,6 +79,19 @@ namespace DAO {
             }
         }
 
+        public void SaveRecentlyWord(List<EnViDTO> recently) {
+            string json = JsonConvert.SerializeObject(recently.ToArray(), Formatting.Indented);
+            File.WriteAllText(@"..\..\..\resources\recently.json", json);
+        }
+
+        public List<EnViDTO> LoadRecentlyWord() {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\recently.json")) {
+                string json = r.ReadToEnd();
+                List<EnViDTO> items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
+                return items;
+            }
+        }
+
         public string run_cmd(string cmd, string args) {
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = @"..\..\python.exe";
