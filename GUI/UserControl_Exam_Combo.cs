@@ -81,7 +81,12 @@ namespace GUI
 
         private void metroTextBox_Time_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == (char)13) { xuiButton_Start_Click(null, null); }
+            if(e.KeyChar == (char)Keys.Enter) { xuiButton_Start_Click(null, null); }
+        }
+
+        private void metroTextBox_Number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) { xuiButton_Start_Click(null, null); }
         }
     }
 }

@@ -88,6 +88,7 @@
             this.metroTextBox_Number.UseSelectable = true;
             this.metroTextBox_Number.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox_Number.WaterMarkFont = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTextBox_Number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.metroTextBox_Number_KeyPress);
             // 
             // metroLabel_Number
             // 
