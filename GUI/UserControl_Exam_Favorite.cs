@@ -21,6 +21,8 @@ namespace GUI
         {
             InitializeComponent();
             father = previous;
+
+            metroTextBox_Number.WaterMark = "less than " + father.Father.Favorite.Count.ToString();
         }
 
         public UserControl_Exam_Do DoExam { get => doExam; set => doExam = value; }
@@ -29,8 +31,10 @@ namespace GUI
 
         private void xuiButton_Start_Click(object sender, EventArgs e)
         {
+            father.Time = Int32.Parse(metroTextBox_Time.Text);
+            father.Number = Int32.Parse(metroTextBox_Number.Text);
             doExam = new UserControl_Exam_Do(father, false);
-            father.father.panel_Main.Controls.Add(doExam);
+            father.Father.panel_Main.Controls.Add(doExam);
             DoExam.BringToFront();
         }
     }

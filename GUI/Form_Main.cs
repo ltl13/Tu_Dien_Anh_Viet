@@ -581,9 +581,16 @@ namespace GUI
             set { isEnToVi = value; }
         }
 
+        private void changeLanguage(bool EnToVi)
+        {
+            if (EnToVi) { mainTranslate.xuiButton_Translate.ButtonText = "Translate"; }
+            else { mainTranslate.xuiButton_Translate.ButtonText = "Dịch"; }
+        }
+
         private void xuiSwitch_Language_MouseDown(object sender, MouseEventArgs e) 
         {
             isEnToVi = !isEnToVi;
+            changeLanguage(IsEnToVi);
         }
 
         private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {
