@@ -21,6 +21,7 @@ namespace GUI
         private UserControl_Exam mainExam;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
+        private readonly List<EnViDTO> recently;
         private Form father;
         private bool isEnToVi = true;
 
@@ -34,6 +35,7 @@ namespace GUI
             this.FocusMe();
             this.loginAccount = loginAccount;
             this.favorite = BUS.DictionaryBUS.Instance.LoadSavedFavoriteWord();
+            this.recently = BUS.DictionaryBUS.Instance.LoadRecentlyWord();
             this.father = login;
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);

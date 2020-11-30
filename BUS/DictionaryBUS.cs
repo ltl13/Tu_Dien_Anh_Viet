@@ -46,6 +46,14 @@ namespace BUS {
             return DictionaryDAO.Instance.LoadSavedFavoriteWord();
         }
 
+        public void SaveRecentlyWord(List<EnViDTO> recently) {
+            DictionaryDAO.Instance.SaveRecentlyWord(recently);
+        }
+
+        public List<EnViDTO> LoadRecentlyWord() {
+            return DictionaryDAO.Instance.LoadRecentlyWord();
+        }
+
         public string run_cmd(string cmd, string args) {
             return DictionaryDAO.Instance.run_cmd(cmd, args);
         }
