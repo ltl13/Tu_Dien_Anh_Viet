@@ -28,7 +28,6 @@ namespace GUI
             var itemToRemove = favorite.SingleOrDefault(r => r.English == favorite[numCard].English);
             if (itemToRemove != null)
                 favorite.Remove(itemToRemove);
-            DictionaryBUS.Instance.SaveFavoriteWord(favorite);
             if (numCard == favorite.Count)
             {
                 if (favorite.Count == 0)
