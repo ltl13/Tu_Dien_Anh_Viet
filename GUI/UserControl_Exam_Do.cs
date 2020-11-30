@@ -63,7 +63,8 @@ namespace GUI
         private void timer1_Tick(object sender, EventArgs e)
         {
             time--;
-            metroProgressSpinner_Time.Value = (time / (time + 1)) * 100; label_time.Text = time.ToString();
+            metroProgressSpinner_Time.Value = (int)((1.0*time / grandfather.Time) * 100); 
+            label_time.Text = time.ToString();
             if (time == 0)
             {
                 if (--socau == 0) ketthuc();

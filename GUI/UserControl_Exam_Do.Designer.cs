@@ -58,10 +58,9 @@
             this.xuiButton_Answer1.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer1.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer1.Location = new System.Drawing.Point(60, 366);
-            this.xuiButton_Answer1.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Answer1.Location = new System.Drawing.Point(34, 202);
             this.xuiButton_Answer1.Name = "xuiButton_Answer1";
-            this.xuiButton_Answer1.Size = new System.Drawing.Size(460, 234);
+            this.xuiButton_Answer1.Size = new System.Drawing.Size(263, 129);
             this.xuiButton_Answer1.TabIndex = 0;
             this.xuiButton_Answer1.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -80,10 +79,9 @@
             this.xuiButton_Retry.HoverBackgroundColor = System.Drawing.Color.Silver;
             this.xuiButton_Retry.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Retry.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Retry.Location = new System.Drawing.Point(964, 0);
-            this.xuiButton_Retry.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Retry.Location = new System.Drawing.Point(551, 0);
             this.xuiButton_Retry.Name = "xuiButton_Retry";
-            this.xuiButton_Retry.Size = new System.Drawing.Size(54, 56);
+            this.xuiButton_Retry.Size = new System.Drawing.Size(31, 31);
             this.xuiButton_Retry.TabIndex = 1;
             this.xuiButton_Retry.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Retry.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -103,10 +101,9 @@
             this.xuiButton_Answer2.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer2.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer2.Location = new System.Drawing.Point(558, 366);
-            this.xuiButton_Answer2.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Answer2.Location = new System.Drawing.Point(319, 202);
             this.xuiButton_Answer2.Name = "xuiButton_Answer2";
-            this.xuiButton_Answer2.Size = new System.Drawing.Size(460, 234);
+            this.xuiButton_Answer2.Size = new System.Drawing.Size(263, 129);
             this.xuiButton_Answer2.TabIndex = 2;
             this.xuiButton_Answer2.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -126,10 +123,9 @@
             this.xuiButton_Answer4.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer4.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer4.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer4.Location = new System.Drawing.Point(558, 631);
-            this.xuiButton_Answer4.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Answer4.Location = new System.Drawing.Point(319, 348);
             this.xuiButton_Answer4.Name = "xuiButton_Answer4";
-            this.xuiButton_Answer4.Size = new System.Drawing.Size(460, 234);
+            this.xuiButton_Answer4.Size = new System.Drawing.Size(263, 129);
             this.xuiButton_Answer4.TabIndex = 4;
             this.xuiButton_Answer4.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer4.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -149,10 +145,9 @@
             this.xuiButton_Answer3.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer3.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer3.Location = new System.Drawing.Point(60, 631);
-            this.xuiButton_Answer3.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Answer3.Location = new System.Drawing.Point(34, 348);
             this.xuiButton_Answer3.Name = "xuiButton_Answer3";
-            this.xuiButton_Answer3.Size = new System.Drawing.Size(460, 234);
+            this.xuiButton_Answer3.Size = new System.Drawing.Size(263, 129);
             this.xuiButton_Answer3.TabIndex = 3;
             this.xuiButton_Answer3.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer3.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -171,10 +166,9 @@
             this.xuiButton_Back.HoverBackgroundColor = System.Drawing.Color.Red;
             this.xuiButton_Back.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Back.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Back.Location = new System.Drawing.Point(1038, 0);
-            this.xuiButton_Back.Margin = new System.Windows.Forms.Padding(5);
+            this.xuiButton_Back.Location = new System.Drawing.Point(593, 0);
             this.xuiButton_Back.Name = "xuiButton_Back";
-            this.xuiButton_Back.Size = new System.Drawing.Size(54, 56);
+            this.xuiButton_Back.Size = new System.Drawing.Size(31, 31);
             this.xuiButton_Back.TabIndex = 5;
             this.xuiButton_Back.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Back.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -183,10 +177,9 @@
             // label_Question
             // 
             this.label_Question.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Question.Location = new System.Drawing.Point(60, 105);
-            this.label_Question.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label_Question.Location = new System.Drawing.Point(34, 58);
             this.label_Question.Name = "label_Question";
-            this.label_Question.Size = new System.Drawing.Size(959, 150);
+            this.label_Question.Size = new System.Drawing.Size(548, 83);
             this.label_Question.TabIndex = 6;
             this.label_Question.Text = "What is the purpose?";
             this.label_Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,10 +191,11 @@
             // 
             // metroProgressSpinner_Time
             // 
-            this.metroProgressSpinner_Time.Location = new System.Drawing.Point(3, 3);
+            this.metroProgressSpinner_Time.Location = new System.Drawing.Point(1, 2);
+            this.metroProgressSpinner_Time.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroProgressSpinner_Time.Maximum = 100;
             this.metroProgressSpinner_Time.Name = "metroProgressSpinner_Time";
-            this.metroProgressSpinner_Time.Size = new System.Drawing.Size(48, 51);
+            this.metroProgressSpinner_Time.Size = new System.Drawing.Size(25, 25);
             this.metroProgressSpinner_Time.Spinning = false;
             this.metroProgressSpinner_Time.TabIndex = 7;
             this.metroProgressSpinner_Time.UseSelectable = true;
@@ -210,31 +204,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(77, 22);
+            this.label1.Location = new System.Drawing.Point(57, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 29);
+            this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Right answers:";
             // 
             // label_RightAnswer
             // 
             this.label_RightAnswer.AutoSize = true;
-            this.label_RightAnswer.Location = new System.Drawing.Point(254, 25);
+            this.label_RightAnswer.Location = new System.Drawing.Point(158, 16);
+            this.label_RightAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_RightAnswer.Name = "label_RightAnswer";
-            this.label_RightAnswer.Size = new System.Drawing.Size(0, 29);
+            this.label_RightAnswer.Size = new System.Drawing.Size(0, 17);
             this.label_RightAnswer.TabIndex = 9;
             // 
             // label_time
             // 
             this.label_time.AutoSize = true;
-            this.label_time.Location = new System.Drawing.Point(12, 76);
+            this.label_time.BackColor = System.Drawing.Color.White;
+            this.label_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_time.Location = new System.Drawing.Point(31, 6);
+            this.label_time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_time.Name = "label_time";
-            this.label_time.Size = new System.Drawing.Size(0, 29);
+            this.label_time.Size = new System.Drawing.Size(0, 16);
             this.label_time.TabIndex = 10;
             // 
             // UserControl_Exam_Do
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label_time);
             this.Controls.Add(this.label_RightAnswer);
@@ -247,9 +246,8 @@
             this.Controls.Add(this.xuiButton_Answer2);
             this.Controls.Add(this.xuiButton_Retry);
             this.Controls.Add(this.xuiButton_Answer1);
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UserControl_Exam_Do";
-            this.Size = new System.Drawing.Size(1092, 935);
+            this.Size = new System.Drawing.Size(624, 516);
             this.ResumeLayout(false);
             this.PerformLayout();
 
