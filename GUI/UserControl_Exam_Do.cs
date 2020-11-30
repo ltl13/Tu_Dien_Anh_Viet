@@ -140,7 +140,7 @@ namespace GUI
         {
             if (WhatToDo)
             {
-                if (grandfather.key[2] == xuiButton_Answer1.ButtonText)
+                if (grandfather.key[2].ToString() == xuiButton_Answer1.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number),2).ToString();
@@ -148,7 +148,7 @@ namespace GUI
             }
             else
             {
-                if (key.VietNamese == xuiButton_Answer1.ButtonText)
+                if (key.getCommonMeaning() == xuiButton_Answer1.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
@@ -166,7 +166,7 @@ namespace GUI
         {
             if (WhatToDo)
             {
-                if (grandfather.key[2] == xuiButton_Answer2.ButtonText)
+                if (grandfather.key[2].ToString() == xuiButton_Answer2.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
@@ -174,7 +174,7 @@ namespace GUI
             }
             else
             {
-                if (key.VietNamese == xuiButton_Answer2.ButtonText)
+                if (key.getCommonMeaning() == xuiButton_Answer2.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
@@ -192,7 +192,7 @@ namespace GUI
         {
             if (WhatToDo)
             {
-                if (grandfather.key[2] == xuiButton_Answer3.ButtonText)
+                if (grandfather.key[2].ToString() == xuiButton_Answer3.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
@@ -200,7 +200,7 @@ namespace GUI
             }
             else
             {
-                if (key.VietNamese == xuiButton_Answer3.ButtonText)
+                if (key.getCommonMeaning() == xuiButton_Answer3.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
@@ -218,7 +218,7 @@ namespace GUI
         {
             if (WhatToDo)
             {
-                if (grandfather.key[2] == xuiButton_Answer4.ButtonText)
+                if (grandfather.key[2].ToString() == xuiButton_Answer4.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
@@ -226,7 +226,7 @@ namespace GUI
             }
             else
             {
-                if (key.VietNamese == xuiButton_Answer4.ButtonText)
+                if (key.getCommonMeaning() == xuiButton_Answer4.ButtonText)
                 {
                     socaudung++;
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
@@ -271,20 +271,21 @@ namespace GUI
                         listAnswer.Add(grandfather.Father.Favorite[number]);
                         break;
                     }
-                } while (listAnswer.Contains(grandfather.Father.Favorite[number])); //4 cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
+                } while (listAnswer.Contains(grandfather.Father.Favorite[number])); ///4 cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
                 if (i > 0) listAnswer.Add(grandfather.Father.Favorite[number]);
 
             }
 
-            xuiButton_Answer1.ButtonText = listAnswer[0].VietNamese;
-            xuiButton_Answer2.ButtonText = listAnswer[1].VietNamese;
-            xuiButton_Answer3.ButtonText = listAnswer[2].VietNamese;
-            xuiButton_Answer4.ButtonText = listAnswer[3].VietNamese;
+            xuiButton_Answer1.ButtonText = listAnswer[0].getCommonMeaning();
+            xuiButton_Answer2.ButtonText = listAnswer[1].getCommonMeaning();
+            xuiButton_Answer3.ButtonText = listAnswer[2].getCommonMeaning();
+            xuiButton_Answer4.ButtonText = listAnswer[3].getCommonMeaning();
 
-            key = listAnswer[rand.Next(0, 4)];
-            label_Question.Text = key.English.ToString();
+            
+            do key = listAnswer[rand.Next(0, 4)]; while (listQuestion.Contains(key));
             listQuestion.Add(key);
 
+            label_Question.Text = key.English.ToString();
             timer1.Start();
             metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
         }
