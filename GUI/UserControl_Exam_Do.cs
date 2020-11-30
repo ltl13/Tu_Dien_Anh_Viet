@@ -257,6 +257,7 @@ namespace GUI
             time = grandfather.Time;
             listAnswer.Clear();
             var rand = new Random();
+            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / grandfather.Number * 100);
 
             for (int i = 0; i < 4; i++)
             {
