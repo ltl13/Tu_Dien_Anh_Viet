@@ -122,7 +122,7 @@
             this.tbName.Location = new System.Drawing.Point(42, 248);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(216, 22);
-            this.tbName.TabIndex = 15;
+            this.tbName.TabIndex = 3;
             this.tbName.UseSystemPasswordChar = true;
             // 
             // pnlName

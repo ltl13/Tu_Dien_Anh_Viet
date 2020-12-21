@@ -77,7 +77,6 @@ namespace DAO {
 
             if (newPass == "" || newPass == null) {
                 result = DataProvider.Instance.ExecuteNonQuery("USP_UpdateAccount @userName , @displayName , @password , @newPassword", new object[] { userName, displayName, hashedPass, newPass });
-                
             }
             else {
                 string hashedNewPass = sha256_hash(newPass);
