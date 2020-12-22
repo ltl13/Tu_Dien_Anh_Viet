@@ -340,7 +340,7 @@
             this.label_Translate.AutoSize = true;
             this.label_Translate.BackColor = System.Drawing.Color.Transparent;
             this.label_Translate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Translate.Location = new System.Drawing.Point(136, 20);
+            this.label_Translate.Location = new System.Drawing.Point(136, 23);
             this.label_Translate.Name = "label_Translate";
             this.label_Translate.Size = new System.Drawing.Size(64, 29);
             this.label_Translate.TabIndex = 1;
@@ -400,7 +400,7 @@
             // pictureBox_Exam
             // 
             this.pictureBox_Exam.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Exam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_Exam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox_Exam.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox_Exam.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Exam.Image")));
             this.pictureBox_Exam.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Exam.InitialImage")));

@@ -73,6 +73,7 @@
             this.metroTextBox_Searchbar.WaterMarkColor = System.Drawing.Color.DarkGray;
             this.metroTextBox_Searchbar.WaterMarkFont = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Italic);
             this.metroTextBox_Searchbar.TextChanged += new System.EventHandler(this.metroTextBox_Searchbar_TextChanged);
+            this.metroTextBox_Searchbar.Enter += new System.EventHandler(this.metroTextBox_Searchbar_Enter);
             // 
             // listBox_Search
             // 
@@ -87,8 +88,7 @@
             // 
             // UserControl_Search
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.listBox_Search);
             this.Controls.Add(this.metroTextBox_Searchbar);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

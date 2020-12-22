@@ -242,8 +242,7 @@
             // 
             // UserControl_WordInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.splitContainer_WordInfo);
             this.Name = "UserControl_WordInfo";
             this.Size = new System.Drawing.Size(624, 516);
