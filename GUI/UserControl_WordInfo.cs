@@ -39,7 +39,7 @@ namespace GUI
             father = usercontrolSearch;
             word1 = args;
             label_Word.Text = word1.VietNamese;
-            rtb_vietnamese.Text = word1.English;
+            rtb_vietnamese.Text = word1.getEnglishFormat();
             metroTile_Speaker.Visible = false;
             xuiButton_Interest.Visible = false;
             xuiButton_NotInterest.Visible = false;

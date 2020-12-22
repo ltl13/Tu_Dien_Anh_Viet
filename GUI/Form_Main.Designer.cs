@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.metroStyleManager_FormMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.button_Exit = new System.Windows.Forms.Button();
             this.panel_Main = new System.Windows.Forms.Panel();
@@ -98,7 +97,7 @@
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Exit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button_Exit.Location = new System.Drawing.Point(855, 7);
+            this.button_Exit.Location = new System.Drawing.Point(855, 5);
             this.button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Exit.Name = "button_Exit";
             this.button_Exit.Size = new System.Drawing.Size(41, 38);
@@ -668,7 +667,6 @@
         }
 
         #endregion
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private MetroFramework.Components.MetroStyleManager metroStyleManager_FormMain;
         private System.Windows.Forms.Button button_Exit;
         public System.Windows.Forms.Panel panel_Main;

@@ -238,6 +238,8 @@
             this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.MaximumSize = new System.Drawing.Size(330, 550);
+            this.MinimumSize = new System.Drawing.Size(330, 550);
             this.Name = "Form_Login";
             this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Resizable = false;
