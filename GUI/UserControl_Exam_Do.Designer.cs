@@ -193,7 +193,7 @@
             // metroProgressSpinner_Time
             // 
             this.metroProgressSpinner_Time.Location = new System.Drawing.Point(1, 2);
-            this.metroProgressSpinner_Time.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroProgressSpinner_Time.Margin = new System.Windows.Forms.Padding(2);
             this.metroProgressSpinner_Time.Maximum = 100;
             this.metroProgressSpinner_Time.Name = "metroProgressSpinner_Time";
             this.metroProgressSpinner_Time.Size = new System.Drawing.Size(25, 25);
@@ -231,7 +231,7 @@
             this.label_time.Location = new System.Drawing.Point(31, 6);
             this.label_time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_time.Name = "label_time";
-            this.label_time.Size = new System.Drawing.Size(0, 16);
+            this.label_time.Size = new System.Drawing.Size(0, 15);
             this.label_time.TabIndex = 10;
             // 
             // xuiFlatProgressBar_Question
@@ -249,8 +249,7 @@
             // 
             // UserControl_Exam_Do
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.xuiFlatProgressBar_Question);
             this.Controls.Add(this.label_time);
             this.Controls.Add(this.label_RightAnswer);

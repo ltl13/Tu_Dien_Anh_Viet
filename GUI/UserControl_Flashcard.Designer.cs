@@ -193,8 +193,7 @@
             // 
             // UserControl_Flashcard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.panel_Eng);
             this.Controls.Add(this.panel_Number);
             this.Controls.Add(this.panel_Viet);

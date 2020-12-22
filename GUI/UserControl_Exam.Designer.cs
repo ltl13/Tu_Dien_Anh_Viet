@@ -187,8 +187,7 @@
             // 
             // UserControl_Exam
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.panel_Lock);
             this.Controls.Add(this.splitContainer_Exam);
             this.Name = "UserControl_Exam";

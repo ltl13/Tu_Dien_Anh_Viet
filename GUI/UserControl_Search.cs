@@ -16,6 +16,7 @@ namespace GUI {
         #region properties
         private readonly DataTable dataTableEnVi = new DataTable();
         private readonly DataTable dataTableViEn = new DataTable();
+        private DataTable dataTableRecently = new DataTable();
         public UserControl_WordInfo wordInfo;
         public bool isWordInfoOn = false;
         Timer _typingTimer;
@@ -66,7 +67,6 @@ namespace GUI {
                         listBox_Search.Visible = false;
                     }
                     else {
-
                         metroTextBox_Searchbar.Style = MetroFramework.MetroColorStyle.Blue;
                         metroTextBox_Searchbar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
                         dataTableEnVi.DefaultView.RowFilter = string.Format("English Like '{0}%'", metroTextBox_Searchbar.Text);
@@ -119,23 +119,33 @@ namespace GUI {
         }
 
         private void listBox_Search_Click(object sender, EventArgs e) {
-            if (Father.IsEnToVi) {
-                isWordInfoOn = true;
-                DataRowView row = (DataRowView)listBox_Search.SelectedItem;
-                EnViDTO wordSelected = new EnViDTO(row);
+            if (metroTextBox_Searchbar.Text == string.Empty) {
+                EnViDTO wordSelected = (EnViDTO)listBox_Search.SelectedItem;
                 wordInfo = new UserControl_WordInfo(wordSelected, this);
                 Father.panel_Main.Controls.Add(wordInfo);
                 wordInfo.Show();
                 this.Hide();
             }
             else {
-                isWordInfoOn = true;
-                DataRowView row = (DataRowView)listBox_Search.SelectedItem;
-                ViEnDTO wordSelected = new ViEnDTO(row);
-                wordInfo = new UserControl_WordInfo(wordSelected, this);
-                Father.panel_Main.Controls.Add(wordInfo);
-                wordInfo.Show();
-                this.Hide();
+                if (Father.IsEnToVi) {
+                    isWordInfoOn = true;
+                    DataRowView row = (DataRowView)listBox_Search.SelectedItem;
+                    EnViDTO wordSelected = new EnViDTO(row);
+                    Father.Recently.Add(wordSelected);
+                    wordInfo = new UserControl_WordInfo(wordSelected, this);
+                    Father.panel_Main.Controls.Add(wordInfo);
+                    wordInfo.Show();
+                    this.Hide();
+                }
+                else {
+                    isWordInfoOn = true;
+                    DataRowView row = (DataRowView)listBox_Search.SelectedItem;
+                    ViEnDTO wordSelected = new ViEnDTO(row);
+                    wordInfo = new UserControl_WordInfo(wordSelected, this);
+                    Father.panel_Main.Controls.Add(wordInfo);
+                    wordInfo.Show();
+                    this.Hide();
+                }
             }
         }
 
@@ -144,5 +154,15 @@ namespace GUI {
             metroTextBox_Searchbar.Text = "";
         }
         #endregion
+
+        private void metroTextBox_Searchbar_Enter(object sender, EventArgs e) {
+            if (Father.IsEnToVi) {
+                if (metroTextBox_Searchbar.Text == string.Empty) {
+                    listBox_Search.DataSource = Father.Recently;
+                    listBox_Search.DisplayMember = "English";
+                    listBox_Search.Visible = true;
+                }
+            }
+        }
     }
 }

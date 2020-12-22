@@ -668,8 +668,7 @@
             // 
             // UserControl_ComboWord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.xuiButton_Back);
             this.Controls.Add(this.lb_comboWords);
             this.Controls.Add(this.dataGridView1);

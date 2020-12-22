@@ -35,8 +35,7 @@ namespace GUI {
 
             if (Login(userName, passWord)) {
                 xuiFlatProgressBar_Login.Visible = true;
-                for(int i = 0; i < 100; i++)
-                {
+                for (int i = 0; i < 100; i++) {
                     Thread.Sleep(10);
                     xuiFlatProgressBar_Login.Value = i;
                     xuiFlatProgressBar_Login.Update();
@@ -51,7 +50,7 @@ namespace GUI {
                 this.tbUsername.Focus();
                 this.tbUsername.Text = string.Empty;
                 this.tbPassword.Text = string.Empty;
-                
+
             }
             else {
                 tbUsername.Text = string.Empty;
@@ -60,7 +59,7 @@ namespace GUI {
             }
         }
 
-        private void lbCreateNewAccount_Click(object sender, EventArgs e) {          
+        private void lbCreateNewAccount_Click(object sender, EventArgs e) {
             this.tbUsername.Text = string.Empty;
             this.tbPassword.Text = string.Empty;
             Form_Signup fSignup = new Form_Signup(this);

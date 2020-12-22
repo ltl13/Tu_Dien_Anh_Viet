@@ -21,12 +21,13 @@ namespace GUI
         private UserControl_Exam mainExam;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
-        private readonly List<EnViDTO> recently;
+        private List<EnViDTO> recently;
         private Form father;
         private bool isEnToVi = true;
 
         public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
         public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
+        public List<EnViDTO> Recently { get => recently; set => recently = value; }
 
         public Form_Main(AccountDTO loginAccount, Form login)
         {

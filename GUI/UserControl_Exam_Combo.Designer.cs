@@ -65,9 +65,9 @@
             // 
             // 
             this.metroTextBox_Number.CustomButton.Image = null;
-            this.metroTextBox_Number.CustomButton.Location = new System.Drawing.Point(49, 1);
+            this.metroTextBox_Number.CustomButton.Location = new System.Drawing.Point(86, 2);
             this.metroTextBox_Number.CustomButton.Name = "";
-            this.metroTextBox_Number.CustomButton.Size = new System.Drawing.Size(14, 14);
+            this.metroTextBox_Number.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.metroTextBox_Number.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox_Number.CustomButton.TabIndex = 1;
             this.metroTextBox_Number.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -120,9 +120,9 @@
             // 
             // 
             this.metroTextBox_Time.CustomButton.Image = null;
-            this.metroTextBox_Time.CustomButton.Location = new System.Drawing.Point(49, 1);
+            this.metroTextBox_Time.CustomButton.Location = new System.Drawing.Point(86, 2);
             this.metroTextBox_Time.CustomButton.Name = "";
-            this.metroTextBox_Time.CustomButton.Size = new System.Drawing.Size(14, 14);
+            this.metroTextBox_Time.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.metroTextBox_Time.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox_Time.CustomButton.TabIndex = 1;
             this.metroTextBox_Time.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -183,8 +183,7 @@
             // 
             // UserControl_Exam_Combo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.metroLabel_Combo);
             this.Controls.Add(this.xuiButton_Start);
             this.Controls.Add(this.metroLabel_Time);

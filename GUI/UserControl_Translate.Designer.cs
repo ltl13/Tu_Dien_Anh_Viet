@@ -71,7 +71,7 @@
             this.xuiButton_Translate.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Translate.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton_Translate.Location = new System.Drawing.Point(211, 234);
-            this.xuiButton_Translate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton_Translate.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton_Translate.Name = "xuiButton_Translate";
             this.xuiButton_Translate.Size = new System.Drawing.Size(203, 46);
             this.xuiButton_Translate.TabIndex = 2;
@@ -81,8 +81,7 @@
             // 
             // UserControl_Translate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.xuiButton_Translate);
             this.Controls.Add(this.richTextBox_To);
             this.Controls.Add(this.richTextBox_From);
