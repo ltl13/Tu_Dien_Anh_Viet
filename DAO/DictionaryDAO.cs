@@ -79,15 +79,28 @@ namespace DAO {
             }
         }
 
-        public void SaveRecentlyWord(List<EnViDTO> recently) {
+        public void SaveRecentlyWordEnVi(List<EnViDTO> recently) {
             string json = JsonConvert.SerializeObject(recently.ToArray(), Formatting.Indented);
-            File.WriteAllText(@"..\..\..\resources\recently.json", json);
+            File.WriteAllText(@"..\..\..\resources\recentlyEnVi.json", json);
         }
 
-        public List<EnViDTO> LoadRecentlyWord() {
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\recently.json")) {
+        public List<EnViDTO> LoadRecentlyWordEnVi() {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\recentlyEnVi.json")) {
                 string json = r.ReadToEnd();
                 List<EnViDTO> items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
+                return items;
+            }
+        }
+
+        public void SaveRecentlyWordViEn(List<ViEnDTO> recently) {
+            string json = JsonConvert.SerializeObject(recently.ToArray(), Formatting.Indented);
+            File.WriteAllText(@"..\..\..\resources\recentlyViEn.json", json);
+        }
+
+        public List<ViEnDTO> LoadRecentlyWordViEn() {
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\recentlyViEn.json")) {
+                string json = r.ReadToEnd();
+                List<ViEnDTO> items = JsonConvert.DeserializeObject<List<ViEnDTO>>(json);
                 return items;
             }
         }

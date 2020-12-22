@@ -21,13 +21,15 @@ namespace GUI
         private UserControl_Exam mainExam;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
-        private List<EnViDTO> recently;
+        private List<EnViDTO> recentlyEnVi;
+        private List<ViEnDTO> recentlyViEn;
         private Form father;
         private bool isEnToVi = true;
 
         public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
         public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
-        public List<EnViDTO> Recently { get => recently; set => recently = value; }
+        public List<EnViDTO> RecentlyEnVi { get => recentlyEnVi; set => recentlyEnVi = value; }
+        public List<ViEnDTO> RecentlyViEn { get => recentlyViEn; set => recentlyViEn = value; }
 
         public Form_Main(AccountDTO loginAccount, Form login)
         {
@@ -36,7 +38,8 @@ namespace GUI
             this.FocusMe();
             this.loginAccount = loginAccount;
             this.favorite = BUS.DictionaryBUS.Instance.LoadSavedFavoriteWord();
-            this.recently = BUS.DictionaryBUS.Instance.LoadRecentlyWord();
+            this.recentlyEnVi = BUS.DictionaryBUS.Instance.LoadRecentlyWordEnVi();
+            this.recentlyViEn = BUS.DictionaryBUS.Instance.LoadRecentlyWordViEn();
             this.father = login;
             this.StyleManager = metroStyleManager_FormMain;
             UserControl_Search search = new UserControl_Search(this);
@@ -576,6 +579,8 @@ namespace GUI
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
+            BUS.DictionaryBUS.Instance.SaveRecentlyWordEnVi(recentlyEnVi);
+            BUS.DictionaryBUS.Instance.SaveRecentlyWordViEn(recentlyViEn);
         }
 
         public bool IsEnToVi
@@ -592,6 +597,7 @@ namespace GUI
 
         private void xuiSwitch_Language_MouseDown(object sender, MouseEventArgs e) 
         {
+            xuiSwitch_Language.Focus();
             isEnToVi = !isEnToVi;
             changeLanguage(IsEnToVi);
         }
