@@ -2,7 +2,6 @@
 using DTO;
 using System.Collections.Generic;
 using System.Data;
-using System.Windows.Forms;
 
 namespace BUS {
     public class DictionaryBUS {

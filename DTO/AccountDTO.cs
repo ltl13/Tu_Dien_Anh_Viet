@@ -12,7 +12,7 @@ namespace DTO {
         public string UserName { get => userName; set => userName = value; }
         public string DisplayName { get => displayName; set => displayName = value; }
         public string PassWord { get => passWord; set => passWord = value; }
-        public int Type { get => type; set => type = value; }       
+        public int Type { get => type; set => type = value; }
 
         public AccountDTO() { }
 

@@ -1,10 +1,8 @@
 ﻿using BUS;
 using DTO;
 using System;
-using System.Windows.Forms;
-using MetroFramework;
-using MetroFramework.Forms;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace GUI {
     public partial class Form_Login : MetroFramework.Forms.MetroForm {

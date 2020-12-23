@@ -1,15 +1,15 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Data;
 using System.Security.Cryptography;
 using System.Text;
-using DTO;
 
 namespace DAO {
     public class AccountDAO {
         #region properties
         private static AccountDAO instance;
 
-        public static AccountDAO Instance { 
+        public static AccountDAO Instance {
             get {
                 if (instance == null)
                     instance = new AccountDAO();
@@ -40,7 +40,7 @@ namespace DAO {
             string hashedPassWord = sha256_hash(passWord);
             string query = "USP_Login @userName , @passWord";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[]{userName, hashedPassWord});
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { userName, hashedPassWord });
 
             return result.Rows.Count > 0;
         }
@@ -64,11 +64,11 @@ namespace DAO {
             else {
                 query = string.Format("INSERT dbo.Account (UserName, DisplayName, Type, PassWord) VALUES ('{0}', N'{1}', {2}, '{3}')", userName, displayName, type, hashedPassWord);
             }
-            
+
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
-        }      
+        }
 
         public bool UpdateAccount(string userName, string displayName, string passWord, string newPass) {
             // Nếu newPass rỗng thì chỉ cập nhập displayName
