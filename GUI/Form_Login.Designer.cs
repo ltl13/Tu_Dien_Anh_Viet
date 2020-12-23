@@ -81,7 +81,7 @@
             // 
             // icon
             // 
-            this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
+            this.icon.Image = global::GUI.Properties.Resources.dictionary;
             this.icon.Location = new System.Drawing.Point(30, 25);
             this.icon.Name = "icon";
             this.icon.Size = new System.Drawing.Size(65, 65);
