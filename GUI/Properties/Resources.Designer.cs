@@ -203,6 +203,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap irregularverbs1 {
+            get {
+                object obj = ResourceManager.GetObject("irregularverbs1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IT {
             get {
                 object obj = ResourceManager.GetObject("IT", resourceCulture);
@@ -303,9 +313,9 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap star {
+        internal static System.Drawing.Bitmap star_white {
             get {
-                object obj = ResourceManager.GetObject("star", resourceCulture);
+                object obj = ResourceManager.GetObject("star_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +323,9 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap star__1_ {
+        internal static System.Drawing.Bitmap star_yellow {
             get {
-                object obj = ResourceManager.GetObject("star__1_", resourceCulture);
+                object obj = ResourceManager.GetObject("star_yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

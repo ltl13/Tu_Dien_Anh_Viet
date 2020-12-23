@@ -117,17 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="metroTextBox_Searchbar.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAH
-        qAAAB6gBuRybzQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEsSURBVDhPhZKt
-        TkNBEIW3DlODw1T3EfoINU3qSJOavkNFZV+AB2hqagnBIxA8ALKShCYIEBAsAnL7ncnsMvd2k07yJbOz
-        58z+pqZpCsQV3MATfMML3MECelFbPCVJ6Rq+QIMajzCIZvMFcxa+wgrGMIct/IHmDtBvNSC07bzyPbQE
-        LhrBJ2iw6czZmZVp5RNzhpi5TpSjKHRhylbRUIP4cO001Oy2lY2juAbx4Np1qNlTKZtHcQ3i2bXLULN3
-        VraN4i7EJfy4dhLq9kmU/cIomiLEznVvcBHqqQf6JBrpqWYdo1bOZlG2b/MuGoA+SRbptnVhOnPeduYd
-        hq0G3qQPG4jijLa9BJk1Lk1Kg9BIu5nCGmSagJ2ZGEKryUmDc5jpv8m+KjqHN9mnlG6P3sTGF//QEjgA
-        AAAASUVORK5CYII=
-</value>
-  </data>
 </root>

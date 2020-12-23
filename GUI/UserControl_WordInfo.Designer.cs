@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_WordInfo));
             this.splitContainer_WordInfo = new System.Windows.Forms.SplitContainer();
             this.xuiButton_Interest = new XanderUI.XUIButton();
             this.xuiButton_NotInterest = new XanderUI.XUIButton();
@@ -77,7 +76,7 @@
             // xuiButton_Interest
             // 
             this.xuiButton_Interest.BackgroundColor = System.Drawing.Color.Transparent;
-            this.xuiButton_Interest.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Interest.ButtonImage")));
+            this.xuiButton_Interest.ButtonImage = global::GUI.Properties.Resources.star_yellow;
             this.xuiButton_Interest.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.xuiButton_Interest.ButtonText = "";
             this.xuiButton_Interest.ClickBackColor = System.Drawing.Color.Transparent;
@@ -99,7 +98,7 @@
             // xuiButton_NotInterest
             // 
             this.xuiButton_NotInterest.BackgroundColor = System.Drawing.Color.Transparent;
-            this.xuiButton_NotInterest.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_NotInterest.ButtonImage")));
+            this.xuiButton_NotInterest.ButtonImage = global::GUI.Properties.Resources.star_white;
             this.xuiButton_NotInterest.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.xuiButton_NotInterest.ButtonText = "";
             this.xuiButton_NotInterest.ClickBackColor = System.Drawing.Color.Transparent;
@@ -125,7 +124,7 @@
             this.metroTile_Back.Size = new System.Drawing.Size(64, 43);
             this.metroTile_Back.Style = MetroFramework.MetroColorStyle.White;
             this.metroTile_Back.TabIndex = 3;
-            this.metroTile_Back.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile_Back.TileImage")));
+            this.metroTile_Back.TileImage = global::GUI.Properties.Resources.left_arrow;
             this.metroTile_Back.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile_Back.UseSelectable = true;
             this.metroTile_Back.UseTileImage = true;
@@ -141,7 +140,7 @@
             this.metroTile_Speaker.Size = new System.Drawing.Size(42, 39);
             this.metroTile_Speaker.Style = MetroFramework.MetroColorStyle.White;
             this.metroTile_Speaker.TabIndex = 1;
-            this.metroTile_Speaker.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile_Speaker.TileImage")));
+            this.metroTile_Speaker.TileImage = global::GUI.Properties.Resources.volume;
             this.metroTile_Speaker.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile_Speaker.UseSelectable = true;
             this.metroTile_Speaker.UseTileImage = true;
@@ -200,43 +199,43 @@
             // 
             // tabPage_Synonymous
             // 
-            this.tabPage_Synonymous.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Synonymous.Location = new System.Drawing.Point(4, 39);
             this.tabPage_Synonymous.Name = "tabPage_Synonymous";
-            this.tabPage_Synonymous.Size = new System.Drawing.Size(616, 355);
+            this.tabPage_Synonymous.Size = new System.Drawing.Size(616, 354);
             this.tabPage_Synonymous.TabIndex = 2;
             this.tabPage_Synonymous.Text = "Đồng nghĩa";
             // 
             // tabPage_Antonym
             // 
-            this.tabPage_Antonym.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Antonym.Location = new System.Drawing.Point(4, 39);
             this.tabPage_Antonym.Name = "tabPage_Antonym";
-            this.tabPage_Antonym.Size = new System.Drawing.Size(616, 355);
+            this.tabPage_Antonym.Size = new System.Drawing.Size(616, 354);
             this.tabPage_Antonym.TabIndex = 4;
             this.tabPage_Antonym.Text = "Trái nghĩa";
             // 
             // tabPage_Technical
             // 
             this.tabPage_Technical.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F);
-            this.tabPage_Technical.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Technical.Location = new System.Drawing.Point(4, 39);
             this.tabPage_Technical.Name = "tabPage_Technical";
             this.tabPage_Technical.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage_Technical.Size = new System.Drawing.Size(616, 355);
+            this.tabPage_Technical.Size = new System.Drawing.Size(616, 354);
             this.tabPage_Technical.TabIndex = 1;
             this.tabPage_Technical.Text = "Chuyên ngành";
             // 
             // tabPage_Image
             // 
-            this.tabPage_Image.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Image.Location = new System.Drawing.Point(4, 39);
             this.tabPage_Image.Name = "tabPage_Image";
-            this.tabPage_Image.Size = new System.Drawing.Size(616, 355);
+            this.tabPage_Image.Size = new System.Drawing.Size(616, 354);
             this.tabPage_Image.TabIndex = 6;
             this.tabPage_Image.Text = "Ảnh minh họa";
             // 
             // tabPage_Note
             // 
-            this.tabPage_Note.Location = new System.Drawing.Point(4, 38);
+            this.tabPage_Note.Location = new System.Drawing.Point(4, 39);
             this.tabPage_Note.Name = "tabPage_Note";
-            this.tabPage_Note.Size = new System.Drawing.Size(616, 355);
+            this.tabPage_Note.Size = new System.Drawing.Size(616, 354);
             this.tabPage_Note.TabIndex = 5;
             this.tabPage_Note.Text = "Ghi chú";
             // 

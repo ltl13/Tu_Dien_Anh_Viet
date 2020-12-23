@@ -1,6 +1,7 @@
 ﻿using BUS;
 using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace GUI {
@@ -8,7 +9,10 @@ namespace GUI {
         DataSet dataSet;
 
         public UserControl_ComboWord() {
-            InitializeComponent();
+            InitializeComponent(); 
+        }
+
+        private void UserControl_ComboWord_Load(object sender, EventArgs e) {
             xuiButton_Back.Hide();
             dataGridView.Hide();
             lb_comboWords.Hide();
@@ -264,12 +268,13 @@ namespace GUI {
             }
         }
 
-        private void dataGridView1_DataSourceChanged(object sender, EventArgs e) {
+        private void dataGridView_DataSourceChanged(object sender, EventArgs e) {
             dataGridView.Sort(this.dataGridView.Columns[0], System.ComponentModel.ListSortDirection.Ascending);
 
             foreach (DataGridViewColumn column in dataGridView.Columns) {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
+
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewFormat();
         }
@@ -281,6 +286,67 @@ namespace GUI {
             else if (e.Delta < 0) {
                 dataGridView.FirstDisplayedScrollingRowIndex++;
             }
+        }
+
+        private void dataGridView_VisibleChanged(object sender, EventArgs e) {
+            if (dataGridView.Visible == true) {
+                metroTextBox_Filter.Visible = true;
+            }
+            else {
+                metroTextBox_Filter.Visible = false;
+            }
+        }
+
+        private void dataGridView_CellPainting(object sender, DataGridViewCellPaintingEventArgs e) {
+            // High light and searching apply over selective fields of grid.  
+            if (e.RowIndex > -1 && e.ColumnIndex > -1 && dataGridView.Columns[e.ColumnIndex].Name != "Id") {
+                // Check data for search  
+                if (!String.IsNullOrWhiteSpace(metroTextBox_Filter.Text.Trim())) {
+                    String gridCellValue = e.FormattedValue.ToString();
+                    // check the index of search text into grid cell.  
+                    int startIndexInCellValue = gridCellValue.ToLower().IndexOf(metroTextBox_Filter.Text.Trim().ToLower());
+                    // IF search text is exists inside grid cell then startIndexInCellValue value will be greater then 0 or equal to 0  
+                    if (startIndexInCellValue >= 0) {
+                        e.Handled = true;
+                        e.PaintBackground(e.CellBounds, true);
+                        //the highlite rectangle  
+                        Rectangle hl_rect = new Rectangle();
+                        hl_rect.Y = e.CellBounds.Y + 2;
+                        hl_rect.Height = e.CellBounds.Height - 5;
+                        //find the size of the text before the search word in grid cell data.  
+                        String sBeforeSearchword = gridCellValue.Substring(0, startIndexInCellValue);
+                        //size of the search word in the grid cell data  
+                        String sSearchWord = gridCellValue.Substring(startIndexInCellValue, metroTextBox_Filter.Text.Trim().Length);
+                        Size s1 = TextRenderer.MeasureText(e.Graphics, sBeforeSearchword, e.CellStyle.Font, e.CellBounds.Size);
+                        Size s2 = TextRenderer.MeasureText(e.Graphics, sSearchWord, e.CellStyle.Font, e.CellBounds.Size);
+                        if (s1.Width > 5) {
+                            hl_rect.X = e.CellBounds.X + s1.Width - 5;
+                            hl_rect.Width = s2.Width - 6;
+                        }
+                        else {
+                            hl_rect.X = e.CellBounds.X + 2;
+                            hl_rect.Width = s2.Width - 6;
+                        }
+                        //color for showing highlighted text in grid cell  
+                        SolidBrush hl_brush;
+                        hl_brush = new SolidBrush(Color.Yellow);
+                        //paint the background behind the search word  
+                        e.Graphics.FillRectangle(hl_brush, hl_rect);
+                        hl_brush.Dispose();
+                        e.PaintContent(e.CellBounds);
+                    }
+                }
+            }
+        }
+
+        private void metroTextBox_Filter_KeyUp(object sender, KeyEventArgs e) {
+            string Query = "";
+            if (metroTextBox_Filter.Text != string.Empty) {
+                Query += "Name like '%" + metroTextBox_Filter.Text.Trim() + "%' or ";
+                Query += "Meaning like '%" + metroTextBox_Filter.Text.Trim() + "%'";
+            }
+            (dataGridView.DataSource as DataTable).DefaultView.RowFilter = Query;
+            dataGridView_DataSourceChanged(sender, e);
         }
     }
 }

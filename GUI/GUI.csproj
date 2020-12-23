@@ -48,7 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\dictionary_B5S_icon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
@@ -148,6 +149,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Exam_Do.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,14 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UserControl_Exam_Do.resx">
       <DependentUpon>UserControl_Exam_Do.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,7 +323,6 @@
     <None Include="Resources\books.png" />
     <None Include="Resources\delete-user.png" />
     <None Include="Resources\dictionary.png" />
-    <None Include="Resources\dictionary_B5S_icon.ico" />
     <None Include="Resources\economic.png" />
     <None Include="Resources\EFT.jpg" />
     <None Include="Resources\exam.png" />
@@ -338,14 +338,11 @@
     <None Include="Resources\list-searching-variant.png" />
     <None Include="Resources\lock.png" />
     <None Include="Resources\lock1.png" />
-    <None Include="Resources\magnifying-search-lenses-tool.png" />
     <None Include="Resources\magic-book.png" />
     <None Include="Resources\refresh.png" />
     <None Include="Resources\reset.png" />
     <None Include="Resources\right-arrow.png" />
     <None Include="Resources\rubbish-bin.png" />
-    <None Include="Resources\star %281%29.png" />
-    <None Include="Resources\star.png" />
     <None Include="Resources\stationery-stack.png" />
     <None Include="Resources\to-do-list.png" />
     <None Include="Resources\translation.png" />
@@ -353,7 +350,10 @@
     <None Include="Resources\user.png" />
     <None Include="Resources\vegetables.jpg" />
     <None Include="Resources\volume.png" />
-    <None Include="Resources\search.ico" />
+    <None Include="Resources\dictionary_icon.ico" />
+    <None Include="Resources\star_yellow.png" />
+    <None Include="Resources\star_white.png" />
+    <None Include="Resources\search.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>
