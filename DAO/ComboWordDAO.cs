@@ -4,9 +4,11 @@ using System.IO;
 
 namespace DAO {
     public class ComboWordDAO {
-        #region properties
+        #region variables
         private static ComboWordDAO instance;
+        #endregion
 
+        #region properties
         public static ComboWordDAO Instance {
             get {
                 if (instance == null)
@@ -21,15 +23,15 @@ namespace DAO {
         #endregion
 
         #region method
-        public DataTable GetAnimal() {
-            DataTable table = new DataTable();
+        public DataSet GetDataSet(string fileName) {
+            DataSet dataSet = new DataSet();
 
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\vocabulary\animal.json")) {
+            using (StreamReader r = new StreamReader(string.Format(@"..\..\..\resources\vocabulary\{0}.json", fileName))) {
                 string json = r.ReadToEnd();
-                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
+                dataSet = JsonConvert.DeserializeObject<DataSet>(json);
             }
 
-            return table;
+            return dataSet;
         }
         #endregion
     }
