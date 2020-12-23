@@ -3,9 +3,11 @@ using System.Data;
 
 namespace BUS {
     public class ComboWordBUS {
-        #region properties
+        #region variables
         private static ComboWordBUS instance;
+        #endregion
 
+        #region properties
         public static ComboWordBUS Instance {
             get {
                 if (instance == null)
@@ -19,8 +21,8 @@ namespace BUS {
         #endregion
 
         #region method
-        public DataTable GetAnimal() {
-            return ComboWordDAO.Instance.GetAnimal();
+        public DataSet GetDataSet(string fileName) {
+            return ComboWordDAO.Instance.GetDataSet(fileName);
         }
         #endregion
     }
