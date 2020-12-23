@@ -28,12 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_ComboWord));
-            this.bt_animal = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ComboWord = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel_ComboWord3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bt_irregularverb = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ComboWord1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel_ComboWord2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel_ComboWord4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel_ComboWord5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.lb_comboWords = new System.Windows.Forms.Label();
+            this.metroTextBox_Filter = new MetroFramework.Controls.MetroTextBox();
+            this.xuiButton_Back = new XanderUI.XUIButton();
+            this.bt_irregularverb = new System.Windows.Forms.Button();
+            this.bt_animal = new System.Windows.Forms.Button();
             this.xuiButton_Birds = new XanderUI.XUIButton();
             this.xuiButton_insects = new XanderUI.XUIButton();
             this.xuiButton_marines = new XanderUI.XUIButton();
@@ -42,52 +53,26 @@
             this.xuiButton_wildAnimal = new XanderUI.XUIButton();
             this.xuiButton_Pets = new XanderUI.XUIButton();
             this.xuiButton_AnimalGroups = new XanderUI.XUIButton();
-            this.flowLayoutPanel_ComboWord2 = new System.Windows.Forms.FlowLayoutPanel();
             this.bt_Economic_ForeignTrade = new System.Windows.Forms.Button();
-            this.flowLayoutPanel_ComboWord4 = new System.Windows.Forms.FlowLayoutPanel();
             this.bt_IT = new System.Windows.Forms.Button();
             this.xuiButton_numeralSystems = new XanderUI.XUIButton();
             this.xuiButton_branches = new XanderUI.XUIButton();
             this.xuiButton_computerConstruction = new XanderUI.XUIButton();
             this.xuiButton_commonWords = new XanderUI.XUIButton();
             this.xuiButton_Terminologies = new XanderUI.XUIButton();
-            this.flowLayoutPanel_ComboWord5 = new System.Windows.Forms.FlowLayoutPanel();
             this.bt_vegetables = new System.Windows.Forms.Button();
             this.xuiButton_mushrooms = new XanderUI.XUIButton();
             this.xuiButton_vegetables = new XanderUI.XUIButton();
             this.xuiButton_Herbs_Spices = new XanderUI.XUIButton();
             this.xuiButton_fruits = new XanderUI.XUIButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lb_comboWords = new System.Windows.Forms.Label();
-            this.xuiButton_Back = new XanderUI.XUIButton();
             this.flowLayoutPanel_ComboWord.SuspendLayout();
             this.flowLayoutPanel_ComboWord3.SuspendLayout();
             this.flowLayoutPanel_ComboWord1.SuspendLayout();
             this.flowLayoutPanel_ComboWord2.SuspendLayout();
             this.flowLayoutPanel_ComboWord4.SuspendLayout();
             this.flowLayoutPanel_ComboWord5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bt_animal
-            // 
-            this.bt_animal.BackColor = System.Drawing.Color.Transparent;
-            this.bt_animal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_animal.BackgroundImage")));
-            this.bt_animal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_animal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_animal.FlatAppearance.BorderSize = 0;
-            this.bt_animal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_animal.Font = new System.Drawing.Font("Calibri", 24F);
-            this.bt_animal.ForeColor = System.Drawing.Color.Black;
-            this.bt_animal.Location = new System.Drawing.Point(3, 3);
-            this.bt_animal.Name = "bt_animal";
-            this.bt_animal.Size = new System.Drawing.Size(478, 79);
-            this.bt_animal.TabIndex = 0;
-            this.bt_animal.Text = "Animal";
-            this.bt_animal.UseVisualStyleBackColor = false;
-            this.bt_animal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord1_MouseDown);
-            this.bt_animal.MouseEnter += new System.EventHandler(this.button_ComboWord1_MouseEnter);
-            this.bt_animal.MouseLeave += new System.EventHandler(this.button_ComboWord1_MouseLeave);
             // 
             // flowLayoutPanel_ComboWord
             // 
@@ -112,25 +97,6 @@
             this.flowLayoutPanel_ComboWord3.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord3.TabIndex = 3;
             // 
-            // bt_irregularverb
-            // 
-            this.bt_irregularverb.BackColor = System.Drawing.Color.Transparent;
-            this.bt_irregularverb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_irregularverb.BackgroundImage")));
-            this.bt_irregularverb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_irregularverb.FlatAppearance.BorderSize = 0;
-            this.bt_irregularverb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_irregularverb.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_irregularverb.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_irregularverb.Location = new System.Drawing.Point(3, 3);
-            this.bt_irregularverb.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.bt_irregularverb.Name = "bt_irregularverb";
-            this.bt_irregularverb.Size = new System.Drawing.Size(478, 79);
-            this.bt_irregularverb.TabIndex = 1;
-            this.bt_irregularverb.UseVisualStyleBackColor = false;
-            this.bt_irregularverb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord3_MouseDown);
-            this.bt_irregularverb.MouseEnter += new System.EventHandler(this.button_ComboWord3_MouseEnter);
-            this.bt_irregularverb.MouseLeave += new System.EventHandler(this.button_ComboWord3_MouseLeave);
-            // 
             // flowLayoutPanel_ComboWord1
             // 
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.bt_animal);
@@ -148,6 +114,210 @@
             this.flowLayoutPanel_ComboWord1.Name = "flowLayoutPanel_ComboWord1";
             this.flowLayoutPanel_ComboWord1.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord1.TabIndex = 2;
+            // 
+            // flowLayoutPanel_ComboWord2
+            // 
+            this.flowLayoutPanel_ComboWord2.Controls.Add(this.bt_Economic_ForeignTrade);
+            this.flowLayoutPanel_ComboWord2.Location = new System.Drawing.Point(3, 177);
+            this.flowLayoutPanel_ComboWord2.MaximumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord2.MinimumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord2.Name = "flowLayoutPanel_ComboWord2";
+            this.flowLayoutPanel_ComboWord2.Size = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord2.TabIndex = 2;
+            // 
+            // flowLayoutPanel_ComboWord4
+            // 
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.bt_IT);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_numeralSystems);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_branches);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_computerConstruction);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_commonWords);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_Terminologies);
+            this.flowLayoutPanel_ComboWord4.Location = new System.Drawing.Point(3, 264);
+            this.flowLayoutPanel_ComboWord4.MaximumSize = new System.Drawing.Size(481, 424);
+            this.flowLayoutPanel_ComboWord4.MinimumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord4.Name = "flowLayoutPanel_ComboWord4";
+            this.flowLayoutPanel_ComboWord4.Size = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord4.TabIndex = 4;
+            // 
+            // flowLayoutPanel_ComboWord5
+            // 
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.bt_vegetables);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_mushrooms);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_vegetables);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_Herbs_Spices);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_fruits);
+            this.flowLayoutPanel_ComboWord5.Location = new System.Drawing.Point(3, 351);
+            this.flowLayoutPanel_ComboWord5.MaximumSize = new System.Drawing.Size(481, 356);
+            this.flowLayoutPanel_ComboWord5.MinimumSize = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord5.Name = "flowLayoutPanel_ComboWord5";
+            this.flowLayoutPanel_ComboWord5.Size = new System.Drawing.Size(481, 81);
+            this.flowLayoutPanel_ComboWord5.TabIndex = 5;
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView.ColumnHeadersHeight = 35;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView.EnableHeadersVisualStyles = false;
+            this.dataGridView.Location = new System.Drawing.Point(10, 38);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.RowHeadersWidth = 92;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView.RowTemplate.Height = 37;
+            this.dataGridView.RowTemplate.ReadOnly = true;
+            this.dataGridView.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView.ShowCellErrors = false;
+            this.dataGridView.ShowCellToolTips = false;
+            this.dataGridView.ShowEditingIcon = false;
+            this.dataGridView.ShowRowErrors = false;
+            this.dataGridView.Size = new System.Drawing.Size(602, 475);
+            this.dataGridView.TabIndex = 2;
+            this.dataGridView.DataSourceChanged += new System.EventHandler(this.dataGridView1_DataSourceChanged);
+            this.dataGridView.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.dataGridView_MouseWheel);
+            // 
+            // lb_comboWords
+            // 
+            this.lb_comboWords.AutoSize = true;
+            this.lb_comboWords.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_comboWords.Location = new System.Drawing.Point(13, 6);
+            this.lb_comboWords.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_comboWords.Name = "lb_comboWords";
+            this.lb_comboWords.Size = new System.Drawing.Size(66, 29);
+            this.lb_comboWords.TabIndex = 4;
+            this.lb_comboWords.Text = "word";
+            // 
+            // metroTextBox_Filter
+            // 
+            // 
+            // 
+            // 
+            this.metroTextBox_Filter.CustomButton.Image = null;
+            this.metroTextBox_Filter.CustomButton.Location = new System.Drawing.Point(181, 2);
+            this.metroTextBox_Filter.CustomButton.Name = "";
+            this.metroTextBox_Filter.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.metroTextBox_Filter.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox_Filter.CustomButton.TabIndex = 1;
+            this.metroTextBox_Filter.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox_Filter.CustomButton.UseSelectable = true;
+            this.metroTextBox_Filter.CustomButton.Visible = false;
+            this.metroTextBox_Filter.DisplayIcon = true;
+            this.metroTextBox_Filter.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.metroTextBox_Filter.Lines = new string[] {
+        "Filter"};
+            this.metroTextBox_Filter.Location = new System.Drawing.Point(362, 9);
+            this.metroTextBox_Filter.MaxLength = 32767;
+            this.metroTextBox_Filter.Name = "metroTextBox_Filter";
+            this.metroTextBox_Filter.PasswordChar = '\0';
+            this.metroTextBox_Filter.PromptText = "Filter...";
+            this.metroTextBox_Filter.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox_Filter.SelectedText = "";
+            this.metroTextBox_Filter.SelectionLength = 0;
+            this.metroTextBox_Filter.SelectionStart = 0;
+            this.metroTextBox_Filter.ShortcutsEnabled = true;
+            this.metroTextBox_Filter.Size = new System.Drawing.Size(203, 24);
+            this.metroTextBox_Filter.TabIndex = 6;
+            this.metroTextBox_Filter.Text = "Filter";
+            this.metroTextBox_Filter.UseSelectable = true;
+            this.metroTextBox_Filter.WaterMark = "Filter...";
+            this.metroTextBox_Filter.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox_Filter.WaterMarkFont = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // xuiButton_Back
+            // 
+            this.xuiButton_Back.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton_Back.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Back.ButtonImage")));
+            this.xuiButton_Back.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Back.ButtonText = "";
+            this.xuiButton_Back.ClickBackColor = System.Drawing.Color.White;
+            this.xuiButton_Back.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Back.CornerRadius = 5;
+            this.xuiButton_Back.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Back.HoverBackgroundColor = System.Drawing.Color.Red;
+            this.xuiButton_Back.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Back.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Back.Location = new System.Drawing.Point(584, 1);
+            this.xuiButton_Back.Name = "xuiButton_Back";
+            this.xuiButton_Back.Size = new System.Drawing.Size(37, 33);
+            this.xuiButton_Back.TabIndex = 5;
+            this.xuiButton_Back.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Back.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Back.Click += new System.EventHandler(this.xuiButton_Back_Click);
+            // 
+            // bt_irregularverb
+            // 
+            this.bt_irregularverb.BackColor = System.Drawing.Color.Transparent;
+            this.bt_irregularverb.BackgroundImage = global::GUI.Properties.Resources.irregularverbs;
+            this.bt_irregularverb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_irregularverb.FlatAppearance.BorderSize = 0;
+            this.bt_irregularverb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_irregularverb.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_irregularverb.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_irregularverb.Location = new System.Drawing.Point(3, 3);
+            this.bt_irregularverb.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.bt_irregularverb.Name = "bt_irregularverb";
+            this.bt_irregularverb.Size = new System.Drawing.Size(478, 79);
+            this.bt_irregularverb.TabIndex = 1;
+            this.bt_irregularverb.UseVisualStyleBackColor = false;
+            this.bt_irregularverb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord3_MouseDown);
+            this.bt_irregularverb.MouseEnter += new System.EventHandler(this.button_ComboWord3_MouseEnter);
+            this.bt_irregularverb.MouseLeave += new System.EventHandler(this.button_ComboWord3_MouseLeave);
+            // 
+            // bt_animal
+            // 
+            this.bt_animal.BackColor = System.Drawing.Color.Transparent;
+            this.bt_animal.BackgroundImage = global::GUI.Properties.Resources.animal;
+            this.bt_animal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_animal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_animal.FlatAppearance.BorderSize = 0;
+            this.bt_animal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_animal.Font = new System.Drawing.Font("Calibri", 24F);
+            this.bt_animal.ForeColor = System.Drawing.Color.Black;
+            this.bt_animal.Location = new System.Drawing.Point(3, 3);
+            this.bt_animal.Name = "bt_animal";
+            this.bt_animal.Size = new System.Drawing.Size(478, 79);
+            this.bt_animal.TabIndex = 0;
+            this.bt_animal.Text = "Animal";
+            this.bt_animal.UseVisualStyleBackColor = false;
+            this.bt_animal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord1_MouseDown);
+            this.bt_animal.MouseEnter += new System.EventHandler(this.button_ComboWord1_MouseEnter);
+            this.bt_animal.MouseLeave += new System.EventHandler(this.button_ComboWord1_MouseLeave);
             // 
             // xuiButton_Birds
             // 
@@ -325,20 +495,10 @@
             this.xuiButton_AnimalGroups.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_AnimalGroups.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_AnimalGroups_MouseDown);
             // 
-            // flowLayoutPanel_ComboWord2
-            // 
-            this.flowLayoutPanel_ComboWord2.Controls.Add(this.bt_Economic_ForeignTrade);
-            this.flowLayoutPanel_ComboWord2.Location = new System.Drawing.Point(3, 177);
-            this.flowLayoutPanel_ComboWord2.MaximumSize = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord2.MinimumSize = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord2.Name = "flowLayoutPanel_ComboWord2";
-            this.flowLayoutPanel_ComboWord2.Size = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord2.TabIndex = 2;
-            // 
             // bt_Economic_ForeignTrade
             // 
             this.bt_Economic_ForeignTrade.BackColor = System.Drawing.Color.Transparent;
-            this.bt_Economic_ForeignTrade.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_Economic_ForeignTrade.BackgroundImage")));
+            this.bt_Economic_ForeignTrade.BackgroundImage = global::GUI.Properties.Resources.EFT;
             this.bt_Economic_ForeignTrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_Economic_ForeignTrade.FlatAppearance.BorderSize = 0;
             this.bt_Economic_ForeignTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -355,25 +515,10 @@
             this.bt_Economic_ForeignTrade.MouseEnter += new System.EventHandler(this.button_ComboWord2_MouseEnter);
             this.bt_Economic_ForeignTrade.MouseLeave += new System.EventHandler(this.button_ComboWord2_MouseLeave);
             // 
-            // flowLayoutPanel_ComboWord4
-            // 
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.bt_IT);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_numeralSystems);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_branches);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_computerConstruction);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_commonWords);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_Terminologies);
-            this.flowLayoutPanel_ComboWord4.Location = new System.Drawing.Point(3, 264);
-            this.flowLayoutPanel_ComboWord4.MaximumSize = new System.Drawing.Size(481, 424);
-            this.flowLayoutPanel_ComboWord4.MinimumSize = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord4.Name = "flowLayoutPanel_ComboWord4";
-            this.flowLayoutPanel_ComboWord4.Size = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord4.TabIndex = 4;
-            // 
             // bt_IT
             // 
             this.bt_IT.BackColor = System.Drawing.Color.Transparent;
-            this.bt_IT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_IT.BackgroundImage")));
+            this.bt_IT.BackgroundImage = global::GUI.Properties.Resources.IT;
             this.bt_IT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_IT.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_IT.FlatAppearance.BorderSize = 0;
@@ -500,24 +645,10 @@
             this.xuiButton_Terminologies.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Terminologies.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Terminologies_MouseDown);
             // 
-            // flowLayoutPanel_ComboWord5
-            // 
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.bt_vegetables);
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_mushrooms);
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_vegetables);
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_Herbs_Spices);
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_fruits);
-            this.flowLayoutPanel_ComboWord5.Location = new System.Drawing.Point(3, 351);
-            this.flowLayoutPanel_ComboWord5.MaximumSize = new System.Drawing.Size(481, 356);
-            this.flowLayoutPanel_ComboWord5.MinimumSize = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord5.Name = "flowLayoutPanel_ComboWord5";
-            this.flowLayoutPanel_ComboWord5.Size = new System.Drawing.Size(481, 81);
-            this.flowLayoutPanel_ComboWord5.TabIndex = 5;
-            // 
             // bt_vegetables
             // 
             this.bt_vegetables.BackColor = System.Drawing.Color.Transparent;
-            this.bt_vegetables.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_vegetables.BackgroundImage")));
+            this.bt_vegetables.BackgroundImage = global::GUI.Properties.Resources.vegetables;
             this.bt_vegetables.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_vegetables.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.bt_vegetables.FlatAppearance.BorderSize = 0;
@@ -622,56 +753,13 @@
             this.xuiButton_fruits.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_fruits.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_fruits_MouseDown);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 38);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 92;
-            this.dataGridView1.RowTemplate.Height = 37;
-            this.dataGridView1.Size = new System.Drawing.Size(602, 475);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // lb_comboWords
-            // 
-            this.lb_comboWords.AutoSize = true;
-            this.lb_comboWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_comboWords.Location = new System.Drawing.Point(22, 10);
-            this.lb_comboWords.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_comboWords.Name = "lb_comboWords";
-            this.lb_comboWords.Size = new System.Drawing.Size(45, 20);
-            this.lb_comboWords.TabIndex = 4;
-            this.lb_comboWords.Text = "word";
-            // 
-            // xuiButton_Back
-            // 
-            this.xuiButton_Back.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xuiButton_Back.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Back.ButtonImage")));
-            this.xuiButton_Back.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton_Back.ButtonText = "";
-            this.xuiButton_Back.ClickBackColor = System.Drawing.Color.White;
-            this.xuiButton_Back.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_Back.CornerRadius = 5;
-            this.xuiButton_Back.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Back.HoverBackgroundColor = System.Drawing.Color.Red;
-            this.xuiButton_Back.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_Back.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Back.Location = new System.Drawing.Point(584, 1);
-            this.xuiButton_Back.Name = "xuiButton_Back";
-            this.xuiButton_Back.Size = new System.Drawing.Size(37, 33);
-            this.xuiButton_Back.TabIndex = 5;
-            this.xuiButton_Back.TextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_Back.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Back.Click += new System.EventHandler(this.xuiButton_Back_Click);
-            // 
             // UserControl_ComboWord
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.metroTextBox_Filter);
             this.Controls.Add(this.xuiButton_Back);
             this.Controls.Add(this.lb_comboWords);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.flowLayoutPanel_ComboWord);
             this.Name = "UserControl_ComboWord";
             this.Size = new System.Drawing.Size(624, 516);
@@ -681,7 +769,7 @@
             this.flowLayoutPanel_ComboWord2.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord4.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -717,8 +805,9 @@
         private XanderUI.XUIButton xuiButton_vegetables;
         private XanderUI.XUIButton xuiButton_Herbs_Spices;
         private XanderUI.XUIButton xuiButton_fruits;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label lb_comboWords;
         private XanderUI.XUIButton xuiButton_Back;
+        private MetroFramework.Controls.MetroTextBox metroTextBox_Filter;
     }
 }

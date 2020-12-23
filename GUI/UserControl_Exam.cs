@@ -23,7 +23,6 @@ namespace GUI {
         public UserControl_Exam(Form_Main main) {
             InitializeComponent();
             Father = main;
-
         }
 
         private void metroTile_ComboWord_MouseDown(object sender, MouseEventArgs e) {
