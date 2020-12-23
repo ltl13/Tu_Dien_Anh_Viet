@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using BUS;
 using DTO;
 using SpeechLib;
-using BUS;
+using System;
+using System.Linq;
+using System.Windows.Forms;
 
-namespace GUI
-{
+namespace GUI {
     public partial class UserControl_WordInfo : UserControl {
         private UserControl_Search father;
         EnViDTO word;
@@ -58,14 +51,14 @@ namespace GUI
             metroTile_Back.Style = MetroFramework.MetroColorStyle.White;
         }
 
-        private void metroTile_Speaker_Click(object sender, EventArgs e)
-        {
-            SpVoice speakEnglish = new SpVoice();
-            speakEnglish.Speak(label_Word.Text, SpeechVoiceSpeakFlags.SVSFDefault);
+        private void metroTile_Speaker_Click(object sender, EventArgs e) {
+            if (father.Father.IsEnToVi) {
+                SpVoice speakEnglish = new SpVoice();
+                speakEnglish.Speak(word.English, SpeechVoiceSpeakFlags.SVSFDefault);
+            }
         }
 
-        private void xuiButton_Interest_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_Interest_Click(object sender, EventArgs e) {
             xuiButton_Interest.Visible = false;
             xuiButton_NotInterest.Visible = true;
 
@@ -74,8 +67,7 @@ namespace GUI
                 father.Father.Favorite.Remove(itemToRemove);
             DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
-        private void xuiButton_NotInterest_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_NotInterest_Click(object sender, EventArgs e) {
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
             father.Father.Favorite.Add(word);

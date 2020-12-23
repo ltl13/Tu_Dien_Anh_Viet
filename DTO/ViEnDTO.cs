@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DTO {
+﻿namespace DTO {
     public class ViEnDTO {
         #region variables
         private string vietNamese;
@@ -22,13 +16,13 @@ namespace DTO {
         public ViEnDTO(string vietNamese, string no_Accents_Mark_VietNamese, string english) {
             this.vietNamese = vietNamese;
             this.no_Accents_Mark_VietNamese = no_Accents_Mark_VietNamese;
-            this.english = english;           
+            this.english = english;
         }
 
         public ViEnDTO(System.Data.DataRowView row) {
             this.vietNamese = row["VietNamese"].ToString();
             this.no_Accents_Mark_VietNamese = row["No_Accents_Mark_VietNamese"].ToString();
-            this.english = row["English"].ToString();            
+            this.english = row["English"].ToString();
         }
         #endregion
 
@@ -37,7 +31,7 @@ namespace DTO {
             string[] typeOfWord = { "|*dtừ", "|*ngđtừ", "|*thán từ", "|*ttừ", "|*đại từ", "|*thngữ", "|*nđtừ", "|*đtừ" };
             string temp = english;
 
-            foreach(var word in typeOfWord) {
+            foreach (var word in typeOfWord) {
                 if (temp.Contains(word)) {
                     if (temp.IndexOf(word) != 0) {
                         temp = temp.Insert(temp.IndexOf(word), "\n");

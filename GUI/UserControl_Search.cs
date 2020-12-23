@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using BUS;
+using DTO;
+using System;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using BUS;
-using DTO;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace GUI {
     public partial class UserControl_Search : UserControl {
@@ -214,7 +210,6 @@ namespace GUI {
             listBox_Search.Visible = false;
             metroTextBox_Searchbar.Text = "";
         }
-        #endregion
 
         private void metroTextBox_Searchbar_Enter(object sender, EventArgs e) {
             if (metroTextBox_Searchbar.Text == string.Empty) {
@@ -237,14 +232,16 @@ namespace GUI {
         }
 
         private void listBox_Search_KeyDown(object sender, KeyEventArgs e) {
-            if (e.KeyCode == Keys.Enter) {
-                listBox_Search.Click += listBox_Search_Click;
-            }
-            else if (e.KeyCode == Keys.Up) {
-                this.listBox_Search.SelectedIndex--;
-            }
-            else if (e.KeyCode == Keys.Down) {
-                this.listBox_Search.SelectedIndex++;
+            if (listBox_Search.Visible == true) {
+                if (e.KeyCode == Keys.Enter) {
+                    listBox_Search_Click(sender, e);
+                }
+                else if (e.KeyCode == Keys.Up) {
+                    this.listBox_Search.SelectedIndex--;
+                }
+                else if (e.KeyCode == Keys.Down) {
+                    this.listBox_Search.SelectedIndex++;
+                }
             }
         }
 
@@ -261,5 +258,6 @@ namespace GUI {
                 }
             }
         }
+        #endregion
     }
 }

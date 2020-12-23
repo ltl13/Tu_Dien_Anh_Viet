@@ -1,7 +1,4 @@
-﻿using System;
-using System.Text;
-
-namespace DTO {
+﻿namespace DTO {
     public class EnViDTO {
         #region properties
         private string english;
@@ -32,6 +29,7 @@ namespace DTO {
             temp = temp.Replace("&quot;", "\"");
             temp = temp.Replace("&amp;", "&");
             temp = temp.Replace("&lt;y&gt;", "(y học)");
+            temp = temp.Replace("&lt;thgt&gt;", "(thông tục)");
             temp = temp.Replace("|*", "\n");
             temp = temp.Replace("|-!", "\n\t➡ ");
             temp = temp.Replace("|-", "\n\t➡ ");
@@ -50,12 +48,13 @@ namespace DTO {
             temp = temp.Replace("&quot;", "\"");
             temp = temp.Replace("&amp;", "&");
             temp = temp.Replace("&lt;y&gt;", "(y học)");
+            temp = temp.Replace("&lt;thgt&gt;", "(thông tục)");
             string[] arr = temp.Split('|');
 
             foreach (string str in arr)
-                if(str.Insert(0, "|").Contains("|-"))
+                if (str.Insert(0, "|").Contains("|-"))
                     return str.Replace("-", "");
-                
+
             return null;
         }
 
