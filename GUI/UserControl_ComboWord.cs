@@ -344,9 +344,9 @@ namespace GUI {
             string Query = "";
             if (metroTextBox_Filter.Text != string.Empty) {
                 for (int i = 0; i < dataGridView.Columns.Count - 1; i++) {
-                    Query += dataGridView.Columns[i].HeaderText + " like '%" + metroTextBox_Filter.Text.Trim() + "%' or ";
+                    Query += "[" + dataGridView.Columns[i].HeaderText + "] like '%" + metroTextBox_Filter.Text.Trim() + "%' or ";
                 }
-                Query += dataGridView.Columns[dataGridView.Columns.Count - 1].HeaderText + " like '%" + metroTextBox_Filter.Text.Trim() + "%'";
+                Query += "[" + dataGridView.Columns[dataGridView.Columns.Count - 1].HeaderText + "] like '%" + metroTextBox_Filter.Text.Trim() + "%'";
             }
             (dataGridView.DataSource as DataTable).DefaultView.RowFilter = Query;
             dataGridView_DataSourceChanged(sender, e);

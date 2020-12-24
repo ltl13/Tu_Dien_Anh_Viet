@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_ComboWord));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel_ComboWord = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel_ComboWord3 = new System.Windows.Forms.FlowLayoutPanel();
             this.bt_irregularverb = new System.Windows.Forms.Button();
@@ -82,9 +82,9 @@
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord2);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord4);
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord5);
-            this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(73, 38);
+            this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(86, 46);
             this.flowLayoutPanel_ComboWord.Name = "flowLayoutPanel_ComboWord";
-            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(584, 475);
+            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(617, 475);
             this.flowLayoutPanel_ComboWord.TabIndex = 1;
             // 
             // flowLayoutPanel_ComboWord3
@@ -634,45 +634,46 @@
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView.EnableHeadersVisualStyles = false;
-            this.dataGridView.Location = new System.Drawing.Point(10, 38);
+            this.dataGridView.Location = new System.Drawing.Point(10, 45);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.RowHeadersWidth = 92;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView.RowTemplate.Height = 37;
             this.dataGridView.RowTemplate.ReadOnly = true;
             this.dataGridView.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -680,7 +681,7 @@
             this.dataGridView.ShowCellToolTips = false;
             this.dataGridView.ShowEditingIcon = false;
             this.dataGridView.ShowRowErrors = false;
-            this.dataGridView.Size = new System.Drawing.Size(602, 475);
+            this.dataGridView.Size = new System.Drawing.Size(650, 500);
             this.dataGridView.TabIndex = 2;
             this.dataGridView.DataSourceChanged += new System.EventHandler(this.dataGridView_DataSourceChanged);
             this.dataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGridView_CellPainting);
@@ -691,7 +692,7 @@
             // 
             this.lb_comboWords.AutoSize = true;
             this.lb_comboWords.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_comboWords.Location = new System.Drawing.Point(13, 6);
+            this.lb_comboWords.Location = new System.Drawing.Point(12, 8);
             this.lb_comboWords.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_comboWords.Name = "lb_comboWords";
             this.lb_comboWords.Size = new System.Drawing.Size(66, 29);
@@ -711,7 +712,7 @@
             this.xuiButton_Back.HoverBackgroundColor = System.Drawing.Color.Red;
             this.xuiButton_Back.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Back.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Back.Location = new System.Drawing.Point(584, 1);
+            this.xuiButton_Back.Location = new System.Drawing.Point(623, 7);
             this.xuiButton_Back.Name = "xuiButton_Back";
             this.xuiButton_Back.Size = new System.Drawing.Size(37, 33);
             this.xuiButton_Back.TabIndex = 5;
@@ -725,7 +726,7 @@
             // 
             // 
             this.metroTextBox_Filter.CustomButton.Image = null;
-            this.metroTextBox_Filter.CustomButton.Location = new System.Drawing.Point(141, 1);
+            this.metroTextBox_Filter.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.metroTextBox_Filter.CustomButton.Name = "";
             this.metroTextBox_Filter.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.metroTextBox_Filter.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -735,7 +736,7 @@
             this.metroTextBox_Filter.CustomButton.Visible = false;
             this.metroTextBox_Filter.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.metroTextBox_Filter.Lines = new string[0];
-            this.metroTextBox_Filter.Location = new System.Drawing.Point(389, 6);
+            this.metroTextBox_Filter.Location = new System.Drawing.Point(383, 11);
             this.metroTextBox_Filter.MaxLength = 32767;
             this.metroTextBox_Filter.Name = "metroTextBox_Filter";
             this.metroTextBox_Filter.PasswordChar = '\0';
@@ -745,7 +746,7 @@
             this.metroTextBox_Filter.SelectionLength = 0;
             this.metroTextBox_Filter.SelectionStart = 0;
             this.metroTextBox_Filter.ShortcutsEnabled = true;
-            this.metroTextBox_Filter.Size = new System.Drawing.Size(167, 27);
+            this.metroTextBox_Filter.Size = new System.Drawing.Size(174, 27);
             this.metroTextBox_Filter.TabIndex = 6;
             this.metroTextBox_Filter.UseSelectable = true;
             this.metroTextBox_Filter.WaterMark = "Filter...";
@@ -762,7 +763,8 @@
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.flowLayoutPanel_ComboWord);
             this.Name = "UserControl_ComboWord";
-            this.Size = new System.Drawing.Size(624, 516);
+            this.Padding = new System.Windows.Forms.Padding(10, 0, 10, 10);
+            this.Size = new System.Drawing.Size(670, 555);
             this.Load += new System.EventHandler(this.UserControl_ComboWord_Load);
             this.flowLayoutPanel_ComboWord.ResumeLayout(false);
             this.flowLayoutPanel_ComboWord3.ResumeLayout(false);
