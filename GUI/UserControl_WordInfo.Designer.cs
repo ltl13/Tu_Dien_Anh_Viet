@@ -152,6 +152,7 @@
             this.label_Word.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.label_Word.Location = new System.Drawing.Point(0, 0);
             this.label_Word.Name = "label_Word";
+            this.label_Word.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
             this.label_Word.Size = new System.Drawing.Size(624, 115);
             this.label_Word.TabIndex = 0;
             this.label_Word.Text = "English";

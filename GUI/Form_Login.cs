@@ -7,18 +7,12 @@ using System.Windows.Forms;
 
 namespace GUI {
     public partial class Form_Login : MetroFramework.Forms.MetroForm {
-        BackgroundWorker backgroundWorker;
         Form_Main fMain;
         AccountDTO loginAccount;
 
         #region properties
         public Form_Login() {
             InitializeComponent();
-
-            backgroundWorker = new BackgroundWorker();
-            backgroundWorker.DoWork += backgroundWorker_DoWork;
-            backgroundWorker.ProgressChanged += backgroundWorker_ProgressChanged;
-            backgroundWorker.WorkerReportsProgress = true;
 
             this.FocusMe();
         }
@@ -45,8 +39,11 @@ namespace GUI {
             if (Login(userName, passWord)) {
                 loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);
                 xuiFlatProgressBar_Login.Visible = true;
-                backgroundWorker.RunWorkerAsync();
 
+                fMain = new Form_Main(loginAccount, this);
+                fMain.Show();
+                this.Hide();
+                xuiFlatProgressBar_Login.Visible = false;
                 this.tbUsername.Select();
                 this.tbUsername.Focus();
                 this.tbUsername.Text = string.Empty;
@@ -84,21 +81,6 @@ namespace GUI {
 
         private void lbCreateNewAccount_MouseLeave(object sender, EventArgs e) {
             this.lbCreateNewAccount.Font = new System.Drawing.Font("Calibri", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-        }
-
-        private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e) {
-            fMain = new Form_Main(loginAccount, this);
-            for (int i = 0; i < 100; i++) {
-                Thread.Sleep(1000);
-                backgroundWorker.ReportProgress(i);
-            }
-            //this.Hide();
-            //xuiFlatProgressBar_Login.Visible = false;
-        }
-
-        private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e) {
-            xuiFlatProgressBar_Login.Value = e.ProgressPercentage;
-            fMain.Show();
         }
         #endregion
     }

@@ -624,7 +624,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 35);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Daily DIctionary";
+            this.label2.Text = "Daily Dictionary";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
