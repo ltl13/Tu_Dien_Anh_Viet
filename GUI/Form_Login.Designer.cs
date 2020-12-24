@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login));
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlHeader = new System.Windows.Forms.Panel();
             this.lbMotto = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.icon = new System.Windows.Forms.PictureBox();
@@ -33,29 +33,30 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.btExit = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlFooter = new System.Windows.Forms.Panel();
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbCreateNewAccount = new System.Windows.Forms.Label();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.xuiFlatProgressBar_Login = new XanderUI.XUIFlatProgressBar();
-            this.panel3.SuspendLayout();
+            this.lbError = new System.Windows.Forms.Label();
+            this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.pnlFooter.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel3
+            // pnlHeader
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.lbMotto);
-            this.panel3.Controls.Add(this.lbTitle);
-            this.panel3.Controls.Add(this.icon);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(20, 30);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(290, 148);
-            this.panel3.TabIndex = 9;
+            this.pnlHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pnlHeader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlHeader.Controls.Add(this.lbMotto);
+            this.pnlHeader.Controls.Add(this.lbTitle);
+            this.pnlHeader.Controls.Add(this.icon);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Location = new System.Drawing.Point(20, 30);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(290, 148);
+            this.pnlHeader.TabIndex = 9;
             // 
             // lbMotto
             // 
@@ -108,7 +109,7 @@
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPassword.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lbPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.lbPassword.Location = new System.Drawing.Point(38, 122);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(77, 21);
@@ -126,6 +127,7 @@
             this.tbPassword.Size = new System.Drawing.Size(216, 22);
             this.tbPassword.TabIndex = 5;
             this.tbPassword.UseSystemPasswordChar = true;
+            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             // 
             // tbUsername
             // 
@@ -154,28 +156,29 @@
             this.btExit.UseVisualStyleBackColor = false;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
-            // panel4
+            // pnlFooter
             // 
-            this.panel4.Controls.Add(this.lbUsername);
-            this.panel4.Controls.Add(this.tbUsername);
-            this.panel4.Controls.Add(this.lbPassword);
-            this.panel4.Controls.Add(this.tbPassword);
-            this.panel4.Controls.Add(this.btLogin);
-            this.panel4.Controls.Add(this.btExit);
-            this.panel4.Controls.Add(this.lbCreateNewAccount);
-            this.panel4.Controls.Add(this.pnlUsername);
-            this.panel4.Controls.Add(this.pnlPassword);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(20, 178);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(290, 352);
-            this.panel4.TabIndex = 12;
+            this.pnlFooter.Controls.Add(this.lbError);
+            this.pnlFooter.Controls.Add(this.lbUsername);
+            this.pnlFooter.Controls.Add(this.tbUsername);
+            this.pnlFooter.Controls.Add(this.lbPassword);
+            this.pnlFooter.Controls.Add(this.tbPassword);
+            this.pnlFooter.Controls.Add(this.btLogin);
+            this.pnlFooter.Controls.Add(this.btExit);
+            this.pnlFooter.Controls.Add(this.lbCreateNewAccount);
+            this.pnlFooter.Controls.Add(this.pnlUsername);
+            this.pnlFooter.Controls.Add(this.pnlPassword);
+            this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlFooter.Location = new System.Drawing.Point(20, 178);
+            this.pnlFooter.Name = "pnlFooter";
+            this.pnlFooter.Size = new System.Drawing.Size(290, 352);
+            this.pnlFooter.TabIndex = 12;
             // 
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsername.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lbUsername.ForeColor = System.Drawing.Color.DarkGray;
             this.lbUsername.Location = new System.Drawing.Point(38, 30);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(81, 21);
@@ -197,7 +200,7 @@
             // 
             // pnlUsername
             // 
-            this.pnlUsername.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlUsername.BackColor = System.Drawing.Color.DarkGray;
             this.pnlUsername.Location = new System.Drawing.Point(42, 80);
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.Size = new System.Drawing.Size(216, 1);
@@ -205,7 +208,7 @@
             // 
             // pnlPassword
             // 
-            this.pnlPassword.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlPassword.BackColor = System.Drawing.Color.DarkGray;
             this.pnlPassword.Location = new System.Drawing.Point(42, 172);
             this.pnlPassword.Name = "pnlPassword";
             this.pnlPassword.Size = new System.Drawing.Size(216, 1);
@@ -224,6 +227,20 @@
             this.xuiFlatProgressBar_Login.TabIndex = 14;
             this.xuiFlatProgressBar_Login.Value = 0;
             // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.BackColor = System.Drawing.Color.Transparent;
+            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError.ForeColor = System.Drawing.Color.Red;
+            this.lbError.Location = new System.Drawing.Point(39, 181);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(51, 17);
+            this.lbError.TabIndex = 13;
+            this.lbError.Text = "lbError";
+            this.lbError.Visible = false;
+            this.lbError.VisibleChanged += new System.EventHandler(this.lbError_VisibleChanged);
+            // 
             // Form_Login
             // 
             this.AcceptButton = this.btLogin;
@@ -233,8 +250,8 @@
             this.ClientSize = new System.Drawing.Size(330, 550);
             this.ControlBox = false;
             this.Controls.Add(this.xuiFlatProgressBar_Login);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pnlFooter);
+            this.Controls.Add(this.pnlHeader);
             this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -244,17 +261,18 @@
             this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Resizable = false;
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.VisibleChanged += new System.EventHandler(this.Form_Login_VisibleChanged);
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnlFooter.ResumeLayout(false);
+            this.pnlFooter.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lbMotto;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.PictureBox icon;
@@ -263,11 +281,12 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Button btExit;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlFooter;
         private System.Windows.Forms.Label lbCreateNewAccount;
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.Panel pnlUsername;
         private System.Windows.Forms.Panel pnlPassword;
         private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Login;
+        private System.Windows.Forms.Label lbError;
     }
 }
