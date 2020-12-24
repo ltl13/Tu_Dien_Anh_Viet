@@ -293,6 +293,7 @@ namespace GUI {
                 metroTextBox_Filter.Visible = true;
             }
             else {
+                metroTextBox_Filter.Text = string.Empty;
                 metroTextBox_Filter.Visible = false;
             }
         }
@@ -342,8 +343,10 @@ namespace GUI {
         private void metroTextBox_Filter_KeyUp(object sender, KeyEventArgs e) {
             string Query = "";
             if (metroTextBox_Filter.Text != string.Empty) {
-                Query += "Name like '%" + metroTextBox_Filter.Text.Trim() + "%' or ";
-                Query += "Meaning like '%" + metroTextBox_Filter.Text.Trim() + "%'";
+                for (int i = 0; i < dataGridView.Columns.Count - 1; i++) {
+                    Query += dataGridView.Columns[i].HeaderText + " like '%" + metroTextBox_Filter.Text.Trim() + "%' or ";
+                }
+                Query += dataGridView.Columns[dataGridView.Columns.Count - 1].HeaderText + " like '%" + metroTextBox_Filter.Text.Trim() + "%'";
             }
             (dataGridView.DataSource as DataTable).DefaultView.RowFilter = Query;
             dataGridView_DataSourceChanged(sender, e);
