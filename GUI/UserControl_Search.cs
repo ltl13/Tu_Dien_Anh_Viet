@@ -17,8 +17,9 @@ namespace GUI {
         public UserControl_WordInfo wordInfo;
         public bool isWordInfoOn = false;
         Timer _typingTimer;
+        Form_Main father;
 
-        public Form_Main Father { get; }
+        public Form_Main Father { get => father; set => father = value; }
 
         public UserControl_Search(Form_Main formMain) {
             InitializeComponent();

@@ -353,6 +353,7 @@
     <None Include="Resources\star_yellow.png" />
     <None Include="Resources\star_white.png" />
     <None Include="Resources\search.png" />
+    <None Include="Resources\console.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

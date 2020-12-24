@@ -32,25 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             this.metroStyleManager_FormMain = new MetroFramework.Components.MetroStyleManager(this.components);
             this.button_Exit = new System.Windows.Forms.Button();
-            this.panel_Main = new System.Windows.Forms.Panel();
-            this.pictureBox_Search = new System.Windows.Forms.PictureBox();
             this.panel_Search = new System.Windows.Forms.Panel();
             this.label_Search = new System.Windows.Forms.Label();
-            this.panel_Grammar = new System.Windows.Forms.Panel();
-            this.label_Grammar = new System.Windows.Forms.Label();
-            this.pictureBox_Grammar = new System.Windows.Forms.PictureBox();
-            this.panel_ComboWord = new System.Windows.Forms.Panel();
-            this.label_ComboWord = new System.Windows.Forms.Label();
-            this.pictureBox_ComboWord = new System.Windows.Forms.PictureBox();
-            this.panel_Flashcard = new System.Windows.Forms.Panel();
-            this.label_Flashcard = new System.Windows.Forms.Label();
-            this.pictureBox_Flashcard = new System.Windows.Forms.PictureBox();
-            this.panel_Translate = new System.Windows.Forms.Panel();
-            this.label_Translate = new System.Windows.Forms.Label();
-            this.pictureBox_Translate = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Search = new System.Windows.Forms.PictureBox();
             this.panel_Exam = new System.Windows.Forms.Panel();
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
+            this.panel_ComboWord = new System.Windows.Forms.Panel();
+            this.label_ComboWord = new System.Windows.Forms.Label();
+            this.pictureBox_ComboWord = new System.Windows.Forms.PictureBox();
+            this.panel_FlashCard = new System.Windows.Forms.Panel();
+            this.label_FlashCard = new System.Windows.Forms.Label();
+            this.pictureBox_FlashCard = new System.Windows.Forms.PictureBox();
+            this.panel_Translate = new System.Windows.Forms.Panel();
+            this.label_Translate = new System.Windows.Forms.Label();
+            this.pictureBox_Translate = new System.Windows.Forms.PictureBox();
+            this.panel_Game = new System.Windows.Forms.Panel();
+            this.label_Game = new System.Windows.Forms.Label();
+            this.pictureBox_Game = new System.Windows.Forms.PictureBox();
             this.panel_Account = new System.Windows.Forms.Panel();
             this.xuiButton_Logout = new XanderUI.XUIButton();
             this.xuiButton_ListAccount = new XanderUI.XUIButton();
@@ -61,24 +60,27 @@
             this.timer_MenuAccount = new System.Windows.Forms.Timer(this.components);
             this.xuiSwitch_Language = new XanderUI.XUISwitch();
             this.label_English = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label_Vietnamese = new System.Windows.Forms.Label();
+            this.label_Title = new System.Windows.Forms.Label();
+            this.panel_Choice = new System.Windows.Forms.Panel();
+            this.panel_Main = new System.Windows.Forms.Panel();
+            this.panel_Language = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
-            this.panel_Grammar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Grammar)).BeginInit();
-            this.panel_ComboWord.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).BeginInit();
-            this.panel_Flashcard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).BeginInit();
-            this.panel_Translate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Translate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Exam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).BeginInit();
+            this.panel_ComboWord.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).BeginInit();
+            this.panel_FlashCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_FlashCard)).BeginInit();
+            this.panel_Translate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Translate)).BeginInit();
+            this.panel_Game.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Game)).BeginInit();
             this.panel_Account.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_Choice.SuspendLayout();
+            this.panel_Language.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -88,15 +90,14 @@
             // button_Exit
             // 
             this.button_Exit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_Exit.BackColor = System.Drawing.SystemColors.Window;
+            this.button_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.button_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button_Exit.FlatAppearance.BorderSize = 0;
             this.button_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Exit.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Exit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button_Exit.Location = new System.Drawing.Point(855, 5);
-            this.button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_Exit.Location = new System.Drawing.Point(861, 5);
             this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(41, 38);
+            this.button_Exit.Size = new System.Drawing.Size(35, 35);
             this.button_Exit.TabIndex = 1;
             this.button_Exit.Text = "X";
             this.button_Exit.UseVisualStyleBackColor = false;
@@ -104,280 +105,218 @@
             this.button_Exit.MouseEnter += new System.EventHandler(this.button_Exit_MouseEnter);
             this.button_Exit.MouseLeave += new System.EventHandler(this.button_Exit_MouseLeave);
             // 
-            // panel_Main
-            // 
-            this.panel_Main.BackColor = System.Drawing.Color.White;
-            this.panel_Main.Location = new System.Drawing.Point(249, 74);
-            this.panel_Main.MaximumSize = new System.Drawing.Size(624, 516);
-            this.panel_Main.MinimumSize = new System.Drawing.Size(0, 516);
-            this.panel_Main.Name = "panel_Main";
-            this.panel_Main.Size = new System.Drawing.Size(0, 516);
-            this.panel_Main.TabIndex = 5;
-            // 
-            // pictureBox_Search
-            // 
-            this.pictureBox_Search.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox_Search.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Search.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Search.Image")));
-            this.pictureBox_Search.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Search.InitialImage")));
-            this.pictureBox_Search.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_Search.Name = "pictureBox_Search";
-            this.pictureBox_Search.Size = new System.Drawing.Size(85, 77);
-            this.pictureBox_Search.TabIndex = 0;
-            this.pictureBox_Search.TabStop = false;
-            this.pictureBox_Search.Click += new System.EventHandler(this.pictureBox_Search_Click);
-            this.pictureBox_Search.MouseEnter += new System.EventHandler(this.pictureBox_Search_MouseEnter);
-            this.pictureBox_Search.MouseLeave += new System.EventHandler(this.pictureBox_Search_MouseLeave);
-            // 
             // panel_Search
             // 
             this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
             this.panel_Search.Controls.Add(this.label_Search);
             this.panel_Search.Controls.Add(this.pictureBox_Search);
-            this.panel_Search.Location = new System.Drawing.Point(0, 74);
+            this.panel_Search.Location = new System.Drawing.Point(0, 0);
             this.panel_Search.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Search.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Search.Name = "panel_Search";
-            this.panel_Search.Size = new System.Drawing.Size(250, 77);
+            this.panel_Search.Size = new System.Drawing.Size(206, 77);
             this.panel_Search.TabIndex = 6;
-            this.panel_Search.Click += new System.EventHandler(this.panel_Search_Click);
-            this.panel_Search.MouseEnter += new System.EventHandler(this.panel_Search_MouseEnter);
-            this.panel_Search.MouseLeave += new System.EventHandler(this.panel_Search_MouseLeave);
             // 
             // label_Search
             // 
-            this.label_Search.AutoSize = true;
-            this.label_Search.BackColor = System.Drawing.Color.Transparent;
-            this.label_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Search.Location = new System.Drawing.Point(128, 24);
+            this.label_Search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Search.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Search.Location = new System.Drawing.Point(77, 0);
             this.label_Search.Name = "label_Search";
-            this.label_Search.Size = new System.Drawing.Size(78, 29);
+            this.label_Search.Size = new System.Drawing.Size(129, 77);
             this.label_Search.TabIndex = 1;
             this.label_Search.Text = "Tra từ";
-            this.label_Search.Click += new System.EventHandler(this.label_Search_Click);
-            this.label_Search.MouseEnter += new System.EventHandler(this.label_Search_MouseEnter);
+            this.label_Search.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Search.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Search_MouseDown);
             // 
-            // panel_Grammar
+            // pictureBox_Search
             // 
-            this.panel_Grammar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(209)))));
-            this.panel_Grammar.Controls.Add(this.label_Grammar);
-            this.panel_Grammar.Controls.Add(this.pictureBox_Grammar);
-            this.panel_Grammar.Location = new System.Drawing.Point(0, 406);
-            this.panel_Grammar.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Grammar.MinimumSize = new System.Drawing.Size(85, 77);
-            this.panel_Grammar.Name = "panel_Grammar";
-            this.panel_Grammar.Size = new System.Drawing.Size(250, 77);
-            this.panel_Grammar.TabIndex = 7;
-            this.panel_Grammar.Click += new System.EventHandler(this.panel_Grammar_Click);
-            this.panel_Grammar.MouseEnter += new System.EventHandler(this.panel_Grammar_MouseEnter);
-            this.panel_Grammar.MouseLeave += new System.EventHandler(this.panel_Grammar_MouseLeave);
+            this.pictureBox_Search.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Search.Image = global::GUI.Properties.Resources.list_searching_variant;
+            this.pictureBox_Search.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Search.Name = "pictureBox_Search";
+            this.pictureBox_Search.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox_Search.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_Search.TabIndex = 0;
+            this.pictureBox_Search.TabStop = false;
+            this.pictureBox_Search.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Search_MouseDown);
             // 
-            // label_Grammar
+            // panel_Exam
             // 
-            this.label_Grammar.AutoSize = true;
-            this.label_Grammar.BackColor = System.Drawing.Color.Transparent;
-            this.label_Grammar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Grammar.Location = new System.Drawing.Point(107, 25);
-            this.label_Grammar.Name = "label_Grammar";
-            this.label_Grammar.Size = new System.Drawing.Size(122, 29);
-            this.label_Grammar.TabIndex = 1;
-            this.label_Grammar.Text = "Ngữ pháp";
-            this.label_Grammar.Click += new System.EventHandler(this.label_Grammar_Click);
-            this.label_Grammar.MouseEnter += new System.EventHandler(this.label_Grammar_MouseEnter);
+            this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(209)))));
+            this.panel_Exam.Controls.Add(this.label_Exam);
+            this.panel_Exam.Controls.Add(this.pictureBox_Exam);
+            this.panel_Exam.Location = new System.Drawing.Point(0, 360);
+            this.panel_Exam.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_Exam.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_Exam.Name = "panel_Exam";
+            this.panel_Exam.Size = new System.Drawing.Size(206, 77);
+            this.panel_Exam.TabIndex = 7;
             // 
-            // pictureBox_Grammar
+            // label_Exam
             // 
-            this.pictureBox_Grammar.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Grammar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox_Grammar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Grammar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.ErrorImage")));
-            this.pictureBox_Grammar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.Image")));
-            this.pictureBox_Grammar.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.InitialImage")));
-            this.pictureBox_Grammar.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_Grammar.Name = "pictureBox_Grammar";
-            this.pictureBox_Grammar.Size = new System.Drawing.Size(85, 77);
-            this.pictureBox_Grammar.TabIndex = 0;
-            this.pictureBox_Grammar.TabStop = false;
-            this.pictureBox_Grammar.Click += new System.EventHandler(this.pictureBox_Grammar_Click);
-            this.pictureBox_Grammar.MouseEnter += new System.EventHandler(this.pictureBox_Grammar_MouseEnter);
-            this.pictureBox_Grammar.MouseLeave += new System.EventHandler(this.pictureBox_Grammar_MouseLeave);
+            this.label_Exam.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Exam.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Exam.Location = new System.Drawing.Point(77, 0);
+            this.label_Exam.Name = "label_Exam";
+            this.label_Exam.Size = new System.Drawing.Size(129, 77);
+            this.label_Exam.TabIndex = 3;
+            this.label_Exam.Text = "Luyện tập";
+            this.label_Exam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Exam.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Exam_MouseDown);
+            // 
+            // pictureBox_Exam
+            // 
+            this.pictureBox_Exam.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Exam.Image = global::GUI.Properties.Resources.exam;
+            this.pictureBox_Exam.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Exam.Name = "pictureBox_Exam";
+            this.pictureBox_Exam.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox_Exam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_Exam.TabIndex = 2;
+            this.pictureBox_Exam.TabStop = false;
+            this.pictureBox_Exam.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Exam_MouseDown);
             // 
             // panel_ComboWord
             // 
             this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(223)))), ((int)(((byte)(212)))));
             this.panel_ComboWord.Controls.Add(this.label_ComboWord);
             this.panel_ComboWord.Controls.Add(this.pictureBox_ComboWord);
-            this.panel_ComboWord.Location = new System.Drawing.Point(0, 240);
+            this.panel_ComboWord.Location = new System.Drawing.Point(0, 180);
             this.panel_ComboWord.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_ComboWord.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_ComboWord.Name = "panel_ComboWord";
-            this.panel_ComboWord.Size = new System.Drawing.Size(250, 77);
+            this.panel_ComboWord.Size = new System.Drawing.Size(206, 77);
             this.panel_ComboWord.TabIndex = 8;
-            this.panel_ComboWord.Click += new System.EventHandler(this.panel_ComboWord_Click);
-            this.panel_ComboWord.MouseEnter += new System.EventHandler(this.panel_ComboWord_MouseEnter);
-            this.panel_ComboWord.MouseLeave += new System.EventHandler(this.panel_ComboWord_MouseLeave);
             // 
             // label_ComboWord
             // 
-            this.label_ComboWord.AutoSize = true;
-            this.label_ComboWord.BackColor = System.Drawing.Color.Transparent;
-            this.label_ComboWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_ComboWord.Location = new System.Drawing.Point(100, 24);
+            this.label_ComboWord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_ComboWord.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ComboWord.Location = new System.Drawing.Point(77, 0);
             this.label_ComboWord.Name = "label_ComboWord";
-            this.label_ComboWord.Size = new System.Drawing.Size(134, 29);
-            this.label_ComboWord.TabIndex = 1;
-            this.label_ComboWord.Text = "Bộ từ vựng";
-            this.label_ComboWord.Click += new System.EventHandler(this.label_ComboWord_Click);
-            this.label_ComboWord.MouseEnter += new System.EventHandler(this.label_ComboWord_MouseEnter);
+            this.label_ComboWord.Size = new System.Drawing.Size(129, 77);
+            this.label_ComboWord.TabIndex = 3;
+            this.label_ComboWord.Text = "Từ vựng";
+            this.label_ComboWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_ComboWord_MouseDown);
             // 
             // pictureBox_ComboWord
             // 
-            this.pictureBox_ComboWord.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_ComboWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox_ComboWord.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_ComboWord.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_ComboWord.Image")));
-            this.pictureBox_ComboWord.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_ComboWord.InitialImage")));
+            this.pictureBox_ComboWord.Image = global::GUI.Properties.Resources.folder;
             this.pictureBox_ComboWord.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
-            this.pictureBox_ComboWord.Size = new System.Drawing.Size(85, 77);
-            this.pictureBox_ComboWord.TabIndex = 0;
+            this.pictureBox_ComboWord.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox_ComboWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_ComboWord.TabIndex = 2;
             this.pictureBox_ComboWord.TabStop = false;
-            this.pictureBox_ComboWord.Click += new System.EventHandler(this.pictureBox_ComboWord_Click);
-            this.pictureBox_ComboWord.MouseEnter += new System.EventHandler(this.pictureBox_ComboWord_MouseEnter);
-            this.pictureBox_ComboWord.MouseLeave += new System.EventHandler(this.pictureBox_ComboWord_MouseLeave);
+            this.pictureBox_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_ComboWord_MouseDown);
             // 
-            // panel_Flashcard
+            // panel_FlashCard
             // 
-            this.panel_Flashcard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(255)))), ((int)(((byte)(212)))));
-            this.panel_Flashcard.Controls.Add(this.label_Flashcard);
-            this.panel_Flashcard.Controls.Add(this.pictureBox_Flashcard);
-            this.panel_Flashcard.Location = new System.Drawing.Point(0, 323);
-            this.panel_Flashcard.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Flashcard.MinimumSize = new System.Drawing.Size(85, 77);
-            this.panel_Flashcard.Name = "panel_Flashcard";
-            this.panel_Flashcard.Size = new System.Drawing.Size(250, 77);
-            this.panel_Flashcard.TabIndex = 9;
-            this.panel_Flashcard.Click += new System.EventHandler(this.panel_Flashcard_Click);
-            this.panel_Flashcard.MouseEnter += new System.EventHandler(this.panel_Flashcard_MouseEnter);
-            this.panel_Flashcard.MouseLeave += new System.EventHandler(this.panel_Flashcard_MouseLeave);
+            this.panel_FlashCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(255)))), ((int)(((byte)(212)))));
+            this.panel_FlashCard.Controls.Add(this.label_FlashCard);
+            this.panel_FlashCard.Controls.Add(this.pictureBox_FlashCard);
+            this.panel_FlashCard.Location = new System.Drawing.Point(0, 270);
+            this.panel_FlashCard.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_FlashCard.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_FlashCard.Name = "panel_FlashCard";
+            this.panel_FlashCard.Size = new System.Drawing.Size(206, 77);
+            this.panel_FlashCard.TabIndex = 9;
             // 
-            // label_Flashcard
+            // label_FlashCard
             // 
-            this.label_Flashcard.AutoSize = true;
-            this.label_Flashcard.BackColor = System.Drawing.Color.Transparent;
-            this.label_Flashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Flashcard.Location = new System.Drawing.Point(100, 24);
-            this.label_Flashcard.Name = "label_Flashcard";
-            this.label_Flashcard.Size = new System.Drawing.Size(137, 29);
-            this.label_Flashcard.TabIndex = 1;
-            this.label_Flashcard.Text = "Flashcards";
-            this.label_Flashcard.Click += new System.EventHandler(this.label_Flashcard_Click);
-            this.label_Flashcard.MouseEnter += new System.EventHandler(this.label_Flashcard_MouseEnter);
+            this.label_FlashCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_FlashCard.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_FlashCard.Location = new System.Drawing.Point(77, 0);
+            this.label_FlashCard.Name = "label_FlashCard";
+            this.label_FlashCard.Size = new System.Drawing.Size(129, 77);
+            this.label_FlashCard.TabIndex = 3;
+            this.label_FlashCard.Text = "Flash card";
+            this.label_FlashCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_FlashCard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_FlashCard_MouseDown);
             // 
-            // pictureBox_Flashcard
+            // pictureBox_FlashCard
             // 
-            this.pictureBox_Flashcard.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Flashcard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox_Flashcard.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Flashcard.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Flashcard.Image")));
-            this.pictureBox_Flashcard.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Flashcard.InitialImage")));
-            this.pictureBox_Flashcard.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_Flashcard.Name = "pictureBox_Flashcard";
-            this.pictureBox_Flashcard.Size = new System.Drawing.Size(85, 77);
-            this.pictureBox_Flashcard.TabIndex = 0;
-            this.pictureBox_Flashcard.TabStop = false;
-            this.pictureBox_Flashcard.Click += new System.EventHandler(this.pictureBox_Flashcard_Click);
-            this.pictureBox_Flashcard.MouseEnter += new System.EventHandler(this.pictureBox_Flashcard_MouseEnter);
-            this.pictureBox_Flashcard.MouseLeave += new System.EventHandler(this.pictureBox_Flashcard_MouseLeave);
+            this.pictureBox_FlashCard.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_FlashCard.Image = global::GUI.Properties.Resources.stationery_stack;
+            this.pictureBox_FlashCard.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_FlashCard.Name = "pictureBox_FlashCard";
+            this.pictureBox_FlashCard.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox_FlashCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_FlashCard.TabIndex = 2;
+            this.pictureBox_FlashCard.TabStop = false;
+            this.pictureBox_FlashCard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_FlashCard_MouseDown);
             // 
             // panel_Translate
             // 
             this.panel_Translate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
             this.panel_Translate.Controls.Add(this.label_Translate);
             this.panel_Translate.Controls.Add(this.pictureBox_Translate);
-            this.panel_Translate.Location = new System.Drawing.Point(0, 157);
+            this.panel_Translate.Location = new System.Drawing.Point(0, 90);
             this.panel_Translate.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Translate.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Translate.Name = "panel_Translate";
-            this.panel_Translate.Size = new System.Drawing.Size(250, 77);
+            this.panel_Translate.Size = new System.Drawing.Size(206, 77);
             this.panel_Translate.TabIndex = 10;
-            this.panel_Translate.Click += new System.EventHandler(this.panel_Translate_Click);
-            this.panel_Translate.MouseEnter += new System.EventHandler(this.panel_Translate_MouseEnter);
-            this.panel_Translate.MouseLeave += new System.EventHandler(this.panel_Translate_MouseLeave);
             // 
             // label_Translate
             // 
-            this.label_Translate.AutoSize = true;
-            this.label_Translate.BackColor = System.Drawing.Color.Transparent;
-            this.label_Translate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Translate.Location = new System.Drawing.Point(136, 23);
+            this.label_Translate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Translate.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Translate.Location = new System.Drawing.Point(77, 0);
             this.label_Translate.Name = "label_Translate";
-            this.label_Translate.Size = new System.Drawing.Size(64, 29);
-            this.label_Translate.TabIndex = 1;
+            this.label_Translate.Size = new System.Drawing.Size(129, 77);
+            this.label_Translate.TabIndex = 3;
             this.label_Translate.Text = "Dịch";
-            this.label_Translate.Click += new System.EventHandler(this.label_Translate_Click);
-            this.label_Translate.MouseEnter += new System.EventHandler(this.label_Translate_MouseEnter);
+            this.label_Translate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Translate.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Translate_MouseDown);
             // 
             // pictureBox_Translate
             // 
-            this.pictureBox_Translate.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Translate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox_Translate.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Translate.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Translate.Image")));
-            this.pictureBox_Translate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Translate.InitialImage")));
+            this.pictureBox_Translate.Image = global::GUI.Properties.Resources.translation;
             this.pictureBox_Translate.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Translate.Name = "pictureBox_Translate";
-            this.pictureBox_Translate.Size = new System.Drawing.Size(85, 77);
-            this.pictureBox_Translate.TabIndex = 0;
+            this.pictureBox_Translate.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox_Translate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_Translate.TabIndex = 2;
             this.pictureBox_Translate.TabStop = false;
-            this.pictureBox_Translate.Click += new System.EventHandler(this.pictureBox_Translate_Click);
-            this.pictureBox_Translate.MouseEnter += new System.EventHandler(this.pictureBox_Translate_MouseEnter);
-            this.pictureBox_Translate.MouseLeave += new System.EventHandler(this.pictureBox_Translate_MouseLeave);
             // 
-            // panel_Exam
+            // panel_Game
             // 
-            this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
-            this.panel_Exam.Controls.Add(this.label_Exam);
-            this.panel_Exam.Controls.Add(this.pictureBox_Exam);
-            this.panel_Exam.Location = new System.Drawing.Point(0, 489);
-            this.panel_Exam.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Exam.MinimumSize = new System.Drawing.Size(85, 77);
-            this.panel_Exam.Name = "panel_Exam";
-            this.panel_Exam.Size = new System.Drawing.Size(250, 77);
-            this.panel_Exam.TabIndex = 11;
-            this.panel_Exam.Click += new System.EventHandler(this.panel_Exam_Click);
-            this.panel_Exam.MouseEnter += new System.EventHandler(this.panel_Exam_MouseEnter);
-            this.panel_Exam.MouseLeave += new System.EventHandler(this.panel_Exam_MouseLeave);
+            this.panel_Game.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.panel_Game.Controls.Add(this.label_Game);
+            this.panel_Game.Controls.Add(this.pictureBox_Game);
+            this.panel_Game.Location = new System.Drawing.Point(0, 450);
+            this.panel_Game.MaximumSize = new System.Drawing.Size(250, 77);
+            this.panel_Game.MinimumSize = new System.Drawing.Size(85, 77);
+            this.panel_Game.Name = "panel_Game";
+            this.panel_Game.Size = new System.Drawing.Size(206, 77);
+            this.panel_Game.TabIndex = 11;
             // 
-            // label_Exam
+            // label_Game
             // 
-            this.label_Exam.AutoSize = true;
-            this.label_Exam.BackColor = System.Drawing.Color.Transparent;
-            this.label_Exam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Exam.Location = new System.Drawing.Point(118, 24);
-            this.label_Exam.Name = "label_Exam";
-            this.label_Exam.Size = new System.Drawing.Size(124, 29);
-            this.label_Exam.TabIndex = 1;
-            this.label_Exam.Text = "Luyện tập";
-            this.label_Exam.Click += new System.EventHandler(this.label_Exam_Click);
-            this.label_Exam.MouseEnter += new System.EventHandler(this.label_Exam_MouseEnter);
+            this.label_Game.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Game.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Game.Location = new System.Drawing.Point(77, 0);
+            this.label_Game.Name = "label_Game";
+            this.label_Game.Size = new System.Drawing.Size(129, 77);
+            this.label_Game.TabIndex = 3;
+            this.label_Game.Text = "Game";
+            this.label_Game.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox_Exam
+            // pictureBox_Game
             // 
-            this.pictureBox_Exam.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Exam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox_Exam.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Exam.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Exam.Image")));
-            this.pictureBox_Exam.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Exam.InitialImage")));
-            this.pictureBox_Exam.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox_Exam.Name = "pictureBox_Exam";
-            this.pictureBox_Exam.Size = new System.Drawing.Size(85, 77);
-            this.pictureBox_Exam.TabIndex = 0;
-            this.pictureBox_Exam.TabStop = false;
-            this.pictureBox_Exam.Click += new System.EventHandler(this.pictureBox_Exam_Click);
-            this.pictureBox_Exam.MouseEnter += new System.EventHandler(this.pictureBox_Exam_MouseEnter);
-            this.pictureBox_Exam.MouseLeave += new System.EventHandler(this.pictureBox_Exam_MouseLeave);
+            this.pictureBox_Game.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Game.Image = global::GUI.Properties.Resources.console;
+            this.pictureBox_Game.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Game.Name = "pictureBox_Game";
+            this.pictureBox_Game.Size = new System.Drawing.Size(77, 77);
+            this.pictureBox_Game.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_Game.TabIndex = 2;
+            this.pictureBox_Game.TabStop = false;
             // 
             // panel_Account
             // 
@@ -522,9 +461,9 @@
             this.xuiButton_Account.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.xuiButton_Account.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_Account.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Account.Location = new System.Drawing.Point(0, 5);
+            this.xuiButton_Account.Location = new System.Drawing.Point(20, 4);
             this.xuiButton_Account.Name = "xuiButton_Account";
-            this.xuiButton_Account.Size = new System.Drawing.Size(200, 36);
+            this.xuiButton_Account.Size = new System.Drawing.Size(206, 27);
             this.xuiButton_Account.TabIndex = 0;
             this.xuiButton_Account.TextColor = System.Drawing.Color.White;
             this.xuiButton_Account.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -542,7 +481,7 @@
             this.xuiSwitch_Language.BackColor = System.Drawing.Color.Transparent;
             this.xuiSwitch_Language.HandleOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
             this.xuiSwitch_Language.HandleOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(180)))), ((int)(((byte)(120)))));
-            this.xuiSwitch_Language.Location = new System.Drawing.Point(734, 11);
+            this.xuiSwitch_Language.Location = new System.Drawing.Point(28, -1);
             this.xuiSwitch_Language.Name = "xuiSwitch_Language";
             this.xuiSwitch_Language.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(129)))), ((int)(((byte)(136)))));
             this.xuiSwitch_Language.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(174)))));
@@ -555,66 +494,83 @@
             // 
             // label_English
             // 
-            this.label_English.AutoSize = true;
+            this.label_English.Dock = System.Windows.Forms.DockStyle.Right;
             this.label_English.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label_English.Location = new System.Drawing.Point(810, 16);
+            this.label_English.Location = new System.Drawing.Point(99, 0);
             this.label_English.Name = "label_English";
-            this.label_English.Size = new System.Drawing.Size(37, 24);
+            this.label_English.Size = new System.Drawing.Size(37, 33);
             this.label_English.TabIndex = 14;
             this.label_English.Text = "EN";
+            this.label_English.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // label_Vietnamese
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label1.Location = new System.Drawing.Point(701, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 24);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "VI";
+            this.label_Vietnamese.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_Vietnamese.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.label_Vietnamese.Location = new System.Drawing.Point(0, 0);
+            this.label_Vietnamese.Name = "label_Vietnamese";
+            this.label_Vietnamese.Size = new System.Drawing.Size(27, 33);
+            this.label_Vietnamese.TabIndex = 15;
+            this.label_Vietnamese.Text = "VI";
+            this.label_Vietnamese.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // label_Title
             // 
-            this.label2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(411, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 35);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Daily Dictionary";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Title.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.label_Title.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_Title.AutoSize = true;
+            this.label_Title.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Title.Location = new System.Drawing.Point(358, 10);
+            this.label_Title.Name = "label_Title";
+            this.label_Title.Size = new System.Drawing.Size(200, 35);
+            this.label_Title.TabIndex = 16;
+            this.label_Title.Text = "Daily Dictionary";
+            this.label_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // panel_Choice
             // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.dictionary;
-            this.pictureBox1.Location = new System.Drawing.Point(365, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.panel_Choice.Controls.Add(this.panel_Search);
+            this.panel_Choice.Controls.Add(this.panel_Translate);
+            this.panel_Choice.Controls.Add(this.panel_ComboWord);
+            this.panel_Choice.Controls.Add(this.panel_FlashCard);
+            this.panel_Choice.Controls.Add(this.panel_Exam);
+            this.panel_Choice.Controls.Add(this.panel_Game);
+            this.panel_Choice.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_Choice.Location = new System.Drawing.Point(10, 45);
+            this.panel_Choice.Name = "panel_Choice";
+            this.panel_Choice.Size = new System.Drawing.Size(206, 555);
+            this.panel_Choice.TabIndex = 18;
+            // 
+            // panel_Main
+            // 
+            this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Main.Location = new System.Drawing.Point(216, 45);
+            this.panel_Main.Name = "panel_Main";
+            this.panel_Main.Size = new System.Drawing.Size(670, 555);
+            this.panel_Main.TabIndex = 19;
+            // 
+            // panel_Language
+            // 
+            this.panel_Language.Controls.Add(this.label_Vietnamese);
+            this.panel_Language.Controls.Add(this.label_English);
+            this.panel_Language.Controls.Add(this.xuiSwitch_Language);
+            this.panel_Language.Location = new System.Drawing.Point(703, 9);
+            this.panel_Language.Name = "panel_Language";
+            this.panel_Language.Size = new System.Drawing.Size(136, 33);
+            this.panel_Language.TabIndex = 20;
             // 
             // Form_Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label_English);
-            this.Controls.Add(this.xuiSwitch_Language);
-            this.Controls.Add(this.panel_Account);
-            this.Controls.Add(this.panel_Exam);
-            this.Controls.Add(this.panel_Translate);
-            this.Controls.Add(this.panel_Flashcard);
-            this.Controls.Add(this.panel_ComboWord);
-            this.Controls.Add(this.panel_Grammar);
-            this.Controls.Add(this.panel_Search);
+            this.ControlBox = false;
+            this.Controls.Add(this.panel_Language);
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.panel_Main);
+            this.Controls.Add(this.panel_Choice);
+            this.Controls.Add(this.label_Title);
+            this.Controls.Add(this.panel_Account);
             this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -623,32 +579,28 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(896, 610);
             this.Name = "Form_Main";
-            this.Padding = new System.Windows.Forms.Padding(20, 44, 20, 20);
+            this.Padding = new System.Windows.Forms.Padding(10, 45, 10, 10);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Default;
             this.TransparencyKey = System.Drawing.Color.LightSteelBlue;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Main_FormClosing);
+            this.Load += new System.EventHandler(this.Form_Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).EndInit();
             this.panel_Search.ResumeLayout(false);
-            this.panel_Search.PerformLayout();
-            this.panel_Grammar.ResumeLayout(false);
-            this.panel_Grammar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Grammar)).EndInit();
-            this.panel_ComboWord.ResumeLayout(false);
-            this.panel_ComboWord.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).EndInit();
-            this.panel_Flashcard.ResumeLayout(false);
-            this.panel_Flashcard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Flashcard)).EndInit();
-            this.panel_Translate.ResumeLayout(false);
-            this.panel_Translate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Translate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).EndInit();
             this.panel_Exam.ResumeLayout(false);
-            this.panel_Exam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).EndInit();
+            this.panel_ComboWord.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).EndInit();
+            this.panel_FlashCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_FlashCard)).EndInit();
+            this.panel_Translate.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Translate)).EndInit();
+            this.panel_Game.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Game)).EndInit();
             this.panel_Account.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_Choice.ResumeLayout(false);
+            this.panel_Language.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -657,25 +609,12 @@
         #endregion
         private MetroFramework.Components.MetroStyleManager metroStyleManager_FormMain;
         private System.Windows.Forms.Button button_Exit;
-        public System.Windows.Forms.Panel panel_Main;
-        private System.Windows.Forms.PictureBox pictureBox_Search;
         private System.Windows.Forms.Panel panel_Search;
-        private System.Windows.Forms.Label label_Search;
-        private System.Windows.Forms.Panel panel_Grammar;
-        private System.Windows.Forms.Label label_Grammar;
-        private System.Windows.Forms.PictureBox pictureBox_Grammar;
-        private System.Windows.Forms.Panel panel_ComboWord;
-        private System.Windows.Forms.Label label_ComboWord;
-        private System.Windows.Forms.PictureBox pictureBox_ComboWord;
-        private System.Windows.Forms.Panel panel_Flashcard;
-        private System.Windows.Forms.Label label_Flashcard;
-        private System.Windows.Forms.PictureBox pictureBox_Flashcard;
-        private System.Windows.Forms.Panel panel_Translate;
-        private System.Windows.Forms.Label label_Translate;
-        private System.Windows.Forms.PictureBox pictureBox_Translate;
         private System.Windows.Forms.Panel panel_Exam;
-        private System.Windows.Forms.Label label_Exam;
-        private System.Windows.Forms.PictureBox pictureBox_Exam;
+        private System.Windows.Forms.Panel panel_ComboWord;
+        private System.Windows.Forms.Panel panel_FlashCard;
+        private System.Windows.Forms.Panel panel_Translate;
+        private System.Windows.Forms.Panel panel_Game;
         private System.Windows.Forms.Panel panel_Account;
         private XanderUI.XUIButton xuiButton_Account;
         private System.Windows.Forms.Timer timer_MenuAccount;
@@ -686,9 +625,23 @@
         private XanderUI.XUIButton xuiButton_ListAccount;
         private XanderUI.XUISwitch xuiSwitch_Language;
         private System.Windows.Forms.Label label_English;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label_Vietnamese;
+        private System.Windows.Forms.Label label_Title;
+        private System.Windows.Forms.PictureBox pictureBox_Search;
+        private System.Windows.Forms.PictureBox pictureBox_Exam;
+        private System.Windows.Forms.PictureBox pictureBox_ComboWord;
+        private System.Windows.Forms.PictureBox pictureBox_FlashCard;
+        private System.Windows.Forms.PictureBox pictureBox_Game;
+        private System.Windows.Forms.Label label_Exam;
+        private System.Windows.Forms.Label label_ComboWord;
+        private System.Windows.Forms.Label label_FlashCard;
+        private System.Windows.Forms.Label label_Translate;
+        private System.Windows.Forms.PictureBox pictureBox_Translate;
+        private System.Windows.Forms.Label label_Game;
+        private System.Windows.Forms.Panel panel_Choice;
+        private System.Windows.Forms.Label label_Search;
+        public System.Windows.Forms.Panel panel_Main;
+        private System.Windows.Forms.Panel panel_Language;
     }
 }
 
