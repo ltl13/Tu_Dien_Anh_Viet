@@ -1,0 +1,1276 @@
+﻿{
+    "Diseases": [
+        {
+            "Vocabulary": "Abdominal pain",
+            "Meaning": "Đau bụng"
+        },
+        {
+            "Vocabulary": "Abscess",
+            "Meaning": "Nổi mụn nhọt"
+        },
+        {
+            "Vocabulary": "Acariasis",
+            "Meaning": "Bệnh ghẻ"
+        },
+        {
+            "Vocabulary": "Acne",
+            "Meaning": "Mụn trứng cá"
+        },
+        {
+            "Vocabulary": "Acute appendicitis",
+            "Meaning": "Viêm ruột thừa cấp"
+        },
+        {
+            "Vocabulary": "Acute bronchiolitis",
+            "Meaning": "Viêm tiểu phế quản cấp"
+        },
+        {
+            "Vocabulary": "Acute gingivitis",
+            "Meaning": "Cấp tính viêm nướu"
+        },
+        {
+            "Vocabulary": "Acute laryngitis",
+            "Meaning": "Viêm thanh quản cấp tính"
+        },
+        {
+            "Vocabulary": "Acute myocardial infarction",
+            "Meaning": "Nhồi máu cơ tim cấp"
+        },
+        {
+            "Vocabulary": "Acute myocarditis",
+            "Meaning": "Viêm cơ tim cấp"
+        },
+        {
+            "Vocabulary": "Acute nasopharyngitis (common cold)",
+            "Meaning": "Viêm mũi họng cấp (cảm thường)"
+        },
+        {
+            "Vocabulary": "Acute nephritis syndrome",
+            "Meaning": "Hội chứng viêm cầu thận cấp –"
+        },
+        {
+            "Vocabulary": "Acute pancreatitis",
+            "Meaning": "Viêm tụy cấp tính"
+        },
+        {
+            "Vocabulary": "Acute pancreattitis",
+            "Meaning": "Viêm tuỵ cấp"
+        },
+        {
+            "Vocabulary": "Acute pericarditis",
+            "Meaning": "Viêm ngoại tim cấp tính"
+        },
+        {
+            "Vocabulary": "Acute pharyngitis",
+            "Meaning": "Viêm họng cấp tính"
+        },
+        {
+            "Vocabulary": "Acute renal failure",
+            "Meaning": "Suy thận cấp"
+        },
+        {
+            "Vocabulary": "Acute rheumatic fever",
+            "Meaning": "Thấp khớp cấp"
+        },
+        {
+            "Vocabulary": "Acute sinusitis",
+            "Meaning": "Viêm xoang cấp tính"
+        },
+        {
+            "Vocabulary": "Acute tonsilitis",
+            "Meaning": "Viêm amiđan"
+        },
+        {
+            "Vocabulary": "Acute tracheitis",
+            "Meaning": "Viêm khí quản cấp"
+        },
+        {
+            "Vocabulary": "Acute upper respiratory infections",
+            "Meaning": "Nhiễm khuẩn đường hô hấp trên cấp tính"
+        },
+        {
+            "Vocabulary": "Aeremia",
+            "Meaning": "Bệnh khí ép"
+        },
+        {
+            "Vocabulary": "Ague",
+            "Meaning": "Bệnh sốt rét cơn"
+        },
+        {
+            "Vocabulary": "Albinism",
+            "Meaning": "Bệnh bạch tạng"
+        },
+        {
+            "Vocabulary": "Allergic reaction",
+            "Meaning": "Phản ứng dị ứng"
+        },
+        {
+            "Vocabulary": "Allergic rhinitis",
+            "Meaning": "Viêm mũi dị ứng"
+        },
+        {
+            "Vocabulary": "Allergy",
+            "Meaning": "Dị ứng"
+        },
+        {
+            "Vocabulary": "Ancylostomiasis",
+            "Meaning": "Bệnh giun móc"
+        },
+        {
+            "Vocabulary": "Anemia",
+            "Meaning": "Bệnh thiếu máu"
+        },
+        {
+            "Vocabulary": "Angina pectoris",
+            "Meaning": "Cơn đau thắt ngực"
+        },
+        {
+            "Vocabulary": "Anthrax",
+            "Meaning": "Bệnh than"
+        },
+        {
+            "Vocabulary": "Aphtha",
+            "Meaning": "Lở miệng/đẹn trong miệng"
+        },
+        {
+            "Vocabulary": "Appendicitis",
+            "Meaning": "Viêm ruột thừa"
+        },
+        {
+            "Vocabulary": "Arterial embolism and thrombosis",
+            "Meaning": "Thuyên tắc và huyết khối động mạch"
+        },
+        {
+            "Vocabulary": "Arthritis",
+            "Meaning": "Viêm khớp"
+        },
+        {
+            "Vocabulary": "Ascariasis",
+            "Meaning": "Bệnh giun đũa"
+        },
+        {
+            "Vocabulary": "Asthma",
+            "Meaning": "Hen suyễn"
+        },
+        {
+            "Vocabulary": "Atheroscclerosis",
+            "Meaning": "Xơ vữa động mạch"
+        },
+        {
+            "Vocabulary": "Athlete’s foot",
+            "Meaning": "Bệnh nấm bàn chân"
+        },
+        {
+            "Vocabulary": "Atopic dermatitis",
+            "Meaning": "Viêm da dị ứng"
+        },
+        {
+            "Vocabulary": "Atrial fibrillation",
+            "Meaning": "Rung nhĩ"
+        },
+        {
+            "Vocabulary": "Backache",
+            "Meaning": "Đau lưng"
+        },
+        {
+            "Vocabulary": "Bacterial enteritis",
+            "Meaning": "Vi khuẩn ruột"
+        },
+        {
+            "Vocabulary": "Bacterial pneumonia",
+            "Meaning": "Vi khuẩn phổi"
+        },
+        {
+            "Vocabulary": "Bilharzia",
+            "Meaning": "Bệnh giun chỉ"
+        },
+        {
+            "Vocabulary": "Black eye",
+            "Meaning": "Thâm mắt"
+        },
+        {
+            "Vocabulary": "Bleeding",
+            "Meaning": "Chảy máu"
+        },
+        {
+            "Vocabulary": "Blindness",
+            "Meaning": "Mù"
+        },
+        {
+            "Vocabulary": "Blister",
+            "Meaning": "Phồng rộp"
+        },
+        {
+            "Vocabulary": "Bradycardia",
+            "Meaning": "Nhịp tim chậm"
+        },
+        {
+            "Vocabulary": "Breast nodule",
+            "Meaning": "Hạch vú"
+        },
+        {
+            "Vocabulary": "Broken bone",
+            "Meaning": "Gãy xương"
+        },
+        {
+            "Vocabulary": "Bronchiectasis",
+            "Meaning": "Giãn phế quản"
+        },
+        {
+            "Vocabulary": "Bronchitis",
+            "Meaning": "Viêm phế quản"
+        },
+        {
+            "Vocabulary": "Bruise",
+            "Meaning": "Vết thâm"
+        },
+        {
+            "Vocabulary": "Burn",
+            "Meaning": "Bị bỏng"
+        },
+        {
+            "Vocabulary": "Cancer",
+            "Meaning": "Bệnh ung thư"
+        },
+        {
+            "Vocabulary": "Candidiasis",
+            "Meaning": "Bệnh nấm candida"
+        },
+        {
+            "Vocabulary": "Carcinomatosis",
+            "Meaning": "Ung thư biểu bì"
+        },
+        {
+            "Vocabulary": "Cardiac arrest",
+            "Meaning": "Ngừng tim"
+        },
+        {
+            "Vocabulary": "Cardiac arrhythmia",
+            "Meaning": "Rối loạn nhịp tim"
+        },
+        {
+            "Vocabulary": "Cardiomyopathy",
+            "Meaning": "Bệnh cơ tim"
+        },
+        {
+            "Vocabulary": "Cataract",
+            "Meaning": "Đục thủy tinh thể"
+        },
+        {
+            "Vocabulary": "Cerebral infarction",
+            "Meaning": "Chảy máu não"
+        },
+        {
+            "Vocabulary": "Cerebral palsy",
+            "Meaning": "Bệnh liệt não"
+        },
+        {
+            "Vocabulary": "Cerebro-vascular accident (cva)",
+            "Meaning": "Tai biến mạch máu não"
+        },
+        {
+            "Vocabulary": "Cervical polyp",
+            "Meaning": "Polyp cổ tử cung"
+        },
+        {
+            "Vocabulary": "Cervicitis",
+            "Meaning": "Viêm cổ tử cung"
+        },
+        {
+            "Vocabulary": "Chest pain",
+            "Meaning": "Đau ngực"
+        },
+        {
+            "Vocabulary": "Chicken pox",
+            "Meaning": "Bệnh thủy đậu"
+        },
+        {
+            "Vocabulary": "Chill",
+            "Meaning": "Cảm lạnh"
+        },
+        {
+            "Vocabulary": "Cholecystitis",
+            "Meaning": "Viêm túi mật"
+        },
+        {
+            "Vocabulary": "Cholelithiasis",
+            "Meaning": "Sỏi mật"
+        },
+        {
+            "Vocabulary": "Cholera",
+            "Meaning": "Bệnh tả"
+        },
+        {
+            "Vocabulary": "Chronic gingivitis",
+            "Meaning": "Viêm nướu mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic hepatitis",
+            "Meaning": "Viêm gan mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic ischaemic heart diseases",
+            "Meaning": "Bệnh tim do thiếu máu cục bộ mạn"
+        },
+        {
+            "Vocabulary": "Chronic laryngitis",
+            "Meaning": "Viêm thanh quản mạn tính"
+        },
+        {
+            "Vocabulary": "Chronic nasopharyngitis",
+            "Meaning": "Viêm mũi họng mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic nephritis syndrome",
+            "Meaning": "Hội chứng viêm cầu thận mạn"
+        },
+        {
+            "Vocabulary": "Chronic pancreatitis",
+            "Meaning": "Viêm tụy mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic pharyngitis",
+            "Meaning": "Viêm họng mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic renal failure",
+            "Meaning": "Suy thận mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic rheumatic heart diseases",
+            "Meaning": "Bệnh tim mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic rhinitis",
+            "Meaning": "Viên mũi mãn tính"
+        },
+        {
+            "Vocabulary": "Chronic sinusitis",
+            "Meaning": "Viêm xoang mãn tính"
+        },
+        {
+            "Vocabulary": "Cirrhosis",
+            "Meaning": "Xơ gan"
+        },
+        {
+            "Vocabulary": "Cold",
+            "Meaning": "Cảm lạnh"
+        },
+        {
+            "Vocabulary": "Colic",
+            "Meaning": "Đau bụng gió (thường gặp ở trẻ em)"
+        },
+        {
+            "Vocabulary": "Color vision deficiencies",
+            "Meaning": "Mù màu"
+        },
+        {
+            "Vocabulary": "Conjunctivitis",
+            "Meaning": "Viêm kết mạc"
+        },
+        {
+            "Vocabulary": "Constipation",
+            "Meaning": "Táo bón"
+        },
+        {
+            "Vocabulary": "Contact dermatitis",
+            "Meaning": "Viêm da tiếp xúc"
+        },
+        {
+            "Vocabulary": "Corneal abrasion",
+            "Meaning": "Mài mòn giác mạc"
+        },
+        {
+            "Vocabulary": "Cough",
+            "Meaning": "Ho"
+        },
+        {
+            "Vocabulary": "Cramps",
+            "Meaning": "Chuột rút"
+        },
+        {
+            "Vocabulary": "Cystitis",
+            "Meaning": "Viêm bàng quang"
+        },
+        {
+            "Vocabulary": "Deaf",
+            "Meaning": "Điếc"
+        },
+        {
+            "Vocabulary": "Dengue fever",
+            "Meaning": "Sốt xuất huyết"
+        },
+        {
+            "Vocabulary": "Dental caries",
+            "Meaning": "Sâu răng"
+        },
+        {
+            "Vocabulary": "Depression",
+            "Meaning": "Trầm cảm"
+        },
+        {
+            "Vocabulary": "Dermatitis",
+            "Meaning": "Viêm da"
+        },
+        {
+            "Vocabulary": "Dermatomycosis",
+            "Meaning": "Bệnh nấm da"
+        },
+        {
+            "Vocabulary": "Diabetes",
+            "Meaning": "Bệnh tiểu đường"
+        },
+        {
+            "Vocabulary": "Diaphragmatic hernia",
+            "Meaning": "Thoát vị cơ hoành"
+        },
+        {
+            "Vocabulary": "Diarrhoea",
+            "Meaning": "Bệnh tiêu chảy"
+        },
+        {
+            "Vocabulary": "Diphtheria",
+            "Meaning": "Bệnh bạch hầu"
+        },
+        {
+            "Vocabulary": "Diseases of tongue",
+            "Meaning": "Các bệnh của lưỡi"
+        },
+        {
+            "Vocabulary": "Dizziness",
+            "Meaning": "Chóng mặt"
+        },
+        {
+            "Vocabulary": "Dumb",
+            "Meaning": "Câm"
+        },
+        {
+            "Vocabulary": "Duodenal ulcer",
+            "Meaning": "Loét tá tràng"
+        },
+        {
+            "Vocabulary": "Duodenitis",
+            "Meaning": "Viêm tá tràng"
+        },
+        {
+            "Vocabulary": "Dysentery",
+            "Meaning": "Bệnh kiết lị"
+        },
+        {
+            "Vocabulary": "Dyspepsia",
+            "Meaning": "Rối loạn tiêu hoá"
+        },
+        {
+            "Vocabulary": "Earache",
+            "Meaning": "Đau tai"
+        },
+        {
+            "Vocabulary": "Endometriosis",
+            "Meaning": "Bệnh lạc nội mạc tử cung"
+        },
+        {
+            "Vocabulary": "Epididymitis",
+            "Meaning": "Viêm mào tinh hoàn"
+        },
+        {
+            "Vocabulary": "Erythema",
+            "Meaning": "Ban đỏ"
+        },
+        {
+            "Vocabulary": "Eye dryness",
+            "Meaning": "Mắt bị khô"
+        },
+        {
+            "Vocabulary": "Eye itching",
+            "Meaning": "Ngứa mắt"
+        },
+        {
+            "Vocabulary": "Female infertility",
+            "Meaning": "Vô sinh nữ"
+        },
+        {
+            "Vocabulary": "Fever",
+            "Meaning": "Sốt"
+        },
+        {
+            "Vocabulary": "Food allergy",
+            "Meaning": "Dị ứng thực phẩm"
+        },
+        {
+            "Vocabulary": "Food poisoning",
+            "Meaning": "Ngộ độc thực phẩm"
+        },
+        {
+            "Vocabulary": "Fracture",
+            "Meaning": "Gãy xương"
+        },
+        {
+            "Vocabulary": "Fungus",
+            "Meaning": "Nấm"
+        },
+        {
+            "Vocabulary": "Ganglion cyst",
+            "Meaning": "U hạch"
+        },
+        {
+            "Vocabulary": "Gastric ulcer",
+            "Meaning": "Loét dạ dày"
+        },
+        {
+            "Vocabulary": "Gastroenteritis",
+            "Meaning": "Viêm dạ dày"
+        },
+        {
+            "Vocabulary": "Gastrointestinal hemorrhage",
+            "Meaning": "Xuất huyết dạ dày"
+        },
+        {
+            "Vocabulary": "Gingivitis",
+            "Meaning": "Viêm nướu"
+        },
+        {
+            "Vocabulary": "Glaucoma",
+            "Meaning": "Bệnh tăng nhãn áp"
+        },
+        {
+            "Vocabulary": "Glycosuria",
+            "Meaning": "Bệnh tiểu đường"
+        },
+        {
+            "Vocabulary": "Gonorrhea",
+            "Meaning": "Bệnh lậu"
+        },
+        {
+            "Vocabulary": "Gout",
+            "Meaning": "Bệnh gút"
+        },
+        {
+            "Vocabulary": "Headache",
+            "Meaning": "Nhức đầu"
+        },
+        {
+            "Vocabulary": "Hearing loss",
+            "Meaning": "Nghe kém"
+        },
+        {
+            "Vocabulary": "Heart attack",
+            "Meaning": "Đau tim"
+        },
+        {
+            "Vocabulary": "Heart disease",
+            "Meaning": "Bệnh tim"
+        },
+        {
+            "Vocabulary": "Heart failure",
+            "Meaning": "Suy tim"
+        },
+        {
+            "Vocabulary": "Hemorrhoids",
+            "Meaning": "Bệnh trĩ"
+        },
+        {
+            "Vocabulary": "Hepatic failure",
+            "Meaning": "Suy gan"
+        },
+        {
+            "Vocabulary": "Hepatitis",
+            "Meaning": "Viêm gan"
+        },
+        {
+            "Vocabulary": "Hepatitis a",
+            "Meaning": "Viêm gan a"
+        },
+        {
+            "Vocabulary": "Hepatitis b",
+            "Meaning": "Viêm gan b"
+        },
+        {
+            "Vocabulary": "Hepatitis c",
+            "Meaning": "Viêm gan c"
+        },
+        {
+            "Vocabulary": "High blood pressure",
+            "Meaning": "Cao huyết áp"
+        },
+        {
+            "Vocabulary": "Hiv disease",
+            "Meaning": "Bệnh HIV"
+        },
+        {
+            "Vocabulary": "Hypertensive diseases",
+            "Meaning": "Bệnh cao huyết áp"
+        },
+        {
+            "Vocabulary": "Hypotension",
+            "Meaning": "Huyết áp thấp"
+        },
+        {
+            "Vocabulary": "Hypothyroidism",
+            "Meaning": "Suy giáp"
+        },
+        {
+            "Vocabulary": "Hysteropathy",
+            "Meaning": "Bệnh tử cung"
+        },
+        {
+            "Vocabulary": "Impetigo",
+            "Meaning": "Bệnh lở da"
+        },
+        {
+            "Vocabulary": "Infection",
+            "Meaning": "Nhiễm trùng"
+        },
+        {
+            "Vocabulary": "Inflammation",
+            "Meaning": "Viêm"
+        },
+        {
+            "Vocabulary": "Influenza",
+            "Meaning": "Cúm"
+        },
+        {
+            "Vocabulary": "Injury to nerve & spinal cord",
+            "Meaning": "Tổn thương thần kinh và cột sống"
+        },
+        {
+            "Vocabulary": "Insomnia",
+            "Meaning": "Mất ngủ"
+        },
+        {
+            "Vocabulary": "Intertrigo",
+            "Meaning": "Chốc mép"
+        },
+        {
+            "Vocabulary": "Intestinal malabsorption",
+            "Meaning": "Ruột kém hấp thu"
+        },
+        {
+            "Vocabulary": "Intracerebral haemorrhage",
+            "Meaning": "Xuất huyết trong não"
+        },
+        {
+            "Vocabulary": "Iritis",
+            "Meaning": "Viêm mống mắt"
+        },
+        {
+            "Vocabulary": "Irregular menstruation",
+            "Meaning": "Kinh nguyệt không đều"
+        },
+        {
+            "Vocabulary": "Ischaemic heart diseases",
+            "Meaning": "Bệnh tim do thiếu máu cục bộ"
+        },
+        {
+            "Vocabulary": "Jaundice",
+            "Meaning": "Bệnh vàng da"
+        },
+        {
+            "Vocabulary": "Joint pain",
+            "Meaning": "Đau khớp"
+        },
+        {
+            "Vocabulary": "Keratitis",
+            "Meaning": "Viêm giác mạc"
+        },
+        {
+            "Vocabulary": "Kwashiorkor",
+            "Meaning": "Suy dinh dưỡng thể phù"
+        },
+        {
+            "Vocabulary": "Laryngopathy",
+            "Meaning": "Bệnh thanh quản"
+        },
+        {
+            "Vocabulary": "Leukoplakia",
+            "Meaning": "Bạch sản"
+        },
+        {
+            "Vocabulary": "Lipoma",
+            "Meaning": "U mỡ"
+        },
+        {
+            "Vocabulary": "Liver cirrhosis",
+            "Meaning": "Gan xơ gan"
+        },
+        {
+            "Vocabulary": "Lues",
+            "Meaning": "Bệnh giang mai"
+        },
+        {
+            "Vocabulary": "Lump",
+            "Meaning": "Bướu"
+        },
+        {
+            "Vocabulary": "Lung cancer",
+            "Meaning": "Ung thư phổi"
+        },
+        {
+            "Vocabulary": "Malaria",
+            "Meaning": "Bệnh sốt rét"
+        },
+        {
+            "Vocabulary": "Male infertility",
+            "Meaning": "Vô sinh nam"
+        },
+        {
+            "Vocabulary": "Malnutrition",
+            "Meaning": "Suy dinh dưỡng"
+        },
+        {
+            "Vocabulary": "Mastitis",
+            "Meaning": "Viêm vú"
+        },
+        {
+            "Vocabulary": "Measles",
+            "Meaning": "Bệnh sởi"
+        },
+        {
+            "Vocabulary": "Meningitis",
+            "Meaning": "Viêm màng não"
+        },
+        {
+            "Vocabulary": "Menopause symptoms",
+            "Meaning": "Các triệu chứng mãn kinh"
+        },
+        {
+            "Vocabulary": "Miscarriage",
+            "Meaning": "Sẩy thai"
+        },
+        {
+            "Vocabulary": "Mumps",
+            "Meaning": "Quai bị"
+        },
+        {
+            "Vocabulary": "Muscular dystrophy",
+            "Meaning": "Bệnh teo cơ"
+        },
+        {
+            "Vocabulary": "Mycosis",
+            "Meaning": "Bệnh nấm"
+        },
+        {
+            "Vocabulary": "Myocardial infarction",
+            "Meaning": "Nhồi máu cơ tim"
+        },
+        {
+            "Vocabulary": "Nephropathy",
+            "Meaning": "Bệnh thận"
+        },
+        {
+            "Vocabulary": "Neuromatosis",
+            "Meaning": "Bệnh u xơ thần kinh"
+        },
+        {
+            "Vocabulary": "Obesity",
+            "Meaning": "Bệnh béo phì"
+        },
+        {
+            "Vocabulary": "Oesophagitis",
+            "Meaning": "Viêm thực quản"
+        },
+        {
+            "Vocabulary": "Orchitis",
+            "Meaning": "Viêm tinh hoàn"
+        },
+        {
+            "Vocabulary": "Osteoporosis",
+            "Meaning": "Loãng xương"
+        },
+        {
+            "Vocabulary": "Otitis media",
+            "Meaning": "Viêm tai giữa"
+        },
+        {
+            "Vocabulary": "Paralytic ileus",
+            "Meaning": "Tắt ruột liệt"
+        },
+        {
+            "Vocabulary": "Pelvic pain",
+            "Meaning": "Đau vùng chậu"
+        },
+        {
+            "Vocabulary": "Peritonitis",
+            "Meaning": "Viêm màng bụng"
+        },
+        {
+            "Vocabulary": "Phlebitis",
+            "Meaning": "Viêm tĩnh mạch"
+        },
+        {
+            "Vocabulary": "Phthisis",
+            "Meaning": "Bệnh lao phổi"
+        },
+        {
+            "Vocabulary": "Pleural effusion",
+            "Meaning": "Tràn dịch màng phổi"
+        },
+        {
+            "Vocabulary": "Pleural mouse",
+            "Meaning": "Dị vật màng phổi"
+        },
+        {
+            "Vocabulary": "Pleurisy",
+            "Meaning": "Viêm màng phổi"
+        },
+        {
+            "Vocabulary": "Pneumonia",
+            "Meaning": "Viêm phổi"
+        },
+        {
+            "Vocabulary": "Pneumothorax",
+            "Meaning": "Tràn khí màng phổi"
+        },
+        {
+            "Vocabulary": "Pox",
+            "Meaning": "Bệnh giang mai"
+        },
+        {
+            "Vocabulary": "Premenstrual syndrome",
+            "Meaning": "Hội chứng tiền kinh nguyệt"
+        },
+        {
+            "Vocabulary": "Prostatitis",
+            "Meaning": "Viêm tuyến tiền liệt"
+        },
+        {
+            "Vocabulary": "Pseudoleukemia",
+            "Meaning": "Bệnh bạch cầu giả"
+        },
+        {
+            "Vocabulary": "Psoriasis",
+            "Meaning": "Bệnh vẩy nến"
+        },
+        {
+            "Vocabulary": "Psychosis",
+            "Meaning": "Rối loạn tâm thần"
+        },
+        {
+            "Vocabulary": "Psychosis",
+            "Meaning": "Rối loạn thần kinh"
+        },
+        {
+            "Vocabulary": "Pulmonary tuberculosis",
+            "Meaning": "Bệnh lao phổi"
+        },
+        {
+            "Vocabulary": "Pyothorax",
+            "Meaning": "Mủ lồng ngực"
+        },
+        {
+            "Vocabulary": "Rabies",
+            "Meaning": "Bệnh dại"
+        },
+        {
+            "Vocabulary": "Rachitis",
+            "Meaning": "Bệnh còi xương"
+        },
+        {
+            "Vocabulary": "Rash",
+            "Meaning": "Phát ban"
+        },
+        {
+            "Vocabulary": "Red eye",
+            "Meaning": "Mắt đỏ"
+        },
+        {
+            "Vocabulary": "Runny nose",
+            "Meaning": "Sổ mũi"
+        },
+        {
+            "Vocabulary": "Scabies",
+            "Meaning": "Bệnh ghẻ"
+        },
+        {
+            "Vocabulary": "Skin-disease",
+            "Meaning": "Bệnh ngoài da"
+        },
+        {
+            "Vocabulary": "Smallpox",
+            "Meaning": "Bệnh đậu mùa"
+        },
+        {
+            "Vocabulary": "Sneeze",
+            "Meaning": "Hắt hơi"
+        },
+        {
+            "Vocabulary": "Sniffles",
+            "Meaning": "Sổ mũi"
+        },
+        {
+            "Vocabulary": "Sore eyes",
+            "Meaning": "Đau mắt"
+        },
+        {
+            "Vocabulary": "Sore throat",
+            "Meaning": "Viêm họng"
+        },
+        {
+            "Vocabulary": "Sprains",
+            "Meaning": "Bong gân"
+        },
+        {
+            "Vocabulary": "Stomachache",
+            "Meaning": "Đau dạ dày"
+        },
+        {
+            "Vocabulary": "Stroke",
+            "Meaning": "Đột quỵ"
+        },
+        {
+            "Vocabulary": "Swelling",
+            "Meaning": "Sưng tấy"
+        },
+        {
+            "Vocabulary": "Syncope",
+            "Meaning": "Ngất"
+        },
+        {
+            "Vocabulary": "Tachycardia",
+            "Meaning": "Nhịp tim nhanh"
+        },
+        {
+            "Vocabulary": "Tendonitis",
+            "Meaning": "Viêm gân"
+        },
+        {
+            "Vocabulary": "Tetanus",
+            "Meaning": "Bệnh uốn ván"
+        },
+        {
+            "Vocabulary": "Thymopathy",
+            "Meaning": "Bệnh tuyến ức"
+        },
+        {
+            "Vocabulary": "Toothache",
+            "Meaning": "Đau răng"
+        },
+        {
+            "Vocabulary": "Trachoma",
+            "Meaning": "Bệnh đau mắt hột"
+        },
+        {
+            "Vocabulary": "Travel sick",
+            "Meaning": "Say xe, trúng gió"
+        },
+        {
+            "Vocabulary": "Trichomycosis",
+            "Meaning": "Bệnh nấm tóc"
+        },
+        {
+            "Vocabulary": "Tuberculosis",
+            "Meaning": "Bệnh lao"
+        },
+        {
+            "Vocabulary": "Typhoid",
+            "Meaning": "Bệnh thương hàn"
+        },
+        {
+            "Vocabulary": "Ulcerative colitis",
+            "Meaning": "Viêm loét đại tràng"
+        },
+        {
+            "Vocabulary": "Vaginitis",
+            "Meaning": "Viêm âm đạo"
+        },
+        {
+            "Vocabulary": "Variola",
+            "Meaning": "Bệnh đậu mùa"
+        }
+    ],
+    "Medical instruments": [
+        {
+            "Vocabulary": "first aid kit",
+            "Meaning": "túi sơ cứu thương"
+        },
+        {
+            "Vocabulary": "sticking plaster",
+            "Meaning": "băng cá nhân"
+        },
+        {
+            "Vocabulary": "bandage",
+            "Meaning": "vải băng vết thương"
+        },
+        {
+            "Vocabulary": "cotton wool",
+            "Meaning": "bông gòn"
+        },
+        {
+            "Vocabulary": "surgical mask",
+            "Meaning": "khẩu trang y tế"
+        },
+        {
+            "Vocabulary": "stethoscope",
+            "Meaning": "ống nghe (để khám bệnh)"
+        },
+        {
+            "Vocabulary": "oxygen mask",
+            "Meaning": "mặt nạ oxy"
+        },
+        {
+            "Vocabulary": "eye chart",
+            "Meaning": "bảng gồm các kí tự hoặc chữ cái với các kích thước to nhỏ khác nhau nhằm kiểm tra mắt"
+        },
+        {
+            "Vocabulary": "scales",
+            "Meaning": "cái cân"
+        },
+        {
+            "Vocabulary": "blood pressure monitor",
+            "Meaning": "máy đi huyết áp"
+        }
+    ],
+    "Doctor": [
+        {
+            "Vocabulary": "Andrologist",
+            "Meaning": "Bác sĩ nam khoa"
+        },
+        {
+            "Vocabulary": "An(a)esthesiologist",
+            "Meaning": "Bác sĩ gây mê"
+        },
+        {
+            "Vocabulary": "Cardiologist",
+            "Meaning": "Bác sĩ tim mạch"
+        },
+        {
+            "Vocabulary": "Dermatologist",
+            "Meaning": "Bác sĩ da liễu"
+        },
+        {
+            "Vocabulary": "Endocrinologist",
+            "Meaning": "Bác sĩ nội tiết. đn. hormone doctor"
+        },
+        {
+            "Vocabulary": "Epidemiologist",
+            "Meaning": "Bác sĩ dịch tễ học"
+        },
+        {
+            "Vocabulary": "Gastroenterologist",
+            "Meaning": "Bác sĩ chuyên khoa tiêu hóa"
+        },
+        {
+            "Vocabulary": "Gyn(a)ecologist",
+            "Meaning": "Bác sĩ phụ khoa"
+        },
+        {
+            "Vocabulary": "H(a)ematologist",
+            "Meaning": "Bác sĩ huyết học"
+        },
+        {
+            "Vocabulary": "Hepatologist",
+            "Meaning": "Bác sĩ chuyên khoa gan"
+        },
+        {
+            "Vocabulary": "Immunologist",
+            "Meaning": "Bác sĩ chuyên khoa miễn dịch"
+        },
+        {
+            "Vocabulary": "Nephrologist",
+            "Meaning": "Bác sĩ chuyên khoa thận"
+        },
+        {
+            "Vocabulary": "Neurologist",
+            "Meaning": "Bác sĩ chuyên khoa thần kinh"
+        },
+        {
+            "Vocabulary": "Oncologist",
+            "Meaning": "Bác sĩ chuyên khoa ung thư"
+        },
+        {
+            "Vocabulary": "Ophthalmologist",
+            "Meaning": "Bác sĩ mắt. đn. oculist"
+        },
+        {
+            "Vocabulary": "Orthopedist",
+            "Meaning": "Bác sĩ ngoại chỉnh hình"
+        },
+        {
+            "Vocabulary": "Otorhinolaryngologist/otolaryngologist",
+            "Meaning": "Bác sĩ tai mũi họng. đn. ENT doctor/specialist"
+        },
+        {
+            "Vocabulary": "Pathologist",
+            "Meaning": "Bác sĩ bệnh lý học"
+        },
+        {
+            "Vocabulary": "Proctologist",
+            "Meaning": "Bác sĩ chuyên khoa hậu môn – trực tràng"
+        },
+        {
+            "Vocabulary": "Psychiatrist",
+            "Meaning": "Bác sĩ chuyên khoa tâm thần"
+        },
+        {
+            "Vocabulary": "Radiologist",
+            "Meaning": "Bác sĩ X-quang"
+        },
+        {
+            "Vocabulary": "Rheumatologist",
+            "Meaning": "Bác sĩ chuyên khoa bệnh thấp"
+        },
+        {
+            "Vocabulary": "Traumatologist",
+            "Meaning": "Bác sĩ chuyên khoa chấn thương"
+        },
+        {
+            "Vocabulary": "Obstetrician",
+            "Meaning": "Bác sĩ sản khoa"
+        },
+        {
+            "Vocabulary": "Paeditrician",
+            "Meaning": "Bác sĩ nhi khoa"
+        }
+    ],
+    "Hospital": [
+        {
+            "Vocabulary": "Từ vựng",
+            "Meaning": "Nghĩa"
+        },
+        {
+            "Vocabulary": "Hospital",
+            "Meaning": "Bệnh viện"
+        },
+        {
+            "Vocabulary": "Mental/ psychiatric hospital",
+            "Meaning": "Bệnh viện tâm thần"
+        },
+        {
+            "Vocabulary": "General hospital",
+            "Meaning": "Bệnh viên đa khoa"
+        },
+        {
+            "Vocabulary": "Field hospital",
+            "Meaning": "Bệnh viên dã chiến"
+        },
+        {
+            "Vocabulary": "Nursing home",
+            "Meaning": "Nhà dưỡng lão"
+        },
+        {
+            "Vocabulary": "Cottage hospital",
+            "Meaning": "Bệnh viện tuyến dưới, Bệnh viện huyện"
+        },
+        {
+            "Vocabulary": "Orthopedic hospital",
+            "Meaning": "Bệnh viện chỉnh hình"
+        }
+    ],
+    "Faculties": [
+        {
+            "Vocabulary": "Surgery:",
+            "Meaning": "Ngoại khoa"
+        },
+        {
+            "Vocabulary": "Nuclear medicine",
+            "Meaning": "Y học hạt nhân"
+        },
+        {
+            "Vocabulary": "Orthopedic surgery",
+            "Meaning": "Ngoại chỉnh hình"
+        },
+        {
+            "Vocabulary": "Thoracic surgery",
+            "Meaning": "Ngoại lồng ngực"
+        },
+        {
+            "Vocabulary": "Plastic surgery",
+            "Meaning": "Phẫu thuật tạo hình"
+        },
+        {
+            "Vocabulary": "Neurosurgery",
+            "Meaning": "Ngoại thần kinh"
+        },
+        {
+            "Vocabulary": "Internal medicine",
+            "Meaning": "Nội khoa"
+        },
+        {
+            "Vocabulary": "Andrology",
+            "Meaning": "Nam khoa"
+        },
+        {
+            "Vocabulary": "Anesthesiology",
+            "Meaning": "Chuyên khoa gây mê"
+        },
+        {
+            "Vocabulary": "Cardiology",
+            "Meaning": "Khoa tim"
+        },
+        {
+            "Vocabulary": "Dermatology",
+            "Meaning": "Chuyên khoa da liễu"
+        },
+        {
+            "Vocabulary": "Dietetics (and nutrition)",
+            "Meaning": "Khoa dinh dưỡng"
+        },
+        {
+            "Vocabulary": "Epidemiology",
+            "Meaning": "Khoa dịch tễ học"
+        },
+        {
+            "Vocabulary": "Endocrinology",
+            "Meaning": "Khoa nội tiết"
+        },
+        {
+            "Vocabulary": "Gastroenterology",
+            "Meaning": "Khoa tiêu hóa"
+        },
+        {
+            "Vocabulary": "Geriatrics",
+            "Meaning": "Lão khoa"
+        },
+        {
+            "Vocabulary": "Hematology",
+            "Meaning": "Khoa huyết học"
+        },
+        {
+            "Vocabulary": "Gynecology",
+            "Meaning": "Phụ khoa"
+        },
+        {
+            "Vocabulary": "Nephrology",
+            "Meaning": "Thận học"
+        },
+        {
+            "Vocabulary": "Immunology",
+            "Meaning": "Miễn dịch học"
+        },
+        {
+            "Vocabulary": "Neurology",
+            "Meaning": "Khoa thần kinh"
+        },
+        {
+            "Vocabulary": "Odontology",
+            "Meaning": "Khoa răng"
+        },
+        {
+            "Vocabulary": "Oncology",
+            "Meaning": "Ung thư học"
+        },
+        {
+            "Vocabulary": "Ophthalmology",
+            "Meaning": "Khoa mắt"
+        },
+        {
+            "Vocabulary": "Orthopedics",
+            "Meaning": "Khoa chỉnh hình"
+        },
+        {
+            "Vocabulary": "Traumatology",
+            "Meaning": "Khoa chấn thương"
+        },
+        {
+            "Vocabulary": "Urology",
+            "Meaning": "Niệu khoa"
+        },
+        {
+            "Vocabulary": "Inpatient department",
+            "Meaning": "Khoa bệnh nhân nội trú"
+        },
+        {
+            "Vocabulary": "Outpatient department",
+            "Meaning": "Khoa bệnh nhân ngoại trú"
+        }
+    ]
+}

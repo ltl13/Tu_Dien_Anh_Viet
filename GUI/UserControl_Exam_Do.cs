@@ -17,8 +17,16 @@ namespace GUI {
         List<EnViDTO> listAnswer = new List<EnViDTO>();
         List<EnViDTO> listQuestion = new List<EnViDTO>();
 
+        struct yourTest
+        {
+            public string ques, key, choose, A, B, C, D;
+        }
+        yourTest instance;
+
+        List<yourTest> listYourTest = new List<yourTest>();
+
         public UserControl_Exam_Do(UserControl_Exam exam, bool whatToDo) {
-            InitializeComponent();
+            InitializeComponent(); textBox1.Hide();
             grandfather = exam;
             socau = grandfather.Number;
             time = grandfather.Time;
@@ -45,6 +53,7 @@ namespace GUI {
 
             listAnswer.Clear();
             listQuestion.Clear();
+            listYourTest.Clear();
 
             xuiButton_Answer1.Enabled = true;
             xuiButton_Answer2.Enabled = true;
@@ -60,11 +69,24 @@ namespace GUI {
             metroProgressSpinner_Time.Value = (int)((1.0 * time / grandfather.Time) * 100);
             label_time.Text = time.ToString();
             if (time == 0) {
+                listYourTest.Add(instance);
                 if (--socau == 0) ketthuc();
                 else {
                     if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
                 }
             }
+        }
+
+        public void ketthuc()
+        {
+            timer1.Stop();
+            xuiFlatProgressBar_Question.Value = 0;
+            MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2));
+
+            xuiButton_Answer1.Enabled = false;
+            xuiButton_Answer2.Enabled = false;
+            xuiButton_Answer3.Enabled = false;
+            xuiButton_Answer4.Enabled = false;
         }
 
         public bool checkanswer(DataRow answer4) {
@@ -76,7 +98,19 @@ namespace GUI {
             else return true;
         }
 
+        public bool checkanswerFR(EnViDTO answer4)
+        {
+            if (listAnswer.Count < 3) return true;
+            for (int i = 0; i < listAnswer.Count; i++)
+            {
+                if (!listQuestion.Contains(listAnswer[i])) return true;
+            }
+            if (listQuestion.Contains(answer4)) return false;
+            else return true;
+        }
+
         public void taotrachnghiemCB() {
+            instance = new yourTest();
             time = grandfather.Time;
             grandfather.listAnswer.Clear();
             var rand = new Random();
@@ -97,28 +131,56 @@ namespace GUI {
 
             }
 
-            xuiButton_Answer1.ButtonText = grandfather.listAnswer[0][2].ToString();
-            xuiButton_Answer2.ButtonText = grandfather.listAnswer[1][2].ToString();
-            xuiButton_Answer3.ButtonText = grandfather.listAnswer[2][2].ToString();
-            xuiButton_Answer4.ButtonText = grandfather.listAnswer[3][2].ToString();
+            xuiButton_Answer1.ButtonText = grandfather.listAnswer[0][2].ToString(); instance.A = grandfather.listAnswer[0][2].ToString();
+            xuiButton_Answer2.ButtonText = grandfather.listAnswer[1][2].ToString(); instance.B = grandfather.listAnswer[1][2].ToString();
+            xuiButton_Answer3.ButtonText = grandfather.listAnswer[2][2].ToString(); instance.C = grandfather.listAnswer[2][2].ToString();
+            xuiButton_Answer4.ButtonText = grandfather.listAnswer[3][2].ToString(); instance.D = grandfather.listAnswer[3][2].ToString();
 
             do grandfather.key = grandfather.listAnswer[rand.Next(0, 4)]; while (grandfather.listQuestion.Contains(grandfather.key));
             label_Question.Text = grandfather.key[0].ToString();
-            grandfather.listQuestion.Add(grandfather.key);
+            grandfather.listQuestion.Add(grandfather.key); instance.key = grandfather.key[2].ToString(); instance.ques = grandfather.key[0].ToString();
 
             timer1.Start();
             metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
         }
 
-        public void ketthuc() {
-            timer1.Stop();
-            xuiFlatProgressBar_Question.Value = 0;
-            MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2));
+        public void taotrachnghiemFR()
+        {
+            instance = new yourTest();
+            time = grandfather.Time;
+            listAnswer.Clear();
+            var rand = new Random();
+            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / grandfather.Number * 100);
 
-            xuiButton_Answer1.Enabled = false;
-            xuiButton_Answer2.Enabled = false;
-            xuiButton_Answer3.Enabled = false;
-            xuiButton_Answer4.Enabled = false;
+            for (int i = 0; i < 4; i++)
+            {
+                do
+                {
+                    number = rand.Next(0, grandfather.Father.Favorite.Count);
+                    while ((i == 3 && !checkanswerFR(grandfather.Father.Favorite[number])) || listAnswer.Contains(grandfather.Father.Favorite[number]))// 3 cau va cau cuoi da dung/ 2 dap an giong nhau
+                        number = rand.Next(0, grandfather.Father.Favorite.Count);
+
+                    if (listAnswer.Count == 0)
+                    {
+                        listAnswer.Add(grandfather.Father.Favorite[number]);
+                        break;
+                    }
+                } while (listAnswer.Contains(grandfather.Father.Favorite[number])); ///co cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
+                if (i > 0) listAnswer.Add(grandfather.Father.Favorite[number]);
+
+            }
+
+            xuiButton_Answer1.ButtonText = listAnswer[0].getCommonMeaning(); instance.A = listAnswer[0].getCommonMeaning();
+            xuiButton_Answer2.ButtonText = listAnswer[1].getCommonMeaning(); instance.B = listAnswer[1].getCommonMeaning();
+            xuiButton_Answer3.ButtonText = listAnswer[2].getCommonMeaning(); instance.C = listAnswer[2].getCommonMeaning();
+            xuiButton_Answer4.ButtonText = listAnswer[3].getCommonMeaning(); instance.D = listAnswer[3].getCommonMeaning();
+
+            do key = listAnswer[rand.Next(0, 4)]; while (listQuestion.Contains(key));
+            listQuestion.Add(key); instance.key = key.getCommonMeaning(); instance.ques = key.English.ToString();
+
+            label_Question.Text = key.English.ToString();
+            timer1.Start();
+            metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
         }
 
         private void xuiButton_Answer1_Click(object sender, EventArgs e) {
@@ -135,10 +197,18 @@ namespace GUI {
                 }
             }
 
-            if (socau-- > 1) {
+            instance.choose = xuiButton_Answer1.ButtonText;
+            listYourTest.Add(instance);
+
+            if (socau-- > 1)
+            {
                 if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
-            else ketthuc();
+            else
+            {
+                listYourTest.Add(instance);
+                ketthuc();
+            }
         }
 
         private void xuiButton_Answer2_Click(object sender, EventArgs e) {
@@ -155,10 +225,20 @@ namespace GUI {
                 }
             }
 
+            instance.choose = xuiButton_Answer2.ButtonText;
+            listYourTest.Add(instance);
+
             if (socau-- > 1) {
                 if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
             else ketthuc();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Show();
+            foreach (yourTest instance in listYourTest) textBox1.Text += instance.ques + "?????????????????" + instance.key + "!!!!!!!!!!!!!!!!!!" + instance.choose + "====================";///////////////////
+
         }
 
         private void xuiButton_Answer3_Click(object sender, EventArgs e) {
@@ -174,6 +254,9 @@ namespace GUI {
                     label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
                 }
             }
+
+            instance.choose = xuiButton_Answer3.ButtonText;
+            listYourTest.Add(instance);
 
             if (socau-- > 1) {
                 if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
@@ -195,55 +278,13 @@ namespace GUI {
                 }
             }
 
+            instance.choose = xuiButton_Answer4.ButtonText;
+            listYourTest.Add(instance);
+
             if (socau-- > 1) {
                 if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
             else ketthuc();
-        }
-
-        ////////////////////////////////
-        public bool checkanswerFR(EnViDTO answer4) {
-            if (listAnswer.Count < 3) return true;
-            for (int i = 0; i < listAnswer.Count; i++) {
-                if (!listQuestion.Contains(listAnswer[i])) return true;
-            }
-            if (listQuestion.Contains(answer4)) return false;
-            else return true;
-        }
-
-        public void taotrachnghiemFR() {
-            time = grandfather.Time;
-            listAnswer.Clear();
-            var rand = new Random();
-            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / grandfather.Number * 100);
-
-            for (int i = 0; i < 4; i++) {
-                do {
-                    number = rand.Next(0, grandfather.Father.Favorite.Count);
-                    while ((i == 3 && !checkanswerFR(grandfather.Father.Favorite[number])) || listAnswer.Contains(grandfather.Father.Favorite[number]))
-                        number = rand.Next(0, grandfather.Father.Favorite.Count);
-
-                    if (listAnswer.Count == 0) {
-                        listAnswer.Add(grandfather.Father.Favorite[number]);
-                        break;
-                    }
-                } while (listAnswer.Contains(grandfather.Father.Favorite[number])); ///4 cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
-                if (i > 0) listAnswer.Add(grandfather.Father.Favorite[number]);
-
-            }
-
-            xuiButton_Answer1.ButtonText = listAnswer[0].getCommonMeaning();
-            xuiButton_Answer2.ButtonText = listAnswer[1].getCommonMeaning();
-            xuiButton_Answer3.ButtonText = listAnswer[2].getCommonMeaning();
-            xuiButton_Answer4.ButtonText = listAnswer[3].getCommonMeaning();
-
-
-            do key = listAnswer[rand.Next(0, 4)]; while (listQuestion.Contains(key));
-            listQuestion.Add(key);
-
-            label_Question.Text = key.English.ToString();
-            timer1.Start();
-            metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
         }
 
     }
