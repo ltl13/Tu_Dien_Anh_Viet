@@ -9,7 +9,7 @@ namespace GUI {
         DataSet dataSet;
 
         public UserControl_ComboWord() {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void UserControl_ComboWord_Load(object sender, EventArgs e) {

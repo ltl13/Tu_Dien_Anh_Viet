@@ -6,11 +6,15 @@ namespace DAO {
     public class DataProvider {
         #region properties
         private static DataProvider instance;
-        private string connectionSTR = @"Data Source=.\SQLEXPRESS01;Initial Catalog=DailyDictionary;Persist Security Info=True;User ID=sa;Password=Luan130201";
+        private static SqlConnectionStringBuilder connectionString = new SqlConnectionStringBuilder();
+
 
         public static DataProvider Instance {
             get {
-                if (instance == null) instance = new DataProvider();
+                if (instance == null) {
+                    instance = new DataProvider();
+                    InitConnectionString();
+                }
                 return DataProvider.instance;
             }
             private set {
@@ -22,9 +26,15 @@ namespace DAO {
         #endregion
 
         #region method
+        public static void InitConnectionString() {
+            connectionString.DataSource = @".\SQLEXPRESS";
+            connectionString.InitialCatalog = "DailyDictionary";
+            connectionString.IntegratedSecurity = true;
+        }
+
         public DataTable ExecuteQuery(string query, object[] parameter = null) {
             DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(connectionSTR)) {
+            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (parameter != null) {
@@ -46,7 +56,7 @@ namespace DAO {
 
         public int ExecuteNonQuery(string query, object[] parameter = null) {
             int data = 0;
-            using (SqlConnection connection = new SqlConnection(connectionSTR)) {
+            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (parameter != null) {
@@ -67,7 +77,7 @@ namespace DAO {
 
         public object ExecuteScalar(string query, object[] parameter = null) {
             object data = 0;
-            using (SqlConnection connection = new SqlConnection(connectionSTR)) {
+            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (parameter != null) {
