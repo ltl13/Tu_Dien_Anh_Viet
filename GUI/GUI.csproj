@@ -322,20 +322,16 @@
     <None Include="Resources\books.png" />
     <None Include="Resources\delete-user.png" />
     <None Include="Resources\dictionary.png" />
-    <None Include="Resources\economic.png" />
     <None Include="Resources\EFT.jpg" />
     <None Include="Resources\exam.png" />
     <None Include="Resources\folder.png" />
     <None Include="Resources\gear.png" />
     <None Include="Resources\gear1.png" />
     <None Include="Resources\grammar.png" />
-    <None Include="Resources\irregularverbs.jpg" />
-    <None Include="Resources\irregularverbs.png" />
     <None Include="Resources\IT.jpg" />
     <None Include="Resources\left-arrow.png" />
     <None Include="Resources\left-arrow1.png" />
     <None Include="Resources\list-searching-variant.png" />
-    <None Include="Resources\lock.png" />
     <None Include="Resources\lock1.png" />
     <None Include="Resources\magic-book.png" />
     <None Include="Resources\refresh.png" />
@@ -354,6 +350,9 @@
     <None Include="Resources\star_white.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\console.png" />
+    <None Include="Resources\right-arrow1.png" />
+    <None Include="Resources\back-arrow.png" />
+    <None Include="Resources\irregularverbs.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

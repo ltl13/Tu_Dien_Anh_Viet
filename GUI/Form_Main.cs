@@ -38,7 +38,7 @@ namespace GUI {
         #endregion
         private void Form_Main_Load(object sender, EventArgs e) {
             mainSearch = new UserControl_Search(this);
-            mainFlashcard = new UserControl_Flashcard(loginAccount, this);
+            mainFlashcard = new UserControl_Flashcard(this);
             mainTranslate = new UserControl_Translate(this);
             mainComboWord = new UserControl_ComboWord();
             mainExam = new UserControl_Exam(this);
@@ -49,11 +49,7 @@ namespace GUI {
             panel_Main.Controls.Add(mainComboWord);
             panel_Main.Controls.Add(mainExam);
 
-            mainSearch.Visible = true;
-            mainFlashcard.Visible = false;
-            mainTranslate.Visible = false;
-            mainComboWord.Visible = false;
-            mainExam.Visible = false;
+            pictureBox_Search_MouseDown(sender, null);
 
             this.CancelButton = button_Exit;
         }
