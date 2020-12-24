@@ -76,10 +76,6 @@ namespace GUI {
         }
         #endregion
 
-        private void timer_MainPanel_Tick(object sender, EventArgs e) {
-            panel_Main.Width += 45;
-            if (panel_Main.Size == panel_Main.MaximumSize) { timer_MainPanel.Stop(); }
-        }
 
         private void ReturnClick(Panel selected) {
             isSearchClick = false;
@@ -96,15 +92,6 @@ namespace GUI {
             mainTranslate.Visible = false;
             mainComboWord.Visible = false;
             mainExam.Visible = false;
-
-            timer_PanelSearch.Start();
-            timer_PanelGrammar.Start();
-            timer_PanelComboWord.Start();
-            timer_PanelFlashcard.Start();
-            timer_PanelTranslate.Start();
-            timer_PanelExam.Start();
-
-            selected.Size = selected.MaximumSize;
         }
 
         #region PanelSearch
@@ -112,33 +99,20 @@ namespace GUI {
         private bool isSearchClick = false;
         private void pictureBox_Search_MouseEnter(object sender, EventArgs e) {
             isMouseEnter_PanelSearch = true;
-            timer_PanelSearch.Start();
+
         }
         private void pictureBox_Search_MouseLeave(object sender, EventArgs e) {
             isMouseEnter_PanelSearch = false;
-            timer_PanelSearch.Start();
+
         }
-        private void timer_PanelSearch_Tick(object sender, EventArgs e) {
-            if (isMouseEnter_PanelSearch) {
-                panel_Search.Width += 10;
-                if (panel_Search.Size == panel_Search.MaximumSize) { timer_PanelSearch.Stop(); }
-            }
-            else {
-                if (!isSearchClick) {
-                    panel_Search.Width -= 10;
-                    if (panel_Search.Size == panel_Search.MinimumSize) { timer_PanelSearch.Stop(); }
-                }
-                else { timer_PanelSearch.Stop(); }
-            }
-        }
+
         private void pictureBox_Search_Click(object sender, EventArgs e) {
             if (!isSearchClick) {
                 ReturnClick(panel_Search);
-                panel_Main.Size = panel_Main.MinimumSize;
                 isSearchClick = true;
                 mainSearch.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(204, 253, 255);
-                timer_MainPanel.Start();
+
             }
         }
         private void panel_Search_Click(object sender, EventArgs e) {
@@ -163,33 +137,16 @@ namespace GUI {
         private bool isGrammarClick = false;
         private void pictureBox_Grammar_MouseEnter(object sender, EventArgs e) {
             isMouseEnter_PanelGrammar = true;
-            timer_PanelGrammar.Start();
         }
         private void pictureBox_Grammar_MouseLeave(object sender, EventArgs e) {
             isMouseEnter_PanelGrammar = false;
-            timer_PanelGrammar.Start();
         }
         private void pictureBox_Grammar_Click(object sender, EventArgs e) {
             if (!isGrammarClick) {
                 ReturnClick(panel_Grammar);
-                panel_Main.Size = panel_Main.MinimumSize;
                 isGrammarClick = true;
                 //mainGrammar.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(253, 255, 209);
-                timer_MainPanel.Start();
-            }
-        }
-        private void timer_PanelGrammar_Tick(object sender, EventArgs e) {
-            if (isMouseEnter_PanelGrammar) {
-                panel_Grammar.Width += 10;
-                if (panel_Grammar.Size == panel_Grammar.MaximumSize) { timer_PanelGrammar.Stop(); }
-            }
-            else {
-                if (!isGrammarClick) {
-                    panel_Grammar.Width -= 10;
-                    if (panel_Grammar.Size == panel_Grammar.MinimumSize) { timer_PanelGrammar.Stop(); }
-                }
-                else { timer_PanelGrammar.Stop(); }
             }
         }
         private void panel_Grammar_Click(object sender, EventArgs e) {
@@ -214,33 +171,16 @@ namespace GUI {
         private bool isComboWordClick = false;
         private void pictureBox_ComboWord_MouseEnter(object sender, EventArgs e) {
             isMouseEnter_PanelComboWord = true;
-            timer_PanelComboWord.Start();
         }
         private void pictureBox_ComboWord_MouseLeave(object sender, EventArgs e) {
             isMouseEnter_PanelComboWord = false;
-            timer_PanelComboWord.Start();
         }
         private void pictureBox_ComboWord_Click(object sender, EventArgs e) {
             if (!isComboWordClick) {
                 ReturnClick(panel_ComboWord);
-                panel_Main.Size = panel_Main.MinimumSize;
                 isComboWordClick = true;
                 mainComboWord.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(255, 223, 212);
-                timer_MainPanel.Start();
-            }
-        }
-        private void timer_PanelComboWord_Tick(object sender, EventArgs e) {
-            if (isMouseEnter_PanelComboWord) {
-                panel_ComboWord.Width += 10;
-                if (panel_ComboWord.Size == panel_ComboWord.MaximumSize) { timer_PanelComboWord.Stop(); }
-            }
-            else {
-                if (!isComboWordClick) {
-                    panel_ComboWord.Width -= 10;
-                    if (panel_ComboWord.Size == panel_ComboWord.MinimumSize) { timer_PanelComboWord.Stop(); }
-                }
-                else { timer_PanelComboWord.Stop(); }
             }
         }
         private void panel_ComboWord_MouseEnter(object sender, EventArgs e) {
@@ -265,33 +205,16 @@ namespace GUI {
         private bool isFlashcardClick = false;
         private void pictureBox_Flashcard_MouseEnter(object sender, EventArgs e) {
             isMouseEnter_PanelFlashcard = true;
-            timer_PanelFlashcard.Start();
         }
         private void pictureBox_Flashcard_MouseLeave(object sender, EventArgs e) {
             isMouseEnter_PanelFlashcard = false;
-            timer_PanelFlashcard.Start();
         }
         private void pictureBox_Flashcard_Click(object sender, EventArgs e) {
             if (!isFlashcardClick) {
                 ReturnClick(panel_Flashcard);
-                panel_Main.Size = panel_Main.MinimumSize;
                 isFlashcardClick = true;
                 mainFlashcard.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(219, 255, 212);
-                timer_MainPanel.Start();
-            }
-        }
-        private void timer_PanelFlashcard_Tick(object sender, EventArgs e) {
-            if (isMouseEnter_PanelFlashcard) {
-                panel_Flashcard.Width += 10;
-                if (panel_Flashcard.Size == panel_Flashcard.MaximumSize) { timer_PanelFlashcard.Stop(); }
-            }
-            else {
-                if (!isFlashcardClick) {
-                    panel_Flashcard.Width -= 10;
-                    if (panel_Flashcard.Size == panel_Flashcard.MinimumSize) { timer_PanelFlashcard.Stop(); }
-                }
-                else { timer_PanelFlashcard.Stop(); }
             }
         }
         private void panel_Flashcard_MouseEnter(object sender, EventArgs e) {
@@ -315,36 +238,19 @@ namespace GUI {
         private bool isMouseEnter_PanelTranslate = false;
         private bool isTranslateClick = false;
 
-        private void timer_PanelTranslate_Tick(object sender, EventArgs e) {
-            if (isMouseEnter_PanelTranslate) {
-                panel_Translate.Width += 10;
-                if (panel_Translate.Size == panel_Translate.MaximumSize) { timer_PanelTranslate.Stop(); }
-            }
-            else {
-                if (!isTranslateClick) {
-                    panel_Translate.Width -= 10;
-                    if (panel_Translate.Size == panel_Translate.MinimumSize) { timer_PanelTranslate.Stop(); }
-                }
-                else { timer_PanelTranslate.Stop(); }
-            }
-        }
         private void pictureBox_Translate_Click(object sender, EventArgs e) {
             if (!isTranslateClick) {
                 ReturnClick(panel_Translate);
-                panel_Main.Size = panel_Main.MinimumSize;
                 isTranslateClick = true;
                 mainTranslate.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(226, 219, 255);
-                timer_MainPanel.Start();
             }
         }
         private void pictureBox_Translate_MouseEnter(object sender, EventArgs e) {
             isMouseEnter_PanelTranslate = true;
-            timer_PanelTranslate.Start();
         }
         private void pictureBox_Translate_MouseLeave(object sender, EventArgs e) {
             isMouseEnter_PanelTranslate = false;
-            timer_PanelTranslate.Start();
         }
         private void panel_Translate_Click(object sender, EventArgs e) {
             pictureBox_Translate_Click(null, null);
@@ -366,36 +272,19 @@ namespace GUI {
         #region PanelExam
         private bool isMouseEnter_PanelExam = false;
         private bool isExamClick = false;
-        private void timer_PanelExam_Tick(object sender, EventArgs e) {
-            if (isMouseEnter_PanelExam) {
-                panel_Exam.Width += 10;
-                if (panel_Exam.Size == panel_Exam.MaximumSize) { timer_PanelExam.Stop(); }
-            }
-            else {
-                if (!isExamClick) {
-                    panel_Exam.Width -= 10;
-                    if (panel_Exam.Size == panel_Exam.MinimumSize) { timer_PanelExam.Stop(); }
-                }
-                else { timer_PanelExam.Stop(); }
-            }
-        }
         private void pictureBox_Exam_Click(object sender, EventArgs e) {
             if (!isExamClick) {
                 ReturnClick(panel_Exam);
-                panel_Main.Size = panel_Main.MinimumSize;
                 isExamClick = true;
                 mainExam.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(255, 227, 255);
-                timer_MainPanel.Start();
             }
         }
         private void pictureBox_Exam_MouseEnter(object sender, EventArgs e) {
             isMouseEnter_PanelExam = true;
-            timer_PanelExam.Start();
         }
         private void pictureBox_Exam_MouseLeave(object sender, EventArgs e) {
             isMouseEnter_PanelExam = false;
-            timer_PanelExam.Start();
         }
         private void panel_Exam_Click(object sender, EventArgs e) {
             pictureBox_Exam_Click(null, null);

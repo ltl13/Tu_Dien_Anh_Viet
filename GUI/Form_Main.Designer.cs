@@ -63,7 +63,6 @@
             this.label_English = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager_FormMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Search)).BeginInit();
             this.panel_Search.SuspendLayout();
@@ -78,7 +77,6 @@
             this.panel_Exam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).BeginInit();
             this.panel_Account.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroStyleManager_FormMain
@@ -107,11 +105,10 @@
             // panel_Main
             // 
             this.panel_Main.BackColor = System.Drawing.Color.White;
-            this.panel_Main.Location = new System.Drawing.Point(249, 74);
-            this.panel_Main.MaximumSize = new System.Drawing.Size(624, 516);
+            this.panel_Main.Location = new System.Drawing.Point(190, 74);
             this.panel_Main.MinimumSize = new System.Drawing.Size(0, 516);
             this.panel_Main.Name = "panel_Main";
-            this.panel_Main.Size = new System.Drawing.Size(0, 516);
+            this.panel_Main.Size = new System.Drawing.Size(690, 516);
             this.panel_Main.TabIndex = 5;
             // 
             // pictureBox_Search
@@ -123,7 +120,7 @@
             this.pictureBox_Search.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Search.InitialImage")));
             this.pictureBox_Search.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Search.Name = "pictureBox_Search";
-            this.pictureBox_Search.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Search.Size = new System.Drawing.Size(66, 66);
             this.pictureBox_Search.TabIndex = 0;
             this.pictureBox_Search.TabStop = false;
             this.pictureBox_Search.Click += new System.EventHandler(this.pictureBox_Search_Click);
@@ -137,9 +134,8 @@
             this.panel_Search.Controls.Add(this.pictureBox_Search);
             this.panel_Search.Location = new System.Drawing.Point(0, 74);
             this.panel_Search.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Search.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Search.Name = "panel_Search";
-            this.panel_Search.Size = new System.Drawing.Size(250, 77);
+            this.panel_Search.Size = new System.Drawing.Size(190, 66);
             this.panel_Search.TabIndex = 6;
             this.panel_Search.Click += new System.EventHandler(this.panel_Search_Click);
             this.panel_Search.MouseEnter += new System.EventHandler(this.panel_Search_MouseEnter);
@@ -149,8 +145,8 @@
             // 
             this.label_Search.AutoSize = true;
             this.label_Search.BackColor = System.Drawing.Color.Transparent;
-            this.label_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Search.Location = new System.Drawing.Point(128, 24);
+            this.label_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Search.Location = new System.Drawing.Point(91, 19);
             this.label_Search.Name = "label_Search";
             this.label_Search.Size = new System.Drawing.Size(78, 29);
             this.label_Search.TabIndex = 1;
@@ -163,11 +159,10 @@
             this.panel_Grammar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(209)))));
             this.panel_Grammar.Controls.Add(this.label_Grammar);
             this.panel_Grammar.Controls.Add(this.pictureBox_Grammar);
-            this.panel_Grammar.Location = new System.Drawing.Point(0, 406);
+            this.panel_Grammar.Location = new System.Drawing.Point(0, 337);
             this.panel_Grammar.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Grammar.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Grammar.Name = "panel_Grammar";
-            this.panel_Grammar.Size = new System.Drawing.Size(250, 77);
+            this.panel_Grammar.Size = new System.Drawing.Size(190, 66);
             this.panel_Grammar.TabIndex = 7;
             this.panel_Grammar.Click += new System.EventHandler(this.panel_Grammar_Click);
             this.panel_Grammar.MouseEnter += new System.EventHandler(this.panel_Grammar_MouseEnter);
@@ -178,11 +173,11 @@
             this.label_Grammar.AutoSize = true;
             this.label_Grammar.BackColor = System.Drawing.Color.Transparent;
             this.label_Grammar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Grammar.Location = new System.Drawing.Point(107, 25);
+            this.label_Grammar.Location = new System.Drawing.Point(78, 20);
             this.label_Grammar.Name = "label_Grammar";
-            this.label_Grammar.Size = new System.Drawing.Size(122, 29);
+            this.label_Grammar.Size = new System.Drawing.Size(104, 29);
             this.label_Grammar.TabIndex = 1;
-            this.label_Grammar.Text = "Ngữ pháp";
+            this.label_Grammar.Text = "Trò chơi";
             this.label_Grammar.Click += new System.EventHandler(this.label_Grammar_Click);
             this.label_Grammar.MouseEnter += new System.EventHandler(this.label_Grammar_MouseEnter);
             // 
@@ -196,7 +191,7 @@
             this.pictureBox_Grammar.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.InitialImage")));
             this.pictureBox_Grammar.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Grammar.Name = "pictureBox_Grammar";
-            this.pictureBox_Grammar.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Grammar.Size = new System.Drawing.Size(66, 66);
             this.pictureBox_Grammar.TabIndex = 0;
             this.pictureBox_Grammar.TabStop = false;
             this.pictureBox_Grammar.Click += new System.EventHandler(this.pictureBox_Grammar_Click);
@@ -208,11 +203,10 @@
             this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(223)))), ((int)(((byte)(212)))));
             this.panel_ComboWord.Controls.Add(this.label_ComboWord);
             this.panel_ComboWord.Controls.Add(this.pictureBox_ComboWord);
-            this.panel_ComboWord.Location = new System.Drawing.Point(0, 240);
+            this.panel_ComboWord.Location = new System.Drawing.Point(0, 206);
             this.panel_ComboWord.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_ComboWord.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_ComboWord.Name = "panel_ComboWord";
-            this.panel_ComboWord.Size = new System.Drawing.Size(250, 77);
+            this.panel_ComboWord.Size = new System.Drawing.Size(190, 66);
             this.panel_ComboWord.TabIndex = 8;
             this.panel_ComboWord.Click += new System.EventHandler(this.panel_ComboWord_Click);
             this.panel_ComboWord.MouseEnter += new System.EventHandler(this.panel_ComboWord_MouseEnter);
@@ -222,8 +216,8 @@
             // 
             this.label_ComboWord.AutoSize = true;
             this.label_ComboWord.BackColor = System.Drawing.Color.Transparent;
-            this.label_ComboWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_ComboWord.Location = new System.Drawing.Point(100, 24);
+            this.label_ComboWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ComboWord.Location = new System.Drawing.Point(69, 22);
             this.label_ComboWord.Name = "label_ComboWord";
             this.label_ComboWord.Size = new System.Drawing.Size(134, 29);
             this.label_ComboWord.TabIndex = 1;
@@ -240,7 +234,7 @@
             this.pictureBox_ComboWord.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_ComboWord.InitialImage")));
             this.pictureBox_ComboWord.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
-            this.pictureBox_ComboWord.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_ComboWord.Size = new System.Drawing.Size(66, 66);
             this.pictureBox_ComboWord.TabIndex = 0;
             this.pictureBox_ComboWord.TabStop = false;
             this.pictureBox_ComboWord.Click += new System.EventHandler(this.pictureBox_ComboWord_Click);
@@ -252,11 +246,10 @@
             this.panel_Flashcard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(255)))), ((int)(((byte)(212)))));
             this.panel_Flashcard.Controls.Add(this.label_Flashcard);
             this.panel_Flashcard.Controls.Add(this.pictureBox_Flashcard);
-            this.panel_Flashcard.Location = new System.Drawing.Point(0, 323);
+            this.panel_Flashcard.Location = new System.Drawing.Point(0, 271);
             this.panel_Flashcard.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Flashcard.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Flashcard.Name = "panel_Flashcard";
-            this.panel_Flashcard.Size = new System.Drawing.Size(250, 77);
+            this.panel_Flashcard.Size = new System.Drawing.Size(190, 66);
             this.panel_Flashcard.TabIndex = 9;
             this.panel_Flashcard.Click += new System.EventHandler(this.panel_Flashcard_Click);
             this.panel_Flashcard.MouseEnter += new System.EventHandler(this.panel_Flashcard_MouseEnter);
@@ -267,7 +260,7 @@
             this.label_Flashcard.AutoSize = true;
             this.label_Flashcard.BackColor = System.Drawing.Color.Transparent;
             this.label_Flashcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Flashcard.Location = new System.Drawing.Point(100, 24);
+            this.label_Flashcard.Location = new System.Drawing.Point(68, 18);
             this.label_Flashcard.Name = "label_Flashcard";
             this.label_Flashcard.Size = new System.Drawing.Size(137, 29);
             this.label_Flashcard.TabIndex = 1;
@@ -284,7 +277,7 @@
             this.pictureBox_Flashcard.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Flashcard.InitialImage")));
             this.pictureBox_Flashcard.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Flashcard.Name = "pictureBox_Flashcard";
-            this.pictureBox_Flashcard.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Flashcard.Size = new System.Drawing.Size(66, 66);
             this.pictureBox_Flashcard.TabIndex = 0;
             this.pictureBox_Flashcard.TabStop = false;
             this.pictureBox_Flashcard.Click += new System.EventHandler(this.pictureBox_Flashcard_Click);
@@ -296,11 +289,10 @@
             this.panel_Translate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
             this.panel_Translate.Controls.Add(this.label_Translate);
             this.panel_Translate.Controls.Add(this.pictureBox_Translate);
-            this.panel_Translate.Location = new System.Drawing.Point(0, 157);
+            this.panel_Translate.Location = new System.Drawing.Point(0, 140);
             this.panel_Translate.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Translate.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Translate.Name = "panel_Translate";
-            this.panel_Translate.Size = new System.Drawing.Size(250, 77);
+            this.panel_Translate.Size = new System.Drawing.Size(190, 66);
             this.panel_Translate.TabIndex = 10;
             this.panel_Translate.Click += new System.EventHandler(this.panel_Translate_Click);
             this.panel_Translate.MouseEnter += new System.EventHandler(this.panel_Translate_MouseEnter);
@@ -311,7 +303,7 @@
             this.label_Translate.AutoSize = true;
             this.label_Translate.BackColor = System.Drawing.Color.Transparent;
             this.label_Translate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Translate.Location = new System.Drawing.Point(136, 23);
+            this.label_Translate.Location = new System.Drawing.Point(100, 20);
             this.label_Translate.Name = "label_Translate";
             this.label_Translate.Size = new System.Drawing.Size(64, 29);
             this.label_Translate.TabIndex = 1;
@@ -328,7 +320,7 @@
             this.pictureBox_Translate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Translate.InitialImage")));
             this.pictureBox_Translate.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Translate.Name = "pictureBox_Translate";
-            this.pictureBox_Translate.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Translate.Size = new System.Drawing.Size(66, 66);
             this.pictureBox_Translate.TabIndex = 0;
             this.pictureBox_Translate.TabStop = false;
             this.pictureBox_Translate.Click += new System.EventHandler(this.pictureBox_Translate_Click);
@@ -340,11 +332,10 @@
             this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
             this.panel_Exam.Controls.Add(this.label_Exam);
             this.panel_Exam.Controls.Add(this.pictureBox_Exam);
-            this.panel_Exam.Location = new System.Drawing.Point(0, 489);
+            this.panel_Exam.Location = new System.Drawing.Point(0, 403);
             this.panel_Exam.MaximumSize = new System.Drawing.Size(250, 77);
-            this.panel_Exam.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Exam.Name = "panel_Exam";
-            this.panel_Exam.Size = new System.Drawing.Size(250, 77);
+            this.panel_Exam.Size = new System.Drawing.Size(190, 66);
             this.panel_Exam.TabIndex = 11;
             this.panel_Exam.Click += new System.EventHandler(this.panel_Exam_Click);
             this.panel_Exam.MouseEnter += new System.EventHandler(this.panel_Exam_MouseEnter);
@@ -355,7 +346,7 @@
             this.label_Exam.AutoSize = true;
             this.label_Exam.BackColor = System.Drawing.Color.Transparent;
             this.label_Exam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_Exam.Location = new System.Drawing.Point(118, 24);
+            this.label_Exam.Location = new System.Drawing.Point(69, 20);
             this.label_Exam.Name = "label_Exam";
             this.label_Exam.Size = new System.Drawing.Size(124, 29);
             this.label_Exam.TabIndex = 1;
@@ -372,7 +363,7 @@
             this.pictureBox_Exam.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Exam.InitialImage")));
             this.pictureBox_Exam.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Exam.Name = "pictureBox_Exam";
-            this.pictureBox_Exam.Size = new System.Drawing.Size(85, 77);
+            this.pictureBox_Exam.Size = new System.Drawing.Size(66, 66);
             this.pictureBox_Exam.TabIndex = 0;
             this.pictureBox_Exam.TabStop = false;
             this.pictureBox_Exam.Click += new System.EventHandler(this.pictureBox_Exam_Click);
@@ -579,29 +570,18 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(411, 19);
+            this.label2.Location = new System.Drawing.Point(374, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 35);
             this.label2.TabIndex = 16;
             this.label2.Text = "Daily Dictionary";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.dictionary;
-            this.pictureBox1.Location = new System.Drawing.Point(365, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form_Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_English);
@@ -648,7 +628,6 @@
             this.panel_Exam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Exam)).EndInit();
             this.panel_Account.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -688,7 +667,6 @@
         private System.Windows.Forms.Label label_English;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
