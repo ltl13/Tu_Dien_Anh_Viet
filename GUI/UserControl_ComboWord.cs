@@ -11,6 +11,7 @@ namespace GUI {
             InitializeComponent();
             xuiButton_Back.Hide();
             dataGridView.Hide();
+            metroTextBox_Filter.Hide();
             lb_comboWords.Hide();
         }
 
@@ -249,6 +250,7 @@ namespace GUI {
 
         private void xuiButton_Back_Click(object sender, EventArgs e) {
             dataGridView.Hide();
+            metroTextBox_Filter.Hide();
             xuiButton_Back.Hide();
             lb_comboWords.Hide();
         }
@@ -281,6 +283,11 @@ namespace GUI {
             else if (e.Delta < 0) {
                 dataGridView.FirstDisplayedScrollingRowIndex++;
             }
+        }
+
+        private void dataGridView_VisibleChanged(object sender, EventArgs e)
+        {
+            metroTextBox_Filter.Visible = dataGridView.Visible;
         }
     }
 }
