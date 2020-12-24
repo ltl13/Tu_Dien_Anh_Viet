@@ -1,932 +1,932 @@
 ﻿{
     "Economic And Foreign Trade": [
         {
-            "Tên": "debit",
-            "Ý nghĩa": "Sự ghi nợ, món nợ, khoản nợ, bên nợ"
+            "Name": "debit",
+            "Meaning": "Sự ghi nợ, món nợ, khoản nợ, bên nợ"
         },
         {
-            "Tên": "Convertible debenture",
-            "Ý nghĩa": "Trái khoán có thể đổi thành vàng hoặc thành đôla"
+            "Name": "Convertible debenture",
+            "Meaning": "Trái khoán có thể đổi thành vàng hoặc thành đôla"
         },
         {
-            "Tên": "Debenture holder",
-            "Ý nghĩa": "Người giữ trái khoán"
+            "Name": "Debenture holder",
+            "Meaning": "Người giữ trái khoán"
         },
         {
-            "Tên": "Fixed interest bearing debenture",
-            "Ý nghĩa": "Trái khoán chịu tiền lãi cố định"
+            "Name": "Fixed interest bearing debenture",
+            "Meaning": "Trái khoán chịu tiền lãi cố định"
         },
         {
-            "Tên": "Graduated interest debebtures",
-            "Ý nghĩa": "Trái khoán chịu tiền lãi lũy tiến"
+            "Name": "Graduated interest debebtures",
+            "Meaning": "Trái khoán chịu tiền lãi lũy tiến"
         },
         {
-            "Tên": "Issue of debenture",
-            "Ý nghĩa": "Sự phát hành trái khoán"
+            "Name": "Issue of debenture",
+            "Meaning": "Sự phát hành trái khoán"
         },
         {
-            "Tên": "Redeem debenture",
-            "Ý nghĩa": "Trái khoán trả dần"
+            "Name": "Redeem debenture",
+            "Meaning": "Trái khoán trả dần"
         },
         {
-            "Tên": "Registered debenture",
-            "Ý nghĩa": "Trái khoán ký danh"
+            "Name": "Registered debenture",
+            "Meaning": "Trái khoán ký danh"
         },
         {
-            "Tên": "Unissued debenture",
-            "Ý nghĩa": "Cuống trái khoán"
+            "Name": "Unissued debenture",
+            "Meaning": "Cuống trái khoán"
         },
         {
-            "Tên": "Variable interest debenture",
-            "Ý nghĩa": "Trái khoán chịu tiền lãi thay đổi"
+            "Name": "Variable interest debenture",
+            "Meaning": "Trái khoán chịu tiền lãi thay đổi"
         },
         {
-            "Tên": "Debit advice",
-            "Ý nghĩa": "Giấy báo nợ"
+            "Name": "Debit advice",
+            "Meaning": "Giấy báo nợ"
         },
         {
-            "Tên": "Debit balance",
-            "Ý nghĩa": "Số dư nợ"
+            "Name": "Debit balance",
+            "Meaning": "Số dư nợ"
         },
         {
-            "Tên": "Debit request",
-            "Ý nghĩa": "Giấy đòi nợ"
+            "Name": "Debit request",
+            "Meaning": "Giấy đòi nợ"
         },
         {
-            "Tên": "Debit side",
-            "Ý nghĩa": "Bên nợ"
+            "Name": "Debit side",
+            "Meaning": "Bên nợ"
         },
         {
-            "Tên": "Settlement",
-            "Ý nghĩa": "Sự giải quyết, sự thanh toán, sự quyết toán"
+            "Name": "Settlement",
+            "Meaning": "Sự giải quyết, sự thanh toán, sự quyết toán"
         },
         {
-            "Tên": "Settlement of accounts",
-            "Ý nghĩa": "Sự quyết toán tài khoản"
+            "Name": "Settlement of accounts",
+            "Meaning": "Sự quyết toán tài khoản"
         },
         {
-            "Tên": "Settlement of a claim",
-            "Ý nghĩa": "Sự giải quyết khiếu nại"
+            "Name": "Settlement of a claim",
+            "Meaning": "Sự giải quyết khiếu nại"
         },
         {
-            "Tên": "Settlement of a debt",
-            "Ý nghĩa": "Sự thanh toán nợ"
+            "Name": "Settlement of a debt",
+            "Meaning": "Sự thanh toán nợ"
         },
         {
-            "Tên": "Settlement of a dispute",
-            "Ý nghĩa": "Sự giải quyết tranh chấp"
+            "Name": "Settlement of a dispute",
+            "Meaning": "Sự giải quyết tranh chấp"
         },
         {
-            "Tên": "Amicable settlement",
-            "Ý nghĩa": "Sự hòa giải, sự giải quyết thỏa thuận"
+            "Name": "Amicable settlement",
+            "Meaning": "Sự hòa giải, sự giải quyết thỏa thuận"
         },
         {
-            "Tên": "Budget settlement",
-            "Ý nghĩa": "Sự quyết toán ngân sách"
+            "Name": "Budget settlement",
+            "Meaning": "Sự quyết toán ngân sách"
         },
         {
-            "Tên": "Cash settlement",
-            "Ý nghĩa": "Sự thanh toán ngay; sự thanh toán bằng tiền mặt"
+            "Name": "Cash settlement",
+            "Meaning": "Sự thanh toán ngay; sự thanh toán bằng tiền mặt"
         },
         {
-            "Tên": "International settlement",
-            "Ý nghĩa": "Sự thanh toán quốc tế"
+            "Name": "International settlement",
+            "Meaning": "Sự thanh toán quốc tế"
         },
         {
-            "Tên": "Multilateral settlement",
-            "Ý nghĩa": "Sự thanh toán nhiều bên, việc thanh toán nhiều bên"
+            "Name": "Multilateral settlement",
+            "Meaning": "Sự thanh toán nhiều bên, việc thanh toán nhiều bên"
         },
         {
-            "Tên": "Friendly settlement / Amicable settlement",
-            "Ý nghĩa": "Sự hòa giải, sự giải quyết thỏa thuận"
+            "Name": "Friendly settlement / Amicable settlement",
+            "Meaning": "Sự hòa giải, sự giải quyết thỏa thuận"
         },
         {
-            "Tên": "End month settlement",
-            "Ý nghĩa": "Sự quyết toán cuối tháng"
+            "Name": "End month settlement",
+            "Meaning": "Sự quyết toán cuối tháng"
         },
         {
-            "Tên": "Monthly settlement",
-            "Ý nghĩa": "Sự quyết toán hàng tháng"
+            "Name": "Monthly settlement",
+            "Meaning": "Sự quyết toán hàng tháng"
         },
         {
-            "Tên": "Settlement of a transaction",
-            "Ý nghĩa": "Sự kết thúc một công việc giao dịch"
+            "Name": "Settlement of a transaction",
+            "Meaning": "Sự kết thúc một công việc giao dịch"
         },
         {
-            "Tên": "Settlement of an invoice",
-            "Ý nghĩa": "Sự thanh toán một hóa đơn"
+            "Name": "Settlement of an invoice",
+            "Meaning": "Sự thanh toán một hóa đơn"
         },
         {
-            "Tên": "Settlement market",
-            "Ý nghĩa": "Sự mua hoặc bán"
+            "Name": "Settlement market",
+            "Meaning": "Sự mua hoặc bán"
         },
         {
-            "Tên": "Debenture",
-            "Ý nghĩa": "Trái khoán công ty, giấy nợ, phiếu nợ"
+            "Name": "Debenture",
+            "Meaning": "Trái khoán công ty, giấy nợ, phiếu nợ"
         },
         {
-            "Tên": "Bearer debenture",
-            "Ý nghĩa": "Trái khoán vô danh"
+            "Name": "Bearer debenture",
+            "Meaning": "Trái khoán vô danh"
         },
         {
-            "Tên": "Mortgage debenture",
-            "Ý nghĩa": "Trái khoán cầm cố, giấy nợ được đảm bào bằng văn tự cầm đồ"
+            "Name": "Mortgage debenture",
+            "Meaning": "Trái khoán cầm cố, giấy nợ được đảm bào bằng văn tự cầm đồ"
         },
         {
-            "Tên": "Naked debenture",
-            "Ý nghĩa": "Trái khoán trần, trái khoán không đảm bảo"
+            "Name": "Naked debenture",
+            "Meaning": "Trái khoán trần, trái khoán không đảm bảo"
         },
         {
-            "Tên": "Preference debenture",
-            "Ý nghĩa": "Trái khoán ưu đãi"
+            "Name": "Preference debenture",
+            "Meaning": "Trái khoán ưu đãi"
         },
         {
-            "Tên": "Secured debenture",
-            "Ý nghĩa": "Trái khoán công ty có đảm bảo"
+            "Name": "Secured debenture",
+            "Meaning": "Trái khoán công ty có đảm bảo"
         },
         {
-            "Tên": "Unsecured debenture",
-            "Ý nghĩa": "Trái khoán công ty không có đảm bảo"
+            "Name": "Unsecured debenture",
+            "Meaning": "Trái khoán công ty không có đảm bảo"
         },
         {
-            "Tên": "Company",
-            "Ý nghĩa": "Công ty, hội"
+            "Name": "Company",
+            "Meaning": "Công ty, hội"
         },
         {
-            "Tên": "Company of limited liability",
-            "Ý nghĩa": "Công ty trách nhiệm hữu hạn"
+            "Name": "Company of limited liability",
+            "Meaning": "Công ty trách nhiệm hữu hạn"
         },
         {
-            "Tên": "Affiliated company",
-            "Ý nghĩa": "Công ty con, công ty dự phần"
+            "Name": "Affiliated company",
+            "Meaning": "Công ty con, công ty dự phần"
         },
         {
-            "Tên": "Holding company",
-            "Ý nghĩa": "Công ty mẹ"
+            "Name": "Holding company",
+            "Meaning": "Công ty mẹ"
         },
         {
-            "Tên": "Insurance company",
-            "Ý nghĩa": "Công ty bảo hiểm"
+            "Name": "Insurance company",
+            "Meaning": "Công ty bảo hiểm"
         },
         {
-            "Tên": "Join stock company",
-            "Ý nghĩa": "Công ty cổ phần"
+            "Name": "Join stock company",
+            "Meaning": "Công ty cổ phần"
         },
         {
-            "Tên": "Multinational company",
-            "Ý nghĩa": "Công ty đa quốc gia"
+            "Name": "Multinational company",
+            "Meaning": "Công ty đa quốc gia"
         },
         {
-            "Tên": "One – man company",
-            "Ý nghĩa": "Công ty một người"
+            "Name": "One – man company",
+            "Meaning": "Công ty một người"
         },
         {
-            "Tên": "Private company",
-            "Ý nghĩa": "Công ty riêng"
+            "Name": "Private company",
+            "Meaning": "Công ty riêng"
         },
         {
-            "Tên": "Private – owned company",
-            "Ý nghĩa": "Công ty tư nhân"
+            "Name": "Private – owned company",
+            "Meaning": "Công ty tư nhân"
         },
         {
-            "Tên": "Public company",
-            "Ý nghĩa": "Công ty công cộng, công ty nhà nước"
+            "Name": "Public company",
+            "Meaning": "Công ty công cộng, công ty nhà nước"
         },
         {
-            "Tên": "Shipping company",
-            "Ý nghĩa": "Công ty hàng hải, công ty vận tải biển"
+            "Name": "Shipping company",
+            "Meaning": "Công ty hàng hải, công ty vận tải biển"
         },
         {
-            "Tên": "State – owned company",
-            "Ý nghĩa": "Công ty quốc doanh, công ty nhà nước"
+            "Name": "State – owned company",
+            "Meaning": "Công ty quốc doanh, công ty nhà nước"
         },
         {
-            "Tên": "Transnational company",
-            "Ý nghĩa": "Công ty xuyên quốc gia"
+            "Name": "Transnational company",
+            "Meaning": "Công ty xuyên quốc gia"
         },
         {
-            "Tên": "Subsidiary company",
-            "Ý nghĩa": "Công ty con"
+            "Name": "Subsidiary company",
+            "Meaning": "Công ty con"
         },
         {
-            "Tên": "Unlimited (liability) company",
-            "Ý nghĩa": "Công ty trách nhiệm vô hạn"
+            "Name": "Unlimited (liability) company",
+            "Meaning": "Công ty trách nhiệm vô hạn"
         },
         {
-            "Tên": "Warehouse company",
-            "Ý nghĩa": "Công ty kho"
+            "Name": "Warehouse company",
+            "Meaning": "Công ty kho"
         },
         {
-            "Tên": "Express company",
-            "Ý nghĩa": "Công ty vận tải tốc hành"
+            "Name": "Express company",
+            "Meaning": "Công ty vận tải tốc hành"
         },
         {
-            "Tên": "Foreign trade company",
-            "Ý nghĩa": "Công ty ngoại thương"
+            "Name": "Foreign trade company",
+            "Meaning": "Công ty ngoại thương"
         },
         {
-            "Tên": "Joint state – private company",
-            "Ý nghĩa": "Công ty công tư hợp doanh"
+            "Name": "Joint state – private company",
+            "Meaning": "Công ty công tư hợp doanh"
         },
         {
-            "Tên": "Investment service company",
-            "Ý nghĩa": "Công ty dịch vụ đầu tư"
+            "Name": "Investment service company",
+            "Meaning": "Công ty dịch vụ đầu tư"
         },
         {
-            "Tên": "Trading company",
-            "Ý nghĩa": "Công ty thương mại"
+            "Name": "Trading company",
+            "Meaning": "Công ty thương mại"
         },
         {
-            "Tên": "Limited (liability) company",
-            "Ý nghĩa": "Công ty trách nhiệm hữu hạn"
+            "Name": "Limited (liability) company",
+            "Meaning": "Công ty trách nhiệm hữu hạn"
         },
         {
-            "Tên": "Bubble company",
-            "Ý nghĩa": "Công ty ma"
+            "Name": "Bubble company",
+            "Meaning": "Công ty ma"
         },
         {
-            "Tên": "Mixed owenership company",
-            "Ý nghĩa": "Công ty hợp doanh"
+            "Name": "Mixed owenership company",
+            "Meaning": "Công ty hợp doanh"
         },
         {
-            "Tên": "Company limited by shares",
-            "Ý nghĩa": "Công ty trách nhiệm hữu hạn cổ phần"
+            "Name": "Company limited by shares",
+            "Meaning": "Công ty trách nhiệm hữu hạn cổ phần"
         },
         {
-            "Tên": "Limited partnership",
-            "Ý nghĩa": "Công ty hợp danh hữu hạn"
+            "Name": "Limited partnership",
+            "Meaning": "Công ty hợp danh hữu hạn"
         },
         {
-            "Tên": "The merge of companies/Amagation",
-            "Ý nghĩa": "Sự hợp nhất các công ty"
+            "Name": "The merge of companies/Amagation",
+            "Meaning": "Sự hợp nhất các công ty"
         },
         {
-            "Tên": "To form a company",
-            "Ý nghĩa": "Thành lập một công ty"
+            "Name": "To form a company",
+            "Meaning": "Thành lập một công ty"
         },
         {
-            "Tên": "To dissolve a company",
-            "Ý nghĩa": "Giải thể một công ty"
+            "Name": "To dissolve a company",
+            "Meaning": "Giải thể một công ty"
         },
         {
-            "Tên": "To wind up a company",
-            "Ý nghĩa": "Thanh toán một công ty"
+            "Name": "To wind up a company",
+            "Meaning": "Thanh toán một công ty"
         },
         {
-            "Tên": "Industrial company",
-            "Ý nghĩa": "Công ty kỹ nghệ (sản xuất)"
+            "Name": "Industrial company",
+            "Meaning": "Công ty kỹ nghệ (sản xuất)"
         },
         {
-            "Tên": "Build – in – department",
-            "Ý nghĩa": "Bộ phận ghép nhỏ lo việc xuất khẩu"
+            "Name": "Build – in – department",
+            "Meaning": "Bộ phận ghép nhỏ lo việc xuất khẩu"
         },
         {
-            "Tên": "Build – in export department",
-            "Ý nghĩa": "Bộ phận xuất khẩu"
+            "Name": "Build – in export department",
+            "Meaning": "Bộ phận xuất khẩu"
         },
         {
-            "Tên": "Build – in import department",
-            "Ý nghĩa": "Bộ phận nhập khẩu"
+            "Name": "Build – in import department",
+            "Meaning": "Bộ phận nhập khẩu"
         },
         {
-            "Tên": "Separated department",
-            "Ý nghĩa": "Bộ phận riêng biệt"
+            "Name": "Separated department",
+            "Meaning": "Bộ phận riêng biệt"
         },
         {
-            "Tên": "Export subsidiary company",
-            "Ý nghĩa": "Công ty con xuất khẩu"
+            "Name": "Export subsidiary company",
+            "Meaning": "Công ty con xuất khẩu"
         },
         {
-            "Tên": "Branch",
-            "Ý nghĩa": "Chi nhánh"
+            "Name": "Branch",
+            "Meaning": "Chi nhánh"
         },
         {
-            "Tên": "Prefabrication plant",
-            "Ý nghĩa": "Phân xưởng gia công"
+            "Name": "Prefabrication plant",
+            "Meaning": "Phân xưởng gia công"
         },
         {
-            "Tên": "Associated/Affiliated company",
-            "Ý nghĩa": "Công ty dự phần của một công ty mẹ ở nước ngoài"
+            "Name": "Associated/Affiliated company",
+            "Meaning": "Công ty dự phần của một công ty mẹ ở nước ngoài"
         },
         {
-            "Tên": "Travelling agent",
-            "Ý nghĩa": "Nhân viên lưu động"
+            "Name": "Travelling agent",
+            "Meaning": "Nhân viên lưu động"
         },
         {
-            "Tên": "Comprador",
-            "Ý nghĩa": "Người mại bản"
+            "Name": "Comprador",
+            "Meaning": "Người mại bản"
         },
         {
-            "Tên": "Universal agent",
-            "Ý nghĩa": "Đại lý toàn quyền"
+            "Name": "Universal agent",
+            "Meaning": "Đại lý toàn quyền"
         },
         {
-            "Tên": "Carrrier’s agent",
-            "Ý nghĩa": "Đại lý vận tải"
+            "Name": "Carrrier’s agent",
+            "Meaning": "Đại lý vận tải"
         },
         {
-            "Tên": "Shipping agent",
-            "Ý nghĩa": "Đại lý giao nhận"
+            "Name": "Shipping agent",
+            "Meaning": "Đại lý giao nhận"
         },
         {
-            "Tên": "Charterer’s/Chartering agent",
-            "Ý nghĩa": "Đại lý thuê tàu"
+            "Name": "Charterer’s/Chartering agent",
+            "Meaning": "Đại lý thuê tàu"
         },
         {
-            "Tên": "Collecting agent",
-            "Ý nghĩa": "Đại lý thu hộ"
+            "Name": "Collecting agent",
+            "Meaning": "Đại lý thu hộ"
         },
         {
-            "Tên": "Insurance agent",
-            "Ý nghĩa": "Đại lý bảo hiểm"
+            "Name": "Insurance agent",
+            "Meaning": "Đại lý bảo hiểm"
         },
         {
-            "Tên": "Special agent",
-            "Ý nghĩa": "Đại lý đặc biệt"
+            "Name": "Special agent",
+            "Meaning": "Đại lý đặc biệt"
         },
         {
-            "Tên": "To be out of business",
-            "Ý nghĩa": "vỡ nợ, phá sản"
+            "Name": "To be out of business",
+            "Meaning": "vỡ nợ, phá sản"
         },
         {
-            "Tên": "To do business with somebody",
-            "Ý nghĩa": "buôn bán với ai"
+            "Name": "To do business with somebody",
+            "Meaning": "buôn bán với ai"
         },
         {
-            "Tên": "Banking business",
-            "Ý nghĩa": "nghiệp vụ ngân hàng"
+            "Name": "Banking business",
+            "Meaning": "nghiệp vụ ngân hàng"
         },
         {
-            "Tên": "Forwarding business",
-            "Ý nghĩa": "hãng đại lý giao nhận, công tác giao nhận"
+            "Name": "Forwarding business",
+            "Meaning": "hãng đại lý giao nhận, công tác giao nhận"
         },
         {
-            "Tên": "Retail business",
-            "Ý nghĩa": "thương nghiệp bán lẻ, việc kinh doanh bán lẻ"
+            "Name": "Retail business",
+            "Meaning": "thương nghiệp bán lẻ, việc kinh doanh bán lẻ"
         },
         {
-            "Tên": "Businessman",
-            "Ý nghĩa": "nhà kinh doanh"
+            "Name": "Businessman",
+            "Meaning": "nhà kinh doanh"
         },
         {
-            "Tên": "Business is business",
-            "Ý nghĩa": "Công việc là công việc"
+            "Name": "Business is business",
+            "Meaning": "Công việc là công việc"
         },
         {
-            "Tên": "Cash business",
-            "Ý nghĩa": "việc mua bán bằng tiền mặt"
+            "Name": "Cash business",
+            "Meaning": "việc mua bán bằng tiền mặt"
         },
         {
-            "Tên": "Complicated business",
-            "Ý nghĩa": "công việc làm ăn rắc rối"
+            "Name": "Complicated business",
+            "Meaning": "công việc làm ăn rắc rối"
         },
         {
-            "Tên": "Credit in business",
-            "Ý nghĩa": "tín dụng trong kinh doanh"
+            "Name": "Credit in business",
+            "Meaning": "tín dụng trong kinh doanh"
         },
         {
-            "Tên": "International business",
-            "Ý nghĩa": "Việc kinh doanh quốc tế"
+            "Name": "International business",
+            "Meaning": "Việc kinh doanh quốc tế"
         },
         {
-            "Tên": "Increase of business",
-            "Ý nghĩa": "Sự tăng cường buôn bán"
+            "Name": "Increase of business",
+            "Meaning": "Sự tăng cường buôn bán"
         },
         {
-            "Tên": "Man of business",
-            "Ý nghĩa": "Người thay mặt để giao dịch"
+            "Name": "Man of business",
+            "Meaning": "Người thay mặt để giao dịch"
         },
         {
-            "Tên": "Stagnation of business",
-            "Ý nghĩa": "Sự đình trệ việc kinh doanh"
+            "Name": "Stagnation of business",
+            "Meaning": "Sự đình trệ việc kinh doanh"
         },
         {
-            "Tên": "Business co-operation",
-            "Ý nghĩa": "sự hợp tác kinh doanh"
+            "Name": "Business co-operation",
+            "Meaning": "sự hợp tác kinh doanh"
         },
         {
-            "Tên": "Business coordinator",
-            "Ý nghĩa": "người điều phối công việc kinh doanh"
+            "Name": "Business coordinator",
+            "Meaning": "người điều phối công việc kinh doanh"
         },
         {
-            "Tên": "Business circles/world",
-            "Ý nghĩa": "giới kinh doanh"
+            "Name": "Business circles/world",
+            "Meaning": "giới kinh doanh"
         },
         {
-            "Tên": "Business expansion",
-            "Ý nghĩa": "sự khuếch trương kinh doanh"
+            "Name": "Business expansion",
+            "Meaning": "sự khuếch trương kinh doanh"
         },
         {
-            "Tên": "Business forecasting",
-            "Ý nghĩa": "dự đoán thương mại"
+            "Name": "Business forecasting",
+            "Meaning": "dự đoán thương mại"
         },
         {
-            "Tên": "Business experience",
-            "Ý nghĩa": "kinh nghiệm trong kinh doanh"
+            "Name": "Business experience",
+            "Meaning": "kinh nghiệm trong kinh doanh"
         },
         {
-            "Tên": "Business is thriving",
-            "Ý nghĩa": "Sự buôn bán phát đạt"
+            "Name": "Business is thriving",
+            "Meaning": "Sự buôn bán phát đạt"
         },
         {
-            "Tên": "Business is bad",
-            "Ý nghĩa": "Sự buôn bán ế ẩm"
+            "Name": "Business is bad",
+            "Meaning": "Sự buôn bán ế ẩm"
         },
         {
-            "Tên": "Business knowledge",
-            "Ý nghĩa": "kiến thức kinh doanh"
+            "Name": "Business knowledge",
+            "Meaning": "kiến thức kinh doanh"
         },
         {
-            "Tên": "Business license",
-            "Ý nghĩa": "giấy phép kinh doanh"
+            "Name": "Business license",
+            "Meaning": "giấy phép kinh doanh"
         },
         {
-            "Tên": "Business organization",
-            "Ý nghĩa": "tổ chức kinh doanh"
+            "Name": "Business organization",
+            "Meaning": "tổ chức kinh doanh"
         },
         {
-            "Tên": "Business relations",
-            "Ý nghĩa": "các mối quan hệ kinh doanh"
+            "Name": "Business relations",
+            "Meaning": "các mối quan hệ kinh doanh"
         },
         {
-            "Tên": "Business tax",
-            "Ý nghĩa": "thuế doanh nghiệp"
+            "Name": "Business tax",
+            "Meaning": "thuế doanh nghiệp"
         },
         {
-            "Tên": "Business trip",
-            "Ý nghĩa": "cuộc đi làm ăn"
+            "Name": "Business trip",
+            "Meaning": "cuộc đi làm ăn"
         },
         {
-            "Tên": "To be in business",
-            "Ý nghĩa": "đang trong ngành kinh doanh"
+            "Name": "To be in business",
+            "Meaning": "đang trong ngành kinh doanh"
         },
         {
-            "Tên": "Credit against goods",
-            "Ý nghĩa": "Tín dụng trả bằng hàng"
+            "Name": "Credit against goods",
+            "Meaning": "Tín dụng trả bằng hàng"
         },
         {
-            "Tên": "Acceptance credit",
-            "Ý nghĩa": "Tín dụng chấp nhận"
+            "Name": "Acceptance credit",
+            "Meaning": "Tín dụng chấp nhận"
         },
         {
-            "Tên": "Back-to-back credit",
-            "Ý nghĩa": "Thư tín dụng giáp lưng"
+            "Name": "Back-to-back credit",
+            "Meaning": "Thư tín dụng giáp lưng"
         },
         {
-            "Tên": "Blank credit",
-            "Ý nghĩa": "Tín dụng không bảo đảm, tín dụng để trống"
+            "Name": "Blank credit",
+            "Meaning": "Tín dụng không bảo đảm, tín dụng để trống"
         },
         {
-            "Tên": "Cash credit",
-            "Ý nghĩa": "Tín dụng tiền mặt"
+            "Name": "Cash credit",
+            "Meaning": "Tín dụng tiền mặt"
         },
         {
-            "Tên": "Circular credit",
-            "Ý nghĩa": "Thư tín dụng lưu động"
+            "Name": "Circular credit",
+            "Meaning": "Thư tín dụng lưu động"
         },
         {
-            "Tên": "Clean credit",
-            "Ý nghĩa": "Tín dụng trơn, tín dụng để trống"
+            "Name": "Clean credit",
+            "Meaning": "Tín dụng trơn, tín dụng để trống"
         },
         {
-            "Tên": "Commercial credit",
-            "Ý nghĩa": "Tín dụng thương mại, tín dụng thương nghiệp"
+            "Name": "Commercial credit",
+            "Meaning": "Tín dụng thương mại, tín dụng thương nghiệp"
         },
         {
-            "Tên": "Confirmed credit",
-            "Ý nghĩa": "Thư tín dụng xác nhận"
+            "Name": "Confirmed credit",
+            "Meaning": "Thư tín dụng xác nhận"
         },
         {
-            "Tên": "Confirmed irrevocable credit",
-            "Ý nghĩa": "Thư tín dụng không hủy ngang có xác nhận"
+            "Name": "Confirmed irrevocable credit",
+            "Meaning": "Thư tín dụng không hủy ngang có xác nhận"
         },
         {
-            "Tên": "Countervailing credit",
-            "Ý nghĩa": "Tín dụng giáp lưng"
+            "Name": "Countervailing credit",
+            "Meaning": "Tín dụng giáp lưng"
         },
         {
-            "Tên": "Divisible credit",
-            "Ý nghĩa": "Thư tín dụng chia nhỏ"
+            "Name": "Divisible credit",
+            "Meaning": "Thư tín dụng chia nhỏ"
         },
         {
-            "Tên": "Documentary credit",
-            "Ý nghĩa": "Tín dụng chứng từ, thư tín dụng chứng từ"
+            "Name": "Documentary credit",
+            "Meaning": "Tín dụng chứng từ, thư tín dụng chứng từ"
         },
         {
-            "Tên": "Export credit",
-            "Ý nghĩa": "Tín dụng xuất khẩu"
+            "Name": "Export credit",
+            "Meaning": "Tín dụng xuất khẩu"
         },
         {
-            "Tên": "Fractionable credit",
-            "Ý nghĩa": "Tín dụng chia nhỏ, thư tín dụng chia nhỏ"
+            "Name": "Fractionable credit",
+            "Meaning": "Tín dụng chia nhỏ, thư tín dụng chia nhỏ"
         },
         {
-            "Tên": "Goverment credit",
-            "Ý nghĩa": "Tín dụng nhà nước"
+            "Name": "Goverment credit",
+            "Meaning": "Tín dụng nhà nước"
         },
         {
-            "Tên": "Import credit",
-            "Ý nghĩa": "Tín dụng nhập khẩu"
+            "Name": "Import credit",
+            "Meaning": "Tín dụng nhập khẩu"
         },
         {
-            "Tên": "Preference debenture",
-            "Ý nghĩa": "Trái khoán ưu đãi"
+            "Name": "Preference debenture",
+            "Meaning": "Trái khoán ưu đãi"
         },
         {
-            "Tên": "Secured debenture",
-            "Ý nghĩa": "Trái khoán công ty có đảm bảo"
+            "Name": "Secured debenture",
+            "Meaning": "Trái khoán công ty có đảm bảo"
         },
         {
-            "Tên": "Irrevocable credit",
-            "Ý nghĩa": "Thư tín dụng không hủy ngang"
+            "Name": "Irrevocable credit",
+            "Meaning": "Thư tín dụng không hủy ngang"
         },
         {
-            "Tên": "Instalment credit",
-            "Ý nghĩa": "Tín dụng trả dần, tín dụng trả nhiều lần"
+            "Name": "Instalment credit",
+            "Meaning": "Tín dụng trả dần, tín dụng trả nhiều lần"
         },
         {
-            "Tên": "Long term credit",
-            "Ý nghĩa": "Tín dụng dài hạn"
+            "Name": "Long term credit",
+            "Meaning": "Tín dụng dài hạn"
         },
         {
-            "Tên": "Medium credit",
-            "Ý nghĩa": "Tín dụng trung hạn (thời hạn\r\n1 đến 5 năm)"
+            "Name": "Medium credit",
+            "Meaning": "Tín dụng trung hạn (thời hạn\r\n1 đến 5 năm)"
         },
         {
-            "Tên": "Medium term",
-            "Ý nghĩa": "Tín dụng trung hạn"
+            "Name": "Medium term",
+            "Meaning": "Tín dụng trung hạn"
         },
         {
-            "Tên": "Mercantile credit",
-            "Ý nghĩa": "Tín dụng thương nghiệp, thư tín dụng thương nghiệp"
+            "Name": "Mercantile credit",
+            "Meaning": "Tín dụng thương nghiệp, thư tín dụng thương nghiệp"
         },
         {
-            "Tên": "Open credit",
-            "Ý nghĩa": "Tín dụng không đảm bảo, tín dụng trơn, tín dụng để trống"
+            "Name": "Open credit",
+            "Meaning": "Tín dụng không đảm bảo, tín dụng trơn, tín dụng để trống"
         },
         {
-            "Tên": "Negotiation credit",
-            "Ý nghĩa": "Tín dụng chiết khấu, thư tín dụng chiết khấu"
+            "Name": "Negotiation credit",
+            "Meaning": "Tín dụng chiết khấu, thư tín dụng chiết khấu"
         },
         {
-            "Tên": "Packing credit",
-            "Ý nghĩa": "Tín dụng trả trước, thư tín dụng trả trước"
+            "Name": "Packing credit",
+            "Meaning": "Tín dụng trả trước, thư tín dụng trả trước"
         },
         {
-            "Tên": "Public credit",
-            "Ý nghĩa": "Tín dụng nhà nước"
+            "Name": "Public credit",
+            "Meaning": "Tín dụng nhà nước"
         },
         {
-            "Tên": "Revocable credit",
-            "Ý nghĩa": "Thư tín dụng hủy ngang"
+            "Name": "Revocable credit",
+            "Meaning": "Thư tín dụng hủy ngang"
         },
         {
-            "Tên": "Revolving credit",
-            "Ý nghĩa": "Thư tín dụng tuần hoàn"
+            "Name": "Revolving credit",
+            "Meaning": "Thư tín dụng tuần hoàn"
         },
         {
-            "Tên": "Short term credit",
-            "Ý nghĩa": "Tín dụng ngắn hạn"
+            "Name": "Short term credit",
+            "Meaning": "Tín dụng ngắn hạn"
         },
         {
-            "Tên": "Stand by credit",
-            "Ý nghĩa": "Tín dụng dự phòng, tín dụng có hiệu quả"
+            "Name": "Stand by credit",
+            "Meaning": "Tín dụng dự phòng, tín dụng có hiệu quả"
         },
         {
-            "Tên": "Supplier credit",
-            "Ý nghĩa": "Tín dụng người bán"
+            "Name": "Supplier credit",
+            "Meaning": "Tín dụng người bán"
         },
         {
-            "Tên": "Swing credit",
-            "Ý nghĩa": "Tín dụng kỹ thuật, tín dụng chi trội"
+            "Name": "Swing credit",
+            "Meaning": "Tín dụng kỹ thuật, tín dụng chi trội"
         },
         {
-            "Tên": "Transferable credit",
-            "Ý nghĩa": "Tín dụng chuyển nhượng"
+            "Name": "Transferable credit",
+            "Meaning": "Tín dụng chuyển nhượng"
         },
         {
-            "Tên": "Transmissible credit",
-            "Ý nghĩa": "Thư tín dụng chuyển nhượng"
+            "Name": "Transmissible credit",
+            "Meaning": "Thư tín dụng chuyển nhượng"
         },
         {
-            "Tên": "Unconfirmed credit",
-            "Ý nghĩa": "Tín dụng không xác nhận"
+            "Name": "Unconfirmed credit",
+            "Meaning": "Tín dụng không xác nhận"
         },
         {
-            "Tên": "Creditor",
-            "Ý nghĩa": "Chủ nợ, người cho vay, trái chủ, bên cấp tín dụng"
+            "Name": "Creditor",
+            "Meaning": "Chủ nợ, người cho vay, trái chủ, bên cấp tín dụng"
         },
         {
-            "Tên": "Credit advice",
-            "Ý nghĩa": "Giấy báo có"
+            "Name": "Credit advice",
+            "Meaning": "Giấy báo có"
         },
         {
-            "Tên": "Credit business",
-            "Ý nghĩa": "Sự kinh doanh tín dụng"
+            "Name": "Credit business",
+            "Meaning": "Sự kinh doanh tín dụng"
         },
         {
-            "Tên": "Credit card",
-            "Ý nghĩa": "Thẻ tín dụng"
+            "Name": "Credit card",
+            "Meaning": "Thẻ tín dụng"
         },
         {
-            "Tên": "Credit balance",
-            "Ý nghĩa": "Số dư có"
+            "Name": "Credit balance",
+            "Meaning": "Số dư có"
         },
         {
-            "Tên": "Credit co-op",
-            "Ý nghĩa": "Hợp tác xã tín dụng"
+            "Name": "Credit co-op",
+            "Meaning": "Hợp tác xã tín dụng"
         },
         {
-            "Tên": "Credit institution",
-            "Ý nghĩa": "Định chế tín dụng"
+            "Name": "Credit institution",
+            "Meaning": "Định chế tín dụng"
         },
         {
-            "Tên": "To incur",
-            "Ý nghĩa": "Chịu, gánh, bị (chi phí, tổn thất, trách nhiệm…)"
+            "Name": "To incur",
+            "Meaning": "Chịu, gánh, bị (chi phí, tổn thất, trách nhiệm…)"
         },
         {
-            "Tên": "Indebted",
-            "Ý nghĩa": "Mắc nợ, còn thiếu lại"
+            "Name": "Indebted",
+            "Meaning": "Mắc nợ, còn thiếu lại"
         },
         {
-            "Tên": "Indebtedness",
-            "Ý nghĩa": "Sự mắc nợ, công nợ, số tiền nợ"
+            "Name": "Indebtedness",
+            "Meaning": "Sự mắc nợ, công nợ, số tiền nợ"
         },
         {
-            "Tên": "Certificate of indebtedness",
-            "Ý nghĩa": "Giấy chứng nhận thiếu nợ"
+            "Name": "Certificate of indebtedness",
+            "Meaning": "Giấy chứng nhận thiếu nợ"
         },
         {
-            "Tên": "Premium",
-            "Ý nghĩa": "Tiền thưởng, tiền đóng bảo hiểm, tiền bù"
+            "Name": "Premium",
+            "Meaning": "Tiền thưởng, tiền đóng bảo hiểm, tiền bù"
         },
         {
-            "Tên": "Premium as agreed",
-            "Ý nghĩa": "Phí bảo hiểm như đã thỏa thuận"
+            "Name": "Premium as agreed",
+            "Meaning": "Phí bảo hiểm như đã thỏa thuận"
         },
         {
-            "Tên": "Premium for double optiony",
-            "Ý nghĩa": "Tiền cược mua hoặc bán"
+            "Name": "Premium for double optiony",
+            "Meaning": "Tiền cược mua hoặc bán"
         },
         {
-            "Tên": "Premium for the call",
-            "Ý nghĩa": "Tiền cược mua, tiền cược thuận"
+            "Name": "Premium for the call",
+            "Meaning": "Tiền cược mua, tiền cược thuận"
         },
         {
-            "Tên": "Premium for the put",
-            "Ý nghĩa": "Tiền cược bán, tiền cược nghịch"
+            "Name": "Premium for the put",
+            "Meaning": "Tiền cược bán, tiền cược nghịch"
         },
         {
-            "Tên": "Premium on gold",
-            "Ý nghĩa": "Bù giá vàng"
+            "Name": "Premium on gold",
+            "Meaning": "Bù giá vàng"
         },
         {
-            "Tên": "Additional premium",
-            "Ý nghĩa": "Phí bảo hiểm phụ, phí bảo hiểm bổ sung"
+            "Name": "Additional premium",
+            "Meaning": "Phí bảo hiểm phụ, phí bảo hiểm bổ sung"
         },
         {
-            "Tên": "Export premium",
-            "Ý nghĩa": "Tiền thưởng xuất khẩu"
+            "Name": "Export premium",
+            "Meaning": "Tiền thưởng xuất khẩu"
         },
         {
-            "Tên": "Extra premium",
-            "Ý nghĩa": "Phí bảo hiểm phụ"
+            "Name": "Extra premium",
+            "Meaning": "Phí bảo hiểm phụ"
         },
         {
-            "Tên": "Hull premium",
-            "Ý nghĩa": "Phí bảo hiểm mộc (không khấu trừ hoa hồng môi giới), phí bảo hiểm toàn bộ"
+            "Name": "Hull premium",
+            "Meaning": "Phí bảo hiểm mộc (không khấu trừ hoa hồng môi giới), phí bảo hiểm toàn bộ"
         },
         {
-            "Tên": "Insurance premium",
-            "Ý nghĩa": "Phí bảo hiểm"
+            "Name": "Insurance premium",
+            "Meaning": "Phí bảo hiểm"
         },
         {
-            "Tên": "Lumpsum premium",
-            "Ý nghĩa": "Phí bảo hiêm xô, phí bảo hiểm khoán"
+            "Name": "Lumpsum premium",
+            "Meaning": "Phí bảo hiêm xô, phí bảo hiểm khoán"
         },
         {
-            "Tên": "Net premium",
-            "Ý nghĩa": "Phí bảo hiểm thuần túy (đã khấu trừ hoa hồng, môi giới), phí bảo hiểm tịnh"
+            "Name": "Net premium",
+            "Meaning": "Phí bảo hiểm thuần túy (đã khấu trừ hoa hồng, môi giới), phí bảo hiểm tịnh"
         },
         {
-            "Tên": "Unearned premium",
-            "Ý nghĩa": "Phí bảo hiểm không thu được"
+            "Name": "Unearned premium",
+            "Meaning": "Phí bảo hiểm không thu được"
         },
         {
-            "Tên": "Voyage premium",
-            "Ý nghĩa": "Phí bảo hiểm chuyến"
+            "Name": "Voyage premium",
+            "Meaning": "Phí bảo hiểm chuyến"
         },
         {
-            "Tên": "At a premium",
-            "Ý nghĩa": "Cao hơn giá quy định (phát hành cổ phiếu)"
+            "Name": "At a premium",
+            "Meaning": "Cao hơn giá quy định (phát hành cổ phiếu)"
         },
         {
-            "Tên": "Exchange premium",
-            "Ý nghĩa": "Tiền lời đổi tiền"
+            "Name": "Exchange premium",
+            "Meaning": "Tiền lời đổi tiền"
         },
         {
-            "Tên": "Premium bond",
-            "Ý nghĩa": "Trái khoán có thưởng khích lệ"
+            "Name": "Premium bond",
+            "Meaning": "Trái khoán có thưởng khích lệ"
         },
         {
-            "Tên": "Loan",
-            "Ý nghĩa": "Sự cho vay, sự cho mượn, tiền cho vay; công trái"
+            "Name": "Loan",
+            "Meaning": "Sự cho vay, sự cho mượn, tiền cho vay; công trái"
         },
         {
-            "Tên": "Loan at call",
-            "Ý nghĩa": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
+            "Name": "Loan at call",
+            "Meaning": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
         },
         {
-            "Tên": "Loan on bottomry",
-            "Ý nghĩa": "Khoản cho vay cầm tàu"
+            "Name": "Loan on bottomry",
+            "Meaning": "Khoản cho vay cầm tàu"
         },
         {
-            "Tên": "Loan on mortgage",
-            "Ý nghĩa": "Sự cho vay cầm cố"
+            "Name": "Loan on mortgage",
+            "Meaning": "Sự cho vay cầm cố"
         },
         {
-            "Tên": "Loan on overdraft",
-            "Ý nghĩa": "Khoản cho vay chi trội"
+            "Name": "Loan on overdraft",
+            "Meaning": "Khoản cho vay chi trội"
         },
         {
-            "Tên": "Loan of money",
-            "Ý nghĩa": "Sự cho vay tiền"
+            "Name": "Loan of money",
+            "Meaning": "Sự cho vay tiền"
         },
         {
-            "Tên": "Bottomry loan",
-            "Ý nghĩa": "Khoản cho vay cầm tàu"
+            "Name": "Bottomry loan",
+            "Meaning": "Khoản cho vay cầm tàu"
         },
         {
-            "Tên": "Call loan",
-            "Ý nghĩa": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
+            "Name": "Call loan",
+            "Meaning": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
         },
         {
-            "Tên": "Demand loan",
-            "Ý nghĩa": "Khoản vay không kỳ hạn, sự cho vay không kỳ hạn"
+            "Name": "Demand loan",
+            "Meaning": "Khoản vay không kỳ hạn, sự cho vay không kỳ hạn"
         },
         {
-            "Tên": "Fiduciary loan",
-            "Ý nghĩa": "Khoản cho vay không có đảm bảo"
+            "Name": "Fiduciary loan",
+            "Meaning": "Khoản cho vay không có đảm bảo"
         },
         {
-            "Tên": "Long loan",
-            "Ý nghĩa": "Khoản vay dài hạn, sự cho vay dài hạn"
+            "Name": "Long loan",
+            "Meaning": "Khoản vay dài hạn, sự cho vay dài hạn"
         },
         {
-            "Tên": "Short loan",
-            "Ý nghĩa": "Khoản vay ngắn hạn, sự cho vay ngắn hạn"
+            "Name": "Short loan",
+            "Meaning": "Khoản vay ngắn hạn, sự cho vay ngắn hạn"
         },
         {
-            "Tên": "Unsecured insurance",
-            "Ý nghĩa": "Sự cho vay không bảo đảm, không thế chấp"
+            "Name": "Unsecured insurance",
+            "Meaning": "Sự cho vay không bảo đảm, không thế chấp"
         },
         {
-            "Tên": "Warehouse insurance",
-            "Ý nghĩa": "Sự cho vay cầm hàng, lưu kho"
+            "Name": "Warehouse insurance",
+            "Meaning": "Sự cho vay cầm hàng, lưu kho"
         },
         {
-            "Tên": "Loan on interest",
-            "Ý nghĩa": "Sự cho vay có lãi"
+            "Name": "Loan on interest",
+            "Meaning": "Sự cho vay có lãi"
         },
         {
-            "Tên": "Loan on security",
-            "Ý nghĩa": "Sự vay, mượn có thế chấp"
+            "Name": "Loan on security",
+            "Meaning": "Sự vay, mượn có thế chấp"
         },
         {
-            "Tên": "Loan-office",
-            "Ý nghĩa": "Sổ giao dịch vay mượn, sổ nhận tiền mua công trái"
+            "Name": "Loan-office",
+            "Meaning": "Sổ giao dịch vay mượn, sổ nhận tiền mua công trái"
         },
         {
-            "Tên": "To apply for a plan",
-            "Ý nghĩa": "Làm đơn xin vay"
+            "Name": "To apply for a plan",
+            "Meaning": "Làm đơn xin vay"
         },
         {
-            "Tên": "To loan for someone",
-            "Ý nghĩa": "Cho ai vay"
+            "Name": "To loan for someone",
+            "Meaning": "Cho ai vay"
         },
         {
-            "Tên": "To raise/ secure a loan",
-            "Ý nghĩa": "sự khuếch trương kinh doanh"
+            "Name": "To raise/ secure a loan",
+            "Meaning": "sự khuếch trương kinh doanh"
         },
         {
-            "Tên": "Tonnage",
-            "Ý nghĩa": "Cước chuyên chở, dung tải, dung tích (tàu), trọng tải, lượng choán nước"
+            "Name": "Tonnage",
+            "Meaning": "Cước chuyên chở, dung tải, dung tích (tàu), trọng tải, lượng choán nước"
         },
         {
-            "Tên": "Cargo deadweight tonnage",
-            "Ý nghĩa": "Cước chuyên chở hàng hóa"
+            "Name": "Cargo deadweight tonnage",
+            "Meaning": "Cước chuyên chở hàng hóa"
         },
         {
-            "Tên": "Stevedorage",
-            "Ý nghĩa": "Phí bốc dở"
+            "Name": "Stevedorage",
+            "Meaning": "Phí bốc dở"
         },
         {
-            "Tên": "Landing account",
-            "Ý nghĩa": "Bản kê khai bốc dỡ"
+            "Name": "Landing account",
+            "Meaning": "Bản kê khai bốc dỡ"
         },
         {
-            "Tên": "Leakage account",
-            "Ý nghĩa": "Bản kê khai thất thoát"
+            "Name": "Leakage account",
+            "Meaning": "Bản kê khai thất thoát"
         },
         {
-            "Tên": "Liquidating account",
-            "Ý nghĩa": "Tài khoản thanh toán"
+            "Name": "Liquidating account",
+            "Meaning": "Tài khoản thanh toán"
         },
         {
-            "Tên": "Mid – month account",
-            "Ý nghĩa": "Sự quyết toán giữa tháng"
+            "Name": "Mid – month account",
+            "Meaning": "Sự quyết toán giữa tháng"
         },
         {
-            "Tên": "Profit and loss account",
-            "Ý nghĩa": "Tài khoản lỗ lãi"
+            "Name": "Profit and loss account",
+            "Meaning": "Tài khoản lỗ lãi"
         },
         {
-            "Tên": "Private account",
-            "Ý nghĩa": "Tài khoản cá nhân"
+            "Name": "Private account",
+            "Meaning": "Tài khoản cá nhân"
         },
         {
-            "Tên": "Account of charges",
-            "Ý nghĩa": "Bản quyết toán chi phí"
+            "Name": "Account of charges",
+            "Meaning": "Bản quyết toán chi phí"
         },
         {
-            "Tên": "Account of trade and navigation",
-            "Ý nghĩa": "Bảng thống kê thương mại và hàng hải"
+            "Name": "Account of trade and navigation",
+            "Meaning": "Bảng thống kê thương mại và hàng hải"
         },
         {
-            "Tên": "Clearing account",
-            "Ý nghĩa": "Tài khoản (thanh toán) bù trừ"
+            "Name": "Clearing account",
+            "Meaning": "Tài khoản (thanh toán) bù trừ"
         },
         {
-            "Tên": "Exchange equalisation account",
-            "Ý nghĩa": "Tài khoản bình ổn hối đoái"
+            "Name": "Exchange equalisation account",
+            "Meaning": "Tài khoản bình ổn hối đoái"
         },
         {
-            "Tên": "Freight account",
-            "Ý nghĩa": "Phiếu cước"
+            "Name": "Freight account",
+            "Meaning": "Phiếu cước"
         },
         {
-            "Tên": "Frozen account",
-            "Ý nghĩa": "Tài khoản phong tỏa"
+            "Name": "Frozen account",
+            "Meaning": "Tài khoản phong tỏa"
         },
         {
-            "Tên": "Suspense account",
-            "Ý nghĩa": "tài khoản treo"
+            "Name": "Suspense account",
+            "Meaning": "tài khoản treo"
         },
         {
-            "Tên": "Tallyman’s account",
-            "Ý nghĩa": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
+            "Name": "Tallyman’s account",
+            "Meaning": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
         },
         {
-            "Tên": "Unsettle account",
-            "Ý nghĩa": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
+            "Name": "Unsettle account",
+            "Meaning": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
         },
         {
-            "Tên": "Running account",
-            "Ý nghĩa": "Tài khoản vãng lai"
+            "Name": "Running account",
+            "Meaning": "Tài khoản vãng lai"
         },
         {
-            "Tên": "Weight account",
-            "Ý nghĩa": "Bản tính trọng lượng, bản chi tiết trọng lượng, phiếu trọng lượng"
+            "Name": "Weight account",
+            "Meaning": "Bản tính trọng lượng, bản chi tiết trọng lượng, phiếu trọng lượng"
         },
         {
-            "Tên": "Account purchases",
-            "Ý nghĩa": "Báo cáo mua hàng"
+            "Name": "Account purchases",
+            "Meaning": "Báo cáo mua hàng"
         },
         {
-            "Tên": "Opening of an account with a bank",
-            "Ý nghĩa": "Việc mở một tài khoản ở ngân hàng"
+            "Name": "Opening of an account with a bank",
+            "Meaning": "Việc mở một tài khoản ở ngân hàng"
         },
         {
-            "Tên": "Overdraw account",
-            "Ý nghĩa": "Tài khoản rút quá số dư với sự đồng ý của ngân hàng, tài khoản thấu chi"
+            "Name": "Overdraw account",
+            "Meaning": "Tài khoản rút quá số dư với sự đồng ý của ngân hàng, tài khoản thấu chi"
         },
         {
-            "Tên": "Outstanding account",
-            "Ý nghĩa": "Tài khoản chưa thanh toán"
+            "Name": "Outstanding account",
+            "Meaning": "Tài khoản chưa thanh toán"
         },
         {
-            "Tên": "Rendering of account",
-            "Ý nghĩa": "Sự khai trình tài khoản"
+            "Name": "Rendering of account",
+            "Meaning": "Sự khai trình tài khoản"
         },
         {
-            "Tên": "Reserve account",
-            "Ý nghĩa": "Tài khoản dự trữ"
+            "Name": "Reserve account",
+            "Meaning": "Tài khoản dự trữ"
         },
         {
-            "Tên": "Accounts payable control",
-            "Ý nghĩa": "Khoản phải trả tổng quát"
+            "Name": "Accounts payable control",
+            "Meaning": "Khoản phải trả tổng quát"
         },
         {
-            "Tên": "Account receivable",
-            "Ý nghĩa": "Khoản sẽ thu, khoản sẽ nhận"
+            "Name": "Account receivable",
+            "Meaning": "Khoản sẽ thu, khoản sẽ nhận"
         },
         {
-            "Tên": "Account receivable control",
-            "Ý nghĩa": "Khoản sẽ thu tổng quát"
+            "Name": "Account receivable control",
+            "Meaning": "Khoản sẽ thu tổng quát"
         },
         {
-            "Tên": "Account receivable summary",
-            "Ý nghĩa": "Tóm tắt khoản sẽ thu"
+            "Name": "Account receivable summary",
+            "Meaning": "Tóm tắt khoản sẽ thu"
         }
     ]
 }

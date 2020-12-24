@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Search));
             this.listBox_Search = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTextBox_Searchbar = new MetroFramework.Controls.MetroTextBox();
@@ -77,14 +76,12 @@
             this.metroTextBox_Searchbar.CustomButton.Visible = false;
             this.metroTextBox_Searchbar.DisplayIcon = true;
             this.metroTextBox_Searchbar.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox_Searchbar.Icon = ((System.Drawing.Image)(resources.GetObject("metroTextBox_Searchbar.Icon")));
             this.metroTextBox_Searchbar.Lines = new string[0];
             this.metroTextBox_Searchbar.Location = new System.Drawing.Point(135, 124);
             this.metroTextBox_Searchbar.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox_Searchbar.MaxLength = 32;
             this.metroTextBox_Searchbar.Name = "metroTextBox_Searchbar";
             this.metroTextBox_Searchbar.PasswordChar = '\0';
-            this.metroTextBox_Searchbar.PromptText = "Search...";
             this.metroTextBox_Searchbar.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Searchbar.SelectedText = "";
             this.metroTextBox_Searchbar.SelectionLength = 0;

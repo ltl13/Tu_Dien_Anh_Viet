@@ -89,7 +89,6 @@
             this.metroTextBox_Time.MaxLength = 32767;
             this.metroTextBox_Time.Name = "metroTextBox_Time";
             this.metroTextBox_Time.PasswordChar = '\0';
-            this.metroTextBox_Time.PromptText = "seconds";
             this.metroTextBox_Time.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Time.SelectedText = "";
             this.metroTextBox_Time.SelectionLength = 0;
