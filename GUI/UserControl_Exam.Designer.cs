@@ -105,6 +105,7 @@
             this.pictureBox_ComboWord.Location = new System.Drawing.Point(105, 172);
             this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
             this.pictureBox_ComboWord.Size = new System.Drawing.Size(65, 71);
+            this.pictureBox_ComboWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_ComboWord.TabIndex = 0;
             this.pictureBox_ComboWord.TabStop = false;
             this.pictureBox_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_ComboWord_MouseDown);
@@ -178,10 +179,11 @@
             // pictureBox_Lock
             // 
             this.pictureBox_Lock.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_Lock.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Lock.Image")));
+            this.pictureBox_Lock.Image = global::GUI.Properties.Resources.lock1;
             this.pictureBox_Lock.Location = new System.Drawing.Point(60, 0);
             this.pictureBox_Lock.Name = "pictureBox_Lock";
             this.pictureBox_Lock.Size = new System.Drawing.Size(76, 90);
+            this.pictureBox_Lock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_Lock.TabIndex = 0;
             this.pictureBox_Lock.TabStop = false;
             // 

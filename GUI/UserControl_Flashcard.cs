@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -8,10 +9,13 @@ namespace GUI {
     public partial class UserControl_Flashcard : UserControl {
         public List<EnViDTO> favorite;
         private int numCard = 0;
-        public UserControl_Flashcard(AccountDTO account, Form_Main formMain) {
+
+        public UserControl_Flashcard(Form_Main formMain) {
             InitializeComponent();
+
             favorite = formMain.Favorite;
-            UserControl_Flashcard_VisibleChanged(null, null);
+            this.Focus();
+            this.Select();
         }
 
         private void xuiButton_Delete_Click(object sender, EventArgs e) {
@@ -24,10 +28,10 @@ namespace GUI {
                     label_Viet.Text = "Bạn chưa thêm từ =((";
                     label_Number.Text = "--/--";
                 }
-                else { xuiButton_Previous_MouseDown(null, null); }
+                else { pictureBox_Prev_MouseDown(null, null); }
             }
             else {
-                xuiButton_Next_MouseDown(null, null);
+                pictureBox_Next_MouseDown(null, null);
             }
         }
 
@@ -42,35 +46,8 @@ namespace GUI {
             else {
                 label_Eng.Text = favorite[numCard].English;
                 label_Viet.Text = favorite[numCard].getCommonMeaning();
-                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
+                label_Number.Text = (numCard + 1).ToString() + "/" + favorite.Count.ToString();
             }
-        }
-
-        private void xuiButton_Next_MouseDown(object sender, MouseEventArgs e) {
-            if (numCard < favorite.Count - 1) {
-                numCard++;
-                label_Eng.Text = favorite[numCard].English;
-                label_Viet.Text = favorite[numCard].getCommonMeaning();
-                panel_Viet.Visible = false;
-                panel_Eng.Visible = true;
-                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
-            }
-        }
-
-        private void xuiButton_Previous_MouseDown(object sender, MouseEventArgs e) {
-            if (numCard > 0) {
-                numCard--;
-                label_Eng.Text = favorite[numCard].English;
-                label_Viet.Text = favorite[numCard].getCommonMeaning();
-                panel_Viet.Visible = false;
-                panel_Eng.Visible = true;
-                label_Number.Text = Convert.ToString(numCard + 1) + "/" + favorite.Count.ToString();
-            }
-        }
-
-        private void metroPanel_Eng_MouseDown(object sender, MouseEventArgs e) {
-            panel_Eng.Visible = !panel_Eng.Visible;
-            panel_Viet.Visible = !panel_Viet.Visible;
         }
 
         private void label_Viet_MouseDown(object sender, MouseEventArgs e) {
@@ -81,6 +58,57 @@ namespace GUI {
         private void label_Eng_MouseDown(object sender, MouseEventArgs e) {
             panel_Eng.Visible = !panel_Eng.Visible;
             panel_Viet.Visible = !panel_Viet.Visible;
+        }
+
+        private void pictureBox_Prev_MouseDown(object sender, MouseEventArgs e) {
+            numCard--;
+            label_Eng.Text = favorite[numCard].English;
+            label_Viet.Text = favorite[numCard].getCommonMeaning();
+            panel_Viet.Visible = false;
+            panel_Eng.Visible = true;
+            label_Number.Text = (numCard + 1).ToString() + "/" + favorite.Count.ToString();
+
+            pictureBox_Prev.Image = Properties.Resources.left_arrow1;
+        }
+
+        private void pictureBox_Next_MouseDown(object sender, MouseEventArgs e) {
+
+            numCard++;
+            label_Eng.Text = favorite[numCard].English;
+            label_Viet.Text = favorite[numCard].getCommonMeaning();
+            panel_Viet.Visible = false;
+            panel_Eng.Visible = true;
+            label_Number.Text = (numCard + 1).ToString() + "/" + favorite.Count.ToString();
+
+            pictureBox_Next.Image = Properties.Resources.right_arrow1;
+        }
+
+        private void label_Number_TextChanged(object sender, EventArgs e) {
+            if (numCard + 1 == favorite.Count) {
+                pictureBox_Next.Enabled = false;
+                pictureBox_Next.Image = Properties.Resources.right_arrow1;
+            }
+            else {
+                pictureBox_Next.Enabled = true;
+                pictureBox_Next.Image = Properties.Resources.right_arrow;
+            }
+
+            if (numCard == 0) {
+                pictureBox_Prev.Enabled = false;
+                pictureBox_Prev.Image = Properties.Resources.left_arrow1;
+            }
+            else {
+                pictureBox_Prev.Enabled = true;
+                pictureBox_Prev.Image = Properties.Resources.left_arrow;
+            }
+        }
+
+        private void pictureBox_Prev_MouseUp(object sender, MouseEventArgs e) {
+            pictureBox_Prev.Image = Properties.Resources.left_arrow;
+        }
+
+        private void pictureBox_Next_MouseUp(object sender, MouseEventArgs e) {
+            pictureBox_Next.Image = Properties.Resources.right_arrow;
         }
     }
 }

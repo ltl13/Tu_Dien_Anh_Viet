@@ -7,11 +7,11 @@ using System.Windows.Forms;
 namespace GUI {
     public partial class Form_Main : MetroFramework.Forms.MetroForm {
         #region properties
-        private UserControl_Search mainSearch;
-        private UserControl_Flashcard mainFlashcard;
-        private UserControl_Translate mainTranslate;
-        private UserControl_ComboWord mainComboWord;
-        private UserControl_Exam mainExam;
+        private static UserControl_Search mainSearch;
+        private static UserControl_Flashcard mainFlashcard;
+        private static UserControl_Translate mainTranslate;
+        private static UserControl_ComboWord mainComboWord;
+        private static UserControl_Exam mainExam;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private List<EnViDTO> recentlyEnVi;
@@ -34,16 +34,14 @@ namespace GUI {
             this.recentlyViEn = BUS.DictionaryBUS.Instance.LoadRecentlyWordViEn();
             this.father = login;
             this.StyleManager = metroStyleManager_FormMain;
-            UserControl_Search search = new UserControl_Search(this);
-            UserControl_Flashcard flashcard = new UserControl_Flashcard(loginAccount, this);
-            UserControl_Translate translate = new UserControl_Translate(this);
-            UserControl_ComboWord comboWord = new UserControl_ComboWord();
-            UserControl_Exam exam = new UserControl_Exam(this);
-            mainSearch = search;
-            mainFlashcard = flashcard;
-            mainTranslate = translate;
-            mainComboWord = comboWord;
-            mainExam = exam;
+        }
+        #endregion
+        private void Form_Main_Load(object sender, EventArgs e) {
+            mainSearch = new UserControl_Search(this);
+            mainFlashcard = new UserControl_Flashcard(this);
+            mainTranslate = new UserControl_Translate(this);
+            mainComboWord = new UserControl_ComboWord();
+            mainExam = new UserControl_Exam(this);
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
@@ -51,17 +49,11 @@ namespace GUI {
             panel_Main.Controls.Add(mainComboWord);
             panel_Main.Controls.Add(mainExam);
 
-            mainSearch.Visible = true;
-            mainFlashcard.Visible = false;
-            mainTranslate.Visible = false;
-            mainComboWord.Visible = false;
-            mainExam.Visible = false;
-
-            pictureBox_Search_Click(null, null);
+            pictureBox_Search_MouseDown(sender, null);
 
             this.CancelButton = button_Exit;
         }
-        #endregion
+
         #region ButtonExit
         private void button_Exit_Click(object sender, EventArgs e) {
             Application.Exit();
@@ -74,234 +66,6 @@ namespace GUI {
             button_Exit.BackColor = Color.White;
             button_Exit.ForeColor = Color.Black;
         }
-        #endregion
-
-
-        private void ReturnClick(Panel selected) {
-            isSearchClick = false;
-            isGrammarClick = false;
-            isComboWordClick = false;
-            isFlashcardClick = false;
-            isTranslateClick = false;
-            isExamClick = false;
-
-            if (mainSearch.isWordInfoOn) { mainSearch.isWordInfoOn = false; mainSearch.wordInfo.Dispose(); }
-
-            mainSearch.Visible = false;
-            mainFlashcard.Visible = false;
-            mainTranslate.Visible = false;
-            mainComboWord.Visible = false;
-            mainExam.Visible = false;
-        }
-
-        #region PanelSearch
-        private bool isMouseEnter_PanelSearch = false;
-        private bool isSearchClick = false;
-        private void pictureBox_Search_MouseEnter(object sender, EventArgs e) {
-            isMouseEnter_PanelSearch = true;
-
-        }
-        private void pictureBox_Search_MouseLeave(object sender, EventArgs e) {
-            isMouseEnter_PanelSearch = false;
-
-        }
-
-        private void pictureBox_Search_Click(object sender, EventArgs e) {
-            if (!isSearchClick) {
-                ReturnClick(panel_Search);
-                isSearchClick = true;
-                mainSearch.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(204, 253, 255);
-
-            }
-        }
-        private void panel_Search_Click(object sender, EventArgs e) {
-            pictureBox_Search_Click(null, null);
-        }
-        private void panel_Search_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Search_MouseEnter(null, null);
-        }
-        private void panel_Search_MouseLeave(object sender, EventArgs e) {
-            pictureBox_Search_MouseLeave(null, null);
-        }
-        private void label_Search_Click(object sender, EventArgs e) {
-            pictureBox_Search_Click(null, null);
-        }
-        private void label_Search_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Search_MouseEnter(null, null);
-        }
-        #endregion
-
-        #region PanelGrammar
-        private bool isMouseEnter_PanelGrammar = false;
-        private bool isGrammarClick = false;
-        private void pictureBox_Grammar_MouseEnter(object sender, EventArgs e) {
-            isMouseEnter_PanelGrammar = true;
-        }
-        private void pictureBox_Grammar_MouseLeave(object sender, EventArgs e) {
-            isMouseEnter_PanelGrammar = false;
-        }
-        private void pictureBox_Grammar_Click(object sender, EventArgs e) {
-            if (!isGrammarClick) {
-                ReturnClick(panel_Grammar);
-                isGrammarClick = true;
-                //mainGrammar.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(253, 255, 209);
-            }
-        }
-        private void panel_Grammar_Click(object sender, EventArgs e) {
-            pictureBox_Grammar_Click(null, null);
-        }
-        private void panel_Grammar_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Grammar_MouseEnter(null, null);
-        }
-        private void panel_Grammar_MouseLeave(object sender, EventArgs e) {
-            pictureBox_Grammar_MouseLeave(null, null);
-        }
-        private void label_Grammar_Click(object sender, EventArgs e) {
-            pictureBox_Grammar_Click(null, null);
-        }
-        private void label_Grammar_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Grammar_MouseEnter(null, null);
-        }
-        #endregion
-
-        #region PanelComboWord
-        private bool isMouseEnter_PanelComboWord = false;
-        private bool isComboWordClick = false;
-        private void pictureBox_ComboWord_MouseEnter(object sender, EventArgs e) {
-            isMouseEnter_PanelComboWord = true;
-        }
-        private void pictureBox_ComboWord_MouseLeave(object sender, EventArgs e) {
-            isMouseEnter_PanelComboWord = false;
-        }
-        private void pictureBox_ComboWord_Click(object sender, EventArgs e) {
-            if (!isComboWordClick) {
-                ReturnClick(panel_ComboWord);
-                isComboWordClick = true;
-                mainComboWord.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(255, 223, 212);
-            }
-        }
-        private void panel_ComboWord_MouseEnter(object sender, EventArgs e) {
-            pictureBox_ComboWord_MouseEnter(null, null);
-        }
-        private void panel_ComboWord_MouseLeave(object sender, EventArgs e) {
-            pictureBox_ComboWord_MouseLeave(null, null);
-        }
-        private void panel_ComboWord_Click(object sender, EventArgs e) {
-            pictureBox_ComboWord_Click(null, null);
-        }
-        private void label_ComboWord_MouseEnter(object sender, EventArgs e) {
-            pictureBox_ComboWord_MouseEnter(null, null);
-        }
-        private void label_ComboWord_Click(object sender, EventArgs e) {
-            pictureBox_ComboWord_Click(null, null);
-        }
-        #endregion
-
-        #region PanelFlashcards
-        private bool isMouseEnter_PanelFlashcard = false;
-        private bool isFlashcardClick = false;
-        private void pictureBox_Flashcard_MouseEnter(object sender, EventArgs e) {
-            isMouseEnter_PanelFlashcard = true;
-        }
-        private void pictureBox_Flashcard_MouseLeave(object sender, EventArgs e) {
-            isMouseEnter_PanelFlashcard = false;
-        }
-        private void pictureBox_Flashcard_Click(object sender, EventArgs e) {
-            if (!isFlashcardClick) {
-                ReturnClick(panel_Flashcard);
-                isFlashcardClick = true;
-                mainFlashcard.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(219, 255, 212);
-            }
-        }
-        private void panel_Flashcard_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Flashcard_MouseEnter(null, null);
-        }
-        private void panel_Flashcard_MouseLeave(object sender, EventArgs e) {
-            pictureBox_Flashcard_MouseLeave(null, null);
-        }
-        private void label_Flashcard_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Flashcard_MouseEnter(null, null);
-        }
-        private void panel_Flashcard_Click(object sender, EventArgs e) {
-            pictureBox_Flashcard_Click(null, null);
-        }
-        private void label_Flashcard_Click(object sender, EventArgs e) {
-            pictureBox_Flashcard_Click(null, null);
-        }
-        #endregion
-
-        #region PanelTranslate
-        private bool isMouseEnter_PanelTranslate = false;
-        private bool isTranslateClick = false;
-
-        private void pictureBox_Translate_Click(object sender, EventArgs e) {
-            if (!isTranslateClick) {
-                ReturnClick(panel_Translate);
-                isTranslateClick = true;
-                mainTranslate.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(226, 219, 255);
-            }
-        }
-        private void pictureBox_Translate_MouseEnter(object sender, EventArgs e) {
-            isMouseEnter_PanelTranslate = true;
-        }
-        private void pictureBox_Translate_MouseLeave(object sender, EventArgs e) {
-            isMouseEnter_PanelTranslate = false;
-        }
-        private void panel_Translate_Click(object sender, EventArgs e) {
-            pictureBox_Translate_Click(null, null);
-        }
-        private void panel_Translate_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Translate_MouseEnter(null, null);
-        }
-        private void panel_Translate_MouseLeave(object sender, EventArgs e) {
-            pictureBox_Translate_MouseLeave(null, null);
-        }
-        private void label_Translate_Click(object sender, EventArgs e) {
-            pictureBox_Translate_Click(null, null);
-        }
-        private void label_Translate_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Translate_MouseEnter(null, null);
-        }
-        #endregion
-
-        #region PanelExam
-        private bool isMouseEnter_PanelExam = false;
-        private bool isExamClick = false;
-        private void pictureBox_Exam_Click(object sender, EventArgs e) {
-            if (!isExamClick) {
-                ReturnClick(panel_Exam);
-                isExamClick = true;
-                mainExam.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(255, 227, 255);
-            }
-        }
-        private void pictureBox_Exam_MouseEnter(object sender, EventArgs e) {
-            isMouseEnter_PanelExam = true;
-        }
-        private void pictureBox_Exam_MouseLeave(object sender, EventArgs e) {
-            isMouseEnter_PanelExam = false;
-        }
-        private void panel_Exam_Click(object sender, EventArgs e) {
-            pictureBox_Exam_Click(null, null);
-        }
-        private void panel_Exam_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Exam_MouseEnter(null, null);
-        }
-        private void panel_Exam_MouseLeave(object sender, EventArgs e) {
-            pictureBox_Exam_MouseLeave(null, null);
-        }
-        private void label_Exam_Click(object sender, EventArgs e) {
-            pictureBox_Exam_Click(null, null);
-        }
-        private void label_Exam_MouseEnter(object sender, EventArgs e) {
-            pictureBox_Exam_MouseEnter(null, null);
-        }
-
         #endregion
 
         #region MenuAccount
@@ -359,14 +123,14 @@ namespace GUI {
         private void xuiButton_FindUser_MouseEnter(object sender, EventArgs e) {
             xuiButton_Account_Click(null, null);
         }
+
+        private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {
+            father.Show();
+            this.Close();
+        }
         #endregion
 
-        private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
-            BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
-            BUS.DictionaryBUS.Instance.SaveRecentlyWordEnVi(recentlyEnVi);
-            BUS.DictionaryBUS.Instance.SaveRecentlyWordViEn(recentlyViEn);
-        }
-
+        #region ButtonSwitchLanguage
         public bool IsEnToVi {
             get { return isEnToVi; }
             set { isEnToVi = value; }
@@ -378,14 +142,83 @@ namespace GUI {
         }
 
         private void xuiSwitch_Language_MouseDown(object sender, MouseEventArgs e) {
-            xuiSwitch_Language.Focus();
             isEnToVi = !isEnToVi;
             changeLanguage(IsEnToVi);
         }
+        #endregion
 
-        private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {
-            father.Show();
-            this.Close();
+        private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
+            BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
+        }
+
+        private void pictureBox_Search_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_Search.BackColor.ToArgb());
+            ReturnClick();
+            mainSearch.Visible = true;
+        }
+
+        private void label_Search_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_Search.BackColor.ToArgb());
+            ReturnClick();
+            mainSearch.Visible = true;
+        }
+
+        private void pictureBox_Translate_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_Translate.BackColor.ToArgb());
+            ReturnClick();
+            mainTranslate.Visible = true;
+        }
+
+        private void label_Translate_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_Translate.BackColor.ToArgb());
+            ReturnClick();
+            mainTranslate.Visible = true;
+        }
+
+        private void pictureBox_ComboWord_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_ComboWord.BackColor.ToArgb());
+            ReturnClick();
+            mainComboWord.Visible = true;
+        }
+
+        private void label_ComboWord_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_ComboWord.BackColor.ToArgb());
+            ReturnClick();
+            mainComboWord.Visible = true;
+        }
+
+        private void pictureBox_FlashCard_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_FlashCard.BackColor.ToArgb());
+            ReturnClick();
+            mainFlashcard.Visible = true;
+        }
+
+        private void label_FlashCard_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_FlashCard.BackColor.ToArgb());
+            ReturnClick();
+            mainFlashcard.Visible = true;
+        }
+
+        private void pictureBox_Exam_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_Exam.BackColor.ToArgb());
+            ReturnClick();
+            mainExam.Visible = true;
+        }
+
+        private void label_Exam_MouseDown(object sender, MouseEventArgs e) {
+            panel_Main.BackColor = Color.FromArgb(panel_Exam.BackColor.ToArgb());
+            ReturnClick();
+            mainExam.Visible = true;
+        }
+
+        private void ReturnClick() {
+            if (mainSearch.isWordInfoOn) { mainSearch.isWordInfoOn = false; mainSearch.wordInfo.Dispose(); }
+
+            mainSearch.Visible = false;
+            mainFlashcard.Visible = false;
+            mainTranslate.Visible = false;
+            mainComboWord.Visible = false;
+            mainExam.Visible = false;
         }
     }
 }
