@@ -34,30 +34,23 @@
             this.button_Exit = new System.Windows.Forms.Button();
             this.panel_Main = new System.Windows.Forms.Panel();
             this.pictureBox_Search = new System.Windows.Forms.PictureBox();
-            this.timer_PanelSearch = new System.Windows.Forms.Timer(this.components);
             this.panel_Search = new System.Windows.Forms.Panel();
             this.label_Search = new System.Windows.Forms.Label();
-            this.timer_MainPanel = new System.Windows.Forms.Timer(this.components);
             this.panel_Grammar = new System.Windows.Forms.Panel();
             this.label_Grammar = new System.Windows.Forms.Label();
             this.pictureBox_Grammar = new System.Windows.Forms.PictureBox();
-            this.timer_PanelGrammar = new System.Windows.Forms.Timer(this.components);
             this.panel_ComboWord = new System.Windows.Forms.Panel();
             this.label_ComboWord = new System.Windows.Forms.Label();
             this.pictureBox_ComboWord = new System.Windows.Forms.PictureBox();
-            this.timer_PanelComboWord = new System.Windows.Forms.Timer(this.components);
             this.panel_Flashcard = new System.Windows.Forms.Panel();
             this.label_Flashcard = new System.Windows.Forms.Label();
             this.pictureBox_Flashcard = new System.Windows.Forms.PictureBox();
-            this.timer_PanelFlashcard = new System.Windows.Forms.Timer(this.components);
             this.panel_Translate = new System.Windows.Forms.Panel();
             this.label_Translate = new System.Windows.Forms.Label();
             this.pictureBox_Translate = new System.Windows.Forms.PictureBox();
-            this.timer_PanelTranslate = new System.Windows.Forms.Timer(this.components);
             this.panel_Exam = new System.Windows.Forms.Panel();
             this.label_Exam = new System.Windows.Forms.Label();
             this.pictureBox_Exam = new System.Windows.Forms.PictureBox();
-            this.timer_PanelExam = new System.Windows.Forms.Timer(this.components);
             this.panel_Account = new System.Windows.Forms.Panel();
             this.xuiButton_Logout = new XanderUI.XUIButton();
             this.xuiButton_ListAccount = new XanderUI.XUIButton();
@@ -137,11 +130,6 @@
             this.pictureBox_Search.MouseEnter += new System.EventHandler(this.pictureBox_Search_MouseEnter);
             this.pictureBox_Search.MouseLeave += new System.EventHandler(this.pictureBox_Search_MouseLeave);
             // 
-            // timer_PanelSearch
-            // 
-            this.timer_PanelSearch.Interval = 1;
-            this.timer_PanelSearch.Tick += new System.EventHandler(this.timer_PanelSearch_Tick);
-            // 
             // panel_Search
             // 
             this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
@@ -151,7 +139,7 @@
             this.panel_Search.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Search.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Search.Name = "panel_Search";
-            this.panel_Search.Size = new System.Drawing.Size(85, 77);
+            this.panel_Search.Size = new System.Drawing.Size(250, 77);
             this.panel_Search.TabIndex = 6;
             this.panel_Search.Click += new System.EventHandler(this.panel_Search_Click);
             this.panel_Search.MouseEnter += new System.EventHandler(this.panel_Search_MouseEnter);
@@ -170,11 +158,6 @@
             this.label_Search.Click += new System.EventHandler(this.label_Search_Click);
             this.label_Search.MouseEnter += new System.EventHandler(this.label_Search_MouseEnter);
             // 
-            // timer_MainPanel
-            // 
-            this.timer_MainPanel.Interval = 1;
-            this.timer_MainPanel.Tick += new System.EventHandler(this.timer_MainPanel_Tick);
-            // 
             // panel_Grammar
             // 
             this.panel_Grammar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(209)))));
@@ -184,7 +167,7 @@
             this.panel_Grammar.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Grammar.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Grammar.Name = "panel_Grammar";
-            this.panel_Grammar.Size = new System.Drawing.Size(85, 77);
+            this.panel_Grammar.Size = new System.Drawing.Size(250, 77);
             this.panel_Grammar.TabIndex = 7;
             this.panel_Grammar.Click += new System.EventHandler(this.panel_Grammar_Click);
             this.panel_Grammar.MouseEnter += new System.EventHandler(this.panel_Grammar_MouseEnter);
@@ -208,6 +191,7 @@
             this.pictureBox_Grammar.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Grammar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox_Grammar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_Grammar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.ErrorImage")));
             this.pictureBox_Grammar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.Image")));
             this.pictureBox_Grammar.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.InitialImage")));
             this.pictureBox_Grammar.Location = new System.Drawing.Point(0, 0);
@@ -219,11 +203,6 @@
             this.pictureBox_Grammar.MouseEnter += new System.EventHandler(this.pictureBox_Grammar_MouseEnter);
             this.pictureBox_Grammar.MouseLeave += new System.EventHandler(this.pictureBox_Grammar_MouseLeave);
             // 
-            // timer_PanelGrammar
-            // 
-            this.timer_PanelGrammar.Interval = 1;
-            this.timer_PanelGrammar.Tick += new System.EventHandler(this.timer_PanelGrammar_Tick);
-            // 
             // panel_ComboWord
             // 
             this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(223)))), ((int)(((byte)(212)))));
@@ -233,7 +212,7 @@
             this.panel_ComboWord.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_ComboWord.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_ComboWord.Name = "panel_ComboWord";
-            this.panel_ComboWord.Size = new System.Drawing.Size(85, 77);
+            this.panel_ComboWord.Size = new System.Drawing.Size(250, 77);
             this.panel_ComboWord.TabIndex = 8;
             this.panel_ComboWord.Click += new System.EventHandler(this.panel_ComboWord_Click);
             this.panel_ComboWord.MouseEnter += new System.EventHandler(this.panel_ComboWord_MouseEnter);
@@ -268,11 +247,6 @@
             this.pictureBox_ComboWord.MouseEnter += new System.EventHandler(this.pictureBox_ComboWord_MouseEnter);
             this.pictureBox_ComboWord.MouseLeave += new System.EventHandler(this.pictureBox_ComboWord_MouseLeave);
             // 
-            // timer_PanelComboWord
-            // 
-            this.timer_PanelComboWord.Interval = 1;
-            this.timer_PanelComboWord.Tick += new System.EventHandler(this.timer_PanelComboWord_Tick);
-            // 
             // panel_Flashcard
             // 
             this.panel_Flashcard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(255)))), ((int)(((byte)(212)))));
@@ -282,7 +256,7 @@
             this.panel_Flashcard.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Flashcard.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Flashcard.Name = "panel_Flashcard";
-            this.panel_Flashcard.Size = new System.Drawing.Size(85, 77);
+            this.panel_Flashcard.Size = new System.Drawing.Size(250, 77);
             this.panel_Flashcard.TabIndex = 9;
             this.panel_Flashcard.Click += new System.EventHandler(this.panel_Flashcard_Click);
             this.panel_Flashcard.MouseEnter += new System.EventHandler(this.panel_Flashcard_MouseEnter);
@@ -317,11 +291,6 @@
             this.pictureBox_Flashcard.MouseEnter += new System.EventHandler(this.pictureBox_Flashcard_MouseEnter);
             this.pictureBox_Flashcard.MouseLeave += new System.EventHandler(this.pictureBox_Flashcard_MouseLeave);
             // 
-            // timer_PanelFlashcard
-            // 
-            this.timer_PanelFlashcard.Interval = 1;
-            this.timer_PanelFlashcard.Tick += new System.EventHandler(this.timer_PanelFlashcard_Tick);
-            // 
             // panel_Translate
             // 
             this.panel_Translate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
@@ -331,7 +300,7 @@
             this.panel_Translate.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Translate.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Translate.Name = "panel_Translate";
-            this.panel_Translate.Size = new System.Drawing.Size(85, 77);
+            this.panel_Translate.Size = new System.Drawing.Size(250, 77);
             this.panel_Translate.TabIndex = 10;
             this.panel_Translate.Click += new System.EventHandler(this.panel_Translate_Click);
             this.panel_Translate.MouseEnter += new System.EventHandler(this.panel_Translate_MouseEnter);
@@ -366,11 +335,6 @@
             this.pictureBox_Translate.MouseEnter += new System.EventHandler(this.pictureBox_Translate_MouseEnter);
             this.pictureBox_Translate.MouseLeave += new System.EventHandler(this.pictureBox_Translate_MouseLeave);
             // 
-            // timer_PanelTranslate
-            // 
-            this.timer_PanelTranslate.Interval = 1;
-            this.timer_PanelTranslate.Tick += new System.EventHandler(this.timer_PanelTranslate_Tick);
-            // 
             // panel_Exam
             // 
             this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
@@ -380,7 +344,7 @@
             this.panel_Exam.MaximumSize = new System.Drawing.Size(250, 77);
             this.panel_Exam.MinimumSize = new System.Drawing.Size(85, 77);
             this.panel_Exam.Name = "panel_Exam";
-            this.panel_Exam.Size = new System.Drawing.Size(85, 77);
+            this.panel_Exam.Size = new System.Drawing.Size(250, 77);
             this.panel_Exam.TabIndex = 11;
             this.panel_Exam.Click += new System.EventHandler(this.panel_Exam_Click);
             this.panel_Exam.MouseEnter += new System.EventHandler(this.panel_Exam_MouseEnter);
@@ -414,11 +378,6 @@
             this.pictureBox_Exam.Click += new System.EventHandler(this.pictureBox_Exam_Click);
             this.pictureBox_Exam.MouseEnter += new System.EventHandler(this.pictureBox_Exam_MouseEnter);
             this.pictureBox_Exam.MouseLeave += new System.EventHandler(this.pictureBox_Exam_MouseLeave);
-            // 
-            // timer_PanelExam
-            // 
-            this.timer_PanelExam.Interval = 1;
-            this.timer_PanelExam.Tick += new System.EventHandler(this.timer_PanelExam_Tick);
             // 
             // panel_Account
             // 
@@ -700,30 +659,23 @@
         private System.Windows.Forms.Button button_Exit;
         public System.Windows.Forms.Panel panel_Main;
         private System.Windows.Forms.PictureBox pictureBox_Search;
-        private System.Windows.Forms.Timer timer_PanelSearch;
         private System.Windows.Forms.Panel panel_Search;
         private System.Windows.Forms.Label label_Search;
-        private System.Windows.Forms.Timer timer_MainPanel;
         private System.Windows.Forms.Panel panel_Grammar;
         private System.Windows.Forms.Label label_Grammar;
         private System.Windows.Forms.PictureBox pictureBox_Grammar;
-        private System.Windows.Forms.Timer timer_PanelGrammar;
         private System.Windows.Forms.Panel panel_ComboWord;
         private System.Windows.Forms.Label label_ComboWord;
         private System.Windows.Forms.PictureBox pictureBox_ComboWord;
-        private System.Windows.Forms.Timer timer_PanelComboWord;
         private System.Windows.Forms.Panel panel_Flashcard;
         private System.Windows.Forms.Label label_Flashcard;
         private System.Windows.Forms.PictureBox pictureBox_Flashcard;
-        private System.Windows.Forms.Timer timer_PanelFlashcard;
         private System.Windows.Forms.Panel panel_Translate;
         private System.Windows.Forms.Label label_Translate;
         private System.Windows.Forms.PictureBox pictureBox_Translate;
-        private System.Windows.Forms.Timer timer_PanelTranslate;
         private System.Windows.Forms.Panel panel_Exam;
         private System.Windows.Forms.Label label_Exam;
         private System.Windows.Forms.PictureBox pictureBox_Exam;
-        private System.Windows.Forms.Timer timer_PanelExam;
         private System.Windows.Forms.Panel panel_Account;
         private XanderUI.XUIButton xuiButton_Account;
         private System.Windows.Forms.Timer timer_MenuAccount;
