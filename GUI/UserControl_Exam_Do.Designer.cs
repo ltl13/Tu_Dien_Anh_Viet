@@ -43,6 +43,8 @@
             this.label_RightAnswer = new System.Windows.Forms.Label();
             this.label_time = new System.Windows.Forms.Label();
             this.xuiFlatProgressBar_Question = new XanderUI.XUIFlatProgressBar();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // xuiButton_Answer1
@@ -209,7 +211,7 @@
             this.label1.Location = new System.Drawing.Point(260, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 24);
+            this.label1.Size = new System.Drawing.Size(98, 39);
             this.label1.TabIndex = 8;
             this.label1.Text = "Score:";
             // 
@@ -220,7 +222,7 @@
             this.label_RightAnswer.Location = new System.Drawing.Point(319, 0);
             this.label_RightAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_RightAnswer.Name = "label_RightAnswer";
-            this.label_RightAnswer.Size = new System.Drawing.Size(0, 24);
+            this.label_RightAnswer.Size = new System.Drawing.Size(0, 39);
             this.label_RightAnswer.TabIndex = 9;
             // 
             // label_time
@@ -231,7 +233,7 @@
             this.label_time.Location = new System.Drawing.Point(31, 6);
             this.label_time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_time.Name = "label_time";
-            this.label_time.Size = new System.Drawing.Size(0, 15);
+            this.label_time.Size = new System.Drawing.Size(0, 25);
             this.label_time.TabIndex = 10;
             // 
             // xuiFlatProgressBar_Question
@@ -247,9 +249,30 @@
             this.xuiFlatProgressBar_Question.TabIndex = 11;
             this.xuiFlatProgressBar_Question.Value = 100;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(419, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 31);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(3, 64);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(607, 244);
+            this.textBox1.TabIndex = 13;
+            // 
             // UserControl_Exam_Do
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.xuiFlatProgressBar_Question);
             this.Controls.Add(this.label_time);
             this.Controls.Add(this.label_RightAnswer);
@@ -284,5 +307,7 @@
         private System.Windows.Forms.Label label_RightAnswer;
         private System.Windows.Forms.Label label_time;
         private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Question;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

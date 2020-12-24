@@ -1,0 +1,393 @@
+﻿{
+    "Calculation": [
+        {
+            "Vocabulary": "Từ",
+            "Pronunciation": "Phiên âm",
+            "Meaning": "Nghĩa"
+        },
+        {
+            "Vocabulary": "Plus",
+            "Pronunciation": "/plʌs/",
+            "Meaning": "Dương"
+        },
+        {
+            "Vocabulary": "Minus",
+            "Pronunciation": "/'mainəs/",
+            "Meaning": "Âm"
+        },
+        {
+            "Vocabulary": "Times",
+            "Pronunciation": "/taims/",
+            "Meaning": "Lần"
+        },
+        {
+            "Vocabulary": "Squared",
+            "Pronunciation": "/skweəd/",
+            "Meaning": "Bình phương"
+        },
+        {
+            "Vocabulary": "Cubed",
+            "Pronunciation": "/kju:b/",
+            "Meaning": "Mũ ba/Lũy thừa ba"
+        },
+        {
+            "Vocabulary": "Square root",
+            "Pronunciation": "/skweə ru:t/",
+            "Meaning": "Căn bình phương"
+        },
+        {
+            "Vocabulary": "Equal",
+            "Pronunciation": "/'i:kwəl/",
+            "Meaning": "Bằng"
+        }
+    ],
+    "Cubes": [
+        {
+            "Vocabulary": "Từ",
+            "Pronunciation": "Phiên âm",
+            "Meaning": "Nghĩa"
+        },
+        {
+            "Vocabulary": "Circle",
+            "Pronunciation": "/'sə:kl/",
+            "Meaning": "Hình tròn"
+        },
+        {
+            "Vocabulary": "Triangle",
+            "Pronunciation": "/'traiæηgl/",
+            "Meaning": "Hình tam giác"
+        },
+        {
+            "Vocabulary": "Square",
+            "Pronunciation": "/skweə/",
+            "Meaning": "Hình vuông"
+        },
+        {
+            "Vocabulary": "Rectangle",
+            "Pronunciation": "/'rek¸tæηgl/",
+            "Meaning": "Hình chữ nhật"
+        },
+        {
+            "Vocabulary": "Pentagon",
+            "Pronunciation": "/'pentə¸gɔn/",
+            "Meaning": "Hình ngũ giác"
+        },
+        {
+            "Vocabulary": "Hexagon",
+            "Pronunciation": "/'heksəgən/",
+            "Meaning": "Hình lục giác"
+        },
+        {
+            "Vocabulary": "Octagon",
+            "Pronunciation": "/´ɔktəgən/",
+            "Meaning": "Hình bát giác"
+        },
+        {
+            "Vocabulary": "Oval",
+            "Pronunciation": "/ouvl/",
+            "Meaning": "Hình bầu dục"
+        },
+        {
+            "Vocabulary": "Star",
+            "Pronunciation": "/stɑ:/",
+            "Meaning": "Hình sao"
+        },
+        {
+            "Vocabulary": "Polygon",
+            "Pronunciation": "/´pɔligən/",
+            "Meaning": "Hình đa giác"
+        },
+        {
+            "Vocabulary": "Cone",
+            "Pronunciation": "/koun/",
+            "Meaning": "Hình nón"
+        },
+        {
+            "Vocabulary": "Cube",
+            "Pronunciation": "/kju:b/",
+            "Meaning": "Hình lập phương/Hình khối"
+        },
+        {
+            "Vocabulary": "Cylinder",
+            "Pronunciation": "/'silində/",
+            "Meaning": "Hình trụ"
+        },
+        {
+            "Vocabulary": "Pyramid",
+            "Pronunciation": "/'pirəmid/",
+            "Meaning": "Hình chóp"
+        },
+        {
+            "Vocabulary": "Sphere",
+            "Pronunciation": "/sfiə/",
+            "Meaning": "Hình cầu"
+        }
+    ],
+    "Terminologies": [
+        {
+            "Vocabulary": "Từ",
+            "Pronunciation": "Phiên âm",
+            "Meaning": "Nghĩa"
+        },
+        {
+            "Vocabulary": "Addition",
+            "Pronunciation": "/ə'dɪʃn/",
+            "Meaning": "Phép cộng"
+        },
+        {
+            "Vocabulary": "Subtraction",
+            "Pronunciation": "/səb'trækʃən/",
+            "Meaning": "Phép trừ"
+        },
+        {
+            "Vocabulary": "Multiplication",
+            "Pronunciation": "/¸mʌltipli'keiʃən/",
+            "Meaning": "Phép nhân"
+        },
+        {
+            "Vocabulary": "Division",
+            "Pronunciation": "/dɪ'vɪʒn/",
+            "Meaning": "Phép chia"
+        },
+        {
+            "Vocabulary": "Add",
+            "Pronunciation": "/æd/",
+            "Meaning": "Cộng"
+        },
+        {
+            "Vocabulary": "Subtract",
+            "Pronunciation": "/səb'trækt/",
+            "Meaning": "Trừ"
+        },
+        {
+            "Vocabulary": "Multiply",
+            "Pronunciation": "/'mʌltiplai/",
+            "Meaning": "Nhân"
+        },
+        {
+            "Vocabulary": "Divide",
+            "Pronunciation": "/di'vaid/",
+            "Meaning": "Chia"
+        },
+        {
+            "Vocabulary": "Calculate",
+            "Pronunciation": "/'kælkjuleit/",
+            "Meaning": "Tính"
+        },
+        {
+            "Vocabulary": "Total",
+            "Pronunciation": "/'təʊtl/",
+            "Meaning": "Tổng"
+        },
+        {
+            "Vocabulary": "Arithmetic",
+            "Pronunciation": "/ə'riθmətik/",
+            "Meaning": "Số học"
+        },
+        {
+            "Vocabulary": "Algebra",
+            "Pronunciation": "/'ældʤibrə/",
+            "Meaning": "Đại số"
+        },
+        {
+            "Vocabulary": "Geometry",
+            "Pronunciation": "/ʤi'ɔmitri/",
+            "Meaning": "Hình học"
+        },
+        {
+            "Vocabulary": "Calculus",
+            "Pronunciation": "/'kælkjuləs/",
+            "Meaning": "Phép tính"
+        },
+        {
+            "Vocabulary": "Statistics",
+            "Pronunciation": "/stə´tistiks/",
+            "Meaning": "Thống kê"
+        },
+        {
+            "Vocabulary": "Integer",
+            "Pronunciation": "/´intidʒə/",
+            "Meaning": "Số nguyên"
+        },
+        {
+            "Vocabulary": "Even number",
+            "Pronunciation": "/'i:vn´nʌmbə/",
+            "Meaning": "Số chẵn"
+        },
+        {
+            "Vocabulary": "Odd number",
+            "Pronunciation": "/ɔd´nʌmb/",
+            "Meaning": "Số lẻ"
+        },
+        {
+            "Vocabulary": "Prime number",
+            "Pronunciation": "/praim´nʌmb/",
+            "Meaning": "Số nguyên tố"
+        },
+        {
+            "Vocabulary": "Fraction",
+            "Pronunciation": "/'frækʃən/",
+            "Meaning": "Phân số"
+        },
+        {
+            "Vocabulary": "Decimal",
+            "Pronunciation": "/'desiməl/",
+            "Meaning": "Thập phân"
+        },
+        {
+            "Vocabulary": "Decimal point",
+            "Pronunciation": "/'desiməl pɔint/",
+            "Meaning": "Dấu thập phân"
+        },
+        {
+            "Vocabulary": "Percent",
+            "Pronunciation": "/pəˈsent/",
+            "Meaning": "Phần trăm"
+        },
+        {
+            "Vocabulary": "Percentage",
+            "Pronunciation": "/pə´sentidʒ/",
+            "Meaning": "Tỷ lệ phần trăm"
+        },
+        {
+            "Vocabulary": "Theorem",
+            "Pronunciation": "/'θiərəm/",
+            "Meaning": "Định lý"
+        },
+        {
+            "Vocabulary": "Proof",
+            "Pronunciation": "/pru:f/",
+            "Meaning": "Bằng chứng chứng minh"
+        },
+        {
+            "Vocabulary": "Problem",
+            "Pronunciation": "/'prɔbləm/",
+            "Meaning": "Bài toán"
+        },
+        {
+            "Vocabulary": "Solution",
+            "Pronunciation": "/sə'lu:ʃn/",
+            "Meaning": "Lời giải"
+        },
+        {
+            "Vocabulary": "Formula",
+            "Pronunciation": "/'fɔ:mjulə/",
+            "Meaning": "Công thức"
+        },
+        {
+            "Vocabulary": "Equation",
+            "Pronunciation": "/i'kweiʃn/",
+            "Meaning": "Phương trình"
+        },
+        {
+            "Vocabulary": "Graph",
+            "Pronunciation": "/gra:f/",
+            "Meaning": "Biểu đồ"
+        },
+        {
+            "Vocabulary": "Axis",
+            "Pronunciation": "/´æksis/",
+            "Meaning": "Trục"
+        },
+        {
+            "Vocabulary": "Average",
+            "Pronunciation": "/ ˈævərɪdʒ /",
+            "Meaning": "Trung bình"
+        },
+        {
+            "Vocabulary": "Correlation",
+            "Pronunciation": "/¸kɔri´leiʃən/",
+            "Meaning": "Sự tương quan"
+        },
+        {
+            "Vocabulary": "Probability",
+            "Pronunciation": "/ˌprɒbəˈbɪlɪti/",
+            "Meaning": "Xác suất"
+        },
+        {
+            "Vocabulary": "Dimensions",
+            "Pronunciation": "/də.ˈmɛnt.ʃən/",
+            "Meaning": "Chiều"
+        },
+        {
+            "Vocabulary": "Area",
+            "Pronunciation": "/'eəriə/",
+            "Meaning": "Diện tích"
+        },
+        {
+            "Vocabulary": "Circumference",
+            "Pronunciation": "/sə:'kʌmfərəns/",
+            "Meaning": "Chu vi đường tròn"
+        },
+        {
+            "Vocabulary": "Diameter",
+            "Pronunciation": "/dai'æmitə/",
+            "Meaning": "Đường kính"
+        },
+        {
+            "Vocabulary": "Radius",
+            "Pronunciation": "/'reidiəs/",
+            "Meaning": "Bán kính"
+        },
+        {
+            "Vocabulary": "Length",
+            "Pronunciation": "/leɳθ/",
+            "Meaning": "Chiều dài"
+        },
+        {
+            "Vocabulary": "Height",
+            "Pronunciation": "/hait/",
+            "Meaning": "Chiều cao"
+        },
+        {
+            "Vocabulary": "Width",
+            "Pronunciation": "/wɪtθ/",
+            "Meaning": "Chiều rộng"
+        },
+        {
+            "Vocabulary": "Perimeter",
+            "Pronunciation": "/pə´rimitə/",
+            "Meaning": "Chu vi"
+        },
+        {
+            "Vocabulary": "Angle",
+            "Pronunciation": "/'æɳgl/",
+            "Meaning": "Góc"
+        },
+        {
+            "Vocabulary": "Right angle",
+            "Pronunciation": "/rait 'æɳgl/",
+            "Meaning": "Góc vuông"
+        },
+        {
+            "Vocabulary": "Line",
+            "Pronunciation": "/lain/",
+            "Meaning": "Đường"
+        },
+        {
+            "Vocabulary": "Straight line",
+            "Pronunciation": "/streɪt lain/",
+            "Meaning": "Đường thẳng"
+        },
+        {
+            "Vocabulary": "Curve",
+            "Pronunciation": "/kə:v/",
+            "Meaning": "Đường cong"
+        },
+        {
+            "Vocabulary": "Parallel",
+            "Pronunciation": "/'pærəlel/",
+            "Meaning": "Song song"
+        },
+        {
+            "Vocabulary": "Tangent",
+            "Pronunciation": "/'tændʒənt/",
+            "Meaning": "Tiếp tuyến"
+        },
+        {
+            "Vocabulary": "Volume",
+            "Pronunciation": "/´vɔlju:m/",
+            "Meaning": "Thể tích"
+        }
+    ]
+}

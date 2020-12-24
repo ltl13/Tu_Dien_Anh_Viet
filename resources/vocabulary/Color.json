@@ -1,0 +1,159 @@
+﻿{
+    "Colors": [
+        {
+            "Vocabulary": "White",
+            "Pronunciation": "/waɪt/",
+            "Meaning": "Màu trắng"
+        },
+        {
+            "Vocabulary": "Yellow",
+            "Pronunciation": "/ˈjel.oʊ/",
+            "Meaning": "Màu vàng"
+        },
+        {
+            "Vocabulary": "Blue",
+            "Pronunciation": "/bluː/",
+            "Meaning": "Màu xanh da trời"
+        },
+        {
+            "Vocabulary": "Red",
+            "Pronunciation": "/red/",
+            "Meaning": "Màu đỏ"
+        },
+        {
+            "Vocabulary": "Green",
+            "Pronunciation": "/ɡriːn/",
+            "Meaning": "Màu xanh lá"
+        },
+        {
+            "Vocabulary": "Black",
+            "Pronunciation": "/blæk/",
+            "Meaning": "Màu đen"
+        },
+        {
+            "Vocabulary": "Brown",
+            "Pronunciation": "/braʊn/",
+            "Meaning": "Màu nâu"
+        },
+        {
+            "Vocabulary": "Azure",
+            "Pronunciation": "/ˈæʒ.ɚ/",
+            "Meaning": "Màu xanh da trời"
+        },
+        {
+            "Vocabulary": "Ivory",
+            "Pronunciation": "/ˈaɪ.vɚ.i/",
+            "Meaning": "Màu ngà"
+        },
+        {
+            "Vocabulary": "Teal",
+            "Pronunciation": "/tiːl/",
+            "Meaning": "Màu xanh mòng két"
+        },
+        {
+            "Vocabulary": "Silver",
+            "Pronunciation": "/ˈsɪl.vɚ/",
+            "Meaning": "Màu bạc"
+        },
+        {
+            "Vocabulary": "Purple",
+            "Pronunciation": "/ˈpɝː.pəl/",
+            "Meaning": "Màu tím"
+        },
+        {
+            "Vocabulary": "Navy blue",
+            "Pronunciation": "/ˈneɪ·vi (ˈblu)/",
+            "Meaning": "Màu xanh hải quân"
+        },
+        {
+            "Vocabulary": "Pea green",
+            "Pronunciation": "/ˌpiː ˈɡriːn/",
+            "Meaning": "Màu xanh lá đậm"
+        },
+        {
+            "Vocabulary": "Gray",
+            "Pronunciation": "/ɡreɪ/",
+            "Meaning": "Màu xám"
+        },
+        {
+            "Vocabulary": "Orange",
+            "Pronunciation": "/ˈɔːr.ɪndʒ/",
+            "Meaning": "Màu cam"
+        },
+        {
+            "Vocabulary": "Maroon",
+            "Pronunciation": "/məˈruːn/",
+            "Meaning": "Màu hạt dẻ"
+        },
+        {
+            "Vocabulary": "Charcoal",
+            "Pronunciation": "/ˈtʃɑːr.koʊl/",
+            "Meaning": "Màu than chì"
+        },
+        {
+            "Vocabulary": "Aquamarine",
+            "Pronunciation": "/ˌæk.wə.məˈriːn/",
+            "Meaning": "Màu xanh nước biển"
+        },
+        {
+            "Vocabulary": "Coral",
+            "Pronunciation": "/ˈkɔːr.əl/",
+            "Meaning": "Màu san hô"
+        },
+        {
+            "Vocabulary": "Fuchsia",
+            "Pronunciation": "/ˈfjuː.ʃə/",
+            "Meaning": "Màu hồng vân anh"
+        },
+        {
+            "Vocabulary": "Wheat",
+            "Pronunciation": "/wiːt/",
+            "Meaning": "Màu vàng đất"
+        },
+        {
+            "Vocabulary": "Lime",
+            "Pronunciation": "/laɪm/",
+            "Meaning": "Màu vàng chanh"
+        },
+        {
+            "Vocabulary": "Crimson",
+            "Pronunciation": "/ˈkrɪm.zən/",
+            "Meaning": "Màu đỏ thẫm"
+        },
+        {
+            "Vocabulary": "Khaki",
+            "Pronunciation": "/ˈkɑː.ki/",
+            "Meaning": "Màu Khaki"
+        },
+        {
+            "Vocabulary": "Hot pink",
+            "Pronunciation": "/hɑːt pɪŋk/",
+            "Meaning": "Màu hồng sáng"
+        },
+        {
+            "Vocabulary": "Magenta",
+            "Pronunciation": "/məˈdʒen.tə/",
+            "Meaning": "Màu cánh sen"
+        },
+        {
+            "Vocabulary": "Golden",
+            "Pronunciation": "/ˈɡoʊl.dən/",
+            "Meaning": "Màu vàng óng"
+        },
+        {
+            "Vocabulary": "Plum",
+            "Pronunciation": "/plʌm/",
+            "Meaning": "Màu đỏ mận"
+        },
+        {
+            "Vocabulary": "Olive",
+            "Pronunciation": "/ˈɑː.lɪv/",
+            "Meaning": "Màu Ôliu"
+        },
+        {
+            "Vocabulary": "Cyan",
+            "Pronunciation": "/ˈsaɪ.ən/",
+            "Meaning": "Màu xanh lơ"
+        }
+    ]
+}
