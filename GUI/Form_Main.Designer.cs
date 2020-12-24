@@ -208,7 +208,7 @@
             this.pictureBox_Grammar.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Grammar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox_Grammar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Grammar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.Image")));
+            this.pictureBox_Grammar.Image = global::GUI.Properties.Resources.grammar;
             this.pictureBox_Grammar.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_Grammar.InitialImage")));
             this.pictureBox_Grammar.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Grammar.Name = "pictureBox_Grammar";
