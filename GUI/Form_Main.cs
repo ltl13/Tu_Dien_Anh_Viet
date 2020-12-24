@@ -175,7 +175,7 @@ namespace GUI {
                 panel_Main.Size = panel_Main.MinimumSize;
                 isGrammarClick = true;
                 //mainGrammar.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(253, 255, 209);
+                panel_Main.BackColor = Color.FromArgb(204, 253, 255);
                 timer_MainPanel.Start();
             }
         }
@@ -226,7 +226,7 @@ namespace GUI {
                 panel_Main.Size = panel_Main.MinimumSize;
                 isComboWordClick = true;
                 mainComboWord.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(255, 223, 212);
+                panel_Main.BackColor = Color.FromArgb(204, 253, 255);
                 timer_MainPanel.Start();
             }
         }
@@ -277,7 +277,7 @@ namespace GUI {
                 panel_Main.Size = panel_Main.MinimumSize;
                 isFlashcardClick = true;
                 mainFlashcard.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(219, 255, 212);
+                panel_Main.BackColor = Color.FromArgb(204, 253, 255);
                 timer_MainPanel.Start();
             }
         }
@@ -334,7 +334,7 @@ namespace GUI {
                 panel_Main.Size = panel_Main.MinimumSize;
                 isTranslateClick = true;
                 mainTranslate.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(226, 219, 255);
+                panel_Main.BackColor = Color.FromArgb(204, 253, 255);
                 timer_MainPanel.Start();
             }
         }
@@ -385,7 +385,7 @@ namespace GUI {
                 panel_Main.Size = panel_Main.MinimumSize;
                 isExamClick = true;
                 mainExam.Visible = true;
-                panel_Main.BackColor = Color.FromArgb(255, 227, 255);
+                panel_Main.BackColor = Color.FromArgb(204, 253, 255);
                 timer_MainPanel.Start();
             }
         }
