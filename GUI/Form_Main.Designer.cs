@@ -194,9 +194,9 @@
             this.label_Grammar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label_Grammar.Location = new System.Drawing.Point(107, 25);
             this.label_Grammar.Name = "label_Grammar";
-            this.label_Grammar.Size = new System.Drawing.Size(122, 29);
+            this.label_Grammar.Size = new System.Drawing.Size(104, 29);
             this.label_Grammar.TabIndex = 1;
-            this.label_Grammar.Text = "Ngữ pháp";
+            this.label_Grammar.Text = "Trò chơi";
             this.label_Grammar.Click += new System.EventHandler(this.label_Grammar_Click);
             this.label_Grammar.MouseEnter += new System.EventHandler(this.label_Grammar_MouseEnter);
             // 

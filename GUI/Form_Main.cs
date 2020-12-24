@@ -12,6 +12,7 @@ namespace GUI {
         private UserControl_Translate mainTranslate;
         private UserControl_ComboWord mainComboWord;
         private UserControl_Exam mainExam;
+        private UserControl_Grammar mainGrammar;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private List<EnViDTO> recentlyEnVi;
@@ -39,23 +40,27 @@ namespace GUI {
             UserControl_Translate translate = new UserControl_Translate(this);
             UserControl_ComboWord comboWord = new UserControl_ComboWord();
             UserControl_Exam exam = new UserControl_Exam(this);
+            UserControl_Grammar grammar = new UserControl_Grammar();
             mainSearch = search;
             mainFlashcard = flashcard;
             mainTranslate = translate;
             mainComboWord = comboWord;
             mainExam = exam;
+            mainGrammar = grammar;
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
             panel_Main.Controls.Add(mainTranslate);
             panel_Main.Controls.Add(mainComboWord);
             panel_Main.Controls.Add(mainExam);
+            panel_Main.Controls.Add(mainGrammar);
 
             mainSearch.Visible = true;
             mainFlashcard.Visible = false;
             mainTranslate.Visible = false;
             mainComboWord.Visible = false;
             mainExam.Visible = false;
+            mainGrammar.Visible = false;
 
             pictureBox_Search_Click(null, null);
 
@@ -96,6 +101,7 @@ namespace GUI {
             mainTranslate.Visible = false;
             mainComboWord.Visible = false;
             mainExam.Visible = false;
+            mainGrammar.Visible = false;
 
             timer_PanelSearch.Start();
             timer_PanelGrammar.Start();
@@ -174,7 +180,7 @@ namespace GUI {
                 ReturnClick(panel_Grammar);
                 panel_Main.Size = panel_Main.MinimumSize;
                 isGrammarClick = true;
-                //mainGrammar.Visible = true;
+                mainGrammar.Visible = true;
                 panel_Main.BackColor = Color.FromArgb(204, 253, 255);
                 timer_MainPanel.Start();
             }
