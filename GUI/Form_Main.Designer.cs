@@ -525,7 +525,7 @@
             this.label_Title.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Title.AutoSize = true;
             this.label_Title.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Title.Location = new System.Drawing.Point(348, 8);
+            this.label_Title.Location = new System.Drawing.Point(348, 10);
             this.label_Title.Name = "label_Title";
             this.label_Title.Size = new System.Drawing.Size(200, 35);
             this.label_Title.TabIndex = 16;
