@@ -1,5 +1,8 @@
 using System.Windows.Forms;
-gido
+using System;
+using System.Runtime.InteropServices;
+using System.Drawing.Text;
+using System.Drawing;
 
 namespace GUI {
     public partial class UserControl_Grammar : UserControl {
