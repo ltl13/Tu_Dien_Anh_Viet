@@ -52,7 +52,7 @@ namespace GUI {
             panel_Main.Controls.Add(mainExam);
             panel_Main.Controls.Add(mainGrammar);
 
-            panel_Main.BackColor = Color.FromArgb(204, 253, 255);
+            panel_Main.BackColor = Color.FromArgb(199, 233, 255);
 
             pictureBox_Search_MouseDown(sender, null);
 
@@ -233,12 +233,12 @@ namespace GUI {
         }
 
         private void ReturnClick(Panel chosenPanel) {
-            panel_Search.BackColor = Color.FromArgb(0, 217, 255);
-            panel_FlashCard.BackColor = Color.FromArgb(0, 217, 255);
-            panel_Translate.BackColor = Color.FromArgb(0, 217, 255);
-            panel_Exam.BackColor = Color.FromArgb(0, 217, 255);
-            panel_ComboWord.BackColor = Color.FromArgb(0, 217, 255);
-            panel_Game.BackColor = Color.FromArgb(0, 217, 255);
+            panel_Search.BackColor = Color.LightCyan;
+            panel_FlashCard.BackColor = Color.LightCyan;
+            panel_Translate.BackColor = Color.LightCyan;
+            panel_Exam.BackColor = Color.LightCyan;
+            panel_ComboWord.BackColor = Color.LightCyan;
+            panel_Game.BackColor = Color.LightCyan;
 
             if (mainSearch.isWordInfoOn) { mainSearch.isWordInfoOn = false; mainSearch.wordInfo.Dispose(); }
 
@@ -249,7 +249,7 @@ namespace GUI {
             mainExam.Visible = false;
             mainGrammar.Visible = false;
 
-            chosenPanel.BackColor = Color.FromArgb(204, 253, 255);
+            chosenPanel.BackColor = Color.FromArgb(199, 233, 255);
         }
 
         private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e)

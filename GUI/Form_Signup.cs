@@ -37,30 +37,33 @@ namespace GUI {
                 }
 
                 loginAccount = AccountBUS.Instance.GetAccountByUserName(tbUsername.Text);
-                fMain = new Form_Main(loginAccount, this);
+                fMain = new Form_Main(loginAccount, father);
                 Hide();
                 fMain.Show();
             }
         }
 
         private bool CheckRegister() {
-            if (tbName.Text.Length == 0) {
-                tbName.Text = null;
-            }
-
             if (tbPassword.Text != tbConfirm.Text) {
                 lbError.Text = "Xác nhận mật khẩu không khớp!";
                 lbError.Visible = true;
                 return false;
             }
 
-            if (AccountBUS.Instance.Register(tbUsername.Text, 0, tbPassword.Text, tbName.Text))
-                return true;
-            else {
-                lbError.Text = "Tài khoản đã được đăng ký!";
-                lbError.Visible = true;
-                return false;
+            if (tbName.Text.Length == 0) {
+                if (AccountBUS.Instance.Register(tbUsername.Text, 0, tbPassword.Text)) {
+                    return true;
+                }
             }
+            else {
+                if (AccountBUS.Instance.Register(tbUsername.Text, 0, tbPassword.Text, tbName.Text)) {
+                    return true;
+                }
+            }
+
+            lbError.Text = "Tài khoản đã được đăng ký!";
+            lbError.Visible = true;
+            return false;
         }
 
         private bool CheckNull() {
@@ -97,7 +100,6 @@ namespace GUI {
                 tbPassword.Text = string.Empty;
             }
         }
-        #endregion
 
         private void tbUsername_TextChanged(object sender, EventArgs e) {
             System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9 ]*$");
@@ -206,5 +208,6 @@ namespace GUI {
                 tbName.Enabled = false;
             }
         }
+        #endregion
     }
 }
