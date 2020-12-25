@@ -192,7 +192,7 @@
             this.Controls.Add(this.comboBox_Branch);
             this.Controls.Add(this.comboBox_Main);
             this.Name = "UserControl_Exam_Combo";
-            this.Size = new System.Drawing.Size(624, 516);
+            this.Size = new System.Drawing.Size(670, 555);
             this.ResumeLayout(false);
             this.PerformLayout();
 

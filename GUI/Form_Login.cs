@@ -104,12 +104,16 @@ namespace GUI {
             }
             else {
                 if (lbPassword.ForeColor == Color.Red) {
-                    tbPassword.Select();
+                    if (tbPassword.Focused == true)
+                        tbPassword.Select();
+
                     pnlPassword.BackColor = Color.DarkGray;
                     lbPassword.ForeColor = Color.DarkGray;
                 }
                 if (lbUsername.ForeColor == Color.Red) {
-                    tbUsername.Select();
+                    if (tbPassword.Focused != true)
+                        tbUsername.Select();
+
                     pnlUsername.BackColor = Color.DarkGray;
                     lbUsername.ForeColor = Color.DarkGray;
                 }

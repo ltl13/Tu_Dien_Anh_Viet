@@ -39,7 +39,7 @@
             this.pictureBox_Prev = new System.Windows.Forms.PictureBox();
             this.panel_Position = new System.Windows.Forms.Panel();
             this.xuiButton_Delete = new XanderUI.XUIButton();
-            this.xuiButton_Flip = new XanderUI.XUIButton();
+            this.xuiButton_Panel = new XanderUI.XUIButton();
             this.panel_Viet.SuspendLayout();
             this.panel_Eng.SuspendLayout();
             this.panel_Number.SuspendLayout();
@@ -50,7 +50,7 @@
             // 
             // panel_Viet
             // 
-            this.panel_Viet.BackColor = System.Drawing.Color.White;
+            this.panel_Viet.BackColor = System.Drawing.Color.Transparent;
             this.panel_Viet.Controls.Add(this.label_Viet);
             this.panel_Viet.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_Viet.Location = new System.Drawing.Point(60, 30);
@@ -68,10 +68,11 @@
             this.label_Viet.TabIndex = 2;
             this.label_Viet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Viet.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Viet_MouseDown);
+            this.label_Viet.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label_Viet_MouseUp);
             // 
             // panel_Eng
             // 
-            this.panel_Eng.BackColor = System.Drawing.Color.White;
+            this.panel_Eng.BackColor = System.Drawing.Color.Transparent;
             this.panel_Eng.Controls.Add(this.label_Eng);
             this.panel_Eng.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_Eng.Location = new System.Drawing.Point(60, 30);
@@ -89,12 +90,13 @@
             this.label_Eng.TabIndex = 2;
             this.label_Eng.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Eng.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Eng_MouseDown);
+            this.label_Eng.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label_Eng_MouseUp);
             // 
             // label_Number
             // 
             this.label_Number.BackColor = System.Drawing.Color.White;
             this.label_Number.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_Number.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Number.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Number.Location = new System.Drawing.Point(0, 0);
             this.label_Number.Name = "label_Number";
             this.label_Number.Size = new System.Drawing.Size(220, 45);
@@ -145,7 +147,7 @@
             // panel_Position
             // 
             this.panel_Position.Controls.Add(this.panel_Number);
-            this.panel_Position.Location = new System.Drawing.Point(225, 470);
+            this.panel_Position.Location = new System.Drawing.Point(225, 475);
             this.panel_Position.Name = "panel_Position";
             this.panel_Position.Size = new System.Drawing.Size(220, 45);
             this.panel_Position.TabIndex = 8;
@@ -171,27 +173,26 @@
             this.xuiButton_Delete.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Delete.Click += new System.EventHandler(this.xuiButton_Delete_Click);
             // 
-            // xuiButton_Flip
+            // xuiButton_Panel
             // 
-            this.xuiButton_Flip.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_Flip.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Flip.ButtonImage")));
-            this.xuiButton_Flip.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_Flip.ButtonText = "";
-            this.xuiButton_Flip.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton_Flip.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_Flip.CornerRadius = 5;
-            this.xuiButton_Flip.Enabled = false;
-            this.xuiButton_Flip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_Flip.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Flip.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton_Flip.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_Flip.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Flip.Location = new System.Drawing.Point(50, 20);
-            this.xuiButton_Flip.Name = "xuiButton_Flip";
-            this.xuiButton_Flip.Size = new System.Drawing.Size(570, 420);
-            this.xuiButton_Flip.TabIndex = 5;
-            this.xuiButton_Flip.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_Flip.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Panel.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Panel.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Panel.ButtonImage")));
+            this.xuiButton_Panel.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Panel.ButtonText = "";
+            this.xuiButton_Panel.ClickBackColor = System.Drawing.Color.White;
+            this.xuiButton_Panel.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Panel.CornerRadius = 5;
+            this.xuiButton_Panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Panel.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Panel.HoverBackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Panel.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_Panel.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Panel.Location = new System.Drawing.Point(50, 20);
+            this.xuiButton_Panel.Name = "xuiButton_Panel";
+            this.xuiButton_Panel.Size = new System.Drawing.Size(570, 420);
+            this.xuiButton_Panel.TabIndex = 5;
+            this.xuiButton_Panel.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Panel.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // UserControl_Flashcard
             // 
@@ -199,7 +200,7 @@
             this.Controls.Add(this.panel_Eng);
             this.Controls.Add(this.panel_Viet);
             this.Controls.Add(this.xuiButton_Delete);
-            this.Controls.Add(this.xuiButton_Flip);
+            this.Controls.Add(this.xuiButton_Panel);
             this.Controls.Add(this.panel_Position);
             this.Name = "UserControl_Flashcard";
             this.Size = new System.Drawing.Size(670, 555);
@@ -222,7 +223,7 @@
         private System.Windows.Forms.Label label_Viet;
         private System.Windows.Forms.Label label_Number;
         private System.Windows.Forms.Panel panel_Number;
-        private XanderUI.XUIButton xuiButton_Flip;
+        private XanderUI.XUIButton xuiButton_Panel;
         private System.Windows.Forms.Panel panel_Position;
         private System.Windows.Forms.PictureBox pictureBox_Next;
         private System.Windows.Forms.PictureBox pictureBox_Prev;

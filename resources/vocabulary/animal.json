@@ -1,5 +1,5 @@
 ﻿{
-    "pets": [
+    "Pets": [
         {
             "Vocabulary": "Dog",
             "Pronunciation": "/dɑːɡ/",
@@ -56,7 +56,7 @@
             "Meaning": "Chuột Hamster"
         }
     ],
-    "breeding animals": [
+    "Breeding Animals": [
         {
             "Vocabulary": "Cow",
             "Pronunciation": "/kaʊ/",
@@ -133,7 +133,7 @@
             "Meaning": "Con ngựa"
         }
     ],
-    "animal groups": [
+    "Animal Groups": [
         {
             "Vocabulary": "Pets",
             "Pronunciation": "/pet/",
@@ -170,7 +170,7 @@
             "Meaning": "Côn trùng"
         }
     ],
-    "wild animals": [
+    "Wild Animals": [
         {
             "Vocabulary": "Alligator",
             "Pronunciation": "/ˈæl.ɪ.geɪ.təʳ/",
@@ -307,7 +307,7 @@
             "Meaning": "Con ngựa vằn"
         }
     ],
-    "birds": [
+    "Birds": [
         {
             "Vocabulary": "Crow",
             "Pronunciation": "/kroʊ/",
@@ -419,7 +419,7 @@
             "Meaning": "Chim gõ kiến"
         }
     ],
-    "marines": [
+    "Marines": [
         {
             "Vocabulary": "Crab",
             "Pronunciation": "/kræb/",
@@ -546,7 +546,7 @@
             "Meaning": "San hô"
         }
     ],
-    "mammals": [
+    "Mammals": [
         {
             "Vocabulary": "Squirrel",
             "Pronunciation": "/ˈskwɝː.əl/",
@@ -673,7 +673,7 @@
             "Meaning": "Con nai"
         }
     ],
-    "insects": [
+    "Insects": [
         {
             "Vocabulary": "Moth",
             "Pronunciation": "/mɑːθ/",

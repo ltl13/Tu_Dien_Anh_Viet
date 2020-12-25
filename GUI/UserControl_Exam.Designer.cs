@@ -63,8 +63,8 @@
             // splitContainer_Exam.Panel2
             // 
             this.splitContainer_Exam.Panel2.Controls.Add(this.metroTile_Favorite);
-            this.splitContainer_Exam.Size = new System.Drawing.Size(539, 276);
-            this.splitContainer_Exam.SplitterDistance = 259;
+            this.splitContainer_Exam.Size = new System.Drawing.Size(600, 300);
+            this.splitContainer_Exam.SplitterDistance = 288;
             this.splitContainer_Exam.SplitterWidth = 20;
             this.splitContainer_Exam.TabIndex = 0;
             // 
@@ -76,7 +76,7 @@
             this.metroTile_ComboWord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile_ComboWord.Location = new System.Drawing.Point(0, 0);
             this.metroTile_ComboWord.Name = "metroTile_ComboWord";
-            this.metroTile_ComboWord.Size = new System.Drawing.Size(259, 276);
+            this.metroTile_ComboWord.Size = new System.Drawing.Size(288, 300);
             this.metroTile_ComboWord.TabIndex = 0;
             this.metroTile_ComboWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile_ComboWord.TileImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -91,7 +91,7 @@
             this.label_ComboWord.BackColor = System.Drawing.Color.Transparent;
             this.label_ComboWord.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ComboWord.ForeColor = System.Drawing.Color.White;
-            this.label_ComboWord.Location = new System.Drawing.Point(46, 85);
+            this.label_ComboWord.Location = new System.Drawing.Point(60, 85);
             this.label_ComboWord.Name = "label_ComboWord";
             this.label_ComboWord.Size = new System.Drawing.Size(171, 40);
             this.label_ComboWord.TabIndex = 1;
@@ -102,7 +102,7 @@
             // 
             this.pictureBox_ComboWord.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_ComboWord.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_ComboWord.Image")));
-            this.pictureBox_ComboWord.Location = new System.Drawing.Point(105, 172);
+            this.pictureBox_ComboWord.Location = new System.Drawing.Point(109, 172);
             this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
             this.pictureBox_ComboWord.Size = new System.Drawing.Size(65, 71);
             this.pictureBox_ComboWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -118,7 +118,7 @@
             this.metroTile_Favorite.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile_Favorite.Location = new System.Drawing.Point(0, 0);
             this.metroTile_Favorite.Name = "metroTile_Favorite";
-            this.metroTile_Favorite.Size = new System.Drawing.Size(260, 276);
+            this.metroTile_Favorite.Size = new System.Drawing.Size(292, 300);
             this.metroTile_Favorite.Style = MetroFramework.MetroColorStyle.Magenta;
             this.metroTile_Favorite.TabIndex = 1;
             this.metroTile_Favorite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,7 +135,7 @@
             this.label_Favorite.BackColor = System.Drawing.Color.Transparent;
             this.label_Favorite.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Favorite.ForeColor = System.Drawing.Color.White;
-            this.label_Favorite.Location = new System.Drawing.Point(49, 84);
+            this.label_Favorite.Location = new System.Drawing.Point(58, 84);
             this.label_Favorite.Name = "label_Favorite";
             this.label_Favorite.Size = new System.Drawing.Size(186, 40);
             this.label_Favorite.TabIndex = 1;
@@ -146,7 +146,7 @@
             // 
             this.pictureBox_Favorite.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Favorite.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Favorite.Image")));
-            this.pictureBox_Favorite.Location = new System.Drawing.Point(105, 172);
+            this.pictureBox_Favorite.Location = new System.Drawing.Point(110, 172);
             this.pictureBox_Favorite.Name = "pictureBox_Favorite";
             this.pictureBox_Favorite.Size = new System.Drawing.Size(65, 71);
             this.pictureBox_Favorite.TabIndex = 0;
@@ -158,7 +158,7 @@
             this.panel_Lock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.panel_Lock.Controls.Add(this.label_Lock);
             this.panel_Lock.Controls.Add(this.pictureBox_Lock);
-            this.panel_Lock.Location = new System.Drawing.Point(345, 164);
+            this.panel_Lock.Location = new System.Drawing.Point(388, 167);
             this.panel_Lock.Name = "panel_Lock";
             this.panel_Lock.Size = new System.Drawing.Size(209, 189);
             this.panel_Lock.TabIndex = 2;
@@ -193,7 +193,7 @@
             this.Controls.Add(this.panel_Lock);
             this.Controls.Add(this.splitContainer_Exam);
             this.Name = "UserControl_Exam";
-            this.Size = new System.Drawing.Size(624, 516);
+            this.Size = new System.Drawing.Size(670, 555);
             this.VisibleChanged += new System.EventHandler(this.UserControl_Exam_VisibleChanged);
             this.splitContainer_Exam.Panel1.ResumeLayout(false);
             this.splitContainer_Exam.Panel2.ResumeLayout(false);

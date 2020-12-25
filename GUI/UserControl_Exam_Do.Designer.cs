@@ -194,6 +194,7 @@
             // 
             // metroProgressSpinner_Time
             // 
+            this.metroProgressSpinner_Time.BackColor = System.Drawing.SystemColors.Control;
             this.metroProgressSpinner_Time.Location = new System.Drawing.Point(1, 2);
             this.metroProgressSpinner_Time.Margin = new System.Windows.Forms.Padding(2);
             this.metroProgressSpinner_Time.Maximum = 100;
@@ -211,7 +212,7 @@
             this.label1.Location = new System.Drawing.Point(260, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 39);
+            this.label1.Size = new System.Drawing.Size(61, 24);
             this.label1.TabIndex = 8;
             this.label1.Text = "Score:";
             // 
@@ -222,7 +223,7 @@
             this.label_RightAnswer.Location = new System.Drawing.Point(319, 0);
             this.label_RightAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_RightAnswer.Name = "label_RightAnswer";
-            this.label_RightAnswer.Size = new System.Drawing.Size(0, 39);
+            this.label_RightAnswer.Size = new System.Drawing.Size(0, 24);
             this.label_RightAnswer.TabIndex = 9;
             // 
             // label_time
@@ -233,7 +234,7 @@
             this.label_time.Location = new System.Drawing.Point(31, 6);
             this.label_time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_time.Name = "label_time";
-            this.label_time.Size = new System.Drawing.Size(0, 25);
+            this.label_time.Size = new System.Drawing.Size(0, 15);
             this.label_time.TabIndex = 10;
             // 
             // xuiFlatProgressBar_Question
@@ -286,7 +287,7 @@
             this.Controls.Add(this.xuiButton_Retry);
             this.Controls.Add(this.xuiButton_Answer1);
             this.Name = "UserControl_Exam_Do";
-            this.Size = new System.Drawing.Size(624, 516);
+            this.Size = new System.Drawing.Size(670, 555);
             this.ResumeLayout(false);
             this.PerformLayout();
 

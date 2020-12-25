@@ -154,7 +154,7 @@
             this.Controls.Add(this.metroLabel_Number);
             this.Controls.Add(this.metroTextBox_Number);
             this.Name = "UserControl_Exam_Favorite";
-            this.Size = new System.Drawing.Size(624, 516);
+            this.Size = new System.Drawing.Size(670, 555);
             this.ResumeLayout(false);
             this.PerformLayout();
 
