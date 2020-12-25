@@ -39,7 +39,7 @@
             this.listBox_Search.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_Search.FormattingEnabled = true;
             this.listBox_Search.ItemHeight = 20;
-            this.listBox_Search.Location = new System.Drawing.Point(135, 158);
+            this.listBox_Search.Location = new System.Drawing.Point(146, 158);
             this.listBox_Search.Name = "listBox_Search";
             this.listBox_Search.Size = new System.Drawing.Size(369, 244);
             this.listBox_Search.TabIndex = 8;
@@ -53,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(624, 516);
+            this.panel1.Size = new System.Drawing.Size(670, 555);
             this.panel1.TabIndex = 9;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -77,11 +77,12 @@
             this.metroTextBox_Searchbar.DisplayIcon = true;
             this.metroTextBox_Searchbar.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.metroTextBox_Searchbar.Lines = new string[0];
-            this.metroTextBox_Searchbar.Location = new System.Drawing.Point(135, 124);
+            this.metroTextBox_Searchbar.Location = new System.Drawing.Point(146, 124);
             this.metroTextBox_Searchbar.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox_Searchbar.MaxLength = 32;
             this.metroTextBox_Searchbar.Name = "metroTextBox_Searchbar";
             this.metroTextBox_Searchbar.PasswordChar = '\0';
+            this.metroTextBox_Searchbar.PromptText = "Search...";
             this.metroTextBox_Searchbar.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Searchbar.SelectedText = "";
             this.metroTextBox_Searchbar.SelectionLength = 0;
@@ -104,7 +105,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControl_Search";
-            this.Size = new System.Drawing.Size(624, 516);
+            this.Size = new System.Drawing.Size(670, 555);
             this.VisibleChanged += new System.EventHandler(this.UserControl_Search_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
