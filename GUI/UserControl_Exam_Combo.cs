@@ -1,13 +1,13 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Data;
-using System.Data.OleDb;
 using System.Windows.Forms;
 
 namespace GUI {
     public partial class UserControl_Exam_Combo : UserControl {
         private UserControl_Exam_Do doExam;
         private UserControl_Exam father;
-
+        private DataSet dataSet;
 
         public UserControl_Exam_Combo(UserControl_Exam previous) {
             InitializeComponent();
@@ -29,23 +29,10 @@ namespace GUI {
         private void comboBox_Main_SelectedValueChanged(object sender, EventArgs e) {
             comboBox_Branch.Items.Clear();
 
-            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\Exam\\" + comboBox_Main.SelectedItem.ToString() + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
-            OleDbConnection conn = new OleDbConnection(pathConn);
+            dataSet = ComboWordBUS.Instance.GetDataSet(comboBox_Main.SelectedItem.ToString());
 
-            conn.Open();
-            DataTable dt_sheet = conn.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
-
-            String[] excelSheets = new String[dt_sheet.Rows.Count];
-            int i = 0;
-
-            // Add the sheet name to the string array.
-            foreach (DataRow row in dt_sheet.Rows) {
-                string sheetname = row["TABLE_NAME"].ToString();
-                if (!sheetname.Contains("$'ExternalData") && !sheetname.Contains("'$ExternalData")) {
-                    excelSheets[i] = sheetname.Substring(1, sheetname.Length - 3);
-                    comboBox_Branch.Items.Add(excelSheets[i]);
-                    i++;
-                }
+            for (int i = 0; i < dataSet.Tables.Count; i++) {
+                comboBox_Branch.Items.Add(dataSet.Tables[i].TableName);
             }
         }
 
@@ -53,14 +40,7 @@ namespace GUI {
             father.listQuestion.Clear();
             father.dt.Clear();
 
-            string pathConn = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\..\\resources\\vocabulary\\Exam\\" + comboBox_Main.SelectedItem.ToString() + ".xls;Extended Properties=\"Excel 8.0;HDR=Yes;\";";
-            OleDbConnection conn = new OleDbConnection(pathConn);
-            conn.Open();
-
-            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter("Select * from [" + comboBox_Branch.SelectedItem.ToString() + "$]", conn);
-
-
-            myDataAdapter.Fill(father.dt);
+            father.dt = dataSet.Tables[comboBox_Branch.SelectedItem.ToString()];
 
             metroTextBox_Number.WaterMark = "less than " + father.dt.Rows.Count.ToString();
         }

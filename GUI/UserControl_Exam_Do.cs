@@ -7,49 +7,47 @@ using System.Windows.Forms;
 
 namespace GUI {
     public partial class UserControl_Exam_Do : UserControl {
-        //private UserControl_Exam grandfather;
-        private UserControl_Exam grandfather;
-        private int time;
-        private bool WhatToDo;
-        int number, socau, socaudung = 0;
-
-        EnViDTO key;
-        List<EnViDTO> listAnswer = new List<EnViDTO>();
-        List<EnViDTO> listQuestion = new List<EnViDTO>();
-
-        struct yourTest
-        {
+        //private UserControl_Exam father;
+        struct yourTest {
             public string ques, key, choose, A, B, C, D;
         }
-        yourTest instance;
 
-        List<yourTest> listYourTest = new List<yourTest>();
+        private UserControl_Exam father;
+        private int time;
+        private bool whatToDo;
+        private int number, socau, socaudung = 0;
+
+        private EnViDTO key;
+        private List<EnViDTO> listAnswer = new List<EnViDTO>();
+        private List<EnViDTO> listQuestion = new List<EnViDTO>();
+        private List<yourTest> listYourTest = new List<yourTest>();
+        private yourTest instance;
 
         public UserControl_Exam_Do(UserControl_Exam exam, bool whatToDo) {
             InitializeComponent(); textBox1.Hide();
-            grandfather = exam;
-            socau = grandfather.Number;
-            time = grandfather.Time;
+            father = exam;
+            socau = father.Number;
+            time = father.Time;
             label_RightAnswer.Text = "0";
 
             if (whatToDo) taotrachnghiemCB();
             else taotrachnghiemFR();
 
-            this.WhatToDo = whatToDo;
+            this.whatToDo = whatToDo;
         }
 
         private void xuiButton_Back_Click(object sender, EventArgs e) {
-            grandfather.BringToFront();
+            father.BringToFront();
             this.Dispose();
         }
 
         private void xuiButton_Retry_Click(object sender, EventArgs e) {
             socaudung = 0;
-            socau = grandfather.Number;
+            socau = father.Number;
             label_RightAnswer.Text = "0";
 
-            grandfather.listQuestion.Clear();
-            grandfather.listAnswer.Clear();
+            father.listQuestion.Clear();
+            father.listAnswer.Clear();
 
             listAnswer.Clear();
             listQuestion.Clear();
@@ -60,19 +58,19 @@ namespace GUI {
             xuiButton_Answer3.Enabled = true;
             xuiButton_Answer4.Enabled = true;
 
-            if (WhatToDo) taotrachnghiemCB();
+            if (whatToDo) taotrachnghiemCB();
             else taotrachnghiemFR();
         }
 
         private void timer1_Tick(object sender, EventArgs e) {
             time--;
-            metroProgressSpinner_Time.Value = (int)((1.0 * time / grandfather.Time) * 100);
+            metroProgressSpinner_Time.Value = (int)((1.0 * time / father.Time) * 100);
             label_time.Text = time.ToString();
             if (time == 0) {
                 listYourTest.Add(instance);
                 if (--socau == 0) ketthuc();
                 else {
-                    if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                    if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
                 }
             }
         }
@@ -81,7 +79,7 @@ namespace GUI {
         {
             timer1.Stop();
             xuiFlatProgressBar_Question.Value = 0;
-            MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2));
+            MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2));
 
             xuiButton_Answer1.Enabled = false;
             xuiButton_Answer2.Enabled = false;
@@ -90,11 +88,11 @@ namespace GUI {
         }
 
         public bool checkanswer(DataRow answer4) {
-            if (grandfather.listAnswer.Count < 3) return true;
-            for (int i = 0; i < grandfather.listAnswer.Count; i++) {
-                if (!grandfather.listQuestion.Contains(grandfather.listAnswer[i])) return true;
+            if (father.listAnswer.Count < 3) return true;
+            for (int i = 0; i < father.listAnswer.Count; i++) {
+                if (!father.listQuestion.Contains(father.listAnswer[i])) return true;
             }
-            if (grandfather.listQuestion.Contains(answer4)) return false;
+            if (father.listQuestion.Contains(answer4)) return false;
             else return true;
         }
 
@@ -111,34 +109,34 @@ namespace GUI {
 
         public void taotrachnghiemCB() {
             instance = new yourTest();
-            time = grandfather.Time;
-            grandfather.listAnswer.Clear();
+            time = father.Time;
+            father.listAnswer.Clear();
             var rand = new Random();
-            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / grandfather.Number * 100);
+            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / father.Number * 100);
 
             for (int i = 0; i < 4; i++) {
                 do {
-                    number = rand.Next(0, grandfather.dt.Rows.Count);
-                    while ((i == 3 && !checkanswer(grandfather.dt.Rows[number])) || grandfather.listAnswer.Contains(grandfather.dt.Rows[number]))
-                        number = rand.Next(0, grandfather.dt.Rows.Count);
+                    number = rand.Next(0, father.dt.Rows.Count);
+                    while ((i == 3 && !checkanswer(father.dt.Rows[number])) || father.listAnswer.Contains(father.dt.Rows[number]))
+                        number = rand.Next(0, father.dt.Rows.Count);
 
-                    if (grandfather.listAnswer.Count == 0) {
-                        grandfather.listAnswer.Add(grandfather.dt.Rows[number]);
+                    if (father.listAnswer.Count == 0) {
+                        father.listAnswer.Add(father.dt.Rows[number]);
                         break;
                     }
-                } while (grandfather.listAnswer.Contains(grandfather.dt.Rows[number])); //4 cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
-                if (i > 0) grandfather.listAnswer.Add(grandfather.dt.Rows[number]);
+                } while (father.listAnswer.Contains(father.dt.Rows[number])); //4 cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
+                if (i > 0) father.listAnswer.Add(father.dt.Rows[number]);
 
             }
 
-            xuiButton_Answer1.ButtonText = grandfather.listAnswer[0][2].ToString(); instance.A = grandfather.listAnswer[0][2].ToString();
-            xuiButton_Answer2.ButtonText = grandfather.listAnswer[1][2].ToString(); instance.B = grandfather.listAnswer[1][2].ToString();
-            xuiButton_Answer3.ButtonText = grandfather.listAnswer[2][2].ToString(); instance.C = grandfather.listAnswer[2][2].ToString();
-            xuiButton_Answer4.ButtonText = grandfather.listAnswer[3][2].ToString(); instance.D = grandfather.listAnswer[3][2].ToString();
+            xuiButton_Answer1.ButtonText = father.listAnswer[0][2].ToString(); instance.A = father.listAnswer[0][2].ToString();
+            xuiButton_Answer2.ButtonText = father.listAnswer[1][2].ToString(); instance.B = father.listAnswer[1][2].ToString();
+            xuiButton_Answer3.ButtonText = father.listAnswer[2][2].ToString(); instance.C = father.listAnswer[2][2].ToString();
+            xuiButton_Answer4.ButtonText = father.listAnswer[3][2].ToString(); instance.D = father.listAnswer[3][2].ToString();
 
-            do grandfather.key = grandfather.listAnswer[rand.Next(0, 4)]; while (grandfather.listQuestion.Contains(grandfather.key));
-            label_Question.Text = grandfather.key[0].ToString();
-            grandfather.listQuestion.Add(grandfather.key); instance.key = grandfather.key[2].ToString(); instance.ques = grandfather.key[0].ToString();
+            do father.key = father.listAnswer[rand.Next(0, 4)]; while (father.listQuestion.Contains(father.key));
+            label_Question.Text = father.key[0].ToString();
+            father.listQuestion.Add(father.key); instance.key = father.key[2].ToString(); instance.ques = father.key[0].ToString();
 
             timer1.Start();
             metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
@@ -147,26 +145,26 @@ namespace GUI {
         public void taotrachnghiemFR()
         {
             instance = new yourTest();
-            time = grandfather.Time;
+            time = father.Time;
             listAnswer.Clear();
             var rand = new Random();
-            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / grandfather.Number * 100);
+            xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / father.Number * 100);
 
             for (int i = 0; i < 4; i++)
             {
                 do
                 {
-                    number = rand.Next(0, grandfather.Father.Favorite.Count);
-                    while ((i == 3 && !checkanswerFR(grandfather.Father.Favorite[number])) || listAnswer.Contains(grandfather.Father.Favorite[number]))// 3 cau va cau cuoi da dung/ 2 dap an giong nhau
-                        number = rand.Next(0, grandfather.Father.Favorite.Count);
+                    number = rand.Next(0, father.Father.Favorite.Count);
+                    while ((i == 3 && !checkanswerFR(father.Father.Favorite[number])) || listAnswer.Contains(father.Father.Favorite[number]))// 3 cau va cau cuoi da dung/ 2 dap an giong nhau
+                        number = rand.Next(0, father.Father.Favorite.Count);
 
                     if (listAnswer.Count == 0)
                     {
-                        listAnswer.Add(grandfather.Father.Favorite[number]);
+                        listAnswer.Add(father.Father.Favorite[number]);
                         break;
                     }
-                } while (listAnswer.Contains(grandfather.Father.Favorite[number])); ///co cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
-                if (i > 0) listAnswer.Add(grandfather.Father.Favorite[number]);
+                } while (listAnswer.Contains(father.Father.Favorite[number])); ///co cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
+                if (i > 0) listAnswer.Add(father.Father.Favorite[number]);
 
             }
 
@@ -184,16 +182,16 @@ namespace GUI {
         }
 
         private void xuiButton_Answer1_Click(object sender, EventArgs e) {
-            if (WhatToDo) {
-                if (grandfather.key[2].ToString() == xuiButton_Answer1.ButtonText) {
+            if (whatToDo) {
+                if (father.key[2].ToString() == xuiButton_Answer1.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer1.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
 
@@ -202,7 +200,7 @@ namespace GUI {
 
             if (socau-- > 1)
             {
-                if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
             else
             {
@@ -212,16 +210,16 @@ namespace GUI {
         }
 
         private void xuiButton_Answer2_Click(object sender, EventArgs e) {
-            if (WhatToDo) {
-                if (grandfather.key[2].ToString() == xuiButton_Answer2.ButtonText) {
+            if (whatToDo) {
+                if (father.key[2].ToString() == xuiButton_Answer2.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer2.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
 
@@ -229,7 +227,7 @@ namespace GUI {
             listYourTest.Add(instance);
 
             if (socau-- > 1) {
-                if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
             else ketthuc();
         }
@@ -242,16 +240,16 @@ namespace GUI {
         }
 
         private void xuiButton_Answer3_Click(object sender, EventArgs e) {
-            if (WhatToDo) {
-                if (grandfather.key[2].ToString() == xuiButton_Answer3.ButtonText) {
+            if (whatToDo) {
+                if (father.key[2].ToString() == xuiButton_Answer3.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer3.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
 
@@ -259,22 +257,22 @@ namespace GUI {
             listYourTest.Add(instance);
 
             if (socau-- > 1) {
-                if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
             else ketthuc();
         }
 
         private void xuiButton_Answer4_Click(object sender, EventArgs e) {
-            if (WhatToDo) {
-                if (grandfather.key[2].ToString() == xuiButton_Answer4.ButtonText) {
+            if (whatToDo) {
+                if (father.key[2].ToString() == xuiButton_Answer4.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer4.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / grandfather.Number), 2).ToString();
+                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
 
@@ -282,7 +280,7 @@ namespace GUI {
             listYourTest.Add(instance);
 
             if (socau-- > 1) {
-                if (WhatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
             else ketthuc();
         }

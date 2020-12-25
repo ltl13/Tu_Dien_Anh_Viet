@@ -31,9 +31,8 @@ namespace GUI {
             examCombo.Show();
             examCombo.BringToFront();
 
-            foreach (var child in Directory.GetFiles("..\\..\\..\\resources\\vocabulary\\Exam")) {
-                string name = Path.GetFileName(child);
-                if (name.Contains(".xls")) examCombo.comboBox_Main.Items.Add(name.Substring(0, name.Length - 4));
+            foreach (string path in Directory.GetFiles(@"..\..\..\resources\vocabulary", "*.json")) {
+                examCombo.comboBox_Main.Items.Add(Path.GetFileNameWithoutExtension(path));
             }
         }
 
