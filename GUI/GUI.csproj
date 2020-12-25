@@ -273,6 +273,7 @@
     <None Include="Connected Services\TranslatorService\SoapService.wsdl" />
     <None Include="Connected Services\TranslatorService\SoapService1.wsdl" />
     <None Include="Fonts\SnesItalic-1G9Be.ttf" />
+    <None Include="Fonts\Squirk-RMvV.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

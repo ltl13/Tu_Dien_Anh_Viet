@@ -14,8 +14,8 @@ namespace GUI {
         private void UserControl_Grammar_Load(object sender, EventArgs e)
         {
             PrivateFontCollection pfc = new PrivateFontCollection();
-            int fontLength = Properties.Resources.SnesItalic_1G9Be.Length;
-            byte[] fontdata = Properties.Resources.SnesItalic_1G9Be;
+            int fontLength = Properties.Resources.Squirk_RMvV.Length;
+            byte[] fontdata = Properties.Resources.Squirk_RMvV;
             System.IntPtr data = Marshal.AllocCoTaskMem(fontLength);
             Marshal.Copy(fontdata, 0, data, fontLength);
             pfc.AddMemoryFont(data, fontLength);
