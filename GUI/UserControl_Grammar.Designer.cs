@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button_Game1 = new System.Windows.Forms.Button();
+            this.button_Game2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button_Game1
+            // 
+            this.button_Game1.Location = new System.Drawing.Point(51, 26);
+            this.button_Game1.Name = "button_Game1";
+            this.button_Game1.Size = new System.Drawing.Size(371, 238);
+            this.button_Game1.TabIndex = 0;
+            this.button_Game1.Text = "button1";
+            this.button_Game1.UseVisualStyleBackColor = true;
+            // 
+            // button_Game2
+            // 
+            this.button_Game2.Location = new System.Drawing.Point(241, 290);
+            this.button_Game2.Name = "button_Game2";
+            this.button_Game2.Size = new System.Drawing.Size(371, 238);
+            this.button_Game2.TabIndex = 1;
+            this.button_Game2.Text = "button2";
+            this.button_Game2.UseVisualStyleBackColor = true;
             // 
             // UserControl_Grammar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button_Game2);
+            this.Controls.Add(this.button_Game1);
             this.Name = "UserControl_Grammar";
             this.Size = new System.Drawing.Size(670, 555);
             this.ResumeLayout(false);
@@ -41,5 +63,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button_Game1;
+        private System.Windows.Forms.Button button_Game2;
     }
 }
