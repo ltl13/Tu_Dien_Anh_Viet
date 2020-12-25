@@ -3,7 +3,6 @@ using DTO;
 using System;
 using System.Drawing;
 using System.Threading;
-using System.Windows.Forms;
 
 namespace GUI {
     public partial class Form_Login : MetroFramework.Forms.MetroForm {
@@ -52,15 +51,15 @@ namespace GUI {
         private void tbUsername_TextChanged(object sender, EventArgs e) {
             System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9 ]*$");
 
+            if (tbPassword.Text.Length != 0) {
+                tbPassword.Text = string.Empty;
+            }
             if (!regexItem.IsMatch(tbUsername.Text)) {
+
                 lbError.Text = "Tài khoản chỉ gồm chữ và số!";
                 lbError.Visible = true;
             }
             else {
-                if (tbPassword.Text.Length != 0) {
-                    tbPassword.Text = string.Empty;
-                }
-
                 if (lbError.Visible == true) {
                     lbError.Visible = false;
                 }
@@ -113,10 +112,12 @@ namespace GUI {
                 else if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
                     pnlUsername.BackColor = Color.Red;
                     lbUsername.ForeColor = Color.Red;
+                    tbPassword.Enabled = false;
                 }
             }
             else {
                 btLogin.Enabled = true;
+                tbPassword.Enabled = true;
                 if (lbPassword.ForeColor == Color.Red) {
                     if (tbPassword.Focused == true)
                         tbPassword.Select();
@@ -152,6 +153,16 @@ namespace GUI {
                 return true;
             }
             return false;
+        }
+
+        private void lbError_TextChanged(object sender, EventArgs e) {
+            if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
+                pnlUsername.BackColor = Color.Red;
+                lbUsername.ForeColor = Color.Red;
+                pnlPassword.BackColor = Color.DarkGray;
+                lbPassword.ForeColor = Color.DarkGray;
+                tbPassword.Enabled = false;
+            }
         }
         #endregion
     }

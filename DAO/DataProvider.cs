@@ -8,7 +8,6 @@ namespace DAO {
         private static DataProvider instance;
         private static SqlConnectionStringBuilder connectionString = new SqlConnectionStringBuilder();
 
-
         public static DataProvider Instance {
             get {
                 if (instance == null) {

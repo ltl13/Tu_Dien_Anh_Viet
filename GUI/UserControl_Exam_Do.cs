@@ -75,8 +75,7 @@ namespace GUI {
             }
         }
 
-        public void ketthuc()
-        {
+        public void ketthuc() {
             timer1.Stop();
             xuiFlatProgressBar_Question.Value = 0;
             MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2));
@@ -96,11 +95,9 @@ namespace GUI {
             else return true;
         }
 
-        public bool checkanswerFR(EnViDTO answer4)
-        {
+        public bool checkanswerFR(EnViDTO answer4) {
             if (listAnswer.Count < 3) return true;
-            for (int i = 0; i < listAnswer.Count; i++)
-            {
+            for (int i = 0; i < listAnswer.Count; i++) {
                 if (!listQuestion.Contains(listAnswer[i])) return true;
             }
             if (listQuestion.Contains(answer4)) return false;
@@ -142,24 +139,20 @@ namespace GUI {
             metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
         }
 
-        public void taotrachnghiemFR()
-        {
+        public void taotrachnghiemFR() {
             instance = new yourTest();
             time = father.Time;
             listAnswer.Clear();
             var rand = new Random();
             xuiFlatProgressBar_Question.Value = (int)(1.0 * socau / father.Number * 100);
 
-            for (int i = 0; i < 4; i++)
-            {
-                do
-                {
+            for (int i = 0; i < 4; i++) {
+                do {
                     number = rand.Next(0, father.Father.Favorite.Count);
                     while ((i == 3 && !checkanswerFR(father.Father.Favorite[number])) || listAnswer.Contains(father.Father.Favorite[number]))// 3 cau va cau cuoi da dung/ 2 dap an giong nhau
                         number = rand.Next(0, father.Father.Favorite.Count);
 
-                    if (listAnswer.Count == 0)
-                    {
+                    if (listAnswer.Count == 0) {
                         listAnswer.Add(father.Father.Favorite[number]);
                         break;
                     }
@@ -198,12 +191,10 @@ namespace GUI {
             instance.choose = xuiButton_Answer1.ButtonText;
             listYourTest.Add(instance);
 
-            if (socau-- > 1)
-            {
+            if (socau-- > 1) {
                 if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
-            else
-            {
+            else {
                 listYourTest.Add(instance);
                 ketthuc();
             }
@@ -232,8 +223,7 @@ namespace GUI {
             else ketthuc();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void button1_Click(object sender, EventArgs e) {
             textBox1.Show();
             foreach (yourTest instance in listYourTest) textBox1.Text += instance.ques + "?????????????????" + instance.key + "!!!!!!!!!!!!!!!!!!" + instance.choose + "====================";///////////////////
 

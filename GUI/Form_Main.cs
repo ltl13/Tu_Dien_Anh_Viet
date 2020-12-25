@@ -56,6 +56,7 @@ namespace GUI {
 
             pictureBox_Search_MouseDown(sender, null);
 
+            xuiButton_Account.ButtonText = "Xin chào, " + loginAccount.DisplayName + "!";
             this.CancelButton = button_Exit;
         }
 
@@ -74,59 +75,89 @@ namespace GUI {
         #endregion
 
         #region MenuAccount
-        private bool isButtonAccountClick = false;
+        bool isPopUp = false;
         private void timer_MenuAccount_Tick(object sender, EventArgs e) {
-            if (isButtonAccountClick) {
-                panel_Account.Height += 20;
-                if (panel_Account.Size == panel_Account.MaximumSize) { timer_MenuAccount.Stop(); }
+            if (isPopUp) {
+                if (panel_Account.Size == panel_Account.MaximumSize) {
+                    timer_MenuAccount.Stop();
+                }
+                panel_Account.Height += 19;
             }
             else {
-                panel_Account.Height -= 20;
-                if (panel_Account.Size == panel_Account.MinimumSize) { timer_MenuAccount.Stop(); }
+                if (panel_Account.Size == panel_Account.MinimumSize) {
+                    timer_MenuAccount.Stop();
+                }
+                panel_Account.Height -= 19;
             }
         }
-        private void xuiButton_Account_Click(object sender, EventArgs e) {
-            xuiButton_Account_MouseEnter(null, null);
-            isButtonAccountClick = true;
+        private void xuiButton_Account_MouseDown(object sender, EventArgs e) {
+            isPopUp = !isPopUp;
             timer_MenuAccount.Start();
         }
 
-        private void xuiButton_Account_MouseEnter(object sender, EventArgs e) {
-            xuiButton_Account.BackgroundColor = Color.FromArgb(199, 233, 255);
-            xuiButton_Account.TextColor = Color.Black;
-        }
-
-        private void xuiButton_Account_MouseLeave(object sender, EventArgs e) {
-            if (!isButtonAccountClick) {
-                xuiButton_Account.BackgroundColor = Color.White;
-                xuiButton_Account.TextColor = Color.White;
-            }
+        private void panel_Account_MouseEnter(object sender, EventArgs e) {
+            isPopUp = true;
+            timer_MenuAccount.Start();
         }
 
         private void panel_Account_MouseLeave(object sender, EventArgs e) {
-            isButtonAccountClick = false;
+            isPopUp = false;
             timer_MenuAccount.Start();
-            xuiButton_Account_MouseLeave(null, null);
         }
 
         private void xuiButton_UpdateInfo_MouseEnter(object sender, EventArgs e) {
-            xuiButton_Account_Click(null, null);
+            isPopUp = true;
+            timer_MenuAccount.Start();
         }
 
         private void xuiButton_ResetAccount_MouseEnter(object sender, EventArgs e) {
-            xuiButton_Account_Click(null, null);
+            isPopUp = true;
+            timer_MenuAccount.Start();
         }
 
         private void xuiButton_DeleteAccount_MouseEnter(object sender, EventArgs e) {
-            xuiButton_Account_Click(null, null);
+            isPopUp = true;
+            timer_MenuAccount.Start();
         }
 
         private void xuiButton_ListAccount_MouseEnter(object sender, EventArgs e) {
-            xuiButton_Account_Click(null, null);
+            isPopUp = true;
+            timer_MenuAccount.Start();
         }
 
-        private void xuiButton_FindUser_MouseEnter(object sender, EventArgs e) {
-            xuiButton_Account_Click(null, null);
+        private void xuiButton_Logout_MouseEnter(object sender, EventArgs e) {
+            isPopUp = true;
+            timer_MenuAccount.Start();
+        }
+
+        private void xuiButton_Account_MouseLeave(object sender, EventArgs e) {
+            isPopUp = false;
+            timer_MenuAccount.Start();
+        }
+
+        private void xuiButton_UpdateInfo_MouseLeave(object sender, EventArgs e) {
+            isPopUp = false;
+            timer_MenuAccount.Start();
+        }
+
+        private void xuiButton_ResetAccount_MouseLeave(object sender, EventArgs e) {
+            isPopUp = false;
+            timer_MenuAccount.Start();
+        }
+
+        private void xuiButton_DeleteAccount_MouseLeave(object sender, EventArgs e) {
+            isPopUp = false;
+            timer_MenuAccount.Start();
+        }
+
+        private void xuiButton_ListAccount_MouseLeave(object sender, EventArgs e) {
+            isPopUp = false;
+            timer_MenuAccount.Start();
+        }
+
+        private void xuiButton_Logout_MouseLeave(object sender, EventArgs e) {
+            isPopUp = false;
+            timer_MenuAccount.Start();
         }
 
         private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {

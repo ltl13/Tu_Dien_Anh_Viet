@@ -34,12 +34,12 @@
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.btExit = new System.Windows.Forms.Button();
             this.pnlFooter = new System.Windows.Forms.Panel();
+            this.lbError = new System.Windows.Forms.Label();
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbCreateNewAccount = new System.Windows.Forms.Label();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.xuiFlatProgressBar_Login = new XanderUI.XUIFlatProgressBar();
-            this.lbError = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.pnlFooter.SuspendLayout();
@@ -174,6 +174,21 @@
             this.pnlFooter.Size = new System.Drawing.Size(290, 352);
             this.pnlFooter.TabIndex = 12;
             // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.BackColor = System.Drawing.Color.Transparent;
+            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError.ForeColor = System.Drawing.Color.Red;
+            this.lbError.Location = new System.Drawing.Point(39, 183);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(51, 17);
+            this.lbError.TabIndex = 13;
+            this.lbError.Text = "lbError";
+            this.lbError.Visible = false;
+            this.lbError.TextChanged += new System.EventHandler(this.lbError_TextChanged);
+            this.lbError.VisibleChanged += new System.EventHandler(this.lbError_VisibleChanged);
+            // 
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
@@ -226,20 +241,6 @@
             this.xuiFlatProgressBar_Login.Size = new System.Drawing.Size(345, 10);
             this.xuiFlatProgressBar_Login.TabIndex = 14;
             this.xuiFlatProgressBar_Login.Value = 0;
-            // 
-            // lbError
-            // 
-            this.lbError.AutoSize = true;
-            this.lbError.BackColor = System.Drawing.Color.Transparent;
-            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbError.ForeColor = System.Drawing.Color.Red;
-            this.lbError.Location = new System.Drawing.Point(39, 181);
-            this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(51, 17);
-            this.lbError.TabIndex = 13;
-            this.lbError.Text = "lbError";
-            this.lbError.Visible = false;
-            this.lbError.VisibleChanged += new System.EventHandler(this.lbError_VisibleChanged);
             // 
             // Form_Login
             // 

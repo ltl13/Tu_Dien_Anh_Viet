@@ -1,12 +1,9 @@
-﻿
 using System.Windows.Forms;
+gido
 
-namespace GUI
-{
-    public partial class UserControl_Grammar : UserControl
-    {
-        public UserControl_Grammar()
-        {
+namespace GUI {
+    public partial class UserControl_Grammar : UserControl {
+        public UserControl_Grammar() {
             InitializeComponent();
             
         }
