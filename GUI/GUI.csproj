@@ -272,6 +272,7 @@
     </None>
     <None Include="Connected Services\TranslatorService\SoapService.wsdl" />
     <None Include="Connected Services\TranslatorService\SoapService1.wsdl" />
+    <None Include="Fonts\SnesItalic-1G9Be.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -365,6 +366,8 @@
     <None Include="Resources\00.png" />
     <None Include="Resources\01.png" />
     <None Include="Resources\imageedit_1_5530705358.jpg" />
+    <None Include="Resources\imageedit_7_7290431428.jpg" />
+    <None Include="Resources\Image1.bmp" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>
