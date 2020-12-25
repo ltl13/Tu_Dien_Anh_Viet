@@ -63,6 +63,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _01 {
+            get {
+                object obj = ResourceManager.GetObject("01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap animal {
             get {
                 object obj = ResourceManager.GetObject("animal", resourceCulture);
@@ -203,6 +213,26 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imageedit_1_5530705358 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_1_5530705358", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_7_7290431428 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_7_7290431428", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap irregularverbs {
             get {
                 object obj = ResourceManager.GetObject("irregularverbs", resourceCulture);
@@ -317,6 +347,16 @@ namespace GUI.Properties {
             get {
                 object obj = ResourceManager.GetObject("rubbish_bin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] SnesItalic_1G9Be {
+            get {
+                object obj = ResourceManager.GetObject("SnesItalic_1G9Be", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

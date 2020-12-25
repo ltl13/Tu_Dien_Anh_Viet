@@ -306,6 +306,7 @@
             this.label_Game.TabIndex = 3;
             this.label_Game.Text = "Game";
             this.label_Game.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Game.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Game_MouseDown);
             // 
             // pictureBox_Game
             // 
@@ -317,6 +318,7 @@
             this.pictureBox_Game.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_Game.TabIndex = 2;
             this.pictureBox_Game.TabStop = false;
+            this.pictureBox_Game.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Game_MouseDown);
             // 
             // panel_Account
             // 

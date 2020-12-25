@@ -12,6 +12,7 @@ namespace GUI {
         private static UserControl_Translate mainTranslate;
         private static UserControl_ComboWord mainComboWord;
         private static UserControl_Exam mainExam;
+        private static UserControl_Grammar mainGrammar;
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private List<EnViDTO> recentlyEnVi;
@@ -42,12 +43,14 @@ namespace GUI {
             mainTranslate = new UserControl_Translate(this);
             mainComboWord = new UserControl_ComboWord();
             mainExam = new UserControl_Exam(this);
+            mainGrammar = new UserControl_Grammar();
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
             panel_Main.Controls.Add(mainTranslate);
             panel_Main.Controls.Add(mainComboWord);
             panel_Main.Controls.Add(mainExam);
+            panel_Main.Controls.Add(mainGrammar);
 
             panel_Main.BackColor = Color.FromArgb(204, 253, 255);
 
@@ -235,6 +238,7 @@ namespace GUI {
             panel_Translate.BackColor = Color.FromArgb(0, 217, 255);
             panel_Exam.BackColor = Color.FromArgb(0, 217, 255);
             panel_ComboWord.BackColor = Color.FromArgb(0, 217, 255);
+            panel_Game.BackColor = Color.FromArgb(0, 217, 255);
 
             if (mainSearch.isWordInfoOn) { mainSearch.isWordInfoOn = false; mainSearch.wordInfo.Dispose(); }
 
@@ -243,8 +247,20 @@ namespace GUI {
             mainTranslate.Visible = false;
             mainComboWord.Visible = false;
             mainExam.Visible = false;
+            mainGrammar.Visible = false;
 
             chosenPanel.BackColor = Color.FromArgb(204, 253, 255);
+        }
+
+        private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReturnClick(panel_Game);
+            mainGrammar.Visible = true;
+        }
+
+        private void label_Game_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox_Game_MouseDown(null, null);
         }
     }
 }
