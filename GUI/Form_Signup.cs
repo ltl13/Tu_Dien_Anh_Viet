@@ -1,6 +1,7 @@
 ﻿using BUS;
 using DTO;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace GUI {
@@ -20,7 +21,7 @@ namespace GUI {
             return AccountBUS.Instance.Register(userName, type, passWord, displayName);
         }
 
-        private void btLogin_Click(object sender, EventArgs e) {
+        private void btRegister_Click(object sender, EventArgs e) {
             string userName = tbUsername.Text;
             string passWord = tbPassword.Text;
             string confirm = tbConfirm.Text;
@@ -81,5 +82,76 @@ namespace GUI {
             }
         }
         #endregion
+
+        private void tbUsername_TextChanged(object sender, EventArgs e) {
+            System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9 ]*$");
+
+            if (!regexItem.IsMatch(tbUsername.Text)) {
+                lbError.Text = "Tài khoản chỉ gồm chữ và số!";
+                lbError.Visible = true;
+            }
+            else {
+                if (tbPassword.Text.Length != 0) {
+                    tbPassword.Text = string.Empty;
+                }
+
+                if (lbError.Visible == true) {
+                    lbError.Visible = false;
+                }
+            }
+        }
+
+        private void lbError_TextChanged(object sender, EventArgs e) {
+            if (lbError.Visible == true) {
+                btRegister.Enabled = false;
+                if (lbError.Text == "Username đã được đăng ký!") {
+                    tbUsername.Select();
+                    pnlUsername.BackColor = Color.Red;
+                    lbUsername.ForeColor = Color.Red;
+                    pnlPassword.BackColor = Color.Red;
+                    lbPassword.ForeColor = Color.Red;
+                    pnlConfirm.BackColor = Color.Red;
+                    lbConfirm.BackColor = Color.Red;
+                }
+                else if (lbError.Text == "Không được để trống!") {
+                    if (tbConfirm.Text.Length == 0) {
+                        tbConfirm.Select();
+                        pnlConfirm.BackColor = Color.Red;
+                        lbConfirm.BackColor = Color.Red;
+                    }
+                    if (tbPassword.Text.Length == 0) {
+                        tbPassword.Select();
+                        pnlPassword.BackColor = Color.Red;
+                        lbPassword.ForeColor = Color.Red;
+                    }
+                    if (tbUsername.Text.Length == 0) {
+                        tbUsername.Select();
+                        pnlUsername.BackColor = Color.Red;
+                        lbUsername.ForeColor = Color.Red;
+                    }
+                }
+                else if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
+                    pnlUsername.BackColor = Color.Red;
+                    lbUsername.ForeColor = Color.Red;
+                }
+            }
+            else {
+                btRegister.Enabled = true;
+                if (lbPassword.ForeColor == Color.Red) {
+                    if (tbPassword.Focused == true)
+                        tbPassword.Select();
+
+                    pnlPassword.BackColor = Color.DarkGray;
+                    lbPassword.ForeColor = Color.DarkGray;
+                }
+                if (lbUsername.ForeColor == Color.Red) {
+                    if (tbPassword.Focused != true)
+                        tbUsername.Select();
+
+                    pnlUsername.BackColor = Color.DarkGray;
+                    lbUsername.ForeColor = Color.DarkGray;
+                }
+            }
+        }
     }
 }

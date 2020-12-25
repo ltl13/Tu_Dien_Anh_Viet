@@ -29,38 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_ComboWord));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel_ComboWord = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel_ComboWord3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bt_irregularverb = new System.Windows.Forms.Button();
+            this.bt_IrregularVerb = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ComboWord1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bt_animal = new System.Windows.Forms.Button();
+            this.bt_Animal = new System.Windows.Forms.Button();
             this.xuiButton_Birds = new XanderUI.XUIButton();
-            this.xuiButton_insects = new XanderUI.XUIButton();
-            this.xuiButton_marines = new XanderUI.XUIButton();
-            this.xuiButton_mammals = new XanderUI.XUIButton();
-            this.xuiButton_breedingAnimals = new XanderUI.XUIButton();
+            this.xuiButton_Insects = new XanderUI.XUIButton();
+            this.xuiButton_Marines = new XanderUI.XUIButton();
+            this.xuiButton_Mammals = new XanderUI.XUIButton();
+            this.xuiButton_BreedingAnimals = new XanderUI.XUIButton();
             this.xuiButton_wildAnimal = new XanderUI.XUIButton();
             this.xuiButton_Pets = new XanderUI.XUIButton();
             this.xuiButton_AnimalGroups = new XanderUI.XUIButton();
             this.flowLayoutPanel_ComboWord2 = new System.Windows.Forms.FlowLayoutPanel();
             this.bt_Economic_ForeignTrade = new System.Windows.Forms.Button();
             this.flowLayoutPanel_ComboWord4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bt_IT = new System.Windows.Forms.Button();
-            this.xuiButton_numeralSystems = new XanderUI.XUIButton();
-            this.xuiButton_branches = new XanderUI.XUIButton();
-            this.xuiButton_computerConstruction = new XanderUI.XUIButton();
-            this.xuiButton_commonWords = new XanderUI.XUIButton();
+            this.bt_InformationTechnolygy = new System.Windows.Forms.Button();
+            this.xuiButton_NumeralSystems = new XanderUI.XUIButton();
+            this.xuiButton_Branches = new XanderUI.XUIButton();
+            this.xuiButton_ComputerConstruction = new XanderUI.XUIButton();
+            this.xuiButton_CommonWords = new XanderUI.XUIButton();
             this.xuiButton_Terminologies = new XanderUI.XUIButton();
             this.flowLayoutPanel_ComboWord5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bt_vegetables = new System.Windows.Forms.Button();
-            this.xuiButton_mushrooms = new XanderUI.XUIButton();
-            this.xuiButton_vegetables = new XanderUI.XUIButton();
+            this.bt_Vegetables = new System.Windows.Forms.Button();
+            this.xuiButton_Mushrooms = new XanderUI.XUIButton();
+            this.xuiButton_Vegetables = new XanderUI.XUIButton();
             this.xuiButton_Herbs_Spices = new XanderUI.XUIButton();
-            this.xuiButton_fruits = new XanderUI.XUIButton();
+            this.xuiButton_Fruits = new XanderUI.XUIButton();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.lb_comboWords = new System.Windows.Forms.Label();
             this.xuiButton_Back = new XanderUI.XUIButton();
@@ -89,7 +89,7 @@
             // 
             // flowLayoutPanel_ComboWord3
             // 
-            this.flowLayoutPanel_ComboWord3.Controls.Add(this.bt_irregularverb);
+            this.flowLayoutPanel_ComboWord3.Controls.Add(this.bt_IrregularVerb);
             this.flowLayoutPanel_ComboWord3.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel_ComboWord3.MaximumSize = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord3.MinimumSize = new System.Drawing.Size(481, 81);
@@ -97,33 +97,34 @@
             this.flowLayoutPanel_ComboWord3.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord3.TabIndex = 3;
             // 
-            // bt_irregularverb
+            // bt_IrregularVerb
             // 
-            this.bt_irregularverb.BackColor = System.Drawing.Color.Transparent;
-            this.bt_irregularverb.BackgroundImage = global::GUI.Properties.Resources.irregularverbs;
-            this.bt_irregularverb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_irregularverb.FlatAppearance.BorderSize = 0;
-            this.bt_irregularverb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_irregularverb.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_irregularverb.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_irregularverb.Location = new System.Drawing.Point(3, 3);
-            this.bt_irregularverb.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.bt_irregularverb.Name = "bt_irregularverb";
-            this.bt_irregularverb.Size = new System.Drawing.Size(478, 79);
-            this.bt_irregularverb.TabIndex = 1;
-            this.bt_irregularverb.UseVisualStyleBackColor = false;
-            this.bt_irregularverb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord3_MouseDown);
-            this.bt_irregularverb.MouseEnter += new System.EventHandler(this.button_ComboWord3_MouseEnter);
-            this.bt_irregularverb.MouseLeave += new System.EventHandler(this.button_ComboWord3_MouseLeave);
+            this.bt_IrregularVerb.BackColor = System.Drawing.Color.Transparent;
+            this.bt_IrregularVerb.BackgroundImage = global::GUI.Properties.Resources.irregularverbs;
+            this.bt_IrregularVerb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_IrregularVerb.FlatAppearance.BorderSize = 0;
+            this.bt_IrregularVerb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_IrregularVerb.Font = new System.Drawing.Font("Calibri", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_IrregularVerb.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_IrregularVerb.Location = new System.Drawing.Point(3, 3);
+            this.bt_IrregularVerb.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.bt_IrregularVerb.Name = "bt_IrregularVerb";
+            this.bt_IrregularVerb.Size = new System.Drawing.Size(478, 79);
+            this.bt_IrregularVerb.TabIndex = 1;
+            this.bt_IrregularVerb.Text = "Irregular Verb";
+            this.bt_IrregularVerb.UseVisualStyleBackColor = false;
+            this.bt_IrregularVerb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_IrregularVerb_MouseDown);
+            this.bt_IrregularVerb.MouseEnter += new System.EventHandler(this.bt_IrregularVerb_MouseEnter);
+            this.bt_IrregularVerb.MouseLeave += new System.EventHandler(this.bt_IrregularVerb_MouseLeave);
             // 
             // flowLayoutPanel_ComboWord1
             // 
-            this.flowLayoutPanel_ComboWord1.Controls.Add(this.bt_animal);
+            this.flowLayoutPanel_ComboWord1.Controls.Add(this.bt_Animal);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_Birds);
-            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_insects);
-            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_marines);
-            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_mammals);
-            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_breedingAnimals);
+            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_Insects);
+            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_Marines);
+            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_Mammals);
+            this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_BreedingAnimals);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_wildAnimal);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_Pets);
             this.flowLayoutPanel_ComboWord1.Controls.Add(this.xuiButton_AnimalGroups);
@@ -134,25 +135,25 @@
             this.flowLayoutPanel_ComboWord1.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord1.TabIndex = 2;
             // 
-            // bt_animal
+            // bt_Animal
             // 
-            this.bt_animal.BackColor = System.Drawing.Color.Transparent;
-            this.bt_animal.BackgroundImage = global::GUI.Properties.Resources.animal;
-            this.bt_animal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_animal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_animal.FlatAppearance.BorderSize = 0;
-            this.bt_animal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_animal.Font = new System.Drawing.Font("Calibri", 24F);
-            this.bt_animal.ForeColor = System.Drawing.Color.Black;
-            this.bt_animal.Location = new System.Drawing.Point(3, 3);
-            this.bt_animal.Name = "bt_animal";
-            this.bt_animal.Size = new System.Drawing.Size(478, 79);
-            this.bt_animal.TabIndex = 0;
-            this.bt_animal.Text = "Animal";
-            this.bt_animal.UseVisualStyleBackColor = false;
-            this.bt_animal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord1_MouseDown);
-            this.bt_animal.MouseEnter += new System.EventHandler(this.button_ComboWord1_MouseEnter);
-            this.bt_animal.MouseLeave += new System.EventHandler(this.button_ComboWord1_MouseLeave);
+            this.bt_Animal.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Animal.BackgroundImage = global::GUI.Properties.Resources.animal;
+            this.bt_Animal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_Animal.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_Animal.FlatAppearance.BorderSize = 0;
+            this.bt_Animal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Animal.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            this.bt_Animal.ForeColor = System.Drawing.Color.Black;
+            this.bt_Animal.Location = new System.Drawing.Point(3, 3);
+            this.bt_Animal.Name = "bt_Animal";
+            this.bt_Animal.Size = new System.Drawing.Size(478, 79);
+            this.bt_Animal.TabIndex = 0;
+            this.bt_Animal.Text = "Animal";
+            this.bt_Animal.UseVisualStyleBackColor = false;
+            this.bt_Animal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_Animal_MouseDown);
+            this.bt_Animal.MouseEnter += new System.EventHandler(this.bt_Animal_MouseEnter);
+            this.bt_Animal.MouseLeave += new System.EventHandler(this.bt_Animal_MouseLeave);
             // 
             // xuiButton_Birds
             // 
@@ -176,93 +177,93 @@
             this.xuiButton_Birds.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Birds.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Birds_MouseDown);
             // 
-            // xuiButton_insects
+            // xuiButton_Insects
             // 
-            this.xuiButton_insects.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_insects.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_insects.ButtonImage")));
-            this.xuiButton_insects.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_insects.ButtonText = "Insects";
-            this.xuiButton_insects.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_insects.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_insects.CornerRadius = 5;
-            this.xuiButton_insects.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_insects.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_insects.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_insects.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_insects.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_insects.Location = new System.Drawing.Point(3, 156);
-            this.xuiButton_insects.Name = "xuiButton_insects";
-            this.xuiButton_insects.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_insects.TabIndex = 2;
-            this.xuiButton_insects.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_insects.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_insects.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_insects_MouseDown);
+            this.xuiButton_Insects.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Insects.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Insects.ButtonImage")));
+            this.xuiButton_Insects.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Insects.ButtonText = "Insects";
+            this.xuiButton_Insects.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Insects.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_Insects.CornerRadius = 5;
+            this.xuiButton_Insects.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Insects.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Insects.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Insects.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Insects.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Insects.Location = new System.Drawing.Point(3, 156);
+            this.xuiButton_Insects.Name = "xuiButton_Insects";
+            this.xuiButton_Insects.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_Insects.TabIndex = 2;
+            this.xuiButton_Insects.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Insects.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Insects.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Insects_MouseDown);
             // 
-            // xuiButton_marines
+            // xuiButton_Marines
             // 
-            this.xuiButton_marines.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_marines.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_marines.ButtonImage")));
-            this.xuiButton_marines.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_marines.ButtonText = "Marines";
-            this.xuiButton_marines.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_marines.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_marines.CornerRadius = 5;
-            this.xuiButton_marines.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_marines.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_marines.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_marines.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_marines.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_marines.Location = new System.Drawing.Point(3, 224);
-            this.xuiButton_marines.Name = "xuiButton_marines";
-            this.xuiButton_marines.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_marines.TabIndex = 3;
-            this.xuiButton_marines.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_marines.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_marines.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_marines_MouseDown);
+            this.xuiButton_Marines.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Marines.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Marines.ButtonImage")));
+            this.xuiButton_Marines.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Marines.ButtonText = "Marines";
+            this.xuiButton_Marines.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Marines.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_Marines.CornerRadius = 5;
+            this.xuiButton_Marines.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Marines.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Marines.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Marines.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Marines.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Marines.Location = new System.Drawing.Point(3, 224);
+            this.xuiButton_Marines.Name = "xuiButton_Marines";
+            this.xuiButton_Marines.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_Marines.TabIndex = 3;
+            this.xuiButton_Marines.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Marines.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Marines.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Marines_MouseDown);
             // 
-            // xuiButton_mammals
+            // xuiButton_Mammals
             // 
-            this.xuiButton_mammals.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_mammals.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_mammals.ButtonImage")));
-            this.xuiButton_mammals.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_mammals.ButtonText = "Mammals";
-            this.xuiButton_mammals.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_mammals.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_mammals.CornerRadius = 5;
-            this.xuiButton_mammals.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_mammals.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_mammals.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_mammals.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_mammals.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_mammals.Location = new System.Drawing.Point(3, 292);
-            this.xuiButton_mammals.Name = "xuiButton_mammals";
-            this.xuiButton_mammals.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_mammals.TabIndex = 4;
-            this.xuiButton_mammals.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_mammals.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_mammals.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_mammals_MouseDown);
+            this.xuiButton_Mammals.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Mammals.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Mammals.ButtonImage")));
+            this.xuiButton_Mammals.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Mammals.ButtonText = "Mammals";
+            this.xuiButton_Mammals.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Mammals.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_Mammals.CornerRadius = 5;
+            this.xuiButton_Mammals.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Mammals.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Mammals.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Mammals.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Mammals.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Mammals.Location = new System.Drawing.Point(3, 292);
+            this.xuiButton_Mammals.Name = "xuiButton_Mammals";
+            this.xuiButton_Mammals.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_Mammals.TabIndex = 4;
+            this.xuiButton_Mammals.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Mammals.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Mammals.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Mammals_MouseDown);
             // 
-            // xuiButton_breedingAnimals
+            // xuiButton_BreedingAnimals
             // 
-            this.xuiButton_breedingAnimals.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_breedingAnimals.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_breedingAnimals.ButtonImage")));
-            this.xuiButton_breedingAnimals.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_breedingAnimals.ButtonText = "Breeding animals";
-            this.xuiButton_breedingAnimals.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_breedingAnimals.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_breedingAnimals.CornerRadius = 5;
-            this.xuiButton_breedingAnimals.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_breedingAnimals.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_breedingAnimals.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_breedingAnimals.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_breedingAnimals.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_breedingAnimals.Location = new System.Drawing.Point(3, 360);
-            this.xuiButton_breedingAnimals.Name = "xuiButton_breedingAnimals";
-            this.xuiButton_breedingAnimals.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_breedingAnimals.TabIndex = 5;
-            this.xuiButton_breedingAnimals.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_breedingAnimals.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_breedingAnimals.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_breedingAnimals_MouseDown);
+            this.xuiButton_BreedingAnimals.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_BreedingAnimals.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_BreedingAnimals.ButtonImage")));
+            this.xuiButton_BreedingAnimals.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_BreedingAnimals.ButtonText = "Breeding animals";
+            this.xuiButton_BreedingAnimals.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_BreedingAnimals.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_BreedingAnimals.CornerRadius = 5;
+            this.xuiButton_BreedingAnimals.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_BreedingAnimals.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_BreedingAnimals.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_BreedingAnimals.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_BreedingAnimals.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_BreedingAnimals.Location = new System.Drawing.Point(3, 360);
+            this.xuiButton_BreedingAnimals.Name = "xuiButton_BreedingAnimals";
+            this.xuiButton_BreedingAnimals.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_BreedingAnimals.TabIndex = 5;
+            this.xuiButton_BreedingAnimals.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_BreedingAnimals.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_BreedingAnimals.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_BreedingAnimals_MouseDown);
             // 
             // xuiButton_wildAnimal
             // 
@@ -284,7 +285,7 @@
             this.xuiButton_wildAnimal.TabIndex = 6;
             this.xuiButton_wildAnimal.TextColor = System.Drawing.Color.Black;
             this.xuiButton_wildAnimal.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_wildAnimal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_wildAnimal_MouseDown);
+            this.xuiButton_wildAnimal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_WildAnimal_MouseDown);
             // 
             // xuiButton_Pets
             // 
@@ -347,7 +348,7 @@
             this.bt_Economic_ForeignTrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_Economic_ForeignTrade.FlatAppearance.BorderSize = 0;
             this.bt_Economic_ForeignTrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Economic_ForeignTrade.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Economic_ForeignTrade.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Economic_ForeignTrade.ForeColor = System.Drawing.Color.Blue;
             this.bt_Economic_ForeignTrade.Location = new System.Drawing.Point(3, 3);
             this.bt_Economic_ForeignTrade.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
@@ -356,17 +357,17 @@
             this.bt_Economic_ForeignTrade.TabIndex = 1;
             this.bt_Economic_ForeignTrade.Text = "Economic - Foreign Trade";
             this.bt_Economic_ForeignTrade.UseVisualStyleBackColor = false;
-            this.bt_Economic_ForeignTrade.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord2_MouseDown);
-            this.bt_Economic_ForeignTrade.MouseEnter += new System.EventHandler(this.button_ComboWord2_MouseEnter);
-            this.bt_Economic_ForeignTrade.MouseLeave += new System.EventHandler(this.button_ComboWord2_MouseLeave);
+            this.bt_Economic_ForeignTrade.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_Economic_ForeignTrade_MouseDown);
+            this.bt_Economic_ForeignTrade.MouseEnter += new System.EventHandler(this.bt_Economic_ForeignTrade_MouseEnter);
+            this.bt_Economic_ForeignTrade.MouseLeave += new System.EventHandler(this.bt_Economic_ForeignTrade_MouseLeave);
             // 
             // flowLayoutPanel_ComboWord4
             // 
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.bt_IT);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_numeralSystems);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_branches);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_computerConstruction);
-            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_commonWords);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.bt_InformationTechnolygy);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_NumeralSystems);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_Branches);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_ComputerConstruction);
+            this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_CommonWords);
             this.flowLayoutPanel_ComboWord4.Controls.Add(this.xuiButton_Terminologies);
             this.flowLayoutPanel_ComboWord4.Location = new System.Drawing.Point(3, 264);
             this.flowLayoutPanel_ComboWord4.MaximumSize = new System.Drawing.Size(481, 424);
@@ -375,113 +376,113 @@
             this.flowLayoutPanel_ComboWord4.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord4.TabIndex = 4;
             // 
-            // bt_IT
+            // bt_InformationTechnolygy
             // 
-            this.bt_IT.BackColor = System.Drawing.Color.Transparent;
-            this.bt_IT.BackgroundImage = global::GUI.Properties.Resources.IT;
-            this.bt_IT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_IT.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_IT.FlatAppearance.BorderSize = 0;
-            this.bt_IT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_IT.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_IT.ForeColor = System.Drawing.Color.White;
-            this.bt_IT.Location = new System.Drawing.Point(3, 3);
-            this.bt_IT.Name = "bt_IT";
-            this.bt_IT.Size = new System.Drawing.Size(478, 79);
-            this.bt_IT.TabIndex = 0;
-            this.bt_IT.Text = "Information Technology";
-            this.bt_IT.UseVisualStyleBackColor = false;
-            this.bt_IT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord4_MouseDown);
-            this.bt_IT.MouseEnter += new System.EventHandler(this.button_ComboWord4_MouseEnter);
-            this.bt_IT.MouseLeave += new System.EventHandler(this.button_ComboWord4_MouseLeave);
+            this.bt_InformationTechnolygy.BackColor = System.Drawing.Color.Transparent;
+            this.bt_InformationTechnolygy.BackgroundImage = global::GUI.Properties.Resources.IT;
+            this.bt_InformationTechnolygy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_InformationTechnolygy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_InformationTechnolygy.FlatAppearance.BorderSize = 0;
+            this.bt_InformationTechnolygy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_InformationTechnolygy.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_InformationTechnolygy.ForeColor = System.Drawing.Color.White;
+            this.bt_InformationTechnolygy.Location = new System.Drawing.Point(3, 3);
+            this.bt_InformationTechnolygy.Name = "bt_InformationTechnolygy";
+            this.bt_InformationTechnolygy.Size = new System.Drawing.Size(478, 79);
+            this.bt_InformationTechnolygy.TabIndex = 0;
+            this.bt_InformationTechnolygy.Text = "Information Technology";
+            this.bt_InformationTechnolygy.UseVisualStyleBackColor = false;
+            this.bt_InformationTechnolygy.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_InformationTechnolygy_MouseDown);
+            this.bt_InformationTechnolygy.MouseEnter += new System.EventHandler(this.bt_InformationTechnolygy_MouseEnter);
+            this.bt_InformationTechnolygy.MouseLeave += new System.EventHandler(this.bt_InformationTechnolygy_MouseLeave);
             // 
-            // xuiButton_numeralSystems
+            // xuiButton_NumeralSystems
             // 
-            this.xuiButton_numeralSystems.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_numeralSystems.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_numeralSystems.ButtonImage")));
-            this.xuiButton_numeralSystems.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_numeralSystems.ButtonText = "Numeral systems";
-            this.xuiButton_numeralSystems.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_numeralSystems.ClickTextColor = System.Drawing.Color.Black;
-            this.xuiButton_numeralSystems.CornerRadius = 5;
-            this.xuiButton_numeralSystems.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_numeralSystems.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_numeralSystems.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_numeralSystems.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_numeralSystems.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_numeralSystems.Location = new System.Drawing.Point(3, 88);
-            this.xuiButton_numeralSystems.Name = "xuiButton_numeralSystems";
-            this.xuiButton_numeralSystems.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_numeralSystems.TabIndex = 1;
-            this.xuiButton_numeralSystems.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_numeralSystems.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_numeralSystems.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_numeralSystems_MouseDown);
+            this.xuiButton_NumeralSystems.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_NumeralSystems.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_NumeralSystems.ButtonImage")));
+            this.xuiButton_NumeralSystems.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_NumeralSystems.ButtonText = "Numeral systems";
+            this.xuiButton_NumeralSystems.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_NumeralSystems.ClickTextColor = System.Drawing.Color.Black;
+            this.xuiButton_NumeralSystems.CornerRadius = 5;
+            this.xuiButton_NumeralSystems.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_NumeralSystems.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_NumeralSystems.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_NumeralSystems.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_NumeralSystems.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_NumeralSystems.Location = new System.Drawing.Point(3, 88);
+            this.xuiButton_NumeralSystems.Name = "xuiButton_NumeralSystems";
+            this.xuiButton_NumeralSystems.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_NumeralSystems.TabIndex = 1;
+            this.xuiButton_NumeralSystems.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_NumeralSystems.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_NumeralSystems.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_NumeralSystems_MouseDown);
             // 
-            // xuiButton_branches
+            // xuiButton_Branches
             // 
-            this.xuiButton_branches.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_branches.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_branches.ButtonImage")));
-            this.xuiButton_branches.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_branches.ButtonText = "Branches ";
-            this.xuiButton_branches.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_branches.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_branches.CornerRadius = 5;
-            this.xuiButton_branches.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_branches.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_branches.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_branches.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_branches.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_branches.Location = new System.Drawing.Point(3, 156);
-            this.xuiButton_branches.Name = "xuiButton_branches";
-            this.xuiButton_branches.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_branches.TabIndex = 2;
-            this.xuiButton_branches.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_branches.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_branches.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_branches_MouseDown);
+            this.xuiButton_Branches.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Branches.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Branches.ButtonImage")));
+            this.xuiButton_Branches.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Branches.ButtonText = "Branches ";
+            this.xuiButton_Branches.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Branches.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_Branches.CornerRadius = 5;
+            this.xuiButton_Branches.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Branches.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Branches.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Branches.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Branches.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Branches.Location = new System.Drawing.Point(3, 156);
+            this.xuiButton_Branches.Name = "xuiButton_Branches";
+            this.xuiButton_Branches.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_Branches.TabIndex = 2;
+            this.xuiButton_Branches.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Branches.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Branches.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Branches_MouseDown);
             // 
-            // xuiButton_computerConstruction
+            // xuiButton_ComputerConstruction
             // 
-            this.xuiButton_computerConstruction.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_computerConstruction.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_computerConstruction.ButtonImage")));
-            this.xuiButton_computerConstruction.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_computerConstruction.ButtonText = "Computer construction";
-            this.xuiButton_computerConstruction.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_computerConstruction.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_computerConstruction.CornerRadius = 5;
-            this.xuiButton_computerConstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_computerConstruction.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_computerConstruction.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_computerConstruction.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_computerConstruction.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_computerConstruction.Location = new System.Drawing.Point(3, 224);
-            this.xuiButton_computerConstruction.Name = "xuiButton_computerConstruction";
-            this.xuiButton_computerConstruction.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_computerConstruction.TabIndex = 3;
-            this.xuiButton_computerConstruction.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_computerConstruction.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_computerConstruction.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_computerConstruction_MouseDown);
+            this.xuiButton_ComputerConstruction.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_ComputerConstruction.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ComputerConstruction.ButtonImage")));
+            this.xuiButton_ComputerConstruction.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_ComputerConstruction.ButtonText = "Computer construction";
+            this.xuiButton_ComputerConstruction.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComputerConstruction.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_ComputerConstruction.CornerRadius = 5;
+            this.xuiButton_ComputerConstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_ComputerConstruction.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComputerConstruction.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_ComputerConstruction.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComputerConstruction.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_ComputerConstruction.Location = new System.Drawing.Point(3, 224);
+            this.xuiButton_ComputerConstruction.Name = "xuiButton_ComputerConstruction";
+            this.xuiButton_ComputerConstruction.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_ComputerConstruction.TabIndex = 3;
+            this.xuiButton_ComputerConstruction.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_ComputerConstruction.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_ComputerConstruction.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_ComputerConstruction_MouseDown);
             // 
-            // xuiButton_commonWords
+            // xuiButton_CommonWords
             // 
-            this.xuiButton_commonWords.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_commonWords.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_commonWords.ButtonImage")));
-            this.xuiButton_commonWords.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_commonWords.ButtonText = "Common words";
-            this.xuiButton_commonWords.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_commonWords.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_commonWords.CornerRadius = 5;
-            this.xuiButton_commonWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_commonWords.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_commonWords.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_commonWords.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_commonWords.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_commonWords.Location = new System.Drawing.Point(3, 292);
-            this.xuiButton_commonWords.Name = "xuiButton_commonWords";
-            this.xuiButton_commonWords.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_commonWords.TabIndex = 4;
-            this.xuiButton_commonWords.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_commonWords.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_commonWords.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_commonWords_MouseDown);
+            this.xuiButton_CommonWords.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_CommonWords.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_CommonWords.ButtonImage")));
+            this.xuiButton_CommonWords.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_CommonWords.ButtonText = "Common words";
+            this.xuiButton_CommonWords.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_CommonWords.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_CommonWords.CornerRadius = 5;
+            this.xuiButton_CommonWords.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_CommonWords.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_CommonWords.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_CommonWords.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_CommonWords.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_CommonWords.Location = new System.Drawing.Point(3, 292);
+            this.xuiButton_CommonWords.Name = "xuiButton_CommonWords";
+            this.xuiButton_CommonWords.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_CommonWords.TabIndex = 4;
+            this.xuiButton_CommonWords.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_CommonWords.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_CommonWords.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_CommonWords_MouseDown);
             // 
             // xuiButton_Terminologies
             // 
@@ -507,11 +508,11 @@
             // 
             // flowLayoutPanel_ComboWord5
             // 
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.bt_vegetables);
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_mushrooms);
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_vegetables);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.bt_Vegetables);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_Mushrooms);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_Vegetables);
             this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_Herbs_Spices);
-            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_fruits);
+            this.flowLayoutPanel_ComboWord5.Controls.Add(this.xuiButton_Fruits);
             this.flowLayoutPanel_ComboWord5.Location = new System.Drawing.Point(3, 351);
             this.flowLayoutPanel_ComboWord5.MaximumSize = new System.Drawing.Size(481, 356);
             this.flowLayoutPanel_ComboWord5.MinimumSize = new System.Drawing.Size(481, 81);
@@ -519,69 +520,69 @@
             this.flowLayoutPanel_ComboWord5.Size = new System.Drawing.Size(481, 81);
             this.flowLayoutPanel_ComboWord5.TabIndex = 5;
             // 
-            // bt_vegetables
+            // bt_Vegetables
             // 
-            this.bt_vegetables.BackColor = System.Drawing.Color.Transparent;
-            this.bt_vegetables.BackgroundImage = global::GUI.Properties.Resources.vegetables;
-            this.bt_vegetables.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_vegetables.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.bt_vegetables.FlatAppearance.BorderSize = 0;
-            this.bt_vegetables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_vegetables.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_vegetables.ForeColor = System.Drawing.Color.Cyan;
-            this.bt_vegetables.Location = new System.Drawing.Point(3, 3);
-            this.bt_vegetables.Name = "bt_vegetables";
-            this.bt_vegetables.Size = new System.Drawing.Size(478, 79);
-            this.bt_vegetables.TabIndex = 0;
-            this.bt_vegetables.Text = "Vegetables";
-            this.bt_vegetables.UseVisualStyleBackColor = false;
-            this.bt_vegetables.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_ComboWord5_MouseDown);
-            this.bt_vegetables.MouseEnter += new System.EventHandler(this.button_ComboWord5_MouseEnter);
-            this.bt_vegetables.MouseLeave += new System.EventHandler(this.button_ComboWord5_MouseLeave);
+            this.bt_Vegetables.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Vegetables.BackgroundImage = global::GUI.Properties.Resources.vegetables;
+            this.bt_Vegetables.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_Vegetables.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bt_Vegetables.FlatAppearance.BorderSize = 0;
+            this.bt_Vegetables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Vegetables.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
+            this.bt_Vegetables.ForeColor = System.Drawing.Color.Aqua;
+            this.bt_Vegetables.Location = new System.Drawing.Point(3, 3);
+            this.bt_Vegetables.Name = "bt_Vegetables";
+            this.bt_Vegetables.Size = new System.Drawing.Size(478, 79);
+            this.bt_Vegetables.TabIndex = 0;
+            this.bt_Vegetables.Text = "Vegetables";
+            this.bt_Vegetables.UseVisualStyleBackColor = false;
+            this.bt_Vegetables.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_Vegetables_MouseDown);
+            this.bt_Vegetables.MouseEnter += new System.EventHandler(this.bt_Vegetables_MouseEnter);
+            this.bt_Vegetables.MouseLeave += new System.EventHandler(this.bt_Vegetables_MouseLeave);
             // 
-            // xuiButton_mushrooms
+            // xuiButton_Mushrooms
             // 
-            this.xuiButton_mushrooms.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_mushrooms.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_mushrooms.ButtonImage")));
-            this.xuiButton_mushrooms.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_mushrooms.ButtonText = "Mushrooms";
-            this.xuiButton_mushrooms.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_mushrooms.ClickTextColor = System.Drawing.Color.Black;
-            this.xuiButton_mushrooms.CornerRadius = 5;
-            this.xuiButton_mushrooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_mushrooms.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_mushrooms.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_mushrooms.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_mushrooms.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_mushrooms.Location = new System.Drawing.Point(3, 88);
-            this.xuiButton_mushrooms.Name = "xuiButton_mushrooms";
-            this.xuiButton_mushrooms.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_mushrooms.TabIndex = 1;
-            this.xuiButton_mushrooms.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_mushrooms.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_mushrooms.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_mushrooms_MouseDown);
+            this.xuiButton_Mushrooms.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Mushrooms.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Mushrooms.ButtonImage")));
+            this.xuiButton_Mushrooms.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Mushrooms.ButtonText = "Mushrooms";
+            this.xuiButton_Mushrooms.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Mushrooms.ClickTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Mushrooms.CornerRadius = 5;
+            this.xuiButton_Mushrooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Mushrooms.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Mushrooms.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Mushrooms.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Mushrooms.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Mushrooms.Location = new System.Drawing.Point(3, 88);
+            this.xuiButton_Mushrooms.Name = "xuiButton_Mushrooms";
+            this.xuiButton_Mushrooms.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_Mushrooms.TabIndex = 1;
+            this.xuiButton_Mushrooms.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Mushrooms.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Mushrooms.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Mushrooms_MouseDown);
             // 
-            // xuiButton_vegetables
+            // xuiButton_Vegetables
             // 
-            this.xuiButton_vegetables.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_vegetables.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_vegetables.ButtonImage")));
-            this.xuiButton_vegetables.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_vegetables.ButtonText = "Vegetables";
-            this.xuiButton_vegetables.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_vegetables.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_vegetables.CornerRadius = 5;
-            this.xuiButton_vegetables.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_vegetables.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_vegetables.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_vegetables.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_vegetables.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_vegetables.Location = new System.Drawing.Point(3, 156);
-            this.xuiButton_vegetables.Name = "xuiButton_vegetables";
-            this.xuiButton_vegetables.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_vegetables.TabIndex = 2;
-            this.xuiButton_vegetables.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_vegetables.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_vegetables.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_vegetables_MouseDown);
+            this.xuiButton_Vegetables.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Vegetables.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Vegetables.ButtonImage")));
+            this.xuiButton_Vegetables.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Vegetables.ButtonText = "Vegetables";
+            this.xuiButton_Vegetables.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Vegetables.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_Vegetables.CornerRadius = 5;
+            this.xuiButton_Vegetables.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Vegetables.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Vegetables.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Vegetables.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Vegetables.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Vegetables.Location = new System.Drawing.Point(3, 156);
+            this.xuiButton_Vegetables.Name = "xuiButton_Vegetables";
+            this.xuiButton_Vegetables.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_Vegetables.TabIndex = 2;
+            this.xuiButton_Vegetables.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Vegetables.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Vegetables.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Vegetables_MouseDown);
             // 
             // xuiButton_Herbs_Spices
             // 
@@ -605,27 +606,27 @@
             this.xuiButton_Herbs_Spices.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Herbs_Spices.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Herbs_Spices_MouseDown);
             // 
-            // xuiButton_fruits
+            // xuiButton_Fruits
             // 
-            this.xuiButton_fruits.BackgroundColor = System.Drawing.Color.White;
-            this.xuiButton_fruits.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_fruits.ButtonImage")));
-            this.xuiButton_fruits.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_fruits.ButtonText = "Fruits";
-            this.xuiButton_fruits.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_fruits.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.xuiButton_fruits.CornerRadius = 5;
-            this.xuiButton_fruits.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_fruits.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_fruits.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.xuiButton_fruits.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_fruits.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_fruits.Location = new System.Drawing.Point(3, 292);
-            this.xuiButton_fruits.Name = "xuiButton_fruits";
-            this.xuiButton_fruits.Size = new System.Drawing.Size(478, 62);
-            this.xuiButton_fruits.TabIndex = 4;
-            this.xuiButton_fruits.TextColor = System.Drawing.Color.Black;
-            this.xuiButton_fruits.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_fruits.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_fruits_MouseDown);
+            this.xuiButton_Fruits.BackgroundColor = System.Drawing.Color.White;
+            this.xuiButton_Fruits.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Fruits.ButtonImage")));
+            this.xuiButton_Fruits.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
+            this.xuiButton_Fruits.ButtonText = "Fruits";
+            this.xuiButton_Fruits.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Fruits.ClickTextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.xuiButton_Fruits.CornerRadius = 5;
+            this.xuiButton_Fruits.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.xuiButton_Fruits.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Fruits.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xuiButton_Fruits.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Fruits.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Fruits.Location = new System.Drawing.Point(3, 292);
+            this.xuiButton_Fruits.Name = "xuiButton_Fruits";
+            this.xuiButton_Fruits.Size = new System.Drawing.Size(478, 62);
+            this.xuiButton_Fruits.TabIndex = 4;
+            this.xuiButton_Fruits.TextColor = System.Drawing.Color.Black;
+            this.xuiButton_Fruits.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Fruits.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Fruits_MouseDown);
             // 
             // dataGridView
             // 
@@ -634,46 +635,46 @@
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle81.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle81.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle81.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle81.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle81.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle81.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle81;
             this.dataGridView.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle82.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle82.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle82.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle82.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle82.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle82;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView.EnableHeadersVisualStyles = false;
             this.dataGridView.Location = new System.Drawing.Point(10, 45);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle83.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle83.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle83.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle83.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle83.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle83;
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.RowHeadersWidth = 92;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle84.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle84.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle84.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle84.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle84;
             this.dataGridView.RowTemplate.Height = 37;
             this.dataGridView.RowTemplate.ReadOnly = true;
             this.dataGridView.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -740,7 +741,6 @@
             this.metroTextBox_Filter.MaxLength = 32767;
             this.metroTextBox_Filter.Name = "metroTextBox_Filter";
             this.metroTextBox_Filter.PasswordChar = '\0';
-            this.metroTextBox_Filter.PromptText = "Filter...";
             this.metroTextBox_Filter.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Filter.SelectedText = "";
             this.metroTextBox_Filter.SelectionLength = 0;
@@ -780,34 +780,34 @@
 
         #endregion
 
-        private System.Windows.Forms.Button bt_animal;
+        private System.Windows.Forms.Button bt_Animal;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord;
         private System.Windows.Forms.Button bt_Economic_ForeignTrade;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord1;
         private XanderUI.XUIButton xuiButton_Birds;
-        private XanderUI.XUIButton xuiButton_insects;
-        private XanderUI.XUIButton xuiButton_marines;
-        private XanderUI.XUIButton xuiButton_mammals;
+        private XanderUI.XUIButton xuiButton_Insects;
+        private XanderUI.XUIButton xuiButton_Marines;
+        private XanderUI.XUIButton xuiButton_Mammals;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord2;
-        private XanderUI.XUIButton xuiButton_breedingAnimals;
+        private XanderUI.XUIButton xuiButton_BreedingAnimals;
         private XanderUI.XUIButton xuiButton_wildAnimal;
         private XanderUI.XUIButton xuiButton_Pets;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord3;
-        private System.Windows.Forms.Button bt_irregularverb;
+        private System.Windows.Forms.Button bt_IrregularVerb;
         private XanderUI.XUIButton xuiButton_AnimalGroups;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord4;
-        private System.Windows.Forms.Button bt_IT;
-        private XanderUI.XUIButton xuiButton_numeralSystems;
-        private XanderUI.XUIButton xuiButton_branches;
-        private XanderUI.XUIButton xuiButton_computerConstruction;
-        private XanderUI.XUIButton xuiButton_commonWords;
+        private System.Windows.Forms.Button bt_InformationTechnolygy;
+        private XanderUI.XUIButton xuiButton_NumeralSystems;
+        private XanderUI.XUIButton xuiButton_Branches;
+        private XanderUI.XUIButton xuiButton_ComputerConstruction;
+        private XanderUI.XUIButton xuiButton_CommonWords;
         private XanderUI.XUIButton xuiButton_Terminologies;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_ComboWord5;
-        private System.Windows.Forms.Button bt_vegetables;
-        private XanderUI.XUIButton xuiButton_mushrooms;
-        private XanderUI.XUIButton xuiButton_vegetables;
+        private System.Windows.Forms.Button bt_Vegetables;
+        private XanderUI.XUIButton xuiButton_Mushrooms;
+        private XanderUI.XUIButton xuiButton_Vegetables;
         private XanderUI.XUIButton xuiButton_Herbs_Spices;
-        private XanderUI.XUIButton xuiButton_fruits;
+        private XanderUI.XUIButton xuiButton_Fruits;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label lb_comboWords;
         private XanderUI.XUIButton xuiButton_Back;

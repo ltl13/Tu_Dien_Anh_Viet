@@ -38,6 +38,10 @@ namespace GUI {
             xuiButton_NotInterest.Visible = false;
         }
 
+        private void UserControl_WordInfo_Load(object sender, EventArgs e) {
+            label_Word.Focus();
+        }
+
         private void metroTile_Back_Click(object sender, EventArgs e) {
             father.Show();
             this.Dispose();
