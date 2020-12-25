@@ -132,7 +132,6 @@
             // pictureBox_Search
             // 
             this.pictureBox_Search.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Search.Image = global::GUI.Properties.Resources.list_searching_variant;
             this.pictureBox_Search.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Search.Name = "pictureBox_Search";
             this.pictureBox_Search.Size = new System.Drawing.Size(77, 77);
@@ -168,7 +167,6 @@
             // pictureBox_Exam
             // 
             this.pictureBox_Exam.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Exam.Image = global::GUI.Properties.Resources.exam;
             this.pictureBox_Exam.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Exam.Name = "pictureBox_Exam";
             this.pictureBox_Exam.Size = new System.Drawing.Size(77, 77);
@@ -204,7 +202,6 @@
             // pictureBox_ComboWord
             // 
             this.pictureBox_ComboWord.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_ComboWord.Image = global::GUI.Properties.Resources.folder;
             this.pictureBox_ComboWord.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
             this.pictureBox_ComboWord.Size = new System.Drawing.Size(77, 77);
@@ -240,7 +237,6 @@
             // pictureBox_FlashCard
             // 
             this.pictureBox_FlashCard.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_FlashCard.Image = global::GUI.Properties.Resources.stationery_stack;
             this.pictureBox_FlashCard.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_FlashCard.Name = "pictureBox_FlashCard";
             this.pictureBox_FlashCard.Size = new System.Drawing.Size(77, 77);
@@ -276,7 +272,6 @@
             // pictureBox_Translate
             // 
             this.pictureBox_Translate.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Translate.Image = global::GUI.Properties.Resources.translation;
             this.pictureBox_Translate.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Translate.Name = "pictureBox_Translate";
             this.pictureBox_Translate.Size = new System.Drawing.Size(77, 77);
@@ -310,7 +305,6 @@
             // pictureBox_Game
             // 
             this.pictureBox_Game.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Game.Image = global::GUI.Properties.Resources.console;
             this.pictureBox_Game.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Game.Name = "pictureBox_Game";
             this.pictureBox_Game.Size = new System.Drawing.Size(77, 77);
