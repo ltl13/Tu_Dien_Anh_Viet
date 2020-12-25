@@ -235,4 +235,7 @@
   <data name="SnesItalic_1G9Be" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Fonts\SnesItalic-1G9Be.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Squirk_RMvV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Fonts\Squirk-RMvV.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
