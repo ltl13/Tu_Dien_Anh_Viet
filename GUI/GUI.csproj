@@ -122,6 +122,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Form_Game_BuildBridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Game_BuildBridge.Designer.cs">
+      <DependentUpon>Form_Game_BuildBridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Game_CarRacing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Game_CarRacing.Designer.cs">
+      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Update_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +225,12 @@
     <Compile Include="UserControl_WordInfo.Designer.cs">
       <DependentUpon>UserControl_WordInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_Game_BuildBridge.resx">
+      <DependentUpon>Form_Game_BuildBridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Game_CarRacing.resx">
+      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -299,10 +317,27 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="SpeechLib">
       <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
       <VersionMajor>5</VersionMajor>
       <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>tlbimp</WrapperTool>
       <Isolated>False</Isolated>

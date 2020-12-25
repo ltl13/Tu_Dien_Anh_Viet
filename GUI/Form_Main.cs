@@ -43,7 +43,7 @@ namespace GUI {
             mainTranslate = new UserControl_Translate(this);
             mainComboWord = new UserControl_ComboWord();
             mainExam = new UserControl_Exam(this);
-            mainGrammar = new UserControl_Grammar();
+            mainGrammar = new UserControl_Grammar(this);
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
