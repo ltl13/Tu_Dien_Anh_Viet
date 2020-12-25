@@ -38,12 +38,14 @@
             this.button_Game2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Game2.FlatAppearance.BorderSize = 0;
             this.button_Game2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Game2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Game2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Game2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(186)))), ((int)(((byte)(3)))));
             this.button_Game2.Location = new System.Drawing.Point(76, 299);
             this.button_Game2.Name = "button_Game2";
             this.button_Game2.Padding = new System.Windows.Forms.Padding(20);
             this.button_Game2.Size = new System.Drawing.Size(539, 238);
             this.button_Game2.TabIndex = 1;
+            this.button_Game2.UseCompatibleTextRendering = true;
             this.button_Game2.UseVisualStyleBackColor = true;
             // 
             // button_Game1
@@ -52,11 +54,13 @@
             this.button_Game1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Game1.FlatAppearance.BorderSize = 0;
             this.button_Game1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Game1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Game1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(236)))), ((int)(((byte)(213)))));
             this.button_Game1.Location = new System.Drawing.Point(76, 36);
             this.button_Game1.Name = "button_Game1";
             this.button_Game1.Size = new System.Drawing.Size(539, 238);
             this.button_Game1.TabIndex = 0;
+            this.button_Game1.UseCompatibleTextRendering = true;
             this.button_Game1.UseVisualStyleBackColor = true;
             // 
             // UserControl_Grammar

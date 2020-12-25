@@ -21,10 +21,10 @@ namespace GUI {
             pfc.AddMemoryFont(data, fontLength);
 
             button_Game1.Font = new Font(pfc.Families[0], button_Game1.Font.Size);
-            button_Game1.Text = "Build Bridge";
+            button_Game1.Text = "Car Racing";
 
-            button_Game2.Font = new Font(pfc.Families[0], button_Game2.Font.Size);
-            button_Game2.Text = "Car Racing";
+            button_Game2.Font = new Font(pfc.Families[0], button_Game2.Font.Size);          
+            button_Game2.Text = "Build Bridge";
         }
     }
 }
