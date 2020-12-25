@@ -51,12 +51,12 @@
             this.label_Game = new System.Windows.Forms.Label();
             this.pictureBox_Game = new System.Windows.Forms.PictureBox();
             this.panel_Account = new System.Windows.Forms.Panel();
+            this.xuiButton_Account = new XanderUI.XUIButton();
             this.xuiButton_Logout = new XanderUI.XUIButton();
             this.xuiButton_ListAccount = new XanderUI.XUIButton();
             this.xuiButton_DeleteAccount = new XanderUI.XUIButton();
             this.xuiButton_ResetAccount = new XanderUI.XUIButton();
             this.xuiButton_UpdateInfo = new XanderUI.XUIButton();
-            this.xuiButton_Account = new XanderUI.XUIButton();
             this.timer_MenuAccount = new System.Windows.Forms.Timer(this.components);
             this.xuiSwitch_Language = new XanderUI.XUISwitch();
             this.label_English = new System.Windows.Forms.Label();
@@ -107,7 +107,7 @@
             // 
             // panel_Search
             // 
-            this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(253)))), ((int)(((byte)(255)))));
+            this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
             this.panel_Search.Controls.Add(this.label_Search);
             this.panel_Search.Controls.Add(this.pictureBox_Search);
             this.panel_Search.Location = new System.Drawing.Point(0, 0);
@@ -143,7 +143,7 @@
             // 
             // panel_Exam
             // 
-            this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(209)))));
+            this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
             this.panel_Exam.Controls.Add(this.label_Exam);
             this.panel_Exam.Controls.Add(this.pictureBox_Exam);
             this.panel_Exam.Location = new System.Drawing.Point(0, 360);
@@ -179,7 +179,7 @@
             // 
             // panel_ComboWord
             // 
-            this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(223)))), ((int)(((byte)(212)))));
+            this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
             this.panel_ComboWord.Controls.Add(this.label_ComboWord);
             this.panel_ComboWord.Controls.Add(this.pictureBox_ComboWord);
             this.panel_ComboWord.Location = new System.Drawing.Point(0, 180);
@@ -215,7 +215,7 @@
             // 
             // panel_FlashCard
             // 
-            this.panel_FlashCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(255)))), ((int)(((byte)(212)))));
+            this.panel_FlashCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
             this.panel_FlashCard.Controls.Add(this.label_FlashCard);
             this.panel_FlashCard.Controls.Add(this.pictureBox_FlashCard);
             this.panel_FlashCard.Location = new System.Drawing.Point(0, 270);
@@ -251,7 +251,7 @@
             // 
             // panel_Translate
             // 
-            this.panel_Translate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this.panel_Translate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
             this.panel_Translate.Controls.Add(this.label_Translate);
             this.panel_Translate.Controls.Add(this.pictureBox_Translate);
             this.panel_Translate.Location = new System.Drawing.Point(0, 90);
@@ -286,7 +286,7 @@
             // 
             // panel_Game
             // 
-            this.panel_Game.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(255)))));
+            this.panel_Game.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
             this.panel_Game.Controls.Add(this.label_Game);
             this.panel_Game.Controls.Add(this.pictureBox_Game);
             this.panel_Game.Location = new System.Drawing.Point(0, 450);
@@ -321,12 +321,12 @@
             // panel_Account
             // 
             this.panel_Account.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Account.Controls.Add(this.xuiButton_Account);
             this.panel_Account.Controls.Add(this.xuiButton_Logout);
             this.panel_Account.Controls.Add(this.xuiButton_ListAccount);
             this.panel_Account.Controls.Add(this.xuiButton_DeleteAccount);
             this.panel_Account.Controls.Add(this.xuiButton_ResetAccount);
             this.panel_Account.Controls.Add(this.xuiButton_UpdateInfo);
-            this.panel_Account.Controls.Add(this.xuiButton_Account);
             this.panel_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.panel_Account.Location = new System.Drawing.Point(0, 6);
             this.panel_Account.MaximumSize = new System.Drawing.Size(220, 215);
@@ -335,6 +335,30 @@
             this.panel_Account.Size = new System.Drawing.Size(220, 39);
             this.panel_Account.TabIndex = 12;
             this.panel_Account.MouseLeave += new System.EventHandler(this.panel_Account_MouseLeave);
+            // 
+            // xuiButton_Account
+            // 
+            this.xuiButton_Account.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Account.ButtonImage")));
+            this.xuiButton_Account.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton_Account.ButtonText = "Quản lí tài khoản";
+            this.xuiButton_Account.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.ClickTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Account.CornerRadius = 5;
+            this.xuiButton_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.xuiButton_Account.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Account.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.HoverTextColor = System.Drawing.Color.Black;
+            this.xuiButton_Account.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_Account.Location = new System.Drawing.Point(20, 4);
+            this.xuiButton_Account.Name = "xuiButton_Account";
+            this.xuiButton_Account.Size = new System.Drawing.Size(206, 27);
+            this.xuiButton_Account.TabIndex = 0;
+            this.xuiButton_Account.TextColor = System.Drawing.Color.White;
+            this.xuiButton_Account.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_Account.Click += new System.EventHandler(this.xuiButton_Account_Click);
+            this.xuiButton_Account.MouseEnter += new System.EventHandler(this.xuiButton_Account_MouseEnter);
+            this.xuiButton_Account.MouseLeave += new System.EventHandler(this.xuiButton_Account_MouseLeave);
             // 
             // xuiButton_Logout
             // 
@@ -447,30 +471,6 @@
             this.xuiButton_UpdateInfo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_UpdateInfo.MouseEnter += new System.EventHandler(this.xuiButton_UpdateInfo_MouseEnter);
             // 
-            // xuiButton_Account
-            // 
-            this.xuiButton_Account.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xuiButton_Account.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Account.ButtonImage")));
-            this.xuiButton_Account.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton_Account.ButtonText = "Quản lí tài khoản";
-            this.xuiButton_Account.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
-            this.xuiButton_Account.ClickTextColor = System.Drawing.Color.Black;
-            this.xuiButton_Account.CornerRadius = 5;
-            this.xuiButton_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.xuiButton_Account.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Account.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
-            this.xuiButton_Account.HoverTextColor = System.Drawing.Color.Black;
-            this.xuiButton_Account.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Account.Location = new System.Drawing.Point(20, 4);
-            this.xuiButton_Account.Name = "xuiButton_Account";
-            this.xuiButton_Account.Size = new System.Drawing.Size(206, 27);
-            this.xuiButton_Account.TabIndex = 0;
-            this.xuiButton_Account.TextColor = System.Drawing.Color.White;
-            this.xuiButton_Account.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Account.Click += new System.EventHandler(this.xuiButton_Account_Click);
-            this.xuiButton_Account.MouseEnter += new System.EventHandler(this.xuiButton_Account_MouseEnter);
-            this.xuiButton_Account.MouseLeave += new System.EventHandler(this.xuiButton_Account_MouseLeave);
-            // 
             // timer_MenuAccount
             // 
             this.timer_MenuAccount.Interval = 1;
@@ -565,12 +565,12 @@
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(896, 610);
             this.ControlBox = false;
+            this.Controls.Add(this.panel_Account);
             this.Controls.Add(this.panel_Language);
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.panel_Choice);
             this.Controls.Add(this.label_Title);
-            this.Controls.Add(this.panel_Account);
             this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

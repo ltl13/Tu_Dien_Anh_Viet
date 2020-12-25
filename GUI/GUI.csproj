@@ -183,6 +183,12 @@
     <Compile Include="UserControl_ComboWord.Designer.cs">
       <DependentUpon>UserControl_ComboWord.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Grammar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Grammar.Designer.cs">
+      <DependentUpon>UserControl_Grammar.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Translate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Flashcard.resx">
       <DependentUpon>UserControl_Flashcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Grammar.resx">
+      <DependentUpon>UserControl_Grammar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Search.resx">
       <DependentUpon>UserControl_Search.cs</DependentUpon>

@@ -49,6 +49,8 @@ namespace GUI {
             panel_Main.Controls.Add(mainComboWord);
             panel_Main.Controls.Add(mainExam);
 
+            panel_Main.BackColor = Color.FromArgb(204, 253, 255);
+
             pictureBox_Search_MouseDown(sender, null);
 
             this.CancelButton = button_Exit;
@@ -152,66 +154,57 @@ namespace GUI {
         }
 
         private void pictureBox_Search_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_Search.BackColor.ToArgb());
-            ReturnClick();
+            ReturnClick(panel_Search);
             mainSearch.Visible = true;
         }
 
         private void label_Search_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_Search.BackColor.ToArgb());
-            ReturnClick();
-            mainSearch.Visible = true;
+            pictureBox_Search_MouseDown(null, null);
         }
 
         private void pictureBox_Translate_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_Translate.BackColor.ToArgb());
-            ReturnClick();
+            ReturnClick(panel_Translate);
             mainTranslate.Visible = true;
         }
 
         private void label_Translate_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_Translate.BackColor.ToArgb());
-            ReturnClick();
-            mainTranslate.Visible = true;
+            pictureBox_Translate_MouseDown(null, null);
         }
 
         private void pictureBox_ComboWord_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_ComboWord.BackColor.ToArgb());
-            ReturnClick();
+            ReturnClick(panel_ComboWord);
             mainComboWord.Visible = true;
         }
 
         private void label_ComboWord_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_ComboWord.BackColor.ToArgb());
-            ReturnClick();
-            mainComboWord.Visible = true;
+            pictureBox_ComboWord_MouseDown(null, null);
         }
 
         private void pictureBox_FlashCard_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_FlashCard.BackColor.ToArgb());
-            ReturnClick();
+            ReturnClick(panel_FlashCard);
             mainFlashcard.Visible = true;
         }
 
         private void label_FlashCard_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_FlashCard.BackColor.ToArgb());
-            ReturnClick();
-            mainFlashcard.Visible = true;
+            pictureBox_FlashCard_MouseDown(null, null);
         }
 
         private void pictureBox_Exam_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_Exam.BackColor.ToArgb());
-            ReturnClick();
+            ReturnClick(panel_Exam);
             mainExam.Visible = true;
         }
 
         private void label_Exam_MouseDown(object sender, MouseEventArgs e) {
-            panel_Main.BackColor = Color.FromArgb(panel_Exam.BackColor.ToArgb());
-            ReturnClick();
-            mainExam.Visible = true;
+            pictureBox_Exam_MouseDown(null, null);
         }
 
-        private void ReturnClick() {
+        private void ReturnClick(Panel chosenPanel) {
+            panel_Search.BackColor = Color.FromArgb(0, 217, 255);
+            panel_FlashCard.BackColor = Color.FromArgb(0, 217, 255);
+            panel_Translate.BackColor = Color.FromArgb(0, 217, 255);
+            panel_Exam.BackColor = Color.FromArgb(0, 217, 255);
+            panel_ComboWord.BackColor = Color.FromArgb(0, 217, 255);
+
             if (mainSearch.isWordInfoOn) { mainSearch.isWordInfoOn = false; mainSearch.wordInfo.Dispose(); }
 
             mainSearch.Visible = false;
@@ -219,6 +212,8 @@ namespace GUI {
             mainTranslate.Visible = false;
             mainComboWord.Visible = false;
             mainExam.Visible = false;
+
+            chosenPanel.BackColor = Color.FromArgb(204, 253, 255);
         }
     }
 }
