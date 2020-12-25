@@ -320,7 +320,7 @@
             // 
             // panel_Account
             // 
-            this.panel_Account.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Account.BackColor = System.Drawing.Color.White;
             this.panel_Account.Controls.Add(this.xuiButton_Account);
             this.panel_Account.Controls.Add(this.xuiButton_Logout);
             this.panel_Account.Controls.Add(this.xuiButton_ListAccount);
@@ -328,21 +328,22 @@
             this.panel_Account.Controls.Add(this.xuiButton_ResetAccount);
             this.panel_Account.Controls.Add(this.xuiButton_UpdateInfo);
             this.panel_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.panel_Account.Location = new System.Drawing.Point(0, 6);
-            this.panel_Account.MaximumSize = new System.Drawing.Size(220, 215);
-            this.panel_Account.MinimumSize = new System.Drawing.Size(220, 39);
+            this.panel_Account.Location = new System.Drawing.Point(10, 12);
+            this.panel_Account.MaximumSize = new System.Drawing.Size(206, 200);
+            this.panel_Account.MinimumSize = new System.Drawing.Size(206, 25);
             this.panel_Account.Name = "panel_Account";
-            this.panel_Account.Size = new System.Drawing.Size(220, 39);
+            this.panel_Account.Size = new System.Drawing.Size(206, 25);
             this.panel_Account.TabIndex = 12;
+            this.panel_Account.MouseEnter += new System.EventHandler(this.panel_Account_MouseEnter);
             this.panel_Account.MouseLeave += new System.EventHandler(this.panel_Account_MouseLeave);
             // 
             // xuiButton_Account
             // 
-            this.xuiButton_Account.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xuiButton_Account.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Account.ButtonImage")));
+            this.xuiButton_Account.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.ButtonImage = global::GUI.Properties.Resources.user;
             this.xuiButton_Account.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.xuiButton_Account.ButtonText = "Quản lí tài khoản";
-            this.xuiButton_Account.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.xuiButton_Account.ClickBackColor = System.Drawing.SystemColors.Highlight;
             this.xuiButton_Account.ClickTextColor = System.Drawing.Color.Black;
             this.xuiButton_Account.CornerRadius = 5;
             this.xuiButton_Account.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
@@ -350,14 +351,13 @@
             this.xuiButton_Account.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.xuiButton_Account.HoverTextColor = System.Drawing.Color.Black;
             this.xuiButton_Account.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Account.Location = new System.Drawing.Point(20, 4);
+            this.xuiButton_Account.Location = new System.Drawing.Point(0, 0);
             this.xuiButton_Account.Name = "xuiButton_Account";
-            this.xuiButton_Account.Size = new System.Drawing.Size(206, 27);
+            this.xuiButton_Account.Size = new System.Drawing.Size(205, 25);
             this.xuiButton_Account.TabIndex = 0;
-            this.xuiButton_Account.TextColor = System.Drawing.Color.White;
+            this.xuiButton_Account.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Account.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Account.Click += new System.EventHandler(this.xuiButton_Account_Click);
-            this.xuiButton_Account.MouseEnter += new System.EventHandler(this.xuiButton_Account_MouseEnter);
+            this.xuiButton_Account.MouseDown += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Account_MouseDown);
             this.xuiButton_Account.MouseLeave += new System.EventHandler(this.xuiButton_Account_MouseLeave);
             // 
             // xuiButton_Logout
@@ -374,14 +374,15 @@
             this.xuiButton_Logout.HoverBackgroundColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Logout.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Logout.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Logout.Location = new System.Drawing.Point(0, 171);
+            this.xuiButton_Logout.Location = new System.Drawing.Point(0, 175);
             this.xuiButton_Logout.Name = "xuiButton_Logout";
-            this.xuiButton_Logout.Size = new System.Drawing.Size(200, 25);
+            this.xuiButton_Logout.Size = new System.Drawing.Size(205, 25);
             this.xuiButton_Logout.TabIndex = 5;
             this.xuiButton_Logout.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Logout.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Logout.MouseClick += new System.Windows.Forms.MouseEventHandler(this.xuiButton_Logout_MouseClick);
-            this.xuiButton_Logout.MouseEnter += new System.EventHandler(this.xuiButton_FindUser_MouseEnter);
+            this.xuiButton_Logout.MouseEnter += new System.EventHandler(this.xuiButton_Logout_MouseEnter);
+            this.xuiButton_Logout.MouseLeave += new System.EventHandler(this.xuiButton_Logout_MouseLeave);
             // 
             // xuiButton_ListAccount
             // 
@@ -399,11 +400,12 @@
             this.xuiButton_ListAccount.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton_ListAccount.Location = new System.Drawing.Point(0, 140);
             this.xuiButton_ListAccount.Name = "xuiButton_ListAccount";
-            this.xuiButton_ListAccount.Size = new System.Drawing.Size(200, 25);
+            this.xuiButton_ListAccount.Size = new System.Drawing.Size(205, 25);
             this.xuiButton_ListAccount.TabIndex = 4;
             this.xuiButton_ListAccount.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_ListAccount.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_ListAccount.MouseEnter += new System.EventHandler(this.xuiButton_ListAccount_MouseEnter);
+            this.xuiButton_ListAccount.MouseLeave += new System.EventHandler(this.xuiButton_ListAccount_MouseLeave);
             // 
             // xuiButton_DeleteAccount
             // 
@@ -419,13 +421,14 @@
             this.xuiButton_DeleteAccount.HoverBackgroundColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_DeleteAccount.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_DeleteAccount.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_DeleteAccount.Location = new System.Drawing.Point(0, 109);
+            this.xuiButton_DeleteAccount.Location = new System.Drawing.Point(0, 105);
             this.xuiButton_DeleteAccount.Name = "xuiButton_DeleteAccount";
-            this.xuiButton_DeleteAccount.Size = new System.Drawing.Size(200, 25);
+            this.xuiButton_DeleteAccount.Size = new System.Drawing.Size(205, 25);
             this.xuiButton_DeleteAccount.TabIndex = 3;
             this.xuiButton_DeleteAccount.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_DeleteAccount.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_DeleteAccount.MouseEnter += new System.EventHandler(this.xuiButton_DeleteAccount_MouseEnter);
+            this.xuiButton_DeleteAccount.MouseLeave += new System.EventHandler(this.xuiButton_DeleteAccount_MouseLeave);
             // 
             // xuiButton_ResetAccount
             // 
@@ -441,13 +444,14 @@
             this.xuiButton_ResetAccount.HoverBackgroundColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_ResetAccount.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_ResetAccount.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_ResetAccount.Location = new System.Drawing.Point(0, 78);
+            this.xuiButton_ResetAccount.Location = new System.Drawing.Point(0, 70);
             this.xuiButton_ResetAccount.Name = "xuiButton_ResetAccount";
-            this.xuiButton_ResetAccount.Size = new System.Drawing.Size(200, 25);
+            this.xuiButton_ResetAccount.Size = new System.Drawing.Size(205, 25);
             this.xuiButton_ResetAccount.TabIndex = 2;
             this.xuiButton_ResetAccount.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_ResetAccount.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_ResetAccount.MouseEnter += new System.EventHandler(this.xuiButton_ResetAccount_MouseEnter);
+            this.xuiButton_ResetAccount.MouseLeave += new System.EventHandler(this.xuiButton_ResetAccount_MouseLeave);
             // 
             // xuiButton_UpdateInfo
             // 
@@ -463,13 +467,14 @@
             this.xuiButton_UpdateInfo.HoverBackgroundColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_UpdateInfo.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_UpdateInfo.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_UpdateInfo.Location = new System.Drawing.Point(0, 47);
+            this.xuiButton_UpdateInfo.Location = new System.Drawing.Point(0, 35);
             this.xuiButton_UpdateInfo.Name = "xuiButton_UpdateInfo";
-            this.xuiButton_UpdateInfo.Size = new System.Drawing.Size(200, 25);
+            this.xuiButton_UpdateInfo.Size = new System.Drawing.Size(205, 25);
             this.xuiButton_UpdateInfo.TabIndex = 1;
             this.xuiButton_UpdateInfo.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_UpdateInfo.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_UpdateInfo.MouseEnter += new System.EventHandler(this.xuiButton_UpdateInfo_MouseEnter);
+            this.xuiButton_UpdateInfo.MouseLeave += new System.EventHandler(this.xuiButton_UpdateInfo_MouseLeave);
             // 
             // timer_MenuAccount
             // 
@@ -520,7 +525,7 @@
             this.label_Title.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label_Title.AutoSize = true;
             this.label_Title.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Title.Location = new System.Drawing.Point(358, 10);
+            this.label_Title.Location = new System.Drawing.Point(348, 8);
             this.label_Title.Name = "label_Title";
             this.label_Title.Size = new System.Drawing.Size(200, 35);
             this.label_Title.TabIndex = 16;
@@ -566,10 +571,10 @@
             this.ClientSize = new System.Drawing.Size(896, 610);
             this.ControlBox = false;
             this.Controls.Add(this.panel_Account);
-            this.Controls.Add(this.panel_Language);
-            this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.panel_Main);
             this.Controls.Add(this.panel_Choice);
+            this.Controls.Add(this.panel_Language);
+            this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.label_Title);
             this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
