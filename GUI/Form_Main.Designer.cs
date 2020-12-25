@@ -107,7 +107,7 @@
             // 
             // panel_Search
             // 
-            this.panel_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
+            this.panel_Search.BackColor = System.Drawing.Color.LightCyan;
             this.panel_Search.Controls.Add(this.label_Search);
             this.panel_Search.Controls.Add(this.pictureBox_Search);
             this.panel_Search.Location = new System.Drawing.Point(0, 0);
@@ -143,7 +143,7 @@
             // 
             // panel_Exam
             // 
-            this.panel_Exam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
+            this.panel_Exam.BackColor = System.Drawing.Color.LightCyan;
             this.panel_Exam.Controls.Add(this.label_Exam);
             this.panel_Exam.Controls.Add(this.pictureBox_Exam);
             this.panel_Exam.Location = new System.Drawing.Point(0, 360);
@@ -179,7 +179,7 @@
             // 
             // panel_ComboWord
             // 
-            this.panel_ComboWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
+            this.panel_ComboWord.BackColor = System.Drawing.Color.LightCyan;
             this.panel_ComboWord.Controls.Add(this.label_ComboWord);
             this.panel_ComboWord.Controls.Add(this.pictureBox_ComboWord);
             this.panel_ComboWord.Location = new System.Drawing.Point(0, 180);
@@ -215,7 +215,7 @@
             // 
             // panel_FlashCard
             // 
-            this.panel_FlashCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
+            this.panel_FlashCard.BackColor = System.Drawing.Color.LightCyan;
             this.panel_FlashCard.Controls.Add(this.label_FlashCard);
             this.panel_FlashCard.Controls.Add(this.pictureBox_FlashCard);
             this.panel_FlashCard.Location = new System.Drawing.Point(0, 270);
@@ -251,7 +251,7 @@
             // 
             // panel_Translate
             // 
-            this.panel_Translate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
+            this.panel_Translate.BackColor = System.Drawing.Color.LightCyan;
             this.panel_Translate.Controls.Add(this.label_Translate);
             this.panel_Translate.Controls.Add(this.pictureBox_Translate);
             this.panel_Translate.Location = new System.Drawing.Point(0, 90);
@@ -286,7 +286,7 @@
             // 
             // panel_Game
             // 
-            this.panel_Game.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(217)))), ((int)(((byte)(255)))));
+            this.panel_Game.BackColor = System.Drawing.Color.LightCyan;
             this.panel_Game.Controls.Add(this.label_Game);
             this.panel_Game.Controls.Add(this.pictureBox_Game);
             this.panel_Game.Location = new System.Drawing.Point(0, 450);
