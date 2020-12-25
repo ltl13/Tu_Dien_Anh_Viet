@@ -63,16 +63,6 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _00 {
-            get {
-                object obj = ResourceManager.GetObject("00", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _01 {
             get {
                 object obj = ResourceManager.GetObject("01", resourceCulture);
@@ -216,6 +206,26 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap grammar {
             get {
                 object obj = ResourceManager.GetObject("grammar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_1_5530705358 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_1_5530705358", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_7_7290431428 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_7_7290431428", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

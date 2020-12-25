@@ -362,6 +362,9 @@
     <None Include="Resources\right-arrow1.png" />
     <None Include="Resources\back-arrow.png" />
     <None Include="Resources\irregularverbs.png" />
+    <None Include="Resources\00.png" />
+    <None Include="Resources\01.png" />
+    <None Include="Resources\imageedit_1_5530705358.jpg" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

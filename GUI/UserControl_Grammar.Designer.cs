@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_Game1 = new System.Windows.Forms.Button();
             this.button_Game2 = new System.Windows.Forms.Button();
+            this.button_Game1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button_Game1
-            // 
-            this.button_Game1.Location = new System.Drawing.Point(51, 26);
-            this.button_Game1.Name = "button_Game1";
-            this.button_Game1.Size = new System.Drawing.Size(371, 238);
-            this.button_Game1.TabIndex = 0;
-            this.button_Game1.Text = "button1";
-            this.button_Game1.UseVisualStyleBackColor = true;
             // 
             // button_Game2
             // 
+            this.button_Game2.BackgroundImage = global::GUI.Properties.Resources.imageedit_7_7290431428;
+            this.button_Game2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Game2.Location = new System.Drawing.Point(241, 290);
             this.button_Game2.Name = "button_Game2";
             this.button_Game2.Size = new System.Drawing.Size(371, 238);
             this.button_Game2.TabIndex = 1;
-            this.button_Game2.Text = "button2";
             this.button_Game2.UseVisualStyleBackColor = true;
+            // 
+            // button_Game1
+            // 
+            this.button_Game1.BackgroundImage = global::GUI.Properties.Resources.imageedit_1_5530705358;
+            this.button_Game1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Game1.Location = new System.Drawing.Point(51, 26);
+            this.button_Game1.Name = "button_Game1";
+            this.button_Game1.Size = new System.Drawing.Size(371, 238);
+            this.button_Game1.TabIndex = 0;
+            this.button_Game1.UseVisualStyleBackColor = true;
             // 
             // UserControl_Grammar
             // 
