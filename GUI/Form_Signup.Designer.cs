@@ -38,11 +38,12 @@
             this.lbConfirm = new System.Windows.Forms.Label();
             this.tbConfirm = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
-            this.btLogin = new System.Windows.Forms.Button();
+            this.btRegister = new System.Windows.Forms.Button();
             this.btCancel = new System.Windows.Forms.Button();
             this.pnlConfirm = new System.Windows.Forms.Panel();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
+            this.lbError = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel4.SuspendLayout();
@@ -94,6 +95,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.lbError);
             this.panel4.Controls.Add(this.tbName);
             this.panel4.Controls.Add(this.pnlName);
             this.panel4.Controls.Add(this.lbUsername);
@@ -103,7 +105,7 @@
             this.panel4.Controls.Add(this.lbConfirm);
             this.panel4.Controls.Add(this.tbConfirm);
             this.panel4.Controls.Add(this.lbName);
-            this.panel4.Controls.Add(this.btLogin);
+            this.panel4.Controls.Add(this.btRegister);
             this.panel4.Controls.Add(this.btCancel);
             this.panel4.Controls.Add(this.pnlConfirm);
             this.panel4.Controls.Add(this.pnlUsername);
@@ -153,6 +155,7 @@
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(216, 22);
             this.tbUsername.TabIndex = 0;
+            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
             // lbPassword
             // 
@@ -211,20 +214,20 @@
             this.lbName.TabIndex = 13;
             this.lbName.Text = "Name";
             // 
-            // btLogin
+            // btRegister
             // 
-            this.btLogin.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btLogin.FlatAppearance.BorderSize = 0;
-            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLogin.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLogin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btLogin.Location = new System.Drawing.Point(20, 295);
-            this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(115, 45);
-            this.btLogin.TabIndex = 4;
-            this.btLogin.Text = "Login";
-            this.btLogin.UseVisualStyleBackColor = false;
-            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
+            this.btRegister.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btRegister.FlatAppearance.BorderSize = 0;
+            this.btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btRegister.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRegister.ForeColor = System.Drawing.SystemColors.Control;
+            this.btRegister.Location = new System.Drawing.Point(20, 303);
+            this.btRegister.Name = "btRegister";
+            this.btRegister.Size = new System.Drawing.Size(115, 45);
+            this.btRegister.TabIndex = 4;
+            this.btRegister.Text = "Register";
+            this.btRegister.UseVisualStyleBackColor = false;
+            this.btRegister.Click += new System.EventHandler(this.btRegister_Click);
             // 
             // btCancel
             // 
@@ -234,7 +237,7 @@
             this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCancel.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCancel.ForeColor = System.Drawing.SystemColors.Control;
-            this.btCancel.Location = new System.Drawing.Point(155, 295);
+            this.btCancel.Location = new System.Drawing.Point(155, 303);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(115, 45);
             this.btCancel.TabIndex = 5;
@@ -266,9 +269,23 @@
             this.pnlPassword.Size = new System.Drawing.Size(216, 1);
             this.pnlPassword.TabIndex = 3;
             // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.BackColor = System.Drawing.Color.Transparent;
+            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError.ForeColor = System.Drawing.Color.Red;
+            this.lbError.Location = new System.Drawing.Point(39, 281);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(51, 17);
+            this.lbError.TabIndex = 15;
+            this.lbError.Text = "lbError";
+            this.lbError.Visible = false;
+            this.lbError.TextChanged += new System.EventHandler(this.lbError_TextChanged);
+            // 
             // Form_Signup
             // 
-            this.AcceptButton = this.btLogin;
+            this.AcceptButton = this.btRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btCancel;
@@ -303,7 +320,7 @@
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.Button btLogin;
+        private System.Windows.Forms.Button btRegister;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Panel pnlUsername;
         private System.Windows.Forms.Panel pnlPassword;
@@ -313,5 +330,6 @@
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Panel pnlName;
+        private System.Windows.Forms.Label lbError;
     }
 }

@@ -32,10 +32,10 @@ namespace GUI {
                     Thread.Sleep(10);
                 }
 
-                loginAccount = AccountBUS.Instance.GetAccountByUserName(tbUsername.Text);                
+                loginAccount = AccountBUS.Instance.GetAccountByUserName(tbUsername.Text);
                 fMain = new Form_Main(loginAccount, this);
                 Hide();
-                fMain.Show();       
+                fMain.Show();
             }
         }
 
@@ -50,12 +50,20 @@ namespace GUI {
         }
 
         private void tbUsername_TextChanged(object sender, EventArgs e) {
-            if (tbPassword.Text.Length != 0) {
-                tbPassword.Text = string.Empty;
-            }
+            System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9 ]*$");
 
-            if (lbError.Visible == true) {
-                lbError.Visible = false;
+            if (!regexItem.IsMatch(tbUsername.Text)) {
+                lbError.Text = "Tài khoản chỉ gồm chữ và số!";
+                lbError.Visible = true;
+            }
+            else {
+                if (tbPassword.Text.Length != 0) {
+                    tbPassword.Text = string.Empty;
+                }
+
+                if (lbError.Visible == true) {
+                    lbError.Visible = false;
+                }
             }
         }
 
@@ -82,6 +90,7 @@ namespace GUI {
 
         private void lbError_VisibleChanged(object sender, EventArgs e) {
             if (lbError.Visible == true) {
+                btLogin.Enabled = false;
                 if (lbError.Text == "Username hoặc Password sai!") {
                     tbUsername.Select();
                     pnlUsername.BackColor = Color.Red;
@@ -101,8 +110,13 @@ namespace GUI {
                         lbUsername.ForeColor = Color.Red;
                     }
                 }
+                else if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
+                    pnlUsername.BackColor = Color.Red;
+                    lbUsername.ForeColor = Color.Red;
+                }
             }
             else {
+                btLogin.Enabled = true;
                 if (lbPassword.ForeColor == Color.Red) {
                     if (tbPassword.Focused == true)
                         tbPassword.Select();
