@@ -24,11 +24,12 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Signup));
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel_Header = new System.Windows.Forms.Panel();
             this.lbMotto = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.icon = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel_Footer = new System.Windows.Forms.Panel();
+            this.lbError = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.pnlName = new System.Windows.Forms.Panel();
             this.lbUsername = new System.Windows.Forms.Label();
@@ -43,24 +44,24 @@
             this.pnlConfirm = new System.Windows.Forms.Panel();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
-            this.lbError = new System.Windows.Forms.Label();
-            this.panel3.SuspendLayout();
+            this.xuiFlatProgressBar_Login = new XanderUI.XUIFlatProgressBar();
+            this.panel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.panel_Footer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel3
+            // panel_Header
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.lbMotto);
-            this.panel3.Controls.Add(this.lbTitle);
-            this.panel3.Controls.Add(this.icon);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(20, 30);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(290, 148);
-            this.panel3.TabIndex = 10;
+            this.panel_Header.BackColor = System.Drawing.Color.Transparent;
+            this.panel_Header.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_Header.Controls.Add(this.lbMotto);
+            this.panel_Header.Controls.Add(this.lbTitle);
+            this.panel_Header.Controls.Add(this.icon);
+            this.panel_Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Header.Location = new System.Drawing.Point(20, 30);
+            this.panel_Header.Name = "panel_Header";
+            this.panel_Header.Size = new System.Drawing.Size(290, 148);
+            this.panel_Header.TabIndex = 10;
             // 
             // lbMotto
             // 
@@ -93,28 +94,43 @@
             this.icon.TabIndex = 0;
             this.icon.TabStop = false;
             // 
-            // panel4
+            // panel_Footer
             // 
-            this.panel4.Controls.Add(this.lbError);
-            this.panel4.Controls.Add(this.tbName);
-            this.panel4.Controls.Add(this.pnlName);
-            this.panel4.Controls.Add(this.lbUsername);
-            this.panel4.Controls.Add(this.tbUsername);
-            this.panel4.Controls.Add(this.lbPassword);
-            this.panel4.Controls.Add(this.tbPassword);
-            this.panel4.Controls.Add(this.lbConfirm);
-            this.panel4.Controls.Add(this.tbConfirm);
-            this.panel4.Controls.Add(this.lbName);
-            this.panel4.Controls.Add(this.btRegister);
-            this.panel4.Controls.Add(this.btCancel);
-            this.panel4.Controls.Add(this.pnlConfirm);
-            this.panel4.Controls.Add(this.pnlUsername);
-            this.panel4.Controls.Add(this.pnlPassword);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(20, 178);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(290, 352);
-            this.panel4.TabIndex = 13;
+            this.panel_Footer.Controls.Add(this.lbError);
+            this.panel_Footer.Controls.Add(this.tbName);
+            this.panel_Footer.Controls.Add(this.pnlName);
+            this.panel_Footer.Controls.Add(this.lbUsername);
+            this.panel_Footer.Controls.Add(this.tbUsername);
+            this.panel_Footer.Controls.Add(this.lbPassword);
+            this.panel_Footer.Controls.Add(this.tbPassword);
+            this.panel_Footer.Controls.Add(this.lbConfirm);
+            this.panel_Footer.Controls.Add(this.tbConfirm);
+            this.panel_Footer.Controls.Add(this.lbName);
+            this.panel_Footer.Controls.Add(this.btRegister);
+            this.panel_Footer.Controls.Add(this.btCancel);
+            this.panel_Footer.Controls.Add(this.pnlConfirm);
+            this.panel_Footer.Controls.Add(this.pnlUsername);
+            this.panel_Footer.Controls.Add(this.pnlPassword);
+            this.panel_Footer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Footer.Location = new System.Drawing.Point(20, 178);
+            this.panel_Footer.Name = "panel_Footer";
+            this.panel_Footer.Size = new System.Drawing.Size(290, 352);
+            this.panel_Footer.TabIndex = 13;
+            // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.BackColor = System.Drawing.Color.Transparent;
+            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError.ForeColor = System.Drawing.Color.Red;
+            this.lbError.Location = new System.Drawing.Point(39, 281);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(51, 17);
+            this.lbError.TabIndex = 15;
+            this.lbError.Text = "lbError";
+            this.lbError.Visible = false;
+            this.lbError.TextChanged += new System.EventHandler(this.lbError_TextChanged);
+            this.lbError.VisibleChanged += new System.EventHandler(this.lbError_VisibleChanged);
             // 
             // tbName
             // 
@@ -125,7 +141,6 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(216, 22);
             this.tbName.TabIndex = 3;
-            this.tbName.UseSystemPasswordChar = true;
             // 
             // pnlName
             // 
@@ -202,6 +217,7 @@
             this.tbConfirm.Size = new System.Drawing.Size(216, 22);
             this.tbConfirm.TabIndex = 2;
             this.tbConfirm.UseSystemPasswordChar = true;
+            this.tbConfirm.TextChanged += new System.EventHandler(this.tbConfirm_TextChanged);
             // 
             // lbName
             // 
@@ -269,19 +285,19 @@
             this.pnlPassword.Size = new System.Drawing.Size(216, 1);
             this.pnlPassword.TabIndex = 3;
             // 
-            // lbError
+            // xuiFlatProgressBar_Login
             // 
-            this.lbError.AutoSize = true;
-            this.lbError.BackColor = System.Drawing.Color.Transparent;
-            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbError.ForeColor = System.Drawing.Color.Red;
-            this.lbError.Location = new System.Drawing.Point(39, 281);
-            this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(51, 17);
-            this.lbError.TabIndex = 15;
-            this.lbError.Text = "lbError";
-            this.lbError.Visible = false;
-            this.lbError.TextChanged += new System.EventHandler(this.lbError_TextChanged);
+            this.xuiFlatProgressBar_Login.BarStyle = XanderUI.XUIFlatProgressBar.Style.Flat;
+            this.xuiFlatProgressBar_Login.BarThickness = 5;
+            this.xuiFlatProgressBar_Login.CompleteColor = System.Drawing.Color.LightSeaGreen;
+            this.xuiFlatProgressBar_Login.InocmpletedColor = System.Drawing.Color.Transparent;
+            this.xuiFlatProgressBar_Login.Location = new System.Drawing.Point(0, 541);
+            this.xuiFlatProgressBar_Login.MaxValue = 100;
+            this.xuiFlatProgressBar_Login.Name = "xuiFlatProgressBar_Login";
+            this.xuiFlatProgressBar_Login.Size = new System.Drawing.Size(335, 10);
+            this.xuiFlatProgressBar_Login.TabIndex = 16;
+            this.xuiFlatProgressBar_Login.Value = 0;
+            this.xuiFlatProgressBar_Login.Visible = false;
             // 
             // Form_Signup
             // 
@@ -291,8 +307,9 @@
             this.CancelButton = this.btCancel;
             this.ClientSize = new System.Drawing.Size(330, 550);
             this.ControlBox = false;
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.xuiFlatProgressBar_Login);
+            this.Controls.Add(this.panel_Footer);
+            this.Controls.Add(this.panel_Header);
             this.DisplayHeader = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -300,22 +317,22 @@
             this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Resizable = false;
             this.Text = "Form_Signup";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel_Header.ResumeLayout(false);
+            this.panel_Header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panel_Footer.ResumeLayout(false);
+            this.panel_Footer.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel_Header;
         private System.Windows.Forms.Label lbMotto;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.PictureBox icon;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel_Footer;
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Label lbPassword;
@@ -331,5 +348,6 @@
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Panel pnlName;
         private System.Windows.Forms.Label lbError;
+        private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Login;
     }
 }

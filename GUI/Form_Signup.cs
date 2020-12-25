@@ -8,6 +8,8 @@ namespace GUI {
     public partial class Form_Signup : MetroFramework.Forms.MetroForm {
         #region properties
         private Form father;
+        private AccountDTO loginAccount;
+        private Form_Main fMain;
 
         public Form_Signup(Form login) {
             InitializeComponent();
@@ -22,47 +24,52 @@ namespace GUI {
         }
 
         private void btRegister_Click(object sender, EventArgs e) {
-            string userName = tbUsername.Text;
-            string passWord = tbPassword.Text;
-            string confirm = tbConfirm.Text;
-            string displayName = tbName.Text;
-            int type = 0;
-
-            if (displayName.Length == 0) {
-                displayName = null;
-            }
-
-            if (userName.Length == 0) {
-                MessageBox.Show("Vui lòng điền tên đăng nhập!", "Thông báo");
+            if (CheckNull())
                 return;
-            }
-            else if (passWord.Length == 0) {
-                MessageBox.Show("Vui lòng điền mật khẩu!", "Thông báo");
-                return;
-            }
-            else if (confirm.Length == 0) {
-                MessageBox.Show("Vui lòng điền xác nhận mật khẩu!", "Thông báo");
-                return;
-            }
-            else if (passWord != confirm) {
-                tbPassword.Text = string.Empty;
-                tbConfirm.Text = string.Empty;
-                MessageBox.Show("Xác nhận mật khẩu không khớp!", "Thông báo");
-                return;
-            }
 
+            if (CheckRegister()) {
+                xuiFlatProgressBar_Login.Visible = true;
 
-            if (Register(userName, type, passWord, displayName)) {
-                AccountDTO loginAccount = AccountBUS.Instance.GetAccountByUserName(userName);
-                Form_Main fMain = new Form_Main(loginAccount, this);
+                for (int i = 0; i < 100; i++) {
+                    xuiFlatProgressBar_Login.Value = i;
+                    xuiFlatProgressBar_Login.Update();
+                    System.Threading.Thread.Sleep(10);
+                }
+
+                loginAccount = AccountBUS.Instance.GetAccountByUserName(tbUsername.Text);
+                fMain = new Form_Main(loginAccount, this);
+                Hide();
                 fMain.Show();
-                this.Close();
             }
+        }
+
+        private bool CheckRegister() {
+            if (tbName.Text.Length == 0) {
+                tbName.Text = null;
+            }
+
+            if (tbPassword.Text != tbConfirm.Text) {
+                lbError.Text = "Xác nhận mật khẩu không khớp!";
+                lbError.Visible = true;
+                return false;
+            }
+
+            if (AccountBUS.Instance.Register(tbUsername.Text, 0, tbPassword.Text, tbName.Text))
+                return true;
             else {
-                tbUsername.Text = string.Empty;
-                tbPassword.Text = string.Empty;
-                MessageBox.Show("Tài khoản đã tồn tại!", "Thông báo");
+                lbError.Text = "Tài khoản đã được đăng ký!";
+                lbError.Visible = true;
+                return false;
             }
+        }
+
+        private bool CheckNull() {
+            if (tbUsername.Text.Length == 0 || tbPassword.Text.Length == 0 || tbConfirm.Text.Length == 0) {
+                lbError.Text = "Không được để trống!";
+                lbError.Visible = true;
+                return true;
+            }
+            return false;
         }
 
         private void btCancel_Click(object sender, EventArgs e) {
@@ -73,6 +80,15 @@ namespace GUI {
         private void tbPassword_TextChanged(object sender, EventArgs e) {
             if (tbConfirm.Text.Length != 0) {
                 tbConfirm.Text = string.Empty;
+            }
+            if (lbError.Visible == true) {
+                lbError.Visible = false;
+            }
+        }
+
+        private void tbConfirm_TextChanged(object sender, EventArgs e) {
+            if (lbError.Visible == true) {
+                lbError.Visible = false;
             }
         }
 
@@ -86,38 +102,40 @@ namespace GUI {
         private void tbUsername_TextChanged(object sender, EventArgs e) {
             System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9 ]*$");
 
+            if (tbPassword.Text.Length != 0) {
+                tbPassword.Text = string.Empty;
+            }
+            if (tbConfirm.Text.Length != 0) {
+                tbConfirm.Text = string.Empty;
+            }
             if (!regexItem.IsMatch(tbUsername.Text)) {
                 lbError.Text = "Tài khoản chỉ gồm chữ và số!";
                 lbError.Visible = true;
             }
             else {
-                if (tbPassword.Text.Length != 0) {
-                    tbPassword.Text = string.Empty;
-                }
-
                 if (lbError.Visible == true) {
                     lbError.Visible = false;
                 }
             }
         }
 
-        private void lbError_TextChanged(object sender, EventArgs e) {
+        private void lbError_VisibleChanged(object sender, EventArgs e) {
             if (lbError.Visible == true) {
                 btRegister.Enabled = false;
-                if (lbError.Text == "Username đã được đăng ký!") {
+                if (lbError.Text == "Tài khoản đã được đăng ký!") {
                     tbUsername.Select();
                     pnlUsername.BackColor = Color.Red;
                     lbUsername.ForeColor = Color.Red;
                     pnlPassword.BackColor = Color.Red;
                     lbPassword.ForeColor = Color.Red;
                     pnlConfirm.BackColor = Color.Red;
-                    lbConfirm.BackColor = Color.Red;
+                    lbConfirm.ForeColor = Color.Red;
                 }
                 else if (lbError.Text == "Không được để trống!") {
                     if (tbConfirm.Text.Length == 0) {
                         tbConfirm.Select();
                         pnlConfirm.BackColor = Color.Red;
-                        lbConfirm.BackColor = Color.Red;
+                        lbConfirm.ForeColor = Color.Red;
                     }
                     if (tbPassword.Text.Length == 0) {
                         tbPassword.Select();
@@ -133,10 +151,31 @@ namespace GUI {
                 else if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
                     pnlUsername.BackColor = Color.Red;
                     lbUsername.ForeColor = Color.Red;
+                    tbPassword.Enabled = false;
+                    tbConfirm.Enabled = false;
+                    tbName.Enabled = false;
+                }
+                else if (lbError.Text == "Xác nhận mật khẩu không khớp!") {
+                    tbPassword.Select();
+                    pnlPassword.BackColor = Color.Red;
+                    lbPassword.ForeColor = Color.Red;
+                    pnlConfirm.BackColor = Color.Red;
+                    lbConfirm.ForeColor = Color.Red;
                 }
             }
             else {
                 btRegister.Enabled = true;
+                tbPassword.Enabled = true;
+                tbConfirm.Enabled = true;
+                tbName.Enabled = true;
+
+                if (lbConfirm.ForeColor == Color.Red) {
+                    if (tbConfirm.Focused == true)
+                        tbConfirm.Select();
+
+                    pnlConfirm.BackColor = Color.DarkGray;
+                    lbConfirm.ForeColor = Color.DarkGray;
+                }
                 if (lbPassword.ForeColor == Color.Red) {
                     if (tbPassword.Focused == true)
                         tbPassword.Select();
@@ -151,6 +190,20 @@ namespace GUI {
                     pnlUsername.BackColor = Color.DarkGray;
                     lbUsername.ForeColor = Color.DarkGray;
                 }
+            }
+        }
+
+        private void lbError_TextChanged(object sender, EventArgs e) {
+            if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
+                pnlUsername.BackColor = Color.Red;
+                lbUsername.ForeColor = Color.Red;
+                pnlPassword.BackColor = Color.DarkGray;
+                lbPassword.ForeColor = Color.DarkGray;
+                pnlConfirm.BackColor = Color.DarkGray;
+                lbConfirm.ForeColor = Color.DarkGray;
+                tbPassword.Enabled = false;
+                tbConfirm.Enabled = false;
+                tbName.Enabled = false;
             }
         }
     }
