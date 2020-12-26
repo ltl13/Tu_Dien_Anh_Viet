@@ -262,5 +262,125 @@ namespace GUI {
         {
             pictureBox_Game_MouseDown(null, null);
         }
+
+        private void label_Search_MouseEnter(object sender, EventArgs e) {
+            if (panel_Search.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Search.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void pictureBox_Search_MouseEnter(object sender, EventArgs e) {
+            if (panel_Search.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Search.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void label_Search_MouseLeave(object sender, EventArgs e) {
+            if (panel_Search.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Search.BackColor = Color.LightCyan;
+        }
+
+        private void pictureBox_Search_MouseLeave(object sender, EventArgs e) {
+            if (panel_Search.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Search.BackColor = Color.LightCyan;
+        }
+
+        private void label_Translate_MouseEnter(object sender, EventArgs e) {
+            if (panel_Translate.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Translate.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void pictureBox_Translate_MouseEnter(object sender, EventArgs e) {
+            if (panel_Translate.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Translate.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void label_Translate_MouseLeave(object sender, EventArgs e) {
+            if (panel_Translate.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Translate.BackColor = Color.LightCyan;
+        }
+
+        private void pictureBox_Translate_MouseLeave(object sender, EventArgs e) {
+            if (panel_Translate.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Translate.BackColor = Color.LightCyan;
+        }
+
+        private void label_ComboWord_MouseEnter(object sender, EventArgs e) {
+            if (panel_ComboWord.BackColor != Color.FromArgb(199, 233, 255))
+                panel_ComboWord.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void pictureBox_ComboWord_MouseEnter(object sender, EventArgs e) {
+            if (panel_ComboWord.BackColor != Color.FromArgb(199, 233, 255))
+                panel_ComboWord.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void label_ComboWord_MouseLeave(object sender, EventArgs e) {
+            if (panel_ComboWord.BackColor != Color.FromArgb(199, 233, 255))
+                panel_ComboWord.BackColor = Color.LightCyan;
+        }
+
+        private void pictureBox_ComboWord_MouseLeave(object sender, EventArgs e) {
+            if (panel_ComboWord.BackColor != Color.FromArgb(199, 233, 255))
+                panel_ComboWord.BackColor = Color.LightCyan;
+        }
+
+        private void label_FlashCard_MouseEnter(object sender, EventArgs e) {
+            if (panel_FlashCard.BackColor != Color.FromArgb(199, 233, 255))
+                panel_FlashCard.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void pictureBox_FlashCard_MouseEnter(object sender, EventArgs e) {
+            if (panel_FlashCard.BackColor != Color.FromArgb(199, 233, 255))
+                panel_FlashCard.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void label_FlashCard_MouseLeave(object sender, EventArgs e) {
+            if (panel_FlashCard.BackColor != Color.FromArgb(199, 233, 255))
+                panel_FlashCard.BackColor = Color.LightCyan;
+        }
+
+        private void pictureBox_FlashCard_MouseLeave(object sender, EventArgs e) {
+            if (panel_FlashCard.BackColor != Color.FromArgb(199, 233, 255))
+                panel_FlashCard.BackColor = Color.LightCyan;
+        }
+
+        private void label_Exam_MouseEnter(object sender, EventArgs e) {
+            if (panel_Exam.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Exam.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void pictureBox_Exam_MouseEnter(object sender, EventArgs e) {
+            if (panel_Exam.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Exam.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void label_Exam_MouseLeave(object sender, EventArgs e) {
+            if (panel_Exam.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Exam.BackColor = Color.LightCyan;
+        }
+
+        private void pictureBox_Exam_MouseLeave(object sender, EventArgs e) {
+            if (panel_Exam.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Exam.BackColor = Color.LightCyan;
+        }
+
+        private void label_Game_MouseEnter(object sender, EventArgs e) {
+            if (panel_Game.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Game.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void pictureBox_Game_MouseEnter(object sender, EventArgs e) {
+            if (panel_Game.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Game.BackColor = Color.FromArgb(174, 205, 205);
+        }
+
+        private void label_Game_MouseLeave(object sender, EventArgs e) {
+            if (panel_Game.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Game.BackColor = Color.LightCyan;
+        }
+
+        private void pictureBox_Game_MouseLeave(object sender, EventArgs e) {
+            if (panel_Game.BackColor != Color.FromArgb(199, 233, 255))
+                panel_Game.BackColor = Color.LightCyan;
+        }
     }
 }

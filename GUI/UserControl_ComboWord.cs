@@ -79,10 +79,10 @@ namespace GUI {
             lb_comboWords.Show();
         }
         private void xuiButton_WildAnimal_MouseDown(object sender, MouseEventArgs e) {
-            dataGridView.DataSource = dataSet.Tables[xuiButton_wildAnimal.ButtonText];
+            dataGridView.DataSource = dataSet.Tables[xuiButton_WildAnimal.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
-            lb_comboWords.Text = xuiButton_wildAnimal.ButtonText;
+            lb_comboWords.Text = xuiButton_WildAnimal.ButtonText;
             lb_comboWords.Show();
         }
         private void xuiButton_Pets_MouseDown(object sender, MouseEventArgs e) {

@@ -81,9 +81,7 @@
             this.metroTextBox_Searchbar.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox_Searchbar.MaxLength = 32;
             this.metroTextBox_Searchbar.Name = "metroTextBox_Searchbar";
-            this.metroTextBox_Searchbar.PasswordChar = '\0';
-            this.metroTextBox_Searchbar.PromptText = "Search...";
-            this.metroTextBox_Searchbar.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox_Searchbar.PasswordChar = '\0';            this.metroTextBox_Searchbar.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Searchbar.SelectedText = "";
             this.metroTextBox_Searchbar.SelectionLength = 0;
             this.metroTextBox_Searchbar.SelectionStart = 0;

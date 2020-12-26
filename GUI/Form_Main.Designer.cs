@@ -128,6 +128,8 @@
             this.label_Search.Text = "Tra từ";
             this.label_Search.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Search.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Search_MouseDown);
+            this.label_Search.MouseEnter += new System.EventHandler(this.label_Search_MouseEnter);
+            this.label_Search.MouseLeave += new System.EventHandler(this.label_Search_MouseLeave);
             // 
             // pictureBox_Search
             // 
@@ -140,6 +142,8 @@
             this.pictureBox_Search.TabIndex = 0;
             this.pictureBox_Search.TabStop = false;
             this.pictureBox_Search.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Search_MouseDown);
+            this.pictureBox_Search.MouseEnter += new System.EventHandler(this.pictureBox_Search_MouseEnter);
+            this.pictureBox_Search.MouseLeave += new System.EventHandler(this.pictureBox_Search_MouseLeave);
             // 
             // panel_Exam
             // 
@@ -164,6 +168,8 @@
             this.label_Exam.Text = "Luyện tập";
             this.label_Exam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Exam.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Exam_MouseDown);
+            this.label_Exam.MouseEnter += new System.EventHandler(this.label_Exam_MouseEnter);
+            this.label_Exam.MouseLeave += new System.EventHandler(this.label_Exam_MouseLeave);
             // 
             // pictureBox_Exam
             // 
@@ -176,6 +182,8 @@
             this.pictureBox_Exam.TabIndex = 2;
             this.pictureBox_Exam.TabStop = false;
             this.pictureBox_Exam.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Exam_MouseDown);
+            this.pictureBox_Exam.MouseEnter += new System.EventHandler(this.pictureBox_Exam_MouseEnter);
+            this.pictureBox_Exam.MouseLeave += new System.EventHandler(this.pictureBox_Exam_MouseLeave);
             // 
             // panel_ComboWord
             // 
@@ -200,6 +208,8 @@
             this.label_ComboWord.Text = "Từ vựng";
             this.label_ComboWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_ComboWord_MouseDown);
+            this.label_ComboWord.MouseEnter += new System.EventHandler(this.label_ComboWord_MouseEnter);
+            this.label_ComboWord.MouseLeave += new System.EventHandler(this.label_ComboWord_MouseLeave);
             // 
             // pictureBox_ComboWord
             // 
@@ -212,6 +222,8 @@
             this.pictureBox_ComboWord.TabIndex = 2;
             this.pictureBox_ComboWord.TabStop = false;
             this.pictureBox_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_ComboWord_MouseDown);
+            this.pictureBox_ComboWord.MouseEnter += new System.EventHandler(this.pictureBox_ComboWord_MouseEnter);
+            this.pictureBox_ComboWord.MouseLeave += new System.EventHandler(this.pictureBox_ComboWord_MouseLeave);
             // 
             // panel_FlashCard
             // 
@@ -236,6 +248,8 @@
             this.label_FlashCard.Text = "Flash card";
             this.label_FlashCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_FlashCard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_FlashCard_MouseDown);
+            this.label_FlashCard.MouseEnter += new System.EventHandler(this.label_FlashCard_MouseEnter);
+            this.label_FlashCard.MouseLeave += new System.EventHandler(this.label_FlashCard_MouseLeave);
             // 
             // pictureBox_FlashCard
             // 
@@ -248,6 +262,8 @@
             this.pictureBox_FlashCard.TabIndex = 2;
             this.pictureBox_FlashCard.TabStop = false;
             this.pictureBox_FlashCard.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_FlashCard_MouseDown);
+            this.pictureBox_FlashCard.MouseEnter += new System.EventHandler(this.pictureBox_FlashCard_MouseEnter);
+            this.pictureBox_FlashCard.MouseLeave += new System.EventHandler(this.pictureBox_FlashCard_MouseLeave);
             // 
             // panel_Translate
             // 
@@ -272,6 +288,8 @@
             this.label_Translate.Text = "Dịch";
             this.label_Translate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Translate.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Translate_MouseDown);
+            this.label_Translate.MouseEnter += new System.EventHandler(this.label_Translate_MouseEnter);
+            this.label_Translate.MouseLeave += new System.EventHandler(this.label_Translate_MouseLeave);
             // 
             // pictureBox_Translate
             // 
@@ -283,6 +301,9 @@
             this.pictureBox_Translate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_Translate.TabIndex = 2;
             this.pictureBox_Translate.TabStop = false;
+            this.pictureBox_Translate.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Translate_MouseDown);
+            this.pictureBox_Translate.MouseEnter += new System.EventHandler(this.pictureBox_Translate_MouseEnter);
+            this.pictureBox_Translate.MouseLeave += new System.EventHandler(this.pictureBox_Translate_MouseLeave);
             // 
             // panel_Game
             // 
@@ -307,6 +328,8 @@
             this.label_Game.Text = "Game";
             this.label_Game.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_Game.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Game_MouseDown);
+            this.label_Game.MouseEnter += new System.EventHandler(this.label_Game_MouseEnter);
+            this.label_Game.MouseLeave += new System.EventHandler(this.label_Game_MouseLeave);
             // 
             // pictureBox_Game
             // 
@@ -319,6 +342,8 @@
             this.pictureBox_Game.TabIndex = 2;
             this.pictureBox_Game.TabStop = false;
             this.pictureBox_Game.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Game_MouseDown);
+            this.pictureBox_Game.MouseEnter += new System.EventHandler(this.pictureBox_Game_MouseEnter);
+            this.pictureBox_Game.MouseLeave += new System.EventHandler(this.pictureBox_Game_MouseLeave);
             // 
             // panel_Account
             // 
