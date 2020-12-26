@@ -30,14 +30,14 @@
             this.textBox_NewPass = new System.Windows.Forms.TextBox();
             this.textBox_Confirm = new System.Windows.Forms.TextBox();
             this.label_Password = new System.Windows.Forms.Label();
-            this.label_NewPassConfirm = new System.Windows.Forms.Label();
+            this.label_Confirm = new System.Windows.Forms.Label();
             this.panel_Footer = new System.Windows.Forms.Panel();
+            this.label_Error = new System.Windows.Forms.Label();
             this.button_Save = new System.Windows.Forms.Button();
             this.button_Upload = new System.Windows.Forms.Button();
             this.pictureBox_UserPic = new System.Windows.Forms.PictureBox();
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.label_Name = new System.Windows.Forms.Label();
-            this.label_Error = new System.Windows.Forms.Label();
             this.panel_Header.SuspendLayout();
             this.panel_Footer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UserPic)).BeginInit();
@@ -125,15 +125,15 @@
             this.label_Password.TabIndex = 1;
             this.label_Password.Text = "Password (required):";
             // 
-            // label_NewPassConfirm
+            // label_Confirm
             // 
-            this.label_NewPassConfirm.AutoSize = true;
-            this.label_NewPassConfirm.Font = new System.Drawing.Font("Calibri", 13.8F);
-            this.label_NewPassConfirm.Location = new System.Drawing.Point(28, 210);
-            this.label_NewPassConfirm.Name = "label_NewPassConfirm";
-            this.label_NewPassConfirm.Size = new System.Drawing.Size(98, 29);
-            this.label_NewPassConfirm.TabIndex = 4;
-            this.label_NewPassConfirm.Text = "Confirm:";
+            this.label_Confirm.AutoSize = true;
+            this.label_Confirm.Font = new System.Drawing.Font("Calibri", 13.8F);
+            this.label_Confirm.Location = new System.Drawing.Point(28, 210);
+            this.label_Confirm.Name = "label_Confirm";
+            this.label_Confirm.Size = new System.Drawing.Size(98, 29);
+            this.label_Confirm.TabIndex = 4;
+            this.label_Confirm.Text = "Confirm:";
             // 
             // panel_Footer
             // 
@@ -146,7 +146,7 @@
             this.panel_Footer.Controls.Add(this.textBox_NewPass);
             this.panel_Footer.Controls.Add(this.textBox_Password);
             this.panel_Footer.Controls.Add(this.label_Name);
-            this.panel_Footer.Controls.Add(this.label_NewPassConfirm);
+            this.panel_Footer.Controls.Add(this.label_Confirm);
             this.panel_Footer.Controls.Add(this.label_Password);
             this.panel_Footer.Controls.Add(this.label_NewPass);
             this.panel_Footer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -154,6 +154,18 @@
             this.panel_Footer.Name = "panel_Footer";
             this.panel_Footer.Size = new System.Drawing.Size(650, 415);
             this.panel_Footer.TabIndex = 9;
+            // 
+            // label_Error
+            // 
+            this.label_Error.AutoSize = true;
+            this.label_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic);
+            this.label_Error.ForeColor = System.Drawing.Color.Red;
+            this.label_Error.Location = new System.Drawing.Point(30, 370);
+            this.label_Error.Name = "label_Error";
+            this.label_Error.Size = new System.Drawing.Size(78, 17);
+            this.label_Error.TabIndex = 13;
+            this.label_Error.Text = "label_Error";
+            this.label_Error.Visible = false;
             // 
             // button_Save
             // 
@@ -207,18 +219,6 @@
             this.label_Name.TabIndex = 9;
             this.label_Name.Text = "Name:";
             // 
-            // label_Error
-            // 
-            this.label_Error.AutoSize = true;
-            this.label_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic);
-            this.label_Error.ForeColor = System.Drawing.Color.Red;
-            this.label_Error.Location = new System.Drawing.Point(30, 370);
-            this.label_Error.Name = "label_Error";
-            this.label_Error.Size = new System.Drawing.Size(78, 17);
-            this.label_Error.TabIndex = 13;
-            this.label_Error.Text = "label_Error";
-            this.label_Error.Visible = false;
-            // 
             // UserControl_UserDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -246,7 +246,7 @@
         private System.Windows.Forms.TextBox textBox_NewPass;
         private System.Windows.Forms.TextBox textBox_Confirm;
         private System.Windows.Forms.Label label_Password;
-        private System.Windows.Forms.Label label_NewPassConfirm;
+        private System.Windows.Forms.Label label_Confirm;
         private System.Windows.Forms.Panel panel_Footer;
         private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.Label label_Name;

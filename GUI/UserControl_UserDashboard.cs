@@ -8,6 +8,11 @@ namespace GUI {
     public partial class UserControl_UserDashboard : UserControl {
         Form_Main father;
         DataGridView dataGridView = new DataGridView();
+        Label label_Search = new Label();
+        TextBox textBox_Search = new TextBox();
+        Label label_Delete = new Label();
+        TextBox textBox_Delete = new TextBox();
+
         string path;
 
         public UserControl_UserDashboard(Form_Main fMain) {
@@ -16,15 +21,9 @@ namespace GUI {
         }
 
         private void UserControl_UserDashboard_VisibleChanged(object sender, EventArgs e) {
-            byte[] byteArrayIn = AccountBUS.Instance.LoadImage(father.LoginAccount.ID);
-
-            using (var ms = new MemoryStream(byteArrayIn)) {
-                this.pictureBox_UserPic.Image = Image.FromStream(ms);
-            }
-
             label_Password.Visible = false;
             label_NewPass.Visible = false;
-            label_NewPassConfirm.Visible = false;
+            label_Confirm.Visible = false;
             label_Name.Visible = false;
             textBox_Password.Visible = false;
             textBox_NewPass.Visible = false;
@@ -35,8 +34,10 @@ namespace GUI {
             pictureBox_UserPic.Visible = false;
             dataGridView.Visible = false;
             label_Error.Visible = false;
-            textBox_Password.UseSystemPasswordChar = true;
-            label_Password.Text = "Password (required):";
+            label_Search.Visible = false;
+            textBox_Search.Visible = false;
+            label_Delete.Visible = false;
+            textBox_Delete.Visible = false;
             label_Error.Text = "label_Error";
 
             switch (father.Choice) {
@@ -58,9 +59,15 @@ namespace GUI {
         private void UpdateInfo() {
             label_Title.Text = father.xuiButton_UpdateInfo.ButtonText.ToUpper();
 
+            byte[] byteArrayIn = AccountBUS.Instance.LoadImage(father.LoginAccount.ID);
+
+            using (var ms = new MemoryStream(byteArrayIn)) {
+                pictureBox_UserPic.Image = Image.FromStream(ms);
+            }
+
             label_Password.Visible = true;
             label_NewPass.Visible = true;
-            label_NewPassConfirm.Visible = true;
+            label_Confirm.Visible = true;
             label_Name.Visible = true;
             textBox_Password.Visible = true;
             textBox_NewPass.Visible = true;
@@ -72,70 +79,114 @@ namespace GUI {
         }
 
         private void FindUser() {
-            label_Title.Text = father.xuiButton_FindUser.ButtonText.ToUpper();
-            label_Password.Text = "Nhập ID cần tìm:";
-            label_Password.Visible = true;
-            textBox_Password.Visible = true;
-            textBox_Password.UseSystemPasswordChar = false;
+            label_Title.Text = father.xuiButton_ListAccount.ButtonText.ToUpper();
+            label_Search.Visible = true;
+            textBox_Search.Visible = true;
+            InitFindUser();
+            panel_Footer.Controls.Add(label_Search);
+            panel_Footer.Controls.Add(textBox_Search);
+        }
+
+        private void InitFindUser() {
+            // 
+            // label_Search
+            // 
+            label_Search.AutoSize = true;
+            label_Search.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+            label_Search.ForeColor = SystemColors.ControlText;
+            label_Search.Location = new Point(28, 40);
+            label_Search.Name = "label_Search";
+            label_Search.Size = new Size(215, 29);
+            label_Search.Text = "Nhập Username cần tìm:";
+            // 
+            // textBox_Search
+            // 
+            textBox_Search.BackColor = Color.White;
+            textBox_Search.BorderStyle = BorderStyle.FixedSingle;
+            textBox_Search.Font = new Font("Calibri", 10.2F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+            textBox_Search.Location = new Point(33, 72);
+            textBox_Search.MaxLength = 50;
+            textBox_Search.Name = "textBox_Search";
+            textBox_Search.Size = new Size(230, 28);
+            textBox_Search.KeyDown += new KeyEventHandler(textBox_Search_KeyDown);
+            textBox_Search.TextChanged += new EventHandler(textBox_Search_TextChanged);
+        }
+
+        private void textBox_Search_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                DTO.AccountDTO userTarget = AccountBUS.Instance.GetAccountByUserName(textBox_Search.Text);
+
+                if (userTarget != null) {
+                    byte[] byteArrayIn = AccountBUS.Instance.LoadImage(userTarget.ID);
+
+                    using (var ms = new MemoryStream(byteArrayIn)) {
+                        pictureBox_UserPic.Image = Image.FromStream(ms);
+                    }
+
+                    pictureBox_UserPic.Visible = true;
+                }
+            }
+        }
+
+        private void textBox_Search_TextChanged(object sender, EventArgs e) {
+            if (pictureBox_UserPic.Visible == true) {
+                pictureBox_UserPic.Visible = false;
+            }
         }
 
         private void ListAccount() {
             label_Title.Text = father.xuiButton_ListAccount.ButtonText.ToUpper();
             dataGridView.Visible = true;
-            InitDataGridView();
+            InitListAccount();
             panel_Footer.Controls.Add(dataGridView);
             dataGridView.DataSource = AccountBUS.Instance.GetListAccount();
         }
 
-        private void DeleteAccount() {
-            label_Title.Text = father.xuiButton_DeleteAccount.ButtonText.ToUpper();
-        }
-
-        private void InitDataGridView() {
+        private void InitListAccount() {
             // 
             // dataGridView
             // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.AllowUserToDeleteRows = false;
-            this.dataGridView.BorderStyle = BorderStyle.None;
-            this.dataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleVertical;
-            this.dataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.dataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView.ColumnHeadersDefaultCellStyle.ForeColor = SystemColors.Info;
-            this.dataGridView.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Highlight;
-            this.dataGridView.ColumnHeadersDefaultCellStyle.SelectionForeColor = SystemColors.HighlightText;
-            this.dataGridView.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersHeight = 35;
-            this.dataGridView.DefaultCellStyle.BackColor = Color.White;
-            this.dataGridView.DefaultCellStyle.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView.DefaultCellStyle.ForeColor = Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.dataGridView.DefaultCellStyle.BackColor = SystemColors.Highlight;
-            this.dataGridView.DefaultCellStyle.SelectionBackColor = Color.Black;
-            this.dataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            this.dataGridView.Dock = DockStyle.Fill;
-            this.dataGridView.EnableHeadersVisualStyles = false;
-            this.dataGridView.Location = new Point(0, 0);
-            this.dataGridView.Margin = new Padding(2);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.RowHeadersWidth = 92;
-            this.dataGridView.RowsDefaultCellStyle.BackColor = Color.White;
-            this.dataGridView.RowsDefaultCellStyle.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView.RowsDefaultCellStyle.ForeColor = Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.dataGridView.RowsDefaultCellStyle.SelectionBackColor = SystemColors.Highlight;
-            this.dataGridView.RowsDefaultCellStyle.SelectionForeColor = Color.Black;
-            this.dataGridView.RowTemplate.Height = 37;
-            this.dataGridView.RowTemplate.ReadOnly = true;
-            this.dataGridView.ScrollBars = ScrollBars.None;
-            this.dataGridView.ShowCellErrors = false;
-            this.dataGridView.ShowCellToolTips = false;
-            this.dataGridView.ShowEditingIcon = false;
-            this.dataGridView.ShowRowErrors = false;
-            this.dataGridView.Size = new Size(650, 415);
-            this.dataGridView.DataSourceChanged += new EventHandler(this.dataGridView_DataSourceChanged);
-            this.dataGridView.MouseWheel += new MouseEventHandler(this.dataGridView_MouseWheel);
+            dataGridView.AllowUserToAddRows = false;
+            dataGridView.AllowUserToDeleteRows = false;
+            dataGridView.BorderStyle = BorderStyle.None;
+            dataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleVertical;
+            dataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridView.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            dataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            dataGridView.ColumnHeadersDefaultCellStyle.ForeColor = SystemColors.Info;
+            dataGridView.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Highlight;
+            dataGridView.ColumnHeadersDefaultCellStyle.SelectionForeColor = SystemColors.HighlightText;
+            dataGridView.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView.ColumnHeadersHeight = 35;
+            dataGridView.DefaultCellStyle.BackColor = Color.White;
+            dataGridView.DefaultCellStyle.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+            dataGridView.DefaultCellStyle.ForeColor = Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridView.DefaultCellStyle.BackColor = SystemColors.Highlight;
+            dataGridView.DefaultCellStyle.SelectionBackColor = Color.Black;
+            dataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView.Dock = DockStyle.Fill;
+            dataGridView.EnableHeadersVisualStyles = false;
+            dataGridView.Location = new Point(0, 0);
+            dataGridView.Margin = new Padding(2);
+            dataGridView.Name = "dataGridView";
+            dataGridView.RowHeadersVisible = false;
+            dataGridView.RowHeadersWidth = 92;
+            dataGridView.RowsDefaultCellStyle.BackColor = Color.White;
+            dataGridView.RowsDefaultCellStyle.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+            dataGridView.RowsDefaultCellStyle.ForeColor = Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            dataGridView.RowsDefaultCellStyle.SelectionBackColor = SystemColors.Highlight;
+            dataGridView.RowsDefaultCellStyle.SelectionForeColor = Color.Black;
+            dataGridView.RowTemplate.Height = 37;
+            dataGridView.RowTemplate.ReadOnly = true;
+            dataGridView.ScrollBars = ScrollBars.None;
+            dataGridView.ShowCellErrors = false;
+            dataGridView.ShowCellToolTips = false;
+            dataGridView.ShowEditingIcon = false;
+            dataGridView.ShowRowErrors = false;
+            dataGridView.Size = new Size(650, 415);
+            dataGridView.DataSourceChanged += new EventHandler(dataGridView_DataSourceChanged);
+            dataGridView.MouseWheel += new MouseEventHandler(dataGridView_MouseWheel);
         }
 
         private void dataGridView_DataSourceChanged(object sender, EventArgs e) {
@@ -169,6 +220,53 @@ namespace GUI {
             }
             else if (e.Delta < 0) {
                 dataGridView.FirstDisplayedScrollingRowIndex++;
+            }
+        }
+
+        private void DeleteAccount() {
+            label_Title.Text = father.xuiButton_DeleteAccount.ButtonText.ToUpper();
+            label_Delete.Visible = true;
+            textBox_Delete.Visible = true;
+            InitDeleteAccount();
+            panel_Footer.Controls.Add(label_Delete);
+            panel_Footer.Controls.Add(textBox_Delete);
+        }
+
+        private void InitDeleteAccount() {
+            // 
+            // label_Delete
+            // 
+            label_Delete.AutoSize = true;
+            label_Delete.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+            label_Delete.ForeColor = SystemColors.ControlText;
+            label_Delete.Location = new Point(28, 40);
+            label_Delete.Name = "label_Delete";
+            label_Delete.Size = new Size(215, 29);
+            label_Delete.Text = "Nhập Password để xóa tài khoản:";
+            // 
+            // textBox_Delete
+            // 
+            textBox_Delete.BackColor = Color.White;
+            textBox_Delete.BorderStyle = BorderStyle.FixedSingle;
+            textBox_Delete.Font = new Font("Calibri", 10.2F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+            textBox_Delete.Location = new Point(33, 72);
+            textBox_Delete.MaxLength = 64;
+            textBox_Delete.Name = "textBox_Delete";
+            textBox_Delete.UseSystemPasswordChar = true;
+            textBox_Delete.Size = new Size(230, 28);
+            textBox_Delete.KeyDown += new KeyEventHandler(textBox_Delete_KeyDown);
+            //textBox_Delete.TextChanged += new EventHandler(textBox_Search_TextChanged);
+        }
+
+        private void textBox_Delete_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                if (AccountBUS.Instance.Login(father.LoginAccount.UserName, textBox_Delete.Text)) {
+                    if (MessageBox.Show("Bạn có chắc chắn muốn xóa tài khoản?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                        MessageBox.Show("Xóa tài khoản thành công!\nChương trình sẽ quay về nơi đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        father.Close();
+                        father.Father.Show();
+                    }
+                }
             }
         }
 

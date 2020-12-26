@@ -103,7 +103,7 @@ namespace DAO {
         }
 
         public AccountDTO GetAccountByUserName(string userName) {
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.Account WHERE UserName = '" + userName + "'");
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM dbo.Account WHERE Username = '" + userName + "'");
 
             foreach (DataRow item in data.Rows) {
                 return new AccountDTO(item);
