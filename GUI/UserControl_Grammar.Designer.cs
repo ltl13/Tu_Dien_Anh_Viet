@@ -34,7 +34,7 @@
             // 
             // button_Game_BuildBridge
             // 
-            this.button_Game_BuildBridge.BackgroundImage = global::GUI.Properties.Resources.imageedit_7_7290431428;
+            this.button_Game_BuildBridge.BackgroundImage = global::GUI.Properties.Resources.sky;
             this.button_Game_BuildBridge.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Game_BuildBridge.FlatAppearance.BorderSize = 0;
             this.button_Game_BuildBridge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -48,11 +48,11 @@
             this.button_Game_BuildBridge.TabIndex = 1;
             this.button_Game_BuildBridge.UseCompatibleTextRendering = true;
             this.button_Game_BuildBridge.UseVisualStyleBackColor = true;
-            this.button_Game_BuildBridge.Click += new System.EventHandler(this.button_Game_BuildBridge_Click);
+           // this.button_Game_BuildBridge.Click += new System.EventHandler(this.button_Game_BuildBridge_Click);
             // 
             // button_Game_CarRacing
             // 
-            this.button_Game_CarRacing.BackgroundImage = global::GUI.Properties.Resources.imageedit_1_5530705358;
+            this.button_Game_CarRacing.BackgroundImage = global::GUI.Properties.Resources.road;
             this.button_Game_CarRacing.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Game_CarRacing.FlatAppearance.BorderSize = 0;
             this.button_Game_CarRacing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -65,7 +65,7 @@
             this.button_Game_CarRacing.TabIndex = 0;
             this.button_Game_CarRacing.UseCompatibleTextRendering = true;
             this.button_Game_CarRacing.UseVisualStyleBackColor = true;
-            this.button_Game_CarRacing.Click += new System.EventHandler(this.button_Game_CarRacing_Click);
+          //  this.button_Game_CarRacing.Click += new System.EventHandler(this.button_Game_CarRacing_Click);
             // 
             // UserControl_Grammar
             // 

@@ -1,0 +1,852 @@
+[
+  {
+    "ID": 1,
+    "Question": "The act of _________ should be prohibited under any circumstances. Everyone all has equal rights to vote. (FRANCHISE)",
+    "Answer": "disenfranchisement"
+  },
+  {
+    "ID": 2,
+    "Question": "The boss ordered his staff to be ________ with each other in dealing with the company's end-of-year burden. (LABOR)",
+    "Answer": "collaborative"
+  },
+  {
+    "ID": 3,
+    "Question": "It is such a _________ story that the mom lost her child when her family immigrated from Africa into Europe. (LUCK)",
+    "Answer": "hard-luck"
+  },
+  {
+    "ID": 4,
+    "Question": "The mayor was determined that he would do everything in his power to _________ the murder case. (MYSTERY)",
+    "Answer": "demystify"
+  },
+  {
+    "ID": 5,
+    "Question": "The government stressed it was not abandoning its tough __________ policies. (INFLATE)",
+    "Answer": "anti-inflationary"
+  },
+  {
+    "ID": 6,
+    "Question": "The woman detected her ________ conditions soon after she felt ill in her body. (CANCER)",
+    "Answer": "precancerous"
+  },
+  {
+    "ID": 7,
+    "Question": "I cast my eyes ________ and saw the geese flying in V-line. (HEAVEN)",
+    "Answer": "heavenwards"
+  },
+  {
+    "ID": 8,
+    "Question": "________ programs are offered to those who want to do professional training while being paid to work. (SERVICE)",
+    "Answer": "In-service"
+  },
+  {
+    "ID": 9,
+    "Question": "It is inhumane to sell ________ limbs of the animals, such as rhinoceros or elephants, in the market place. (MEMBER)",
+    "Answer": "dismembered"
+  },
+  {
+    "ID": 10,
+    "Question": "He was regarded as a _______ winner as he beat his opponents in three straight sets. (RUN)",
+    "Answer": "runaway"
+  },
+  {
+    "ID": 11,
+    "Question": "Although some hold out hope for a sea wall and land reclamation programme, it is admittedly nothing more than a mere ________ (STOP)",
+    "Answer": "stopgap"
+  },
+  {
+    "ID": 12,
+    "Question": "A(n) ________ is implanted in the body to prop up the heart. (MAKE)",
+    "Answer": "pacemaker"
+  },
+  {
+    "ID": 13,
+    "Question": "She is ________ gorgeous in that gown. (DIE)",
+    "Answer": "drop-dead"
+  },
+  {
+    "ID": 14,
+    "Question": "His behavior at the party was _________, which went beyond everyone's expectations. (ERR)",
+    "Answer": "aberrant"
+  },
+  {
+    "ID": 15,
+    "Question": "The advent of computers was one of the _________ milestones in the mankind's history. (NOTE)",
+    "Answer": "noteworthy"
+  },
+  {
+    "ID": 16,
+    "Question": "His condition was so serious _________ as he had to stay in hospital for a month. (MUCH)",
+    "Answer": "inasmuch"
+  },
+  {
+    "ID": 17,
+    "Question": "Pending the _________ of KFC, the manager had to catch up on a huge number of backlogs. (TAKE)",
+    "Answer": "takeover"
+  },
+  {
+    "ID": 18,
+    "Question": "It is __________ to be waken up by the noisy music from the neighbor's house. (IRK)",
+    "Answer": "irksome"
+  },
+  {
+    "ID": 19,
+    "Question": "Like many other __________ of my age, I dread to use hi-tech gears. (TECHNICAL)",
+    "Answer": "technophobes"
+  },
+  {
+    "ID": 20,
+    "Question": "Bacteria derived from __________ disease can be contagious among people having reciprocal contact. (MENINGES)",
+    "Answer": "meniggitic"
+  },
+  {
+    "ID": 21,
+    "Question": "The woman is getting older. She is now in the __________ year of her age. (LIGHT)",
+    "Answer": "twilight"
+  },
+  {
+    "ID": 22,
+    "Question": "Chemicals are easily __________ if they are laid open in the atmosphere for a long time. (ACTION)",
+    "Answer": "deactivated"
+  },
+  {
+    "ID": 23,
+    "Question": "The spectators booed as the referee did not disallow the _______ goal. (SIDE)",
+    "Answer": "offside"
+  },
+  {
+    "ID": 24,
+    "Question": "The government must work at full tilt to promote the economy and reduce the ________. (EFFICIENT)",
+    "Answer": "deficits"
+  },
+  {
+    "ID": 25,
+    "Question": "The Earth is experiencing a major ________ in the climate. (HEAVE)",
+    "Answer": "upheaval"
+  },
+  {
+    "ID": 26,
+    "Question": "My ________ is the unique thing that distinguishes me from others. (MARK)",
+    "Answer": "birthmark"
+  },
+  {
+    "ID": 27,
+    "Question": "Children who grow up in peace tend to be more ________ than those who grow up in war. (ADAPT)",
+    "Answer": "maladapted"
+  },
+  {
+    "ID": 28,
+    "Question": "My mother ________ me a great deal of encouragement after I got bad grades in my exam. (VOUCH)",
+    "Answer": "vouchsafed"
+  },
+  {
+    "ID": 29,
+    "Question": "He is a(n) ________ man. He does not gain any ground in his family. (WILL)",
+    "Answer": "weak-willed"
+  },
+  {
+    "ID": 30,
+    "Question": "You can look at the ________ of this Chinese book to see the elucidation of these new words. (ADD)",
+    "Answer": "addendum"
+  },
+  {
+    "ID": 31,
+    "Question": "The reaction that occurs within the cell is called _________ reaction. (CELL)",
+    "Answer": "intracellular"
+  },
+  {
+    "ID": 32,
+    "Question": "He was ________ from the hustle and bustle of life since he moved to this rural area. (TANGLE)",
+    "Answer": "disentangled"
+  },
+  {
+    "ID": 33,
+    "Question": "I ________ over whether to go abroad or not. (SHALL)",
+    "Answer": "shilly-shally"
+  },
+  {
+    "ID": 34,
+    "Question": "Many people nowadays want to indulge themselves in ________ industries such as finance and the like. (KNOW)",
+    "Answer": "knowledge-based"
+  },
+  {
+    "ID": 35,
+    "Question": "Please accept this ________ as a reminder of your stay here. (REMEMBER)",
+    "Answer": "memento"
+  },
+  {
+    "ID": 36,
+    "Question": "A(n) ________ is the one who turns into wolf during full moon. (WOLF)",
+    "Answer": "werewolf"
+  },
+  {
+    "ID": 37,
+    "Question": "Nitrogen oxide is a(n) ________ compound of oxygen and nitrogen. (ATOM)",
+    "Answer": "biatomic"
+  },
+  {
+    "ID": 38,
+    "Question": "The story broadens the horizon of the children about their _______. (BEAR)",
+    "Answer": "forebears"
+  },
+  {
+    "ID": 39,
+    "Question": "I met my old friend at the supermarket this morning, which was quite ________. (FORTUNE)",
+    "Answer": "fortuitous"
+  },
+  {
+    "ID": 40,
+    "Question": "The mall has intrigued a great number of visitors since it was ________ last month. (GRAND)",
+    "Answer": "aggrandized"
+  },
+  {
+    "ID": 41,
+    "Question": "She cast her eyes ________ and saw a mysterious man looking at her. (STREET)",
+    "Answer": "streetwards"
+  },
+  {
+    "ID": 42,
+    "Question": "The girl excelled herself at the exam and came ________ to the two boys. (THREE)",
+    "Answer": "tertiary"
+  },
+  {
+    "ID": 43,
+    "Question": "Scientists from Russia, America and Japan have recently filled the periodic table’s seventh row with four _________ chemical elements. (HEAVE)",
+    "Answer": "superheavy"
+  },
+  {
+    "ID": 44,
+    "Question": "It is a misconception that _________ human blood is blue. (OXYGEN)",
+    "Answer": "deoxygenated"
+  },
+  {
+    "ID": 45,
+    "Question": "The house is painted in such a(n) _________ style. (SAVOUR)",
+    "Answer": "unsavoury"
+  },
+  {
+    "ID": 46,
+    "Question": "In this modern day, you have to keep yourself _________ so as not to lag behind others. (DATE)",
+    "Answer": "uptodate"
+  },
+  {
+    "ID": 47,
+    "Question": "This book is _________. You can find information about the varieties of plants around the world here. (EMBRACE)",
+    "Answer": "all-embracing"
+  },
+  {
+    "ID": 48,
+    "Question": "The little rainfall ________ a poor crop for farmers in this village. (BODE)",
+    "Answer": "foreboded"
+  },
+  {
+    "ID": 49,
+    "Question": "That word is such a(n) ________. It is not easy to pronouce at all. (JAW)",
+    "Answer": "jawbreaker"
+  },
+  {
+    "ID": 50,
+    "Question": "_________ and disinfectants are widely used in hospital to kill the bacteria. (SEPTIC)",
+    "Answer": "antiseptics"
+  },
+  {
+    "ID": 51,
+    "Question": "Due to the prolonged _________, the goods arrived later than we had expected. (CONTENT)",
+    "Answer": "containerization"
+  },
+  {
+    "ID": 52,
+    "Question": "Found in ________ condition, the house is intended to be demolished. (DOWN)",
+    "Answer": "run-down"
+  },
+  {
+    "ID": 53,
+    "Question": "________ of violence has been possible by means of television. (DOCTRINE)",
+    "Answer": "indoctrination"
+  },
+  {
+    "ID": 54,
+    "Question": "He laid his desk _________. It is untidily filled with all kinds of stuff. (HEAP)",
+    "Answer": "aheap"
+  },
+  {
+    "ID": 55,
+    "Question": "It is ________ that he will press ahead with his project. Nothing can prevent him. (ODD)",
+    "Answer": "odds-on"
+  },
+  {
+    "ID": 56,
+    "Question": "X-rays, known as a form of ________, are widely utilized nowadays to diagnose medical conditions. (RADIAL)",
+    "Answer": "irradiation"
+  },
+  {
+    "ID": 57,
+    "Question": "His misunderstanding of the situation resulted in his _________. Everyone could make out the embarassing remarks on his face. (COMPOSE)",
+    "Answer": "discomposure"
+  },
+  {
+    "ID": 58,
+    "Question": "The minister _________ the fight against hunger in his opening speech. (ACCENT)",
+    "Answer": "accentuated"
+  },
+  {
+    "ID": 59,
+    "Question": "Even the most _________ equipment cannot replace the role of the teachers in the future. (ART)",
+    "Answer": "state-of-the-art"
+  },
+  {
+    "ID": 60,
+    "Question": "America is considered one of the biggest _________ in the world. (POWER)",
+    "Answer": "superpowers"
+  },
+  {
+    "ID": 61,
+    "Question": "The water ________ in the building is of great concern. It can damage the walls if not managed properly and timely. (FILL)",
+    "Answer": "infiltration"
+  },
+  {
+    "ID": 62,
+    "Question": "He took off his hat and a pigeon flew out. It was ________ a trick. (GUILE)",
+    "Answer": "beguilingly"
+  },
+  {
+    "ID": 63,
+    "Question": "In a _________ manner, he stepped into the room and shouted at the top of his voice. (DOUBT)",
+    "Answer": "redoubtable"
+  },
+  {
+    "ID": 64,
+    "Question": "You should not assess a situation from such a(n) ________ side. (LATERAL)",
+    "Answer": "unilateral"
+  },
+  {
+    "ID": 65,
+    "Question": "The homless woman pleaded for a shelter from the rain in a(n) _________ tone. (PASSION)",
+    "Answer": "impassioned"
+  },
+  {
+    "ID": 66,
+    "Question": "The man reported than he had seen a(n) _________ object, which might well be a UFO. (EGG)",
+    "Answer": "egg-shaped"
+  },
+  {
+    "ID": 67,
+    "Question": "The coal cellar needs to be equipped with _________ system in order to prevent suffocation. (VENT)",
+    "Answer": "ventilation"
+  },
+  {
+    "ID": 68,
+    "Question": "The advent of Internet is an important __________ in human history. (MARK)",
+    "Answer": "landmark"
+  },
+  {
+    "ID": 69,
+    "Question": "His face showed the remark of _________ even when we were talking about seriously. ( FLIP)",
+    "Answer": "flippancies"
+  },
+  {
+    "ID": 70,
+    "Question": "What you know is rather __________. And it is unfair to judge just through a cursory glance. (FACIES)",
+    "Answer": "superficial"
+  },
+  {
+    "ID": 71,
+    "Question": "Moving _________ is moving in a direction opposite to the direction the hands of the clock moves. (CLOCK)",
+    "Answer": "counterclockwise/anticlockwise"
+  },
+  {
+    "ID": 72,
+    "Question": "Reta is studying animal __________ at the Oxford university. (GENE)",
+    "Answer": "genomics"
+  },
+  {
+    "ID": 73,
+    "Question": "The crews fortuitously dicovered a __________ in the ship’s cool chamber. (STOW)",
+    "Answer": "stowaway"
+  },
+  {
+    "ID": 74,
+    "Question": "The man was _________ on a medal for bravely taking a child out of the burning house. (STOW)",
+    "Answer": "bestowed"
+  },
+  {
+    "ID": 75,
+    "Question": "The report has _________ the cause of global warming in the past decades. (POINT)",
+    "Answer": "pinpointed"
+  },
+  {
+    "ID": 76,
+    "Question": "It may take more than a month to deliver our car from Germany to VietNam as it is _________. (SHIP)",
+    "Answer": "shipborne"
+  },
+  {
+    "ID": 77,
+    "Question": "“Titanic” is an example of _________ romance. (SHIP)",
+    "Answer": "shipboard"
+  },
+  {
+    "ID": 78,
+    "Question": "The machine cannot work properly as a direct result of _________. (ALIGN)",
+    "Answer": "misalignment"
+  },
+  {
+    "ID": 79,
+    "Question": "There used to be a __________ in Quang Tri, whose remains now become a historical site. (HOLD)",
+    "Answer": "stronghold"
+  },
+  {
+    "ID": 80,
+    "Question": "Andy was ___________ from the volunteer group due to his poor attitude. (COMMUNICATE)",
+    "Answer": "excommunicated"
+  },
+  {
+    "ID": 81,
+    "Question": "I was so ____________ that even a spider scared me. (KNEE)",
+    "Answer": "weak-kneed"
+  },
+  {
+    "ID": 82,
+    "Question": "The government ____________ its responsibility in the leakage of confidential information. (NEGATE)",
+    "Answer": "abnegated"
+  },
+  {
+    "ID": 83,
+    "Question": "Try not to be ___________ even if you are tremendously successful. (VAIN)",
+    "Answer": "vainglorious"
+  },
+  {
+    "ID": 84,
+    "Question": "Bob is a(n) ___________ of an intelligent student. (TYPE)",
+    "Answer": "archetype"
+  },
+  {
+    "ID": 85,
+    "Question": "The goverment’s policy to soothe the anger among people was ___________. It should have happened earlier. (CHRONOLOGY)",
+    "Answer": "anachronistic"
+  },
+  {
+    "ID": 86,
+    "Question": "Tom’s collection is such a(n) ___________. There is no connection between things. (MASH)",
+    "Answer": "mish-mash"
+  },
+  {
+    "ID": 87,
+    "Question": "I was completely ___________ by the fact that he was going to get married. (MUSE)",
+    "Answer": "bemused"
+  },
+  {
+    "ID": 88,
+    "Question": "Sleeping during day and working when night comes sounds seemingly __________. (SCIENCE)",
+    "Answer": "antiscientific"
+  },
+  {
+    "ID": 89,
+    "Question": "I question whether a spectacle so fantastic and impressive was ever dealtwith, even in the pages of __________ fiction. (SCIENCE)",
+    "Answer": "quasiscientific"
+  },
+  {
+    "ID": 90,
+    "Question": "Adam’s gait is a(n) __________ for his strong personality. (WORD)",
+    "Answer": "byword"
+  },
+  {
+    "ID": 91,
+    "Question": "The apricot blossom __________ during spring. (GERM)",
+    "Answer": "germinates"
+  },
+  {
+    "ID": 92,
+    "Question": "In an _________ world, people have to change to get into the swing of the environment. (EVOLVE)",
+    "Answer": "ever-evolving"
+  },
+  {
+    "ID": 93,
+    "Question": "I __________ the distance from my house to the Ann’s hospital and arrived there rather late. (RECK)",
+    "Answer": "misreckoned"
+  },
+  {
+    "ID": 94,
+    "Question": "Harry Porter’s personality is successfully ___________ by J.K.Rowling throughout her series. (LINE)",
+    "Answer": "delineated"
+  },
+  {
+    "ID": 95,
+    "Question": "Your __________ saying last night could hurt other people’s feelings although you might not intend to say so. (SENSE)",
+    "Answer": "insensate"
+  },
+  {
+    "ID": 96,
+    "Question": "What Thuy Minh said has provoked violent __________ from critics as well as celebrities. (BLAST)",
+    "Answer": "counterblast"
+  },
+  {
+    "ID": 97,
+    "Question": "You are becoming a(n) ___________. Just go outside and see what happens. (LAY)",
+    "Answer": "layabout"
+  },
+  {
+    "ID": 98,
+    "Question": "A ___________ is an instrument that separates light into a frequency spectrum and records the signal using a camera. (SPECTRUM)",
+    "Answer": "spectrograph"
+  },
+  {
+    "ID": 99,
+    "Question": "Cindy showed ___________ support at Josh’s project. She always believes him. (FALTER)",
+    "Answer": "unfaltering"
+  },
+  {
+    "ID": 100,
+    "Question": "Securing a ___________ job is most people’s dreams. (CLERK)",
+    "Answer": "clerical"
+  },
+  {
+    "ID": 101,
+    "Question": "This place is an ___________ zone, which is restricted to people who work in the Parliamentary House only. (EXCLUDE)",
+    "Answer": "exclusionary"
+  },
+  {
+    "ID": 102,
+    "Question": "He was ___________ by the darkness and got lost in the forest. (NIGHT)",
+    "Answer": "benighted"
+  },
+  {
+    "ID": 103,
+    "Question": "He was ___________ with intelligence but he tried hard to make up for it. (ENDOW)",
+    "Answer": "unendowed"
+  },
+  {
+    "ID": 104,
+    "Question": "Any ___________ gimmicks are forbidden in this competition. (MALICE)",
+    "Answer": "malicious"
+  },
+  {
+    "ID": 105,
+    "Question": "Surely all women must have ___________ instinct or the human race would die out. (MOTHER)",
+    "Answer": "maternal"
+  },
+  {
+    "ID": 106,
+    "Question": "Putting up with noise coming from the neighbor is probably the most ____________ thing. (TO)",
+    "Answer": "untoward"
+  },
+  {
+    "ID": 107,
+    "Question": "The leader was taken into custody, which brought an end to the _____________. (SURGE)",
+    "Answer": "insurgency"
+  },
+  {
+    "ID": 108,
+    "Question": "The spectacular view of Sa Pa has _____________ many visitors. (RAPTURE)",
+    "Answer": "enraptured"
+  },
+  {
+    "ID": 109,
+    "Question": "Andy has received such _____________ fame after he tried himself in the school’s play. (WONT)",
+    "Answer": "unwonted"
+  },
+  {
+    "ID": 110,
+    "Question": "The aridity in that area _____________ a poor crop. (TOKEN)",
+    "Answer": "betokens"
+  },
+  {
+    "ID": 111,
+    "Question": "Some people argue that money has _____________ football. (BASE)",
+    "Answer": "debased"
+  },
+  {
+    "ID": 112,
+    "Question": "This remote village bore the _____________ of the storm. (PREDATOR)",
+    "Answer": "depredation"
+  },
+  {
+    "ID": 113,
+    "Question": "“People” is a ____________ word. (SYLLABLE)",
+    "Answer": "disyllabic"
+  },
+  {
+    "ID": 114,
+    "Question": "The young boy was _____________ by the two men who then asked the innocent for money. (WAY)",
+    "Answer": "waylaid"
+  },
+  {
+    "ID": 115,
+    "Question": "Taking that old lady for a ride is _____________. (CONSCIENCE)",
+    "Answer": "unconscionable"
+  },
+  {
+    "ID": 116,
+    "Question": "To achieve the _____________ logic, you have to employ certain techniques of using connectives like ‘and’, ‘or’ in the right place within the sentence. (SENTENCE)",
+    "Answer": "sentential"
+  },
+  {
+    "ID": 117,
+    "Question": "This chair is almost too ____________, so replace it with a new one! (ANNUAL)",
+    "Answer": "superannuated"
+  },
+  {
+    "ID": 118,
+    "Question": "Underground nuclear _____________ are believed to have been carried out. (TONE)",
+    "Answer": "denotations"
+  },
+  {
+    "ID": 119,
+    "Question": "The opponents of nuclear power may object to the scheme for some ______________ reasons. (MENTION)",
+    "Answer": "undermentioned"
+  },
+  {
+    "ID": 120,
+    "Question": "Every point in his speech is _____________, which allows the audience to follow easily. (PERSPEX)",
+    "Answer": "perspicuous"
+  },
+  {
+    "ID": 121,
+    "Question": "The ______________ is used to measured the smallest things! (MICRO)",
+    "Answer": "micrometer"
+  },
+  {
+    "ID": 122,
+    "Question": "His ______________ talking annoys the teachers a lot. (TERMINAL)",
+    "Answer": "interminable"
+  },
+  {
+    "ID": 123,
+    "Question": "Many ______________ policies have come into force to boost the economic development. (BUSINESS)",
+    "Answer": "pro-business"
+  },
+  {
+    "ID": 124,
+    "Question": "A(n) _____________ schedule assists me in passing the day smoothly. (ARRANGE)",
+    "Answer": "prearranged"
+  },
+  {
+    "ID": 125,
+    "Question": "Allowing yourself anything you like makes you a ____________ figure. (INDULGE)",
+    "Answer": "self-indulgent"
+  },
+  {
+    "ID": 126,
+    "Question": "Mary ______________ with her husband about his budget this month. (POSTULATE)",
+    "Answer": "expostulated"
+  },
+  {
+    "ID": 127,
+    "Question": "It is impossible to _______________ his excellence at work. (SAY)",
+    "Answer": "gainsay"
+  },
+  {
+    "ID": 128,
+    "Question": "People in coastal area live mainy on the ______________, which allows them to earn a great deal of money from the sea products (CULTURE)",
+    "Answer": "aquaculture"
+  },
+  {
+    "ID": 129,
+    "Question": "People felt a great pity for the time spent to see such a(n) _____________ film. (ABYSS)",
+    "Answer": "abysmal"
+  },
+  {
+    "ID": 130,
+    "Question": "Every book has a ______________ including what the authors say about their masterpiece. (WORD)",
+    "Answer": "foreword"
+  },
+  {
+    "ID": 131,
+    "Question": "I cannot imagine why there are such ______________ people in this world. Don’t they feel any sympathy for the homeless? (HEART)",
+    "Answer": "hard-hearted"
+  },
+  {
+    "ID": 132,
+    "Question": "I will bring my unbrella along on the _____________ that it rains. (CHANCE)",
+    "Answer": "offchance"
+  },
+  {
+    "ID": 133,
+    "Question": "The dramatic decrease in the ________________ of this factory can be a direct result of underpayment. (PUT)",
+    "Answer": "throughput"
+  },
+  {
+    "ID": 134,
+    "Question": "The contaminated drinking water in Flint, Michigan can cause ______________ consequences. (LIFE)",
+    "Answer": "lifelong"
+  },
+  {
+    "ID": 135,
+    "Question": "It is a _____________ fact that the vegeterian sausages were invented during World War I. (KNOW)",
+    "Answer": "little-known"
+  },
+  {
+    "ID": 136,
+    "Question": "His recent unpredictable mood ____________ him from his friends. (STRANGE)",
+    "Answer": "estranges"
+  },
+  {
+    "ID": 137,
+    "Question": "I was ______________ and fell in love with her immediately at first sight. (LOVE)",
+    "Answer": "lovestruck"
+  },
+  {
+    "ID": 138,
+    "Question": "The camera must be clean with a soft ____________ cloth. Otherwise, the water will permeate and cause damage. (WRING)",
+    "Answer": "well-wrung"
+  },
+  {
+    "ID": 139,
+    "Question": "His recent ups and downs made the criminal more ____________ than ever. (BITE)",
+    "Answer": "hard-bitten"
+  },
+  {
+    "ID": 140,
+    "Question": "John Cena used to be in his _____________ in WWE but since his dislocation, he had to leave for operation and it would take him a long time to make a full recovery. (DAY)",
+    "Answer": "heyday"
+  },
+  {
+    "ID": 141,
+    "Question": "Bats use ______________ to navigate in the dark when hunting prey. (LOCATION)",
+    "Answer": "echolocation"
+  },
+  {
+    "ID": 142,
+    "Question": "He was lying, indicated by the _______________ sign that his hands were shivering. (TELL)",
+    "Answer": "tell-tale"
+  },
+  {
+    "ID": 143,
+    "Question": "Thanks to the _____________ at the bottom of the page, the Chinese-VietNamese poem becomes more accessible. (NOTE)",
+    "Answer": "footnote/annotation"
+  },
+  {
+    "ID": 144,
+    "Question": "The dog seems rather _______________; it must not have been fed for days. (SEE)",
+    "Answer": "unsightly"
+  },
+  {
+    "ID": 145,
+    "Question": "________________ injection is the most common way to inject drugs. (VEIN)",
+    "Answer": "intravenous"
+  },
+  {
+    "ID": 146,
+    "Question": "_________________ medication brings about a quick relief but it is not recommended for long-term treatment. (ACT)",
+    "Answer": "short-acting"
+  },
+  {
+    "ID": 147,
+    "Question": "Ivan’s camera now ________________ because he carelessly dropped it into the pool. (FUNCTION)",
+    "Answer": "malfunctions"
+  },
+  {
+    "ID": 148,
+    "Question": "Mary told the doctor about her stomach’s ________________. It didn’t seem to work properly. (FUNCTION)",
+    "Answer": "dysfunction"
+  },
+  {
+    "ID": 149,
+    "Question": "A cock roach can continue to live for a few days even if it is ________________. (CAPITA)",
+    "Answer": "decapitated"
+  },
+  {
+    "ID": 150,
+    "Question": "Their house is decorated in such a _________________ way so that it fit in with other houses. (DESCRIBE)",
+    "Answer": "nondescript"
+  },
+  {
+    "ID": 151,
+    "Question": "________________ people are strong and healthy ones who can make a living on their own. (BODY)",
+    "Answer": "able-bodied"
+  },
+  {
+    "ID": 152,
+    "Question": "I spent the whole evening _______________ my messy house. (CLUTTER)",
+    "Answer": "decluttering"
+  },
+  {
+    "ID": 153,
+    "Question": "Remember to read every _______________ in the contract because it can be a trap for the unwary. (PRINT)",
+    "Answer": "small-print"
+  },
+  {
+    "ID": 154,
+    "Question": "I did my project in my own way, not in a ________________ one. (TREAD)",
+    "Answer": "well-trodden"
+  },
+  {
+    "ID": 155,
+    "Question": "From six o’clock _______________, I’m home! (ON)",
+    "Answer": "onwards"
+  },
+  {
+    "ID": 156,
+    "Question": "Some of the ________________ and __________________ regions in Somalia have adopted distinctive symbols , including flags, while others continue to use the Somali flag. (DEPEND/AUTONOMY)",
+    "Answer": "quasi-independent/semi autonomous"
+  },
+  {
+    "ID": 157,
+    "Question": "A(n) _________________ disease is one that will gradually deteriorate the functioning of any one part in your body. (GENERATE)",
+    "Answer": "degenerative"
+  },
+  {
+    "ID": 158,
+    "Question": "It is widely known that judges have _________________ powers. (DISCRETION)",
+    "Answer": "discretionary"
+  },
+  {
+    "ID": 159,
+    "Question": "The little boy left his hand-made boat _______________ on the river. (DRIFT)",
+    "Answer": "adrift"
+  },
+  {
+    "ID": 160,
+    "Question": "The students are ________________ seperated into differnt classes. (QUALIFY)",
+    "Answer": "qualitatively"
+  },
+  {
+    "ID": 161,
+    "Question": "He suffered from headaches as an _______________ of his accident. (AFFECT)",
+    "Answer": "aftereffect"
+  },
+  {
+    "ID": 162,
+    "Question": "The renown that Michael Jackson gained for himself is almost ________________. (SUPERIOR)",
+    "Answer": "insuperable"
+  },
+  {
+    "ID": 163,
+    "Question": "Viet Nam used to be ________________ into two seperate areas, with the border being Gianh river. (MASS)",
+    "Answer": "demassified"
+  },
+  {
+    "ID": 164,
+    "Question": "The walls were _________________ with colors, which make it so beautiful. (STRIPE)",
+    "Answer": "striated"
+  },
+  {
+    "ID": 165,
+    "Question": "A bottle of cooled water had __________________ effects on us after a long walk. (VIGOR)",
+    "Answer": "invigorating"
+  },
+  {
+    "ID": 166,
+    "Question": "Hand ________________ is accused of including BBA, which can cause many health problems. (SANITARY)",
+    "Answer": "sanitizer"
+  },
+  {
+    "ID": 167,
+    "Question": "Their trouble is __________________. They themselves made the situation worse. (INFLICT)",
+    "Answer": "self-inflicting"
+  },
+  {
+    "ID": 168,
+    "Question": "The _________________ inside our bodies is a complex system. (MUSCLE)",
+    "Answer": "musculature"
+  },
+  {
+    "ID": 169,
+    "Question": "I do not understand why Adriana was so ________________ at last night’s party. She is usually clever and tactical when meeting people. (ADROIT)",
+    "Answer": "maladroit"
+  },
+  {
+    "ID": 170,
+    "Question": "Viet Nam went through _________________ process and became an independent country. (COLONY)",
+    "Answer": "decolonisation"
+  }
+]

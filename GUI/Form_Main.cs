@@ -183,6 +183,7 @@ namespace GUI {
         }
         #endregion
 
+        #region Blala
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
             BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
         }
@@ -232,6 +233,17 @@ namespace GUI {
             pictureBox_Exam_MouseDown(null, null);
         }
 
+        private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReturnClick(panel_Game);
+            mainGrammar.Visible = true;
+        }
+
+        private void label_Game_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox_Game_MouseDown(null, null);
+        }
+
         private void ReturnClick(Panel chosenPanel) {
             panel_Search.BackColor = Color.LightCyan;
             panel_FlashCard.BackColor = Color.LightCyan;
@@ -250,17 +262,6 @@ namespace GUI {
             mainGrammar.Visible = false;
 
             chosenPanel.BackColor = Color.FromArgb(199, 233, 255);
-        }
-
-        private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReturnClick(panel_Game);
-            mainGrammar.Visible = true;
-        }
-
-        private void label_Game_MouseDown(object sender, MouseEventArgs e)
-        {
-            pictureBox_Game_MouseDown(null, null);
         }
 
         private void label_Search_MouseEnter(object sender, EventArgs e) {
@@ -381,6 +382,7 @@ namespace GUI {
         private void pictureBox_Game_MouseLeave(object sender, EventArgs e) {
             if (panel_Game.BackColor != Color.FromArgb(199, 233, 255))
                 panel_Game.BackColor = Color.LightCyan;
-        }
+        }        
+        #endregion
     }
 }
