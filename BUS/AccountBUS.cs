@@ -43,12 +43,12 @@ namespace BUS {
             return AccountDAO.Instance.GetListAccount();
         }
 
-        public int ImportImage(int userID, string folderPath, string fileName) {
-            return AccountDAO.Instance.ImportImage(userID, folderPath, fileName);
+        public void SavePicture(int userID, string folderPath, string fileName) {
+            AccountDAO.Instance.SavePicture(userID, folderPath, fileName);
         }
 
-        public int ExportImage(int userID, string folderPath, string fileName) {
-            return AccountDAO.Instance.ExportImage(userID, folderPath, fileName);
+        public byte[] LoadImage(int userID) {
+            return AccountDAO.Instance.LoadImage(userID);
         }
         #endregion
     }

@@ -37,7 +37,10 @@ namespace GUI {
                 }
 
                 loginAccount = AccountBUS.Instance.GetAccountByUserName(tbUsername.Text);
-                //AccountBUS.Instance.ImportImage(loginAccount.ID, )
+
+                string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), @"..\..\Resources"));
+                AccountBUS.Instance.SavePicture(loginAccount.ID, path, "default-user-picture.png");
+
                 fMain = new Form_Main(loginAccount, father);
                 Hide();
                 fMain.Show();
