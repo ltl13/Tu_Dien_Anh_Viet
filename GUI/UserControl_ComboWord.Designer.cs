@@ -741,7 +741,6 @@
             this.metroTextBox_Filter.MaxLength = 32767;
             this.metroTextBox_Filter.Name = "metroTextBox_Filter";
             this.metroTextBox_Filter.PasswordChar = '\0';
-            this.metroTextBox_Filter.PromptText = "Filter...";
             this.metroTextBox_Filter.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Filter.SelectedText = "";
             this.metroTextBox_Filter.SelectionLength = 0;

@@ -48,6 +48,9 @@ namespace GUI {
             if (Father.Favorite.Count < 10) {
                 metroTile_Favorite.Enabled = false;
                 panel_Lock.Visible = true;
+
+                if (!label_Lock.Text.Contains("\n\nSố từ hiện tại: "))
+                    label_Lock.Text += "\n\nSố từ hiện tại: " + Father.Favorite.Count.ToString();
             }
             else {
                 metroTile_Favorite.Enabled = true;

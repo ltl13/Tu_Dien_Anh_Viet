@@ -45,6 +45,18 @@ namespace DAO {
             return result.Rows.Count > 0;
         }
 
+        public int ImportImage(int userID, string folderPath, string fileName) {
+            string query = "USP_ImportImage @userID , @folderPath, @fileName";
+
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { userID, folderPath, fileName });
+        }
+
+        public int ExportImage(int userID, string folderPath, string fileName) {
+            string query = "USP_ExportImage @userID , @folderPath, @fileName";
+
+            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { userID, folderPath, fileName });
+        }
+
         public bool AlreadyExist(string userName) {
             string query = "SELECT * FROM dbo.Account WHERE UserName = '" + userName + "'";
             return DataProvider.Instance.ExecuteQuery(query).Rows.Count > 0;

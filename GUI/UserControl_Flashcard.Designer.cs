@@ -96,7 +96,7 @@
             // 
             this.label_Number.BackColor = System.Drawing.Color.White;
             this.label_Number.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_Number.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Number.Font = new System.Drawing.Font("Calibri", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Number.Location = new System.Drawing.Point(0, 0);
             this.label_Number.Name = "label_Number";
             this.label_Number.Size = new System.Drawing.Size(220, 45);
