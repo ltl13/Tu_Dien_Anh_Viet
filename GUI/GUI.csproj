@@ -446,8 +446,9 @@
     <None Include="Resources\rokk.png" />
     <None Include="Resources\sky.png" />
     <None Include="Resources\win.png" />
-    <None Include="Resources\tada.PNG" />
-    <None Include="Resources\tadada.PNG" />
+    <None Include="Resources\user-picture.png" />
+    <None Include="Resources\find-user.png" />
+    <None Include="Resources\sign-out.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

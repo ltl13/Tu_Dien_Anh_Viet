@@ -1,5 +1,6 @@
 ﻿using DAO;
 using DTO;
+using System.Data;
 
 namespace BUS {
     public class AccountBUS {
@@ -22,12 +23,12 @@ namespace BUS {
             return AccountDAO.Instance.Login(userName, passWord);
         }
 
-        public bool Register(string userName, int type, string passWord, string displayName = null) {
+        public bool Register(string userName, string passWord, string displayName = null) {
             if (displayName == null) {
-                return AccountDAO.Instance.Register(userName, type, passWord);
+                return AccountDAO.Instance.Register(userName, passWord);
             }
 
-            return AccountDAO.Instance.Register(userName, type, passWord, displayName);
+            return AccountDAO.Instance.Register(userName, passWord, displayName);
         }
 
         public bool UpdateAccount(string userName, string displayName, string passWord, string newPass) {
@@ -36,6 +37,10 @@ namespace BUS {
 
         public AccountDTO GetAccountByUserName(string userName) {
             return AccountDAO.Instance.GetAccountByUserName(userName);
+        }
+
+        public DataTable GetListAccount() {
+            return AccountDAO.Instance.GetListAccount();
         }
         #endregion
     }

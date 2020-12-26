@@ -50,7 +50,7 @@ namespace DAO {
             return DataProvider.Instance.ExecuteQuery(query).Rows.Count > 0;
         }
 
-        public bool Register(string userName, int type, string passWord, string displayName = null) {
+        public bool Register(string userName, string passWord, string displayName = null) {
             if (AlreadyExist(userName)) {
                 return false;
             }
@@ -59,10 +59,10 @@ namespace DAO {
             string query;
 
             if (displayName == null) {
-                query = string.Format("INSERT dbo.Account (UserName, Type, PassWord) VALUES ('{0}', {1}, '{2}')", userName, type, hashedPassWord);
+                query = string.Format("INSERT dbo.Account (UserName, PassWord) VALUES ('{0}', '{1}')", userName, hashedPassWord);
             }
             else {
-                query = string.Format("INSERT dbo.Account (UserName, DisplayName, Type, PassWord) VALUES ('{0}', N'{1}', {2}, '{3}')", userName, displayName, type, hashedPassWord);
+                query = string.Format("INSERT dbo.Account (UserName, DisplayName, PassWord) VALUES ('{0}', N'{1}', '{2}')", userName, displayName, hashedPassWord);
             }
 
             int result = DataProvider.Instance.ExecuteNonQuery(query);
@@ -87,7 +87,7 @@ namespace DAO {
         }
 
         public DataTable GetListAccount() {
-            return DataProvider.Instance.ExecuteQuery("SELECT UserName, DisplayName, Type FROM dbo.Account");
+            return DataProvider.Instance.ExecuteQuery("SELECT ID, UserName, DisplayName FROM dbo.Account");
         }
 
         public AccountDTO GetAccountByUserName(string userName) {
