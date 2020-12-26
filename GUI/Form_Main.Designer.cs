@@ -654,7 +654,6 @@
         private System.Windows.Forms.Panel panel_Translate;
         private System.Windows.Forms.Panel panel_Game;
         private System.Windows.Forms.Panel panel_Account;
-        private XanderUI.XUIButton xuiButton_Account;
         private System.Windows.Forms.Timer timer_MenuAccount;
         private XanderUI.XUIButton xuiButton_Logout;
         private XanderUI.XUISwitch xuiSwitch_Language;
@@ -680,6 +679,7 @@
         public XanderUI.XUIButton xuiButton_FindUser;
         public XanderUI.XUIButton xuiButton_DeleteAccount;
         public XanderUI.XUIButton xuiButton_ListAccount;
+        public XanderUI.XUIButton xuiButton_Account;
     }
 }
 
