@@ -171,8 +171,6 @@
             // 
             this.pictureBox_UserPic.BackColor = System.Drawing.Color.White;
             this.pictureBox_UserPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox_UserPic.Image = global::GUI.Properties.Resources.user_picture;
-            this.pictureBox_UserPic.InitialImage = global::GUI.Properties.Resources.user_picture;
             this.pictureBox_UserPic.Location = new System.Drawing.Point(340, 40);
             this.pictureBox_UserPic.Name = "pictureBox_UserPic";
             this.pictureBox_UserPic.Size = new System.Drawing.Size(295, 295);

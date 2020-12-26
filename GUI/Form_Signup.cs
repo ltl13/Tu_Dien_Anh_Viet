@@ -37,6 +37,7 @@ namespace GUI {
                 }
 
                 loginAccount = AccountBUS.Instance.GetAccountByUserName(tbUsername.Text);
+                //AccountBUS.Instance.ImportImage(loginAccount.ID, )
                 fMain = new Form_Main(loginAccount, father);
                 Hide();
                 fMain.Show();

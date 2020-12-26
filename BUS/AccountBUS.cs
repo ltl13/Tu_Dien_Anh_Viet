@@ -42,6 +42,14 @@ namespace BUS {
         public DataTable GetListAccount() {
             return AccountDAO.Instance.GetListAccount();
         }
+
+        public int ImportImage(int userID, string folderPath, string fileName) {
+            return AccountDAO.Instance.ImportImage(userID, folderPath, fileName);
+        }
+
+        public int ExportImage(int userID, string folderPath, string fileName) {
+            return AccountDAO.Instance.ExportImage(userID, folderPath, fileName);
+        }
         #endregion
     }
 }
