@@ -231,6 +231,9 @@
     <EmbeddedResource Include="Form_Game_BuildBridge.resx">
       <DependentUpon>Form_Game_BuildBridge.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Game_CarRacing.resx">
+      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>

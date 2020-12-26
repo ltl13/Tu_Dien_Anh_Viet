@@ -68,7 +68,7 @@ namespace GUI
 
             key = items[rand.Next(0, items.Count)];
             label_Question.Text = key.question.ToString();
-            timer.Start();
+            timer_Bridge.Start();
         }
 
         public void LoadJson()
@@ -176,19 +176,19 @@ namespace GUI
             else if((float)point/numberOfQuestion>=0.8)
             {
                 win = true;
-                groupBox_Question.Hide();
+                panel_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
                 musicvictory.Ctlcontrols.play();
                 this.BackgroundImage = Properties.Resources.sky;
-                timer.Start();
+                timer_Bridge.Start();
             }
             else
             {
                 lose = true;
-                groupBox_Question.Hide();
+                panel_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
                 musicLose.Ctlcontrols.play();
-                timer.Start();
+                timer_Bridge.Start();
             }
         }
 
@@ -205,7 +205,7 @@ namespace GUI
                     isclick = true;
                     label_numOfQuestion.Text = n.ToString();
                     checkResult();
-                    timer.Start();
+                    timer_Bridge.Start();
                 }
                 else
                 {
@@ -214,7 +214,7 @@ namespace GUI
                     isclick = true;
                     label_numOfQuestion.Text = n.ToString();
                     checkResult();
-                    timer.Start();
+                    timer_Bridge.Start();
                 }
                 
             }
