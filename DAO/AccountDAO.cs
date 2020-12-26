@@ -45,16 +45,16 @@ namespace DAO {
             return result.Rows.Count > 0;
         }
 
-        public int ImportImage(int userID, string folderPath, string fileName) {
-            string query = "USP_ImportImage @userID , @folderPath, @fileName";
-
-            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { userID, folderPath, fileName });
+        public byte[] LoadImage(int userID) {
+            return DataProvider.Instance.LoadImage(userID);
         }
 
-        public int ExportImage(int userID, string folderPath, string fileName) {
-            string query = "USP_ExportImage @userID , @folderPath, @fileName";
+        public void SavePicture(int userID, string folderPath, string fileName) {
+            string path = System.IO.Path.Combine(folderPath, fileName);
 
-            return DataProvider.Instance.ExecuteNonQuery(query, new object[] { userID, folderPath, fileName });
+            byte[] data = System.IO.File.ReadAllBytes(path);
+
+            DataProvider.Instance.SaveImage(userID, data);
         }
 
         public bool AlreadyExist(string userName) {

@@ -14,6 +14,12 @@ namespace GUI {
         }
 
         private void UserControl_UserDashboard_VisibleChanged(object sender, EventArgs e) {
+            byte[] byteArrayIn = AccountBUS.Instance.LoadImage(father.LoginAccount.ID);
+
+            using (var ms = new System.IO.MemoryStream(byteArrayIn)) {
+                this.pictureBox_UserPic.Image = Image.FromStream(ms);
+            }
+            
             label_Password.Visible = false;
             label_NewPass.Visible = false;
             label_NewPassConfirm.Visible = false;
