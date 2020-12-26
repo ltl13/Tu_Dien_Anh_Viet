@@ -13,17 +13,22 @@ namespace GUI {
         private static UserControl_ComboWord mainComboWord;
         private static UserControl_Exam mainExam;
         private static UserControl_Grammar mainGrammar;
+        private static UserControl_UserDashboard mainUserDashboard;
+
         private AccountDTO loginAccount;
         private List<EnViDTO> favorite;
         private List<EnViDTO> recentlyEnVi;
         private List<ViEnDTO> recentlyViEn;
         private Form father;
         private bool isEnToVi = true;
+        private int choice;
 
         public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
         public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
         public List<EnViDTO> RecentlyEnVi { get => recentlyEnVi; set => recentlyEnVi = value; }
         public List<ViEnDTO> RecentlyViEn { get => recentlyViEn; set => recentlyViEn = value; }
+        public bool IsEnToVi { get => isEnToVi; set => isEnToVi = value; }
+        public int Choice { get => choice; set => choice = value; }
 
         public Form_Main(AccountDTO loginAccount, Form login) {
             InitializeComponent();
@@ -44,6 +49,7 @@ namespace GUI {
             mainComboWord = new UserControl_ComboWord();
             mainExam = new UserControl_Exam(this);
             mainGrammar = new UserControl_Grammar(this);
+            mainUserDashboard = new UserControl_UserDashboard(this);
 
             panel_Main.Controls.Add(mainSearch);
             panel_Main.Controls.Add(mainFlashcard);
@@ -51,12 +57,16 @@ namespace GUI {
             panel_Main.Controls.Add(mainComboWord);
             panel_Main.Controls.Add(mainExam);
             panel_Main.Controls.Add(mainGrammar);
+            panel_Main.Controls.Add(mainUserDashboard);
 
             panel_Main.BackColor = Color.FromArgb(199, 233, 255);
 
             pictureBox_Search_MouseDown(sender, null);
+            xuiButton_Account.ButtonText = "Hi " + loginAccount.DisplayName + "!";
 
-            xuiButton_Account.ButtonText = "Xin chào, " + loginAccount.DisplayName + "!";
+            if (loginAccount.DisplayName.Length > 11)
+                xuiButton_Account.ButtonText = "Hi " + loginAccount.DisplayName.Substring(0, 10) + "...!";
+
             this.CancelButton = button_Exit;
         }
 
@@ -110,7 +120,7 @@ namespace GUI {
             timer_MenuAccount.Start();
         }
 
-        private void xuiButton_ResetAccount_MouseEnter(object sender, EventArgs e) {
+        private void xuiButton_FindUser_MouseEnter(object sender, EventArgs e) {
             isPopUp = true;
             timer_MenuAccount.Start();
         }
@@ -140,7 +150,7 @@ namespace GUI {
             timer_MenuAccount.Start();
         }
 
-        private void xuiButton_ResetAccount_MouseLeave(object sender, EventArgs e) {
+        private void xuiButton_FindUser_MouseLeave(object sender, EventArgs e) {
             isPopUp = false;
             timer_MenuAccount.Start();
         }
@@ -160,6 +170,30 @@ namespace GUI {
             timer_MenuAccount.Start();
         }
 
+        private void xuiButton_UpdateInfo_MouseDown(object sender, MouseEventArgs e) {
+            ReturnClick();
+            choice = 1;
+            mainUserDashboard.Visible = true;
+        }
+
+        private void xuiButton_FindUser_MouseDown(object sender, MouseEventArgs e) {
+            ReturnClick();
+            choice = 2;
+            mainUserDashboard.Visible = true;
+        }
+
+        private void xuiButton_ListAccount_MouseDown(object sender, MouseEventArgs e) {
+            ReturnClick();
+            choice = 3;
+            mainUserDashboard.Visible = true;
+        }
+
+        private void xuiButton_DeleteAccount_MouseDown(object sender, MouseEventArgs e) {
+            ReturnClick();
+            choice = 4;
+            mainUserDashboard.Visible = true;
+        }
+
         private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {
             father.Show();
             this.Close();
@@ -167,11 +201,6 @@ namespace GUI {
         #endregion
 
         #region ButtonSwitchLanguage
-        public bool IsEnToVi {
-            get { return isEnToVi; }
-            set { isEnToVi = value; }
-        }
-
         private void changeLanguage(bool EnToVi) {
             if (EnToVi) { mainTranslate.xuiButton_Translate.ButtonText = "Translate"; }
             else { mainTranslate.xuiButton_Translate.ButtonText = "Dịch"; }
@@ -183,6 +212,7 @@ namespace GUI {
         }
         #endregion
 
+        #region UX
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
             BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
         }
@@ -231,8 +261,18 @@ namespace GUI {
         private void label_Exam_MouseDown(object sender, MouseEventArgs e) {
             pictureBox_Exam_MouseDown(null, null);
         }
+        private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReturnClick(panel_Game);
+            mainGrammar.Visible = true;
+        }
 
-        private void ReturnClick(Panel chosenPanel) {
+        private void label_Game_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox_Game_MouseDown(null, null);
+        }
+
+        private void ReturnClick(Panel chosenPanel = null) {
             panel_Search.BackColor = Color.LightCyan;
             panel_FlashCard.BackColor = Color.LightCyan;
             panel_Translate.BackColor = Color.LightCyan;
@@ -248,19 +288,10 @@ namespace GUI {
             mainComboWord.Visible = false;
             mainExam.Visible = false;
             mainGrammar.Visible = false;
+            mainUserDashboard.Visible = false;
 
-            chosenPanel.BackColor = Color.FromArgb(199, 233, 255);
-        }
-
-        private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReturnClick(panel_Game);
-            mainGrammar.Visible = true;
-        }
-
-        private void label_Game_MouseDown(object sender, MouseEventArgs e)
-        {
-            pictureBox_Game_MouseDown(null, null);
+            if (chosenPanel != null)
+                chosenPanel.BackColor = Color.FromArgb(199, 233, 255);
         }
 
         private void label_Search_MouseEnter(object sender, EventArgs e) {
@@ -382,5 +413,6 @@ namespace GUI {
             if (panel_Game.BackColor != Color.FromArgb(199, 233, 255))
                 panel_Game.BackColor = Color.LightCyan;
         }
+        #endregion
     }
 }

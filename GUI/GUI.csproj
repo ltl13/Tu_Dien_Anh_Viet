@@ -66,6 +66,9 @@
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="RestSharp, Version=106.11.7.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
@@ -121,18 +124,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Form_Game_BuildBridge.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Game_BuildBridge.Designer.cs">
-      <DependentUpon>Form_Game_BuildBridge.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_Game_CarRacing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Game_CarRacing.Designer.cs">
-      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
@@ -225,12 +216,6 @@
     <Compile Include="UserControl_WordInfo.Designer.cs">
       <DependentUpon>UserControl_WordInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form_Game_BuildBridge.resx">
-      <DependentUpon>Form_Game_BuildBridge.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_Game_CarRacing.resx">
-      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,6 +389,66 @@
     <None Include="Resources\imageedit_1_5530705358.jpg" />
     <None Include="Resources\imageedit_7_7290431428.jpg" />
     <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\0.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\02.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\03.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\04.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\05.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\06.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\07.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\08.png" />
+    <None Include="Resources\09.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\b1.png" />
+    <None Include="Resources\b2.png" />
+    <None Include="Resources\b3.png" />
+    <None Include="Resources\b4.png" />
+    <None Include="Resources\b5.png" />
+    <None Include="Resources\b6.png" />
+    <None Include="Resources\b7.png" />
+    <None Include="Resources\brokesky.png" />
+    <None Include="Resources\g1.png" />
+    <None Include="Resources\g2.png" />
+    <None Include="Resources\g3.png" />
+    <None Include="Resources\g4.png" />
+    <None Include="Resources\g5.png" />
+    <None Include="Resources\g6.png" />
+    <None Include="Resources\g7.png" />
+    <None Include="Resources\g8.png" />
+    <None Include="Resources\g9.png" />
+    <None Include="Resources\g10.png" />
+    <None Include="Resources\g11.png" />
+    <None Include="Resources\g12.png" />
+    <None Include="Resources\g13.png" />
+    <None Include="Resources\hm0.png" />
+    <None Include="Resources\hm1.png" />
+    <None Include="Resources\hm2.png" />
+    <None Include="Resources\hm3.png" />
+    <None Include="Resources\lose.png" />
+    <None Include="Resources\m0.png" />
+    <None Include="Resources\m1.png" />
+    <None Include="Resources\m2.png" />
+    <None Include="Resources\m3.png" />
+    <None Include="Resources\m4.png" />
+    <None Include="Resources\m5.png" />
+    <None Include="Resources\m6.png" />
+    <None Include="Resources\m7.png" />
+    <None Include="Resources\m8.png" />
+    <None Include="Resources\pow.png" />
+    <None Include="Resources\road.jpg" />
+    <None Include="Resources\rokk.png" />
+    <None Include="Resources\sky.png" />
+    <None Include="Resources\win.png" />
+    <None Include="Resources\user-picture.png" />
+    <None Include="Resources\find-user.png" />
+    <None Include="Resources\sign-out.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

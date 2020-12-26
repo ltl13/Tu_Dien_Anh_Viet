@@ -19,8 +19,8 @@ namespace GUI {
         #endregion
 
         #region method
-        private bool Register(string userName, int type, string passWord, string displayName = null) {
-            return AccountBUS.Instance.Register(userName, type, passWord, displayName);
+        private bool Register(string userName, string passWord, string displayName = null) {
+            return AccountBUS.Instance.Register(userName, passWord, displayName);
         }
 
         private void btRegister_Click(object sender, EventArgs e) {
@@ -51,12 +51,12 @@ namespace GUI {
             }
 
             if (tbName.Text.Length == 0) {
-                if (AccountBUS.Instance.Register(tbUsername.Text, 0, tbPassword.Text)) {
+                if (AccountBUS.Instance.Register(tbUsername.Text, tbPassword.Text)) {
                     return true;
                 }
             }
             else {
-                if (AccountBUS.Instance.Register(tbUsername.Text, 0, tbPassword.Text, tbName.Text)) {
+                if (AccountBUS.Instance.Register(tbUsername.Text, tbPassword.Text, tbName.Text)) {
                     return true;
                 }
             }
@@ -75,7 +75,7 @@ namespace GUI {
             return false;
         }
 
-        private void btCancel_Click(object sender, EventArgs e) {
+        private void btBack_Click(object sender, EventArgs e) {
             father.Show();
             this.Close();
         }
