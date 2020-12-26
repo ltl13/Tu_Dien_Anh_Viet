@@ -37,6 +37,7 @@
             this.pictureBox_UserPic = new System.Windows.Forms.PictureBox();
             this.textBox_Name = new System.Windows.Forms.TextBox();
             this.label_Name = new System.Windows.Forms.Label();
+            this.label_Error = new System.Windows.Forms.Label();
             this.panel_Header.SuspendLayout();
             this.panel_Footer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_UserPic)).BeginInit();
@@ -76,7 +77,7 @@
             // 
             // textBox_Password
             // 
-            this.textBox_Password.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_Password.BackColor = System.Drawing.Color.White;
             this.textBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Password.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Password.Location = new System.Drawing.Point(33, 72);
@@ -85,10 +86,11 @@
             this.textBox_Password.Size = new System.Drawing.Size(230, 28);
             this.textBox_Password.TabIndex = 5;
             this.textBox_Password.UseSystemPasswordChar = true;
+            this.textBox_Password.TextChanged += new System.EventHandler(this.textBox_Password_TextChanged);
             // 
             // textBox_NewPass
             // 
-            this.textBox_NewPass.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_NewPass.BackColor = System.Drawing.Color.White;
             this.textBox_NewPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_NewPass.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_NewPass.Location = new System.Drawing.Point(33, 152);
@@ -97,10 +99,11 @@
             this.textBox_NewPass.Size = new System.Drawing.Size(230, 28);
             this.textBox_NewPass.TabIndex = 7;
             this.textBox_NewPass.UseSystemPasswordChar = true;
+            this.textBox_NewPass.TextChanged += new System.EventHandler(this.textBox_NewPass_TextChanged);
             // 
             // textBox_Confirm
             // 
-            this.textBox_Confirm.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_Confirm.BackColor = System.Drawing.Color.White;
             this.textBox_Confirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Confirm.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Confirm.Location = new System.Drawing.Point(33, 242);
@@ -109,16 +112,18 @@
             this.textBox_Confirm.Size = new System.Drawing.Size(230, 28);
             this.textBox_Confirm.TabIndex = 8;
             this.textBox_Confirm.UseSystemPasswordChar = true;
+            this.textBox_Confirm.TextChanged += new System.EventHandler(this.textBox_Confirm_TextChanged);
             // 
             // label_Password
             // 
             this.label_Password.AutoSize = true;
             this.label_Password.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Password.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label_Password.Location = new System.Drawing.Point(28, 40);
             this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(111, 29);
+            this.label_Password.Size = new System.Drawing.Size(215, 29);
             this.label_Password.TabIndex = 1;
-            this.label_Password.Text = "Password:";
+            this.label_Password.Text = "Password (required):";
             // 
             // label_NewPassConfirm
             // 
@@ -132,6 +137,7 @@
             // 
             // panel_Footer
             // 
+            this.panel_Footer.Controls.Add(this.label_Error);
             this.panel_Footer.Controls.Add(this.button_Save);
             this.panel_Footer.Controls.Add(this.button_Upload);
             this.panel_Footer.Controls.Add(this.pictureBox_UserPic);
@@ -157,6 +163,7 @@
             this.button_Save.TabIndex = 12;
             this.button_Save.Text = "Save";
             this.button_Save.UseVisualStyleBackColor = true;
+            this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
             // 
             // button_Upload
             // 
@@ -166,6 +173,7 @@
             this.button_Upload.TabIndex = 11;
             this.button_Upload.Text = "Upload";
             this.button_Upload.UseVisualStyleBackColor = true;
+            this.button_Upload.Click += new System.EventHandler(this.button_Upload_Click);
             // 
             // pictureBox_UserPic
             // 
@@ -180,7 +188,7 @@
             // 
             // textBox_Name
             // 
-            this.textBox_Name.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_Name.BackColor = System.Drawing.Color.White;
             this.textBox_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Name.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Name.Location = new System.Drawing.Point(33, 322);
@@ -198,6 +206,18 @@
             this.label_Name.Size = new System.Drawing.Size(78, 29);
             this.label_Name.TabIndex = 9;
             this.label_Name.Text = "Name:";
+            // 
+            // label_Error
+            // 
+            this.label_Error.AutoSize = true;
+            this.label_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic);
+            this.label_Error.ForeColor = System.Drawing.Color.Red;
+            this.label_Error.Location = new System.Drawing.Point(30, 370);
+            this.label_Error.Name = "label_Error";
+            this.label_Error.Size = new System.Drawing.Size(78, 17);
+            this.label_Error.TabIndex = 13;
+            this.label_Error.Text = "label_Error";
+            this.label_Error.Visible = false;
             // 
             // UserControl_UserDashboard
             // 
@@ -232,5 +252,6 @@
         private System.Windows.Forms.Label label_Name;
         private System.Windows.Forms.Button button_Save;
         private System.Windows.Forms.Button button_Upload;
+        private System.Windows.Forms.Label label_Error;
     }
 }

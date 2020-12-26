@@ -83,6 +83,12 @@ namespace GUI {
         private void Form_Login_VisibleChanged(object sender, EventArgs e) {
             tbUsername.Text = string.Empty;
             tbPassword.Text = string.Empty;
+            lbError.Visible = false;
+            pnlUsername.BackColor = Color.DarkGray;
+            lbUsername.ForeColor = Color.DarkGray;
+            pnlPassword.BackColor = Color.DarkGray;
+            lbPassword.ForeColor = Color.DarkGray;
+            btLogin.Enabled = true;
             tbUsername.Select();
             xuiFlatProgressBar_Login.Visible = false;
         }

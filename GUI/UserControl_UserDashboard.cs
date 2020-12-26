@@ -1,12 +1,14 @@
 ﻿using BUS;
 using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace GUI {
     public partial class UserControl_UserDashboard : UserControl {
         Form_Main father;
         DataGridView dataGridView = new DataGridView();
+        string path;
 
         public UserControl_UserDashboard(Form_Main fMain) {
             InitializeComponent();
@@ -16,7 +18,7 @@ namespace GUI {
         private void UserControl_UserDashboard_VisibleChanged(object sender, EventArgs e) {
             byte[] byteArrayIn = AccountBUS.Instance.LoadImage(father.LoginAccount.ID);
 
-            using (var ms = new System.IO.MemoryStream(byteArrayIn)) {
+            using (var ms = new MemoryStream(byteArrayIn)) {
                 this.pictureBox_UserPic.Image = Image.FromStream(ms);
             }
 
@@ -32,8 +34,10 @@ namespace GUI {
             button_Upload.Visible = false;
             pictureBox_UserPic.Visible = false;
             dataGridView.Visible = false;
+            label_Error.Visible = false;
             textBox_Password.UseSystemPasswordChar = true;
-            label_Password.Text = "Password:";
+            label_Password.Text = "Password (required):";
+            label_Error.Text = "label_Error";
 
             switch (father.Choice) {
                 case 1:
@@ -165,6 +169,99 @@ namespace GUI {
             }
             else if (e.Delta < 0) {
                 dataGridView.FirstDisplayedScrollingRowIndex++;
+            }
+        }
+
+        private void button_Save_Click(object sender, EventArgs e) {
+            if (textBox_Password.Text.Length == 0) {
+                label_Error.Text = "Không được để trống trường Password!";
+                label_Error.Visible = true;
+                textBox_Password.Select();
+                return;
+            }
+
+            if (textBox_NewPass.Text.Length != 0 && textBox_Confirm.Text.Length == 0) {
+                label_Error.Text = "Không được để trống trường Confirm!";
+                label_Error.Visible = true;
+                textBox_Confirm.Select();
+                return;
+            }
+
+            if (textBox_Confirm.Text.Length != 0 && textBox_NewPass.Text.Length == 0) {
+                label_Error.Text = "Không được để trống trường New Password!";
+                label_Error.Visible = true;
+                textBox_NewPass.Select();
+                return;
+            }
+
+            if (textBox_Password.Text.Length != 0 && textBox_NewPass.Text.Length != 0 && textBox_Confirm.Text.Length != 0) {
+                if (textBox_Password.Text == textBox_NewPass.Text) {
+                    label_Error.Text = "Password hiện tại và Password mới trùng nhau!";
+                    label_Error.Visible = true;
+                    textBox_NewPass.Select();
+                    return;
+                }
+            }
+
+            if (AccountBUS.Instance.Login(father.LoginAccount.UserName, textBox_Password.Text)) {
+                if (textBox_Name.Text.Length == 0) {
+                    AccountBUS.Instance.UpdateAccount(father.LoginAccount.UserName, father.LoginAccount.DisplayName, textBox_Password.Text, textBox_NewPass.Text);
+                }
+                else {
+                    AccountBUS.Instance.UpdateAccount(father.LoginAccount.UserName, textBox_Name.Text, textBox_Password.Text, textBox_NewPass.Text);
+                    father.xuiButton_Account.ButtonText = "Hi " + textBox_Name.Text + "!";
+                }
+
+                if (!string.IsNullOrEmpty(path)) {
+                    AccountBUS.Instance.SavePicture(father.LoginAccount.ID, Path.GetDirectoryName(path), Path.GetFileName(path));
+                    path = string.Empty;
+                }
+
+                MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                textBox_Password.Text = string.Empty;
+                textBox_NewPass.Text = string.Empty;
+                textBox_Confirm.Text = string.Empty;
+                textBox_Name.Text = string.Empty;
+
+                
+            }
+            else {
+                label_Error.Text = "Password hiện tại sai!";
+                label_Error.Visible = true;
+                textBox_Password.Select();
+                return;
+            }
+        }
+
+        private void textBox_Password_TextChanged(object sender, EventArgs e) {
+            if (label_Error.Visible == true && label_Error.Text == "Không được để trống trường Password!") {
+                label_Error.Visible = false;
+            }
+        }
+
+        private void textBox_NewPass_TextChanged(object sender, EventArgs e) {
+            if (label_Error.Visible == true && label_Error.Text == "Không được để trống trường New Password!") {
+                label_Error.Visible = false;
+            }
+            textBox_Confirm.Text = string.Empty;
+        }
+
+        private void textBox_Confirm_TextChanged(object sender, EventArgs e) {
+            if (label_Error.Visible == true && label_Error.Text == "Không được để trống trường Confirm!") {
+                label_Error.Visible = false;
+            }
+        }
+
+        private void button_Upload_Click(object sender, EventArgs e) {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.png; *.jpg; *.jpeg; *.gif; *.bmp)|*.png; *.jpg; *.jpeg; *.gif; *.bmp";
+            open.Multiselect = false;
+
+            if (open.ShowDialog() == DialogResult.OK) {
+                pictureBox_UserPic.Image = new Bitmap(open.FileName);
+
+                path = open.FileName;
             }
         }
     }

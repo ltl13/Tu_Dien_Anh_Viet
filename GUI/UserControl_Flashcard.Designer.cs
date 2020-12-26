@@ -96,10 +96,10 @@
             // 
             this.label_Number.BackColor = System.Drawing.Color.White;
             this.label_Number.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_Number.Font = new System.Drawing.Font("Calibri", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Number.Location = new System.Drawing.Point(0, 0);
+            this.label_Number.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Number.Location = new System.Drawing.Point(45, 0);
             this.label_Number.Name = "label_Number";
-            this.label_Number.Size = new System.Drawing.Size(220, 45);
+            this.label_Number.Size = new System.Drawing.Size(130, 45);
             this.label_Number.TabIndex = 6;
             this.label_Number.Text = "1000/1000";
             this.label_Number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,9 +107,9 @@
             // 
             // panel_Number
             // 
+            this.panel_Number.Controls.Add(this.label_Number);
             this.panel_Number.Controls.Add(this.pictureBox_Next);
             this.panel_Number.Controls.Add(this.pictureBox_Prev);
-            this.panel_Number.Controls.Add(this.label_Number);
             this.panel_Number.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Number.Location = new System.Drawing.Point(0, 0);
             this.panel_Number.Name = "panel_Number";
