@@ -13,18 +13,10 @@ namespace GUI {
         public UserControl_Grammar(Form_Main father) {
             InitializeComponent();
             this.father = father;
-            PrivateFontCollection pfc = new PrivateFontCollection();
-            int fontLength = Properties.Resources.Squirk_RMvV.Length;
-            byte[] fontdata = Properties.Resources.Squirk_RMvV;
-            System.IntPtr data = Marshal.AllocCoTaskMem(fontLength);
-            Marshal.Copy(fontdata, 0, data, fontLength);
-            pfc.AddMemoryFont(data, fontLength);
-
-            button_Game_CarRacing.Font = new Font(pfc.Families[0], button_Game_CarRacing.Font.Size, button_Game_CarRacing.Font.Style);
-
-            button_Game_BuildBridge.Font = new Font(pfc.Families[0], button_Game_BuildBridge.Font.Size, button_Game_BuildBridge.Font.Style);
-            //pfc.Dispose();
+            
         }
+
+        //private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
 
 
         //private void button_Game_BuildBridge_Click(object sender, EventArgs e)
