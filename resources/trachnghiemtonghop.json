@@ -1,0 +1,3602 @@
+[
+	{
+	    "id": "1",
+	    "question": "How many pages............... so far?",
+	    "result": "A",
+	    "A": "have you studied",
+	    "B": "did you study",
+	    "C": "do you study",
+	    "D": "had you studied"
+	},
+	{
+	    "id": "2",
+	    "question": "We are too late. The plane ............... off ten minutes ago.",
+	    "result": "B",
+	    "A": "has taken",
+	    "B": "took",
+	    "C": "had taken",
+	    "D": "was taken"
+	},
+	{
+	    "id": "3",
+	    "question": "'What a lovely boat!' 'I ...............half a year building this boat.'",
+	    "result": "B",
+	    "A": "spend",
+	    "B": "spent",
+	    "C": "spending",
+	    "D": "have spent"
+	},
+	{
+	    "id": "4",
+	    "question": "How ............since we ............school?",
+	    "result": "D",
+	    "A": "are you/ left",
+	    "B": "have you been/ have left",
+	    "C": "were you/ left",
+	    "D": "have you been/ left"
+	},
+	{
+	    "id": "5",
+	    "question": "I think John ..............tomorrow.",
+	    "result": "C",
+	    "A": "would come",
+	    "B": "come",
+	    "C": "will come",
+	    "D": "comes"
+	},
+	{
+	    "id": "6",
+	    "question": "After he ------------ his driving test he bought a car.",
+	    "result": "A",
+	    "A": "had passed",
+	    "B": "pass",
+	    "C": "passed",
+	    "D": "passing"
+	},
+	{
+	    "id": "7",
+	    "question": "When I got to the office, I ----------- that I had forgot to lock the door.",
+	    "result": "A",
+	    "A": "realized",
+	    "B": "had realized",
+	    "C": "realize",
+	    "D": "have realized"
+	},
+	{
+	    "id": "8",
+	    "question": "When she was 21 she -------------- across the United States.",
+	    "result": "A",
+	    "A": "drove",
+	    "B": "drive",
+	    "C": "driven",
+	    "D": "was driving"
+	},
+	{
+	    "id": "9",
+	    "question": "He often ------------ so nervous before his exams.",
+	    "result": "A",
+	    "A": "feels",
+	    "B": "felt",
+	    "C": "was feeling",
+	    "D": "had felt"
+	},
+	{
+	    "id": "10",
+	    "question": "How long have you ------------- he was a liar.",
+	    "result": "D",
+	    "A": "been knowing",
+	    "B": "knew",
+	    "C": "know",
+	    "D": "known"
+	},
+	{
+	    "id": "11",
+	    "question": "I'm sorry. I don't understand what -----------------.",
+	    "result": "B",
+	    "A": "you say",
+	    "B": "you're saying",
+	    "C": "you will say",
+	    "D": "you would say"
+	},
+	{
+	    "id": "12",
+	    "question": ". ------------- to the radio when you get up everyday?",
+	    "result": "A",
+	    "A": "Do you listen",
+	    "B": "Are you listening",
+	    "C": "Was you listening",
+	    "D": "Did you listen"
+	},
+	{
+	    "id": "13",
+	    "question": "My sweetheart --------------- smoking next week.",
+	    "result": "B",
+	    "A": "will give up",
+	    "B": "is going to give up",
+	    "C": "gives up",
+	    "D": "gave up"
+	},
+	{
+	    "id": "14",
+	    "question": "There is no red wine? I -------------- white, then.",
+	    "result": "C",
+	    "A": "am going to have",
+	    "B": "have",
+	    "C": "will have",
+	    "D": "am having"
+	},
+	{
+	    "id": "15",
+	    "question": "When the phone rang she ------------ a letter.",
+	    "result": "D",
+	    "A": "writes",
+	    "B": "will write",
+	    "C": "has written",
+	    "D": "was writing"
+	},
+	{
+	    "id": "16",
+	    "question": "As the sun ------------ I decided to go out.",
+	    "result": "D",
+	    "A": "shines",
+	    "B": "has shone",
+	    "C": "shine",
+	    "D": "was shining"
+	},
+	{
+	    "id": "17",
+	    "question": "I------------- your uncle tomorrow, so I'll give him your note.",
+	    "result": "D",
+	    "A": "have seen",
+	    "B": "shall have seen",
+	    "C": "see",
+	    "D": "am going to see"
+	},
+	{
+	    "id": "18",
+	    "question": "-------------- study hard when you were at school?",
+	    "result": "C",
+	    "A": "Must you",
+	    "B": "Had you",
+	    "C": "Did you have to",
+	    "D": "Were you"
+	},
+	{
+	    "id": "19",
+	    "question": "She is tired because she ------------- all day.",
+	    "result": "B",
+	    "A": "is studied",
+	    "B": "has been studying",
+	    "C": "had been studying",
+	    "D": "studied"
+	},
+	{
+	    "id": "20",
+	    "question": "Has your teacher ever ------------ angry with you?",
+	    "result": "C",
+	    "A": "get",
+	    "B": "getting",
+	    "C": "got",
+	    "D": "gets"
+	},
+	{
+	    "id": "21",
+	    "question": "He ----------",
+	    "result": "A",
+	    "A": "will be here soon",
+	    "B": "will here be soon",
+	    "C": "will be soon here",
+	    "D": "be soon will ere"
+	},
+	{
+	    "id": "22",
+	    "question": "They------------ to the theatre twice so far this month.",
+	    "result": "D",
+	    "A": "are going",
+	    "B": "go",
+	    "C": "went",
+	    "D": "have been"
+	},
+	{
+	    "id": "23",
+	    "question": "My daughter ------------- university last June.",
+	    "result": "A",
+	    "A": "left",
+	    "B": "has left",
+	    "C": "leaves",
+	    "D": "was leaving"
+	},
+	{
+	    "id": "24",
+	    "question": "He hates his boss so he ------------- his job",
+	    "result": "C",
+	    "A": "leaves",
+	    "B": "has left",
+	    "C": "is leaving",
+	    "D": "left"
+	},
+	{
+	    "id": "25",
+	    "question": "While the waiter was picking up the broken plates, he ---------- his finger.",
+	    "result": "A",
+	    "A": "cut",
+	    "B": "was cutting",
+	    "C": "had cut",
+	    "D": "cuts"
+	},
+	{
+	    "id": "26",
+	    "question": "Pam was always afraid------------ cooking.",
+	    "result": "A",
+	    "A": "of",
+	    "B": "to",
+	    "C": "for",
+	    "D": "at"
+	},
+	{
+	    "id": "27",
+	    "question": "When Joe was at school, he was very good----- ---- running.",
+	    "result": "D",
+	    "A": "to",
+	    "B": "for",
+	    "C": "in",
+	    "D": "at"
+	},
+	{
+	    "id": "28",
+	    "question": "We've been thinking ------- moving house.",
+	    "result": "B",
+	    "A": "in",
+	    "B": "of",
+	    "C": "to",
+	    "D": "on"
+	},
+	{
+	    "id": "29",
+	    "question": "On his third try, he succeeded------------ passing his driving test.",
+	    "result": "A",
+	    "A": "in",
+	    "B": "on",
+	    "C": "at",
+	    "D": "to"
+	},
+	{
+	    "id": "30",
+	    "question": "I'm fed up -------- working, I need a holiday.",
+	    "result": "C",
+	    "A": "to",
+	    "B": "in",
+	    "C": "with",
+	    "D": "for"
+	},
+	{
+	    "id": "31",
+	    "question": "I'm frightened----------- spiders, they terrify me.",
+	    "result": "C",
+	    "A": "in",
+	    "B": "to",
+	    "C": "of",
+	    "D": "for"
+	},
+	{
+	    "id": "32",
+	    "question": "They went ----------- holiday yesterday.",
+	    "result": "B",
+	    "A": "in",
+	    "B": "on",
+	    "C": "at",
+	    "D": "during"
+	},
+	{
+	    "id": "33",
+	    "question": "She's always talking --------- the phone.",
+	    "result": "B",
+	    "A": "in",
+	    "B": "on",
+	    "C": "at",
+	    "D": "over"
+	},
+	{
+	    "id": "34",
+	    "question": "John went red after sitting----------- the sun all day.",
+	    "result": "A",
+	    "A": "in",
+	    "B": "at",
+	    "C": "on",
+	    "D": "by"
+	},
+	{
+	    "id": "35",
+	    "question": "He didn't want cash, so I paid the bill----------- credit card.",
+	    "result": "A",
+	    "A": "by",
+	    "B": "with",
+	    "C": "in",
+	    "D": "on"
+	},
+	{
+	    "id": "36",
+	    "question": "Jim doesn't enjoy-------------- sport.",
+	    "result": "B",
+	    "A": "to do",
+	    "B": "doing",
+	    "C": "do",
+	    "D": "to doing"
+	},
+	{
+	    "id": "37",
+	    "question": "We are trying ----------- money to buy a house.",
+	    "result": "A",
+	    "A": "to save",
+	    "B": "saving",
+	    "C": "save",
+	    "D": "saves"
+	},
+	{
+	    "id": "38",
+	    "question": "Would you like something-----------?",
+	    "result": "C",
+	    "A": "drink",
+	    "B": "drinking",
+	    "C": "to drink",
+	    "D": "drinks"
+	},
+	{
+	    "id": "39",
+	    "question": "Our teacher doesn't let us -------------- gum in class.",
+	    "result": "A",
+	    "A": "chew",
+	    "B": "chewing",
+	    "C": "to chew",
+	    "D": "chews"
+	},
+	{
+	    "id": "40",
+	    "question": "It's hard ------------ my father as a child.",
+	    "result": "D",
+	    "A": "imagine",
+	    "B": "imagining",
+	    "C": "imagines",
+	    "D": "to imagine"
+	},
+	{
+	    "id": "41",
+	    "question": "My dad made me ------------- my homework everyday.",
+	    "result": "C",
+	    "A": "to do",
+	    "B": "doing",
+	    "C": "do",
+	    "D": "to doing"
+	},
+	{
+	    "id": "42",
+	    "question": "I wouldn't like -------- a marathon.",
+	    "result": "B",
+	    "A": "run",
+	    "B": "to run",
+	    "C": "running",
+	    "D": "ran"
+	},
+	{
+	    "id": "43",
+	    "question": "It's impossible ----------- Chinese in a year.",
+	    "result": "C",
+	    "A": "learning",
+	    "B": "learn",
+	    "C": "to learn",
+	    "D": "learnt"
+	},
+	{
+	    "id": "44",
+	    "question": "I'm not used to ---------- as early as this.",
+	    "result": "B",
+	    "A": "get up",
+	    "B": "getting up",
+	    "C": "to get up",
+	    "D": "gets up"
+	},
+	{
+	    "id": "45",
+	    "question": "We managed ---------- home before the rain started.",
+	    "result": "A",
+	    "A": "to get",
+	    "B": "get",
+	    "C": "getting",
+	    "D": "got"
+	},
+	{
+	    "id": "46",
+	    "question": "' 300 for shoes! That's -------------!",
+	    "result": "C",
+	    "A": "such expensive",
+	    "B": "so rich",
+	    "C": "so expensive",
+	    "D": "so a high price"
+	},
+	{
+	    "id": "47",
+	    "question": "When my children were little we -------- hours playing in the garden.",
+	    "result": "B",
+	    "A": "used to spending",
+	    "B": "used to spend",
+	    "C": "are used to spending",
+	    "D": "are used to spend"
+	},
+	{
+	    "id": "48",
+	    "question": "I really need -------- new jacket.",
+	    "result": "A",
+	    "A": "a",
+	    "B": "any",
+	    "C": "some",
+	    "D": "a few"
+	},
+	{
+	    "id": "49",
+	    "question": "You --------- eat and drink in class.",
+	    "result": "B",
+	    "A": "must",
+	    "B": "mustn't",
+	    "C": "have to",
+	    "D": "don't have to"
+	},
+	{
+	    "id": "50",
+	    "question": "I know several engineers from ---------.",
+	    "result": "A",
+	    "A": "England",
+	    "B": "the England",
+	    "C": "an England",
+	    "D": "English"
+	},
+	{
+	    "id": "51",
+	    "question": "Nobody likes ---------- bad news.",
+	    "result": "B",
+	    "A": "to be tell",
+	    "B": "to be told",
+	    "C": "be told",
+	    "D": "tell"
+	},
+	{
+	    "id": "52",
+	    "question": "That lady is -------- one in this club.",
+	    "result": "D",
+	    "A": "prettier",
+	    "B": "most pretty",
+	    "C": "more pretty",
+	    "D": "the prettiest"
+	},
+	{
+	    "id": "53",
+	    "question": "I'm thirsty. May I have something -------- to drink?",
+	    "result": "A",
+	    "A": "cold",
+	    "B": "coldness",
+	    "C": "coldest",
+	    "D": "coldly"
+	},
+	{
+	    "id": "54",
+	    "question": "Most people --------- advice but so few take it.",
+	    "result": "D",
+	    "A": "keep",
+	    "B": "make",
+	    "C": "do",
+	    "D": "give"
+	},
+	{
+	    "id": "55",
+	    "question": "I turned round and ---------- Paula.",
+	    "result": "B",
+	    "A": "see",
+	    "B": "saw",
+	    "C": "was seeing",
+	    "D": "seen"
+	},
+	{
+	    "id": "56",
+	    "question": "Why are you working so hard these days? Because I------------- a car, so I'm saving as much as I can.",
+	    "result": "A",
+	    "A": "am going to buy",
+	    "B": "will buy",
+	    "C": "buy",
+	    "D": "was going to"
+	},
+	{
+	    "id": "57",
+	    "question": "I -------------- Mary. Is she here?",
+	    "result": "D",
+	    "A": "look for",
+	    "B": "was looking for",
+	    "C": "looked",
+	    "D": "am looking for"
+	},
+	{
+	    "id": "58",
+	    "question": "This guide book -------------- full of useful information.",
+	    "result": "C",
+	    "A": "will be",
+	    "B": "are",
+	    "C": "is",
+	    "D": "was"
+	},
+	{
+	    "id": "59",
+	    "question": "I'm hot because I ------------- for hours.",
+	    "result": "B",
+	    "A": "have run",
+	    "B": "have been running",
+	    "C": "ran",
+	    "D": "am running"
+	},
+	{
+	    "id": "60",
+	    "question": ". ........ he and his wife ....... in their house for a long time?",
+	    "result": "C",
+	    "A": "Have/live",
+	    "B": "Has/lived",
+	    "C": "Have/lived",
+	    "D": "Did/live"
+	},
+	{
+	    "id": "61",
+	    "question": "'Who ------------ that horrible noise?' 'It's Tom practicing the violin'",
+	    "result": "B",
+	    "A": "makes",
+	    "B": "is making",
+	    "C": "made",
+	    "D": "has been making"
+	},
+	{
+	    "id": "62",
+	    "question": "'What would you like to order, sir?' 'I-------------the lamb'",
+	    "result": "C",
+	    "A": "have",
+	    "B": "am going to have",
+	    "C": "will have",
+	    "D": "am having"
+	},
+	{
+	    "id": "63",
+	    "question": "The shops-----------full of things to buy--------- Christmas comes.",
+	    "result": "A",
+	    "A": "are/ when",
+	    "B": "are / if",
+	    "C": "will be/ if",
+	    "D": "is/ when"
+	},
+	{
+	    "id": "64",
+	    "question": "What --------- you--------- at weekend when you were a child?",
+	    "result": "C",
+	    "A": "do/ do",
+	    "B": "have/done",
+	    "C": "did/ use to do",
+	    "D": "did/ used to do"
+	},
+	{
+	    "id": "65",
+	    "question": "Sorry. I------------ one of the nicest dishes.",
+	    "result": "A",
+	    "A": "have broken",
+	    "B": "broke",
+	    "C": "have been breaking",
+	    "D": "had broken"
+	},
+	{
+	    "id": "66",
+	    "question": "Here's my wallet! I-----------for it for ages.",
+	    "result": "B",
+	    "A": "had looked",
+	    "B": "have been looking",
+	    "C": "look",
+	    "D": "looked"
+	},
+	{
+	    "id": "67",
+	    "question": "Since we ---------- in the new house we ----------- very busy.",
+	    "result": "D",
+	    "A": "move/ are",
+	    "B": "have moved/ were",
+	    "C": "moved/ were",
+	    "D": "moved/ have been"
+	},
+	{
+	    "id": "68",
+	    "question": "-------- the moon last night?",
+	    "result": "B",
+	    "A": "Have you seen",
+	    "B": "Did you see",
+	    "C": "Do you see",
+	    "D": "Had you seen"
+	},
+	{
+	    "id": "69",
+	    "question": "When you --------- your work, you may leave the room.",
+	    "result": "C",
+	    "A": "will finish",
+	    "B": "finishing",
+	    "C": "finished",
+	    "D": "had finished"
+	},
+	{
+	    "id": "70",
+	    "question": "'What are you looking for?' 'I can't remember where I --------- my glasses.'",
+	    "result": "B",
+	    "A": "leave",
+	    "B": "left",
+	    "C": "had left",
+	    "D": "was left"
+	},
+	{
+	    "id": "71",
+	    "question": "I haven't heard from my son------------",
+	    "result": "A",
+	    "A": "for several weeks",
+	    "B": "for several weeks ago",
+	    "C": "since several weeks before",
+	    "D": "since a long time"
+	},
+	{
+	    "id": "72",
+	    "question": "'Why is Bill unhappy?' 'Because his birds----------- away'",
+	    "result": "D",
+	    "A": "flew",
+	    "B": "fly",
+	    "C": "had flown",
+	    "D": "have flown"
+	},
+	{
+	    "id": "73",
+	    "question": "'I took an exam this morning. It was really hard.' '------------- a lot before you took it?'",
+	    "result": "B",
+	    "A": "Have you studied",
+	    "B": "Did you study",
+	    "C": "Have you study",
+	    "D": "Do you study"
+	},
+	{
+	    "id": "74",
+	    "question": "A basket of apples, oranges, lemons --------- sent to me last Christmas.",
+	    "result": "C",
+	    "A": "is",
+	    "B": "are",
+	    "C": "was",
+	    "D": "were"
+	},
+	{
+	    "id": "75",
+	    "question": "In Britain women usually retire----------- the age of 60.",
+	    "result": "C",
+	    "A": "in",
+	    "B": "on",
+	    "C": "at",
+	    "D": "by"
+	},
+	{
+	    "id": "76",
+	    "question": "My students' phones are always ringing----------- my lessons!",
+	    "result": "A",
+	    "A": "during",
+	    "B": "for",
+	    "C": "while",
+	    "D": "at"
+	},
+	{
+	    "id": "77",
+	    "question": "Why does the telephone always ring---------- you're having a bath?",
+	    "result": "C",
+	    "A": "during",
+	    "B": "for",
+	    "C": "while",
+	    "D": "on"
+	},
+	{
+	    "id": "78",
+	    "question": "They say drinking a little red wine is good----------- you.",
+	    "result": "A",
+	    "A": "for",
+	    "B": "at",
+	    "C": "to",
+	    "D": "by"
+	},
+	{
+	    "id": "79",
+	    "question": "Small children always get excited-------- Christmas.",
+	    "result": "D",
+	    "A": "with",
+	    "B": "for",
+	    "C": "in",
+	    "D": "at"
+	},
+	{
+	    "id": "80",
+	    "question": "Paris is famous--------- - being a romantic city.",
+	    "result": "B",
+	    "A": "to",
+	    "B": "for",
+	    "C": "from",
+	    "D": "with"
+	},
+	{
+	    "id": "81",
+	    "question": "She's played the piano---------- she was little.",
+	    "result": "C",
+	    "A": "when",
+	    "B": "from",
+	    "C": "since",
+	    "D": "for"
+	},
+	{
+	    "id": "82",
+	    "question": "Dubai is so different ----------- any other places I know.",
+	    "result": "D",
+	    "A": "with",
+	    "B": "away",
+	    "C": "between",
+	    "D": "from"
+	},
+	{
+	    "id": "83",
+	    "question": "If I --------- a flower I would be a sunflower.",
+	    "result": "B",
+	    "A": "am",
+	    "B": "were",
+	    "C": "had been",
+	    "D": "will be"
+	},
+	{
+	    "id": "84",
+	    "question": "He should have a word ------------ his company.",
+	    "result": "B",
+	    "A": "to",
+	    "B": "with",
+	    "C": "at",
+	    "D": "toward"
+	},
+	{
+	    "id": "85",
+	    "question": "I've always enjoy ------------.",
+	    "result": "A",
+	    "A": "dancing",
+	    "B": "dance",
+	    "C": "to dance",
+	    "D": "danced"
+	},
+	{
+	    "id": "86",
+	    "question": "I've never forgot ----------- flamenco for the first time.",
+	    "result": "C",
+	    "A": "to see",
+	    "B": "see",
+	    "C": "seeing",
+	    "D": "saw"
+	},
+	{
+	    "id": "87",
+	    "question": "I couldn't stop ---------- about buying a laptop.",
+	    "result": "D",
+	    "A": "think",
+	    "B": "to think",
+	    "C": "thought",
+	    "D": "thinking"
+	},
+	{
+	    "id": "88",
+	    "question": "Now I've decided --------- how to do it.",
+	    "result": "C",
+	    "A": "learning",
+	    "B": "learn",
+	    "C": "to learn",
+	    "D": "learnt"
+	},
+	{
+	    "id": "89",
+	    "question": "My friend has promised ---------- me some steps.",
+	    "result": "A",
+	    "A": "to teach",
+	    "B": "teach",
+	    "C": "teaching",
+	    "D": "taught"
+	},
+	{
+	    "id": "90",
+	    "question": "She's going to let me ---------- her shoes.",
+	    "result": "C",
+	    "A": "to borrow",
+	    "B": "borrowing",
+	    "C": "borrow",
+	    "D": "borrowed"
+	},
+	{
+	    "id": "91",
+	    "question": "I'm really looking forward to ------------ my parents.",
+	    "result": "B",
+	    "A": "meet",
+	    "B": "meeting",
+	    "C": "the meeting",
+	    "D": "be met"
+	},
+	{
+	    "id": "92",
+	    "question": "I'll need ------- some music to dance to.",
+	    "result": "B",
+	    "A": "buy",
+	    "B": "to buy",
+	    "C": "buying",
+	    "D": "be bought"
+	},
+	{
+	    "id": "93",
+	    "question": "I'm thinking of ------------ to Spain next month.",
+	    "result": "B",
+	    "A": "go",
+	    "B": "going",
+	    "C": "to go",
+	    "D": "been to"
+	},
+	{
+	    "id": "94",
+	    "question": "I hope ----------- to dance by then.",
+	    "result": "B",
+	    "A": "being able",
+	    "B": "to be able",
+	    "C": "be able",
+	    "D": "able"
+	},
+	{
+	    "id": "95",
+	    "question": "Small children have big -------------.",
+	    "result": "A",
+	    "A": "imagination",
+	    "B": "imagine",
+	    "C": "imaginary",
+	    "D": "imaginative"
+	},
+	{
+	    "id": "96",
+	    "question": "When I was a small boy, Christmas was very --------.",
+	    "result": "A",
+	    "A": "exciting",
+	    "B": "excite",
+	    "C": "excited",
+	    "D": "excitement"
+	},
+	{
+	    "id": "97",
+	    "question": "Many --------- believe dreams help us to understand our lives.",
+	    "result": "A",
+	    "A": "psychologists",
+	    "B": "psychological",
+	    "C": "psychology",
+	    "D": "psyche"
+	},
+	{
+	    "id": "98",
+	    "question": "My car is very ------------, it uses very little petrol.",
+	    "result": "B",
+	    "A": "economic",
+	    "B": "economical",
+	    "C": "economist",
+	    "D": "economy"
+	},
+	{
+	    "id": "99",
+	    "question": "We haven't got ------- flour for dinner.",
+	    "result": "B",
+	    "A": "some",
+	    "B": "any",
+	    "C": "little",
+	    "D": "a"
+	},
+	{
+	    "id": "100",
+	    "question": "I didn't enjoy -------- book you lent me.",
+	    "result": "D",
+	    "A": "a",
+	    "B": "an",
+	    "C": "some",
+	    "D": "the"
+	},
+	{
+	    "id": "101",
+	    "question": "You can stay here ------ you like.",
+	    "result": "A",
+	    "A": "as long as",
+	    "B": "as far as",
+	    "C": "as much as",
+	    "D": "so far as"
+	},
+	{
+	    "id": "102",
+	    "question": "Ask him to ------- us a funny story.",
+	    "result": "B",
+	    "A": "say",
+	    "B": "tell",
+	    "C": "speak",
+	    "D": "talk"
+	},
+	{
+	    "id": "103",
+	    "question": "He look very ----------- when I told him the new.",
+	    "result": "B",
+	    "A": "happily",
+	    "B": "happy",
+	    "C": "happiness",
+	    "D": "happiest"
+	},
+	{
+	    "id": "104",
+	    "question": "How long did it -------- you to type this letter?",
+	    "result": "B",
+	    "A": "want",
+	    "B": "take",
+	    "C": "need",
+	    "D": "require"
+	},
+	{
+	    "id": "105",
+	    "question": "Has your house ------------- recently?",
+	    "result": "C",
+	    "A": "was decorated",
+	    "B": "decorated",
+	    "C": "been decorated",
+	    "D": "is decorated"
+	},
+	{
+	    "id": "106",
+	    "question": "English and French -------- in Canada.",
+	    "result": "C",
+	    "A": "are speaking",
+	    "B": "were spoken here",
+	    "C": "are spoken",
+	    "D": "speak"
+	},
+	{
+	    "id": "107",
+	    "question": "My father ----------- me his old car on my last birthday",
+	    "result": "C",
+	    "A": "given",
+	    "B": "was given",
+	    "C": "gave",
+	    "D": "give"
+	},
+	{
+	    "id": "108",
+	    "question": "Shakespeare ------------ many plays.",
+	    "result": "A",
+	    "A": "wrote",
+	    "B": "written",
+	    "C": "write",
+	    "D": "was wrote"
+	},
+	{
+	    "id": "109",
+	    "question": "The exam results ---------- to you by post.",
+	    "result": "D",
+	    "A": "will be send",
+	    "B": "will sent",
+	    "C": "sent",
+	    "D": "will be sent"
+	},
+	{
+	    "id": "110",
+	    "question": "Sushi ----------- mainly in Japan.",
+	    "result": "A",
+	    "A": "is eaten",
+	    "B": "eat",
+	    "C": "eats",
+	    "D": "be eaten"
+	},
+	{
+	    "id": "111",
+	    "question": "Are you thinking about going to Europe for your vacation?--'No, but if I ---------- money, I would definitely go.'",
+	    "result": "B",
+	    "A": "have",
+	    "B": "had",
+	    "C": "have had",
+	    "D": "would have"
+	},
+	{
+	    "id": "112",
+	    "question": "'It's really raining.' 'Yes. If the weather ---------, we'll have to give up camping.'",
+	    "result": "B",
+	    "A": "would get",
+	    "B": "get worse",
+	    "C": "might get worse",
+	    "D": "should get worse"
+	},
+	{
+	    "id": "113",
+	    "question": "'Why don't you send me only twenty dollars?'--'Sorry. If I had more money, I ---------- give you more.'",
+	    "result": "C",
+	    "A": "will have",
+	    "B": "would have",
+	    "C": "would",
+	    "D": "have"
+	},
+	{
+	    "id": "114",
+	    "question": "'Do you need help with your English?' 'If I do, I ------ you.'",
+	    "result": "A",
+	    "A": "will ask",
+	    "B": "ask",
+	    "C": "would ask",
+	    "D": "asked"
+	},
+	{
+	    "id": "115",
+	    "question": "This room is smoky. I wish you --------- smoking.",
+	    "result": "A",
+	    "A": "would stop",
+	    "B": "have stopped",
+	    "C": "stop",
+	    "D": "stopping"
+	},
+	{
+	    "id": "116",
+	    "question": "--------- John busy every day?",
+	    "result": "C",
+	    "A": "Does",
+	    "B": "Will",
+	    "C": "Is",
+	    "D": "Has"
+	},
+	{
+	    "id": "117",
+	    "question": "Her boss told -------- to clean his room.",
+	    "result": "C",
+	    "A": "she",
+	    "B": "to her",
+	    "C": "her",
+	    "D": "for her"
+	},
+	{
+	    "id": "118",
+	    "question": "I like to have -------- trees in front of the window so that people can't look in.",
+	    "result": "C",
+	    "A": "any",
+	    "B": "a little",
+	    "C": "a few",
+	    "D": "so few"
+	},
+	{
+	    "id": "119",
+	    "question": "............... students enrolled this year than last year at New York University.",
+	    "result": "D",
+	    "A": "Less than",
+	    "B": "Less of the",
+	    "C": "A few of",
+	    "D": "A few more"
+	},
+	{
+	    "id": "120",
+	    "question": "The woman who.... next door is often willing to help us whenever we are in difficulty.",
+	    "result": "D",
+	    "A": "to live",
+	    "B": "living",
+	    "C": "lived",
+	    "D": "lives"
+	},
+	{
+	    "id": "121",
+	    "question": "They say that they ...... their course next month",
+	    "result": "B",
+	    "A": "finish",
+	    "B": "will finish",
+	    "C": "will be finishing",
+	    "D": "will be finished"
+	},
+	{
+	    "id": "122",
+	    "question": "Mary ........ her treatment almost two years ago.",
+	    "result": "C",
+	    "A": "have",
+	    "B": "has had",
+	    "C": "had",
+	    "D": "was having"
+	},
+	{
+	    "id": "123",
+	    "question": "Don't bother me while I ........",
+	    "result": "A",
+	    "A": "am working",
+	    "B": "was working",
+	    "C": "will work",
+	    "D": "is going to work"
+	},
+	{
+	    "id": "124",
+	    "question": "Did you hear ........ upstairs?",
+	    "result": "B",
+	    "A": "she sing",
+	    "B": "her singing",
+	    "C": "she singing",
+	    "D": "her to sing"
+	},
+	{
+	    "id": "125",
+	    "question": "Women in the past ..... work outside the home as nowadays.",
+	    "result": "C",
+	    "A": "do not",
+	    "B": "won't",
+	    "C": "didn't",
+	    "D": "hasn't"
+	},
+	{
+	    "id": "126",
+	    "question": "Today is their golden wedding anniversary. They ..... married for 50 years.",
+	    "result": "A",
+	    "A": "have been",
+	    "B": "has been",
+	    "C": "was",
+	    "D": "will be"
+	},
+	{
+	    "id": "127",
+	    "question": "He ....... in the office at the moment.",
+	    "result": "B",
+	    "A": "has work",
+	    "B": "is working",
+	    "C": "has been working",
+	    "D": "works"
+	},
+	{
+	    "id": "128",
+	    "question": "He .......... very frightened when he saw spiders.",
+	    "result": "B",
+	    "A": "feeling",
+	    "B": "felt",
+	    "C": "was felt",
+	    "D": "feels"
+	},
+	{
+	    "id": "129",
+	    "question": "Where ....... next summer?",
+	    "result": "B",
+	    "A": "will you go",
+	    "B": "are you going",
+	    "C": "do you go",
+	    "D": "are you going to go"
+	},
+	{
+	    "id": "130",
+	    "question": "How long ....... you studied here?",
+	    "result": "D",
+	    "A": "are",
+	    "B": "did",
+	    "C": "do",
+	    "D": "have"
+	},
+	{
+	    "id": "131",
+	    "question": "After our guests ........., we sat down to dinner.",
+	    "result": "A",
+	    "A": "arrived",
+	    "B": "arrive",
+	    "C": "were arriving",
+	    "D": "have arrived"
+	},
+	{
+	    "id": "132",
+	    "question": "She and I......... each other since we were at secondary school.",
+	    "result": "C",
+	    "A": "know",
+	    "B": "knew",
+	    "C": "have known",
+	    "D": "has known"
+	},
+	{
+	    "id": "133",
+	    "question": "..... you at home last night?",
+	    "result": "B",
+	    "A": "Did",
+	    "B": "Were",
+	    "C": "Have",
+	    "D": "Are"
+	},
+	{
+	    "id": "134",
+	    "question": "What .... to do when you graduate?",
+	    "result": "A",
+	    "A": "are you going",
+	    "B": "are going",
+	    "C": "you are going",
+	    "D": "are you go"
+	},
+	{
+	    "id": "135",
+	    "question": "The books and the dictionary..... ... on the table.",
+	    "result": "B",
+	    "A": "were",
+	    "B": "are",
+	    "C": "is",
+	    "D": "have been"
+	},
+	{
+	    "id": "136",
+	    "question": ".......... both of you ready for the test?",
+	    "result": "B",
+	    "A": "Is",
+	    "B": "Are",
+	    "C": "Have",
+	    "D": "Do"
+	},
+	{
+	    "id": "137",
+	    "question": "She ......... here since I came here.",
+	    "result": "D",
+	    "A": "lives",
+	    "B": "lived",
+	    "C": "is living",
+	    "D": "has lived"
+	},
+	{
+	    "id": "138",
+	    "question": "We ...... a lot important inventions in the future.",
+	    "result": "B",
+	    "A": "have",
+	    "B": "will have",
+	    "C": "had",
+	    "D": "has had"
+	},
+	{
+	    "id": "139",
+	    "question": "The police ......... for the thief at the moment.",
+	    "result": "C",
+	    "A": "was looking",
+	    "B": "are looking",
+	    "C": "have been looking",
+	    "D": "is going to look."
+	},
+	{
+	    "id": "140",
+	    "question": "It was really kind ..... . you to help poor people.",
+	    "result": "C",
+	    "A": "to",
+	    "B": "for",
+	    "C": "of",
+	    "D": "on"
+	},
+	{
+	    "id": "141",
+	    "question": "Romeo and Juliet is a play ............. William Shakespeare.",
+	    "result": "B",
+	    "A": "in",
+	    "B": "by",
+	    "C": "on",
+	    "D": "from"
+	},
+	{
+	    "id": "142",
+	    "question": "'Can I ask you something?' 'Not now, I.......... my report.'",
+	    "result": "A",
+	    "A": "am writing",
+	    "B": "write",
+	    "C": "will write",
+	    "D": "wrote"
+	},
+	{
+	    "id": "143",
+	    "question": "Please go out ..... .dinner",
+	    "result": "B",
+	    "A": "in",
+	    "B": "for",
+	    "C": "to",
+	    "D": "with"
+	},
+	{
+	    "id": "144",
+	    "question": "You must be responsible ............. your study.",
+	    "result": "C",
+	    "A": "in",
+	    "B": "from",
+	    "C": "for",
+	    "D": "at"
+	},
+	{
+	    "id": "145",
+	    "question": "We arrived ........... the station five minutes late.",
+	    "result": "C",
+	    "A": "on",
+	    "B": "to",
+	    "C": "at",
+	    "D": "in"
+	},
+	{
+	    "id": "146",
+	    "question": "Her success .......... passing the exam made her parents very happy",
+	    "result": "A",
+	    "A": "in",
+	    "B": "with",
+	    "C": "up",
+	    "D": "to"
+	},
+	{
+	    "id": "147",
+	    "question": "No one likes being laughed ........... .",
+	    "result": "A",
+	    "A": "at",
+	    "B": "with",
+	    "C": "for",
+	    "D": "on"
+	},
+	{
+	    "id": "148",
+	    "question": "The meeting was held ............Tuesday.",
+	    "result": "A",
+	    "A": "on",
+	    "B": "of",
+	    "C": "for",
+	    "D": "in"
+	},
+	{
+	    "id": "149",
+	    "question": "All of the clothes sold in this store were made ...... hand",
+	    "result": "D",
+	    "A": "in",
+	    "B": "with",
+	    "C": "on",
+	    "D": "by"
+	},
+	{
+	    "id": "150",
+	    "question": "She is interested ........ making money.",
+	    "result": "C",
+	    "A": "of",
+	    "B": "at",
+	    "C": "in",
+	    "D": "by"
+	},
+	{
+	    "id": "151",
+	    "question": "Thank you for letting me ........ your dog for a walk.",
+	    "result": "A",
+	    "A": "take",
+	    "B": "to take",
+	    "C": "taken",
+	    "D": "taking"
+	},
+	{
+	    "id": "152",
+	    "question": "They found it is impossible ......... their problems.",
+	    "result": "B",
+	    "A": "solve",
+	    "B": "to solve",
+	    "C": "solved",
+	    "D": "solving"
+	},
+	{
+	    "id": "153",
+	    "question": "We can't find a place .........",
+	    "result": "B",
+	    "A": "live",
+	    "B": "to live",
+	    "C": "living",
+	    "D": "lived"
+	},
+	{
+	    "id": "154",
+	    "question": "The film seemed .......... forever, but at last it was over",
+	    "result": "A",
+	    "A": "to go on",
+	    "B": "going on",
+	    "C": "go on",
+	    "D": "went on"
+	},
+	{
+	    "id": "155",
+	    "question": "We've decided ............. married in the spring.",
+	    "result": "B",
+	    "A": "getting",
+	    "B": "to get",
+	    "C": "get",
+	    "D": "got"
+	},
+	{
+	    "id": "156",
+	    "question": "It was one of the most exciting matches .....",
+	    "result": "A",
+	    "A": "to watch",
+	    "B": "watch",
+	    "C": "watching",
+	    "D": "watched"
+	},
+	{
+	    "id": "157",
+	    "question": "She would like ........ the answer.",
+	    "result": "B",
+	    "A": "that she knows",
+	    "B": "to know",
+	    "C": "knowing",
+	    "D": "that knows"
+	},
+	{
+	    "id": "158",
+	    "question": "It's time for you .............. a new TV. Yours is out of date.",
+	    "result": "A",
+	    "A": "to buy",
+	    "B": "buy",
+	    "C": "buying",
+	    "D": "bought"
+	},
+	{
+	    "id": "159",
+	    "question": "If you want to learn English well you have to .......... hard working",
+	    "result": "C",
+	    "A": "being",
+	    "B": "been",
+	    "C": "be",
+	    "D": "for being"
+	},
+	{
+	    "id": "160",
+	    "question": "To my .........., John is very good at Vietnamese.",
+	    "result": "D",
+	    "A": "amazing",
+	    "B": "amazed",
+	    "C": "amaze",
+	    "D": "amazement"
+	},
+	{
+	    "id": "161",
+	    "question": "This movie is the most .........",
+	    "result": "A",
+	    "A": "entertaining",
+	    "B": "entertained",
+	    "C": "entertain",
+	    "D": "entertainment"
+	},
+	{
+	    "id": "162",
+	    "question": "He is proud of his ..........",
+	    "result": "B",
+	    "A": "succeed",
+	    "B": "success",
+	    "C": "successful",
+	    "D": "successfully"
+	},
+	{
+	    "id": "163",
+	    "question": "Nobody likes him because he is ...........",
+	    "result": "D",
+	    "A": "pleased",
+	    "B": "pleasure",
+	    "C": "pleasant",
+	    "D": "unpleasant"
+	},
+	{
+	    "id": "164",
+	    "question": "AIDS has caused a great number of .......",
+	    "result": "B",
+	    "A": "die",
+	    "B": "death",
+	    "C": "dying",
+	    "D": "dead"
+	},
+	{
+	    "id": "165",
+	    "question": "His ....... was surprising.",
+	    "result": "D",
+	    "A": "arrive",
+	    "B": "arrived",
+	    "C": "arriver",
+	    "D": "arrival"
+	},
+	{
+	    "id": "166",
+	    "question": "The disco was so .... .. that you couldn't hear yourself speak.",
+	    "result": "B",
+	    "A": "noise",
+	    "B": "noisy",
+	    "C": "noisily",
+	    "D": "nosiest"
+	},
+	{
+	    "id": "167",
+	    "question": "I don't think we have enough food because there are some ............guests.",
+	    "result": "C",
+	    "A": "expect",
+	    "B": "expected",
+	    "C": "unexpected",
+	    "D": "unexpectedly"
+	},
+	{
+	    "id": "168",
+	    "question": ". ......., he won a lot of money in a lottery.",
+	    "result": "D",
+	    "A": "luck",
+	    "B": "unlucky",
+	    "C": "lucky",
+	    "D": "luckily"
+	},
+	{
+	    "id": "169",
+	    "question": "I .......... the course because it is interesting.",
+	    "result": "B",
+	    "A": "enjoyment",
+	    "B": "enjoy",
+	    "C": "enjoyable",
+	    "D": "enjoying"
+	},
+	{
+	    "id": "170",
+	    "question": "We have ....... in his ability.",
+	    "result": "C",
+	    "A": "confident",
+	    "B": "confidently",
+	    "C": "confidence",
+	    "D": "confidential"
+	},
+	{
+	    "id": "171",
+	    "question": ".......... more about her, you would change your opinion",
+	    "result": "C",
+	    "A": "If you know",
+	    "B": "If you did know",
+	    "C": "If you knew",
+	    "D": "If did you know"
+	},
+	{
+	    "id": "172",
+	    "question": "......... I was a child, I used to play football.",
+	    "result": "C",
+	    "A": "As soon as",
+	    "B": "While",
+	    "C": "When",
+	    "D": "If"
+	},
+	{
+	    "id": "173",
+	    "question": "Tay Bac university ....... in Son la town for two years.",
+	    "result": "D",
+	    "A": "was built",
+	    "B": "is built",
+	    "C": "have been built",
+	    "D": "has been built"
+	},
+	{
+	    "id": "174",
+	    "question": "Chewing gum ............ in Sweden in 1993.",
+	    "result": "A",
+	    "A": "was invented",
+	    "B": "is invented",
+	    "C": "has been invented",
+	    "D": "invented"
+	},
+	{
+	    "id": "175",
+	    "question": "I'll phone you .................... I come.",
+	    "result": "C",
+	    "A": "while",
+	    "B": "until",
+	    "C": "as soon as",
+	    "D": "because"
+	},
+	{
+	    "id": "176",
+	    "question": "If we ......... have computer, our lives .......... boring.",
+	    "result": "A",
+	    "A": "don't/ will be",
+	    "B": "won't have/ are",
+	    "C": "didn't/ would",
+	    "D": "wouldn't/ were"
+	},
+	{
+	    "id": "177",
+	    "question": "'The Wall' ..... when all the members were students.",
+	    "result": "B",
+	    "A": "founded",
+	    "B": "was founded",
+	    "C": "has been founded",
+	    "D": "founded"
+	},
+	{
+	    "id": "178",
+	    "question": "If he worked harder, he .............",
+	    "result": "D",
+	    "A": "will be promoted",
+	    "B": "will have been promoted",
+	    "C": "had been promoted",
+	    "D": "would be promoted"
+	},
+	{
+	    "id": "179",
+	    "question": "All students at Tay Bac university ......... uniforms on Monday.",
+	    "result": "A",
+	    "A": "are asked to wear",
+	    "B": "ask to wear",
+	    "C": "asked to wear",
+	    "D": "to asked wearing"
+	},
+	{
+	    "id": "180",
+	    "question": "I hate .... ....the washing up.",
+	    "result": "B",
+	    "A": "taking",
+	    "B": "doing",
+	    "C": "getting",
+	    "D": "making"
+	},
+	{
+	    "id": "181",
+	    "question": "She does not know what to do when her parents ........ a complaint to her.",
+	    "result": "A",
+	    "A": "make",
+	    "B": "give",
+	    "C": "keep",
+	    "D": "tell"
+	},
+	{
+	    "id": "182",
+	    "question": "I was late because I ......... the bus.",
+	    "result": "C",
+	    "A": "left",
+	    "B": "lost",
+	    "C": "missed",
+	    "D": "forgot"
+	},
+	{
+	    "id": "183",
+	    "question": "We never believe in him, he always ..... lies.",
+	    "result": "C",
+	    "A": "says",
+	    "B": "makes",
+	    "C": "tells",
+	    "D": "give"
+	},
+	{
+	    "id": "184",
+	    "question": "Rice is .............. in China",
+	    "result": "D",
+	    "A": "made",
+	    "B": "kept",
+	    "C": "done",
+	    "D": "grown"
+	},
+	{
+	    "id": "185",
+	    "question": "'New headway ' is ......textbook I've ever learned.",
+	    "result": "C",
+	    "A": "more interesting",
+	    "B": "as more interesting",
+	    "C": "the most interesting",
+	    "D": "as interesting as"
+	},
+	{
+	    "id": "186",
+	    "question": "Her life becomes ....... than it was before..",
+	    "result": "C",
+	    "A": "more happy",
+	    "B": "as happy",
+	    "C": "happier",
+	    "D": "the happiest"
+	},
+	{
+	    "id": "187",
+	    "question": "China is getting richer and .........",
+	    "result": "A",
+	    "A": "more powerful",
+	    "B": "powerful",
+	    "C": "powerfuler",
+	    "D": "the most powerful"
+	},
+	{
+	    "id": "188",
+	    "question": "Charles Chaplin made many of the funniest and ........ popular films of his time.",
+	    "result": "C",
+	    "A": "more",
+	    "B": "most",
+	    "C": "the most",
+	    "D": "the more"
+	},
+	{
+	    "id": "189",
+	    "question": "She ...........staying at home to going out.",
+	    "result": "C",
+	    "A": "likes",
+	    "B": "'d like",
+	    "C": "prefers",
+	    "D": "loves"
+	},
+	{
+	    "id": "190",
+	    "question": "Mary and John ............ absent yesterday.",
+	    "result": "A",
+	    "A": "were",
+	    "B": "was",
+	    "C": "are",
+	    "D": "is"
+	},
+	{
+	    "id": "191",
+	    "question": "Look! The boy ...... at the desk is Mary's boyfriend.",
+	    "result": "C",
+	    "A": "stand",
+	    "B": "stands",
+	    "C": "standing",
+	    "D": "stood"
+	},
+	{
+	    "id": "192",
+	    "question": "I have not written any letters home since I ......... here",
+	    "result": "B",
+	    "A": "come",
+	    "B": "came",
+	    "C": "have come",
+	    "D": "will come"
+	},
+	{
+	    "id": "193",
+	    "question": "Europe and Asia ........... a long tradition of teaching and learning foreign languages.",
+	    "result": "C",
+	    "A": "has had",
+	    "B": "will have",
+	    "C": "have had",
+	    "D": "have"
+	},
+	{
+	    "id": "194",
+	    "question": "They had a big party. They ........... a lot last night.",
+	    "result": "C",
+	    "A": "are singing",
+	    "B": "were singing",
+	    "C": "sang",
+	    "D": "are going to sing"
+	},
+	{
+	    "id": "195",
+	    "question": "Your eyes are red. ........... ?",
+	    "result": "D",
+	    "A": "Do you cry",
+	    "B": "Will you cry",
+	    "C": "Did you cry",
+	    "D": "Have you cried"
+	},
+	{
+	    "id": "196",
+	    "question": "In the early 1800s, only Britain ..... though the industrial revolution.",
+	    "result": "B",
+	    "A": "goes",
+	    "B": "went",
+	    "C": "has gone",
+	    "D": "would go"
+	},
+	{
+	    "id": "197",
+	    "question": "He does not save as much money as he ......... last year.",
+	    "result": "C",
+	    "A": "does",
+	    "B": "did used",
+	    "C": "did",
+	    "D": "uses"
+	},
+	{
+	    "id": "198",
+	    "question": "They ......... to Sapa next holiday.",
+	    "result": "C",
+	    "A": "will go",
+	    "B": "go",
+	    "C": "are going to",
+	    "D": "goes"
+	},
+	{
+	    "id": "199",
+	    "question": "I don't think life ....... better in the future.",
+	    "result": "B",
+	    "A": "won't",
+	    "B": "will be",
+	    "C": "be",
+	    "D": "is"
+	},
+	{
+	    "id": "200",
+	    "question": "It's the best film ............ You should go and see it.",
+	    "result": "D",
+	    "A": "I ever saw",
+	    "B": "I've see",
+	    "C": "I've never seen",
+	    "D": "I've ever seen"
+	},
+	{
+	    "id": "201",
+	    "question": "She............ while I was cooking.",
+	    "result": "D",
+	    "A": "was phoning",
+	    "B": "will phone",
+	    "C": "phones",
+	    "D": "phoned"
+	},
+	{
+	    "id": "202",
+	    "question": "She can't talk to you now, she .............",
+	    "result": "C",
+	    "A": "study",
+	    "B": "is going to study",
+	    "C": "is studying",
+	    "D": "will studies"
+	},
+	{
+	    "id": "203",
+	    "question": "I ......... a taxi so I came on the bus.",
+	    "result": "A",
+	    "A": "couldn't find",
+	    "B": "don't find",
+	    "C": "haven't found",
+	    "D": "I have found"
+	},
+	{
+	    "id": "204",
+	    "question": "We will send these letters to him when we .... in London.",
+	    "result": "B",
+	    "A": "will arrive",
+	    "B": "arrive",
+	    "C": "arriving",
+	    "D": "have arrived"
+	},
+	{
+	    "id": "205",
+	    "question": "'Where are the letter and the postcard?' They ...... on the table.",
+	    "result": "B",
+	    "A": "were",
+	    "B": "are",
+	    "C": "is",
+	    "D": "have been"
+	},
+	{
+	    "id": "206",
+	    "question": ".......... each of you ready for the test?",
+	    "result": "A",
+	    "A": "Is",
+	    "B": "Are",
+	    "C": "Have",
+	    "D": "Do"
+	},
+	{
+	    "id": "207",
+	    "question": "The World War II ...... in 1939 and ...... in 1945.",
+	    "result": "D",
+	    "A": "begins/ ends",
+	    "B": "has begun/ ended",
+	    "C": "was beginning/ end",
+	    "D": "began/ended"
+	},
+	{
+	    "id": "208",
+	    "question": "We ...... a lot important scientific discoveries in 2050.",
+	    "result": "B",
+	    "A": "have",
+	    "B": "will have",
+	    "C": "had",
+	    "D": "has had"
+	},
+	{
+	    "id": "209",
+	    "question": "We ......... for our cars.",
+	    "result": "C",
+	    "A": "is looking",
+	    "B": "have been looking",
+	    "C": "are looking",
+	    "D": "is going to look."
+	},
+	{
+	    "id": "210",
+	    "question": "What is your purpose ........... learning English?",
+	    "result": "A",
+	    "A": "of",
+	    "B": "to",
+	    "C": "for",
+	    "D": "on"
+	},
+	{
+	    "id": "211",
+	    "question": "There are more and more people died ...... AIDS.",
+	    "result": "D",
+	    "A": "on",
+	    "B": "from",
+	    "C": "at",
+	    "D": "of"
+	},
+	{
+	    "id": "212",
+	    "question": "Something went wrong ........ my computer yesterday.",
+	    "result": "B",
+	    "A": "on",
+	    "B": "with",
+	    "C": "at",
+	    "D": "for"
+	},
+	{
+	    "id": "213",
+	    "question": "Tobacco has bad effects ......... our health.",
+	    "result": "A",
+	    "A": "on",
+	    "B": "from",
+	    "C": "at",
+	    "D": "of"
+	},
+	{
+	    "id": "214",
+	    "question": "I am looking forward ........... seeing you.",
+	    "result": "A",
+	    "A": "to",
+	    "B": "for",
+	    "C": "on",
+	    "D": "at"
+	},
+	{
+	    "id": "215",
+	    "question": "Please pay attention ..... the lecture.",
+	    "result": "B",
+	    "A": "on",
+	    "B": "to",
+	    "C": "about",
+	    "D": "with"
+	},
+	{
+	    "id": "216",
+	    "question": "I have known her .......... last year.",
+	    "result": "B",
+	    "A": "for",
+	    "B": "since",
+	    "C": "from",
+	    "D": "at"
+	},
+	{
+	    "id": "217",
+	    "question": "She is so busy. She always seems to be....... .a hurry.",
+	    "result": "C",
+	    "A": "on",
+	    "B": "at",
+	    "C": "in",
+	    "D": "through"
+	},
+	{
+	    "id": "218",
+	    "question": "Can you turn ........ the radio? It sounds too loud.",
+	    "result": "C",
+	    "A": "on",
+	    "B": "up",
+	    "C": "down",
+	    "D": "into"
+	},
+	{
+	    "id": "219",
+	    "question": "All of the clothes sold in this store were made ...... hand",
+	    "result": "D",
+	    "A": "in",
+	    "B": "with",
+	    "C": "on",
+	    "D": "by"
+	},
+	{
+	    "id": "220",
+	    "question": "The teacher told his student ........",
+	    "result": "A",
+	    "A": "to stop laughing",
+	    "B": "stopping to laugh",
+	    "C": "stop to laugh",
+	    "D": "to stop laugh"
+	},
+	{
+	    "id": "221",
+	    "question": "It is a great fun ...... holiday summer by the sea.",
+	    "result": "B",
+	    "A": "spend",
+	    "B": "to spend",
+	    "C": "spent",
+	    "D": "spending"
+	},
+	{
+	    "id": "222",
+	    "question": "They found it is impossible ......... their problems.",
+	    "result": "B",
+	    "A": "solve",
+	    "B": "to solve",
+	    "C": "solved",
+	    "D": "solving"
+	},
+	{
+	    "id": "223",
+	    "question": "Mary has a lot of home work ........... today.",
+	    "result": "C",
+	    "A": "for doing",
+	    "B": "which to do",
+	    "C": "to do",
+	    "D": "doing"
+	},
+	{
+	    "id": "224",
+	    "question": "After a long discussion, we decided ............. to Tuan Chau for our holiday.",
+	    "result": "A",
+	    "A": "to go",
+	    "B": "going",
+	    "C": "go",
+	    "D": "for going"
+	},
+	{
+	    "id": "225",
+	    "question": "I hate him because he usually makes me ..............",
+	    "result": "C",
+	    "A": "crying",
+	    "B": "to cry",
+	    "C": "cry",
+	    "D": "cries."
+	},
+	{
+	    "id": "226",
+	    "question": "We study English .................",
+	    "result": "C",
+	    "A": "for communicating",
+	    "B": "communicate",
+	    "C": "to communicate",
+	    "D": "communicating"
+	},
+	{
+	    "id": "227",
+	    "question": "What made her ............... like that?",
+	    "result": "A",
+	    "A": "do",
+	    "B": "to do",
+	    "C": "did",
+	    "D": "doing"
+	},
+	{
+	    "id": "228",
+	    "question": "Would you like ........?",
+	    "result": "D",
+	    "A": "came",
+	    "B": "coming",
+	    "C": "come",
+	    "D": "to come"
+	},
+	{
+	    "id": "229",
+	    "question": "He used to ...... with his friends on the field when he was small.",
+	    "result": "C",
+	    "A": "playing",
+	    "B": "played",
+	    "C": "play",
+	    "D": "plays"
+	},
+	{
+	    "id": "230",
+	    "question": "She didn't know how ..........",
+	    "result": "D",
+	    "A": "using",
+	    "B": "used",
+	    "C": "uses",
+	    "D": "to use"
+	},
+	{
+	    "id": "231",
+	    "question": "We find it .............. to do housework.",
+	    "result": "C",
+	    "A": "bore",
+	    "B": "bored",
+	    "C": "boring",
+	    "D": "bores"
+	},
+	{
+	    "id": "232",
+	    "question": "All areas of the world are ......... to be affected by global climate change.",
+	    "result": "C",
+	    "A": "like",
+	    "B": "can",
+	    "C": "able",
+	    "D": "unlike"
+	},
+	{
+	    "id": "233",
+	    "question": "That car is ........... expensive.",
+	    "result": "D",
+	    "A": "surprise",
+	    "B": "surprised",
+	    "C": "surprising",
+	    "D": "surprisingly"
+	},
+	{
+	    "id": "234",
+	    "question": "Passing the exam with high grade was my ..........",
+	    "result": "B",
+	    "A": "expect",
+	    "B": "expectation",
+	    "C": "expected",
+	    "D": "unexpectedly"
+	},
+	{
+	    "id": "235",
+	    "question": "The project can't be carried out because of ............. problems.",
+	    "result": "C",
+	    "A": "finance",
+	    "B": "financially",
+	    "C": "financial",
+	    "D": "financier"
+	},
+	{
+	    "id": "236",
+	    "question": "He is ..... kind man.",
+	    "result": "B",
+	    "A": "so",
+	    "B": "such a",
+	    "C": "such",
+	    "D": "so much"
+	},
+	{
+	    "id": "237",
+	    "question": "The club members became ........... when the chairman entered.",
+	    "result": "A",
+	    "A": "quiet",
+	    "B": "quietly",
+	    "C": "quietness",
+	    "D": "quietist"
+	},
+	{
+	    "id": "238",
+	    "question": "Nowadays, women have more .......... to participate in social activities.",
+	    "result": "B",
+	    "A": "free",
+	    "B": "freedom",
+	    "C": "freeing",
+	    "D": "freely"
+	},
+	{
+	    "id": "239",
+	    "question": "Approximately 350 million people speak English ... their first language.",
+	    "result": "A",
+	    "A": "as",
+	    "B": "like",
+	    "C": "for",
+	    "D": "in"
+	},
+	{
+	    "id": "240",
+	    "question": "We have to fight against the .......... of our air and water.",
+	    "result": "D",
+	    "A": "poisonously",
+	    "B": "poisonous",
+	    "C": "poisoning",
+	    "D": "poison"
+	},
+	{
+	    "id": "241",
+	    "question": "If you .............. in the morning you wouldn't be awake half the night.",
+	    "result": "A",
+	    "A": "got up earlier",
+	    "B": "would get up earlier",
+	    "C": "would get up earlier",
+	    "D": "get up earlier"
+	},
+	{
+	    "id": "242",
+	    "question": "As soon as it stops raining, we .........",
+	    "result": "C",
+	    "A": "leave",
+	    "B": "left",
+	    "C": "will leave",
+	    "D": "have left"
+	},
+	{
+	    "id": "243",
+	    "question": "She .... to prison because she could not pay her debt.",
+	    "result": "A",
+	    "A": "was sent",
+	    "B": "is sent",
+	    "C": "sent",
+	    "D": "was send"
+	},
+	{
+	    "id": "244",
+	    "question": "James is ........ drummer of the school band.",
+	    "result": "A",
+	    "A": "the best",
+	    "B": "the good",
+	    "C": "an good",
+	    "D": "the better"
+	},
+	{
+	    "id": "245",
+	    "question": ". ............ she was an hour late, she didn't apologize.",
+	    "result": "B",
+	    "A": "While",
+	    "B": "Although",
+	    "C": "as soon as",
+	    "D": "because"
+	},
+	{
+	    "id": "246",
+	    "question": "If she ......... taller, she .......... able to join the police.",
+	    "result": "C",
+	    "A": "is/ will",
+	    "B": "is/ would be",
+	    "C": "was/ would be",
+	    "D": "were/ will be"
+	},
+	{
+	    "id": "247",
+	    "question": "They ......... that the climbers got lost.",
+	    "result": "B",
+	    "A": "is reported that",
+	    "B": "reported that",
+	    "C": "reports that",
+	    "D": "was reported that"
+	},
+	{
+	    "id": "248",
+	    "question": "If he worked harder, he .............",
+	    "result": "D",
+	    "A": "will be promoted",
+	    "B": "will have been promoted",
+	    "C": "had been promoted",
+	    "D": "would be promoted"
+	},
+	{
+	    "id": "249",
+	    "question": "Retirement age ....... in the near future.",
+	    "result": "A",
+	    "A": "is expected to rise",
+	    "B": "expects rising",
+	    "C": "expects to rises",
+	    "D": "to expect rising"
+	},
+	{
+	    "id": "250",
+	    "question": "I have not made ........... my mind yet.",
+	    "result": "C",
+	    "A": "to",
+	    "B": "in",
+	    "C": "up",
+	    "D": "on"
+	},
+	{
+	    "id": "251",
+	    "question": "He is so kind. He always ......... a favor.",
+	    "result": "A",
+	    "A": "does",
+	    "B": "helps",
+	    "C": "makes",
+	    "D": "takes"
+	},
+	{
+	    "id": "252",
+	    "question": "It's time we .............. home.",
+	    "result": "B",
+	    "A": "go",
+	    "B": "went",
+	    "C": "gone",
+	    "D": "going"
+	},
+	{
+	    "id": "253",
+	    "question": "How long does it .........you to get to school?",
+	    "result": "C",
+	    "A": "get",
+	    "B": "make",
+	    "C": "take",
+	    "D": "carry"
+	},
+	{
+	    "id": "254",
+	    "question": "I ...............some shopping when I was in town.",
+	    "result": "D",
+	    "A": "went",
+	    "B": "got",
+	    "C": "make",
+	    "D": "did"
+	},
+	{
+	    "id": "255",
+	    "question": "The operation made John feel ........... than he expected.",
+	    "result": "C",
+	    "A": "more weak",
+	    "B": "as more weak",
+	    "C": "weaker",
+	    "D": "the most weaker"
+	},
+	{
+	    "id": "256",
+	    "question": "City life is always ........... country life.",
+	    "result": "B",
+	    "A": "more expensive as",
+	    "B": "more expensive than",
+	    "C": "more much expensive as",
+	    "D": "many more expensive than"
+	},
+	{
+	    "id": "257",
+	    "question": "This book is ........... that one.",
+	    "result": "A",
+	    "A": "less interesting than",
+	    "B": "more interesting",
+	    "C": "interesting than",
+	    "D": "more interesting as"
+	},
+	{
+	    "id": "258",
+	    "question": "Charles Chaplin made many of the funniest and ........ popular films of his time.",
+	    "result": "C",
+	    "A": "more",
+	    "B": "most",
+	    "C": "the most",
+	    "D": "the more"
+	},
+	{
+	    "id": "259",
+	    "question": "The tea was ..................",
+	    "result": "B",
+	    "A": "too hot to drink it.",
+	    "B": "too hot to drink",
+	    "C": "too hot for drinking",
+	    "D": "very hot to drink"
+	},
+	{
+	    "id": "260",
+	    "question": "He ________playing with his dog.",
+	    "result": "B",
+	    "A": "love",
+	    "B": "loves",
+	    "C": "was loving",
+	    "D": "is loving"
+	},
+	{
+	    "id": "261",
+	    "question": "She ________smoking 2 months ago.",
+	    "result": "A",
+	    "A": "stopped",
+	    "B": "stops",
+	    "C": "stopping",
+	    "D": "stoped"
+	},
+	{
+	    "id": "262",
+	    "question": "There _________many kangaroos and koalas in wild forest in Australia.",
+	    "result": "B",
+	    "A": "is",
+	    "B": "are",
+	    "C": "were",
+	    "D": "was"
+	},
+	{
+	    "id": "263",
+	    "question": "Now he ___________a book about English. I do not think he will finish it.",
+	    "result": "B",
+	    "A": "writes",
+	    "B": "is writing",
+	    "C": "wrote",
+	    "D": "has written"
+	},
+	{
+	    "id": "264",
+	    "question": "I ________ play with dolls when I was small but now I don't.",
+	    "result": "D",
+	    "A": "enjoyed",
+	    "B": "liked",
+	    "C": "started",
+	    "D": "used to"
+	},
+	{
+	    "id": "265",
+	    "question": "- 'Tony has just come back from his holiday'--- 'Really? I ____________him a ring.'",
+	    "result": "C",
+	    "A": "give",
+	    "B": "is giving",
+	    "C": "will give",
+	    "D": "is gong to give"
+	},
+	{
+	    "id": "266",
+	    "question": "I ___________ as soon as you come back.",
+	    "result": "D",
+	    "A": "went",
+	    "B": "have gone",
+	    "C": "am going",
+	    "D": "will go"
+	},
+	{
+	    "id": "267",
+	    "question": "Sorry, you can't speak to Jane now. She ___________a bath.",
+	    "result": "C",
+	    "A": "having",
+	    "B": "has",
+	    "C": "is having",
+	    "D": "to have"
+	},
+	{
+	    "id": "268",
+	    "question": "What will you do when you ________school?",
+	    "result": "B",
+	    "A": "finished",
+	    "B": "finish",
+	    "C": "will finish",
+	    "D": "is finishing"
+	},
+	{
+	    "id": "269",
+	    "question": "If I had millions of dollars, I would _________ all over the world.",
+	    "result": "C",
+	    "A": "be traveled",
+	    "B": "traveling",
+	    "C": "travel",
+	    "D": "to travel"
+	},
+	{
+	    "id": "270",
+	    "question": "If it _______ too cold, we could go on a picnic.",
+	    "result": "D",
+	    "A": "isn't",
+	    "B": "wouldn't be",
+	    "C": "couldn't be",
+	    "D": "wasn't"
+	},
+	{
+	    "id": "271",
+	    "question": ". ___you ever ___ to a rock concert?",
+	    "result": "A",
+	    "A": "have/been",
+	    "B": "did/been",
+	    "C": "did/go",
+	    "D": "do/go"
+	},
+	{
+	    "id": "272",
+	    "question": "The Flash band __________ together for over fifteen years.",
+	    "result": "C",
+	    "A": "had been",
+	    "B": "are",
+	    "C": "have been",
+	    "D": "were"
+	},
+	{
+	    "id": "273",
+	    "question": "What would you do if you _______ a lot of money in the street?",
+	    "result": "B",
+	    "A": "find",
+	    "B": "found",
+	    "C": "finding",
+	    "D": "will find"
+	},
+	{
+	    "id": "274",
+	    "question": "It is the first time I __________a bird of this color.",
+	    "result": "D",
+	    "A": "see",
+	    "B": "saw",
+	    "C": "am seeing",
+	    "D": "have seen"
+	},
+	{
+	    "id": "275",
+	    "question": "He would understand it if you ________ it to him more slowly.",
+	    "result": "A",
+	    "A": "explained",
+	    "B": "would explain",
+	    "C": "explain",
+	    "D": "were explaining"
+	},
+	{
+	    "id": "276",
+	    "question": "Take an umbrella. It _______",
+	    "result": "B",
+	    "A": "rain",
+	    "B": "is going to rain",
+	    "C": "rains",
+	    "D": "was raining"
+	},
+	{
+	    "id": "277",
+	    "question": "You can't meet Mary now. She has ________Paris.",
+	    "result": "A",
+	    "A": "gone to",
+	    "B": "been to",
+	    "C": "go to",
+	    "D": "went to"
+	},
+	{
+	    "id": "278",
+	    "question": "She ________ here for ten years.",
+	    "result": "C",
+	    "A": "have lived",
+	    "B": "is living",
+	    "C": "has lived",
+	    "D": "lived"
+	},
+	{
+	    "id": "279",
+	    "question": "She has got nice hair now. She has just _______to the hairdresser's.",
+	    "result": "A",
+	    "A": "been",
+	    "B": "gone",
+	    "C": "done",
+	    "D": "went"
+	},
+	{
+	    "id": "280",
+	    "question": "Many people in the world are fond ________football.",
+	    "result": "A",
+	    "A": "of",
+	    "B": "on",
+	    "C": "in",
+	    "D": "for"
+	},
+	{
+	    "id": "281",
+	    "question": "What's _________ TV tonight?",
+	    "result": "A",
+	    "A": "on",
+	    "B": "in",
+	    "C": "of",
+	    "D": "for"
+	},
+	{
+	    "id": "282",
+	    "question": "I often go abroad ____________ business.",
+	    "result": "B",
+	    "A": "for",
+	    "B": "on",
+	    "C": "in",
+	    "D": "through"
+	},
+	{
+	    "id": "283",
+	    "question": "I'm very busy __________ the moment.",
+	    "result": "D",
+	    "A": "in",
+	    "B": "of",
+	    "C": "for",
+	    "D": "at"
+	},
+	{
+	    "id": "284",
+	    "question": "I can't understand the instructions. They are ________ Chinese.",
+	    "result": "B",
+	    "A": "on",
+	    "B": "in",
+	    "C": "of",
+	    "D": "with"
+	},
+	{
+	    "id": "285",
+	    "question": "Do you often go to school _________ bus?",
+	    "result": "C",
+	    "A": "on",
+	    "B": "with",
+	    "C": "by",
+	    "D": "in"
+	},
+	{
+	    "id": "286",
+	    "question": "I spoke to her ___________ the phone last week.",
+	    "result": "D",
+	    "A": "in",
+	    "B": "through",
+	    "C": "by",
+	    "D": "on"
+	},
+	{
+	    "id": "287",
+	    "question": "I hate being late. I always arrive _________time.",
+	    "result": "A",
+	    "A": "on",
+	    "B": "for",
+	    "C": "with",
+	    "D": "at"
+	},
+	{
+	    "id": "288",
+	    "question": "'Here's a present ________ you'. 'Oh, thank you!'",
+	    "result": "B",
+	    "A": "with",
+	    "B": "for",
+	    "C": "to",
+	    "D": "by"
+	},
+	{
+	    "id": "289",
+	    "question": "Her mother always worries ____________ her.",
+	    "result": "D",
+	    "A": "with",
+	    "B": "for",
+	    "C": "in",
+	    "D": "about"
+	},
+	{
+	    "id": "290",
+	    "question": "Remember _________my best regards to her when you write.",
+	    "result": "D",
+	    "A": "sending",
+	    "B": "send",
+	    "C": "sent",
+	    "D": "to send"
+	},
+	{
+	    "id": "291",
+	    "question": "We walked for 10 km and then we stopped _______ a rest.",
+	    "result": "C",
+	    "A": "having",
+	    "B": "have",
+	    "C": "to have",
+	    "D": "has"
+	},
+	{
+	    "id": "292",
+	    "question": "My mother wants me ___________ this letter this afternoon.",
+	    "result": "B",
+	    "A": "posting",
+	    "B": "to post",
+	    "C": "post",
+	    "D": "posts"
+	},
+	{
+	    "id": "293",
+	    "question": "I hate _________ dirty dishes after meals.",
+	    "result": "C",
+	    "A": "to wash",
+	    "B": "wash",
+	    "C": "washing",
+	    "D": "washed"
+	},
+	{
+	    "id": "294",
+	    "question": "I don't know what ________ to him now.",
+	    "result": "D",
+	    "A": "say",
+	    "B": "saying",
+	    "C": "said",
+	    "D": "to say"
+	},
+	{
+	    "id": "295",
+	    "question": "Last year, I spent a year ___________ all over the country.",
+	    "result": "A",
+	    "A": "traveling",
+	    "B": "to travel",
+	    "C": "travel",
+	    "D": "travelled"
+	},
+	{
+	    "id": "296",
+	    "question": "I'd like _________somewhere different for a change.",
+	    "result": "B",
+	    "A": "go",
+	    "B": "to go",
+	    "C": "going",
+	    "D": "goes"
+	},
+	{
+	    "id": "297",
+	    "question": "They prefer _________ in a swimming pool all day.",
+	    "result": "A",
+	    "A": "playing",
+	    "B": "play",
+	    "C": "to play",
+	    "D": "played"
+	},
+	{
+	    "id": "298",
+	    "question": "Let me ________for the meal. You paid last time.",
+	    "result": "A",
+	    "A": "pay",
+	    "B": "to pay",
+	    "C": "paying",
+	    "D": "paid"
+	},
+	{
+	    "id": "299",
+	    "question": "He agreed _________ the job as soon as possible.",
+	    "result": "B",
+	    "A": "start",
+	    "B": "to start",
+	    "C": "starting",
+	    "D": "started"
+	},
+	{
+	    "id": "300",
+	    "question": "I will _________ you this book if you promise to return it next week.",
+	    "result": "B",
+	    "A": "offer",
+	    "B": "lend",
+	    "C": "borrow",
+	    "D": "allow"
+	},
+	{
+	    "id": "301",
+	    "question": "A lot of children were ________ of the lion's roar.",
+	    "result": "A",
+	    "A": "frightened",
+	    "B": "destroyed",
+	    "C": "bitten",
+	    "D": "collapsed"
+	},
+	{
+	    "id": "302",
+	    "question": "He is my sister's son, so he is my_________",
+	    "result": "B",
+	    "A": "niece",
+	    "B": "nephew",
+	    "C": "cousin",
+	    "D": "brother"
+	},
+	{
+	    "id": "303",
+	    "question": "Remember to give me a _________as soon as you arrive.",
+	    "result": "C",
+	    "A": "telephone",
+	    "B": "phone",
+	    "C": "ring",
+	    "D": "touch"
+	},
+	{
+	    "id": "304",
+	    "question": "I'm_________ of going to Japan one day.",
+	    "result": "A",
+	    "A": "dreaming",
+	    "B": "wishing",
+	    "C": "planning",
+	    "D": "hoping"
+	},
+	{
+	    "id": "305",
+	    "question": "My wife is ________ of spiders",
+	    "result": "D",
+	    "A": "terrify",
+	    "B": "terror",
+	    "C": "terrifying",
+	    "D": "terrified"
+	},
+	{
+	    "id": "306",
+	    "question": "At present the school cannot_________ to buy all the computers it needs",
+	    "result": "A",
+	    "A": "afford",
+	    "B": "risk",
+	    "C": "have",
+	    "D": "make"
+	},
+	{
+	    "id": "307",
+	    "question": "We hope that the students will enjoy taking _______ in the picnic.",
+	    "result": "C",
+	    "A": "advantage",
+	    "B": "notice",
+	    "C": "part",
+	    "D": "place"
+	},
+	{
+	    "id": "308",
+	    "question": "I'm writing to express my _________ gratitude for all your help.",
+	    "result": "C",
+	    "A": "truthful",
+	    "B": "blunt",
+	    "C": "sincere",
+	    "D": "honest"
+	},
+	{
+	    "id": "309",
+	    "question": "He was rather ________ to me. He just says 'No'.",
+	    "result": "D",
+	    "A": "short",
+	    "B": "crude",
+	    "C": "polite",
+	    "D": "rude"
+	},
+	{
+	    "id": "310",
+	    "question": ". We will start the trip _________the rain stops.",
+	    "result": "B",
+	    "A": "before",
+	    "B": "as soon as",
+	    "C": "if that",
+	    "D": "until"
+	},
+	{
+	    "id": "311",
+	    "question": "_______ you cannot do your homework, just ask for help.",
+	    "result": "A",
+	    "A": "if",
+	    "B": "when",
+	    "C": "as soon as",
+	    "D": "while"
+	},
+	{
+	    "id": "312",
+	    "question": "Last year, a new bridge over the river ____________",
+	    "result": "B",
+	    "A": "is built",
+	    "B": "was built",
+	    "C": "will be built",
+	    "D": "has been built"
+	},
+	{
+	    "id": "313",
+	    "question": ". Two pictures _________ from the National museum last night.",
+	    "result": "D",
+	    "A": "was stolen",
+	    "B": "stole",
+	    "C": "were stole",
+	    "D": "were stolen"
+	},
+	{
+	    "id": "314",
+	    "question": "Coca cola is _________all over the world.",
+	    "result": "A",
+	    "A": "enjoyed",
+	    "B": "enjoying",
+	    "C": "enjoy",
+	    "D": "enjoys"
+	},
+	{
+	    "id": "315",
+	    "question": "The recipe of Coca cola is still ________ secret.",
+	    "result": "B",
+	    "A": "keep",
+	    "B": "kept",
+	    "C": "keeps",
+	    "D": "keeping"
+	},
+	{
+	    "id": "316",
+	    "question": ". If he worked harder, he ______more money.",
+	    "result": "B",
+	    "A": "will have",
+	    "B": "would have",
+	    "C": "would having",
+	    "D": "has"
+	},
+	{
+	    "id": "317",
+	    "question": "If I _____taller, I would _______a job in the police.",
+	    "result": "C",
+	    "A": "were/got",
+	    "B": "was/getting",
+	    "C": "were/get",
+	    "D": "was/got"
+	},
+	{
+	    "id": "318",
+	    "question": "If it weren't raining, I ________ go out.",
+	    "result": "D",
+	    "A": "will",
+	    "B": "might",
+	    "C": "can",
+	    "D": "would"
+	},
+	{
+	    "id": "319",
+	    "question": "I'm very ill. If I ______better, I would go to work.",
+	    "result": "C",
+	    "A": "fall",
+	    "B": "feel",
+	    "C": "felt",
+	    "D": "fell"
+	},
+	{
+	    "id": "320",
+	    "question": "Someone has _________my bag!",
+	    "result": "A",
+	    "A": "stolen",
+	    "B": "stole",
+	    "C": "been stolen",
+	    "D": "steal"
+	},
+	{
+	    "id": "321",
+	    "question": ". ______ Coca cola _______by Louis Lassen?",
+	    "result": "B",
+	    "A": "were/invented",
+	    "B": "was/invented",
+	    "C": "are/invent",
+	    "D": "is/ invented"
+	},
+	{
+	    "id": "322",
+	    "question": "________hello to everyone for me!",
+	    "result": "C",
+	    "A": "tell",
+	    "B": "talk",
+	    "C": "say",
+	    "D": "speak"
+	},
+	{
+	    "id": "323",
+	    "question": "I was late for the meeting because I _______an accident.",
+	    "result": "A",
+	    "A": "had",
+	    "B": "met",
+	    "C": "made",
+	    "D": "lost"
+	},
+	{
+	    "id": "324",
+	    "question": "We _______beauty competition last week .",
+	    "result": "D",
+	    "A": "make",
+	    "B": "give",
+	    "C": "gave",
+	    "D": "won"
+	},
+	{
+	    "id": "325",
+	    "question": "She thought German is _________than France.",
+	    "result": "A",
+	    "A": "more industrial",
+	    "B": "industrially",
+	    "C": "most industrial",
+	    "D": "industrial"
+	},
+	{
+	    "id": "326",
+	    "question": "David doesn't work hard. I work __________",
+	    "result": "B",
+	    "A": "hardly",
+	    "B": "harder",
+	    "C": "more hardly",
+	    "D": "hardlier"
+	},
+	{
+	    "id": "327",
+	    "question": "Are oranges _________than bananas?",
+	    "result": "C",
+	    "A": "expensiver",
+	    "B": "most expensive",
+	    "C": "more expensive",
+	    "D": "expensive"
+	},
+	{
+	    "id": "328",
+	    "question": "I am two years __________than my brother.",
+	    "result": "D",
+	    "A": "elder",
+	    "B": "more elder",
+	    "C": "more old",
+	    "D": "older"
+	},
+	{
+	    "id": "329",
+	    "question": "I speak English __________than my sister.",
+	    "result": "B",
+	    "A": "gooder",
+	    "B": "better",
+	    "C": "more good",
+	    "D": "more well"
+	},
+	{
+	    "id": "330",
+	    "question": "He ................. French and German.",
+	    "result": "C",
+	    "A": "speak",
+	    "B": "is speaking",
+	    "C": "speaks",
+	    "D": "speakes"
+	},
+	{
+	    "id": "331",
+	    "question": "We ................... to see you this weekend.",
+	    "result": "A",
+	    "A": "are coming",
+	    "B": "will come",
+	    "C": "come",
+	    "D": "are going to come"
+	},
+	{
+	    "id": "332",
+	    "question": "What ............... you .............. at 6.00 yesterday morning?",
+	    "result": "C",
+	    "A": "are.... doing",
+	    "B": "was ........ doing",
+	    "C": "were ..... doing",
+	    "D": "did... do"
+	},
+	{
+	    "id": "333",
+	    "question": "' I'm cold. ' ' I ........... the heating on.'",
+	    "result": "B",
+	    "A": "am going to put",
+	    "B": "'ll put",
+	    "C": "put",
+	    "D": "am to put"
+	},
+	{
+	    "id": "334",
+	    "question": "How long have you .................. this letter?",
+	    "result": "C",
+	    "A": "write",
+	    "B": "were written",
+	    "C": "been writing",
+	    "D": "wrote"
+	},
+	{
+	    "id": "335",
+	    "question": "I'm exhausted! I .................. tennis for 2 hours.",
+	    "result": "B",
+	    "A": "'ve play",
+	    "B": "'ve been playing",
+	    "C": "played",
+	    "D": "am playing"
+	},
+	{
+	    "id": "336",
+	    "question": "I ..................my leg. I can't walk now.",
+	    "result": "B",
+	    "A": "'ve been broking B.'ve broken",
+	    "B": "'ve broken've broken",
+	    "C": "broke",
+	    "D": "break"
+	},
+	{
+	    "id": "337",
+	    "question": "She was late because her alarm clock ............. gone off.",
+	    "result": "A",
+	    "A": "had",
+	    "B": "did has",
+	    "C": "did",
+	    "D": "hadn't"
+	},
+	{
+	    "id": "338",
+	    "question": "When I came home yesterday, my wife .............",
+	    "result": "D",
+	    "A": "cooks",
+	    "B": "cooked",
+	    "C": "cooking",
+	    "D": "was cooking"
+	},
+	{
+	    "id": "339",
+	    "question": "My mother was worried because I ............. in touch for a long time.",
+	    "result": "D",
+	    "A": "had",
+	    "B": "had been",
+	    "C": "was",
+	    "D": "hadn't been"
+	},
+	{
+	    "id": "340",
+	    "question": "Liz ...................... me a lift because I had missed the bus.",
+	    "result": "C",
+	    "A": "give",
+	    "B": "has give",
+	    "C": "gave",
+	    "D": "given"
+	},
+	{
+	    "id": "341",
+	    "question": "He ............. that he ......... at school yesterday.",
+	    "result": "A",
+	    "A": "said ... was",
+	    "B": "said ..... were",
+	    "C": "say .... is",
+	    "D": "said .... Is"
+	},
+	{
+	    "id": "342",
+	    "question": "My father doesn't have to go to work. He .......... retired.",
+	    "result": "B",
+	    "A": "has",
+	    "B": "is",
+	    "C": "was",
+	    "D": "isn't"
+	},
+	{
+	    "id": "343",
+	    "question": "Peter asked me to marry him. Do you think I .......... say yes?",
+	    "result": "D",
+	    "A": "must",
+	    "B": "am",
+	    "C": "have to",
+	    "D": "should"
+	},
+	{
+	    "id": "344",
+	    "question": "I ........... to go fishing at weekends when I was a child.",
+	    "result": "B",
+	    "A": "can",
+	    "B": "used",
+	    "C": "use",
+	    "D": "went"
+	},
+	{
+	    "id": "345",
+	    "question": "Would you like ............. out with me tonight?",
+	    "result": "A",
+	    "A": "to go",
+	    "B": "going",
+	    "C": "go",
+	    "D": "went"
+	},
+	{
+	    "id": "346",
+	    "question": "Carol ......... while you were out.",
+	    "result": "D",
+	    "A": "to phone",
+	    "B": "phone",
+	    "C": "has phoned",
+	    "D": "phoned"
+	},
+	{
+	    "id": "347",
+	    "question": "She continued .............. during the whole meal.",
+	    "result": "A",
+	    "A": "to talk",
+	    "B": "to talking",
+	    "C": "talk",
+	    "D": "talked"
+	},
+	{
+	    "id": "348",
+	    "question": "We ............... to get married in the spring.",
+	    "result": "A",
+	    "A": "'ve planned",
+	    "B": "are planned",
+	    "C": "planning",
+	    "D": "plans"
+	},
+	{
+	    "id": "349",
+	    "question": "When she saw how I ........... she started laughing.",
+	    "result": "B",
+	    "A": "am dressed",
+	    "B": "dressed",
+	    "C": "was dressed",
+	    "D": "dressing"
+	},
+	{
+	    "id": "350",
+	    "question": "I'm waiting ...........the postman to arrive.",
+	    "result": "D",
+	    "A": "from",
+	    "B": "at",
+	    "C": "in",
+	    "D": "for"
+	},
+	{
+	    "id": "351",
+	    "question": "There's no similarity . ............................you and me",
+	    "result": "A",
+	    "A": "between",
+	    "B": "with",
+	    "C": "before",
+	    "D": "among"
+	},
+	{
+	    "id": "352",
+	    "question": "I live. ..................her house.",
+	    "result": "A",
+	    "A": "near",
+	    "B": "out",
+	    "C": "before",
+	    "D": "by"
+	},
+	{
+	    "id": "353",
+	    "question": "Ghosts make me scared ...... death.",
+	    "result": "A",
+	    "A": "to",
+	    "B": "of",
+	    "C": "up",
+	    "D": "in"
+	},
+	{
+	    "id": "354",
+	    "question": "Where will you enjoy . .....................summer?",
+	    "result": "C",
+	    "A": "during",
+	    "B": "on",
+	    "C": "next",
+	    "D": "last"
+	},
+	{
+	    "id": "355",
+	    "question": "I go to school everyday . ....................Sunday.",
+	    "result": "A",
+	    "A": "except",
+	    "B": "on",
+	    "C": "next",
+	    "D": "last"
+	},
+	{
+	    "id": "356",
+	    "question": "I have been there . ...........................several times.",
+	    "result": "A",
+	    "A": "for",
+	    "B": "on",
+	    "C": "in",
+	    "D": "since"
+	},
+	{
+	    "id": "357",
+	    "question": "I've known him. ........................... I was a child.",
+	    "result": "D",
+	    "A": "from",
+	    "B": "for",
+	    "C": "in",
+	    "D": "since"
+	},
+	{
+	    "id": "358",
+	    "question": "I received a letter . ........................home.",
+	    "result": "A",
+	    "A": "from",
+	    "B": "at",
+	    "C": "in",
+	    "D": "for"
+	},
+	{
+	    "id": "359",
+	    "question": "I look forward to hearing . ...............you.",
+	    "result": "A",
+	    "A": "from",
+	    "B": "at",
+	    "C": "in",
+	    "D": "to"
+	},
+	{
+	    "id": "360",
+	    "question": "She refused ................... for the meal.",
+	    "result": "B",
+	    "A": "pay",
+	    "B": "to pay",
+	    "C": "paying",
+	    "D": "paid"
+	},
+	{
+	    "id": "361",
+	    "question": "My boss let me ................ home early.",
+	    "result": "A",
+	    "A": "go",
+	    "B": "to go",
+	    "C": "to going",
+	    "D": "going"
+	},
+	{
+	    "id": "362",
+	    "question": "Your writing is impossible ..................... read.",
+	    "result": "C",
+	    "A": "read",
+	    "B": "reading",
+	    "C": "to read",
+	    "D": "to reading"
+	},
+	{
+	    "id": "363",
+	    "question": "I'll never forget ............... him for the first time .",
+	    "result": "B",
+	    "A": "meet",
+	    "B": "meeting",
+	    "C": "to meeting",
+	    "D": "to meet"
+	},
+	{
+	    "id": "364",
+	    "question": "He always makes me..................",
+	    "result": "B",
+	    "A": "to laugh",
+	    "B": "laugh",
+	    "C": "laughing",
+	    "D": "to laugh"
+	},
+	{
+	    "id": "365",
+	    "question": "I managed . ................... up smoking.",
+	    "result": "B",
+	    "A": "give",
+	    "B": "to give",
+	    "C": "giving",
+	    "D": "to giving"
+	},
+	{
+	    "id": "366",
+	    "question": "I want . .................... my car",
+	    "result": "A",
+	    "A": "to sell",
+	    "B": "selling",
+	    "C": "sell",
+	    "D": "to selling"
+	},
+	{
+	    "id": "367",
+	    "question": "He's thinking of . ......................... his car.",
+	    "result": "C",
+	    "A": "change",
+	    "B": "to change",
+	    "C": "changing",
+	    "D": "to changing"
+	},
+	{
+	    "id": "368",
+	    "question": "I'd like to keep on . ...................... but I haven't got enough money.",
+	    "result": "B",
+	    "A": "to study",
+	    "B": "studying",
+	    "C": "study",
+	    "D": "to studying"
+	},
+	{
+	    "id": "369",
+	    "question": "I'd love ....................... a physiotherapist.",
+	    "result": "A",
+	    "A": "to be",
+	    "B": "be",
+	    "C": "being",
+	    "D": "been"
+	},
+	{
+	    "id": "370",
+	    "question": ". ............... hello to your parents from me when you see them.",
+	    "result": "B",
+	    "A": "Tell",
+	    "B": "Say",
+	    "C": "Great",
+	    "D": "Sing"
+	},
+	{
+	    "id": "371",
+	    "question": "I was late for work because I. ..................... the bus.",
+	    "result": "A",
+	    "A": "missed",
+	    "B": "lost",
+	    "C": "bought",
+	    "D": "forgot"
+	},
+	{
+	    "id": "372",
+	    "question": "This is my grandfather's watch. He . .............. it every day until he died.",
+	    "result": "A",
+	    "A": "wore",
+	    "B": "watched",
+	    "C": "did",
+	    "D": "looked"
+	},
+	{
+	    "id": "373",
+	    "question": "We . ................. a complaint to the manager because our meal was so bad.",
+	    "result": "C",
+	    "A": "did",
+	    "B": "took",
+	    "C": "made",
+	    "D": "told"
+	},
+	{
+	    "id": "374",
+	    "question": "I don't know .......... to do.",
+	    "result": "A",
+	    "A": "what",
+	    "B": "where",
+	    "C": "which",
+	    "D": "why"
+	},
+	{
+	    "id": "375",
+	    "question": "Please . .......................... me some advice!",
+	    "result": "D",
+	    "A": "send",
+	    "B": "tell",
+	    "C": "say",
+	    "D": "give"
+	},
+	{
+	    "id": "376",
+	    "question": "My darling works ..... a big company.",
+	    "result": "A",
+	    "A": "for",
+	    "B": "near",
+	    "C": "on",
+	    "D": "of"
+	},
+	{
+	    "id": "377",
+	    "question": "Hamlet is a . .......................... by Shakespeare.",
+	    "result": "A",
+	    "A": "play",
+	    "B": "song",
+	    "C": "story",
+	    "D": "poem"
+	},
+	{
+	    "id": "378",
+	    "question": "Go away and . ...................... me alone.",
+	    "result": "A",
+	    "A": "leave",
+	    "B": "put",
+	    "C": "let",
+	    "D": "give"
+	},
+	{
+	    "id": "379",
+	    "question": "Your shoes are dirty. . .................. them off.",
+	    "result": "C",
+	    "A": "Wear",
+	    "B": "Put",
+	    "C": "Take",
+	    "D": "Bring"
+	},
+	{
+	    "id": "380",
+	    "question": "100 houses . ...................... last year.",
+	    "result": "D",
+	    "A": "built",
+	    "B": "was built",
+	    "C": "is built",
+	    "D": "were built"
+	},
+	{
+	    "id": "381",
+	    "question": "The post . ............................ every morning.",
+	    "result": "A",
+	    "A": "is delivered",
+	    "B": "was delivered",
+	    "C": "delivered",
+	    "D": "being delivered"
+	},
+	{
+	    "id": "382",
+	    "question": "Milk . ............................ in Moc Chau.",
+	    "result": "C",
+	    "A": "are made",
+	    "B": "aren't made",
+	    "C": "is made",
+	    "D": "made"
+	},
+	{
+	    "id": "383",
+	    "question": "A new school . ....................... here next year.",
+	    "result": "D",
+	    "A": "will build",
+	    "B": "build",
+	    "C": "will be build",
+	    "D": "will be built"
+	},
+	{
+	    "id": "384",
+	    "question": "If you stopped smoking, you . ......................... cough so much.",
+	    "result": "B",
+	    "A": "will not",
+	    "B": "wouldn't",
+	    "C": "don't",
+	    "D": "wouldn't be"
+	},
+	{
+	    "id": "385",
+	    "question": "I'd lend you the money if I . ................... it.",
+	    "result": "C",
+	    "A": "have",
+	    "B": "'ll have",
+	    "C": "had",
+	    "D": "having"
+	},
+	{
+	    "id": "386",
+	    "question": "If I were English I . ...................... have to study the language.",
+	    "result": "D",
+	    "A": "didn't",
+	    "B": "won't",
+	    "C": "hadn't",
+	    "D": "wouldn't"
+	},
+	{
+	    "id": "387",
+	    "question": "If there are no trains, we . ..................... take a taxi.",
+	    "result": "A",
+	    "A": "will",
+	    "B": "won't",
+	    "C": "would",
+	    "D": "wouldn't"
+	},
+	{
+	    "id": "388",
+	    "question": "It was .................... at high price.",
+	    "result": "C",
+	    "A": "buy",
+	    "B": "buyed",
+	    "C": "bought",
+	    "D": "sell"
+	},
+	{
+	    "id": "389",
+	    "question": "If I .... you, I wouldn't marry him.",
+	    "result": "D",
+	    "A": "am",
+	    "B": "are",
+	    "C": "be",
+	    "D": "were"
+	},
+	{
+	    "id": "390",
+	    "question": "Thank goodness you've arrived safe and. .......................",
+	    "result": "A",
+	    "A": "sound",
+	    "B": "safe",
+	    "C": "quite",
+	    "D": "good"
+	},
+	{
+	    "id": "391",
+	    "question": "You should have a . ............................. with your boss.",
+	    "result": "B",
+	    "A": "story",
+	    "B": "word",
+	    "C": "phrase",
+	    "D": "sentence"
+	},
+	{
+	    "id": "392",
+	    "question": "Do you find it easy to . ................... friends?",
+	    "result": "C",
+	    "A": "take",
+	    "B": "have",
+	    "C": "make",
+	    "D": "get"
+	},
+	{
+	    "id": "393",
+	    "question": "I was ...............her party yesterday.",
+	    "result": "C",
+	    "A": "in",
+	    "B": "on",
+	    "C": "at",
+	    "D": "up"
+	},
+	{
+	    "id": "394",
+	    "question": "Do you get . ..................... well with your neighbors?",
+	    "result": "B",
+	    "A": "during",
+	    "B": "on",
+	    "C": "next",
+	    "D": "last"
+	},
+	{
+	    "id": "395",
+	    "question": "My car wasn't . ..................... expensive as yours.",
+	    "result": "C",
+	    "A": "more",
+	    "B": "much",
+	    "C": "as",
+	    "D": "less"
+	},
+	{
+	    "id": "396",
+	    "question": "I'm as ....................... as you are.",
+	    "result": "A",
+	    "A": "worried",
+	    "B": "worry",
+	    "C": "worrying",
+	    "D": "worryed"
+	},
+	{
+	    "id": "397",
+	    "question": "He is . ..................... boy in the class.",
+	    "result": "D",
+	    "A": "funny",
+	    "B": "funniest",
+	    "C": "funnier",
+	    "D": "the funniest"
+	},
+	{
+	    "id": "398",
+	    "question": "It isn't as cold today as it . ..................... yesterday.",
+	    "result": "A",
+	    "A": "was",
+	    "B": "were",
+	    "C": "is",
+	    "D": "be"
+	},
+	{
+	    "id": "399",
+	    "question": "In my country it's . ..................... warmer than in Japan.",
+	    "result": "D",
+	    "A": "more",
+	    "B": "many",
+	    "C": "lot",
+	    "D": "much"
+	},
+	{
+	    "id": "400",
+	    "question": "This soup is very hot, but I always think the ............... better.",
+	    "result": "A",
+	    "A": "hotter the",
+	    "B": "hottest",
+	    "C": "hotter",
+	    "D": "hot the"
+	}
+]
