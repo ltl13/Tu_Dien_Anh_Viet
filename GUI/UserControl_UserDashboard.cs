@@ -19,7 +19,7 @@ namespace GUI {
             using (var ms = new System.IO.MemoryStream(byteArrayIn)) {
                 this.pictureBox_UserPic.Image = Image.FromStream(ms);
             }
-            
+
             label_Password.Visible = false;
             label_NewPass.Visible = false;
             label_NewPassConfirm.Visible = false;
@@ -77,10 +77,10 @@ namespace GUI {
 
         private void ListAccount() {
             label_Title.Text = father.xuiButton_ListAccount.ButtonText.ToUpper();
-            this.dataGridView.Visible = true;
-            this.InitDataGridView();
-            panel_Footer.Controls.Add(this.dataGridView);
-            this.dataGridView.DataSource = AccountBUS.Instance.GetListAccount();
+            dataGridView.Visible = true;
+            InitDataGridView();
+            panel_Footer.Controls.Add(dataGridView);
+            dataGridView.DataSource = AccountBUS.Instance.GetListAccount();
         }
 
         private void DeleteAccount() {
@@ -88,6 +88,9 @@ namespace GUI {
         }
 
         private void InitDataGridView() {
+            // 
+            // dataGridView
+            // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.BorderStyle = BorderStyle.None;
@@ -132,36 +135,36 @@ namespace GUI {
         }
 
         private void dataGridView_DataSourceChanged(object sender, EventArgs e) {
-            foreach (DataGridViewColumn column in this.dataGridView.Columns) {
+            foreach (DataGridViewColumn column in dataGridView.Columns) {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
 
-            this.dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView.Columns[0].FillWeight = 10;
-            this.dataGridView.Columns[1].FillWeight = 40;
-            this.dataGridView.Columns[2].FillWeight = 50;
-            this.dataGridView.Columns["ID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView.Columns[0].FillWeight = 10;
+            dataGridView.Columns[1].FillWeight = 40;
+            dataGridView.Columns[2].FillWeight = 50;
+            dataGridView.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            this.dataGridViewFormat();
+            dataGridViewFormat();
         }
 
         void dataGridViewFormat() {
-            for (int i = 0; i < this.dataGridView.RowCount; i++) {
+            for (int i = 0; i < dataGridView.RowCount; i++) {
                 if (i % 2 == 0) {
-                    this.dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.White;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.White;
                 }
                 else {
-                    this.dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                    dataGridView.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
                 }
             }
         }
 
         private void dataGridView_MouseWheel(object sender, MouseEventArgs e) {
-            if (e.Delta > 0 && this.dataGridView.FirstDisplayedScrollingRowIndex > 0) {
-                this.dataGridView.FirstDisplayedScrollingRowIndex--;
+            if (e.Delta > 0 && dataGridView.FirstDisplayedScrollingRowIndex > 0) {
+                dataGridView.FirstDisplayedScrollingRowIndex--;
             }
             else if (e.Delta < 0) {
-                this.dataGridView.FirstDisplayedScrollingRowIndex++;
+                dataGridView.FirstDisplayedScrollingRowIndex++;
             }
         }
     }
