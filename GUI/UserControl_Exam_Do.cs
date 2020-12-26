@@ -24,7 +24,7 @@ namespace GUI {
         private yourTest instance;
 
         public UserControl_Exam_Do(UserControl_Exam exam, bool whatToDo) {
-            InitializeComponent(); textBox1.Hide();
+            InitializeComponent(); 
             father = exam;
             socau = father.Number;
             time = father.Time;
@@ -221,12 +221,6 @@ namespace GUI {
                 if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
             }
             else ketthuc();
-        }
-
-        private void button1_Click(object sender, EventArgs e) {
-            textBox1.Show();
-            foreach (yourTest instance in listYourTest) textBox1.Text += instance.ques + "?????????????????" + instance.key + "!!!!!!!!!!!!!!!!!!" + instance.choose + "====================";///////////////////
-
         }
 
         private void xuiButton_Answer3_Click(object sender, EventArgs e) {

@@ -48,6 +48,7 @@ namespace GUI
             musicWrong = new AxWindowsMediaPlayer();
             musicvictory = new AxWindowsMediaPlayer();
             musicLose = new AxWindowsMediaPlayer();
+
             musicBackGround.CreateControl();
             musicCorrect.CreateControl();
             musicWrong.CreateControl();
