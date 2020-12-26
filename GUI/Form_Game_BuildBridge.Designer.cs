@@ -36,6 +36,7 @@
             this.groupBox_Question = new System.Windows.Forms.GroupBox();
             this.label_Question = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.label_numOfQuestion = new System.Windows.Forms.Label();
             this.groupBox_Question.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,12 +95,23 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // label_numOfQuestion
+            // 
+            this.label_numOfQuestion.AutoSize = true;
+            this.label_numOfQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.label_numOfQuestion.Location = new System.Drawing.Point(387, 24);
+            this.label_numOfQuestion.Name = "label_numOfQuestion";
+            this.label_numOfQuestion.Size = new System.Drawing.Size(76, 25);
+            this.label_numOfQuestion.TabIndex = 4;
+            this.label_numOfQuestion.Text = "so cau";
+            // 
             // Form_Game_BuildBridge
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.brokesky;
             this.ClientSize = new System.Drawing.Size(850, 850);
             this.ControlBox = false;
+            this.Controls.Add(this.label_numOfQuestion);
             this.Controls.Add(this.groupBox_Question);
             this.Controls.Add(this.metroButton_Music);
             this.Controls.Add(this.metroButton_Back);
@@ -125,5 +137,6 @@
         private System.Windows.Forms.GroupBox groupBox_Question;
         private System.Windows.Forms.Label label_Question;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label label_numOfQuestion;
     }
 }

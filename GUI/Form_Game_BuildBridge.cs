@@ -28,8 +28,8 @@ namespace GUI
         AxWindowsMediaPlayer musicvictory;
         AxWindowsMediaPlayer musicLose;
 
-        bool win = false, lose = false, check = false, isclick = false, music = false;
-        int time = 0, numberOfQuestion = 10, n = 10, point = 0;
+        bool win = false, lose = false, check = false, isclick = false, music = false, finish = false;
+        int time = 0, numberOfQuestion = 2, n = 2, point = 0;
 
         int i = 0;
         int positionX = 100, positionY = 360;
@@ -40,6 +40,7 @@ namespace GUI
             InitializeComponent();
             LoadJson();
             this.father = father;
+            label_numOfQuestion.Text = n.ToString();
 
             #region Music Init
             musicBackGround = new AxWindowsMediaPlayer();
@@ -172,9 +173,11 @@ namespace GUI
                 key = items[rand.Next(0, items.Count)];
                 label_Question.Text = key.question.ToString();
             }
-            else if((float)point/n>=0.8)
+            else if((float)point/numberOfQuestion>=0.8)
             {
                 win = true;
+                textBox_Answer.Hide();
+                groupBox_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
                 musicvictory.Ctlcontrols.play();
                 this.BackgroundImage = Properties.Resources.sky;
@@ -183,6 +186,8 @@ namespace GUI
             else
             {
                 lose = true;
+                textBox_Answer.Hide();
+                groupBox_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
                 musicLose.Ctlcontrols.play();
                 timer.Start();
@@ -197,8 +202,9 @@ namespace GUI
                 {
                     check = true;
                     point++;
-                    musicCorrect.Ctlcontrols.play();
+                    if (n-1!=0) musicCorrect.Ctlcontrols.play();
                     isclick = true;
+                    label_numOfQuestion.Text = n.ToString();
                     checkResult();
                     timer.Start();
                 }
@@ -207,6 +213,7 @@ namespace GUI
                     check = false;
                     musicWrong.Ctlcontrols.play();
                     isclick = true;
+                    label_numOfQuestion.Text = n.ToString();
                     checkResult();
                     timer.Start();
                 }
@@ -225,7 +232,7 @@ namespace GUI
         private void metroButton_Music_Click(object sender, EventArgs e)
         {
             music = !music;
-            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
+            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop(); 
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -237,26 +244,30 @@ namespace GUI
         {
             if (lose)
             {
+                e.Graphics.DrawImage(run1, positionX, positionY);
                 e.Graphics.DrawImage((Properties.Resources.lose), positionX + 210, positionY - 50);
                 e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
             }
             if (win)
             {
-                positionX += 10;
-                e.Graphics.DrawImage(Run_2D_Draw(), positionX, positionY);
+                if (positionX < 550)
+                {
+                    positionX += 10;
+                    e.Graphics.DrawImage(Run_2D_Draw(), positionX, positionY);
+                }
+                else
+                {
+                    e.Graphics.DrawImage(run1, positionX, positionY);
+                    e.Graphics.DrawImage((Properties.Resources.win), positionX - 240, positionY - 100);
+                }
             }
             else if (!isclick) e.Graphics.DrawImage(run1, positionX, positionY);
-            if (positionX > 550)
-            {
-                win = false;
-                e.Graphics.DrawImage((Properties.Resources.win), positionX - 250, positionY - 100);
-            }
-
+            
             if (isclick)
             {
-                if (check)
+                if (check && !win && !lose)
                 {
-                    if (time++ < 15)
+                    if (time++ < 40)
                     {
                         e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
                     }
@@ -266,7 +277,7 @@ namespace GUI
                         time = 0;
                     }
                 }
-                else
+                else if (!check && !lose)
                 {
                     if (time++ < 8)
                     {
