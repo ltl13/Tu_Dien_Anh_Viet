@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxWMPLib;
+using BUS;
 using Newtonsoft.Json;
 
 namespace GUI
@@ -16,12 +17,9 @@ namespace GUI
     public partial class Form_Game_BuildBridge : Form
     {
         Form_Main father;
-        List<item> items;
-        item key;
-        public class item
-        {
-            public string id, question, answer;
-        }
+        DataTable items;
+        DataRow key;
+
         AxWindowsMediaPlayer musicBackGround;
         AxWindowsMediaPlayer musicCorrect;
         AxWindowsMediaPlayer musicWrong;
@@ -38,7 +36,7 @@ namespace GUI
         public Form_Game_BuildBridge(Form_Main father)
         {
             InitializeComponent();
-            LoadJson();
+            items = DictionaryBUS.Instance.GetFillBlank();
             this.father = father;
             label_numOfQuestion.Text = n.ToString();
 
@@ -67,19 +65,12 @@ namespace GUI
 
             stopAllMusic();
 
-            key = items[rand.Next(0, items.Count)];
-            label_Question.Text = key.question.ToString();
+            key = items.Rows[rand.Next(0, items.Rows.Count)];
+            label_Question.Text = key["Question"].ToString();
             timer_Bridge.Start();
         }
 
-        public void LoadJson()
-        {
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\dientu.json"))
-            {
-                string json = r.ReadToEnd();
-                items = JsonConvert.DeserializeObject<List<item>>(json);
-            }
-        }
+
 
         #region add Bitmap Gif
         Bitmap run1 = new Bitmap(Properties.Resources.m0),
@@ -171,8 +162,8 @@ namespace GUI
         {
             if (--n > 0)
             {
-                key = items[rand.Next(0, items.Count)];
-                label_Question.Text = key.question.ToString();
+                key = items.Rows[rand.Next(0, items.Rows.Count)];
+                label_Question.Text = key["Question"].ToString();
             }
             else if((float)point/numberOfQuestion>=0.8)
             {
@@ -198,7 +189,7 @@ namespace GUI
             if (e.KeyCode == Keys.Enter)
             {
                 textBox_Answer.Hide();
-                if (textBox_Answer.Text == key.answer.ToString())
+                if (textBox_Answer.Text == key["Answer"].ToString())
                 {
                     check = true;
                     point++;

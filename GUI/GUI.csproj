@@ -198,6 +198,12 @@
     <Compile Include="UserControl_Grammar.Designer.cs">
       <DependentUpon>UserControl_Grammar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_review.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_review.Designer.cs">
+      <DependentUpon>UserControl_review.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Translate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -268,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Grammar.resx">
       <DependentUpon>UserControl_Grammar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_review.resx">
+      <DependentUpon>UserControl_review.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Search.resx">
       <DependentUpon>UserControl_Search.cs</DependentUpon>
