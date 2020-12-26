@@ -125,12 +125,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Form_Game_CarRacing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Game_CarRacing.Designer.cs">
-      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,9 +216,6 @@
     <Compile Include="UserControl_WordInfo.Designer.cs">
       <DependentUpon>UserControl_WordInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form_Game_CarRacing.resx">
-      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
