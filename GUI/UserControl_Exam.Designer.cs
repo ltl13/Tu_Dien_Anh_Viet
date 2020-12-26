@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Exam));
             this.splitContainer_Exam = new System.Windows.Forms.SplitContainer();
             this.metroTile_ComboWord = new MetroFramework.Controls.MetroTile();
-            this.label_ComboWord = new System.Windows.Forms.Label();
             this.pictureBox_ComboWord = new System.Windows.Forms.PictureBox();
+            this.label_ComboWord = new System.Windows.Forms.Label();
             this.metroTile_Favorite = new MetroFramework.Controls.MetroTile();
-            this.label_Favorite = new System.Windows.Forms.Label();
             this.pictureBox_Favorite = new System.Windows.Forms.PictureBox();
+            this.label_Favorite = new System.Windows.Forms.Label();
             this.panel_Lock = new System.Windows.Forms.Panel();
             this.label_Lock = new System.Windows.Forms.Label();
             this.pictureBox_Lock = new System.Windows.Forms.PictureBox();
@@ -71,8 +71,8 @@
             // metroTile_ComboWord
             // 
             this.metroTile_ComboWord.ActiveControl = null;
-            this.metroTile_ComboWord.Controls.Add(this.label_ComboWord);
             this.metroTile_ComboWord.Controls.Add(this.pictureBox_ComboWord);
+            this.metroTile_ComboWord.Controls.Add(this.label_ComboWord);
             this.metroTile_ComboWord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile_ComboWord.Location = new System.Drawing.Point(0, 0);
             this.metroTile_ComboWord.Name = "metroTile_ComboWord";
@@ -85,36 +85,42 @@
             this.metroTile_ComboWord.UseSelectable = true;
             this.metroTile_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.metroTile_ComboWord_MouseDown);
             // 
-            // label_ComboWord
-            // 
-            this.label_ComboWord.AutoSize = true;
-            this.label_ComboWord.BackColor = System.Drawing.Color.Transparent;
-            this.label_ComboWord.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ComboWord.ForeColor = System.Drawing.Color.White;
-            this.label_ComboWord.Location = new System.Drawing.Point(60, 85);
-            this.label_ComboWord.Name = "label_ComboWord";
-            this.label_ComboWord.Size = new System.Drawing.Size(171, 40);
-            this.label_ComboWord.TabIndex = 1;
-            this.label_ComboWord.Text = "Bộ từ vựng";
-            this.label_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_ComboWord_MouseDown);
-            // 
             // pictureBox_ComboWord
             // 
             this.pictureBox_ComboWord.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_ComboWord.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox_ComboWord.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_ComboWord.Image")));
-            this.pictureBox_ComboWord.Location = new System.Drawing.Point(109, 172);
+            this.pictureBox_ComboWord.Location = new System.Drawing.Point(0, 130);
             this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
-            this.pictureBox_ComboWord.Size = new System.Drawing.Size(65, 71);
+            this.pictureBox_ComboWord.Size = new System.Drawing.Size(288, 76);
             this.pictureBox_ComboWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_ComboWord.TabIndex = 0;
             this.pictureBox_ComboWord.TabStop = false;
             this.pictureBox_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_ComboWord_MouseDown);
             // 
+            // label_ComboWord
+            // 
+            this.label_ComboWord.AutoSize = true;
+            this.label_ComboWord.BackColor = System.Drawing.Color.Transparent;
+            this.label_ComboWord.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_ComboWord.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ComboWord.ForeColor = System.Drawing.Color.White;
+            this.label_ComboWord.Location = new System.Drawing.Point(0, 0);
+            this.label_ComboWord.MaximumSize = new System.Drawing.Size(288, 130);
+            this.label_ComboWord.MinimumSize = new System.Drawing.Size(288, 130);
+            this.label_ComboWord.Name = "label_ComboWord";
+            this.label_ComboWord.Padding = new System.Windows.Forms.Padding(0, 80, 0, 0);
+            this.label_ComboWord.Size = new System.Drawing.Size(288, 130);
+            this.label_ComboWord.TabIndex = 1;
+            this.label_ComboWord.Text = "Bộ từ vựng";
+            this.label_ComboWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_ComboWord.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_ComboWord_MouseDown);
+            // 
             // metroTile_Favorite
             // 
             this.metroTile_Favorite.ActiveControl = null;
-            this.metroTile_Favorite.Controls.Add(this.label_Favorite);
             this.metroTile_Favorite.Controls.Add(this.pictureBox_Favorite);
+            this.metroTile_Favorite.Controls.Add(this.label_Favorite);
             this.metroTile_Favorite.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile_Favorite.Location = new System.Drawing.Point(0, 0);
             this.metroTile_Favorite.Name = "metroTile_Favorite";
@@ -129,60 +135,67 @@
             this.metroTile_Favorite.UseStyleColors = true;
             this.metroTile_Favorite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.metroTile_Favorite_MouseDown);
             // 
-            // label_Favorite
-            // 
-            this.label_Favorite.AutoSize = true;
-            this.label_Favorite.BackColor = System.Drawing.Color.Transparent;
-            this.label_Favorite.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Favorite.ForeColor = System.Drawing.Color.White;
-            this.label_Favorite.Location = new System.Drawing.Point(58, 84);
-            this.label_Favorite.Name = "label_Favorite";
-            this.label_Favorite.Size = new System.Drawing.Size(186, 40);
-            this.label_Favorite.TabIndex = 1;
-            this.label_Favorite.Text = "Từ yêu thích";
-            this.label_Favorite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Favorite_MouseDown);
-            // 
             // pictureBox_Favorite
             // 
             this.pictureBox_Favorite.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Favorite.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox_Favorite.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Favorite.Image")));
-            this.pictureBox_Favorite.Location = new System.Drawing.Point(110, 172);
+            this.pictureBox_Favorite.Location = new System.Drawing.Point(0, 130);
             this.pictureBox_Favorite.Name = "pictureBox_Favorite";
-            this.pictureBox_Favorite.Size = new System.Drawing.Size(65, 71);
+            this.pictureBox_Favorite.Size = new System.Drawing.Size(292, 71);
+            this.pictureBox_Favorite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_Favorite.TabIndex = 0;
             this.pictureBox_Favorite.TabStop = false;
             this.pictureBox_Favorite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_Favorite_MouseDown);
+            // 
+            // label_Favorite
+            // 
+            this.label_Favorite.BackColor = System.Drawing.Color.Transparent;
+            this.label_Favorite.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_Favorite.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Favorite.ForeColor = System.Drawing.Color.White;
+            this.label_Favorite.Location = new System.Drawing.Point(0, 0);
+            this.label_Favorite.MaximumSize = new System.Drawing.Size(288, 130);
+            this.label_Favorite.MinimumSize = new System.Drawing.Size(288, 130);
+            this.label_Favorite.Name = "label_Favorite";
+            this.label_Favorite.Padding = new System.Windows.Forms.Padding(0, 80, 0, 0);
+            this.label_Favorite.Size = new System.Drawing.Size(288, 130);
+            this.label_Favorite.TabIndex = 1;
+            this.label_Favorite.Text = "Từ yêu thích";
+            this.label_Favorite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Favorite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_Favorite_MouseDown);
             // 
             // panel_Lock
             // 
             this.panel_Lock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(148)))));
             this.panel_Lock.Controls.Add(this.label_Lock);
             this.panel_Lock.Controls.Add(this.pictureBox_Lock);
-            this.panel_Lock.Location = new System.Drawing.Point(388, 167);
+            this.panel_Lock.Location = new System.Drawing.Point(388, 160);
             this.panel_Lock.Name = "panel_Lock";
-            this.panel_Lock.Size = new System.Drawing.Size(209, 189);
+            this.panel_Lock.Size = new System.Drawing.Size(209, 204);
             this.panel_Lock.TabIndex = 2;
             // 
             // label_Lock
             // 
             this.label_Lock.BackColor = System.Drawing.Color.Transparent;
-            this.label_Lock.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label_Lock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Lock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Lock.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Lock.ForeColor = System.Drawing.Color.White;
             this.label_Lock.Location = new System.Drawing.Point(0, 90);
             this.label_Lock.Name = "label_Lock";
-            this.label_Lock.Size = new System.Drawing.Size(209, 99);
+            this.label_Lock.Size = new System.Drawing.Size(209, 114);
             this.label_Lock.TabIndex = 1;
-            this.label_Lock.Text = "Cần ít nhất 10 từ trong danh sách từ yêu thích để mở khóa tính năng này";
+            this.label_Lock.Text = "Cần ít nhất 10 từ trong danh sách yêu thích để mở khóa tính năng";
             this.label_Lock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox_Lock
             // 
             this.pictureBox_Lock.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_Lock.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox_Lock.Image = global::GUI.Properties.Resources.lock1;
-            this.pictureBox_Lock.Location = new System.Drawing.Point(60, 0);
+            this.pictureBox_Lock.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Lock.Name = "pictureBox_Lock";
-            this.pictureBox_Lock.Size = new System.Drawing.Size(76, 90);
+            this.pictureBox_Lock.Size = new System.Drawing.Size(209, 90);
             this.pictureBox_Lock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_Lock.TabIndex = 0;
             this.pictureBox_Lock.TabStop = false;
@@ -203,7 +216,6 @@
             this.metroTile_ComboWord.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ComboWord)).EndInit();
             this.metroTile_Favorite.ResumeLayout(false);
-            this.metroTile_Favorite.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Favorite)).EndInit();
             this.panel_Lock.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Lock)).EndInit();

@@ -383,6 +383,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap default_user_picture {
+            get {
+                object obj = ResourceManager.GetObject("default_user_picture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_user {
             get {
                 object obj = ResourceManager.GetObject("delete_user", resourceCulture);
@@ -1016,16 +1026,6 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap user_picture {
-            get {
-                object obj = ResourceManager.GetObject("user_picture", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
