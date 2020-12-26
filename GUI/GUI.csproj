@@ -134,12 +134,6 @@
     <Compile Include="Form_Game_CarRacing.Designer.cs">
       <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Update_User.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Update_User.Designer.cs">
-      <DependentUpon>Form_Update_User.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +213,12 @@
     <Compile Include="UserControl_Search.Designer.cs">
       <DependentUpon>UserControl_Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_UserDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_UserDashboard.Designer.cs">
+      <DependentUpon>UserControl_UserDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_WordInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,9 +239,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Signup.resx">
       <DependentUpon>Form_Signup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_Update_User.resx">
-      <DependentUpon>Form_Update_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -274,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Translate.resx">
       <DependentUpon>UserControl_Translate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_UserDashboard.resx">
+      <DependentUpon>UserControl_UserDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_WordInfo.resx">
       <DependentUpon>UserControl_WordInfo.cs</DependentUpon>
