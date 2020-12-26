@@ -176,7 +176,6 @@ namespace GUI
             else if((float)point/numberOfQuestion>=0.8)
             {
                 win = true;
-                textBox_Answer.Hide();
                 groupBox_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
                 musicvictory.Ctlcontrols.play();
@@ -186,7 +185,6 @@ namespace GUI
             else
             {
                 lose = true;
-                textBox_Answer.Hide();
                 groupBox_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
                 musicLose.Ctlcontrols.play();
@@ -198,6 +196,7 @@ namespace GUI
         {
             if (e.KeyCode == Keys.Enter)
             {
+                textBox_Answer.Hide();
                 if (textBox_Answer.Text == key.answer.ToString())
                 {
                     check = true;
@@ -274,6 +273,7 @@ namespace GUI
                     else
                     {
                         isclick = false;
+                        textBox_Answer.Show();
                         time = 0;
                     }
                 }
@@ -287,6 +287,7 @@ namespace GUI
                     else
                     {
                         isclick = false;
+                        textBox_Answer.Show();
                         time = 0;
                     }
                 }
