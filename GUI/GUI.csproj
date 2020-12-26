@@ -125,6 +125,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Form_Game_BuildBridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Game_BuildBridge.Designer.cs">
+      <DependentUpon>Form_Game_BuildBridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Game_CarRacing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Game_CarRacing.Designer.cs">
+      <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +228,9 @@
     <Compile Include="UserControl_WordInfo.Designer.cs">
       <DependentUpon>UserControl_WordInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form_Game_BuildBridge.resx">
+      <DependentUpon>Form_Game_BuildBridge.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -389,6 +404,65 @@
     <None Include="Resources\dictionary_icon.ico" />
     <Content Include="dictionary_icon.ico" />
     <None Include="Resources\console1.png" />
+    <None Include="Resources\BuildBridge\car0.png" />
+    <None Include="Resources\BuildBridge\car1.png" />
+    <None Include="Resources\BuildBridge\car2.png" />
+    <None Include="Resources\BuildBridge\car3.png" />
+    <None Include="Resources\BuildBridge\car4.png" />
+    <None Include="Resources\BuildBridge\car5.png" />
+    <None Include="Resources\BuildBridge\car6.png" />
+    <None Include="Resources\BuildBridge\car7.png" />
+    <None Include="Resources\BuildBridge\car8.png" />
+    <None Include="Resources\BuildBridge\car9.png" />
+    <None Include="Resources\BuildBridge\car10.png" />
+    <None Include="Resources\BuildBridge\coin0.png" />
+    <None Include="Resources\BuildBridge\coin1.png" />
+    <None Include="Resources\BuildBridge\coin2.png" />
+    <None Include="Resources\BuildBridge\coin3.png" />
+    <None Include="Resources\BuildBridge\coin4.png" />
+    <None Include="Resources\BuildBridge\coin5.png" />
+    <None Include="Resources\BuildBridge\coin6.png" />
+    <None Include="Resources\BuildBridge\coin7.png" />
+    <None Include="Resources\BuildBridge\gift1.png" />
+    <None Include="Resources\BuildBridge\gift2.png" />
+    <None Include="Resources\BuildBridge\gift3.png" />
+    <None Include="Resources\BuildBridge\gift4.png" />
+    <None Include="Resources\BuildBridge\gift5.png" />
+    <None Include="Resources\BuildBridge\gift6.png" />
+    <None Include="Resources\BuildBridge\gift7.png" />
+    <None Include="Resources\BuildBridge\gift8.png" />
+    <None Include="Resources\BuildBridge\gift9.png" />
+    <None Include="Resources\BuildBridge\gift10.png" />
+    <None Include="Resources\BuildBridge\gift11.png" />
+    <None Include="Resources\BuildBridge\gift12.png" />
+    <None Include="Resources\BuildBridge\gift13.png" />
+    <None Include="Resources\BuildBridge\pow.png" />
+    <None Include="Resources\BuildBridge\road.jpg" />
+    <None Include="Resources\BuildBridge\rock.png" />
+    <None Include="Resources\CarRacing\brokesky.png" />
+    <None Include="Resources\CarRacing\bum0.png" />
+    <None Include="Resources\CarRacing\bum1.png" />
+    <None Include="Resources\CarRacing\bum2.png" />
+    <None Include="Resources\CarRacing\bum3.png" />
+    <None Include="Resources\CarRacing\bum4.png" />
+    <None Include="Resources\CarRacing\bum5.png" />
+    <None Include="Resources\CarRacing\bum6.png" />
+    <None Include="Resources\CarRacing\hm0.png" />
+    <None Include="Resources\CarRacing\hm1.png" />
+    <None Include="Resources\CarRacing\hm2.png" />
+    <None Include="Resources\CarRacing\hm3.png" />
+    <None Include="Resources\CarRacing\lose.png" />
+    <None Include="Resources\CarRacing\m0.png" />
+    <None Include="Resources\CarRacing\m1.png" />
+    <None Include="Resources\CarRacing\m2.png" />
+    <None Include="Resources\CarRacing\m3.png" />
+    <None Include="Resources\CarRacing\m4.png" />
+    <None Include="Resources\CarRacing\m5.png" />
+    <None Include="Resources\CarRacing\m6.png" />
+    <None Include="Resources\CarRacing\m7.png" />
+    <None Include="Resources\CarRacing\m8.png" />
+    <None Include="Resources\CarRacing\sky.png" />
+    <None Include="Resources\CarRacing\win.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

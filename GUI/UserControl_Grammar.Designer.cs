@@ -47,6 +47,7 @@
             this.button_Game_BuildBridge.TabIndex = 1;
             this.button_Game_BuildBridge.UseCompatibleTextRendering = true;
             this.button_Game_BuildBridge.UseVisualStyleBackColor = true;
+            this.button_Game_BuildBridge.Click += new System.EventHandler(this.button_Game_BuildBridge_Click);
             // 
             // button_Game_CarRacing
             // 
@@ -62,6 +63,7 @@
             this.button_Game_CarRacing.TabIndex = 0;
             this.button_Game_CarRacing.UseCompatibleTextRendering = true;
             this.button_Game_CarRacing.UseVisualStyleBackColor = true;
+            this.button_Game_CarRacing.Click += new System.EventHandler(this.button_Game_CarRacing_Click);
             // 
             // UserControl_Grammar
             // 
