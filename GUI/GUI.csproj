@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\dictionary_icon.ico</ApplicationIcon>
+    <ApplicationIcon>dictionary_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
@@ -275,8 +275,6 @@
     </None>
     <None Include="Connected Services\TranslatorService\SoapService.wsdl" />
     <None Include="Connected Services\TranslatorService\SoapService1.wsdl" />
-    <None Include="Fonts\SnesItalic-1G9Be.ttf" />
-    <None Include="Fonts\Squirk-RMvV.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -349,16 +347,20 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Resources\animal.jpg" />
+    <None Include="Resources\back-arrow.png" />
     <None Include="Resources\book.png" />
     <None Include="Resources\books.png" />
+    <None Include="Resources\console.png" />
     <None Include="Resources\delete-user.png" />
     <None Include="Resources\dictionary.png" />
     <None Include="Resources\EFT.jpg" />
     <None Include="Resources\exam.png" />
+    <None Include="Resources\find-user.png" />
     <None Include="Resources\folder.png" />
     <None Include="Resources\gear.png" />
     <None Include="Resources\gear1.png" />
     <None Include="Resources\grammar.png" />
+    <None Include="Resources\irregularverbs.png" />
     <None Include="Resources\IT.jpg" />
     <None Include="Resources\left-arrow.png" />
     <None Include="Resources\left-arrow1.png" />
@@ -368,87 +370,25 @@
     <None Include="Resources\refresh.png" />
     <None Include="Resources\reset.png" />
     <None Include="Resources\right-arrow.png" />
+    <None Include="Resources\right-arrow1.png" />
     <None Include="Resources\rubbish-bin.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\sign-out.png" />
+    <None Include="Resources\star_white.png" />
+    <None Include="Resources\star_yellow.png" />
     <None Include="Resources\stationery-stack.png" />
+    <None Include="Resources\tada.PNG" />
+    <None Include="Resources\tadada.PNG" />
     <None Include="Resources\to-do-list.png" />
     <None Include="Resources\translation.png" />
     <None Include="Resources\update.png" />
     <None Include="Resources\user.png" />
+    <None Include="Resources\user-picture.png" />
     <None Include="Resources\vegetables.jpg" />
     <None Include="Resources\volume.png" />
     <None Include="Resources\dictionary_icon.ico" />
-    <None Include="Resources\star_yellow.png" />
-    <None Include="Resources\star_white.png" />
-    <None Include="Resources\search.png" />
-    <None Include="Resources\console.png" />
-    <None Include="Resources\right-arrow1.png" />
-    <None Include="Resources\back-arrow.png" />
-    <None Include="Resources\irregularverbs.png" />
-    <None Include="Resources\00.png" />
-    <None Include="Resources\01.png" />
-    <None Include="Resources\imageedit_1_5530705358.jpg" />
-    <None Include="Resources\imageedit_7_7290431428.jpg" />
-    <None Include="Resources\Image1.bmp" />
-    <None Include="Resources\0.png" />
-    <None Include="Resources\1.png" />
-    <None Include="Resources\02.png" />
-    <None Include="Resources\2.png" />
-    <None Include="Resources\03.png" />
-    <None Include="Resources\3.png" />
-    <None Include="Resources\04.png" />
-    <None Include="Resources\4.png" />
-    <None Include="Resources\05.png" />
-    <None Include="Resources\5.png" />
-    <None Include="Resources\06.png" />
-    <None Include="Resources\6.png" />
-    <None Include="Resources\07.png" />
-    <None Include="Resources\7.png" />
-    <None Include="Resources\08.png" />
-    <None Include="Resources\09.png" />
-    <None Include="Resources\10.png" />
-    <None Include="Resources\b1.png" />
-    <None Include="Resources\b2.png" />
-    <None Include="Resources\b3.png" />
-    <None Include="Resources\b4.png" />
-    <None Include="Resources\b5.png" />
-    <None Include="Resources\b6.png" />
-    <None Include="Resources\b7.png" />
-    <None Include="Resources\brokesky.png" />
-    <None Include="Resources\g1.png" />
-    <None Include="Resources\g2.png" />
-    <None Include="Resources\g3.png" />
-    <None Include="Resources\g4.png" />
-    <None Include="Resources\g5.png" />
-    <None Include="Resources\g6.png" />
-    <None Include="Resources\g7.png" />
-    <None Include="Resources\g8.png" />
-    <None Include="Resources\g9.png" />
-    <None Include="Resources\g10.png" />
-    <None Include="Resources\g11.png" />
-    <None Include="Resources\g12.png" />
-    <None Include="Resources\g13.png" />
-    <None Include="Resources\hm0.png" />
-    <None Include="Resources\hm1.png" />
-    <None Include="Resources\hm2.png" />
-    <None Include="Resources\hm3.png" />
-    <None Include="Resources\lose.png" />
-    <None Include="Resources\m0.png" />
-    <None Include="Resources\m1.png" />
-    <None Include="Resources\m2.png" />
-    <None Include="Resources\m3.png" />
-    <None Include="Resources\m4.png" />
-    <None Include="Resources\m5.png" />
-    <None Include="Resources\m6.png" />
-    <None Include="Resources\m7.png" />
-    <None Include="Resources\m8.png" />
-    <None Include="Resources\pow.png" />
-    <None Include="Resources\road.jpg" />
-    <None Include="Resources\rokk.png" />
-    <None Include="Resources\sky.png" />
-    <None Include="Resources\win.png" />
-    <None Include="Resources\user-picture.png" />
-    <None Include="Resources\find-user.png" />
-    <None Include="Resources\sign-out.png" />
+    <Content Include="dictionary_icon.ico" />
+    <None Include="Resources\console1.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

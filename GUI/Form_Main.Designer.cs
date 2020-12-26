@@ -136,7 +136,9 @@
             this.pictureBox_Search.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox_Search.Image = global::GUI.Properties.Resources.list_searching_variant;
             this.pictureBox_Search.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Search.Margin = new System.Windows.Forms.Padding(10);
             this.pictureBox_Search.Name = "pictureBox_Search";
+            this.pictureBox_Search.Padding = new System.Windows.Forms.Padding(5);
             this.pictureBox_Search.Size = new System.Drawing.Size(77, 77);
             this.pictureBox_Search.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox_Search.TabIndex = 0;
@@ -214,7 +216,7 @@
             // pictureBox_ComboWord
             // 
             this.pictureBox_ComboWord.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_ComboWord.Image = global::GUI.Properties.Resources.folder;
+            this.pictureBox_ComboWord.Image = global::GUI.Properties.Resources.book;
             this.pictureBox_ComboWord.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_ComboWord.Name = "pictureBox_ComboWord";
             this.pictureBox_ComboWord.Size = new System.Drawing.Size(77, 77);
@@ -334,7 +336,7 @@
             // pictureBox_Game
             // 
             this.pictureBox_Game.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_Game.Image = global::GUI.Properties.Resources.console;
+            this.pictureBox_Game.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Game.Image")));
             this.pictureBox_Game.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Game.Name = "pictureBox_Game";
             this.pictureBox_Game.Size = new System.Drawing.Size(77, 77);
@@ -438,7 +440,7 @@
             // xuiButton_ListAccount
             // 
             this.xuiButton_ListAccount.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
-            this.xuiButton_ListAccount.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_ListAccount.ButtonImage")));
+            this.xuiButton_ListAccount.ButtonImage = global::GUI.Properties.Resources.to_do_list;
             this.xuiButton_ListAccount.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
             this.xuiButton_ListAccount.ButtonText = "List account";
             this.xuiButton_ListAccount.ClickBackColor = System.Drawing.Color.DodgerBlue;
