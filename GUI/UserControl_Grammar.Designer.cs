@@ -34,49 +34,43 @@
             // 
             // button_Game_BuildBridge
             // 
-            this.button_Game_BuildBridge.BackgroundImage = global::GUI.Properties.Resources.imageedit_7_7290431428;
+            this.button_Game_BuildBridge.BackgroundImage = global::GUI.Properties.Resources.tadada;
             this.button_Game_BuildBridge.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Game_BuildBridge.FlatAppearance.BorderSize = 0;
             this.button_Game_BuildBridge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Game_BuildBridge.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Game_BuildBridge.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Game_BuildBridge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(186)))), ((int)(((byte)(3)))));
-            this.button_Game_BuildBridge.Location = new System.Drawing.Point(114, 467);
-            this.button_Game_BuildBridge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button_Game_BuildBridge.Location = new System.Drawing.Point(173, 346);
             this.button_Game_BuildBridge.Name = "button_Game_BuildBridge";
-            this.button_Game_BuildBridge.Padding = new System.Windows.Forms.Padding(30, 31, 30, 31);
-            this.button_Game_BuildBridge.Size = new System.Drawing.Size(808, 372);
+            this.button_Game_BuildBridge.Padding = new System.Windows.Forms.Padding(20);
+            this.button_Game_BuildBridge.Size = new System.Drawing.Size(539, 238);
             this.button_Game_BuildBridge.TabIndex = 1;
             this.button_Game_BuildBridge.UseCompatibleTextRendering = true;
             this.button_Game_BuildBridge.UseVisualStyleBackColor = true;
-            this.button_Game_BuildBridge.Click += new System.EventHandler(this.button_Game_BuildBridge_Click);
             // 
             // button_Game_CarRacing
             // 
-            this.button_Game_CarRacing.BackgroundImage = global::GUI.Properties.Resources.imageedit_1_5530705358;
+            this.button_Game_CarRacing.BackgroundImage = global::GUI.Properties.Resources.tada;
             this.button_Game_CarRacing.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Game_CarRacing.FlatAppearance.BorderSize = 0;
             this.button_Game_CarRacing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Game_CarRacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Game_CarRacing.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Game_CarRacing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(236)))), ((int)(((byte)(213)))));
-            this.button_Game_CarRacing.Location = new System.Drawing.Point(114, 56);
-            this.button_Game_CarRacing.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button_Game_CarRacing.Location = new System.Drawing.Point(173, 59);
             this.button_Game_CarRacing.Name = "button_Game_CarRacing";
-            this.button_Game_CarRacing.Size = new System.Drawing.Size(808, 372);
+            this.button_Game_CarRacing.Size = new System.Drawing.Size(539, 238);
             this.button_Game_CarRacing.TabIndex = 0;
             this.button_Game_CarRacing.UseCompatibleTextRendering = true;
             this.button_Game_CarRacing.UseVisualStyleBackColor = true;
-            this.button_Game_CarRacing.Click += new System.EventHandler(this.button_Game_CarRacing_Click);
             // 
             // UserControl_Grammar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button_Game_BuildBridge);
             this.Controls.Add(this.button_Game_CarRacing);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserControl_Grammar";
-            this.Size = new System.Drawing.Size(1005, 867);
-            this.Load += new System.EventHandler(this.UserControl_Grammar_Load);
+            this.Size = new System.Drawing.Size(812, 676);
             this.ResumeLayout(false);
 
         }
