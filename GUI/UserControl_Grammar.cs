@@ -20,9 +20,9 @@ namespace GUI {
             Marshal.Copy(fontdata, 0, data, fontLength);
             pfc.AddMemoryFont(data, fontLength);
 
-            button_Game_CarRacing.Font = new Font(pfc.Families[0], button_Game_CarRacing.Font.Size);
+            button_Game_CarRacing.Font = new Font(pfc.Families[0], button_Game_CarRacing.Font.Size, button_Game_CarRacing.Font.Style);
 
-            button_Game_BuildBridge.Font = new Font(pfc.Families[0], button_Game_BuildBridge.Font.Size);
+            button_Game_BuildBridge.Font = new Font(pfc.Families[0], button_Game_BuildBridge.Font.Size, button_Game_BuildBridge.Font.Style);
             //pfc.Dispose();
         }
 
