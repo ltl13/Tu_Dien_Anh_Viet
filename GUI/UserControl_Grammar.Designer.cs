@@ -46,9 +46,9 @@
             this.button_Game_BuildBridge.Padding = new System.Windows.Forms.Padding(30, 31, 30, 31);
             this.button_Game_BuildBridge.Size = new System.Drawing.Size(808, 372);
             this.button_Game_BuildBridge.TabIndex = 1;
+            this.button_Game_BuildBridge.Text = "Build Bridge";
             this.button_Game_BuildBridge.UseCompatibleTextRendering = true;
             this.button_Game_BuildBridge.UseVisualStyleBackColor = true;
-           // this.button_Game_BuildBridge.Click += new System.EventHandler(this.button_Game_BuildBridge_Click);
             // 
             // button_Game_CarRacing
             // 
@@ -63,9 +63,9 @@
             this.button_Game_CarRacing.Name = "button_Game_CarRacing";
             this.button_Game_CarRacing.Size = new System.Drawing.Size(808, 372);
             this.button_Game_CarRacing.TabIndex = 0;
+            this.button_Game_CarRacing.Text = "Car Racing";
             this.button_Game_CarRacing.UseCompatibleTextRendering = true;
             this.button_Game_CarRacing.UseVisualStyleBackColor = true;
-          //  this.button_Game_CarRacing.Click += new System.EventHandler(this.button_Game_CarRacing_Click);
             // 
             // UserControl_Grammar
             // 
@@ -76,7 +76,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserControl_Grammar";
             this.Size = new System.Drawing.Size(1005, 867);
-            this.Load += new System.EventHandler(this.UserControl_Grammar_Load);
             this.ResumeLayout(false);
 
         }
