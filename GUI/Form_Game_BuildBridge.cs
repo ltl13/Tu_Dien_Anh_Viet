@@ -274,6 +274,8 @@ namespace GUI
                     {
                         isclick = false;
                         textBox_Answer.Show();
+                        textBox_Answer.Text = string.Empty;
+                        textBox_Answer.Select();
                         time = 0;
                     }
                 }
@@ -288,6 +290,8 @@ namespace GUI
                     {
                         isclick = false;
                         textBox_Answer.Show();
+                        textBox_Answer.Text = string.Empty;
+                        textBox_Answer.Select();
                         time = 0;
                     }
                 }
