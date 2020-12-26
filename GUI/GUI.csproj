@@ -134,12 +134,6 @@
     <Compile Include="Form_Game_CarRacing.Designer.cs">
       <DependentUpon>Form_Game_CarRacing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Update_User.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Update_User.Designer.cs">
-      <DependentUpon>Form_Update_User.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>

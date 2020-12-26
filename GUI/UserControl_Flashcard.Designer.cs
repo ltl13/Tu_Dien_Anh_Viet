@@ -182,6 +182,7 @@
             this.xuiButton_Panel.ClickBackColor = System.Drawing.Color.White;
             this.xuiButton_Panel.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Panel.CornerRadius = 5;
+            this.xuiButton_Panel.Enabled = false;
             this.xuiButton_Panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.xuiButton_Panel.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Panel.HoverBackgroundColor = System.Drawing.Color.White;
