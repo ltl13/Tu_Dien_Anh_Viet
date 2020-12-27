@@ -186,6 +186,12 @@
     <Compile Include="UserControl_ComboWord.Designer.cs">
       <DependentUpon>UserControl_ComboWord.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl_Exam_Result.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Exam_Result.Designer.cs">
+      <DependentUpon>UserControl_Exam_Result.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl_Grammar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -253,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Exam_Choice.resx">
       <DependentUpon>UserControl_Exam_Choice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Exam_Result.resx">
+      <DependentUpon>UserControl_Exam_Result.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Flashcard.resx">
       <DependentUpon>UserControl_Flashcard.cs</DependentUpon>
