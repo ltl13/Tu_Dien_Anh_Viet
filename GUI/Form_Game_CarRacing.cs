@@ -30,6 +30,7 @@ namespace GUI
         int iCoin = 0, iCar = 0, iGift = 0;
         int positionXcar = 30, positionYcar = 160;
         int positionXcoin = 1250, positionYcoin = 240;
+        Random rand = new Random();
 
         public Form_Game_CarRacing(Form_Main father)
         {
