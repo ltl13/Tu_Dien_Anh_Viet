@@ -39,13 +39,14 @@
             this.xuiButton_C = new XanderUI.XUIButton();
             this.xuiButton_D = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label_Time = new System.Windows.Forms.Label();
             this.xuiButton_Back = new XanderUI.XUIButton();
             this.xuiButton_Music = new XanderUI.XUIButton();
             this.xuiButton_retry = new XanderUI.XUIButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_question.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer_carRacing
@@ -55,9 +56,11 @@
             // label_NumQues
             // 
             this.label_NumQues.AutoSize = true;
-            this.label_NumQues.Location = new System.Drawing.Point(1082, 47);
+            this.label_NumQues.BackColor = System.Drawing.Color.Transparent;
+            this.label_NumQues.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_NumQues.Location = new System.Drawing.Point(1229, 13);
             this.label_NumQues.Name = "label_NumQues";
-            this.label_NumQues.Size = new System.Drawing.Size(104, 25);
+            this.label_NumQues.Size = new System.Drawing.Size(106, 35);
             this.label_NumQues.TabIndex = 6;
             this.label_NumQues.Text = "numQues";
             // 
@@ -172,33 +175,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1082, 9);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1123, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 25);
+            this.label1.Size = new System.Drawing.Size(100, 35);
             this.label1.TabIndex = 12;
             this.label1.Text = "Question";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(971, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 25);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Time";
-            // 
             // label_Time
             // 
-            this.label_Time.AutoSize = true;
-            this.label_Time.Location = new System.Drawing.Point(971, 47);
+            this.label_Time.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Time.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Time.Location = new System.Drawing.Point(0, 0);
             this.label_Time.Name = "label_Time";
-            this.label_Time.Size = new System.Drawing.Size(52, 25);
+            this.label_Time.Size = new System.Drawing.Size(94, 65);
             this.label_Time.TabIndex = 14;
             this.label_Time.Text = "time";
+            this.label_Time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // xuiButton_Back
             // 
-            this.xuiButton_Back.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Back.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(234)))), ((int)(((byte)(254)))));
             this.xuiButton_Back.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Back.ButtonImage")));
             this.xuiButton_Back.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_Back.ButtonText = "";
@@ -219,7 +217,7 @@
             // 
             // xuiButton_Music
             // 
-            this.xuiButton_Music.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Music.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(234)))), ((int)(((byte)(254)))));
             this.xuiButton_Music.ButtonImage = global::GUI.Properties.Resources.volume;
             this.xuiButton_Music.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_Music.ButtonText = "";
@@ -240,7 +238,7 @@
             // 
             // xuiButton_retry
             // 
-            this.xuiButton_retry.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_retry.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(234)))), ((int)(((byte)(254)))));
             this.xuiButton_retry.ButtonImage = global::GUI.Properties.Resources.refresh;
             this.xuiButton_retry.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_retry.ButtonText = "";
@@ -249,8 +247,8 @@
             this.xuiButton_retry.CornerRadius = 5;
             this.xuiButton_retry.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_retry.HoverBackgroundColor = System.Drawing.Color.Red;
-            this.xuiButton_retry.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton_retry.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_retry.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(234)))), ((int)(((byte)(254)))));
+            this.xuiButton_retry.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
             this.xuiButton_retry.Location = new System.Drawing.Point(1346, 12);
             this.xuiButton_retry.Name = "xuiButton_retry";
             this.xuiButton_retry.Size = new System.Drawing.Size(31, 31);
@@ -264,17 +262,25 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.label_Time);
+            this.panel1.Location = new System.Drawing.Point(807, 9);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(94, 65);
+            this.panel1.TabIndex = 18;
+            // 
             // Form_Game_CarRacing
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.road;
             this.ClientSize = new System.Drawing.Size(1526, 500);
             this.ControlBox = false;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.xuiButton_retry);
             this.Controls.Add(this.xuiButton_Music);
             this.Controls.Add(this.xuiButton_Back);
-            this.Controls.Add(this.label_Time);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.xuiButton_D);
             this.Controls.Add(this.xuiButton_C);
@@ -289,6 +295,7 @@
             this.Text = "Form_Game_CarRacing";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form_Game_CarRacing_Paint);
             this.panel_question.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,11 +312,11 @@
         private XanderUI.XUIButton xuiButton_C;
         private XanderUI.XUIButton xuiButton_D;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_Time;
         private XanderUI.XUIButton xuiButton_Back;
         private XanderUI.XUIButton xuiButton_Music;
         private XanderUI.XUIButton xuiButton_retry;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
