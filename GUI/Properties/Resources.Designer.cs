@@ -1023,16 +1023,6 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tadadada {
-            get {
-                object obj = ResourceManager.GetObject("tadadada", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap to_do_list {
             get {
                 object obj = ResourceManager.GetObject("to_do_list", resourceCulture);
