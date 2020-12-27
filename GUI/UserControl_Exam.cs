@@ -7,8 +7,9 @@ using System.Windows.Forms;
 namespace GUI {
     public partial class UserControl_Exam : UserControl {
         private Form_Main father;
-        private UserControl_Exam_Choice examCombo;
+        private UserControl_Exam_Choice examChoice;
         private UserControl_Exam_Do examDo;
+        private UserControl_Exam_Result examResult;
 
         private int numbersOfQuestion;
         private int countDown;
@@ -22,6 +23,7 @@ namespace GUI {
         public int CountDown { get => countDown; set => countDown = value; }
         public int Choice { get => choice; }
         public DataTable DataTable { get => dataTable; set => dataTable = value; }
+        public UserControl_Exam_Result ExamResult { get => examResult; set => examResult = value; }
 
         public UserControl_Exam(Form_Main main) {
             InitializeComponent();
@@ -30,16 +32,16 @@ namespace GUI {
 
         private void metroTile_ComboWord_MouseDown(object sender, MouseEventArgs e) {
             this.choice = 1;
-            examCombo = new UserControl_Exam_Choice(this);
-            father.panel_Main.Controls.Add(examCombo);
-            examCombo.BringToFront();
+            examChoice = new UserControl_Exam_Choice(this);
+            father.panel_Main.Controls.Add(examChoice);
+            examChoice.BringToFront();
         }
 
         private void metroTile_Favorite_MouseDown(object sender, MouseEventArgs e) {
             this.choice = 2;
-            examCombo = new UserControl_Exam_Choice(this);
-            father.panel_Main.Controls.Add(examCombo);
-            examCombo.BringToFront();
+            examChoice = new UserControl_Exam_Choice(this);
+            father.panel_Main.Controls.Add(examChoice);
+            examChoice.BringToFront();
         }
 
         private void pictureBox_ComboWord_MouseDown(object sender, MouseEventArgs e) {
@@ -63,12 +65,16 @@ namespace GUI {
                 panel_Lock.Visible = false;
             }
 
-            if (examCombo != null) {
-                examCombo.Dispose();
+            if (examChoice != null) {
+                examChoice.Dispose();
             }
 
             if (examDo != null) {
                 examDo.Dispose();
+            }
+
+            if (ExamResult != null) {
+                ExamResult.Dispose();
             }
         }
 

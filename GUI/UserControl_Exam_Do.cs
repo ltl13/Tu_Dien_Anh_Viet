@@ -7,21 +7,55 @@ using System.Windows.Forms;
 
 namespace GUI {
     public partial class UserControl_Exam_Do : UserControl {
-        private class yourTest {
-            public string ques, key, choose, A, B, C, D;
+        public class yourTest {
+            private string question;
+            private string key;
+            private string choice;
+            private string a, b, c, d;
+
+            public yourTest() {
+                question = null;
+                key = null;
+                choice = null;
+                a = null;
+                b = null;
+                c = null;
+                d = null;
+            }
+
+            public yourTest(string question, string key, string choice, string a, string b, string c, string d) {
+                this.question = question;
+                this.key = key;
+                this.choice = choice;
+                this.a = a;
+                this.b = b;
+                this.c = c;
+                this.d = d;
+            }
+
+            public string Question { get => question; set => question = value; }
+            public string Key { get => key; set => key = value; }
+            public string Choice { get => choice; set => choice = value; }
+            public string A { get => a; set => a = value; }
+            public string B { get => b; set => b = value; }
+            public string C { get => c; set => c = value; }
+            public string D { get => d; set => d = value; }
         }
 
-        private UserControl_Exam father;//
+        private UserControl_Exam father;
+        private UserControl_Exam_Result userControl_Exam_Result;
         private int number;
-        private int countDown;//
-        private int numbersOfQuestion;//
-        private int numbersOfCorrect;//
+        private int countDown;
+        private int numbersOfQuestion;
+        private int numbersOfCorrect;
 
         private DataTable dtAnswer; //4 Câu trả lời không có câu nào trùng
         private DataTable dtQuestion; //Các câu đã hỏi
-        private DataRow key; //--
+        private DataRow key;
         private List<yourTest> listYourTest;
         private yourTest instance;
+
+        public List<yourTest> ListYourTest { get => listYourTest; set => listYourTest = value; }
 
         public UserControl_Exam_Do(UserControl_Exam userControl_Exam) {
             InitializeComponent(); 
@@ -34,7 +68,7 @@ namespace GUI {
             this.countDown = father.CountDown;
             this.numbersOfQuestion = father.NumbersOfQuestion;
             this.numbersOfCorrect = 0;
-            this.listYourTest = new List<yourTest>();
+            this.ListYourTest = new List<yourTest>();
             this.instance = new yourTest();
 
             foreach (DataColumn column in father.DataTable.Columns) {
@@ -54,7 +88,7 @@ namespace GUI {
         }
 
         private void xuiButton_Back_Click(object sender, EventArgs e) {
-            father.Visible = true;
+            father.BringToFront();
             this.Dispose();
         }
 
@@ -67,7 +101,7 @@ namespace GUI {
             metroProgressSpinner_Time.Value = (int)((1.0 * this.countDown / father.CountDown) * 100);
             label_time.Text = this.countDown.ToString();
             if (this.countDown == 0) {
-                listYourTest.Add(instance);
+                ListYourTest.Add(instance);
                 if (--numbersOfQuestion == 0) ketthuc();
                 else {
                     if (father.Choice == 1) InitQuizCombo(); 
@@ -85,6 +119,11 @@ namespace GUI {
             xuiButton_Answer2.Enabled = false;
             xuiButton_Answer3.Enabled = false;
             xuiButton_Answer4.Enabled = false;
+
+            father.ExamResult = new UserControl_Exam_Result(father, listYourTest);
+            father.Father.panel_Main.Controls.Add(father.ExamResult);
+            father.ExamResult.BringToFront();
+            this.Dispose();
         }
 
         public bool checkanswer(DataRow answer4) {
@@ -144,23 +183,22 @@ namespace GUI {
             }
 
             xuiButton_Answer1.ButtonText = this.dtAnswer.Rows[0]["Meaning"].ToString();
+            instance.A = this.dtAnswer.Rows[0]["Meaning"].ToString();
             xuiButton_Answer2.ButtonText = this.dtAnswer.Rows[1]["Meaning"].ToString();
+            instance.B = this.dtAnswer.Rows[1]["Meaning"].ToString();
             xuiButton_Answer3.ButtonText = this.dtAnswer.Rows[2]["Meaning"].ToString();
+            instance.C = this.dtAnswer.Rows[2]["Meaning"].ToString();
             xuiButton_Answer4.ButtonText = this.dtAnswer.Rows[3]["Meaning"].ToString();
-
-            //instance.A = father.listAnswer[0][2].ToString();
-            //instance.B = father.listAnswer[1][2].ToString();
-            //instance.C = father.listAnswer[2][2].ToString();
-            //instance.D = father.listAnswer[3][2].ToString();
+            instance.D = this.dtAnswer.Rows[3]["Meaning"].ToString();
 
             do {
                 this.key = this.dtAnswer.Rows[rand.Next(0, 4)];
             } while (ContainDataRowInDataTable(this.dtQuestion, this.key));
 
-            label_Question.Text = key[0].ToString();
+            label_Question.Text = key["Vocabulary"].ToString();
             this.dtQuestion.Rows.Add(key.ItemArray);
-            //instance.key = father.key[2].ToString();
-            //instance.ques = father.key[0].ToString();
+            instance.Key = this.key["Meaning"].ToString();
+            instance.Question = this.key["Vocabulary"].ToString();
 
             timer1.Start();
             metroProgressSpinner_Time.Value = 100;
@@ -201,26 +239,25 @@ namespace GUI {
 
             tempEnVi = new EnViDTO(dtAnswer.Rows[0]);
             xuiButton_Answer1.ButtonText = tempEnVi.getCommonMeaning();
+            instance.A = tempEnVi.getCommonMeaning();
             tempEnVi = new EnViDTO(dtAnswer.Rows[1]);
             xuiButton_Answer2.ButtonText = tempEnVi.getCommonMeaning();
+            instance.B = tempEnVi.getCommonMeaning();
             tempEnVi = new EnViDTO(dtAnswer.Rows[2]);
             xuiButton_Answer3.ButtonText = tempEnVi.getCommonMeaning();
+            instance.C = tempEnVi.getCommonMeaning();
             tempEnVi = new EnViDTO(dtAnswer.Rows[3]);
             xuiButton_Answer4.ButtonText = tempEnVi.getCommonMeaning();
-
-            //instance.A = listAnswer[0].getCommonMeaning();
-            //instance.B = listAnswer[1].getCommonMeaning();
-            //instance.C = listAnswer[2].getCommonMeaning();
-            //instance.D = listAnswer[3].getCommonMeaning();
+            instance.D = tempEnVi.getCommonMeaning();
 
             do {
                 this.key = this.dtAnswer.Rows[rand.Next(0, 4)];
             } while (ContainDataRowInDataTable(this.dtQuestion, this.key));
 
-            label_Question.Text = key[0].ToString();
+            label_Question.Text = key["English"].ToString();
             this.dtQuestion.Rows.Add(key.ItemArray);
-            //instance.key = father.key[2].ToString();
-            //instance.ques = father.key[0].ToString();
+            instance.Key = this.key["VietNamese"].ToString();
+            instance.Question = this.key["English"].ToString();
 
             timer1.Start();
             metroProgressSpinner_Time.Value = 100;
@@ -241,9 +278,8 @@ namespace GUI {
                 }
             }
 
-            label_Score.Text = "Your score: " + Math.Round((float)(10 * numbersOfCorrect * 1.0 / father.NumbersOfQuestion), 2).ToString();
-            instance.choose = xuiButton_Answer1.ButtonText;
-            listYourTest.Add(instance);
+            instance.Choice = xuiButton_Answer1.ButtonText;
+            ListYourTest.Add(instance);
 
             if (numbersOfQuestion-- > 1) {
                 if (father.Choice == 1) {
@@ -272,10 +308,8 @@ namespace GUI {
                 }
             }
 
-            label_Score.Text = "Your score: " + Math.Round((float)(10 * numbersOfCorrect * 1.0 / father.NumbersOfQuestion), 2).ToString();
-
-            instance.choose = xuiButton_Answer2.ButtonText;
-            listYourTest.Add(instance);
+            instance.Choice = xuiButton_Answer2.ButtonText;
+            ListYourTest.Add(instance);
 
             if (numbersOfQuestion-- > 1) {
                 if (father.Choice == 1) {
@@ -304,10 +338,8 @@ namespace GUI {
                 }
             }
 
-            label_Score.Text = "Your score: " + Math.Round((float)(10 * numbersOfCorrect * 1.0 / father.NumbersOfQuestion), 2).ToString();
-
-            instance.choose = xuiButton_Answer3.ButtonText;
-            listYourTest.Add(instance);
+            instance.Choice = xuiButton_Answer3.ButtonText;
+            ListYourTest.Add(instance);
 
             if (numbersOfQuestion-- > 1) {
                 if (father.Choice == 1) {
@@ -336,9 +368,8 @@ namespace GUI {
                 }
             }
 
-            label_Score.Text = "Your score: " + Math.Round((float)(10 * numbersOfCorrect * 1.0 / father.NumbersOfQuestion), 2).ToString();
-            instance.choose = xuiButton_Answer4.ButtonText;
-            listYourTest.Add(instance);
+            instance.Choice = xuiButton_Answer4.ButtonText;
+            ListYourTest.Add(instance);
 
             if (numbersOfQuestion-- > 1) {
                 if (father.Choice == 1) {
@@ -352,6 +383,5 @@ namespace GUI {
                 ketthuc(); 
             }
         }
-
     }
 }

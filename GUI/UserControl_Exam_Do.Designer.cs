@@ -39,7 +39,6 @@
             this.label_Question = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroProgressSpinner_Time = new MetroFramework.Controls.MetroProgressSpinner();
-            this.label_Score = new System.Windows.Forms.Label();
             this.label_time = new System.Windows.Forms.Label();
             this.xuiFlatProgressBar_Question = new XanderUI.XUIFlatProgressBar();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -207,18 +206,6 @@
             this.metroProgressSpinner_Time.UseStyleColors = true;
             this.metroProgressSpinner_Time.Value = 100;
             // 
-            // label_Score
-            // 
-            this.label_Score.BackColor = System.Drawing.Color.Transparent;
-            this.label_Score.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Score.Location = new System.Drawing.Point(267, 9);
-            this.label_Score.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_Score.Name = "label_Score";
-            this.label_Score.Size = new System.Drawing.Size(141, 30);
-            this.label_Score.TabIndex = 8;
-            this.label_Score.Text = "Your score:";
-            this.label_Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label_time
             // 
             this.label_time.BackColor = System.Drawing.Color.Transparent;
@@ -249,7 +236,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.xuiFlatProgressBar_Question);
             this.Controls.Add(this.label_time);
-            this.Controls.Add(this.label_Score);
             this.Controls.Add(this.metroProgressSpinner_Time);
             this.Controls.Add(this.label_Question);
             this.Controls.Add(this.xuiButton_Back);
@@ -277,7 +263,6 @@
         private System.Windows.Forms.Label label_Question;
         private System.Windows.Forms.Timer timer1;
         private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinner_Time;
-        private System.Windows.Forms.Label label_Score;
         private System.Windows.Forms.Label label_time;
         private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Question;
         private System.Windows.Forms.BindingSource bindingSource1;
