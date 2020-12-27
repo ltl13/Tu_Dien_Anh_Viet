@@ -204,7 +204,7 @@
             // label_Question
             // 
             this.label_Question.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_Question.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Question.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Question.Location = new System.Drawing.Point(0, 0);
             this.label_Question.Name = "label_Question";
             this.label_Question.Size = new System.Drawing.Size(476, 211);

@@ -20,6 +20,7 @@ namespace GUI {
                 comboBox_Main.SelectedIndex = 0;
             }
             else if (father.Choice == 2) {
+                metroTextBox_Number.WaterMark = "less than " + father.Father.Favorite.Count.ToString();
                 comboBox_Main.Visible = false;
                 comboBox_Branch.Visible = false;
                 label_Combo.Visible = false;
@@ -34,38 +35,38 @@ namespace GUI {
 
                     if (father.Choice == 1) {
                         father.DataTable = this.dataSet.Tables[comboBox_Branch.SelectedIndex];
-                        father.Father.panel_Main.Controls.Remove(this);
-                        father.ExamDo = new UserControl_Exam_Do(father);
-                        father.Father.panel_Main.Controls.Add(father.ExamDo);
-                        father.ExamDo.BringToFront();
-                        this.Dispose();
                     }
                     else if (father.Choice == 2) {
                         father.DataTable = BUS.DictionaryBUS.Instance.ToDataTable<DTO.EnViDTO>(father.Father.Favorite);
-                        father.Father.panel_Main.Controls.Remove(this);
-                        father.ExamDo = new UserControl_Exam_Do(father);
-                        father.Father.panel_Main.Controls.Add(father.ExamDo);
-                        father.ExamDo.BringToFront();
-                        this.Dispose();
                     }
+
+                    father.Father.panel_Main.Controls.Remove(this);
+                    father.ExamDo = new UserControl_Exam_Do(father);
+                    father.Father.panel_Main.Controls.Add(father.ExamDo);
+                    father.ExamDo.BringToFront();
+                    this.Dispose();
                 }
             }
         }
 
         private void comboBox_Main_SelectedValueChanged(object sender, EventArgs e) {
-            comboBox_Branch.Items.Clear();
+            if (father.Choice == 1) {
+                comboBox_Branch.Items.Clear();
 
-            dataSet = BUS.DictionaryBUS.Instance.GetVocabulary(comboBox_Main.SelectedItem.ToString());
+                dataSet = BUS.DictionaryBUS.Instance.GetVocabulary(comboBox_Main.SelectedItem.ToString());
 
-            for (int i = 0; i < dataSet.Tables.Count; i++) {
-                comboBox_Branch.Items.Add(dataSet.Tables[i].TableName);
+                for (int i = 0; i < dataSet.Tables.Count; i++) {
+                    comboBox_Branch.Items.Add(dataSet.Tables[i].TableName);
+                }
+
+                comboBox_Branch.SelectedIndex = 0;
             }
-
-            comboBox_Branch.SelectedIndex = 0;
         }
 
         private void comboBox_Branch_SelectedValueChanged(object sender, EventArgs e) {
-            metroTextBox_Number.WaterMark = "less than " + dataSet.Tables[comboBox_Branch.SelectedIndex].Rows.Count.ToString();
+            if (father.Choice == 1) {
+                metroTextBox_Number.WaterMark = "less than " + dataSet.Tables[comboBox_Branch.SelectedIndex].Rows.Count.ToString();
+            }
         }
 
         private void metroTextBox_Time_KeyPress(object sender, KeyPressEventArgs e) {
@@ -80,12 +81,18 @@ namespace GUI {
             System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex(@"^[0-9]+$");
 
             if (metroTextBox_Number.Text.Length == 0) {
+                if (father.Choice == 1) {
+                    metroTextBox_Number.WaterMark = "less than " + dataSet.Tables[comboBox_Branch.SelectedIndex].Rows.Count.ToString();
+                }
+                else if (father.Choice == 2) {
+                    metroTextBox_Number.WaterMark = "less than " + father.Father.Favorite.Count.ToString();
+                }
+
                 label_Error.Visible = false;
                 return;
             }
 
             if (!regexItem.IsMatch(metroTextBox_Number.Text)) {
-                metroTextBox_Number.WaterMark = "";
                 label_Error.Text = "Chỉ được nhập số!";
                 label_Error.Visible = true;
                 metroTextBox_Time.Enabled = false;
@@ -132,8 +139,8 @@ namespace GUI {
                 metroTextBox_Number.Enabled = true;
             }
 
-            if (int.Parse(metroTextBox_Time.Text) > 100) {
-                label_Error.Text = "Thời gian không quá 100s!";
+            if (int.Parse(metroTextBox_Time.Text) > 100 || int.Parse(metroTextBox_Time.Text) < 1) {
+                label_Error.Text = "Thời gian giữa 1s và 100s!";
                 label_Error.Visible = true;
                 return;
             }

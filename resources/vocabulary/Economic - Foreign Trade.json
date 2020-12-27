@@ -1,931 +1,931 @@
 ﻿{
     "Economic - Foreign Trade": [
         {
-            "Name": "debit",
+            "Vocabulary": "debit",
             "Meaning": "Sự ghi nợ, món nợ, khoản nợ, bên nợ"
         },
         {
-            "Name": "Convertible debenture",
+            "Vocabulary": "Convertible debenture",
             "Meaning": "Trái khoán có thể đổi thành vàng hoặc thành đôla"
         },
         {
-            "Name": "Debenture holder",
+            "Vocabulary": "Debenture holder",
             "Meaning": "Người giữ trái khoán"
         },
         {
-            "Name": "Fixed interest bearing debenture",
+            "Vocabulary": "Fixed interest bearing debenture",
             "Meaning": "Trái khoán chịu tiền lãi cố định"
         },
         {
-            "Name": "Graduated interest debebtures",
+            "Vocabulary": "Graduated interest debebtures",
             "Meaning": "Trái khoán chịu tiền lãi lũy tiến"
         },
         {
-            "Name": "Issue of debenture",
+            "Vocabulary": "Issue of debenture",
             "Meaning": "Sự phát hành trái khoán"
         },
         {
-            "Name": "Redeem debenture",
+            "Vocabulary": "Redeem debenture",
             "Meaning": "Trái khoán trả dần"
         },
         {
-            "Name": "Registered debenture",
+            "Vocabulary": "Registered debenture",
             "Meaning": "Trái khoán ký danh"
         },
         {
-            "Name": "Unissued debenture",
+            "Vocabulary": "Unissued debenture",
             "Meaning": "Cuống trái khoán"
         },
         {
-            "Name": "Variable interest debenture",
+            "Vocabulary": "Variable interest debenture",
             "Meaning": "Trái khoán chịu tiền lãi thay đổi"
         },
         {
-            "Name": "Debit advice",
+            "Vocabulary": "Debit advice",
             "Meaning": "Giấy báo nợ"
         },
         {
-            "Name": "Debit balance",
+            "Vocabulary": "Debit balance",
             "Meaning": "Số dư nợ"
         },
         {
-            "Name": "Debit request",
+            "Vocabulary": "Debit request",
             "Meaning": "Giấy đòi nợ"
         },
         {
-            "Name": "Debit side",
+            "Vocabulary": "Debit side",
             "Meaning": "Bên nợ"
         },
         {
-            "Name": "Settlement",
+            "Vocabulary": "Settlement",
             "Meaning": "Sự giải quyết, sự thanh toán, sự quyết toán"
         },
         {
-            "Name": "Settlement of accounts",
+            "Vocabulary": "Settlement of accounts",
             "Meaning": "Sự quyết toán tài khoản"
         },
         {
-            "Name": "Settlement of a claim",
+            "Vocabulary": "Settlement of a claim",
             "Meaning": "Sự giải quyết khiếu nại"
         },
         {
-            "Name": "Settlement of a debt",
+            "Vocabulary": "Settlement of a debt",
             "Meaning": "Sự thanh toán nợ"
         },
         {
-            "Name": "Settlement of a dispute",
+            "Vocabulary": "Settlement of a dispute",
             "Meaning": "Sự giải quyết tranh chấp"
         },
         {
-            "Name": "Amicable settlement",
+            "Vocabulary": "Amicable settlement",
             "Meaning": "Sự hòa giải, sự giải quyết thỏa thuận"
         },
         {
-            "Name": "Budget settlement",
+            "Vocabulary": "Budget settlement",
             "Meaning": "Sự quyết toán ngân sách"
         },
         {
-            "Name": "Cash settlement",
+            "Vocabulary": "Cash settlement",
             "Meaning": "Sự thanh toán ngay; sự thanh toán bằng tiền mặt"
         },
         {
-            "Name": "International settlement",
+            "Vocabulary": "International settlement",
             "Meaning": "Sự thanh toán quốc tế"
         },
         {
-            "Name": "Multilateral settlement",
+            "Vocabulary": "Multilateral settlement",
             "Meaning": "Sự thanh toán nhiều bên, việc thanh toán nhiều bên"
         },
         {
-            "Name": "Friendly settlement / Amicable settlement",
+            "Vocabulary": "Friendly settlement / Amicable settlement",
             "Meaning": "Sự hòa giải, sự giải quyết thỏa thuận"
         },
         {
-            "Name": "End month settlement",
+            "Vocabulary": "End month settlement",
             "Meaning": "Sự quyết toán cuối tháng"
         },
         {
-            "Name": "Monthly settlement",
+            "Vocabulary": "Monthly settlement",
             "Meaning": "Sự quyết toán hàng tháng"
         },
         {
-            "Name": "Settlement of a transaction",
+            "Vocabulary": "Settlement of a transaction",
             "Meaning": "Sự kết thúc một công việc giao dịch"
         },
         {
-            "Name": "Settlement of an invoice",
+            "Vocabulary": "Settlement of an invoice",
             "Meaning": "Sự thanh toán một hóa đơn"
         },
         {
-            "Name": "Settlement market",
+            "Vocabulary": "Settlement market",
             "Meaning": "Sự mua hoặc bán"
         },
         {
-            "Name": "Debenture",
+            "Vocabulary": "Debenture",
             "Meaning": "Trái khoán công ty, giấy nợ, phiếu nợ"
         },
         {
-            "Name": "Bearer debenture",
+            "Vocabulary": "Bearer debenture",
             "Meaning": "Trái khoán vô danh"
         },
         {
-            "Name": "Mortgage debenture",
+            "Vocabulary": "Mortgage debenture",
             "Meaning": "Trái khoán cầm cố, giấy nợ được đảm bào bằng văn tự cầm đồ"
         },
         {
-            "Name": "Naked debenture",
+            "Vocabulary": "Naked debenture",
             "Meaning": "Trái khoán trần, trái khoán không đảm bảo"
         },
         {
-            "Name": "Preference debenture",
+            "Vocabulary": "Preference debenture",
             "Meaning": "Trái khoán ưu đãi"
         },
         {
-            "Name": "Secured debenture",
+            "Vocabulary": "Secured debenture",
             "Meaning": "Trái khoán công ty có đảm bảo"
         },
         {
-            "Name": "Unsecured debenture",
+            "Vocabulary": "Unsecured debenture",
             "Meaning": "Trái khoán công ty không có đảm bảo"
         },
         {
-            "Name": "Company",
+            "Vocabulary": "Company",
             "Meaning": "Công ty, hội"
         },
         {
-            "Name": "Company of limited liability",
+            "Vocabulary": "Company of limited liability",
             "Meaning": "Công ty trách nhiệm hữu hạn"
         },
         {
-            "Name": "Affiliated company",
+            "Vocabulary": "Affiliated company",
             "Meaning": "Công ty con, công ty dự phần"
         },
         {
-            "Name": "Holding company",
+            "Vocabulary": "Holding company",
             "Meaning": "Công ty mẹ"
         },
         {
-            "Name": "Insurance company",
+            "Vocabulary": "Insurance company",
             "Meaning": "Công ty bảo hiểm"
         },
         {
-            "Name": "Join stock company",
+            "Vocabulary": "Join stock company",
             "Meaning": "Công ty cổ phần"
         },
         {
-            "Name": "Multinational company",
+            "Vocabulary": "Multinational company",
             "Meaning": "Công ty đa quốc gia"
         },
         {
-            "Name": "One – man company",
+            "Vocabulary": "One – man company",
             "Meaning": "Công ty một người"
         },
         {
-            "Name": "Private company",
+            "Vocabulary": "Private company",
             "Meaning": "Công ty riêng"
         },
         {
-            "Name": "Private – owned company",
+            "Vocabulary": "Private – owned company",
             "Meaning": "Công ty tư nhân"
         },
         {
-            "Name": "Public company",
+            "Vocabulary": "Public company",
             "Meaning": "Công ty công cộng, công ty nhà nước"
         },
         {
-            "Name": "Shipping company",
+            "Vocabulary": "Shipping company",
             "Meaning": "Công ty hàng hải, công ty vận tải biển"
         },
         {
-            "Name": "State – owned company",
+            "Vocabulary": "State – owned company",
             "Meaning": "Công ty quốc doanh, công ty nhà nước"
         },
         {
-            "Name": "Transnational company",
+            "Vocabulary": "Transnational company",
             "Meaning": "Công ty xuyên quốc gia"
         },
         {
-            "Name": "Subsidiary company",
+            "Vocabulary": "Subsidiary company",
             "Meaning": "Công ty con"
         },
         {
-            "Name": "Unlimited (liability) company",
+            "Vocabulary": "Unlimited (liability) company",
             "Meaning": "Công ty trách nhiệm vô hạn"
         },
         {
-            "Name": "Warehouse company",
+            "Vocabulary": "Warehouse company",
             "Meaning": "Công ty kho"
         },
         {
-            "Name": "Express company",
+            "Vocabulary": "Express company",
             "Meaning": "Công ty vận tải tốc hành"
         },
         {
-            "Name": "Foreign trade company",
+            "Vocabulary": "Foreign trade company",
             "Meaning": "Công ty ngoại thương"
         },
         {
-            "Name": "Joint state – private company",
+            "Vocabulary": "Joint state – private company",
             "Meaning": "Công ty công tư hợp doanh"
         },
         {
-            "Name": "Investment service company",
+            "Vocabulary": "Investment service company",
             "Meaning": "Công ty dịch vụ đầu tư"
         },
         {
-            "Name": "Trading company",
+            "Vocabulary": "Trading company",
             "Meaning": "Công ty thương mại"
         },
         {
-            "Name": "Limited (liability) company",
+            "Vocabulary": "Limited (liability) company",
             "Meaning": "Công ty trách nhiệm hữu hạn"
         },
         {
-            "Name": "Bubble company",
+            "Vocabulary": "Bubble company",
             "Meaning": "Công ty ma"
         },
         {
-            "Name": "Mixed owenership company",
+            "Vocabulary": "Mixed owenership company",
             "Meaning": "Công ty hợp doanh"
         },
         {
-            "Name": "Company limited by shares",
+            "Vocabulary": "Company limited by shares",
             "Meaning": "Công ty trách nhiệm hữu hạn cổ phần"
         },
         {
-            "Name": "Limited partnership",
+            "Vocabulary": "Limited partnership",
             "Meaning": "Công ty hợp danh hữu hạn"
         },
         {
-            "Name": "The merge of companies/Amagation",
+            "Vocabulary": "The merge of companies/Amagation",
             "Meaning": "Sự hợp nhất các công ty"
         },
         {
-            "Name": "To form a company",
+            "Vocabulary": "To form a company",
             "Meaning": "Thành lập một công ty"
         },
         {
-            "Name": "To dissolve a company",
+            "Vocabulary": "To dissolve a company",
             "Meaning": "Giải thể một công ty"
         },
         {
-            "Name": "To wind up a company",
+            "Vocabulary": "To wind up a company",
             "Meaning": "Thanh toán một công ty"
         },
         {
-            "Name": "Industrial company",
+            "Vocabulary": "Industrial company",
             "Meaning": "Công ty kỹ nghệ (sản xuất)"
         },
         {
-            "Name": "Build – in – department",
+            "Vocabulary": "Build – in – department",
             "Meaning": "Bộ phận ghép nhỏ lo việc xuất khẩu"
         },
         {
-            "Name": "Build – in export department",
+            "Vocabulary": "Build – in export department",
             "Meaning": "Bộ phận xuất khẩu"
         },
         {
-            "Name": "Build – in import department",
+            "Vocabulary": "Build – in import department",
             "Meaning": "Bộ phận nhập khẩu"
         },
         {
-            "Name": "Separated department",
+            "Vocabulary": "Separated department",
             "Meaning": "Bộ phận riêng biệt"
         },
         {
-            "Name": "Export subsidiary company",
+            "Vocabulary": "Export subsidiary company",
             "Meaning": "Công ty con xuất khẩu"
         },
         {
-            "Name": "Branch",
+            "Vocabulary": "Branch",
             "Meaning": "Chi nhánh"
         },
         {
-            "Name": "Prefabrication plant",
+            "Vocabulary": "Prefabrication plant",
             "Meaning": "Phân xưởng gia công"
         },
         {
-            "Name": "Associated/Affiliated company",
+            "Vocabulary": "Associated/Affiliated company",
             "Meaning": "Công ty dự phần của một công ty mẹ ở nước ngoài"
         },
         {
-            "Name": "Travelling agent",
+            "Vocabulary": "Travelling agent",
             "Meaning": "Nhân viên lưu động"
         },
         {
-            "Name": "Comprador",
+            "Vocabulary": "Comprador",
             "Meaning": "Người mại bản"
         },
         {
-            "Name": "Universal agent",
+            "Vocabulary": "Universal agent",
             "Meaning": "Đại lý toàn quyền"
         },
         {
-            "Name": "Carrrier’s agent",
+            "Vocabulary": "Carrrier’s agent",
             "Meaning": "Đại lý vận tải"
         },
         {
-            "Name": "Shipping agent",
+            "Vocabulary": "Shipping agent",
             "Meaning": "Đại lý giao nhận"
         },
         {
-            "Name": "Charterer’s/Chartering agent",
+            "Vocabulary": "Charterer’s/Chartering agent",
             "Meaning": "Đại lý thuê tàu"
         },
         {
-            "Name": "Collecting agent",
+            "Vocabulary": "Collecting agent",
             "Meaning": "Đại lý thu hộ"
         },
         {
-            "Name": "Insurance agent",
+            "Vocabulary": "Insurance agent",
             "Meaning": "Đại lý bảo hiểm"
         },
         {
-            "Name": "Special agent",
+            "Vocabulary": "Special agent",
             "Meaning": "Đại lý đặc biệt"
         },
         {
-            "Name": "To be out of business",
+            "Vocabulary": "To be out of business",
             "Meaning": "vỡ nợ, phá sản"
         },
         {
-            "Name": "To do business with somebody",
+            "Vocabulary": "To do business with somebody",
             "Meaning": "buôn bán với ai"
         },
         {
-            "Name": "Banking business",
+            "Vocabulary": "Banking business",
             "Meaning": "nghiệp vụ ngân hàng"
         },
         {
-            "Name": "Forwarding business",
+            "Vocabulary": "Forwarding business",
             "Meaning": "hãng đại lý giao nhận, công tác giao nhận"
         },
         {
-            "Name": "Retail business",
+            "Vocabulary": "Retail business",
             "Meaning": "thương nghiệp bán lẻ, việc kinh doanh bán lẻ"
         },
         {
-            "Name": "Businessman",
+            "Vocabulary": "Businessman",
             "Meaning": "nhà kinh doanh"
         },
         {
-            "Name": "Business is business",
+            "Vocabulary": "Business is business",
             "Meaning": "Công việc là công việc"
         },
         {
-            "Name": "Cash business",
+            "Vocabulary": "Cash business",
             "Meaning": "việc mua bán bằng tiền mặt"
         },
         {
-            "Name": "Complicated business",
+            "Vocabulary": "Complicated business",
             "Meaning": "công việc làm ăn rắc rối"
         },
         {
-            "Name": "Credit in business",
+            "Vocabulary": "Credit in business",
             "Meaning": "tín dụng trong kinh doanh"
         },
         {
-            "Name": "International business",
+            "Vocabulary": "International business",
             "Meaning": "Việc kinh doanh quốc tế"
         },
         {
-            "Name": "Increase of business",
+            "Vocabulary": "Increase of business",
             "Meaning": "Sự tăng cường buôn bán"
         },
         {
-            "Name": "Man of business",
+            "Vocabulary": "Man of business",
             "Meaning": "Người thay mặt để giao dịch"
         },
         {
-            "Name": "Stagnation of business",
+            "Vocabulary": "Stagnation of business",
             "Meaning": "Sự đình trệ việc kinh doanh"
         },
         {
-            "Name": "Business co-operation",
+            "Vocabulary": "Business co-operation",
             "Meaning": "sự hợp tác kinh doanh"
         },
         {
-            "Name": "Business coordinator",
+            "Vocabulary": "Business coordinator",
             "Meaning": "người điều phối công việc kinh doanh"
         },
         {
-            "Name": "Business circles/world",
+            "Vocabulary": "Business circles/world",
             "Meaning": "giới kinh doanh"
         },
         {
-            "Name": "Business expansion",
+            "Vocabulary": "Business expansion",
             "Meaning": "sự khuếch trương kinh doanh"
         },
         {
-            "Name": "Business forecasting",
+            "Vocabulary": "Business forecasting",
             "Meaning": "dự đoán thương mại"
         },
         {
-            "Name": "Business experience",
+            "Vocabulary": "Business experience",
             "Meaning": "kinh nghiệm trong kinh doanh"
         },
         {
-            "Name": "Business is thriving",
+            "Vocabulary": "Business is thriving",
             "Meaning": "Sự buôn bán phát đạt"
         },
         {
-            "Name": "Business is bad",
+            "Vocabulary": "Business is bad",
             "Meaning": "Sự buôn bán ế ẩm"
         },
         {
-            "Name": "Business knowledge",
+            "Vocabulary": "Business knowledge",
             "Meaning": "kiến thức kinh doanh"
         },
         {
-            "Name": "Business license",
+            "Vocabulary": "Business license",
             "Meaning": "giấy phép kinh doanh"
         },
         {
-            "Name": "Business organization",
+            "Vocabulary": "Business organization",
             "Meaning": "tổ chức kinh doanh"
         },
         {
-            "Name": "Business relations",
+            "Vocabulary": "Business relations",
             "Meaning": "các mối quan hệ kinh doanh"
         },
         {
-            "Name": "Business tax",
+            "Vocabulary": "Business tax",
             "Meaning": "thuế doanh nghiệp"
         },
         {
-            "Name": "Business trip",
+            "Vocabulary": "Business trip",
             "Meaning": "cuộc đi làm ăn"
         },
         {
-            "Name": "To be in business",
+            "Vocabulary": "To be in business",
             "Meaning": "đang trong ngành kinh doanh"
         },
         {
-            "Name": "Credit against goods",
+            "Vocabulary": "Credit against goods",
             "Meaning": "Tín dụng trả bằng hàng"
         },
         {
-            "Name": "Acceptance credit",
+            "Vocabulary": "Acceptance credit",
             "Meaning": "Tín dụng chấp nhận"
         },
         {
-            "Name": "Back-to-back credit",
+            "Vocabulary": "Back-to-back credit",
             "Meaning": "Thư tín dụng giáp lưng"
         },
         {
-            "Name": "Blank credit",
+            "Vocabulary": "Blank credit",
             "Meaning": "Tín dụng không bảo đảm, tín dụng để trống"
         },
         {
-            "Name": "Cash credit",
+            "Vocabulary": "Cash credit",
             "Meaning": "Tín dụng tiền mặt"
         },
         {
-            "Name": "Circular credit",
+            "Vocabulary": "Circular credit",
             "Meaning": "Thư tín dụng lưu động"
         },
         {
-            "Name": "Clean credit",
+            "Vocabulary": "Clean credit",
             "Meaning": "Tín dụng trơn, tín dụng để trống"
         },
         {
-            "Name": "Commercial credit",
+            "Vocabulary": "Commercial credit",
             "Meaning": "Tín dụng thương mại, tín dụng thương nghiệp"
         },
         {
-            "Name": "Confirmed credit",
+            "Vocabulary": "Confirmed credit",
             "Meaning": "Thư tín dụng xác nhận"
         },
         {
-            "Name": "Confirmed irrevocable credit",
+            "Vocabulary": "Confirmed irrevocable credit",
             "Meaning": "Thư tín dụng không hủy ngang có xác nhận"
         },
         {
-            "Name": "Countervailing credit",
+            "Vocabulary": "Countervailing credit",
             "Meaning": "Tín dụng giáp lưng"
         },
         {
-            "Name": "Divisible credit",
+            "Vocabulary": "Divisible credit",
             "Meaning": "Thư tín dụng chia nhỏ"
         },
         {
-            "Name": "Documentary credit",
+            "Vocabulary": "Documentary credit",
             "Meaning": "Tín dụng chứng từ, thư tín dụng chứng từ"
         },
         {
-            "Name": "Export credit",
+            "Vocabulary": "Export credit",
             "Meaning": "Tín dụng xuất khẩu"
         },
         {
-            "Name": "Fractionable credit",
+            "Vocabulary": "Fractionable credit",
             "Meaning": "Tín dụng chia nhỏ, thư tín dụng chia nhỏ"
         },
         {
-            "Name": "Goverment credit",
+            "Vocabulary": "Goverment credit",
             "Meaning": "Tín dụng nhà nước"
         },
         {
-            "Name": "Import credit",
+            "Vocabulary": "Import credit",
             "Meaning": "Tín dụng nhập khẩu"
         },
         {
-            "Name": "Preference debenture",
+            "Vocabulary": "Preference debenture",
             "Meaning": "Trái khoán ưu đãi"
         },
         {
-            "Name": "Secured debenture",
+            "Vocabulary": "Secured debenture",
             "Meaning": "Trái khoán công ty có đảm bảo"
         },
         {
-            "Name": "Irrevocable credit",
+            "Vocabulary": "Irrevocable credit",
             "Meaning": "Thư tín dụng không hủy ngang"
         },
         {
-            "Name": "Instalment credit",
+            "Vocabulary": "Instalment credit",
             "Meaning": "Tín dụng trả dần, tín dụng trả nhiều lần"
         },
         {
-            "Name": "Long term credit",
+            "Vocabulary": "Long term credit",
             "Meaning": "Tín dụng dài hạn"
         },
         {
-            "Name": "Medium credit",
+            "Vocabulary": "Medium credit",
             "Meaning": "Tín dụng trung hạn (thời hạn\r\n1 đến 5 năm)"
         },
         {
-            "Name": "Medium term",
+            "Vocabulary": "Medium term",
             "Meaning": "Tín dụng trung hạn"
         },
         {
-            "Name": "Mercantile credit",
+            "Vocabulary": "Mercantile credit",
             "Meaning": "Tín dụng thương nghiệp, thư tín dụng thương nghiệp"
         },
         {
-            "Name": "Open credit",
+            "Vocabulary": "Open credit",
             "Meaning": "Tín dụng không đảm bảo, tín dụng trơn, tín dụng để trống"
         },
         {
-            "Name": "Negotiation credit",
+            "Vocabulary": "Negotiation credit",
             "Meaning": "Tín dụng chiết khấu, thư tín dụng chiết khấu"
         },
         {
-            "Name": "Packing credit",
+            "Vocabulary": "Packing credit",
             "Meaning": "Tín dụng trả trước, thư tín dụng trả trước"
         },
         {
-            "Name": "Public credit",
+            "Vocabulary": "Public credit",
             "Meaning": "Tín dụng nhà nước"
         },
         {
-            "Name": "Revocable credit",
+            "Vocabulary": "Revocable credit",
             "Meaning": "Thư tín dụng hủy ngang"
         },
         {
-            "Name": "Revolving credit",
+            "Vocabulary": "Revolving credit",
             "Meaning": "Thư tín dụng tuần hoàn"
         },
         {
-            "Name": "Short term credit",
+            "Vocabulary": "Short term credit",
             "Meaning": "Tín dụng ngắn hạn"
         },
         {
-            "Name": "Stand by credit",
+            "Vocabulary": "Stand by credit",
             "Meaning": "Tín dụng dự phòng, tín dụng có hiệu quả"
         },
         {
-            "Name": "Supplier credit",
+            "Vocabulary": "Supplier credit",
             "Meaning": "Tín dụng người bán"
         },
         {
-            "Name": "Swing credit",
+            "Vocabulary": "Swing credit",
             "Meaning": "Tín dụng kỹ thuật, tín dụng chi trội"
         },
         {
-            "Name": "Transferable credit",
+            "Vocabulary": "Transferable credit",
             "Meaning": "Tín dụng chuyển nhượng"
         },
         {
-            "Name": "Transmissible credit",
+            "Vocabulary": "Transmissible credit",
             "Meaning": "Thư tín dụng chuyển nhượng"
         },
         {
-            "Name": "Unconfirmed credit",
+            "Vocabulary": "Unconfirmed credit",
             "Meaning": "Tín dụng không xác nhận"
         },
         {
-            "Name": "Creditor",
+            "Vocabulary": "Creditor",
             "Meaning": "Chủ nợ, người cho vay, trái chủ, bên cấp tín dụng"
         },
         {
-            "Name": "Credit advice",
+            "Vocabulary": "Credit advice",
             "Meaning": "Giấy báo có"
         },
         {
-            "Name": "Credit business",
+            "Vocabulary": "Credit business",
             "Meaning": "Sự kinh doanh tín dụng"
         },
         {
-            "Name": "Credit card",
+            "Vocabulary": "Credit card",
             "Meaning": "Thẻ tín dụng"
         },
         {
-            "Name": "Credit balance",
+            "Vocabulary": "Credit balance",
             "Meaning": "Số dư có"
         },
         {
-            "Name": "Credit co-op",
+            "Vocabulary": "Credit co-op",
             "Meaning": "Hợp tác xã tín dụng"
         },
         {
-            "Name": "Credit institution",
+            "Vocabulary": "Credit institution",
             "Meaning": "Định chế tín dụng"
         },
         {
-            "Name": "To incur",
+            "Vocabulary": "To incur",
             "Meaning": "Chịu, gánh, bị (chi phí, tổn thất, trách nhiệm…)"
         },
         {
-            "Name": "Indebted",
+            "Vocabulary": "Indebted",
             "Meaning": "Mắc nợ, còn thiếu lại"
         },
         {
-            "Name": "Indebtedness",
+            "Vocabulary": "Indebtedness",
             "Meaning": "Sự mắc nợ, công nợ, số tiền nợ"
         },
         {
-            "Name": "Certificate of indebtedness",
+            "Vocabulary": "Certificate of indebtedness",
             "Meaning": "Giấy chứng nhận thiếu nợ"
         },
         {
-            "Name": "Premium",
+            "Vocabulary": "Premium",
             "Meaning": "Tiền thưởng, tiền đóng bảo hiểm, tiền bù"
         },
         {
-            "Name": "Premium as agreed",
+            "Vocabulary": "Premium as agreed",
             "Meaning": "Phí bảo hiểm như đã thỏa thuận"
         },
         {
-            "Name": "Premium for double optiony",
+            "Vocabulary": "Premium for double optiony",
             "Meaning": "Tiền cược mua hoặc bán"
         },
         {
-            "Name": "Premium for the call",
+            "Vocabulary": "Premium for the call",
             "Meaning": "Tiền cược mua, tiền cược thuận"
         },
         {
-            "Name": "Premium for the put",
+            "Vocabulary": "Premium for the put",
             "Meaning": "Tiền cược bán, tiền cược nghịch"
         },
         {
-            "Name": "Premium on gold",
+            "Vocabulary": "Premium on gold",
             "Meaning": "Bù giá vàng"
         },
         {
-            "Name": "Additional premium",
+            "Vocabulary": "Additional premium",
             "Meaning": "Phí bảo hiểm phụ, phí bảo hiểm bổ sung"
         },
         {
-            "Name": "Export premium",
+            "Vocabulary": "Export premium",
             "Meaning": "Tiền thưởng xuất khẩu"
         },
         {
-            "Name": "Extra premium",
+            "Vocabulary": "Extra premium",
             "Meaning": "Phí bảo hiểm phụ"
         },
         {
-            "Name": "Hull premium",
+            "Vocabulary": "Hull premium",
             "Meaning": "Phí bảo hiểm mộc (không khấu trừ hoa hồng môi giới), phí bảo hiểm toàn bộ"
         },
         {
-            "Name": "Insurance premium",
+            "Vocabulary": "Insurance premium",
             "Meaning": "Phí bảo hiểm"
         },
         {
-            "Name": "Lumpsum premium",
+            "Vocabulary": "Lumpsum premium",
             "Meaning": "Phí bảo hiêm xô, phí bảo hiểm khoán"
         },
         {
-            "Name": "Net premium",
+            "Vocabulary": "Net premium",
             "Meaning": "Phí bảo hiểm thuần túy (đã khấu trừ hoa hồng, môi giới), phí bảo hiểm tịnh"
         },
         {
-            "Name": "Unearned premium",
+            "Vocabulary": "Unearned premium",
             "Meaning": "Phí bảo hiểm không thu được"
         },
         {
-            "Name": "Voyage premium",
+            "Vocabulary": "Voyage premium",
             "Meaning": "Phí bảo hiểm chuyến"
         },
         {
-            "Name": "At a premium",
+            "Vocabulary": "At a premium",
             "Meaning": "Cao hơn giá quy định (phát hành cổ phiếu)"
         },
         {
-            "Name": "Exchange premium",
+            "Vocabulary": "Exchange premium",
             "Meaning": "Tiền lời đổi tiền"
         },
         {
-            "Name": "Premium bond",
+            "Vocabulary": "Premium bond",
             "Meaning": "Trái khoán có thưởng khích lệ"
         },
         {
-            "Name": "Loan",
+            "Vocabulary": "Loan",
             "Meaning": "Sự cho vay, sự cho mượn, tiền cho vay; công trái"
         },
         {
-            "Name": "Loan at call",
+            "Vocabulary": "Loan at call",
             "Meaning": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
         },
         {
-            "Name": "Loan on bottomry",
+            "Vocabulary": "Loan on bottomry",
             "Meaning": "Khoản cho vay cầm tàu"
         },
         {
-            "Name": "Loan on mortgage",
+            "Vocabulary": "Loan on mortgage",
             "Meaning": "Sự cho vay cầm cố"
         },
         {
-            "Name": "Loan on overdraft",
+            "Vocabulary": "Loan on overdraft",
             "Meaning": "Khoản cho vay chi trội"
         },
         {
-            "Name": "Loan of money",
+            "Vocabulary": "Loan of money",
             "Meaning": "Sự cho vay tiền"
         },
         {
-            "Name": "Bottomry loan",
+            "Vocabulary": "Bottomry loan",
             "Meaning": "Khoản cho vay cầm tàu"
         },
         {
-            "Name": "Call loan",
+            "Vocabulary": "Call loan",
             "Meaning": "Tiền vay không kỳ hạn, khoản vay không kỳ hạn"
         },
         {
-            "Name": "Demand loan",
+            "Vocabulary": "Demand loan",
             "Meaning": "Khoản vay không kỳ hạn, sự cho vay không kỳ hạn"
         },
         {
-            "Name": "Fiduciary loan",
+            "Vocabulary": "Fiduciary loan",
             "Meaning": "Khoản cho vay không có đảm bảo"
         },
         {
-            "Name": "Long loan",
+            "Vocabulary": "Long loan",
             "Meaning": "Khoản vay dài hạn, sự cho vay dài hạn"
         },
         {
-            "Name": "Short loan",
+            "Vocabulary": "Short loan",
             "Meaning": "Khoản vay ngắn hạn, sự cho vay ngắn hạn"
         },
         {
-            "Name": "Unsecured insurance",
+            "Vocabulary": "Unsecured insurance",
             "Meaning": "Sự cho vay không bảo đảm, không thế chấp"
         },
         {
-            "Name": "Warehouse insurance",
+            "Vocabulary": "Warehouse insurance",
             "Meaning": "Sự cho vay cầm hàng, lưu kho"
         },
         {
-            "Name": "Loan on interest",
+            "Vocabulary": "Loan on interest",
             "Meaning": "Sự cho vay có lãi"
         },
         {
-            "Name": "Loan on security",
+            "Vocabulary": "Loan on security",
             "Meaning": "Sự vay, mượn có thế chấp"
         },
         {
-            "Name": "Loan-office",
+            "Vocabulary": "Loan-office",
             "Meaning": "Sổ giao dịch vay mượn, sổ nhận tiền mua công trái"
         },
         {
-            "Name": "To apply for a plan",
+            "Vocabulary": "To apply for a plan",
             "Meaning": "Làm đơn xin vay"
         },
         {
-            "Name": "To loan for someone",
+            "Vocabulary": "To loan for someone",
             "Meaning": "Cho ai vay"
         },
         {
-            "Name": "To raise/ secure a loan",
+            "Vocabulary": "To raise/ secure a loan",
             "Meaning": "sự khuếch trương kinh doanh"
         },
         {
-            "Name": "Tonnage",
+            "Vocabulary": "Tonnage",
             "Meaning": "Cước chuyên chở, dung tải, dung tích (tàu), trọng tải, lượng choán nước"
         },
         {
-            "Name": "Cargo deadweight tonnage",
+            "Vocabulary": "Cargo deadweight tonnage",
             "Meaning": "Cước chuyên chở hàng hóa"
         },
         {
-            "Name": "Stevedorage",
+            "Vocabulary": "Stevedorage",
             "Meaning": "Phí bốc dở"
         },
         {
-            "Name": "Landing account",
+            "Vocabulary": "Landing account",
             "Meaning": "Bản kê khai bốc dỡ"
         },
         {
-            "Name": "Leakage account",
+            "Vocabulary": "Leakage account",
             "Meaning": "Bản kê khai thất thoát"
         },
         {
-            "Name": "Liquidating account",
+            "Vocabulary": "Liquidating account",
             "Meaning": "Tài khoản thanh toán"
         },
         {
-            "Name": "Mid – month account",
+            "Vocabulary": "Mid – month account",
             "Meaning": "Sự quyết toán giữa tháng"
         },
         {
-            "Name": "Profit and loss account",
+            "Vocabulary": "Profit and loss account",
             "Meaning": "Tài khoản lỗ lãi"
         },
         {
-            "Name": "Private account",
+            "Vocabulary": "Private account",
             "Meaning": "Tài khoản cá nhân"
         },
         {
-            "Name": "Account of charges",
+            "Vocabulary": "Account of charges",
             "Meaning": "Bản quyết toán chi phí"
         },
         {
-            "Name": "Account of trade and navigation",
+            "Vocabulary": "Account of trade and navigation",
             "Meaning": "Bảng thống kê thương mại và hàng hải"
         },
         {
-            "Name": "Clearing account",
+            "Vocabulary": "Clearing account",
             "Meaning": "Tài khoản (thanh toán) bù trừ"
         },
         {
-            "Name": "Exchange equalisation account",
+            "Vocabulary": "Exchange equalisation account",
             "Meaning": "Tài khoản bình ổn hối đoái"
         },
         {
-            "Name": "Freight account",
+            "Vocabulary": "Freight account",
             "Meaning": "Phiếu cước"
         },
         {
-            "Name": "Frozen account",
+            "Vocabulary": "Frozen account",
             "Meaning": "Tài khoản phong tỏa"
         },
         {
-            "Name": "Suspense account",
+            "Vocabulary": "Suspense account",
             "Meaning": "tài khoản treo"
         },
         {
-            "Name": "Tallyman’s account",
+            "Vocabulary": "Tallyman’s account",
             "Meaning": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
         },
         {
-            "Name": "Unsettle account",
+            "Vocabulary": "Unsettle account",
             "Meaning": "Báo cáo nợ, bản tính tiền chưa trả, tài khoản chưa quyết toán"
         },
         {
-            "Name": "Running account",
+            "Vocabulary": "Running account",
             "Meaning": "Tài khoản vãng lai"
         },
         {
-            "Name": "Weight account",
+            "Vocabulary": "Weight account",
             "Meaning": "Bản tính trọng lượng, bản chi tiết trọng lượng, phiếu trọng lượng"
         },
         {
-            "Name": "Account purchases",
+            "Vocabulary": "Account purchases",
             "Meaning": "Báo cáo mua hàng"
         },
         {
-            "Name": "Opening of an account with a bank",
+            "Vocabulary": "Opening of an account with a bank",
             "Meaning": "Việc mở một tài khoản ở ngân hàng"
         },
         {
-            "Name": "Overdraw account",
+            "Vocabulary": "Overdraw account",
             "Meaning": "Tài khoản rút quá số dư với sự đồng ý của ngân hàng, tài khoản thấu chi"
         },
         {
-            "Name": "Outstanding account",
+            "Vocabulary": "Outstanding account",
             "Meaning": "Tài khoản chưa thanh toán"
         },
         {
-            "Name": "Rendering of account",
+            "Vocabulary": "Rendering of account",
             "Meaning": "Sự khai trình tài khoản"
         },
         {
-            "Name": "Reserve account",
+            "Vocabulary": "Reserve account",
             "Meaning": "Tài khoản dự trữ"
         },
         {
-            "Name": "Accounts payable control",
+            "Vocabulary": "Accounts payable control",
             "Meaning": "Khoản phải trả tổng quát"
         },
         {
-            "Name": "Account receivable",
+            "Vocabulary": "Account receivable",
             "Meaning": "Khoản sẽ thu, khoản sẽ nhận"
         },
         {
-            "Name": "Account receivable control",
+            "Vocabulary": "Account receivable control",
             "Meaning": "Khoản sẽ thu tổng quát"
         },
         {
-            "Name": "Account receivable summary",
+            "Vocabulary": "Account receivable summary",
             "Meaning": "Tóm tắt khoản sẽ thu"
         }
     ]
