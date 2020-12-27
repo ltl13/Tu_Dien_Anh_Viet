@@ -104,7 +104,7 @@
             // 
             // xuiButton_Back
             // 
-            this.xuiButton_Back.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Back.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(130)))), ((int)(((byte)(217)))));
             this.xuiButton_Back.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Back.ButtonImage")));
             this.xuiButton_Back.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_Back.ButtonText = "";
@@ -125,7 +125,7 @@
             // 
             // xuiButton_Music
             // 
-            this.xuiButton_Music.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_Music.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(130)))), ((int)(((byte)(217)))));
             this.xuiButton_Music.ButtonImage = global::GUI.Properties.Resources.volume;
             this.xuiButton_Music.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_Music.ButtonText = "";
@@ -136,7 +136,7 @@
             this.xuiButton_Music.HoverBackgroundColor = System.Drawing.Color.Red;
             this.xuiButton_Music.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Music.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Music.Location = new System.Drawing.Point(780, 12);
+            this.xuiButton_Music.Location = new System.Drawing.Point(766, 12);
             this.xuiButton_Music.Name = "xuiButton_Music";
             this.xuiButton_Music.Size = new System.Drawing.Size(31, 31);
             this.xuiButton_Music.TabIndex = 7;
@@ -153,6 +153,7 @@
             this.textBox_Answer.Name = "textBox_Answer";
             this.textBox_Answer.Size = new System.Drawing.Size(184, 25);
             this.textBox_Answer.TabIndex = 8;
+            this.textBox_Answer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_Answer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Answer_KeyDown);
             // 
             // timer_Bridge
@@ -166,7 +167,7 @@
             // 
             // xuiButton_retry
             // 
-            this.xuiButton_retry.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_retry.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(130)))), ((int)(((byte)(217)))));
             this.xuiButton_retry.ButtonImage = global::GUI.Properties.Resources.refresh;
             this.xuiButton_retry.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_retry.ButtonText = "";
@@ -177,7 +178,7 @@
             this.xuiButton_retry.HoverBackgroundColor = System.Drawing.Color.Red;
             this.xuiButton_retry.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_retry.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_retry.Location = new System.Drawing.Point(743, 12);
+            this.xuiButton_retry.Location = new System.Drawing.Point(720, 12);
             this.xuiButton_retry.Name = "xuiButton_retry";
             this.xuiButton_retry.Size = new System.Drawing.Size(31, 31);
             this.xuiButton_retry.TabIndex = 9;
