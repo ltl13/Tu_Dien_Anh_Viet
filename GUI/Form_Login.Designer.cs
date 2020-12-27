@@ -179,11 +179,11 @@
             // 
             this.lbError.AutoSize = true;
             this.lbError.BackColor = System.Drawing.Color.Transparent;
-            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbError.ForeColor = System.Drawing.Color.Red;
             this.lbError.Location = new System.Drawing.Point(39, 183);
             this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(51, 17);
+            this.lbError.Size = new System.Drawing.Size(49, 18);
             this.lbError.TabIndex = 13;
             this.lbError.Text = "lbError";
             this.lbError.Visible = false;

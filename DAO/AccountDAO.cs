@@ -112,8 +112,9 @@ namespace DAO {
             return null;
         }
 
-        public bool DeleteAccount(string userName) {
-            string query = string.Format("DELETE dbo.Account WHERE UserName = '{0}'", userName);
+        public bool DeleteAccount(int userID) {
+            string query = string.Format("DELETE dbo.Picture WHERE ID = {0}\nDELETE dbo.Account WHERE ID = {0}", userID);
+
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;

@@ -10,6 +10,8 @@ namespace GUI {
         DataGridView dataGridView = new DataGridView();
         Label label_Search = new Label();
         TextBox textBox_Search = new TextBox();
+        Label label_Search_Name = new Label();
+        Label label_Error_Search = new Label();
         Label label_Delete = new Label();
         TextBox textBox_Delete = new TextBox();
 
@@ -36,6 +38,8 @@ namespace GUI {
             label_Error.Visible = false;
             label_Search.Visible = false;
             textBox_Search.Visible = false;
+            label_Error_Search.Visible = false;
+            label_Search_Name.Visible = false;
             label_Delete.Visible = false;
             textBox_Delete.Visible = false;
             label_Error.Text = "label_Error";
@@ -79,12 +83,14 @@ namespace GUI {
         }
 
         private void FindUser() {
-            label_Title.Text = father.xuiButton_ListAccount.ButtonText.ToUpper();
+            label_Title.Text = father.xuiButton_FindUser.ButtonText.ToUpper();
             label_Search.Visible = true;
             textBox_Search.Visible = true;
             InitFindUser();
             panel_Footer.Controls.Add(label_Search);
             panel_Footer.Controls.Add(textBox_Search);
+            panel_Footer.Controls.Add(label_Error_Search);
+            panel_Footer.Controls.Add(label_Search_Name);
         }
 
         private void InitFindUser() {
@@ -110,10 +116,36 @@ namespace GUI {
             textBox_Search.Size = new Size(230, 28);
             textBox_Search.KeyDown += new KeyEventHandler(textBox_Search_KeyDown);
             textBox_Search.TextChanged += new EventHandler(textBox_Search_TextChanged);
+            // 
+            // label_Error_Search
+            //
+            label_Error_Search.AutoSize = true;
+            label_Error_Search.Font = new Font("Calibri", 9F, FontStyle.Italic, GraphicsUnit.Point, ((byte)(0)));
+            label_Error_Search.ForeColor = Color.Red;
+            label_Error_Search.Location = new Point(30, 100);
+            label_Error_Search.Name = "label_Error_Search";
+            label_Error_Search.Size = new Size(74, 18);
+            label_Error_Search.Text = "label_Error_Search";
+            label_Error_Search.Visible = false;
+            // 
+            // label_Search_Name
+            // 
+            label_Search_Name.AutoSize = false;
+            label_Search_Name.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            label_Search_Name.ForeColor = SystemColors.ControlText;
+            label_Search_Name.Location = new Point(340, 360);
+            label_Search_Name.Name = "label_Search";
+            label_Search_Name.Size = new Size(295, 30);
+            label_Search_Name.Text = "label_Search";
+            label_Search_Name.TextAlign = ContentAlignment.MiddleCenter;
         }
 
         private void textBox_Search_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Enter) {
+                if (label_Error_Search.Visible == true && label_Error_Search.Text == "Tài khoản chỉ gồm chữ và số!") {
+                    return;
+                }
+
                 DTO.AccountDTO userTarget = AccountBUS.Instance.GetAccountByUserName(textBox_Search.Text);
 
                 if (userTarget != null) {
@@ -123,14 +155,36 @@ namespace GUI {
                         pictureBox_UserPic.Image = Image.FromStream(ms);
                     }
 
+                    if (userTarget.ID == father.LoginAccount.ID)
+                        label_Search_Name.Text = "Là bạn đó ahihi ^^";
+                    else
+                        label_Search_Name.Text = "Name: " + userTarget.DisplayName;
+
+                    label_Search_Name.TextAlign = ContentAlignment.MiddleCenter;
+                    label_Search_Name.Visible = true;
                     pictureBox_UserPic.Visible = true;
+                }
+                else {
+                    label_Error_Search.Text = "Tài khoản không tồn tại!";
+                    label_Error_Search.Visible = true;
                 }
             }
         }
 
         private void textBox_Search_TextChanged(object sender, EventArgs e) {
+            System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9 ]*$");
+
+            if (!regexItem.IsMatch(textBox_Search.Text)) {
+                label_Error_Search.Text = "Tài khoản chỉ gồm chữ và số!";
+                label_Error_Search.Visible = true;
+            }
+            else {
+                label_Error_Search.Visible = false;
+            }
+
             if (pictureBox_UserPic.Visible == true) {
                 pictureBox_UserPic.Visible = false;
+                label_Search_Name.Visible = false;
             }
         }
 
@@ -194,6 +248,11 @@ namespace GUI {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
 
+            foreach (DataGridViewRow row in dataGridView.Rows) {
+                row.Cells[0].Value = row.Index;
+            }
+
+
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView.Columns[0].FillWeight = 10;
             dataGridView.Columns[1].FillWeight = 40;
@@ -255,16 +314,17 @@ namespace GUI {
             textBox_Delete.UseSystemPasswordChar = true;
             textBox_Delete.Size = new Size(230, 28);
             textBox_Delete.KeyDown += new KeyEventHandler(textBox_Delete_KeyDown);
-            //textBox_Delete.TextChanged += new EventHandler(textBox_Search_TextChanged);
         }
 
         private void textBox_Delete_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Enter) {
                 if (AccountBUS.Instance.Login(father.LoginAccount.UserName, textBox_Delete.Text)) {
                     if (MessageBox.Show("Bạn có chắc chắn muốn xóa tài khoản?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
-                        MessageBox.Show("Xóa tài khoản thành công!\nChương trình sẽ quay về nơi đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        father.Close();
-                        father.Father.Show();
+                        if (AccountBUS.Instance.DeleteAccount(father.LoginAccount.ID)) {
+                            MessageBox.Show("Xóa tài khoản thành công!\nChương trình sẽ quay về nơi đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            father.Close();
+                            father.Father.Show();
+                        }
                     }
                 }
             }

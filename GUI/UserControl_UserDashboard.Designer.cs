@@ -158,18 +158,18 @@
             // label_Error
             // 
             this.label_Error.AutoSize = true;
-            this.label_Error.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic);
+            this.label_Error.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Error.ForeColor = System.Drawing.Color.Red;
-            this.label_Error.Location = new System.Drawing.Point(30, 370);
+            this.label_Error.Location = new System.Drawing.Point(30, 368);
             this.label_Error.Name = "label_Error";
-            this.label_Error.Size = new System.Drawing.Size(78, 17);
+            this.label_Error.Size = new System.Drawing.Size(74, 18);
             this.label_Error.TabIndex = 13;
             this.label_Error.Text = "label_Error";
             this.label_Error.Visible = false;
             // 
             // button_Save
             // 
-            this.button_Save.Location = new System.Drawing.Point(516, 361);
+            this.button_Save.Location = new System.Drawing.Point(516, 360);
             this.button_Save.Name = "button_Save";
             this.button_Save.Size = new System.Drawing.Size(119, 34);
             this.button_Save.TabIndex = 12;
@@ -179,7 +179,7 @@
             // 
             // button_Upload
             // 
-            this.button_Upload.Location = new System.Drawing.Point(340, 361);
+            this.button_Upload.Location = new System.Drawing.Point(340, 360);
             this.button_Upload.Name = "button_Upload";
             this.button_Upload.Size = new System.Drawing.Size(119, 34);
             this.button_Upload.TabIndex = 11;
