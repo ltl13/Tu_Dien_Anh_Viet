@@ -104,11 +104,11 @@ namespace DAO {
             }
         }
 
-        public DataTable GetQuiz()
+        public DataTable GetFillBlank()
         {
             DataTable table = new DataTable();
 
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\quiz.json"))
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\fillBlank.json"))
             {
                 string json = r.ReadToEnd();
                 table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
@@ -117,11 +117,11 @@ namespace DAO {
             return table;
         }
 
-        public DataTable GetFillBlank()
+        public DataTable GetQuiz()
         {
             DataTable table = new DataTable();
 
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\fillBlank.json"))
+            using (StreamReader r = new StreamReader(@"..\..\..\resources\quiz.json"))
             {
                 string json = r.ReadToEnd();
                 table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));

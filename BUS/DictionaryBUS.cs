@@ -61,14 +61,14 @@ namespace BUS {
             return DictionaryDAO.Instance.LoadRecentlyWordViEn();
         }
 
-        public DataTable GetQuiz()
-        {
-            return DictionaryDAO.Instance.GetQuiz();
-        }
-
         public DataTable GetFillBlank()
         {
             return DictionaryDAO.Instance.GetFillBlank();
+        }
+
+        public DataTable GetQuiz()
+        {
+            return DictionaryDAO.Instance.GetQuiz();
         }
         #endregion
     }

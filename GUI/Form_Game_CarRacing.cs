@@ -9,18 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxWMPLib;
-using Newtonsoft.Json;
 
 namespace GUI
 {
     public partial class Form_Game_CarRacing : Form
     {
         Form_Main father;
-        List<item> items;
-        public class item
-        {
-            public string id, question, result, A, B, C, D;
-        }
+        DataTable items;
+        DataRow key;
         AxWindowsMediaPlayer musicBackGround;
         AxWindowsMediaPlayer musicCoin;
         AxWindowsMediaPlayer musicBoom;
@@ -30,11 +26,12 @@ namespace GUI
         int iCoin = 0, iCar = 0, iGift = 0;
         int positionXcar = 30, positionYcar = 160;
         int positionXcoin = 1250, positionYcoin = 240;
+        Random rand = new Random();
 
         public Form_Game_CarRacing(Form_Main father)
         {
             InitializeComponent();
-            LoadJson();
+            items = BUS.DictionaryBUS.Instance.GetQuiz();
             this.father = father;
             label_NumQues.Text = n.ToString();
 
@@ -58,15 +55,6 @@ namespace GUI
             stopAllMusic();
 
             timer_carRacing.Start();
-        }
-
-        public void LoadJson()
-        {
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\trachnghiemtonghop.json"))
-            {
-                string json = r.ReadToEnd();
-                items = JsonConvert.DeserializeObject<List<item>>(json);
-            }
         }
 
         #region add Bitmap Gif

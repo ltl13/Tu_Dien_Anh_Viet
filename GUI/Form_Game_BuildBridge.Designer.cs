@@ -37,6 +37,10 @@
             this.timer_Bridge = new System.Windows.Forms.Timer(this.components);
             this.label_numOfQuestion = new System.Windows.Forms.Label();
             this.panel_Question = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label_Time = new System.Windows.Forms.Label();
+            this.timer_countDown = new System.Windows.Forms.Timer(this.components);
             this.panel_Question.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +95,7 @@
             // 
             this.label_numOfQuestion.AutoSize = true;
             this.label_numOfQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.label_numOfQuestion.Location = new System.Drawing.Point(387, 24);
+            this.label_numOfQuestion.Location = new System.Drawing.Point(382, 33);
             this.label_numOfQuestion.Name = "label_numOfQuestion";
             this.label_numOfQuestion.Size = new System.Drawing.Size(76, 25);
             this.label_numOfQuestion.TabIndex = 4;
@@ -106,12 +110,50 @@
             this.panel_Question.Size = new System.Drawing.Size(552, 69);
             this.panel_Question.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(353, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Question left";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(258, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Time left";
+            // 
+            // label_Time
+            // 
+            this.label_Time.AutoSize = true;
+            this.label_Time.BackColor = System.Drawing.Color.Transparent;
+            this.label_Time.Location = new System.Drawing.Point(271, 33);
+            this.label_Time.Name = "label_Time";
+            this.label_Time.Size = new System.Drawing.Size(52, 25);
+            this.label_Time.TabIndex = 8;
+            this.label_Time.Text = "time";
+            // 
+            // timer_countDown
+            // 
+            this.timer_countDown.Interval = 1000;
+            this.timer_countDown.Tick += new System.EventHandler(this.timer_countDown_Tick);
+            // 
             // Form_Game_BuildBridge
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.brokesky;
             this.ClientSize = new System.Drawing.Size(850, 850);
             this.ControlBox = false;
+            this.Controls.Add(this.label_Time);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel_Question);
             this.Controls.Add(this.label_numOfQuestion);
             this.Controls.Add(this.metroButton_Music);
@@ -139,5 +181,9 @@
         private System.Windows.Forms.Timer timer_Bridge;
         private System.Windows.Forms.Label label_numOfQuestion;
         private System.Windows.Forms.Panel panel_Question;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_Time;
+        private System.Windows.Forms.Timer timer_countDown;
     }
 }

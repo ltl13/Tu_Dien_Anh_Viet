@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxWMPLib;
-using BUS;
 using Newtonsoft.Json;
+using BUS;
 
 namespace GUI
 {
@@ -27,18 +27,26 @@ namespace GUI
         AxWindowsMediaPlayer musicLose;
 
         bool win = false, lose = false, check = false, isclick = false, music = false, finish = false;
-        int time = 0, numberOfQuestion = 2, n = 2, point = 0;
+        int time = 0, countDown, timeCounDown, numberOfQuestion, n, point = 0;
 
-        int i = 0;
+        int iRun = 0, iBoom = 0, iHam = 0;
         int positionX = 100, positionY = 360;
         Random rand = new Random();
 
-        public Form_Game_BuildBridge(Form_Main father)
+        public Form_Game_BuildBridge(Form_Main father, int num, int time)
         {
             InitializeComponent();
+
+            countDown = time;
+            timeCounDown = time;
+            n = num;
+            numberOfQuestion = num;
+
             items = DictionaryBUS.Instance.GetFillBlank();
+
             this.father = father;
             label_numOfQuestion.Text = n.ToString();
+            label_Time.Text = time.ToString(); 
 
             #region Music Init
             musicBackGround = new AxWindowsMediaPlayer();
@@ -68,8 +76,8 @@ namespace GUI
             key = items.Rows[rand.Next(0, items.Rows.Count)];
             label_Question.Text = key["Question"].ToString();
             timer_Bridge.Start();
+            timer_countDown.Start();
         }
-
 
 
         #region add Bitmap Gif
@@ -84,7 +92,6 @@ namespace GUI
           run9 = new Bitmap(Properties.Resources.m8);
 
         Bitmap RunFrame;
-
         Bitmap[] RunFrames;
 
         Bitmap boom1 = new Bitmap(Properties.Resources.bum0),
@@ -111,12 +118,12 @@ namespace GUI
         {
             RunFrames = new Bitmap[] { run1, run2, run3, run4, run5, run6, run7, run8, run9 };
 
-            if (i < RunFrames.Length)
+            if (iRun < RunFrames.Length)
             {
-                RunFrame = RunFrames[i];
-                i++;
+                RunFrame = RunFrames[iRun];
+                iRun++;
             }
-            else i = 0;
+            else iRun = 0;
             return RunFrame;
         }
 
@@ -124,12 +131,12 @@ namespace GUI
         {
             BoomFrames = new Bitmap[] { boom1, boom2, boom3, boom4, boom5, boom6, boom7 };
 
-            if (i < BoomFrames.Length)
+            if (iBoom < BoomFrames.Length)
             {
-                BoomFrame = BoomFrames[i];
-                i++;
+                BoomFrame = BoomFrames[iBoom];
+                iBoom++;
             }
-            else i = 0;
+            else iBoom = 0;
             return BoomFrame;
         }
 
@@ -137,12 +144,12 @@ namespace GUI
         {
             HamFrames = new Bitmap[] { ham1, ham2, ham3, ham4 };
 
-            if (i < HamFrames.Length)
+            if (iHam < HamFrames.Length)
             {
-                HamFrame = HamFrames[i];
-                i++;
+                HamFrame = HamFrames[iHam];
+                iHam++;
             }
-            else i = 0;
+            else iHam = 0;
             return HamFrame;
         }
         #endregion
@@ -181,7 +188,9 @@ namespace GUI
                 musicBackGround.Ctlcontrols.stop();
                 musicLose.Ctlcontrols.play();
                 timer_Bridge.Start();
+                timer_countDown.Stop();
             }
+            label_numOfQuestion.Text = numberOfQuestion.ToString();
         }
 
         private void textBox_Answer_KeyDown(object sender, KeyEventArgs e)
@@ -189,6 +198,8 @@ namespace GUI
             if (e.KeyCode == Keys.Enter)
             {
                 textBox_Answer.Hide();
+                isclick = true;
+                countDown = timeCounDown;
                 if (textBox_Answer.Text == key["Answer"].ToString())
                 {
                     check = true;
@@ -226,6 +237,39 @@ namespace GUI
             if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop(); 
         }
 
+        private void timer_countDown_Tick(object sender, EventArgs e)
+        {
+            label_Time.Text = (countDown--).ToString();
+            if (countDown == 0)
+            {
+                #region Call textbox enter event
+                textBox_Answer.Hide();
+                isclick = true;
+                countDown = timeCounDown;
+                if (textBox_Answer.Text == key["Answer"].ToString())
+                {
+                    check = true;
+                    point++;
+                    if (n - 1 != 0) musicCorrect.Ctlcontrols.play();
+                    isclick = true;
+                    label_numOfQuestion.Text = n.ToString();
+                    checkResult();
+                    timer_Bridge.Start();
+                }
+                else
+                {
+                    check = false;
+                    musicWrong.Ctlcontrols.play();
+                    isclick = true;
+                    label_numOfQuestion.Text = n.ToString();
+                    checkResult();
+                    timer_Bridge.Start();
+                }
+                #endregion
+            }
+
+        }
+
         private void timer_Tick(object sender, EventArgs e)
         {
             Invalidate();
@@ -235,12 +279,14 @@ namespace GUI
         {
             if (lose)
             {
+                timer_countDown.Stop();
                 e.Graphics.DrawImage(run1, positionX, positionY);
                 e.Graphics.DrawImage((Properties.Resources.lose), positionX + 210, positionY - 50);
                 e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
             }
             if (win)
             {
+                timer_countDown.Stop();
                 if (positionX < 550)
                 {
                     positionX += 10;
@@ -271,7 +317,7 @@ namespace GUI
                         time = 0;
                     }
                 }
-                else if (!check && !lose)
+                else if (!check && !lose && !win)
                 {
                     if (time++ < 8)
                     {

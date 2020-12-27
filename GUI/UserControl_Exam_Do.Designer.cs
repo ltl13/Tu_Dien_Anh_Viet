@@ -43,7 +43,6 @@
             this.label_RightAnswer = new System.Windows.Forms.Label();
             this.label_time = new System.Windows.Forms.Label();
             this.xuiFlatProgressBar_Question = new XanderUI.XUIFlatProgressBar();
-            this.xuiButton_Review = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // xuiButton_Answer1
@@ -249,32 +248,9 @@
             this.xuiFlatProgressBar_Question.TabIndex = 11;
             this.xuiFlatProgressBar_Question.Value = 100;
             // 
-            // xuiButton_Review
-            // 
-            this.xuiButton_Review.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(70)))), ((int)(((byte)(75)))));
-            this.xuiButton_Review.ButtonImage = null;
-            this.xuiButton_Review.ButtonStyle = XanderUI.XUIButton.Style.Dark;
-            this.xuiButton_Review.ButtonText = "Review";
-            this.xuiButton_Review.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(80)))));
-            this.xuiButton_Review.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(130)))), ((int)(((byte)(140)))));
-            this.xuiButton_Review.CornerRadius = 5;
-            this.xuiButton_Review.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.xuiButton_Review.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Review.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
-            this.xuiButton_Review.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(215)))));
-            this.xuiButton_Review.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Review.Location = new System.Drawing.Point(466, 6);
-            this.xuiButton_Review.Name = "xuiButton_Review";
-            this.xuiButton_Review.Size = new System.Drawing.Size(79, 32);
-            this.xuiButton_Review.TabIndex = 12;
-            this.xuiButton_Review.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(200)))), ((int)(((byte)(185)))));
-            this.xuiButton_Review.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Review.Click += new System.EventHandler(this.xuiButton_Review_Click);
-            // 
             // UserControl_Exam_Do
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.xuiButton_Review);
             this.Controls.Add(this.xuiFlatProgressBar_Question);
             this.Controls.Add(this.label_time);
             this.Controls.Add(this.label_RightAnswer);
@@ -309,6 +285,5 @@
         private System.Windows.Forms.Label label_RightAnswer;
         private System.Windows.Forms.Label label_time;
         private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Question;
-        private XanderUI.XUIButton xuiButton_Review;
     }
 }
