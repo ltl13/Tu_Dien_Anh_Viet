@@ -59,6 +59,8 @@ namespace GUI {
             panel_Main.Controls.Add(mainExam);
             panel_Main.Controls.Add(mainGrammar);
             panel_Main.Controls.Add(mainUserDashboard);
+            panel_Main.Focus();
+            panel_Main.Select();
 
             panel_Main.BackColor = Color.FromArgb(199, 233, 255);
 
@@ -67,8 +69,6 @@ namespace GUI {
 
             if (loginAccount.DisplayName.Length > 11)
                 xuiButton_Account.ButtonText = "Hi " + loginAccount.DisplayName.Substring(0, 10) + "...!";
-
-            this.CancelButton = button_Exit;
         }
 
         #region ButtonExit
