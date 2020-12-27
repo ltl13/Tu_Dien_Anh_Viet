@@ -69,13 +69,11 @@ namespace GUI {
             var itemToRemove = father.Father.Favorite.SingleOrDefault(r => r.English == word.English);
             if (itemToRemove != null)
                 father.Father.Favorite.Remove(itemToRemove);
-            DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
         private void xuiButton_NotInterest_Click(object sender, EventArgs e) {
             xuiButton_Interest.Visible = true;
             xuiButton_NotInterest.Visible = false;
             father.Father.Favorite.Add(word);
-            DictionaryBUS.Instance.SaveFavoriteWord(father.Father.Favorite);
         }
     }
 }

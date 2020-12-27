@@ -1,8 +1,8 @@
 ﻿using DTO;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics;
 using System.IO;
 
 namespace DAO {
@@ -24,70 +24,12 @@ namespace DAO {
         #endregion
 
         #region method
-        public List<EnViDTO> GetEnViList() {
-            List<EnViDTO> items = new List<EnViDTO>();
-
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\en-vi.json")) {
-                string json = r.ReadToEnd();
-                items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
-            }
-
-            return items;
-        }
-
-        public DataTable GetEnViTable() {
+        public DataTable GetEnVi() {
             return DataProvider.Instance.JsonToDataTable("en-vi");
         }
 
-        public List<ViEnDTO> GetViEnList() {
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\vi-en.json")) {
-                string json = r.ReadToEnd();
-                List<ViEnDTO> items = JsonConvert.DeserializeObject<List<ViEnDTO>>(json);
-                return items;
-            }
-        }
-
-        public DataTable GetViEnTable() {
+        public DataTable GetViEn() {
             return DataProvider.Instance.JsonToDataTable("vi-en");
-        }
-
-        public void SaveFavoriteWord(List<EnViDTO> Favorite) {
-            string json = JsonConvert.SerializeObject(Favorite.ToArray(), Formatting.Indented);
-            File.WriteAllText(@"..\..\..\resources\favorite.json", json);
-        }
-
-        public List<EnViDTO> LoadSavedFavoriteWord() {
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\favorite.json")) {
-                string json = r.ReadToEnd();
-                List<EnViDTO> items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
-                return items;
-            }
-        }
-
-        public void SaveRecentlyWordEnVi(List<EnViDTO> recently) {
-            string json = JsonConvert.SerializeObject(recently.ToArray(), Formatting.Indented);
-            File.WriteAllText(@"..\..\..\resources\recentlyEnVi.json", json);
-        }
-
-        public List<EnViDTO> LoadRecentlyWordEnVi() {
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\recentlyEnVi.json")) {
-                string json = r.ReadToEnd();
-                List<EnViDTO> items = JsonConvert.DeserializeObject<List<EnViDTO>>(json);
-                return items;
-            }
-        }
-
-        public void SaveRecentlyWordViEn(List<ViEnDTO> recently) {
-            string json = JsonConvert.SerializeObject(recently.ToArray(), Formatting.Indented);
-            File.WriteAllText(@"..\..\..\resources\recentlyViEn.json", json);
-        }
-
-        public List<ViEnDTO> LoadRecentlyWordViEn() {
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\recentlyViEn.json")) {
-                string json = r.ReadToEnd();
-                List<ViEnDTO> items = JsonConvert.DeserializeObject<List<ViEnDTO>>(json);
-                return items;
-            }
         }
 
         public DataTable GetFillBlank() {
@@ -96,6 +38,30 @@ namespace DAO {
 
         public DataTable GetQuiz() {
             return DataProvider.Instance.JsonToDataTable("quiz");
+        }
+
+        public DataTable GetFavorite() {
+            return DataProvider.Instance.JsonToDataTable("favorite");
+        }
+
+        public DataTable GetRecentlyEnVi() {
+            return DataProvider.Instance.JsonToDataTable("recentlyEnVi");
+        }
+
+        public DataTable GetRecentlyViEn() {
+            return DataProvider.Instance.JsonToDataTable("recentlyViEn");
+        }
+
+        public void SetFavorite(DataTable favorite) {
+            DataProvider.Instance.DataTableToJson(favorite, "favorite");
+        }
+
+        public void SetRecentlyEnVi(DataTable recentlyEnVi) {
+            DataProvider.Instance.DataTableToJson(recentlyEnVi, "recentlyEnVi");
+        }
+
+        public void SetRecentlyViEn(DataTable recentlyViEn) {
+            DataProvider.Instance.DataTableToJson(recentlyViEn, "recentlyViEn");
         }
         #endregion
     }

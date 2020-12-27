@@ -109,6 +109,11 @@ namespace DAO {
 
             return table;
         }
+
+        public void DataTableToJson(DataTable dataTable, string fileName) {
+            string json = JsonConvert.SerializeObject(dataTable, Formatting.Indented);
+            File.WriteAllText(string.Format(@"..\..\..\resources\{0}.json", fileName), json);
+        }
         #endregion
     }
 }

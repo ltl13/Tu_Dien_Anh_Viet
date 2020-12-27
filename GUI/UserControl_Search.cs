@@ -23,8 +23,8 @@ namespace GUI {
             InitializeComponent();
 
             this.Father = formMain;
-            this.dataTableEnVi = DictionaryBUS.Instance.GetEnViTable();
-            this.dataTableViEn = DictionaryBUS.Instance.GetViEnTable();
+            this.dataTableEnVi = DictionaryBUS.Instance.GetEnVi();
+            this.dataTableViEn = DictionaryBUS.Instance.GetViEn();
 
             listBox_Search.DataSource = dataTableEnVi;
             listBox_Search.Visible = false;

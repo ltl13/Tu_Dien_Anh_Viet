@@ -1,7 +1,9 @@
 ﻿using DAO;
 using DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Reflection;
 
 namespace BUS {
     public class DictionaryBUS {
@@ -21,54 +23,88 @@ namespace BUS {
         #endregion
 
         #region method
-        public List<EnViDTO> GetEnViList() {
-            return DictionaryDAO.Instance.GetEnViList();
+        private static List<T> ToList<T>(DataTable dataTable) {
+            List<T> data = new List<T>();
+            foreach (DataRow row in dataTable.Rows) {
+                T item = GetItem<T>(row);
+                data.Add(item);
+            }
+            return data;
         }
 
-        public DataTable GetEnViTable() {
-            return DictionaryDAO.Instance.GetEnViTable();
+        public DataTable ToDataTable<T>(List<T> items) {
+            DataTable dataTable = new DataTable(typeof(T).Name);
+            PropertyInfo[] Props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+
+            foreach (PropertyInfo prop in Props) {
+                dataTable.Columns.Add(prop.Name);
+            }
+
+            foreach (T item in items) {
+                var values = new object[Props.Length];
+                for (int i = 0; i < Props.Length; i++) {
+
+                    values[i] = Props[i].GetValue(item, null);
+                }
+                dataTable.Rows.Add(values);
+            }
+
+            return dataTable;
         }
 
-        public List<ViEnDTO> GetViEnList() {
-            return DictionaryDAO.Instance.GetViEnList();
+        private static T GetItem<T>(DataRow dr) {
+            Type temp = typeof(T);
+            T obj = Activator.CreateInstance<T>();
+
+            foreach (DataColumn column in dr.Table.Columns) {
+                foreach (PropertyInfo pro in temp.GetProperties()) {
+                    if (pro.Name == column.ColumnName)
+                        pro.SetValue(obj, dr[column.ColumnName], null);
+                    else
+                        continue;
+                }
+            }
+            return obj;
         }
 
-        public DataTable GetViEnTable() {
-            return DictionaryDAO.Instance.GetViEnTable();
+        public DataTable GetEnVi() {
+            return DictionaryDAO.Instance.GetEnVi();
         }
 
-        public void SaveFavoriteWord(List<EnViDTO> Favorite) {
-            DictionaryDAO.Instance.SaveFavoriteWord(Favorite);
+        public DataTable GetViEn() {
+            return DictionaryDAO.Instance.GetViEn();
         }
 
-        public List<EnViDTO> LoadSavedFavoriteWord() {
-            return DictionaryDAO.Instance.LoadSavedFavoriteWord();
-        }
-
-        public void SaveRecentlyWordEnVi(List<EnViDTO> recently) {
-            DictionaryDAO.Instance.SaveRecentlyWordEnVi(recently);
-        }
-
-        public List<EnViDTO> LoadRecentlyWordEnVi() {
-            return DictionaryDAO.Instance.LoadRecentlyWordEnVi();
-        }
-
-        public void SaveRecentlyWordViEn(List<ViEnDTO> recently) {
-            DictionaryDAO.Instance.SaveRecentlyWordViEn(recently);
-        }
-
-        public List<ViEnDTO> LoadRecentlyWordViEn() {
-            return DictionaryDAO.Instance.LoadRecentlyWordViEn();
-        }
-
-        public DataTable GetFillBlank()
-        {
+        public DataTable GetFillBlank() {
             return DictionaryDAO.Instance.GetFillBlank();
         }
 
-        public DataTable GetQuiz()
-        {
+        public DataTable GetQuiz() {
             return DictionaryDAO.Instance.GetQuiz();
+        }
+
+        public List<EnViDTO> GetFavorite() {
+            return ToList<EnViDTO>(DictionaryDAO.Instance.GetFavorite());
+        }
+
+        public List<EnViDTO> GetRecentlyEnVi() {
+            return ToList<EnViDTO>(DictionaryDAO.Instance.GetRecentlyEnVi());
+        }
+
+        public List<ViEnDTO> GetRecentlyViEn() {
+            return ToList<ViEnDTO>(DictionaryDAO.Instance.GetRecentlyViEn());
+        }
+
+        public void SetFavorite(List<EnViDTO> favorite) {
+            DictionaryDAO.Instance.SetFavorite(ToDataTable<EnViDTO>(favorite));
+        }
+
+        public void SetRecentlyEnVi(List<EnViDTO> recentlyEnVi) {
+            DictionaryDAO.Instance.SetRecentlyEnVi(ToDataTable<EnViDTO>(recentlyEnVi));
+        }
+
+        public void SetRecentlyViEn(List<ViEnDTO> recentlyViEn) {
+            DictionaryDAO.Instance.SetRecentlyViEn(ToDataTable<ViEnDTO>(recentlyViEn));
         }
         #endregion
     }

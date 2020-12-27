@@ -36,9 +36,9 @@ namespace GUI {
 
             this.FocusMe();
             this.loginAccount = loginAccount;
-            this.favorite = BUS.DictionaryBUS.Instance.LoadSavedFavoriteWord();
-            this.recentlyEnVi = BUS.DictionaryBUS.Instance.LoadRecentlyWordEnVi();
-            this.recentlyViEn = BUS.DictionaryBUS.Instance.LoadRecentlyWordViEn();
+            this.favorite = BUS.DictionaryBUS.Instance.GetFavorite();
+            this.recentlyEnVi = BUS.DictionaryBUS.Instance.GetRecentlyEnVi();
+            this.recentlyViEn = BUS.DictionaryBUS.Instance.GetRecentlyViEn();
             this.father = login;
             this.StyleManager = metroStyleManager_FormMain;
         }
@@ -220,9 +220,9 @@ namespace GUI {
 
         #region UX
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
-            BUS.DictionaryBUS.Instance.SaveRecentlyWordEnVi(recentlyEnVi);
-            BUS.DictionaryBUS.Instance.SaveRecentlyWordViEn(recentlyViEn);
-            BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
+            BUS.DictionaryBUS.Instance.SetFavorite(favorite);
+            BUS.DictionaryBUS.Instance.SetRecentlyEnVi(recentlyEnVi);
+            BUS.DictionaryBUS.Instance.SetRecentlyViEn(recentlyViEn);
         }
 
         private void pictureBox_Search_MouseDown(object sender, MouseEventArgs e) {
