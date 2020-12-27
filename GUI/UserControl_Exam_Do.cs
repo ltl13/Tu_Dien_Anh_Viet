@@ -28,7 +28,6 @@ namespace GUI {
             father = exam;
             socau = father.Number;
             time = father.Time;
-            label_RightAnswer.Text = "0";
 
             if (whatToDo) taotrachnghiemCB();
             else taotrachnghiemFR();
@@ -44,7 +43,6 @@ namespace GUI {
         private void xuiButton_Retry_Click(object sender, EventArgs e) {
             socaudung = 0;
             socau = father.Number;
-            label_RightAnswer.Text = "0";
 
             father.listQuestion.Clear();
             father.listAnswer.Clear();
@@ -53,6 +51,8 @@ namespace GUI {
             listQuestion.Clear();
             listYourTest.Clear();
 
+            metroProgressSpinner_Time.Visible = true;
+            label_time.Visible = true;
             xuiButton_Answer1.Enabled = true;
             xuiButton_Answer2.Enabled = true;
             xuiButton_Answer3.Enabled = true;
@@ -78,8 +78,8 @@ namespace GUI {
         public void ketthuc() {
             timer1.Stop();
             xuiFlatProgressBar_Question.Value = 0;
-            MessageBox.Show("Điểm của bạn là: " + Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2));
-
+            metroProgressSpinner_Time.Visible = false;
+            label_time.Visible = false;
             xuiButton_Answer1.Enabled = false;
             xuiButton_Answer2.Enabled = false;
             xuiButton_Answer3.Enabled = false;
@@ -178,16 +178,15 @@ namespace GUI {
             if (whatToDo) {
                 if (father.key[2].ToString() == xuiButton_Answer1.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer1.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
 
+            label_Score.Text = "Your score: " + Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
             instance.choose = xuiButton_Answer1.ButtonText;
             listYourTest.Add(instance);
 
@@ -204,15 +203,15 @@ namespace GUI {
             if (whatToDo) {
                 if (father.key[2].ToString() == xuiButton_Answer2.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer2.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
+
+            label_Score.Text = "Your score: " + Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
 
             instance.choose = xuiButton_Answer2.ButtonText;
             listYourTest.Add(instance);
@@ -227,15 +226,15 @@ namespace GUI {
             if (whatToDo) {
                 if (father.key[2].ToString() == xuiButton_Answer3.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer3.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
+
+            label_Score.Text = "Your score: " + Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
 
             instance.choose = xuiButton_Answer3.ButtonText;
             listYourTest.Add(instance);
@@ -250,16 +249,15 @@ namespace GUI {
             if (whatToDo) {
                 if (father.key[2].ToString() == xuiButton_Answer4.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
             else {
                 if (key.getCommonMeaning() == xuiButton_Answer4.ButtonText) {
                     socaudung++;
-                    label_RightAnswer.Text = Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
                 }
             }
 
+            label_Score.Text = "Your score: " + Math.Round((float)(10 * socaudung * 1.0 / father.Number), 2).ToString();
             instance.choose = xuiButton_Answer4.ButtonText;
             listYourTest.Add(instance);
 

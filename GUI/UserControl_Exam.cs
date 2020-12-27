@@ -30,10 +30,6 @@ namespace GUI {
             Father.panel_Main.Controls.Add(examCombo);
             examCombo.Show();
             examCombo.BringToFront();
-
-            foreach (string path in Directory.GetFiles(@"..\..\..\resources\vocabulary", "*.json")) {
-                examCombo.comboBox_Main.Items.Add(Path.GetFileNameWithoutExtension(path));
-            }
         }
 
         private void pictureBox_ComboWord_MouseDown(object sender, MouseEventArgs e) {

@@ -91,8 +91,9 @@ namespace GUI {
             tbUsername.Select();
             xuiFlatProgressBar_Login.Visible = false;
 
-            if (this.Visible == true)
+            if (this.Visible == true) {
                 this.FocusMe();
+            }
         }
 
         private void lbError_VisibleChanged(object sender, EventArgs e) {

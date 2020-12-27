@@ -39,10 +39,11 @@
             this.label_Question = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroProgressSpinner_Time = new MetroFramework.Controls.MetroProgressSpinner();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label_RightAnswer = new System.Windows.Forms.Label();
+            this.label_Score = new System.Windows.Forms.Label();
             this.label_time = new System.Windows.Forms.Label();
             this.xuiFlatProgressBar_Question = new XanderUI.XUIFlatProgressBar();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // xuiButton_Answer1
@@ -59,9 +60,9 @@
             this.xuiButton_Answer1.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer1.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer1.Location = new System.Drawing.Point(34, 202);
+            this.xuiButton_Answer1.Location = new System.Drawing.Point(28, 210);
             this.xuiButton_Answer1.Name = "xuiButton_Answer1";
-            this.xuiButton_Answer1.Size = new System.Drawing.Size(263, 129);
+            this.xuiButton_Answer1.Size = new System.Drawing.Size(290, 140);
             this.xuiButton_Answer1.TabIndex = 0;
             this.xuiButton_Answer1.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -80,9 +81,9 @@
             this.xuiButton_Retry.HoverBackgroundColor = System.Drawing.Color.Silver;
             this.xuiButton_Retry.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Retry.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Retry.Location = new System.Drawing.Point(551, 0);
+            this.xuiButton_Retry.Location = new System.Drawing.Point(580, 9);
             this.xuiButton_Retry.Name = "xuiButton_Retry";
-            this.xuiButton_Retry.Size = new System.Drawing.Size(31, 31);
+            this.xuiButton_Retry.Size = new System.Drawing.Size(30, 30);
             this.xuiButton_Retry.TabIndex = 1;
             this.xuiButton_Retry.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Retry.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -102,9 +103,9 @@
             this.xuiButton_Answer2.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer2.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer2.Location = new System.Drawing.Point(319, 202);
+            this.xuiButton_Answer2.Location = new System.Drawing.Point(352, 210);
             this.xuiButton_Answer2.Name = "xuiButton_Answer2";
-            this.xuiButton_Answer2.Size = new System.Drawing.Size(263, 129);
+            this.xuiButton_Answer2.Size = new System.Drawing.Size(290, 140);
             this.xuiButton_Answer2.TabIndex = 2;
             this.xuiButton_Answer2.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -124,9 +125,9 @@
             this.xuiButton_Answer4.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer4.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer4.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer4.Location = new System.Drawing.Point(319, 348);
+            this.xuiButton_Answer4.Location = new System.Drawing.Point(352, 356);
             this.xuiButton_Answer4.Name = "xuiButton_Answer4";
-            this.xuiButton_Answer4.Size = new System.Drawing.Size(263, 129);
+            this.xuiButton_Answer4.Size = new System.Drawing.Size(290, 140);
             this.xuiButton_Answer4.TabIndex = 4;
             this.xuiButton_Answer4.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer4.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -146,9 +147,9 @@
             this.xuiButton_Answer3.HoverBackgroundColor = System.Drawing.Color.LightGray;
             this.xuiButton_Answer3.HoverTextColor = System.Drawing.Color.White;
             this.xuiButton_Answer3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Answer3.Location = new System.Drawing.Point(34, 348);
+            this.xuiButton_Answer3.Location = new System.Drawing.Point(28, 356);
             this.xuiButton_Answer3.Name = "xuiButton_Answer3";
-            this.xuiButton_Answer3.Size = new System.Drawing.Size(263, 129);
+            this.xuiButton_Answer3.Size = new System.Drawing.Size(290, 140);
             this.xuiButton_Answer3.TabIndex = 3;
             this.xuiButton_Answer3.TextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer3.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -167,9 +168,9 @@
             this.xuiButton_Back.HoverBackgroundColor = System.Drawing.Color.Red;
             this.xuiButton_Back.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Back.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Back.Location = new System.Drawing.Point(593, 0);
+            this.xuiButton_Back.Location = new System.Drawing.Point(627, 9);
             this.xuiButton_Back.Name = "xuiButton_Back";
-            this.xuiButton_Back.Size = new System.Drawing.Size(31, 31);
+            this.xuiButton_Back.Size = new System.Drawing.Size(30, 30);
             this.xuiButton_Back.TabIndex = 5;
             this.xuiButton_Back.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Back.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -178,9 +179,9 @@
             // label_Question
             // 
             this.label_Question.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Question.Location = new System.Drawing.Point(34, 79);
+            this.label_Question.Location = new System.Drawing.Point(13, 61);
             this.label_Question.Name = "label_Question";
-            this.label_Question.Size = new System.Drawing.Size(548, 83);
+            this.label_Question.Size = new System.Drawing.Size(644, 138);
             this.label_Question.TabIndex = 6;
             this.label_Question.Text = "What is the purpose?";
             this.label_Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,48 +193,43 @@
             // 
             // metroProgressSpinner_Time
             // 
-            this.metroProgressSpinner_Time.BackColor = System.Drawing.SystemColors.Control;
-            this.metroProgressSpinner_Time.Location = new System.Drawing.Point(1, 2);
+            this.metroProgressSpinner_Time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.metroProgressSpinner_Time.Location = new System.Drawing.Point(13, 9);
             this.metroProgressSpinner_Time.Margin = new System.Windows.Forms.Padding(2);
             this.metroProgressSpinner_Time.Maximum = 100;
             this.metroProgressSpinner_Time.Name = "metroProgressSpinner_Time";
-            this.metroProgressSpinner_Time.Size = new System.Drawing.Size(25, 25);
+            this.metroProgressSpinner_Time.Size = new System.Drawing.Size(30, 30);
             this.metroProgressSpinner_Time.Spinning = false;
             this.metroProgressSpinner_Time.TabIndex = 7;
+            this.metroProgressSpinner_Time.UseCustomBackColor = true;
+            this.metroProgressSpinner_Time.UseCustomForeColor = true;
             this.metroProgressSpinner_Time.UseSelectable = true;
+            this.metroProgressSpinner_Time.UseStyleColors = true;
             this.metroProgressSpinner_Time.Value = 100;
             // 
-            // label1
+            // label_Score
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(260, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 39);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Score:";
-            // 
-            // label_RightAnswer
-            // 
-            this.label_RightAnswer.AutoSize = true;
-            this.label_RightAnswer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_RightAnswer.Location = new System.Drawing.Point(319, 0);
-            this.label_RightAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_RightAnswer.Name = "label_RightAnswer";
-            this.label_RightAnswer.Size = new System.Drawing.Size(0, 39);
-            this.label_RightAnswer.TabIndex = 9;
+            this.label_Score.BackColor = System.Drawing.Color.Transparent;
+            this.label_Score.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Score.Location = new System.Drawing.Point(267, 9);
+            this.label_Score.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_Score.Name = "label_Score";
+            this.label_Score.Size = new System.Drawing.Size(141, 30);
+            this.label_Score.TabIndex = 8;
+            this.label_Score.Text = "Your score:";
+            this.label_Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_time
             // 
-            this.label_time.AutoSize = true;
-            this.label_time.BackColor = System.Drawing.Color.White;
-            this.label_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_time.Location = new System.Drawing.Point(31, 6);
+            this.label_time.BackColor = System.Drawing.Color.Transparent;
+            this.label_time.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_time.Location = new System.Drawing.Point(47, 9);
             this.label_time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_time.Name = "label_time";
-            this.label_time.Size = new System.Drawing.Size(0, 25);
+            this.label_time.Size = new System.Drawing.Size(50, 30);
             this.label_time.TabIndex = 10;
+            this.label_time.Text = "Time";
+            this.label_time.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // xuiFlatProgressBar_Question
             // 
@@ -244,7 +240,7 @@
             this.xuiFlatProgressBar_Question.Location = new System.Drawing.Point(13, 48);
             this.xuiFlatProgressBar_Question.MaxValue = 100;
             this.xuiFlatProgressBar_Question.Name = "xuiFlatProgressBar_Question";
-            this.xuiFlatProgressBar_Question.Size = new System.Drawing.Size(597, 10);
+            this.xuiFlatProgressBar_Question.Size = new System.Drawing.Size(644, 10);
             this.xuiFlatProgressBar_Question.TabIndex = 11;
             this.xuiFlatProgressBar_Question.Value = 100;
             // 
@@ -253,8 +249,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.xuiFlatProgressBar_Question);
             this.Controls.Add(this.label_time);
-            this.Controls.Add(this.label_RightAnswer);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_Score);
             this.Controls.Add(this.metroProgressSpinner_Time);
             this.Controls.Add(this.label_Question);
             this.Controls.Add(this.xuiButton_Back);
@@ -265,8 +260,8 @@
             this.Controls.Add(this.xuiButton_Answer1);
             this.Name = "UserControl_Exam_Do";
             this.Size = new System.Drawing.Size(670, 555);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -281,9 +276,9 @@
         private System.Windows.Forms.Label label_Question;
         private System.Windows.Forms.Timer timer1;
         private MetroFramework.Controls.MetroProgressSpinner metroProgressSpinner_Time;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label_RightAnswer;
+        private System.Windows.Forms.Label label_Score;
         private System.Windows.Forms.Label label_time;
         private XanderUI.XUIFlatProgressBar xuiFlatProgressBar_Question;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
