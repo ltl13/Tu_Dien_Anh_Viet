@@ -168,17 +168,11 @@
     <Compile Include="UserControl_Exam_Do.Designer.cs">
       <DependentUpon>UserControl_Exam_Do.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl_Exam_Favorite.cs">
+    <Compile Include="UserControl_Exam_Choice.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl_Exam_Favorite.Designer.cs">
-      <DependentUpon>UserControl_Exam_Favorite.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl_Exam_Combo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl_Exam_Combo.Designer.cs">
-      <DependentUpon>UserControl_Exam_Combo.cs</DependentUpon>
+    <Compile Include="UserControl_Exam_Choice.Designer.cs">
+      <DependentUpon>UserControl_Exam_Choice.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl_Exam.cs">
       <SubType>UserControl</SubType>
@@ -251,17 +245,14 @@
     <EmbeddedResource Include="UserControl_Exam_Do.resx">
       <DependentUpon>UserControl_Exam_Do.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_Exam_Favorite.resx">
-      <DependentUpon>UserControl_Exam_Favorite.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Exam.resx">
       <DependentUpon>UserControl_Exam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_ComboWord.resx">
       <DependentUpon>UserControl_ComboWord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl_Exam_Combo.resx">
-      <DependentUpon>UserControl_Exam_Combo.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl_Exam_Choice.resx">
+      <DependentUpon>UserControl_Exam_Choice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl_Flashcard.resx">
       <DependentUpon>UserControl_Flashcard.cs</DependentUpon>
@@ -466,7 +457,11 @@
     <None Include="Resources\BuildBridge\sky.png" />
     <None Include="Resources\BuildBridge\win.png" />
     <None Include="Resources\default-user-picture.png" />
-    <None Include="Resources\tadadada.png" />
+
+    <None Include="Resources\Color.png" />
+    <None Include="Resources\Math.png" />
+    <None Include="Resources\Medical.png" />
+
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

@@ -19,6 +19,11 @@
             this.vietNamese = row["VietNamese"].ToString();
         }
 
+        public EnViDTO(System.Data.DataRow row) {
+            this.english = row["English"].ToString();
+            this.vietNamese = row["VietNamese"].ToString();
+        }
+
         public string getPronunciation() {
             return vietNamese.Substring(0, vietNamese.IndexOf('|', vietNamese.IndexOf('|') + 1)).Replace("|@", "").Replace(english, "").Trim();
         }
