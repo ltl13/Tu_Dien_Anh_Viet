@@ -29,6 +29,7 @@ namespace GUI {
                     father.Time = Int32.Parse(metroTextBox_Time.Text);
                     father.Number = Int32.Parse(metroTextBox_Number.Text);
 
+                    father.Father.panel_Main.Controls.Remove(this);
                     doExam = new UserControl_Exam_Do(father, true);
                     Father.Father.panel_Main.Controls.Add(doExam);
                     DoExam.BringToFront();

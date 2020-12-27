@@ -7,8 +7,7 @@ using System.Windows.Forms;
 
 namespace GUI {
     public partial class UserControl_Exam_Do : UserControl {
-        //private UserControl_Exam father;
-        struct yourTest {
+        private class yourTest {
             public string ques, key, choose, A, B, C, D;
         }
 
@@ -29,8 +28,8 @@ namespace GUI {
             socau = father.Number;
             time = father.Time;
 
-            if (whatToDo) taotrachnghiemCB();
-            else taotrachnghiemFR();
+            if (whatToDo) InitQuizCombo();
+            else InitQuizFavorite();
 
             this.whatToDo = whatToDo;
         }
@@ -58,8 +57,8 @@ namespace GUI {
             xuiButton_Answer3.Enabled = true;
             xuiButton_Answer4.Enabled = true;
 
-            if (whatToDo) taotrachnghiemCB();
-            else taotrachnghiemFR();
+            if (whatToDo) InitQuizCombo();
+            else InitQuizFavorite();
         }
 
         private void timer1_Tick(object sender, EventArgs e) {
@@ -70,7 +69,7 @@ namespace GUI {
                 listYourTest.Add(instance);
                 if (--socau == 0) ketthuc();
                 else {
-                    if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                    if (whatToDo) InitQuizCombo(); else InitQuizFavorite();
                 }
             }
         }
@@ -104,7 +103,7 @@ namespace GUI {
             else return true;
         }
 
-        public void taotrachnghiemCB() {
+        public void InitQuizCombo() {
             instance = new yourTest();
             time = father.Time;
             father.listAnswer.Clear();
@@ -139,7 +138,7 @@ namespace GUI {
             metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
         }
 
-        public void taotrachnghiemFR() {
+        public void InitQuizFavorite() {
             instance = new yourTest();
             time = father.Time;
             listAnswer.Clear();
@@ -191,7 +190,7 @@ namespace GUI {
             listYourTest.Add(instance);
 
             if (socau-- > 1) {
-                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) InitQuizCombo(); else InitQuizFavorite();
             }
             else {
                 listYourTest.Add(instance);
@@ -217,7 +216,7 @@ namespace GUI {
             listYourTest.Add(instance);
 
             if (socau-- > 1) {
-                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) InitQuizCombo(); else InitQuizFavorite();
             }
             else ketthuc();
         }
@@ -240,7 +239,7 @@ namespace GUI {
             listYourTest.Add(instance);
 
             if (socau-- > 1) {
-                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) InitQuizCombo(); else InitQuizFavorite();
             }
             else ketthuc();
         }
@@ -262,7 +261,7 @@ namespace GUI {
             listYourTest.Add(instance);
 
             if (socau-- > 1) {
-                if (whatToDo) taotrachnghiemCB(); else taotrachnghiemFR();
+                if (whatToDo) InitQuizCombo(); else InitQuizFavorite();
             }
             else ketthuc();
         }

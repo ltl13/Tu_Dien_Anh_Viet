@@ -84,7 +84,7 @@
             this.flowLayoutPanel_ComboWord.Controls.Add(this.flowLayoutPanel_ComboWord5);
             this.flowLayoutPanel_ComboWord.Location = new System.Drawing.Point(86, 46);
             this.flowLayoutPanel_ComboWord.Name = "flowLayoutPanel_ComboWord";
-            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(617, 475);
+            this.flowLayoutPanel_ComboWord.Size = new System.Drawing.Size(620, 499);
             this.flowLayoutPanel_ComboWord.TabIndex = 1;
             // 
             // flowLayoutPanel_ComboWord3
@@ -741,6 +741,7 @@
             this.metroTextBox_Filter.MaxLength = 32767;
             this.metroTextBox_Filter.Name = "metroTextBox_Filter";
             this.metroTextBox_Filter.PasswordChar = '\0';
+            this.metroTextBox_Filter.PromptText = "Filter...";
             this.metroTextBox_Filter.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Filter.SelectedText = "";
             this.metroTextBox_Filter.SelectionLength = 0;

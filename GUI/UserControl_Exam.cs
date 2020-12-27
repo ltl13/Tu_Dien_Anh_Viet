@@ -9,16 +9,15 @@ namespace GUI {
         private Form_Main father;
         private UserControl_Exam_Combo examCombo;
         private UserControl_Exam_Favorite examFavorite;
-        private int time;
-        private int number;
+        private UserControl_Exam_Do examDo;
+
         public DataTable dt = new DataTable();
         public DataRow key;
         public List<DataRow> listAnswer = new List<DataRow>();
         public List<DataRow> listQuestion = new List<DataRow>();
 
-        public int Time { get => time; set => time = value; }
-        public int Number { get => number; set => number = value; }
         public Form_Main Father { get => father; set => father = value; }
+        public UserControl_Exam_Do ExamDo { get => examDo; set => examDo = value; }
 
         public UserControl_Exam(Form_Main main) {
             InitializeComponent();
