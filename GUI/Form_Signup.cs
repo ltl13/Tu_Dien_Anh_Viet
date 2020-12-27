@@ -106,7 +106,7 @@ namespace GUI {
         }
 
         private void tbUsername_TextChanged(object sender, EventArgs e) {
-            System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-zA-Z0-9 ]*$");
+            System.Text.RegularExpressions.Regex regexItem = new System.Text.RegularExpressions.Regex("^[a-z0-9 ]*$");
 
             if (tbPassword.Text.Length != 0) {
                 tbPassword.Text = string.Empty;
@@ -115,7 +115,7 @@ namespace GUI {
                 tbConfirm.Text = string.Empty;
             }
             if (!regexItem.IsMatch(tbUsername.Text)) {
-                lbError.Text = "Tài khoản chỉ gồm chữ và số!";
+                lbError.Text = "Tài khoản chỉ gồm chữ thường và số!";
                 lbError.Visible = true;
             }
             else {
@@ -154,7 +154,7 @@ namespace GUI {
                         lbUsername.ForeColor = Color.Red;
                     }
                 }
-                else if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
+                else if (lbError.Text == "Tài khoản chỉ gồm chữ thường và số!") {
                     pnlUsername.BackColor = Color.Red;
                     lbUsername.ForeColor = Color.Red;
                     tbPassword.Enabled = false;
@@ -200,7 +200,7 @@ namespace GUI {
         }
 
         private void lbError_TextChanged(object sender, EventArgs e) {
-            if (lbError.Text == "Tài khoản chỉ gồm chữ và số!") {
+            if (lbError.Text == "Tài khoản chỉ gồm chữ thường và số!") {
                 pnlUsername.BackColor = Color.Red;
                 lbUsername.ForeColor = Color.Red;
                 pnlPassword.BackColor = Color.DarkGray;
