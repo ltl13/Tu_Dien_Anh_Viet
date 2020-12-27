@@ -121,6 +121,21 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xuiButton_Back.ButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFFSURBVFhHxdc7
+        TgMxFIVhN0jDcx9sg+cuYCuUVCyCAomKlmcXHgVboQWEQMN/iaw4k2MrZjzjK31RfGLrWspMxnFt21Yl
+        wzHJMIVqsK0++w8ZxlA7eIMNbrCu5uWQoUJZ83fYwDtXc3PIsIvaRbe5+cCKWrMsGYaoWHNzodbkkKFH
+        7SHWfIINtS6HDA2Vav6ITbUulw6d28fgzc1iMG1uF1fY1HtCseZmfuDcAWLNn7EVzi9h9ibd/AXFm5vp
+        i3OHiDX/xhlOCjvGGv7u81jzoV3BvQbB2H5QdQNfqPoVXC5zEX7iFOpC6uMIzex2SN+G12j83JLmB+lN
+        2AGk+CYWg/RP8S1Wu2v60GH6YXSHYpuQoaFSj+N7FNmEDD0qtYkH9N6EDENU6khW/VBq2bCHUo+qdyz3
+        qHp/TDyq3l+zIchwPK37Beuz6+2Ms5lqAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>262, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAUAEBAAAAEAIABoBAAAVgAAABgYAAABACAAiAkAAL4EAAAgIAAAAQAgAKgQAABGDgAAMDAAAAEA
