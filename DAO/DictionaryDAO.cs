@@ -24,44 +24,20 @@ namespace DAO {
         #endregion
 
         #region method
-        public DataTable GetEnVi() {
-            return DataProvider.Instance.JsonToDataTable("en-vi");
+        public DataTable GetDictionary(string fileName) {
+            return DataProvider.Instance.JsonToDataTable(string.Format(@"..\..\..\resources\dictionary\{0}.json", fileName));
         }
 
-        public DataTable GetViEn() {
-            return DataProvider.Instance.JsonToDataTable("vi-en");
+        public DataTable GetGame(string fileName) {
+            return DataProvider.Instance.JsonToDataTable(string.Format(@"..\..\..\resources\game\{0}.json", fileName));
         }
 
-        public DataTable GetFillBlank() {
-            return DataProvider.Instance.JsonToDataTable("fillBlank");
+        public DataSet GetVocabulary(string fileName) {
+            return DataProvider.Instance.JsonToDataSet(string.Format(@"..\..\..\resources\vocabulary\{0}.json", fileName));
         }
 
-        public DataTable GetQuiz() {
-            return DataProvider.Instance.JsonToDataTable("quiz");
-        }
-
-        public DataTable GetFavorite() {
-            return DataProvider.Instance.JsonToDataTable("favorite");
-        }
-
-        public DataTable GetRecentlyEnVi() {
-            return DataProvider.Instance.JsonToDataTable("recentlyEnVi");
-        }
-
-        public DataTable GetRecentlyViEn() {
-            return DataProvider.Instance.JsonToDataTable("recentlyViEn");
-        }
-
-        public void SetFavorite(DataTable favorite) {
-            DataProvider.Instance.DataTableToJson(favorite, "favorite");
-        }
-
-        public void SetRecentlyEnVi(DataTable recentlyEnVi) {
-            DataProvider.Instance.DataTableToJson(recentlyEnVi, "recentlyEnVi");
-        }
-
-        public void SetRecentlyViEn(DataTable recentlyViEn) {
-            DataProvider.Instance.DataTableToJson(recentlyViEn, "recentlyViEn");
+        public void SetDictionary(DataTable dataTable, string fileName) {
+            DataProvider.Instance.DataTableToJson(dataTable, string.Format(@"..\..\..\resources\dictionary\{0}.json", fileName));
         }
         #endregion
     }

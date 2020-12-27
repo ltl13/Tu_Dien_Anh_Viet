@@ -37,11 +37,6 @@
             this.metroTabControl_WordInfo = new MetroFramework.Controls.MetroTabControl();
             this.tabPage_Meaning = new System.Windows.Forms.TabPage();
             this.rtb_vietnamese = new System.Windows.Forms.RichTextBox();
-            this.tabPage_Synonymous = new System.Windows.Forms.TabPage();
-            this.tabPage_Antonym = new System.Windows.Forms.TabPage();
-            this.tabPage_Technical = new System.Windows.Forms.TabPage();
-            this.tabPage_Image = new System.Windows.Forms.TabPage();
-            this.tabPage_Note = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer_WordInfo)).BeginInit();
             this.splitContainer_WordInfo.Panel1.SuspendLayout();
             this.splitContainer_WordInfo.Panel2.SuspendLayout();
@@ -160,11 +155,6 @@
             // metroTabControl_WordInfo
             // 
             this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Meaning);
-            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Synonymous);
-            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Antonym);
-            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Technical);
-            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Image);
-            this.metroTabControl_WordInfo.Controls.Add(this.tabPage_Note);
             this.metroTabControl_WordInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl_WordInfo.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl_WordInfo.Name = "metroTabControl_WordInfo";
@@ -200,48 +190,6 @@
             this.rtb_vietnamese.TabIndex = 0;
             this.rtb_vietnamese.Text = "";
             // 
-            // tabPage_Synonymous
-            // 
-            this.tabPage_Synonymous.Location = new System.Drawing.Point(4, 39);
-            this.tabPage_Synonymous.Name = "tabPage_Synonymous";
-            this.tabPage_Synonymous.Size = new System.Drawing.Size(662, 385);
-            this.tabPage_Synonymous.TabIndex = 2;
-            this.tabPage_Synonymous.Text = "Đồng nghĩa";
-            // 
-            // tabPage_Antonym
-            // 
-            this.tabPage_Antonym.Location = new System.Drawing.Point(4, 39);
-            this.tabPage_Antonym.Name = "tabPage_Antonym";
-            this.tabPage_Antonym.Size = new System.Drawing.Size(662, 385);
-            this.tabPage_Antonym.TabIndex = 4;
-            this.tabPage_Antonym.Text = "Trái nghĩa";
-            // 
-            // tabPage_Technical
-            // 
-            this.tabPage_Technical.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F);
-            this.tabPage_Technical.Location = new System.Drawing.Point(4, 39);
-            this.tabPage_Technical.Name = "tabPage_Technical";
-            this.tabPage_Technical.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage_Technical.Size = new System.Drawing.Size(662, 385);
-            this.tabPage_Technical.TabIndex = 1;
-            this.tabPage_Technical.Text = "Chuyên ngành";
-            // 
-            // tabPage_Image
-            // 
-            this.tabPage_Image.Location = new System.Drawing.Point(4, 39);
-            this.tabPage_Image.Name = "tabPage_Image";
-            this.tabPage_Image.Size = new System.Drawing.Size(662, 385);
-            this.tabPage_Image.TabIndex = 6;
-            this.tabPage_Image.Text = "Ảnh minh họa";
-            // 
-            // tabPage_Note
-            // 
-            this.tabPage_Note.Location = new System.Drawing.Point(4, 39);
-            this.tabPage_Note.Name = "tabPage_Note";
-            this.tabPage_Note.Size = new System.Drawing.Size(662, 385);
-            this.tabPage_Note.TabIndex = 5;
-            this.tabPage_Note.Text = "Ghi chú";
-            // 
             // UserControl_WordInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -265,12 +213,7 @@
         private MetroFramework.Controls.MetroTile metroTile_Speaker;
         private System.Windows.Forms.Label label_Word;
         private MetroFramework.Controls.MetroTabControl metroTabControl_WordInfo;
-        private System.Windows.Forms.TabPage tabPage_Synonymous;
         private System.Windows.Forms.TabPage tabPage_Meaning;
-        private System.Windows.Forms.TabPage tabPage_Antonym;
-        private System.Windows.Forms.TabPage tabPage_Technical;
-        private System.Windows.Forms.TabPage tabPage_Note;
-        private System.Windows.Forms.TabPage tabPage_Image;
         private XanderUI.XUIButton xuiButton_Interest;
         private XanderUI.XUIButton xuiButton_NotInterest;
         private System.Windows.Forms.RichTextBox rtb_vietnamese;

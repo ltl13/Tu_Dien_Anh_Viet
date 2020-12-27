@@ -68,43 +68,47 @@ namespace BUS {
         }
 
         public DataTable GetEnVi() {
-            return DictionaryDAO.Instance.GetEnVi();
+            return DictionaryDAO.Instance.GetDictionary("_en_vi");
         }
 
         public DataTable GetViEn() {
-            return DictionaryDAO.Instance.GetViEn();
-        }
-
-        public DataTable GetFillBlank() {
-            return DictionaryDAO.Instance.GetFillBlank();
-        }
-
-        public DataTable GetQuiz() {
-            return DictionaryDAO.Instance.GetQuiz();
+            return DictionaryDAO.Instance.GetDictionary("_vi_en");
         }
 
         public List<EnViDTO> GetFavorite() {
-            return ToList<EnViDTO>(DictionaryDAO.Instance.GetFavorite());
+            return ToList<EnViDTO>(DictionaryDAO.Instance.GetDictionary("favorite"));
         }
 
         public List<EnViDTO> GetRecentlyEnVi() {
-            return ToList<EnViDTO>(DictionaryDAO.Instance.GetRecentlyEnVi());
+            return ToList<EnViDTO>(DictionaryDAO.Instance.GetDictionary("recently_en_vi"));
         }
 
         public List<ViEnDTO> GetRecentlyViEn() {
-            return ToList<ViEnDTO>(DictionaryDAO.Instance.GetRecentlyViEn());
+            return ToList<ViEnDTO>(DictionaryDAO.Instance.GetDictionary("recently_vi_en"));
+        }
+
+        public DataTable GetFillBlank() {
+            return DictionaryDAO.Instance.GetGame("fill_blank");
+        }
+
+        public DataTable GetQuiz() {
+            return DictionaryDAO.Instance.GetGame("quiz");
+        }
+
+        public DataSet GetVocabulary(string fileName) {
+            return DictionaryDAO.Instance.GetVocabulary(fileName);
         }
 
         public void SetFavorite(List<EnViDTO> favorite) {
-            DictionaryDAO.Instance.SetFavorite(ToDataTable<EnViDTO>(favorite));
+            DictionaryDAO.Instance.SetDictionary(ToDataTable<EnViDTO>(favorite), "favorite");
         }
 
         public void SetRecentlyEnVi(List<EnViDTO> recentlyEnVi) {
-            DictionaryDAO.Instance.SetRecentlyEnVi(ToDataTable<EnViDTO>(recentlyEnVi));
+            DictionaryDAO.Instance.SetDictionary(ToDataTable<EnViDTO>(recentlyEnVi), "recently_en_vi");
         }
 
         public void SetRecentlyViEn(List<ViEnDTO> recentlyViEn) {
-            DictionaryDAO.Instance.SetRecentlyViEn(ToDataTable<ViEnDTO>(recentlyViEn));
+            DictionaryDAO.Instance.SetDictionary(ToDataTable<ViEnDTO>(recentlyViEn), "recently_vi_en");
         }
         #endregion
     }

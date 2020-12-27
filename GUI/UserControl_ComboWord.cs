@@ -28,7 +28,7 @@ namespace GUI {
 
         #region Animal
         private void bt_Animal_MouseDown(object sender, MouseEventArgs e) {
-            dataSet = ComboWordBUS.Instance.GetDataSet(bt_Animal.Text);
+            dataSet = DictionaryBUS.Instance.GetVocabulary(bt_Animal.Text);
             ResetSize(flowLayoutPanel_ComboWord1);
             if (flowLayoutPanel_ComboWord1.Size == flowLayoutPanel_ComboWord1.MaximumSize) {
                 flowLayoutPanel_ComboWord1.Size = flowLayoutPanel_ComboWord1.MinimumSize;
@@ -104,7 +104,7 @@ namespace GUI {
         #region Economic&ForeignTrade
         private void bt_Economic_ForeignTrade_MouseDown(object sender, MouseEventArgs e) {
             ResetSize(flowLayoutPanel_ComboWord2);
-            dataSet = ComboWordBUS.Instance.GetDataSet(bt_Economic_ForeignTrade.Text);
+            dataSet = DictionaryBUS.Instance.GetVocabulary(bt_Economic_ForeignTrade.Text);
             dataGridView.DataSource = dataSet.Tables[bt_Economic_ForeignTrade.Text];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -124,7 +124,7 @@ namespace GUI {
         #region IrregularVerbs
         private void bt_IrregularVerb_MouseDown(object sender, MouseEventArgs e) {
             ResetSize(flowLayoutPanel_ComboWord3);
-            dataSet = ComboWordBUS.Instance.GetDataSet(bt_IrregularVerb.Text);
+            dataSet = DictionaryBUS.Instance.GetVocabulary(bt_IrregularVerb.Text);
             dataGridView.DataSource = dataSet.Tables[bt_IrregularVerb.Text];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -143,7 +143,7 @@ namespace GUI {
 
         #region InformationTechnology
         private void bt_InformationTechnolygy_MouseDown(object sender, MouseEventArgs e) {
-            dataSet = ComboWordBUS.Instance.GetDataSet(bt_InformationTechnolygy.Text);
+            dataSet = DictionaryBUS.Instance.GetVocabulary(bt_InformationTechnolygy.Text);
             ResetSize(flowLayoutPanel_ComboWord4);
             if (flowLayoutPanel_ComboWord4.Size == flowLayoutPanel_ComboWord4.MaximumSize) {
                 flowLayoutPanel_ComboWord4.Size = flowLayoutPanel_ComboWord4.MinimumSize;
@@ -201,7 +201,7 @@ namespace GUI {
 
         #region Vegetables
         private void bt_Vegetables_MouseDown(object sender, MouseEventArgs e) {
-            dataSet = ComboWordBUS.Instance.GetDataSet(bt_Vegetables.Text);
+            dataSet = DictionaryBUS.Instance.GetVocabulary(bt_Vegetables.Text);
             ResetSize(flowLayoutPanel_ComboWord5);
             if (flowLayoutPanel_ComboWord5.Size == flowLayoutPanel_ComboWord5.MaximumSize) {
                 flowLayoutPanel_ComboWord5.Size = flowLayoutPanel_ComboWord5.MinimumSize;

@@ -99,20 +99,31 @@ namespace DAO {
             return data;
         }
 
-        public DataTable JsonToDataTable(string fileName) {
+        public DataTable JsonToDataTable(string path) {
             DataTable table = new DataTable();
 
-            using (StreamReader r = new StreamReader(string.Format(@"..\..\..\resources\{0}.json", fileName))) {
+            using (StreamReader r = new StreamReader(path)) {
                 string json = r.ReadToEnd();
-                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
+                table = JsonConvert.DeserializeObject<DataTable>(json);
             }
 
             return table;
         }
 
-        public void DataTableToJson(DataTable dataTable, string fileName) {
+        public void DataTableToJson(DataTable dataTable, string path) {
             string json = JsonConvert.SerializeObject(dataTable, Formatting.Indented);
-            File.WriteAllText(string.Format(@"..\..\..\resources\{0}.json", fileName), json);
+            File.WriteAllText(path, json);
+        }
+
+        public DataSet JsonToDataSet(string path) {
+            DataSet dataSet = new DataSet();
+
+            using (StreamReader r = new StreamReader(path)) {
+                string json = r.ReadToEnd();
+                dataSet = JsonConvert.DeserializeObject<DataSet>(json);
+            }
+
+            return dataSet;
         }
         #endregion
     }

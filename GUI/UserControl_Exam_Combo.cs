@@ -39,7 +39,7 @@ namespace GUI {
         private void comboBox_Main_SelectedValueChanged(object sender, EventArgs e) {
             comboBox_Branch.Items.Clear();
 
-            dataSet = ComboWordBUS.Instance.GetDataSet(comboBox_Main.SelectedItem.ToString());
+            dataSet = DictionaryBUS.Instance.GetVocabulary(comboBox_Main.SelectedItem.ToString());
 
             for (int i = 0; i < dataSet.Tables.Count; i++) {
                 comboBox_Branch.Items.Add(dataSet.Tables[i].TableName);
