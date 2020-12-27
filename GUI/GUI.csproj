@@ -466,6 +466,7 @@
     <None Include="Resources\BuildBridge\sky.png" />
     <None Include="Resources\BuildBridge\win.png" />
     <None Include="Resources\default-user-picture.png" />
+    <None Include="Resources\tadadada.png" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

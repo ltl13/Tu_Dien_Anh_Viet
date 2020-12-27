@@ -21,21 +21,53 @@ namespace GUI {
 
         private void button_Game_BuildBridge_Click(object sender, EventArgs e)
         {
-            fGameBuildBridge = new Form_Game_BuildBridge(father, int.Parse(textBox1.Text), int.Parse(textBox2.Text));
-            fGameBuildBridge.Show();
-            this.father.Visible = false;
+            try
+            {
+                if (int.Parse(metroTextBox_Number.Text) > 100)
+                {
+                    label_Error.Text = "Number of question is invalid";
+                    label_Error2.Text = "Time is invalid";
+                }
+                else
+                {
+                    fGameBuildBridge = new Form_Game_BuildBridge(father, int.Parse(metroTextBox_Number.Text), int.Parse(metroTextBox_Time.Text));
+                    fGameBuildBridge.Show();
+                    this.father.Visible = false;
+                    label_Error.Text = "";
+                    label_Error2.Text = "";
+                }
+            }
+            catch
+            { 
+                label_Error.Text = "Number of question is invalid"; 
+                label_Error2.Text = "Time is invalid";
+            }
         }
 
         private void button_Game_CarRacing_Click(object sender, EventArgs e)
         {
-            fGameCarRacing = new Form_Game_CarRacing(father, int.Parse(textBox1.Text), int.Parse(textBox2.Text));
-            fGameCarRacing.Show();
-            this.father.Visible = false;
+            try
+            {
+                if (int.Parse(metroTextBox_Number.Text) > 100)
+                {
+                    label_Error.Text = "Number of question is invalid";
+                    label_Error2.Text = "Time is invalid";
+                }
+                else
+                {
+                    fGameCarRacing = new Form_Game_CarRacing(father, int.Parse(metroTextBox_Number.Text), int.Parse(metroTextBox_Time.Text));
+                    fGameCarRacing.Show();
+                    this.father.Visible = false;
+                    label_Error.Text = "";
+                    label_Error2.Text = "";
+                }
+            }
+            catch
+            {
+                label_Error.Text = "Number of question is invalid";
+                label_Error2.Text = "Time is invalid";
+            }
         }
 
-        private void xuiButton_Ok_Click(object sender, EventArgs e)
-        {
-            panel_Setting.Visible = false;
-        }
     }
 }
