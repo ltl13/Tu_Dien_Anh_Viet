@@ -26,7 +26,7 @@ namespace GUI
         AxWindowsMediaPlayer musicvictory;
         AxWindowsMediaPlayer musicLose;
 
-        bool win = false, lose = false, check = false, isclick = false, music = false, finish = false;
+        bool win = false, lose = false, check = false, isclick = false, music = false;
         int time = 0, countDown, timeCountDown, numberOfQuestion, n, point = 0;
 
         int iRun = 0, iBoom = 0, iHam = 0;
@@ -190,9 +190,37 @@ namespace GUI
                 timer_Bridge.Start();
                 timer_countDown.Stop();
             }
-            label_numOfQuestion.Text = numberOfQuestion.ToString();
+            label_numOfQuestion.Text = n.ToString();
         }
 
+        private void xuiButton_retry_Click(object sender, EventArgs e)
+        {
+            BackgroundImage = Properties.Resources.brokesky;
+            positionX = 100;
+            positionY = 360;
+            point = 0;
+            iRun = 0;
+            n = numberOfQuestion; label_numOfQuestion.Text = n.ToString();
+            countDown = timeCountDown;
+
+            stopAllMusic();
+
+            win = false;
+            lose = false;
+            check = false;
+            isclick = false;
+            music = false;
+
+            key = items.Rows[rand.Next(0, items.Rows.Count)];
+            label_Question.Text = key["Question"].ToString();
+            panel_Question.Show();
+            textBox_Answer.Show();
+            textBox_Answer.Text = string.Empty;
+            textBox_Answer.Select();
+
+            timer_Bridge.Start();
+            timer_countDown.Start();
+        }
 
         private void xuiButton_Back_Click(object sender, EventArgs e)
         {
@@ -203,6 +231,17 @@ namespace GUI
 
         private void xuiButton_Music_Click(object sender, EventArgs e)
         {
+            if (win)
+            {
+                musicvictory.Ctlcontrols.stop();
+                return;
+            }
+            if (lose)
+            {
+                musicLose.Ctlcontrols.stop();
+                return;
+            }
+
             music = !music;
             if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
 
@@ -268,7 +307,7 @@ namespace GUI
             {
                 if (check && !win && !lose)
                 {
-                    if (time++ < 40)
+                    if (time++ < 15)
                     {
                         e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
                     }

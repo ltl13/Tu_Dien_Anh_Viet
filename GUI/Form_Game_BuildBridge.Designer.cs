@@ -41,6 +41,7 @@
             this.textBox_Answer = new System.Windows.Forms.TextBox();
             this.timer_Bridge = new System.Windows.Forms.Timer(this.components);
             this.timer_countDown = new System.Windows.Forms.Timer(this.components);
+            this.xuiButton_retry = new XanderUI.XUIButton();
             this.panel_Question.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +135,7 @@
             this.xuiButton_Music.HoverBackgroundColor = System.Drawing.Color.Red;
             this.xuiButton_Music.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Music.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton_Music.Location = new System.Drawing.Point(756, 12);
+            this.xuiButton_Music.Location = new System.Drawing.Point(770, 12);
             this.xuiButton_Music.Name = "xuiButton_Music";
             this.xuiButton_Music.Size = new System.Drawing.Size(31, 31);
             this.xuiButton_Music.TabIndex = 7;
@@ -159,12 +160,34 @@
             this.timer_countDown.Interval = 1000;
             this.timer_countDown.Tick += new System.EventHandler(this.timer_countDown_Tick);
             // 
+            // xuiButton_retry
+            // 
+            this.xuiButton_retry.BackgroundColor = System.Drawing.Color.Transparent;
+            this.xuiButton_retry.ButtonImage = global::GUI.Properties.Resources.refresh;
+            this.xuiButton_retry.ButtonStyle = XanderUI.XUIButton.Style.Material;
+            this.xuiButton_retry.ButtonText = "";
+            this.xuiButton_retry.ClickBackColor = System.Drawing.Color.Red;
+            this.xuiButton_retry.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_retry.CornerRadius = 5;
+            this.xuiButton_retry.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_retry.HoverBackgroundColor = System.Drawing.Color.Red;
+            this.xuiButton_retry.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_retry.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton_retry.Location = new System.Drawing.Point(720, 12);
+            this.xuiButton_retry.Name = "xuiButton_retry";
+            this.xuiButton_retry.Size = new System.Drawing.Size(31, 31);
+            this.xuiButton_retry.TabIndex = 9;
+            this.xuiButton_retry.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton_retry.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton_retry.Click += new System.EventHandler(this.xuiButton_retry_Click);
+            // 
             // Form_Game_BuildBridge
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.brokesky;
             this.ClientSize = new System.Drawing.Size(860, 850);
             this.ControlBox = false;
+            this.Controls.Add(this.xuiButton_retry);
             this.Controls.Add(this.textBox_Answer);
             this.Controls.Add(this.xuiButton_Music);
             this.Controls.Add(this.xuiButton_Back);
@@ -198,5 +221,6 @@
         private System.Windows.Forms.TextBox textBox_Answer;
         private System.Windows.Forms.Timer timer_Bridge;
         private System.Windows.Forms.Timer timer_countDown;
+        private XanderUI.XUIButton xuiButton_retry;
     }
 }
