@@ -36,14 +36,7 @@ namespace DAO {
         }
 
         public DataTable GetEnViTable() {
-            DataTable table = new DataTable();
-
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\en-vi.json")) {
-                string json = r.ReadToEnd();
-                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
-            }
-
-            return table;
+            return DataProvider.Instance.JsonToDataTable("en-vi");
         }
 
         public List<ViEnDTO> GetViEnList() {
@@ -55,14 +48,7 @@ namespace DAO {
         }
 
         public DataTable GetViEnTable() {
-            DataTable table = new DataTable();
-
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\vi-en.json")) {
-                string json = r.ReadToEnd();
-                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
-            }
-
-            return table;
+            return DataProvider.Instance.JsonToDataTable("vi-en");
         }
 
         public void SaveFavoriteWord(List<EnViDTO> Favorite) {
@@ -104,30 +90,12 @@ namespace DAO {
             }
         }
 
-        public DataTable GetFillBlank()
-        {
-            DataTable table = new DataTable();
-
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\fillBlank.json"))
-            {
-                string json = r.ReadToEnd();
-                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
-            }
-
-            return table;
+        public DataTable GetFillBlank() {
+            return DataProvider.Instance.JsonToDataTable("fillBlank");
         }
 
-        public DataTable GetQuiz()
-        {
-            DataTable table = new DataTable();
-
-            using (StreamReader r = new StreamReader(@"..\..\..\resources\quiz.json"))
-            {
-                string json = r.ReadToEnd();
-                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
-            }
-
-            return table;
+        public DataTable GetQuiz() {
+            return DataProvider.Instance.JsonToDataTable("quiz");
         }
         #endregion
     }

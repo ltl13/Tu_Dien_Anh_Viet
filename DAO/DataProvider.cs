@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.IO;
 using System.Linq;
 
 namespace DAO {
@@ -27,7 +29,7 @@ namespace DAO {
         #endregion
 
         #region method
-        public static void InitConnectionString() {
+        private static void InitConnectionString() {
             connectionString.DataSource = @".\SQLEXPRESS";
             connectionString.InitialCatalog = "DailyDictionary";
             connectionString.IntegratedSecurity = true;
@@ -97,38 +99,15 @@ namespace DAO {
             return data;
         }
 
-        public void SaveImage(int userID, byte[] data) {
-            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
-                connection.Open();
-                using (SqlCommand cm = new SqlCommand("USP_SaveImage", connection)) {
-                    cm.CommandType = CommandType.StoredProcedure;
-                    cm.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int, 0, ParameterDirection.InputOutput, false, 10, 0, "Id", DataRowVersion.Current, (SqlInt32)userID));
+        public DataTable JsonToDataTable(string fileName) {
+            DataTable table = new DataTable();
 
-                    if (data.Length > 0) {
-                        cm.Parameters.Add(new SqlParameter("@Data", SqlDbType.VarBinary, data.Length, ParameterDirection.Input, false, 0, 0, "Data", DataRowVersion.Current, (SqlBinary)data));
-                    }
-                    else {
-                        cm.Parameters.Add(new SqlParameter("@Data", SqlDbType.VarBinary, 0, ParameterDirection.Input, false, 0, 0, "Data", DataRowVersion.Current, DBNull.Value));
-                    }
-
-                    cm.ExecuteNonQuery();
-                }
-            }
-        }
-
-        public byte[] LoadImage(int userID) {
-            byte[] image;
-
-            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
-                connection.Open();
-                string query = "SELECT PictureData FROM dbo.Picture WHERE ID = " + userID;
-
-                using (SqlCommand cm = new SqlCommand(query, connection)) {
-                    image = (byte[])cm.ExecuteScalar();
-                }
+            using (StreamReader r = new StreamReader(string.Format(@"..\..\..\resources\{0}.json", fileName))) {
+                string json = r.ReadToEnd();
+                table = (DataTable)JsonConvert.DeserializeObject(json, (typeof(DataTable)));
             }
 
-            return image;
+            return table;
         }
         #endregion
     }

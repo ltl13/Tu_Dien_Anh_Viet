@@ -46,19 +46,21 @@ namespace DAO {
         }
 
         public byte[] LoadImage(int userID) {
-            return DataProvider.Instance.LoadImage(userID);
+            string query = "SELECT PictureData FROM dbo.Picture WHERE ID = " + userID;
+
+            return (byte[])DataProvider.Instance.ExecuteScalar(query);
         }
 
         public void SavePicture(int userID, string folderPath, string fileName) {
             string path = System.IO.Path.Combine(folderPath, fileName);
-
             byte[] data = System.IO.File.ReadAllBytes(path);
 
-            DataProvider.Instance.SaveImage(userID, data);
+            DataProvider.Instance.ExecuteNonQuery("USP_SaveImage @Id , @Data", new object[] { userID, data });
         }
 
         public bool AlreadyExist(string userName) {
             string query = "SELECT * FROM dbo.Account WHERE UserName = '" + userName + "'";
+
             return DataProvider.Instance.ExecuteQuery(query).Rows.Count > 0;
         }
 
