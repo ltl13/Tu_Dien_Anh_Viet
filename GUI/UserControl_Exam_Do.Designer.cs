@@ -74,11 +74,11 @@
             this.xuiButton_Retry.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Retry.ButtonImage")));
             this.xuiButton_Retry.ButtonStyle = XanderUI.XUIButton.Style.Material;
             this.xuiButton_Retry.ButtonText = "";
-            this.xuiButton_Retry.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton_Retry.ClickBackColor = System.Drawing.Color.Red;
             this.xuiButton_Retry.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Retry.CornerRadius = 5;
             this.xuiButton_Retry.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton_Retry.HoverBackgroundColor = System.Drawing.Color.Silver;
+            this.xuiButton_Retry.HoverBackgroundColor = System.Drawing.Color.Red;
             this.xuiButton_Retry.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Retry.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton_Retry.Location = new System.Drawing.Point(580, 9);
@@ -260,6 +260,7 @@
             this.Controls.Add(this.xuiButton_Answer1);
             this.Name = "UserControl_Exam_Do";
             this.Size = new System.Drawing.Size(670, 555);
+            this.Load += new System.EventHandler(this.UserControl_Exam_Do_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 

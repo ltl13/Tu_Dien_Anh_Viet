@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class UserControl_Exam_Combo
+    partial class UserControl_Exam_Choice
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Exam_Combo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_Exam_Choice));
             this.comboBox_Main = new System.Windows.Forms.ComboBox();
             this.comboBox_Branch = new System.Windows.Forms.ComboBox();
             this.metroTextBox_Number = new MetroFramework.Controls.MetroTextBox();
@@ -115,6 +115,7 @@
             this.metroTextBox_Time.MaxLength = 3;
             this.metroTextBox_Time.Name = "metroTextBox_Time";
             this.metroTextBox_Time.PasswordChar = '\0';
+            this.metroTextBox_Time.PromptText = "seconds";
             this.metroTextBox_Time.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Time.SelectedText = "";
             this.metroTextBox_Time.SelectionLength = 0;
@@ -212,6 +213,7 @@
             this.Controls.Add(this.comboBox_Main);
             this.Name = "UserControl_Exam_Combo";
             this.Size = new System.Drawing.Size(670, 555);
+            this.Load += new System.EventHandler(this.UserControl_Exam_Choice_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
