@@ -108,10 +108,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox_From;
-        private System.Windows.Forms.RichTextBox richTextBox_To;
         public XanderUI.XUIButton xuiButton_Translate;
         private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.RichTextBox richTextBox_From;
+        public System.Windows.Forms.RichTextBox richTextBox_To;
     }
 }
