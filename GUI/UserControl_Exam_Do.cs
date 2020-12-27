@@ -173,7 +173,7 @@ namespace GUI {
             timer1.Start();
             metroProgressSpinner_Time.Value = 100; label_time.Text = time.ToString();
         }
-        #region Button Click
+
         private void xuiButton_Answer1_Click(object sender, EventArgs e) {
             if (whatToDo) {
                 if (father.key[2].ToString() == xuiButton_Answer1.ButtonText) {
@@ -269,10 +269,5 @@ namespace GUI {
             else ketthuc();
         }
 
-        private void xuiButton_Review_Click(object sender, EventArgs e)
-        {
-            
-        }
-        #endregion
     }
 }
