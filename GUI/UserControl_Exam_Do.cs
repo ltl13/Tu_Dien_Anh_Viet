@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace GUI {
     public partial class UserControl_Exam_Do : UserControl {
         //private UserControl_Exam father;
-        public class yourTest {
+        struct yourTest {
             public string ques, key, choose, A, B, C, D;
         }
 

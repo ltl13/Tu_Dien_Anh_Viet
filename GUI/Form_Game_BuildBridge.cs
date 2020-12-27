@@ -27,8 +27,8 @@ namespace GUI
         AxWindowsMediaPlayer musicLose;
 
         bool win = false, lose = false, check = false, isclick = false, music = false, finish = false;
-        int time = 0, numberOfQuestion=2, point = 0, countDown;///
-        double percent = 0.5;
+        int time = 0, numberOfQuestion = 2, n = 2, point = 0;
+
         int i = 0;
         int positionX = 100, positionY = 360;
         Random rand = new Random();
@@ -38,7 +38,7 @@ namespace GUI
             InitializeComponent();
             items = DictionaryBUS.Instance.GetFillBlank();
             this.father = father;
-            label_numOfQuestion.Text = numberOfQuestion.ToString();
+            label_numOfQuestion.Text = n.ToString();
 
             #region Music Init
             musicBackGround = new AxWindowsMediaPlayer();
@@ -84,6 +84,7 @@ namespace GUI
           run9 = new Bitmap(Properties.Resources.m8);
 
         Bitmap RunFrame;
+
         Bitmap[] RunFrames;
 
         Bitmap boom1 = new Bitmap(Properties.Resources.bum0),
@@ -159,12 +160,12 @@ namespace GUI
 
         void checkResult()
         {
-            if (--numberOfQuestion > 0)
+            if (--n > 0)
             {
                 key = items.Rows[rand.Next(0, items.Rows.Count)];
                 label_Question.Text = key["Question"].ToString();
             }
-            else if((float)point/numberOfQuestion>=percent)
+            else if((float)point/numberOfQuestion>=0.8)
             {
                 win = true;
                 panel_Question.Hide();
@@ -192,9 +193,9 @@ namespace GUI
                 {
                     check = true;
                     point++;
-                    if (numberOfQuestion-1!=0) musicCorrect.Ctlcontrols.play();
+                    if (n-1!=0) musicCorrect.Ctlcontrols.play();
                     isclick = true;
-                    label_numOfQuestion.Text = numberOfQuestion.ToString();
+                    label_numOfQuestion.Text = n.ToString();
                     checkResult();
                     timer_Bridge.Start();
                 }
@@ -203,7 +204,7 @@ namespace GUI
                     check = false;
                     musicWrong.Ctlcontrols.play();
                     isclick = true;
-                    label_numOfQuestion.Text = numberOfQuestion.ToString();
+                    label_numOfQuestion.Text = n.ToString();
                     checkResult();
                     timer_Bridge.Start();
                 }
@@ -212,39 +213,17 @@ namespace GUI
             
         }
 
-        #region Button click
-        private void metroTile_BackOfGb_Click(object sender, EventArgs e)
-        {
-            metroTile_Back_Click(sender, e);
-        }
-
-        private void metroTile_Back_Click(object sender, EventArgs e)
+        private void metroButton_Back_Click(object sender, EventArgs e)
         {
             father.Show();
             stopAllMusic();
             this.Close();
         }
 
-        private void metroTile_Music_Click(object sender, EventArgs e)
+        private void metroButton_Music_Click(object sender, EventArgs e)
         {
             music = !music;
-            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
-        }
-
-        private void xuiButton_Ok_Click(object sender, EventArgs e)
-        {
-            //numberOfQuestion = int.Parse(metroTextBox_NumOfQues.Text);
-            //countDown = int.Parse(metroTextBox_Time.Text);
-            //percent = double.Parse(metroTextBox_Percent.Text);
-            groupBox_Setting.Dispose();
-        }
-
-
-        #endregion
-
-        private void timer_countDown_Tick(object sender, EventArgs e)
-        {
-
+            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop(); 
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -292,7 +271,7 @@ namespace GUI
                         time = 0;
                     }
                 }
-                else if (!check && !lose && !win)
+                else if (!check && !lose)
                 {
                     if (time++ < 8)
                     {
