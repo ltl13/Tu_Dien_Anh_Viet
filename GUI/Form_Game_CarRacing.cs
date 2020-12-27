@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxWMPLib;
+using BUS;
 
 namespace GUI
 {
@@ -16,24 +17,38 @@ namespace GUI
     {
         Form_Main father;
         DataTable items;
-        DataRow key;
+        
         AxWindowsMediaPlayer musicBackGround;
         AxWindowsMediaPlayer musicCoin;
         AxWindowsMediaPlayer musicBoom;
 
         bool check, isclick = false, music = false, colision = false, isboom = false;
-        int time = 0, numberOfQuestion = 2, n = 2, point = 0;
+        int time = 0, numberOfQuestion, n, point = 0, countDown;
         int iCoin = 0, iCar = 0, iGift = 0;
         int positionXcar = 30, positionYcar = 160;
-        int positionXcoin = 1250, positionYcoin = 240;
+        int positionXcoin = 1260, positionYcoin = 240;
         Random rand = new Random();
 
-        public Form_Game_CarRacing(Form_Main father)
+        DataRow key;
+        private List<DataRow> listQuestion = new List<DataRow>();
+
+        public Form_Game_CarRacing(Form_Main father, int num, int time)
         {
             InitializeComponent();
+
+            items = DictionaryBUS.Instance.GetQuiz();
+
+            numberOfQuestion = num;//state
+            n = num;
+
+            this.time = time;//state
+            countDown = time;
+
             items = BUS.DictionaryBUS.Instance.GetQuiz();
             this.father = father;
             label_NumQues.Text = n.ToString();
+            label_Time.Text = time.ToString(); 
+            
 
             #region Music Init
             musicBackGround = new AxWindowsMediaPlayer();
@@ -53,6 +68,8 @@ namespace GUI
             #endregion
 
             stopAllMusic();
+
+            taotrachnghiem();
 
             timer_carRacing.Start();
         }
@@ -81,6 +98,7 @@ namespace GUI
          coin6 = new Bitmap(Properties.Resources.coin5),
          coin7 = new Bitmap(Properties.Resources.coin6),
          coin8 = new Bitmap(Properties.Resources.coin7);
+
         Bitmap CoinFrame;
         Bitmap[] CoinFrames;
 
@@ -171,7 +189,7 @@ namespace GUI
 
             if (isclick)
             {
-                positionXcar += 20;
+                positionXcar += 25;
                 if (positionXcar + RunFrame.Width == positionXcoin && check)
                 {
                     colision = true;
@@ -192,17 +210,77 @@ namespace GUI
             }
         }
 
-        private void metroButton_Back_Click(object sender, EventArgs e)
+        #region Button Click
+        private void xuiButton_retry_Click(object sender, EventArgs e)
+        {
+            point = 0;
+            n = numberOfQuestion;
+
+            listQuestion.Clear();
+
+            label_Time.Visible = true;
+            xuiButton_A.Enabled = true;
+            xuiButton_B.Enabled = true;
+            xuiButton_C.Enabled = true;
+            xuiButton_D.Enabled = true;
+
+             taotrachnghiem();
+        }
+
+        private void xuiButton_Music_Click(object sender, EventArgs e)
+        {
+            music = !music;
+            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
+        }
+
+        private void xuiButton_Back_Click(object sender, EventArgs e)
         {
             father.Show();
             stopAllMusic();
             this.Close();
         }
 
-        private void metroButton_Music_Click(object sender, EventArgs e)
+        public void ketthuc()
         {
-            music = !music;
-            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
+            timer1.Stop();
+            label_Time.Visible = false;
+            xuiButton_A.Enabled = false;
+            xuiButton_B.Enabled = false;
+            xuiButton_C.Enabled = false;
+            xuiButton_D.Enabled = false;
+        }
+
+        public void taotrachnghiem()
+        {
+            label_NumQues.Text = n.ToString();
+
+            countDown = time;
+            var rand = new Random();
+
+            do key = items.Rows[rand.Next(0, items.Rows.Count)]; while (listQuestion.Contains(key));
+            label_Question.Text = key[1].ToString();
+            listQuestion.Add(key);
+
+            xuiButton_A.ButtonText = key[3].ToString();
+            xuiButton_B.ButtonText = key[4].ToString();
+            xuiButton_C.ButtonText = key[5].ToString();
+            xuiButton_D.ButtonText = key[6].ToString();
+
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            countDown--;
+            label_Time.Text = countDown.ToString();
+            if (countDown == 0)
+            {
+                if (--n == 0) ketthuc();
+                else
+                {
+                    taotrachnghiem();
+                }
+            }
         }
 
         private void timer_carRacing_Tick(object sender, EventArgs e)
@@ -229,25 +307,94 @@ namespace GUI
         private void xuiButton_D_Click(object sender, EventArgs e)
         {
             hideAllButton();
+
+            isclick = true;
+
+            if (key[2].ToString() == "D")
+            {
+                point++;
+                check = true;
+            }
+            else check = false;
+
+            if (n-- > 1)
+            {
+                taotrachnghiem();
+            }
+            else
+            {
+                ketthuc();
+            }
         }
 
         private void xuiButton_C_Click(object sender, EventArgs e)
         {
             hideAllButton();
+
+            isclick = true;
+
+            if (key[2].ToString() == "C")
+            {
+                point++;
+                check = true;
+            }
+            else check = false;
+
+            if (n-- > 1)
+            {
+                taotrachnghiem();
+            }
+            else
+            {
+                ketthuc();
+            }
         }
 
         private void xuiButton_B_Click(object sender, EventArgs e)
         {
             hideAllButton();
-            check = false;
+
             isclick = true;
+
+            if (key[2].ToString() == "B")
+            {
+                point++;
+                check = true;
+            }
+            else check = false;
+
+            if (n-- > 1)
+            {
+                taotrachnghiem();
+            }
+            else
+            {
+                ketthuc();
+            }
         }
 
         private void xuiButton_A_Click(object sender, EventArgs e)
         {
-            check = true;
-            isclick = true;
             hideAllButton();
+
+            isclick = true;
+
+            if (key[2].ToString() == "A")
+            {
+                point++;
+                check = true;
+            }
+            else check = false;
+
+            if (n-- > 1)
+            {
+                taotrachnghiem();
+            }
+            else
+            {
+                ketthuc();
+            }
         }
+        #endregion
     }
 }

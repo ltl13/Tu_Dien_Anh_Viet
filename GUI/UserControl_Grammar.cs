@@ -28,7 +28,7 @@ namespace GUI {
 
         private void button_Game_CarRacing_Click(object sender, EventArgs e)
         {
-            fGameCarRacing = new Form_Game_CarRacing(father);
+            fGameCarRacing = new Form_Game_CarRacing(father, int.Parse(textBox1.Text), int.Parse(textBox2.Text));
             fGameCarRacing.Show();
             this.father.Visible = false;
         }
