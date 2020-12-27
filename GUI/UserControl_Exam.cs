@@ -7,27 +7,38 @@ using System.Windows.Forms;
 namespace GUI {
     public partial class UserControl_Exam : UserControl {
         private Form_Main father;
-        private UserControl_Exam_Combo examCombo;
-        private UserControl_Exam_Favorite examFavorite;
+        private UserControl_Exam_Choice examCombo;
         private UserControl_Exam_Do examDo;
 
-        public DataTable dt = new DataTable();
-        public DataRow key;
-        public List<DataRow> listAnswer = new List<DataRow>();
-        public List<DataRow> listQuestion = new List<DataRow>();
+        private int numbersOfQuestion;
+        private int countDown;
+        private int choice;
 
-        public Form_Main Father { get => father; set => father = value; }
+        private DataTable dataTable;
+
+        public Form_Main Father { get => father; }
         public UserControl_Exam_Do ExamDo { get => examDo; set => examDo = value; }
+        public int NumbersOfQuestion { get => numbersOfQuestion; set => numbersOfQuestion = value; }
+        public int CountDown { get => countDown; set => countDown = value; }
+        public int Choice { get => choice; }
+        public DataTable DataTable { get => dataTable; set => dataTable = value; }
 
         public UserControl_Exam(Form_Main main) {
             InitializeComponent();
-            Father = main;
+            this.father = main;
         }
 
         private void metroTile_ComboWord_MouseDown(object sender, MouseEventArgs e) {
-            examCombo = new UserControl_Exam_Combo(this);
-            Father.panel_Main.Controls.Add(examCombo);
-            examCombo.Show();
+            this.choice = 1;
+            examCombo = new UserControl_Exam_Choice(this);
+            father.panel_Main.Controls.Add(examCombo);
+            examCombo.BringToFront();
+        }
+
+        private void metroTile_Favorite_MouseDown(object sender, MouseEventArgs e) {
+            this.choice = 2;
+            examCombo = new UserControl_Exam_Choice(this);
+            father.panel_Main.Controls.Add(examCombo);
             examCombo.BringToFront();
         }
 
@@ -51,21 +62,14 @@ namespace GUI {
                 metroTile_Favorite.Enabled = true;
                 panel_Lock.Visible = false;
             }
+
             if (examCombo != null) {
                 examCombo.Dispose();
-                if (examCombo.DoExam != null) { examCombo.DoExam.Dispose(); }
             }
-            if (examFavorite != null) {
-                examFavorite.Dispose();
-                if (examFavorite.DoExam != null) { examFavorite.DoExam.Dispose(); }
-            }
-        }
 
-        private void metroTile_Favorite_MouseDown(object sender, MouseEventArgs e) {
-            examFavorite = new UserControl_Exam_Favorite(this);
-            Father.panel_Main.Controls.Add(examFavorite);
-            examFavorite.Show();
-            examFavorite.BringToFront();
+            if (examDo != null) {
+                examDo.Dispose();
+            }
         }
 
         private void label_Favorite_MouseDown(object sender, MouseEventArgs e) {
