@@ -43,6 +43,10 @@ namespace BUS {
             return AccountDAO.Instance.GetListAccount();
         }
 
+        public bool DeleteAccount(int userID) {
+            return AccountDAO.Instance.DeleteAccount(userID);
+        }
+
         public void SavePicture(int userID, string folderPath, string fileName) {
             AccountDAO.Instance.SavePicture(userID, folderPath, fileName);
         }

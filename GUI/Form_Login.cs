@@ -13,7 +13,7 @@ namespace GUI {
         #region properties
         public Form_Login() {
             InitializeComponent();
-            FocusMe();
+            this.FocusMe();
         }
         #endregion
 
@@ -33,19 +33,19 @@ namespace GUI {
 
                 loginAccount = AccountBUS.Instance.GetAccountByUserName(tbUsername.Text);
                 fMain = new Form_Main(loginAccount, this);
-                Hide();
                 fMain.Show();
+                this.Hide();
             }
         }
 
         private void lbCreateNewAccount_Click(object sender, EventArgs e) {
             fSignup = new Form_Signup(this);
-            Hide();
+            this.Hide();
             fSignup.Show();
         }
 
         private void btExit_Click(object sender, EventArgs e) {
-            Close();
+            this.Close();
         }
 
         private void tbUsername_TextChanged(object sender, EventArgs e) {
@@ -55,7 +55,6 @@ namespace GUI {
                 tbPassword.Text = string.Empty;
             }
             if (!regexItem.IsMatch(tbUsername.Text)) {
-
                 lbError.Text = "Tài khoản chỉ gồm chữ và số!";
                 lbError.Visible = true;
             }
@@ -91,6 +90,9 @@ namespace GUI {
             btLogin.Enabled = true;
             tbUsername.Select();
             xuiFlatProgressBar_Login.Visible = false;
+
+            if (this.Visible == true)
+                this.FocusMe();
         }
 
         private void lbError_VisibleChanged(object sender, EventArgs e) {

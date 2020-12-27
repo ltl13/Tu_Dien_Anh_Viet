@@ -23,12 +23,13 @@ namespace GUI {
         private bool isEnToVi = true;
         private int choice;
 
-        public AccountDTO LoginAccount { get => loginAccount; set => loginAccount = value; }
+        public AccountDTO LoginAccount { get => loginAccount; }
         public List<EnViDTO> Favorite { get => favorite; set => favorite = value; }
         public List<EnViDTO> RecentlyEnVi { get => recentlyEnVi; set => recentlyEnVi = value; }
         public List<ViEnDTO> RecentlyViEn { get => recentlyViEn; set => recentlyViEn = value; }
-        public bool IsEnToVi { get => isEnToVi; set => isEnToVi = value; }
-        public int Choice { get => choice; set => choice = value; }
+        public bool IsEnToVi { get => isEnToVi; }
+        public int Choice { get => choice; }
+        public Form Father { get => father; }
 
         public Form_Main(AccountDTO loginAccount, Form login) {
             InitializeComponent();
@@ -195,7 +196,7 @@ namespace GUI {
         }
 
         private void xuiButton_Logout_MouseClick(object sender, MouseEventArgs e) {
-            father.Show();
+            Father.Show();
             this.Close();
         }
         #endregion
@@ -214,6 +215,8 @@ namespace GUI {
 
         #region UX
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
+            BUS.DictionaryBUS.Instance.SaveRecentlyWordEnVi(recentlyEnVi);
+            BUS.DictionaryBUS.Instance.SaveRecentlyWordViEn(recentlyViEn);
             BUS.DictionaryBUS.Instance.SaveFavoriteWord(favorite);
         }
 
