@@ -359,13 +359,11 @@ namespace GUI {
 
         private void xuiButton_Medical_instruments_MouseDown(object sender, MouseEventArgs e)
         {
-            dataSet = DictionaryBUS.Instance.GetVocabulary(bt_Medical.Text);
-            ResetSize(flowLayoutPanel_ComboWord8);
-            if (flowLayoutPanel_ComboWord8.Size == flowLayoutPanel_ComboWord8.MaximumSize)
-            {
-                flowLayoutPanel_ComboWord8.Size = flowLayoutPanel_ComboWord8.MinimumSize;
-            }
-            else { flowLayoutPanel_ComboWord8.Size = flowLayoutPanel_ComboWord8.MaximumSize; }
+            dataGridView.DataSource = dataSet.Tables[xuiButton_Medical_instruments.ButtonText];
+            dataGridView.Show();
+            xuiButton_Back.Show();
+            lb_comboWords.Text = xuiButton_Doctor.ButtonText;
+            lb_comboWords.Show();
         }
 
         private void xuiButton_Doctor_MouseDown(object sender, MouseEventArgs e)
