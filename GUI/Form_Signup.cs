@@ -42,8 +42,8 @@ namespace GUI {
                 AccountBUS.Instance.SavePicture(loginAccount.ID, path, "default-user-picture.png");
 
                 fMain = new Form_Main(loginAccount, father);
-                Hide();
                 fMain.Show();
+                this.Hide();
             }
         }
 

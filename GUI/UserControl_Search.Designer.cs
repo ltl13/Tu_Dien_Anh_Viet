@@ -30,6 +30,7 @@
         {
             this.listBox_Search = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_Error = new System.Windows.Forms.Label();
             this.metroTextBox_Searchbar = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +49,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label_Error);
             this.panel1.Controls.Add(this.listBox_Search);
             this.panel1.Controls.Add(this.metroTextBox_Searchbar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -56,6 +58,18 @@
             this.panel1.Size = new System.Drawing.Size(670, 555);
             this.panel1.TabIndex = 9;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // label_Error
+            // 
+            this.label_Error.AutoSize = true;
+            this.label_Error.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Error.ForeColor = System.Drawing.Color.Red;
+            this.label_Error.Location = new System.Drawing.Point(154, 163);
+            this.label_Error.Name = "label_Error";
+            this.label_Error.Size = new System.Drawing.Size(74, 18);
+            this.label_Error.TabIndex = 14;
+            this.label_Error.Text = "label_Error";
+            this.label_Error.Visible = false;
             // 
             // metroTextBox_Searchbar
             // 
@@ -81,7 +95,9 @@
             this.metroTextBox_Searchbar.Margin = new System.Windows.Forms.Padding(4);
             this.metroTextBox_Searchbar.MaxLength = 32;
             this.metroTextBox_Searchbar.Name = "metroTextBox_Searchbar";
-            this.metroTextBox_Searchbar.PasswordChar = '\0';            this.metroTextBox_Searchbar.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox_Searchbar.PasswordChar = '\0';
+            this.metroTextBox_Searchbar.PromptText = "Search...";
+            this.metroTextBox_Searchbar.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox_Searchbar.SelectedText = "";
             this.metroTextBox_Searchbar.SelectionLength = 0;
             this.metroTextBox_Searchbar.SelectionStart = 0;
@@ -106,14 +122,15 @@
             this.Size = new System.Drawing.Size(670, 555);
             this.VisibleChanged += new System.EventHandler(this.UserControl_Search_VisibleChanged);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroTextBox metroTextBox_Searchbar;
-        private System.Windows.Forms.ListBox listBox_Search;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label_Error;
+        public MetroFramework.Controls.MetroTextBox metroTextBox_Searchbar;
+        public System.Windows.Forms.ListBox listBox_Search;
     }
 }

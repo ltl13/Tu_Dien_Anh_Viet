@@ -203,6 +203,11 @@ namespace GUI {
 
         #region ButtonSwitchLanguage
         private void changeLanguage(bool EnToVi) {
+            mainTranslate.richTextBox_From.Text = string.Empty;
+            mainTranslate.richTextBox_To.Text = string.Empty;
+            mainSearch.metroTextBox_Searchbar.Text = string.Empty;
+            mainSearch.listBox_Search.Visible = false;
+
             if (EnToVi) { mainTranslate.xuiButton_Translate.ButtonText = "Translate"; }
             else { mainTranslate.xuiButton_Translate.ButtonText = "Dịch"; }
         }

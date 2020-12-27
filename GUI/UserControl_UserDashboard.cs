@@ -249,9 +249,8 @@ namespace GUI {
             }
 
             foreach (DataGridViewRow row in dataGridView.Rows) {
-                row.Cells[0].Value = row.Index;
+                row.Cells[0].Value = row.Index + 1;
             }
-
 
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView.Columns[0].FillWeight = 10;
