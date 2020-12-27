@@ -11,7 +11,6 @@ using System.IO;
 using AxWMPLib;
 using BUS;
 
-
 namespace GUI
 {
     public partial class Form_Game_BuildBridge : Form
@@ -47,6 +46,7 @@ namespace GUI
             this.father = father;
             label_numOfQuestion.Text = n.ToString();
             label_Time.Text = time.ToString();
+            label_Time.Show();
 
             #region Music Init
             musicBackGround = new AxWindowsMediaPlayer();
@@ -196,6 +196,7 @@ namespace GUI
         private void xuiButton_retry_Click(object sender, EventArgs e)
         {
             BackgroundImage = Properties.Resources.brokesky;
+            label_Time.Show();
             positionX = 100;
             positionY = 360;
             point = 0;
@@ -286,6 +287,7 @@ namespace GUI
                 e.Graphics.DrawImage(run1, positionX, positionY);
                 e.Graphics.DrawImage((Properties.Resources.lose), positionX + 210, positionY - 50);
                 e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
+                label_Time.Hide();
             }
             if (win)
             {
@@ -300,6 +302,7 @@ namespace GUI
                     e.Graphics.DrawImage(run1, positionX, positionY);
                     e.Graphics.DrawImage((Properties.Resources.win), positionX - 240, positionY - 100);
                 }
+                label_Time.Hide();
             }
             else if (!isclick) e.Graphics.DrawImage(run1, positionX, positionY);
 
@@ -342,7 +345,7 @@ namespace GUI
 
         private void timer_countDown_Tick(object sender, EventArgs e)
         {
-            label_Time.Text = (countDown--).ToString();
+            countDown--;
             if (countDown == 0)
             {
                 #region Call textbox enter event
@@ -367,9 +370,10 @@ namespace GUI
                     label_numOfQuestion.Text = n.ToString();
                     checkResult();
                     timer_Bridge.Start();
-                }
+                }               
                 #endregion
             }
+            label_Time.Text = countDown.ToString();
         }
 
         private void timer_Bridge_Tick(object sender, EventArgs e)
