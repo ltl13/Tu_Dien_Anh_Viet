@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using AxWMPLib;
-using Newtonsoft.Json;
 using BUS;
+
 
 namespace GUI
 {
@@ -27,7 +27,7 @@ namespace GUI
         AxWindowsMediaPlayer musicLose;
 
         bool win = false, lose = false, check = false, isclick = false, music = false, finish = false;
-        int time = 0, countDown, timeCounDown, numberOfQuestion, n, point = 0;
+        int time = 0, countDown, timeCountDown, numberOfQuestion, n, point = 0;
 
         int iRun = 0, iBoom = 0, iHam = 0;
         int positionX = 100, positionY = 360;
@@ -38,7 +38,7 @@ namespace GUI
             InitializeComponent();
 
             countDown = time;
-            timeCounDown = time;
+            timeCountDown = time;
             n = num;
             numberOfQuestion = num;
 
@@ -46,7 +46,7 @@ namespace GUI
 
             this.father = father;
             label_numOfQuestion.Text = n.ToString();
-            label_Time.Text = time.ToString(); 
+            label_Time.Text = time.ToString();
 
             #region Music Init
             musicBackGround = new AxWindowsMediaPlayer();
@@ -172,7 +172,7 @@ namespace GUI
                 key = items.Rows[rand.Next(0, items.Rows.Count)];
                 label_Question.Text = key["Question"].ToString();
             }
-            else if((float)point/numberOfQuestion>=0.8)
+            else if ((float)point / numberOfQuestion >= 0.8)
             {
                 win = true;
                 panel_Question.Hide();
@@ -193,59 +193,28 @@ namespace GUI
             label_numOfQuestion.Text = numberOfQuestion.ToString();
         }
 
-        private void textBox_Answer_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                textBox_Answer.Hide();
-                isclick = true;
-                countDown = timeCounDown;
-                if (textBox_Answer.Text == key["Answer"].ToString())
-                {
-                    check = true;
-                    point++;
-                    if (n-1!=0) musicCorrect.Ctlcontrols.play();
-                    isclick = true;
-                    label_numOfQuestion.Text = n.ToString();
-                    checkResult();
-                    timer_Bridge.Start();
-                }
-                else
-                {
-                    check = false;
-                    musicWrong.Ctlcontrols.play();
-                    isclick = true;
-                    label_numOfQuestion.Text = n.ToString();
-                    checkResult();
-                    timer_Bridge.Start();
-                }
-                
-            }
-            
-        }
 
-        private void metroButton_Back_Click(object sender, EventArgs e)
+        private void xuiButton_Back_Click(object sender, EventArgs e)
         {
             father.Show();
             stopAllMusic();
             this.Close();
         }
 
-        private void metroButton_Music_Click(object sender, EventArgs e)
+        private void xuiButton_Music_Click(object sender, EventArgs e)
         {
             music = !music;
-            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop(); 
+            if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
+
         }
 
-        private void timer_countDown_Tick(object sender, EventArgs e)
+        private void textBox_Answer_KeyDown(object sender, KeyEventArgs e)
         {
-            label_Time.Text = (countDown--).ToString();
-            if (countDown == 0)
+            if (e.KeyCode == Keys.Enter)
             {
-                #region Call textbox enter event
                 textBox_Answer.Hide();
                 isclick = true;
-                countDown = timeCounDown;
+                countDown = timeCountDown;
                 if (textBox_Answer.Text == key["Answer"].ToString())
                 {
                     check = true;
@@ -265,14 +234,9 @@ namespace GUI
                     checkResult();
                     timer_Bridge.Start();
                 }
-                #endregion
+
             }
 
-        }
-
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            Invalidate();
         }
 
         private void Form_Game_BuildBridge_Paint(object sender, PaintEventArgs e)
@@ -299,7 +263,7 @@ namespace GUI
                 }
             }
             else if (!isclick) e.Graphics.DrawImage(run1, positionX, positionY);
-            
+
             if (isclick)
             {
                 if (check && !win && !lose)
@@ -336,5 +300,44 @@ namespace GUI
             }
 
         }
+
+        private void timer_countDown_Tick(object sender, EventArgs e)
+        {
+            label_Time.Text = (countDown--).ToString();
+            if (countDown == 0)
+            {
+                #region Call textbox enter event
+                textBox_Answer.Hide();
+                isclick = true;
+                countDown = timeCountDown;
+                if (textBox_Answer.Text == key["Answer"].ToString())
+                {
+                    check = true;
+                    point++;
+                    if (n - 1 != 0) musicCorrect.Ctlcontrols.play();
+                    isclick = true;
+                    label_numOfQuestion.Text = n.ToString();
+                    checkResult();
+                    timer_Bridge.Start();
+                }
+                else
+                {
+                    check = false;
+                    musicWrong.Ctlcontrols.play();
+                    isclick = true;
+                    label_numOfQuestion.Text = n.ToString();
+                    checkResult();
+                    timer_Bridge.Start();
+                }
+                #endregion
+            }
+        }
+
+        private void timer_Bridge_Tick(object sender, EventArgs e)
+        {
+            Invalidate();
+        }
+
+        
     }
 }
