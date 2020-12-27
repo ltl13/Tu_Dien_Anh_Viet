@@ -189,7 +189,7 @@
             this.label_Time.Font = new System.Drawing.Font("Segoe Script", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Time.Location = new System.Drawing.Point(0, 0);
             this.label_Time.Name = "label_Time";
-            this.label_Time.Size = new System.Drawing.Size(73, 65);
+            this.label_Time.Size = new System.Drawing.Size(94, 65);
             this.label_Time.TabIndex = 14;
             this.label_Time.Text = "time";
             this.label_Time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,9 +266,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label_Time);
-            this.panel1.Location = new System.Drawing.Point(808, 9);
+            this.panel1.Location = new System.Drawing.Point(807, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(73, 65);
+            this.panel1.Size = new System.Drawing.Size(94, 65);
             this.panel1.TabIndex = 18;
             // 
             // Form_Game_CarRacing
