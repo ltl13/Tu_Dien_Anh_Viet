@@ -65,7 +65,7 @@
             this.xuiButton_Translate.BackgroundColor = System.Drawing.Color.White;
             this.xuiButton_Translate.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Translate.ButtonImage")));
             this.xuiButton_Translate.ButtonStyle = XanderUI.XUIButton.Style.MacOS;
-            this.xuiButton_Translate.ButtonText = "Translate";
+            this.xuiButton_Translate.ButtonText = "Dịch";
             this.xuiButton_Translate.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton_Translate.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton_Translate.CornerRadius = 5;

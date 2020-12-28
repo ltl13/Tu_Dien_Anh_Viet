@@ -171,13 +171,13 @@ namespace GUI {
                         number = rand.Next(0, father.DataTable.Rows.Count);
                         temp = father.DataTable.Rows[number];
                     }
-                        
+
 
                     if (this.dtAnswer.Rows.Count == 0) {
                         this.dtAnswer.Rows.Add(temp.ItemArray);
                         break;
                     }
-                } while (ContainDataRowInDataTable(this.dtAnswer, temp)); //4 cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
+                } while (ContainDataRowInDataTable(this.dtAnswer, temp));
 
                 if (i > 0) this.dtAnswer.Rows.Add(temp.ItemArray);
             }
@@ -208,29 +208,28 @@ namespace GUI {
         public void InitQuizFavorite() {
             this.instance = new yourTest();
             this.countDown = father.CountDown;
-            this.dtAnswer = new DataTable();
+            this.dtAnswer.Rows.Clear();
 
             var rand = new Random();
             xuiFlatProgressBar_Question.Value = (int)(1.0 * numbersOfQuestion / father.NumbersOfQuestion * 100);
+            DataRow temp;
 
             for (int i = 0; i < 4; i++) {
-                DataRow temp;
-
                 do {
-                    number = rand.Next(0, father.Father.Favorite.Count);
+                    number = rand.Next(0, father.DataTable.Rows.Count);
                     temp = father.DataTable.Rows[number];
 
-                    // 3 cau va cau cuoi da dung/ 2 dap an giong nhau
                     while ((i == 3 && !checkanswer(father.DataTable.Rows[number])) || ContainDataRowInDataTable(this.dtAnswer, temp)) {
                         number = rand.Next(0, father.DataTable.Rows.Count);
                         temp = father.DataTable.Rows[number];
                     }
 
+
                     if (this.dtAnswer.Rows.Count == 0) {
                         this.dtAnswer.Rows.Add(temp.ItemArray);
                         break;
                     }
-                } while (ContainDataRowInDataTable(this.dtAnswer, temp)); //co cau tra loi bi trung thi tiep tuc random i tang den khi du 4 cau
+                } while (ContainDataRowInDataTable(this.dtAnswer, temp));
 
                 if (i > 0) this.dtAnswer.Rows.Add(temp.ItemArray);
             }
@@ -256,7 +255,9 @@ namespace GUI {
 
             label_Question.Text = key["English"].ToString();
             this.dtQuestion.Rows.Add(key.ItemArray);
-            instance.Key = this.key["VietNamese"].ToString();
+
+            tempEnVi = new EnViDTO(key);
+            instance.Key = tempEnVi.getCommonMeaning();
             instance.Question = this.key["English"].ToString();
 
             timer1.Start();

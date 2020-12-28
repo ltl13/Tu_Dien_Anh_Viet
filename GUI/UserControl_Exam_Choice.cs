@@ -15,7 +15,9 @@ namespace GUI {
         private void UserControl_Exam_Choice_Load(object sender, EventArgs e) {
             if (father.Choice == 1) {
                 foreach (string path in System.IO.Directory.GetFiles(@"..\..\..\resources\vocabulary", "*.json")) {
-                    comboBox_Main.Items.Add(System.IO.Path.GetFileNameWithoutExtension(path));
+                    if (!path.Contains("Irregular Verb")) {
+                        comboBox_Main.Items.Add(System.IO.Path.GetFileNameWithoutExtension(path));
+                    }
                 }
                 comboBox_Main.SelectedIndex = 0;
             }
