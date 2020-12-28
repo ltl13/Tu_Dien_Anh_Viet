@@ -208,8 +208,8 @@ namespace GUI {
             mainSearch.metroTextBox_Searchbar.Text = string.Empty;
             mainSearch.listBox_Search.Visible = false;
 
-            if (EnToVi) { mainTranslate.xuiButton_Translate.ButtonText = "Translate"; }
-            else { mainTranslate.xuiButton_Translate.ButtonText = "Dịch"; }
+            if (EnToVi) { mainTranslate.xuiButton_Translate.ButtonText = "Dịch"; }
+            else { mainTranslate.xuiButton_Translate.ButtonText = "Translate"; }
         }
 
         private void xuiSwitch_Language_MouseDown(object sender, MouseEventArgs e) {

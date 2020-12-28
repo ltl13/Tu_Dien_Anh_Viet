@@ -57,8 +57,12 @@ namespace GUI {
                 metroTile_Favorite.Enabled = false;
                 panel_Lock.Visible = true;
 
-                if (!label_Lock.Text.Contains("\n\nSố từ hiện tại: "))
-                    label_Lock.Text += "\n\nSố từ hiện tại: " + Father.Favorite.Count.ToString();
+                if (!label_Lock.Text.Contains("\n\nSố từ hiện tại:"))
+                    label_Lock.Text += "\n\nSố từ hiện tại: " + father.Favorite.Count.ToString();
+                else {
+                    label_Lock.Text = label_Lock.Text.Substring(0, label_Lock.Text.IndexOf('\n') + 1);
+                    label_Lock.Text += "\n\nSố từ hiện tại: " + father.Favorite.Count.ToString();
+                }
             }
             else {
                 metroTile_Favorite.Enabled = true;

@@ -24,7 +24,7 @@ namespace GUI {
             button = new Button();            
 
             if (string.IsNullOrEmpty(result.Choice)) {
-                button.BackColor = Color.Gray;
+                button.BackColor = Color.Silver;
                 button.ForeColor = Color.Black;
             }
             else if (result.Key != result.Choice) {

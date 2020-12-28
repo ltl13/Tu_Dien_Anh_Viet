@@ -87,7 +87,7 @@
             this.xuiButton_Answer4.BackgroundColor = System.Drawing.Color.Silver;
             this.xuiButton_Answer4.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Answer4.ButtonImage")));
             this.xuiButton_Answer4.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.xuiButton_Answer4.ButtonText = "Đáp án";
+            this.xuiButton_Answer4.ButtonText = "C";
             this.xuiButton_Answer4.ClickBackColor = System.Drawing.Color.Black;
             this.xuiButton_Answer4.ClickTextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer4.CornerRadius = 5;
@@ -109,7 +109,7 @@
             this.xuiButton_Answer3.BackgroundColor = System.Drawing.Color.Silver;
             this.xuiButton_Answer3.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Answer3.ButtonImage")));
             this.xuiButton_Answer3.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.xuiButton_Answer3.ButtonText = "Đáp án";
+            this.xuiButton_Answer3.ButtonText = "D";
             this.xuiButton_Answer3.ClickBackColor = System.Drawing.Color.Black;
             this.xuiButton_Answer3.ClickTextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer3.CornerRadius = 5;
@@ -131,7 +131,7 @@
             this.xuiButton_Answer2.BackgroundColor = System.Drawing.Color.Silver;
             this.xuiButton_Answer2.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Answer2.ButtonImage")));
             this.xuiButton_Answer2.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.xuiButton_Answer2.ButtonText = "Đáp án";
+            this.xuiButton_Answer2.ButtonText = "B";
             this.xuiButton_Answer2.ClickBackColor = System.Drawing.Color.Black;
             this.xuiButton_Answer2.ClickTextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer2.CornerRadius = 5;
@@ -153,7 +153,7 @@
             this.xuiButton_Answer1.BackgroundColor = System.Drawing.Color.Silver;
             this.xuiButton_Answer1.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton_Answer1.ButtonImage")));
             this.xuiButton_Answer1.ButtonStyle = XanderUI.XUIButton.Style.Invert;
-            this.xuiButton_Answer1.ButtonText = "Đáp án";
+            this.xuiButton_Answer1.ButtonText = "A";
             this.xuiButton_Answer1.ClickBackColor = System.Drawing.Color.Black;
             this.xuiButton_Answer1.ClickTextColor = System.Drawing.Color.Black;
             this.xuiButton_Answer1.CornerRadius = 5;
@@ -204,12 +204,12 @@
             // label_Question
             // 
             this.label_Question.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_Question.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Question.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Question.Location = new System.Drawing.Point(0, 0);
             this.label_Question.Name = "label_Question";
             this.label_Question.Size = new System.Drawing.Size(476, 211);
             this.label_Question.TabIndex = 0;
-            this.label_Question.Text = "Chọn câu hỏi ở góc bên phải để xem lại";
+            this.label_Question.Text = "Chọn câu hỏi ở góc bên trái để xem lại";
             this.label_Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserControl_Exam_Result
