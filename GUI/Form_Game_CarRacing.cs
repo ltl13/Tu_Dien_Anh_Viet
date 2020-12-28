@@ -71,6 +71,8 @@ namespace GUI
 
             taotrachnghiem();
 
+            timer1.Start();
+
             timer_carRacing.Start();
         }
 
@@ -204,6 +206,8 @@ namespace GUI
             if (positionXcar > 1500)
             {
                 showAllButton();
+                timer1.Start();
+
                 positionXcar = 30;
                 isclick = false;
                 colision = false;
@@ -223,6 +227,8 @@ namespace GUI
             xuiButton_B.Enabled = true;
             xuiButton_C.Enabled = true;
             xuiButton_D.Enabled = true;
+
+            timer1.Start();
 
              taotrachnghiem();
         }
@@ -265,17 +271,17 @@ namespace GUI
             xuiButton_B.ButtonText = key[4].ToString();
             xuiButton_C.ButtonText = key[5].ToString();
             xuiButton_D.ButtonText = key[6].ToString();
-
-            timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            countDown--;
             label_Time.Text = countDown.ToString();
-            if (countDown == 0)
+            if (--countDown == 0)
             {
-                if (--n == 0) ketthuc();
+                if (--n == 0)
+                {
+                    ketthuc();
+                }
                 else
                 {
                     taotrachnghiem();
@@ -308,6 +314,9 @@ namespace GUI
         {
             hideAllButton();
 
+            timer1.Stop();
+            countDown = time;
+
             isclick = true;
 
             if (key[2].ToString() == "D")
@@ -317,7 +326,7 @@ namespace GUI
             }
             else check = false;
 
-            if (n-- > 1)
+            if (n-- > 0)
             {
                 taotrachnghiem();
             }
@@ -331,6 +340,9 @@ namespace GUI
         {
             hideAllButton();
 
+            timer1.Stop();
+            countDown = time;
+
             isclick = true;
 
             if (key[2].ToString() == "C")
@@ -340,7 +352,7 @@ namespace GUI
             }
             else check = false;
 
-            if (n-- > 1)
+            if (n-- > 0)
             {
                 taotrachnghiem();
             }
@@ -354,6 +366,9 @@ namespace GUI
         {
             hideAllButton();
 
+            timer1.Stop();
+            countDown = time;
+
             isclick = true;
 
             if (key[2].ToString() == "B")
@@ -363,7 +378,7 @@ namespace GUI
             }
             else check = false;
 
-            if (n-- > 1)
+            if (n-- > 0)
             {
                 taotrachnghiem();
             }
@@ -377,6 +392,9 @@ namespace GUI
         {
             hideAllButton();
 
+            timer1.Stop();
+            countDown = time;
+
             isclick = true;
 
             if (key[2].ToString() == "A")
@@ -386,7 +404,7 @@ namespace GUI
             }
             else check = false;
 
-            if (n-- > 1)
+            if (n-- > 0)
             {
                 taotrachnghiem();
             }
