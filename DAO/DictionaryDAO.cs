@@ -25,6 +25,13 @@ namespace DAO {
 
         #region method
         public DataTable GetDictionary(string fileName) {
+            string path = string.Format(@"..\..\..\resources\dictionary\{0}.json", fileName);
+
+            if (!File.Exists(path)) {
+                string json = "[\n]";
+                File.WriteAllText(path, json);
+            }
+
             return DataProvider.Instance.JsonToDataTable(string.Format(@"..\..\..\resources\dictionary\{0}.json", fileName));
         }
 

@@ -209,7 +209,7 @@
             this.label_Question.Name = "label_Question";
             this.label_Question.Size = new System.Drawing.Size(476, 211);
             this.label_Question.TabIndex = 0;
-            this.label_Question.Text = "Question";
+            this.label_Question.Text = "Chọn câu hỏi ở góc bên trái để xem lại";
             this.label_Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserControl_Exam_Result
