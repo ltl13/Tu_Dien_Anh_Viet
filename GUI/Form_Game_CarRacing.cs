@@ -17,7 +17,7 @@ namespace GUI
     {
         Form_Main father;
         DataTable items;
-        
+
         AxWindowsMediaPlayer musicBackGround;
         AxWindowsMediaPlayer musicCoin;
         AxWindowsMediaPlayer musicBoom;
@@ -47,8 +47,8 @@ namespace GUI
             items = BUS.DictionaryBUS.Instance.GetQuiz();
             this.father = father;
             label_NumQues.Text = n.ToString();
-            label_Time.Text = time.ToString(); 
-            
+            label_Time.Text = time.ToString();
+
 
             #region Music Init
             musicBackGround = new AxWindowsMediaPlayer();
@@ -174,6 +174,14 @@ namespace GUI
         }
         #endregion
 
+        private void Form_Game_CarRacing_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (father != null)
+            {
+                father.Dispose();
+            }
+        }
+
         private void Form_Game_CarRacing_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(Run_2D_Draw(), positionXcar, positionYcar);
@@ -206,8 +214,30 @@ namespace GUI
             if (positionXcar > 1500)
             {
                 showAllButton();
-                timer1.Start();
 
+                if (n > 0)
+                {
+                    label_Time.Visible = true;
+                    timer1.Start();
+                }
+                else
+                {
+                    hideAllButton();
+                    if ((float)point / numberOfQuestion >= 0.8)
+                    {
+                        label_Question.Text = "You win";
+                    }
+                    else
+                    {
+                        label_Question.Text = "You lose";
+                    }
+
+                    label_NumQues.Visible = false;
+                    label1.Visible = false;
+
+                }
+
+                label_Question.Visible = true;
                 positionXcar = 30;
                 isclick = false;
                 colision = false;
@@ -219,6 +249,8 @@ namespace GUI
         {
             point = 0;
             n = numberOfQuestion;
+            countDown = time;
+            label_Time.Text = countDown.ToString();
 
             listQuestion.Clear();
 
@@ -228,9 +260,11 @@ namespace GUI
             xuiButton_C.Enabled = true;
             xuiButton_D.Enabled = true;
 
+            showAllButton();
+
             timer1.Start();
 
-             taotrachnghiem();
+            taotrachnghiem();
         }
 
         private void xuiButton_Music_Click(object sender, EventArgs e)
@@ -241,6 +275,7 @@ namespace GUI
 
         private void xuiButton_Back_Click(object sender, EventArgs e)
         {
+            this.FormClosing -= this.Form_Game_CarRacing_FormClosing;
             father.Show();
             stopAllMusic();
             this.Close();
@@ -250,10 +285,23 @@ namespace GUI
         {
             timer1.Stop();
             label_Time.Visible = false;
-            xuiButton_A.Enabled = false;
-            xuiButton_B.Enabled = false;
-            xuiButton_C.Enabled = false;
-            xuiButton_D.Enabled = false;
+            label_NumQues.Visible = false;
+            label1.Visible = false;
+            xuiButton_retry.Enabled = true;
+
+            hideAllButton();
+
+
+            if ((float)point / numberOfQuestion >= 0.8)
+            {
+                label_Question.Text = "You win";
+            }
+            else
+            {
+                label_Question.Text = "You lose";
+            }
+
+            label_Question.Visible = true;
         }
 
         public void taotrachnghiem()
@@ -276,7 +324,7 @@ namespace GUI
         private void timer1_Tick(object sender, EventArgs e)
         {
             label_Time.Text = countDown.ToString();
-            if (--countDown == 0)
+            if (--countDown == -1)
             {
                 if (--n == 0)
                 {
@@ -293,13 +341,15 @@ namespace GUI
         {
             Invalidate();
         }
-        
+
         void hideAllButton()
         {
             xuiButton_A.Visible = false;
             xuiButton_B.Visible = false;
             xuiButton_C.Visible = false;
             xuiButton_D.Visible = false;
+
+            label_Question.Visible = false;
         }
 
         void showAllButton()
@@ -308,6 +358,9 @@ namespace GUI
             xuiButton_B.Visible = true;
             xuiButton_C.Visible = true;
             xuiButton_D.Visible = true;
+            xuiButton_retry.Enabled = true;
+            label1.Visible = true;
+            label_NumQues.Visible = true;
         }
 
         private void xuiButton_D_Click(object sender, EventArgs e)
@@ -316,6 +369,9 @@ namespace GUI
 
             timer1.Stop();
             countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
 
             isclick = true;
 
@@ -342,6 +398,9 @@ namespace GUI
 
             timer1.Stop();
             countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
 
             isclick = true;
 
@@ -368,6 +427,9 @@ namespace GUI
 
             timer1.Stop();
             countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
 
             isclick = true;
 
@@ -394,6 +456,9 @@ namespace GUI
 
             timer1.Stop();
             countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
 
             isclick = true;
 
