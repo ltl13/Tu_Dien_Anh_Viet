@@ -43,7 +43,6 @@ namespace GUI {
         }
 
         private UserControl_Exam father;
-        private UserControl_Exam_Result userControl_Exam_Result;
         private int number;
         private int countDown;
         private int numbersOfQuestion;
@@ -58,7 +57,7 @@ namespace GUI {
         public List<yourTest> ListYourTest { get => listYourTest; set => listYourTest = value; }
 
         public UserControl_Exam_Do(UserControl_Exam userControl_Exam) {
-            InitializeComponent(); 
+            InitializeComponent();
             father = userControl_Exam;
         }
 
@@ -104,7 +103,7 @@ namespace GUI {
                 ListYourTest.Add(instance);
                 if (--numbersOfQuestion == 0) ketthuc();
                 else {
-                    if (father.Choice == 1) InitQuizCombo(); 
+                    if (father.Choice == 1) InitQuizCombo();
                     else if (father.Choice == 2) InitQuizFavorite();
                 }
             }
@@ -127,7 +126,7 @@ namespace GUI {
         }
 
         public bool checkanswer(DataRow answer4) {
-            if (this.dtAnswer.Rows.Count < 3) { 
+            if (this.dtAnswer.Rows.Count < 3) {
                 return true;
             }
 
@@ -350,8 +349,8 @@ namespace GUI {
                     InitQuizFavorite();
                 }
             }
-            else { 
-                ketthuc(); 
+            else {
+                ketthuc();
             }
         }
 
@@ -380,8 +379,8 @@ namespace GUI {
                     InitQuizFavorite();
                 }
             }
-            else { 
-                ketthuc(); 
+            else {
+                ketthuc();
             }
         }
     }

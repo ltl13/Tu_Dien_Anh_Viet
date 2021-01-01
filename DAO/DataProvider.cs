@@ -1,8 +1,6 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
 using System.IO;
 using System.Linq;
 
@@ -10,13 +8,12 @@ namespace DAO {
     public class DataProvider {
         #region properties
         private static DataProvider instance;
-        private static SqlConnectionStringBuilder connectionString = new SqlConnectionStringBuilder();
+        private static string connectionString = Properties.Settings.Default.ConnectionString;
 
         public static DataProvider Instance {
             get {
                 if (instance == null) {
                     instance = new DataProvider();
-                    InitConnectionString();
                 }
                 return DataProvider.instance;
             }
@@ -29,15 +26,9 @@ namespace DAO {
         #endregion
 
         #region method
-        private static void InitConnectionString() {
-            connectionString.DataSource = @".\SQLEXPRESS";
-            connectionString.InitialCatalog = "DailyDictionary";
-            connectionString.IntegratedSecurity = true;
-        }
-
         public DataTable ExecuteQuery(string query, object[] parameter = null) {
             DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
+            using (SqlConnection connection = new SqlConnection(connectionString)) {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (parameter != null) {
@@ -59,7 +50,7 @@ namespace DAO {
 
         public int ExecuteNonQuery(string query, object[] parameter = null) {
             int data = 0;
-            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
+            using (SqlConnection connection = new SqlConnection(connectionString)) {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (parameter != null) {
@@ -80,7 +71,7 @@ namespace DAO {
 
         public object ExecuteScalar(string query, object[] parameter = null) {
             object data = 0;
-            using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString)) {
+            using (SqlConnection connection = new SqlConnection(connectionString)) {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (parameter != null) {

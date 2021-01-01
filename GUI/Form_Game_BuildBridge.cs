@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using AxWMPLib;
+using BUS;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
-using AxWMPLib;
-using BUS;
+using System.Windows.Forms;
 
-namespace GUI
-{
-    public partial class Form_Game_BuildBridge : Form
-    {
+namespace GUI {
+    public partial class Form_Game_BuildBridge : Form {
         Form_Main father;
         DataTable items;
         DataRow key;
@@ -32,8 +25,7 @@ namespace GUI
         int positionX = 100, positionY = 360;
         Random rand = new Random();
 
-        public Form_Game_BuildBridge(Form_Main father, int num, int time)
-        {
+        public Form_Game_BuildBridge(Form_Main father, int num, int time) {
             InitializeComponent();
 
             countDown = time;
@@ -114,12 +106,10 @@ namespace GUI
         #endregion
 
         #region Draw
-        private Bitmap Run_2D_Draw()
-        {
+        private Bitmap Run_2D_Draw() {
             RunFrames = new Bitmap[] { run1, run2, run3, run4, run5, run6, run7, run8, run9 };
 
-            if (iRun < RunFrames.Length)
-            {
+            if (iRun < RunFrames.Length) {
                 RunFrame = RunFrames[iRun];
                 iRun++;
             }
@@ -127,12 +117,10 @@ namespace GUI
             return RunFrame;
         }
 
-        private Bitmap Boom_2D_Draw()
-        {
+        private Bitmap Boom_2D_Draw() {
             BoomFrames = new Bitmap[] { boom1, boom2, boom3, boom4, boom5, boom6, boom7 };
 
-            if (iBoom < BoomFrames.Length)
-            {
+            if (iBoom < BoomFrames.Length) {
                 BoomFrame = BoomFrames[iBoom];
                 iBoom++;
             }
@@ -140,12 +128,10 @@ namespace GUI
             return BoomFrame;
         }
 
-        private Bitmap Ham_2D_Draw()
-        {
+        private Bitmap Ham_2D_Draw() {
             HamFrames = new Bitmap[] { ham1, ham2, ham3, ham4 };
 
-            if (iHam < HamFrames.Length)
-            {
+            if (iHam < HamFrames.Length) {
                 HamFrame = HamFrames[iHam];
                 iHam++;
             }
@@ -155,8 +141,7 @@ namespace GUI
         #endregion
 
         #region Close Music
-        void stopAllMusic()
-        {
+        void stopAllMusic() {
             musicBackGround.Ctlcontrols.stop();
             musicCorrect.Ctlcontrols.stop();
             musicWrong.Ctlcontrols.stop();
@@ -165,15 +150,12 @@ namespace GUI
         }
         #endregion
 
-        void checkResult()
-        {
-            if (--n > 0)
-            {
+        void checkResult() {
+            if (--n > 0) {
                 key = items.Rows[rand.Next(0, items.Rows.Count)];
                 label_Question.Text = key["Question"].ToString();
             }
-            else if ((float)point / numberOfQuestion >= 0.8)
-            {
+            else if ((float)point / numberOfQuestion >= 0.8) {
                 win = true;
                 panel_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
@@ -181,8 +163,7 @@ namespace GUI
                 this.BackgroundImage = Properties.Resources.sky;
                 timer_Bridge.Start();
             }
-            else
-            {
+            else {
                 lose = true;
                 panel_Question.Hide();
                 musicBackGround.Ctlcontrols.stop();
@@ -193,8 +174,7 @@ namespace GUI
             label_numOfQuestion.Text = n.ToString();
         }
 
-        private void xuiButton_retry_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_retry_Click(object sender, EventArgs e) {
             BackgroundImage = Properties.Resources.brokesky;
             label_Time.Show();
             positionX = 100;
@@ -223,22 +203,18 @@ namespace GUI
             timer_countDown.Start();
         }
 
-        private void xuiButton_Back_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_Back_Click(object sender, EventArgs e) {
             father.Show();
             stopAllMusic();
             this.Close();
         }
 
-        private void xuiButton_Music_Click(object sender, EventArgs e)
-        {
-            if (win)
-            {
+        private void xuiButton_Music_Click(object sender, EventArgs e) {
+            if (win) {
                 musicvictory.Ctlcontrols.stop();
                 return;
             }
-            if (lose)
-            {
+            if (lose) {
                 musicLose.Ctlcontrols.stop();
                 return;
             }
@@ -248,15 +224,12 @@ namespace GUI
 
         }
 
-        private void textBox_Answer_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
+        private void textBox_Answer_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
                 textBox_Answer.Hide();
                 isclick = true;
                 countDown = timeCountDown;
-                if (textBox_Answer.Text == key["Answer"].ToString())
-                {
+                if (textBox_Answer.Text == key["Answer"].ToString()) {
                     check = true;
                     point++;
                     if (n - 1 != 0) musicCorrect.Ctlcontrols.play();
@@ -265,8 +238,7 @@ namespace GUI
                     checkResult();
                     timer_Bridge.Start();
                 }
-                else
-                {
+                else {
                     check = false;
                     musicWrong.Ctlcontrols.play();
                     isclick = true;
@@ -279,26 +251,21 @@ namespace GUI
 
         }
 
-        private void Form_Game_BuildBridge_Paint(object sender, PaintEventArgs e)
-        {
-            if (lose)
-            {
+        private void Form_Game_BuildBridge_Paint(object sender, PaintEventArgs e) {
+            if (lose) {
                 timer_countDown.Stop();
                 e.Graphics.DrawImage(run1, positionX, positionY);
                 e.Graphics.DrawImage((Properties.Resources.lose), positionX + 210, positionY - 50);
                 e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
                 label_Time.Hide();
             }
-            if (win)
-            {
+            if (win) {
                 timer_countDown.Stop();
-                if (positionX < 550)
-                {
+                if (positionX < 550) {
                     positionX += 10;
                     e.Graphics.DrawImage(Run_2D_Draw(), positionX, positionY);
                 }
-                else
-                {
+                else {
                     e.Graphics.DrawImage(run1, positionX, positionY);
                     e.Graphics.DrawImage((Properties.Resources.win), positionX - 240, positionY - 100);
                 }
@@ -306,16 +273,12 @@ namespace GUI
             }
             else if (!isclick) e.Graphics.DrawImage(run1, positionX, positionY);
 
-            if (isclick)
-            {
-                if (check && !win && !lose)
-                {
-                    if (time++ < 15)
-                    {
+            if (isclick) {
+                if (check && !win && !lose) {
+                    if (time++ < 15) {
                         e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
                     }
-                    else
-                    {
+                    else {
                         isclick = false;
                         textBox_Answer.Show();
                         textBox_Answer.Text = string.Empty;
@@ -323,15 +286,12 @@ namespace GUI
                         time = 0;
                     }
                 }
-                else if (!check && !lose && !win)
-                {
-                    if (time++ < 8)
-                    {
+                else if (!check && !lose && !win) {
+                    if (time++ < 8) {
                         e.Graphics.DrawImage(run1, positionX, positionY);
                         e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
                     }
-                    else
-                    {
+                    else {
                         isclick = false;
                         textBox_Answer.Show();
                         textBox_Answer.Text = string.Empty;
@@ -343,17 +303,14 @@ namespace GUI
 
         }
 
-        private void timer_countDown_Tick(object sender, EventArgs e)
-        {
+        private void timer_countDown_Tick(object sender, EventArgs e) {
             countDown--;
-            if (countDown == 0)
-            {
+            if (countDown == 0) {
                 #region Call textbox enter event
                 textBox_Answer.Hide();
                 isclick = true;
                 countDown = timeCountDown;
-                if (textBox_Answer.Text == key["Answer"].ToString())
-                {
+                if (textBox_Answer.Text == key["Answer"].ToString()) {
                     check = true;
                     point++;
                     if (n - 1 != 0) musicCorrect.Ctlcontrols.play();
@@ -362,25 +319,23 @@ namespace GUI
                     checkResult();
                     timer_Bridge.Start();
                 }
-                else
-                {
+                else {
                     check = false;
                     musicWrong.Ctlcontrols.play();
                     isclick = true;
                     label_numOfQuestion.Text = n.ToString();
                     checkResult();
                     timer_Bridge.Start();
-                }               
+                }
                 #endregion
             }
             label_Time.Text = countDown.ToString();
         }
 
-        private void timer_Bridge_Tick(object sender, EventArgs e)
-        {
+        private void timer_Bridge_Tick(object sender, EventArgs e) {
             Invalidate();
         }
 
-        
+
     }
 }

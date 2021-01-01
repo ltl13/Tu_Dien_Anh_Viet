@@ -381,7 +381,7 @@ namespace GUI {
                 textBox_Confirm.Text = string.Empty;
                 textBox_Name.Text = string.Empty;
 
-                
+
             }
             else {
                 label_Error.Text = "Password hiện tại sai!";

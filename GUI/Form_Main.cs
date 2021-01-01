@@ -269,14 +269,12 @@ namespace GUI {
         private void label_Exam_MouseDown(object sender, MouseEventArgs e) {
             pictureBox_Exam_MouseDown(null, null);
         }
-        private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void pictureBox_Game_MouseDown(object sender, MouseEventArgs e) {
             ReturnClick(panel_Game);
             mainGrammar.Visible = true;
         }
 
-        private void label_Game_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void label_Game_MouseDown(object sender, MouseEventArgs e) {
             pictureBox_Game_MouseDown(null, null);
         }
 
