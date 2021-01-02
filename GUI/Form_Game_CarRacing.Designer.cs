@@ -45,8 +45,10 @@
             this.xuiButton_retry = new XanderUI.XUIButton();
             this.xuiButton_Music = new XanderUI.XUIButton();
             this.xuiButton_Back = new XanderUI.XUIButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel_question.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer_carRacing
@@ -271,12 +273,24 @@
             this.xuiButton_Back.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton_Back.Click += new System.EventHandler(this.xuiButton_Back_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.pow;
+            this.pictureBox1.Location = new System.Drawing.Point(1161, 252);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 175);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_Game_CarRacing
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.road;
             this.ClientSize = new System.Drawing.Size(1526, 500);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.xuiButton_Back);
             this.Controls.Add(this.xuiButton_Music);
             this.Controls.Add(this.xuiButton_retry);
@@ -298,6 +312,7 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form_Game_CarRacing_Paint);
             this.panel1.ResumeLayout(false);
             this.panel_question.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,5 +335,6 @@
         private XanderUI.XUIButton xuiButton_retry;
         private XanderUI.XUIButton xuiButton_Music;
         private XanderUI.XUIButton xuiButton_Back;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

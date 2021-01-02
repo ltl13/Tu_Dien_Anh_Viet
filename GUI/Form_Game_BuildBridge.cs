@@ -36,6 +36,7 @@ namespace GUI
         {
             InitializeComponent();
 
+            pictureBox1.Hide();
             countDown = time;
             timeCountDown = time;
             n = num;
@@ -196,7 +197,6 @@ namespace GUI
         private void xuiButton_retry_Click(object sender, EventArgs e)
         {
             BackgroundImage = Properties.Resources.brokesky;
-            label_Time.Show();
             positionX = 100;
             positionY = 360;
             point = 0;
@@ -218,6 +218,8 @@ namespace GUI
             textBox_Answer.Show();
             textBox_Answer.Text = string.Empty;
             textBox_Answer.Select();
+            panel1.Show();
+            label_Time.Show();
 
             timer_Bridge.Start();
             timer_countDown.Start();
@@ -253,6 +255,7 @@ namespace GUI
             if (e.KeyCode == Keys.Enter)
             {
                 textBox_Answer.Hide();
+                pictureBox1.Show();
                 isclick = true;
                 countDown = timeCountDown;
                 if (textBox_Answer.Text == key["Answer"].ToString())
@@ -283,6 +286,7 @@ namespace GUI
         {
             if (lose)
             {
+                pictureBox1.Hide();
                 timer_countDown.Stop();
                 e.Graphics.DrawImage(run1, positionX, positionY);
                 e.Graphics.DrawImage((Properties.Resources.lose), positionX + 210, positionY - 50);
@@ -291,6 +295,7 @@ namespace GUI
             }
             if (win)
             {
+                pictureBox1.Hide();
                 timer_countDown.Stop();
                 if (positionX < 550)
                 {
@@ -310,12 +315,13 @@ namespace GUI
             {
                 if (check && !win && !lose)
                 {
-                    if (time++ < 15)
+                    if (time++ < 100)
                     {
-                        e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
+                       // e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
                     }
                     else
                     {
+                        pictureBox1.Hide();
                         isclick = false;
                         textBox_Answer.Show();
                         textBox_Answer.Text = string.Empty;
@@ -354,6 +360,7 @@ namespace GUI
                 countDown = timeCountDown;
                 if (textBox_Answer.Text == key["Answer"].ToString())
                 {
+                    pictureBox1.Show();
                     check = true;
                     point++;
                     if (n - 1 != 0) musicCorrect.Ctlcontrols.play();

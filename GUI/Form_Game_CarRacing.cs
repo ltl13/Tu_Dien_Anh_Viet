@@ -36,6 +36,7 @@ namespace GUI
         {
             InitializeComponent();
 
+            pictureBox1.Hide();
             items = DictionaryBUS.Instance.GetQuiz();
 
             numberOfQuestion = num;//state
@@ -186,15 +187,18 @@ namespace GUI
         {
             e.Graphics.DrawImage(Run_2D_Draw(), positionXcar, positionYcar);
 
-            if (check && isclick && !colision) e.Graphics.DrawImage(Coin_2D_Draw(), positionXcoin, positionYcoin);
+            if (positionXcar + RunFrame.Width > 1400) pictureBox1.Hide();
+
+                if (check && isclick && !colision) e.Graphics.DrawImage(Coin_2D_Draw(), positionXcoin, positionYcoin);
             else if (!check && isclick && !colision) e.Graphics.DrawImage(rock, positionXcoin, positionYcoin);
             else if (!check && isclick && isboom)
             {
                 e.Graphics.DrawImage(pow, positionXcoin, positionYcoin);
+                pictureBox1.Show();
                 musicBoom.Ctlcontrols.play();
                 isboom = false;
             }
-
+            
             if (!isclick) e.Graphics.DrawImage(Gift_2D_Draw(), positionXcoin - 140, positionYcoin - 70);
 
             if (isclick)
@@ -211,6 +215,7 @@ namespace GUI
                     colision = true;
                 }
             }
+            
             if (positionXcar > 1500)
             {
                 showAllButton();

@@ -42,8 +42,10 @@
             this.timer_countDown = new System.Windows.Forms.Timer(this.components);
             this.xuiButton_retry = new XanderUI.XUIButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_Question.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Question
@@ -75,7 +77,7 @@
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(583, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 24);
+            this.label3.Size = new System.Drawing.Size(138, 39);
             this.label3.TabIndex = 3;
             this.label3.Text = "Question";
             // 
@@ -86,7 +88,7 @@
             this.label_numOfQuestion.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_numOfQuestion.Location = new System.Drawing.Point(674, 16);
             this.label_numOfQuestion.Name = "label_numOfQuestion";
-            this.label_numOfQuestion.Size = new System.Drawing.Size(40, 24);
+            this.label_numOfQuestion.Size = new System.Drawing.Size(65, 39);
             this.label_numOfQuestion.TabIndex = 4;
             this.label_numOfQuestion.Text = "100";
             // 
@@ -151,7 +153,7 @@
             this.textBox_Answer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Answer.Location = new System.Drawing.Point(328, 452);
             this.textBox_Answer.Name = "textBox_Answer";
-            this.textBox_Answer.Size = new System.Drawing.Size(184, 25);
+            this.textBox_Answer.Size = new System.Drawing.Size(184, 40);
             this.textBox_Answer.TabIndex = 8;
             this.textBox_Answer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Answer_KeyDown);
             // 
@@ -195,12 +197,24 @@
             this.panel1.Size = new System.Drawing.Size(86, 72);
             this.panel1.TabIndex = 11;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(223, 350);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(173, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form_Game_BuildBridge
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.brokesky;
             this.ClientSize = new System.Drawing.Size(860, 850);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.xuiButton_retry);
             this.Controls.Add(this.textBox_Answer);
@@ -217,6 +231,7 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form_Game_BuildBridge_Paint);
             this.panel_Question.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +251,6 @@
         private System.Windows.Forms.Timer timer_countDown;
         private XanderUI.XUIButton xuiButton_retry;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
