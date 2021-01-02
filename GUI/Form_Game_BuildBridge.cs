@@ -255,11 +255,11 @@ namespace GUI
             if (e.KeyCode == Keys.Enter)
             {
                 textBox_Answer.Hide();
-                pictureBox1.Show();
                 isclick = true;
                 countDown = timeCountDown;
                 if (textBox_Answer.Text == key["Answer"].ToString())
                 {
+                    pictureBox1.Show();
                     check = true;
                     point++;
                     if (n - 1 != 0) musicCorrect.Ctlcontrols.play();
@@ -309,7 +309,11 @@ namespace GUI
                 }
                 label_Time.Hide();
             }
-            else if (!isclick) e.Graphics.DrawImage(run1, positionX, positionY);
+            else if (!isclick)
+            {
+                pictureBox1.Hide();
+                e.Graphics.DrawImage(run1, positionX, positionY);
+            }
 
             if (isclick)
             {
