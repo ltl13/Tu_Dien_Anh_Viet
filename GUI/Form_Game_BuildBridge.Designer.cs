@@ -77,7 +77,7 @@
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(583, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 39);
+            this.label3.Size = new System.Drawing.Size(87, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Question";
             // 
@@ -88,7 +88,7 @@
             this.label_numOfQuestion.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_numOfQuestion.Location = new System.Drawing.Point(674, 16);
             this.label_numOfQuestion.Name = "label_numOfQuestion";
-            this.label_numOfQuestion.Size = new System.Drawing.Size(65, 39);
+            this.label_numOfQuestion.Size = new System.Drawing.Size(40, 24);
             this.label_numOfQuestion.TabIndex = 4;
             this.label_numOfQuestion.Text = "100";
             // 
@@ -153,7 +153,7 @@
             this.textBox_Answer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Answer.Location = new System.Drawing.Point(328, 452);
             this.textBox_Answer.Name = "textBox_Answer";
-            this.textBox_Answer.Size = new System.Drawing.Size(184, 40);
+            this.textBox_Answer.Size = new System.Drawing.Size(184, 25);
             this.textBox_Answer.TabIndex = 8;
             this.textBox_Answer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Answer_KeyDown);
             // 
