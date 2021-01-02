@@ -29,6 +29,7 @@ namespace GUI {
         public Form_Game_CarRacing(Form_Main father, int num, int time) {
             InitializeComponent();
 
+            pictureBox1.Hide();
             items = DictionaryBUS.Instance.GetQuiz();
 
             numberOfQuestion = num;//state
@@ -63,6 +64,8 @@ namespace GUI {
             stopAllMusic();
 
             taotrachnghiem();
+
+            timer1.Start();
 
             timer_carRacing.Start();
         }
@@ -158,13 +161,25 @@ namespace GUI {
         }
         #endregion
 
-        private void Form_Game_CarRacing_Paint(object sender, PaintEventArgs e) {
+        private void Form_Game_CarRacing_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (father != null)
+            {
+                father.Dispose();
+            }
+        }
+
+        private void Form_Game_CarRacing_Paint(object sender, PaintEventArgs e)
+        {
             e.Graphics.DrawImage(Run_2D_Draw(), positionXcar, positionYcar);
 
-            if (check && isclick && !colision) e.Graphics.DrawImage(Coin_2D_Draw(), positionXcoin, positionYcoin);
+            if (positionXcar + RunFrame.Width > 1400) pictureBox1.Hide();
+
+                if (check && isclick && !colision) e.Graphics.DrawImage(Coin_2D_Draw(), positionXcoin, positionYcoin);
             else if (!check && isclick && !colision) e.Graphics.DrawImage(rock, positionXcoin, positionYcoin);
             else if (!check && isclick && isboom) {
                 e.Graphics.DrawImage(pow, positionXcoin, positionYcoin);
+                pictureBox1.Show();
                 musicBoom.Ctlcontrols.play();
                 isboom = false;
             }
@@ -182,8 +197,34 @@ namespace GUI {
                     colision = true;
                 }
             }
-            if (positionXcar > 1500) {
+
+            if (positionXcar > 1500)
+            {
                 showAllButton();
+
+                if (n > 0)
+                {
+                    label_Time.Visible = true;
+                    timer1.Start();
+                }
+                else
+                {
+                    hideAllButton();
+                    if ((float)point / numberOfQuestion >= 0.8)
+                    {
+                        label_Question.Text = "You win";
+                    }
+                    else
+                    {
+                        label_Question.Text = "You lose";
+                    }
+
+                    label_NumQues.Visible = false;
+                    label1.Visible = false;
+
+                }
+
+                label_Question.Visible = true;
                 positionXcar = 30;
                 isclick = false;
                 colision = false;
@@ -194,6 +235,8 @@ namespace GUI {
         private void xuiButton_retry_Click(object sender, EventArgs e) {
             point = 0;
             n = numberOfQuestion;
+            countDown = time;
+            label_Time.Text = countDown.ToString();
 
             listQuestion.Clear();
 
@@ -203,6 +246,10 @@ namespace GUI {
             xuiButton_C.Enabled = true;
             xuiButton_D.Enabled = true;
 
+            showAllButton();
+
+            timer1.Start();
+
             taotrachnghiem();
         }
 
@@ -211,7 +258,9 @@ namespace GUI {
             if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
         }
 
-        private void xuiButton_Back_Click(object sender, EventArgs e) {
+        private void xuiButton_Back_Click(object sender, EventArgs e)
+        {
+            this.FormClosing -= this.Form_Game_CarRacing_FormClosing;
             father.Show();
             stopAllMusic();
             this.Close();
@@ -220,10 +269,23 @@ namespace GUI {
         public void ketthuc() {
             timer1.Stop();
             label_Time.Visible = false;
-            xuiButton_A.Enabled = false;
-            xuiButton_B.Enabled = false;
-            xuiButton_C.Enabled = false;
-            xuiButton_D.Enabled = false;
+            label_NumQues.Visible = false;
+            label1.Visible = false;
+            xuiButton_retry.Enabled = true;
+
+            hideAllButton();
+
+
+            if ((float)point / numberOfQuestion >= 0.8)
+            {
+                label_Question.Text = "You win";
+            }
+            else
+            {
+                label_Question.Text = "You lose";
+            }
+
+            label_Question.Visible = true;
         }
 
         public void taotrachnghiem() {
@@ -240,16 +302,19 @@ namespace GUI {
             xuiButton_B.ButtonText = key[4].ToString();
             xuiButton_C.ButtonText = key[5].ToString();
             xuiButton_D.ButtonText = key[6].ToString();
-
-            timer1.Start();
         }
 
-        private void timer1_Tick(object sender, EventArgs e) {
-            countDown--;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
             label_Time.Text = countDown.ToString();
-            if (countDown == 0) {
-                if (--n == 0) ketthuc();
-                else {
+            if (--countDown == -1)
+            {
+                if (--n == 0)
+                {
+                    ketthuc();
+                }
+                else
+                {
                     taotrachnghiem();
                 }
             }
@@ -259,11 +324,14 @@ namespace GUI {
             Invalidate();
         }
 
-        void hideAllButton() {
+        void hideAllButton()
+        {
             xuiButton_A.Visible = false;
             xuiButton_B.Visible = false;
             xuiButton_C.Visible = false;
             xuiButton_D.Visible = false;
+
+            label_Question.Visible = false;
         }
 
         void showAllButton() {
@@ -271,10 +339,19 @@ namespace GUI {
             xuiButton_B.Visible = true;
             xuiButton_C.Visible = true;
             xuiButton_D.Visible = true;
+            xuiButton_retry.Enabled = true;
+            label1.Visible = true;
+            label_NumQues.Visible = true;
         }
 
         private void xuiButton_D_Click(object sender, EventArgs e) {
             hideAllButton();
+
+            timer1.Stop();
+            countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
 
             isclick = true;
 
@@ -284,7 +361,8 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 1) {
+            if (n-- > 0)
+            {
                 taotrachnghiem();
             }
             else {
@@ -295,6 +373,12 @@ namespace GUI {
         private void xuiButton_C_Click(object sender, EventArgs e) {
             hideAllButton();
 
+            timer1.Stop();
+            countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
+
             isclick = true;
 
             if (key[2].ToString() == "C") {
@@ -303,7 +387,8 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 1) {
+            if (n-- > 0)
+            {
                 taotrachnghiem();
             }
             else {
@@ -314,6 +399,12 @@ namespace GUI {
         private void xuiButton_B_Click(object sender, EventArgs e) {
             hideAllButton();
 
+            timer1.Stop();
+            countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
+
             isclick = true;
 
             if (key[2].ToString() == "B") {
@@ -322,7 +413,8 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 1) {
+            if (n-- > 0)
+            {
                 taotrachnghiem();
             }
             else {
@@ -333,6 +425,12 @@ namespace GUI {
         private void xuiButton_A_Click(object sender, EventArgs e) {
             hideAllButton();
 
+            timer1.Stop();
+            countDown = time;
+            label_Time.Text = countDown.ToString();
+            label_Time.Visible = false;
+            xuiButton_retry.Enabled = false;
+
             isclick = true;
 
             if (key[2].ToString() == "A") {
@@ -341,7 +439,8 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 1) {
+            if (n-- > 0)
+            {
                 taotrachnghiem();
             }
             else {

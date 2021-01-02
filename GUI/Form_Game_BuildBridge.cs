@@ -28,6 +28,7 @@ namespace GUI {
         public Form_Game_BuildBridge(Form_Main father, int num, int time) {
             InitializeComponent();
 
+            pictureBox1.Hide();
             countDown = time;
             timeCountDown = time;
             n = num;
@@ -176,7 +177,6 @@ namespace GUI {
 
         private void xuiButton_retry_Click(object sender, EventArgs e) {
             BackgroundImage = Properties.Resources.brokesky;
-            label_Time.Show();
             positionX = 100;
             positionY = 360;
             point = 0;
@@ -198,6 +198,8 @@ namespace GUI {
             textBox_Answer.Show();
             textBox_Answer.Text = string.Empty;
             textBox_Answer.Select();
+            panel1.Show();
+            label_Time.Show();
 
             timer_Bridge.Start();
             timer_countDown.Start();
@@ -229,7 +231,9 @@ namespace GUI {
                 textBox_Answer.Hide();
                 isclick = true;
                 countDown = timeCountDown;
-                if (textBox_Answer.Text == key["Answer"].ToString()) {
+                if (textBox_Answer.Text == key["Answer"].ToString())
+                {
+                    pictureBox1.Show();
                     check = true;
                     point++;
                     if (n - 1 != 0) musicCorrect.Ctlcontrols.play();
@@ -251,15 +255,21 @@ namespace GUI {
 
         }
 
-        private void Form_Game_BuildBridge_Paint(object sender, PaintEventArgs e) {
-            if (lose) {
+        private void Form_Game_BuildBridge_Paint(object sender, PaintEventArgs e)
+        {
+            if (lose)
+            {
+                pictureBox1.Hide();
                 timer_countDown.Stop();
                 e.Graphics.DrawImage(run1, positionX, positionY);
                 e.Graphics.DrawImage((Properties.Resources.lose), positionX + 210, positionY - 50);
                 e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
                 label_Time.Hide();
             }
-            if (win) {
+
+            if (win)
+            {
+                pictureBox1.Hide();
                 timer_countDown.Stop();
                 if (positionX < 550) {
                     positionX += 10;
@@ -271,14 +281,23 @@ namespace GUI {
                 }
                 label_Time.Hide();
             }
-            else if (!isclick) e.Graphics.DrawImage(run1, positionX, positionY);
+            else if (!isclick)
+            {
+                pictureBox1.Hide();
+                e.Graphics.DrawImage(run1, positionX, positionY);
+            }
 
-            if (isclick) {
-                if (check && !win && !lose) {
-                    if (time++ < 15) {
-                        e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
+            if (isclick)
+            {
+                if (check && !win && !lose)
+                {
+                    if (time++ < 100)
+                    {
+                       // e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
                     }
-                    else {
+                    else
+                    {
+                        pictureBox1.Hide();
                         isclick = false;
                         textBox_Answer.Show();
                         textBox_Answer.Text = string.Empty;
@@ -310,7 +329,9 @@ namespace GUI {
                 textBox_Answer.Hide();
                 isclick = true;
                 countDown = timeCountDown;
-                if (textBox_Answer.Text == key["Answer"].ToString()) {
+                if (textBox_Answer.Text == key["Answer"].ToString())
+                {
+                    pictureBox1.Show();
                     check = true;
                     point++;
                     if (n - 1 != 0) musicCorrect.Ctlcontrols.play();
