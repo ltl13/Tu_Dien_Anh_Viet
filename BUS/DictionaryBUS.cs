@@ -75,8 +75,10 @@ namespace BUS {
             return DictionaryDAO.Instance.GetDictionary("_vi_en");
         }
 
-        public List<EnViDTO> GetFavorite() {
-            return ToList<EnViDTO>(DictionaryDAO.Instance.GetDictionary("favorite"));
+        public List<EnViDTO> GetFavorite(int userID) {
+            DataTable data = DictionaryDAO.Instance.GetFavorite(userID);
+            data.Columns.Remove("ID");
+            return ToList<EnViDTO>(data);
         }
 
         public List<EnViDTO> GetRecentlyEnVi() {
@@ -99,8 +101,13 @@ namespace BUS {
             return DictionaryDAO.Instance.GetVocabulary(fileName);
         }
 
-        public void SetFavorite(List<EnViDTO> favorite) {
-            DictionaryDAO.Instance.SetDictionary(ToDataTable<EnViDTO>(favorite), "favorite");
+        public void SetFavorite(int userID, List<EnViDTO> favorite) {
+            DataTable data = ToDataTable<EnViDTO>(favorite);
+            data.Columns.Add("ID");
+            for (int i = 0; i < data.Rows.Count; i++) {
+                data.Rows[i]["ID"] = userID;
+            }
+            DictionaryDAO.Instance.SetFavorite(userID, data);
         }
 
         public void SetRecentlyEnVi(List<EnViDTO> recentlyEnVi) {

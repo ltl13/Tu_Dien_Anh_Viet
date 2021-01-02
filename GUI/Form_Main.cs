@@ -36,7 +36,7 @@ namespace GUI {
 
             this.FocusMe();
             this.loginAccount = loginAccount;
-            this.favorite = BUS.DictionaryBUS.Instance.GetFavorite();
+            this.favorite = BUS.DictionaryBUS.Instance.GetFavorite(loginAccount.ID);
             this.recentlyEnVi = BUS.DictionaryBUS.Instance.GetRecentlyEnVi();
             this.recentlyViEn = BUS.DictionaryBUS.Instance.GetRecentlyViEn();
             this.father = login;
@@ -220,7 +220,7 @@ namespace GUI {
 
         #region UX
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
-            BUS.DictionaryBUS.Instance.SetFavorite(favorite);
+            BUS.DictionaryBUS.Instance.SetFavorite(loginAccount.ID, favorite);
             BUS.DictionaryBUS.Instance.SetRecentlyEnVi(recentlyEnVi);
             BUS.DictionaryBUS.Instance.SetRecentlyViEn(recentlyViEn);
         }
