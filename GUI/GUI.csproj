@@ -469,6 +469,7 @@
     <None Include="Resources\Medical.png" />
     <None Include="Resources\BuildBridge\Hammer.gif" />
     <Content Include="dictionary.ico" />
+    <None Include="Resources\dictionary.ico" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>
