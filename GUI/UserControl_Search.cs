@@ -1,7 +1,6 @@
 ﻿using BUS;
 using DTO;
 using System;
-using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -112,7 +111,7 @@ namespace GUI {
 
                         listBox_Search.Visible = true;
                     }
-                    
+
                 }
             }
             else {

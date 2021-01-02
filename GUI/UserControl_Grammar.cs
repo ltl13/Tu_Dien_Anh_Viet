@@ -1,8 +1,5 @@
-using System.Windows.Forms;
 using System;
-using System.Runtime.InteropServices;
-using System.Drawing.Text;
-using System.Drawing;
+using System.Windows.Forms;
 
 namespace GUI {
     public partial class UserControl_Grammar : UserControl {
@@ -12,24 +9,17 @@ namespace GUI {
 
         public UserControl_Grammar(Form_Main father) {
             InitializeComponent();
+
             this.father = father;
-            
         }
 
-        //private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
-
-
-        private void button_Game_BuildBridge_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (int.Parse(metroTextBox_Number.Text) > 100)
-                {
+        private void button_Game_BuildBridge_Click(object sender, EventArgs e) {
+            try {
+                if (int.Parse(metroTextBox_Number.Text) > 100) {
                     label_Error.Text = "Number of question is invalid";
                     label_Error2.Text = "Time is invalid";
                 }
-                else
-                {
+                else {
                     fGameBuildBridge = new Form_Game_BuildBridge(father, int.Parse(metroTextBox_Number.Text), int.Parse(metroTextBox_Time.Text));
                     fGameBuildBridge.Show();
                     this.father.Visible = false;
@@ -37,24 +27,19 @@ namespace GUI {
                     label_Error2.Text = "";
                 }
             }
-            catch
-            { 
-                label_Error.Text = "Number of question is invalid"; 
+            catch {
+                label_Error.Text = "Number of question is invalid";
                 label_Error2.Text = "Time is invalid";
             }
         }
 
-        private void button_Game_CarRacing_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (int.Parse(metroTextBox_Number.Text) > 100)
-                {
+        private void button_Game_CarRacing_Click(object sender, EventArgs e) {
+            try {
+                if (int.Parse(metroTextBox_Number.Text) > 100) {
                     label_Error.Text = "Number of question is invalid";
                     label_Error2.Text = "Time is invalid";
                 }
-                else
-                {
+                else {
                     fGameCarRacing = new Form_Game_CarRacing(father, int.Parse(metroTextBox_Number.Text), int.Parse(metroTextBox_Time.Text));
                     fGameCarRacing.Show();
                     this.father.Visible = false;
@@ -62,12 +47,10 @@ namespace GUI {
                     label_Error2.Text = "";
                 }
             }
-            catch
-            {
+            catch {
                 label_Error.Text = "Number of question is invalid";
                 label_Error2.Text = "Time is invalid";
             }
         }
-
     }
 }

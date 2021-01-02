@@ -1,20 +1,14 @@
-﻿using System;
+﻿using AxWMPLib;
+using BUS;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using AxWMPLib;
-using BUS;
 
-namespace GUI
-{
-    public partial class Form_Game_CarRacing : Form
-    {
+namespace GUI {
+    public partial class Form_Game_CarRacing : Form {
         Form_Main father;
         DataTable items;
 
@@ -32,8 +26,7 @@ namespace GUI
         DataRow key;
         private List<DataRow> listQuestion = new List<DataRow>();
 
-        public Form_Game_CarRacing(Form_Main father, int num, int time)
-        {
+        public Form_Game_CarRacing(Form_Main father, int num, int time) {
             InitializeComponent();
 
             pictureBox1.Hide();
@@ -126,12 +119,10 @@ namespace GUI
         #endregion
 
         #region Draw
-        private Bitmap Run_2D_Draw()
-        {
+        private Bitmap Run_2D_Draw() {
             RunFrames = new Bitmap[] { run1, run2, run3, run4, run5, run6, run7, run8, run9, run10, run11 };
 
-            if (iCar < RunFrames.Length)
-            {
+            if (iCar < RunFrames.Length) {
                 RunFrame = RunFrames[iCar];
                 iCar++;
             }
@@ -139,12 +130,10 @@ namespace GUI
             return RunFrame;
         }
 
-        private Bitmap Coin_2D_Draw()
-        {
+        private Bitmap Coin_2D_Draw() {
             CoinFrames = new Bitmap[] { coin1, coin2, coin3, coin4, coin5, coin6, coin7, coin8 };
 
-            if (iCoin < CoinFrames.Length)
-            {
+            if (iCoin < CoinFrames.Length) {
                 CoinFrame = CoinFrames[iCoin];
                 iCoin++;
             }
@@ -152,12 +141,10 @@ namespace GUI
             return CoinFrame;
         }
 
-        private Bitmap Gift_2D_Draw()
-        {
+        private Bitmap Gift_2D_Draw() {
             GiftFrames = new Bitmap[] { gift1, gift2, gift3, gift4, gift5, gift6, gift7, gift8, gift9, gift10, gift11, gift12, gift13 };
 
-            if (iGift < GiftFrames.Length)
-            {
+            if (iGift < GiftFrames.Length) {
                 GiftFrame = GiftFrames[iGift];
                 iGift++;
             }
@@ -167,8 +154,7 @@ namespace GUI
         #endregion
 
         #region Close Music
-        void stopAllMusic()
-        {
+        void stopAllMusic() {
             musicBackGround.Ctlcontrols.stop();
             musicCoin.Ctlcontrols.stop();
             musicBoom.Ctlcontrols.stop();
@@ -191,31 +177,27 @@ namespace GUI
 
                 if (check && isclick && !colision) e.Graphics.DrawImage(Coin_2D_Draw(), positionXcoin, positionYcoin);
             else if (!check && isclick && !colision) e.Graphics.DrawImage(rock, positionXcoin, positionYcoin);
-            else if (!check && isclick && isboom)
-            {
+            else if (!check && isclick && isboom) {
                 e.Graphics.DrawImage(pow, positionXcoin, positionYcoin);
                 pictureBox1.Show();
                 musicBoom.Ctlcontrols.play();
                 isboom = false;
             }
-            
+
             if (!isclick) e.Graphics.DrawImage(Gift_2D_Draw(), positionXcoin - 140, positionYcoin - 70);
 
-            if (isclick)
-            {
+            if (isclick) {
                 positionXcar += 25;
-                if (positionXcar + RunFrame.Width == positionXcoin && check)
-                {
+                if (positionXcar + RunFrame.Width == positionXcoin && check) {
                     colision = true;
                     musicCoin.Ctlcontrols.play();
                 }
-                else if (positionXcar + RunFrame.Width == positionXcoin && !check)
-                {
+                else if (positionXcar + RunFrame.Width == positionXcoin && !check) {
                     isboom = true;
                     colision = true;
                 }
             }
-            
+
             if (positionXcar > 1500)
             {
                 showAllButton();
@@ -250,8 +232,7 @@ namespace GUI
         }
 
         #region Button Click
-        private void xuiButton_retry_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_retry_Click(object sender, EventArgs e) {
             point = 0;
             n = numberOfQuestion;
             countDown = time;
@@ -272,8 +253,7 @@ namespace GUI
             taotrachnghiem();
         }
 
-        private void xuiButton_Music_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_Music_Click(object sender, EventArgs e) {
             music = !music;
             if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
         }
@@ -286,8 +266,7 @@ namespace GUI
             this.Close();
         }
 
-        public void ketthuc()
-        {
+        public void ketthuc() {
             timer1.Stop();
             label_Time.Visible = false;
             label_NumQues.Visible = false;
@@ -309,8 +288,7 @@ namespace GUI
             label_Question.Visible = true;
         }
 
-        public void taotrachnghiem()
-        {
+        public void taotrachnghiem() {
             label_NumQues.Text = n.ToString();
 
             countDown = time;
@@ -342,8 +320,7 @@ namespace GUI
             }
         }
 
-        private void timer_carRacing_Tick(object sender, EventArgs e)
-        {
+        private void timer_carRacing_Tick(object sender, EventArgs e) {
             Invalidate();
         }
 
@@ -357,8 +334,7 @@ namespace GUI
             label_Question.Visible = false;
         }
 
-        void showAllButton()
-        {
+        void showAllButton() {
             xuiButton_A.Visible = true;
             xuiButton_B.Visible = true;
             xuiButton_C.Visible = true;
@@ -368,8 +344,7 @@ namespace GUI
             label_NumQues.Visible = true;
         }
 
-        private void xuiButton_D_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_D_Click(object sender, EventArgs e) {
             hideAllButton();
 
             timer1.Stop();
@@ -380,8 +355,7 @@ namespace GUI
 
             isclick = true;
 
-            if (key[2].ToString() == "D")
-            {
+            if (key[2].ToString() == "D") {
                 point++;
                 check = true;
             }
@@ -391,14 +365,12 @@ namespace GUI
             {
                 taotrachnghiem();
             }
-            else
-            {
+            else {
                 ketthuc();
             }
         }
 
-        private void xuiButton_C_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_C_Click(object sender, EventArgs e) {
             hideAllButton();
 
             timer1.Stop();
@@ -409,8 +381,7 @@ namespace GUI
 
             isclick = true;
 
-            if (key[2].ToString() == "C")
-            {
+            if (key[2].ToString() == "C") {
                 point++;
                 check = true;
             }
@@ -420,14 +391,12 @@ namespace GUI
             {
                 taotrachnghiem();
             }
-            else
-            {
+            else {
                 ketthuc();
             }
         }
 
-        private void xuiButton_B_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_B_Click(object sender, EventArgs e) {
             hideAllButton();
 
             timer1.Stop();
@@ -438,8 +407,7 @@ namespace GUI
 
             isclick = true;
 
-            if (key[2].ToString() == "B")
-            {
+            if (key[2].ToString() == "B") {
                 point++;
                 check = true;
             }
@@ -449,14 +417,12 @@ namespace GUI
             {
                 taotrachnghiem();
             }
-            else
-            {
+            else {
                 ketthuc();
             }
         }
 
-        private void xuiButton_A_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_A_Click(object sender, EventArgs e) {
             hideAllButton();
 
             timer1.Stop();
@@ -467,8 +433,7 @@ namespace GUI
 
             isclick = true;
 
-            if (key[2].ToString() == "A")
-            {
+            if (key[2].ToString() == "A") {
                 point++;
                 check = true;
             }
@@ -478,8 +443,7 @@ namespace GUI
             {
                 taotrachnghiem();
             }
-            else
-            {
+            else {
                 ketthuc();
             }
         }

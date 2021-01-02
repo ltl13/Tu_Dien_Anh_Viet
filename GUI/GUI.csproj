@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>dictionary_icon.ico</ApplicationIcon>
+    <ApplicationIcon>dictionary.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
@@ -403,8 +403,6 @@
     <None Include="Resources\user.png" />
     <None Include="Resources\vegetables.jpg" />
     <None Include="Resources\volume.png" />
-    <None Include="Resources\dictionary_icon.ico" />
-    <Content Include="dictionary_icon.ico" />
     <None Include="Resources\console1.png" />
     <None Include="Resources\CarRacing\car0.png" />
     <None Include="Resources\CarRacing\car1.png" />
@@ -470,6 +468,8 @@
     <None Include="Resources\Math.png" />
     <None Include="Resources\Medical.png" />
     <None Include="Resources\BuildBridge\Hammer.gif" />
+    <Content Include="dictionary.ico" />
+    <None Include="Resources\dictionary.ico" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

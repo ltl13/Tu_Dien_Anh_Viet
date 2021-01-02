@@ -195,7 +195,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1123, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 57);
+            this.label1.Size = new System.Drawing.Size(100, 35);
             this.label1.TabIndex = 21;
             this.label1.Text = "Question";
             // 
@@ -206,7 +206,7 @@
             this.label_NumQues.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_NumQues.Location = new System.Drawing.Point(1229, 13);
             this.label_NumQues.Name = "label_NumQues";
-            this.label_NumQues.Size = new System.Drawing.Size(173, 57);
+            this.label_NumQues.Size = new System.Drawing.Size(106, 35);
             this.label_NumQues.TabIndex = 22;
             this.label_NumQues.Text = "numQues";
             // 

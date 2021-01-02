@@ -1,8 +1,4 @@
-﻿using DTO;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.IO;
 
 namespace DAO {
@@ -24,6 +20,24 @@ namespace DAO {
         #endregion
 
         #region method
+        public DataTable GetFavorite(int userID) {
+            string query = "SELECT * FROM dbo.[FavoriteWord] WHERE ID = " + userID;
+
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
+
+        public void SetFavorite(int userID, DataTable favorite) {
+            string query = "DELETE FROM dbo.[FavoriteWord] WHERE ID = " + userID;
+
+            DataProvider.Instance.ExecuteNonQuery(query);
+
+            query = "";
+            for (int i = 0; i < favorite.Rows.Count; i++) {
+                query += string.Format("INSERT INTO dbo.[FavoriteWord] VALUES ({0}, '{1}', '{2}');", favorite.Rows[i]["ID"], favorite.Rows[i]["English"], favorite.Rows[i]["VietNamese"]);
+            }
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
         public DataTable GetDictionary(string fileName) {
             string path = string.Format(@"..\..\..\resources\dictionary\{0}.json", fileName);
 

@@ -7,7 +7,7 @@ namespace GUI {
         private UserControl_Exam father;
         System.Collections.Generic.List<UserControl_Exam_Do.yourTest> result;
         private Button[] button;
-        
+
         public UserControl_Exam_Result(UserControl_Exam userControl_Exam, System.Collections.Generic.List<UserControl_Exam_Do.yourTest> result) {
             InitializeComponent();
 
@@ -21,7 +21,7 @@ namespace GUI {
         }
 
         public void Init(Button button, int i, UserControl_Exam_Do.yourTest result) {
-            button = new Button();            
+            button = new Button();
 
             if (string.IsNullOrEmpty(result.Choice)) {
                 button.BackColor = Color.Silver;

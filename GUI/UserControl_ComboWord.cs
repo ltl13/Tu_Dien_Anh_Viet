@@ -254,8 +254,7 @@ namespace GUI {
         #endregion
 
         #region Color
-        private void bt_Color_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void bt_Color_MouseDown(object sender, MouseEventArgs e) {
             ResetSize(flowLayoutPanel_ComboWord6);
             dataSet = DictionaryBUS.Instance.GetVocabulary(bt_Color.Text);
             dataGridView.DataSource = dataSet.Tables[bt_Color.Text];
@@ -265,41 +264,34 @@ namespace GUI {
             lb_comboWords.Show();
         }
 
-        private void bt_Color_MouseEnter(object sender, EventArgs e)
-        {
+        private void bt_Color_MouseEnter(object sender, EventArgs e) {
             bt_Vegetables.FlatStyle = FlatStyle.Popup;
         }
 
-        private void bt_Color_MouseLeave(object sender, EventArgs e)
-        {
+        private void bt_Color_MouseLeave(object sender, EventArgs e) {
             bt_Vegetables.FlatStyle = FlatStyle.Flat;
         }
         #endregion
 
         #region Math
-        private void bt_Math_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void bt_Math_MouseDown(object sender, MouseEventArgs e) {
             dataSet = DictionaryBUS.Instance.GetVocabulary(bt_Math.Text);
             ResetSize(flowLayoutPanel_ComboWord7);
-            if (flowLayoutPanel_ComboWord7.Size == flowLayoutPanel_ComboWord7.MaximumSize)
-            {
+            if (flowLayoutPanel_ComboWord7.Size == flowLayoutPanel_ComboWord7.MaximumSize) {
                 flowLayoutPanel_ComboWord7.Size = flowLayoutPanel_ComboWord7.MinimumSize;
             }
             else { flowLayoutPanel_ComboWord7.Size = flowLayoutPanel_ComboWord7.MaximumSize; }
         }
 
-        private void bt_Math_MouseEnter(object sender, EventArgs e)
-        {
+        private void bt_Math_MouseEnter(object sender, EventArgs e) {
             bt_Vegetables.FlatStyle = FlatStyle.Popup;
         }
 
-        private void bt_Math_MouseLeave(object sender, EventArgs e)
-        {
+        private void bt_Math_MouseLeave(object sender, EventArgs e) {
             bt_Vegetables.FlatStyle = FlatStyle.Flat;
         }
 
-        private void xuiButton_Calculation_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Calculation_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Calculation.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -307,8 +299,7 @@ namespace GUI {
             lb_comboWords.Show();
         }
 
-        private void xuiButton_Cubes_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Cubes_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Cubes.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -316,8 +307,7 @@ namespace GUI {
             lb_comboWords.Show();
         }
 
-        private void xuiButton_Terminologie_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Terminologie_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Terminologie.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -327,29 +317,24 @@ namespace GUI {
         #endregion
 
         #region Medical
-        private void bt_Medical_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void bt_Medical_MouseDown(object sender, MouseEventArgs e) {
             dataSet = DictionaryBUS.Instance.GetVocabulary(bt_Medical.Text);
             ResetSize(flowLayoutPanel_ComboWord8);
-            if (flowLayoutPanel_ComboWord8.Size == flowLayoutPanel_ComboWord8.MaximumSize)
-            {
+            if (flowLayoutPanel_ComboWord8.Size == flowLayoutPanel_ComboWord8.MaximumSize) {
                 flowLayoutPanel_ComboWord8.Size = flowLayoutPanel_ComboWord8.MinimumSize;
             }
             else { flowLayoutPanel_ComboWord8.Size = flowLayoutPanel_ComboWord8.MaximumSize; }
         }
 
-        private void bt_Medical_MouseEnter(object sender, EventArgs e)
-        {
+        private void bt_Medical_MouseEnter(object sender, EventArgs e) {
             bt_Vegetables.FlatStyle = FlatStyle.Popup;
         }
 
-        private void bt_Medical_MouseLeave(object sender, EventArgs e)
-        {
+        private void bt_Medical_MouseLeave(object sender, EventArgs e) {
             bt_Vegetables.FlatStyle = FlatStyle.Flat;
         }
 
-        private void xuiButton_Diseases_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Diseases_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Diseases.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -357,8 +342,7 @@ namespace GUI {
             lb_comboWords.Show();
         }
 
-        private void xuiButton_Medical_instruments_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Medical_instruments_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Medical_instruments.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -366,8 +350,7 @@ namespace GUI {
             lb_comboWords.Show();
         }
 
-        private void xuiButton_Doctor_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Doctor_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Doctor.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -375,8 +358,7 @@ namespace GUI {
             lb_comboWords.Show();
         }
 
-        private void xuiButton_Hospital_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Hospital_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Hospital.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -384,8 +366,7 @@ namespace GUI {
             lb_comboWords.Show();
         }
 
-        private void xuiButton_Faculties_MouseDown(object sender, MouseEventArgs e)
-        {
+        private void xuiButton_Faculties_MouseDown(object sender, MouseEventArgs e) {
             dataGridView.DataSource = dataSet.Tables[xuiButton_Faculties.ButtonText];
             dataGridView.Show();
             xuiButton_Back.Show();
@@ -495,6 +476,6 @@ namespace GUI {
             dataGridView_DataSourceChanged(sender, e);
         }
 
-        
+
     }
 }

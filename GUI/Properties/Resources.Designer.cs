@@ -423,9 +423,9 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon dictionary_icon {
+        internal static System.Drawing.Icon dictionary1 {
             get {
-                object obj = ResourceManager.GetObject("dictionary_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("dictionary1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

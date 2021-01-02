@@ -1,5 +1,4 @@
-﻿using BUS;
-using DTO;
+﻿using DTO;
 using SpeechLib;
 using System;
 using System.Linq;

@@ -27,7 +27,6 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lbMotto = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
-            this.icon = new System.Windows.Forms.PictureBox();
             this.btLogin = new System.Windows.Forms.Button();
             this.lbPassword = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
@@ -40,9 +39,10 @@
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.xuiFlatProgressBar_Login = new XanderUI.XUIFlatProgressBar();
+            this.icon = new System.Windows.Forms.PictureBox();
             this.pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.pnlFooter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -79,16 +79,6 @@
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Daily Dictionary";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // icon
-            // 
-            this.icon.Image = global::GUI.Properties.Resources.dictionary;
-            this.icon.Location = new System.Drawing.Point(30, 25);
-            this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(65, 65);
-            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.icon.TabIndex = 0;
-            this.icon.TabStop = false;
             // 
             // btLogin
             // 
@@ -243,6 +233,16 @@
             this.xuiFlatProgressBar_Login.TabIndex = 14;
             this.xuiFlatProgressBar_Login.Value = 0;
             // 
+            // icon
+            // 
+            this.icon.Image = global::GUI.Properties.Resources.dictionary;
+            this.icon.Location = new System.Drawing.Point(30, 25);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(65, 65);
+            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.icon.TabIndex = 0;
+            this.icon.TabStop = false;
+            // 
             // Form_Login
             // 
             this.AcceptButton = this.btLogin;
@@ -266,9 +266,9 @@
             this.VisibleChanged += new System.EventHandler(this.Form_Login_VisibleChanged);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.ResumeLayout(false);
 
         }
