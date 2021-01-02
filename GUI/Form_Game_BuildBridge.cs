@@ -293,23 +293,23 @@ namespace GUI
                 e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
                 label_Time.Hide();
             }
-            if (win)
-            {
+            if (win) {
                 pictureBox1.Hide();
                 timer_countDown.Stop();
-                if (positionX < 550)
-                {
+                if (positionX < 550) {
                     positionX += 10;
                     e.Graphics.DrawImage(Run_2D_Draw(), positionX, positionY);
                 }
-                else
-                {
+                else {
                     e.Graphics.DrawImage(run1, positionX, positionY);
                     e.Graphics.DrawImage((Properties.Resources.win), positionX - 240, positionY - 100);
                 }
                 label_Time.Hide();
             }
-            else if (!isclick) e.Graphics.DrawImage(run1, positionX, positionY);
+            else if (!isclick) {
+                pictureBox1.Hide();
+                e.Graphics.DrawImage(run1, positionX, positionY);
+            }
 
             if (isclick)
             {
