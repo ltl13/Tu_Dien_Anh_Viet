@@ -18,7 +18,7 @@ namespace GUI {
         AxWindowsMediaPlayer musicvictory;
         AxWindowsMediaPlayer musicLose;
 
-        bool win = false, lose = false, check = false, isclick = false, music = false;
+        bool win = false, lose = false, check = false, isclick = false, music = true;
         int time = 0, countDown, timeCountDown, numberOfQuestion, n, point = 0;
 
         int iRun = 0, iBoom = 0, iHam = 0;
@@ -29,6 +29,7 @@ namespace GUI {
             InitializeComponent();
 
             pictureBox1.Hide();
+            pictureBox2.Hide();
             countDown = time;
             timeCountDown = time;
             n = num;
@@ -66,6 +67,7 @@ namespace GUI {
 
             stopAllMusic();
 
+            musicBackGround.Ctlcontrols.play();
             key = items.Rows[rand.Next(0, items.Rows.Count)];
             label_Question.Text = key["Question"].ToString();
             timer_Bridge.Start();
@@ -186,11 +188,13 @@ namespace GUI {
 
             stopAllMusic();
 
+            musicBackGround.Ctlcontrols.play();
+
             win = false;
             lose = false;
             check = false;
             isclick = false;
-            music = false;
+            music = true;
 
             key = items.Rows[rand.Next(0, items.Rows.Count)];
             label_Question.Text = key["Question"].ToString();
@@ -243,6 +247,7 @@ namespace GUI {
                     timer_Bridge.Start();
                 }
                 else {
+                    pictureBox2.Show();
                     check = false;
                     musicWrong.Ctlcontrols.play();
                     isclick = true;
@@ -260,16 +265,18 @@ namespace GUI {
             if (lose)
             {
                 pictureBox1.Hide();
+                pictureBox2.Show();
                 timer_countDown.Stop();
                 e.Graphics.DrawImage(run1, positionX, positionY);
                 e.Graphics.DrawImage((Properties.Resources.lose), positionX + 210, positionY - 50);
-                e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
+                //e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
                 label_Time.Hide();
             }
 
             if (win)
             {
                 pictureBox1.Hide();
+                pictureBox2.Hide();
                 timer_countDown.Stop();
                 if (positionX < 550) {
                     positionX += 10;
@@ -284,6 +291,7 @@ namespace GUI {
             else if (!isclick)
             {
                 pictureBox1.Hide();
+                pictureBox2.Hide();
                 e.Graphics.DrawImage(run1, positionX, positionY);
             }
 
@@ -298,6 +306,7 @@ namespace GUI {
                     else
                     {
                         pictureBox1.Hide();
+                        pictureBox2.Hide();
                         isclick = false;
                         textBox_Answer.Show();
                         textBox_Answer.Text = string.Empty;
@@ -306,9 +315,9 @@ namespace GUI {
                     }
                 }
                 else if (!check && !lose && !win) {
-                    if (time++ < 8) {
+                    if (time++ < 80) {
                         e.Graphics.DrawImage(run1, positionX, positionY);
-                        e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
+                     //   e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
                     }
                     else {
                         isclick = false;
@@ -341,6 +350,7 @@ namespace GUI {
                     timer_Bridge.Start();
                 }
                 else {
+                    pictureBox2.Show();
                     check = false;
                     musicWrong.Ctlcontrols.play();
                     isclick = true;

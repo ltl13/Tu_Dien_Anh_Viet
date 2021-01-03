@@ -220,9 +220,15 @@ namespace GUI {
 
         #region UX
         private void Form_Main_FormClosing(object sender, FormClosingEventArgs e) {
-            BUS.DictionaryBUS.Instance.SetFavorite(loginAccount.ID, favorite);
             BUS.DictionaryBUS.Instance.SetRecentlyEnVi(recentlyEnVi);
             BUS.DictionaryBUS.Instance.SetRecentlyViEn(recentlyViEn);
+
+            try {
+                BUS.DictionaryBUS.Instance.SetFavorite(loginAccount.ID, favorite);
+            }
+            catch {
+                MessageBox.Show("Không thể lưu từ yêu thích do không thể kết nối tới database", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void pictureBox_Search_MouseDown(object sender, MouseEventArgs e) {

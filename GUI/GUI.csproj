@@ -50,6 +50,10 @@
   <PropertyGroup>
     <ApplicationIcon>dictionary.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -470,6 +474,7 @@
     <None Include="Resources\BuildBridge\Hammer.gif" />
     <Content Include="dictionary.ico" />
     <None Include="Resources\dictionary.ico" />
+    <None Include="Resources\BuildBridge\bum.gif" />
     <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>

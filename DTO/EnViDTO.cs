@@ -24,6 +24,32 @@
             this.vietNamese = row["VietNamese"].ToString();
         }
 
+        public static bool operator==(EnViDTO word1, EnViDTO word2) {
+            if (word1.english == word2.english && word1.vietNamese == word2.vietNamese) {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator !=(EnViDTO word1, EnViDTO word2) {
+            if (word1.english == word2.english && word1.vietNamese == word2.vietNamese) {
+                return false;
+            }
+            return true;
+        }
+
+        public bool Equals(EnViDTO other) {
+            return this == other;
+        }
+
+        public override int GetHashCode() {
+            return 1;
+        }
+
+        public override bool Equals(object obj) {
+            return Equals(obj as EnViDTO);
+        }
+
         public string getPronunciation() {
             return vietNamese.Substring(0, vietNamese.IndexOf('|', vietNamese.IndexOf('|') + 1)).Replace("|@", "").Replace(english, "").Trim();
         }

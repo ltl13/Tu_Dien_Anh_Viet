@@ -25,8 +25,9 @@ namespace DAO.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-45NJQVA\\SQLEXPRESS;Initial Catalog=DailyDictionary;Integrated" +
-            " Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Server = 172.20.10.11,1433;Initial Catalog = DailyDictionary;User ID = sa;Passwor" +
+            "d = 123456;Integrated Security = False;Connect Timeout = 20; MultipleActiveResul" +
+            "tSets = True;")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));

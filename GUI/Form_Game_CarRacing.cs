@@ -16,7 +16,7 @@ namespace GUI {
         AxWindowsMediaPlayer musicCoin;
         AxWindowsMediaPlayer musicBoom;
 
-        bool check, isclick = false, music = false, colision = false, isboom = false;
+        bool check, isclick = false, music = true, colision = false, isboom = false;
         int time = 0, numberOfQuestion, n, point = 0, countDown;
         int iCoin = 0, iCar = 0, iGift = 0;
         int positionXcar = 30, positionYcar = 160;
@@ -62,6 +62,8 @@ namespace GUI {
             #endregion
 
             stopAllMusic();
+
+            musicBackGround.Ctlcontrols.play();
 
             taotrachnghiem();
 
@@ -233,6 +235,9 @@ namespace GUI {
 
         #region Button Click
         private void xuiButton_retry_Click(object sender, EventArgs e) {
+            musicBackGround.Ctlcontrols.play();
+            music = true;
+
             point = 0;
             n = numberOfQuestion;
             countDown = time;
