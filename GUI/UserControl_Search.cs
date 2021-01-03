@@ -54,7 +54,7 @@ namespace GUI {
 
             if (metroTextBox_Searchbar.Text != string.Empty) {
                 if (father.IsEnToVi) {
-                    Regex regex = new Regex(@"^[a-zA-Z0-9-.]*$");
+                    Regex regex = new Regex(@"^[a-zA-Z0-9-. ]*$");
 
                     if (!regex.IsMatch(metroTextBox_Searchbar.Text)) {
                         listBox_Search.Visible = false;
