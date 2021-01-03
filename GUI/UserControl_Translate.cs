@@ -42,7 +42,7 @@ namespace GUI {
                     try {
                         TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
                         client = new TranslatorService.LanguageServiceClient();
-                        _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "vi");
+                        _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F5", richTextBox_From.Text, "", "vi");
                         richTextBox_To.Text = _translatedText;
                     }
                     catch (Exception ex) {
@@ -53,7 +53,7 @@ namespace GUI {
                     try {
                         TranslatorService.LanguageServiceClient client = new TranslatorService.LanguageServiceClient();
                         client = new TranslatorService.LanguageServiceClient();
-                        _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F2", richTextBox_From.Text, "", "en");
+                        _translatedText = client.Translate("6CE9C85A41571C050C379F60DA173D286384E0F5", richTextBox_From.Text, "", "en");
                         richTextBox_To.Text = _translatedText;
                     }
                     catch (Exception ex) {

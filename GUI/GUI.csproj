@@ -362,6 +362,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="XanderUI.dll" />
     <None Include="Connected Services\TranslatorService\configuration91.svcinfo" />
     <None Include="Connected Services\TranslatorService\configuration.svcinfo" />
     <None Include="Connected Services\TranslatorService\Reference.svcmap">
@@ -475,7 +476,6 @@
     <Content Include="dictionary.ico" />
     <None Include="Resources\dictionary.ico" />
     <None Include="Resources\BuildBridge\bum.gif" />
-    <Content Include="XanderUI.dll" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
