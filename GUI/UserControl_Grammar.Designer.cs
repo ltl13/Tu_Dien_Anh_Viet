@@ -98,11 +98,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(183, 263);
+            this.label3.Location = new System.Drawing.Point(168, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(532, 35);
+            this.label3.Size = new System.Drawing.Size(551, 35);
             this.label3.TabIndex = 4;
-            this.label3.Text = "choose the game you wana play!!!";
+            this.label3.Text = "choose the game you wanna play!!!";
             // 
             // metroTextBox_Number
             // 
