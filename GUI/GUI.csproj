@@ -7,7 +7,7 @@
     <ProjectGuid>{73A4D6E2-437C-4895-B353-6DAA86FC45D3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GUI</RootNamespace>
-    <AssemblyName>Daily Dictionary</AssemblyName>
+    <AssemblyName>DailyDictionary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
