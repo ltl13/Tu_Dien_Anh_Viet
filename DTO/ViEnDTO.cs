@@ -24,6 +24,32 @@
             this.no_Accents_Mark_VietNamese = row["No_Accents_Mark_VietNamese"].ToString();
             this.english = row["English"].ToString();
         }
+
+        public static bool operator ==(ViEnDTO word1, ViEnDTO word2) {
+            if (word1.english == word2.english && word1.vietNamese == word2.vietNamese) {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator !=(ViEnDTO word1, ViEnDTO word2) {
+            if (word1.english == word2.english && word1.vietNamese == word2.vietNamese) {
+                return false;
+            }
+            return true;
+        }
+
+        public bool Equals(ViEnDTO other) {
+            return this == other;
+        }
+
+        public override int GetHashCode() {
+            return 1;
+        }
+
+        public override bool Equals(object obj) {
+            return Equals(obj as ViEnDTO);
+        }
         #endregion
 
         #region method

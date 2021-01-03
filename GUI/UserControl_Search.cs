@@ -21,7 +21,7 @@ namespace GUI {
         public UserControl_Search(Form_Main formMain) {
             InitializeComponent();
 
-            this.Father = formMain;
+            this.father = formMain;
             this.dataTableEnVi = DictionaryBUS.Instance.GetEnVi();
             this.dataTableViEn = DictionaryBUS.Instance.GetViEn();
 
@@ -53,7 +53,7 @@ namespace GUI {
             timer.Stop();
 
             if (metroTextBox_Searchbar.Text != string.Empty) {
-                if (Father.IsEnToVi) {
+                if (father.IsEnToVi) {
                     Regex regex = new Regex(@"^[a-zA-Z0-9-.]*$");
 
                     if (!regex.IsMatch(metroTextBox_Searchbar.Text)) {
@@ -115,13 +115,13 @@ namespace GUI {
                 }
             }
             else {
-                if (Father.IsEnToVi) {
-                    listBox_Search.DataSource = Father.RecentlyEnVi;
+                if (father.IsEnToVi) {
+                    listBox_Search.DataSource = father.RecentlyEnVi;
                     listBox_Search.DisplayMember = "English";
                     listBox_Search.Visible = true;
                 }
                 else {
-                    listBox_Search.DataSource = Father.RecentlyViEn;
+                    listBox_Search.DataSource = father.RecentlyViEn;
                     listBox_Search.DisplayMember = "Vietnamese";
                     listBox_Search.Visible = true;
                 }
@@ -130,11 +130,11 @@ namespace GUI {
 
         private void listBox_Search_Click(object sender, EventArgs e) {
             if (metroTextBox_Searchbar.Text == string.Empty) {
-                if (Father.IsEnToVi) {
+                if (father.IsEnToVi) {
                     isWordInfoOn = true;
                     EnViDTO wordSelected = (EnViDTO)listBox_Search.SelectedItem;
                     wordInfo = new UserControl_WordInfo(wordSelected, this);
-                    Father.panel_Main.Controls.Add(wordInfo);
+                    father.panel_Main.Controls.Add(wordInfo);
                     wordInfo.Show();
                     this.Hide();
                 }
@@ -142,28 +142,30 @@ namespace GUI {
                     isWordInfoOn = true;
                     ViEnDTO wordSelected = (ViEnDTO)listBox_Search.SelectedItem;
                     wordInfo = new UserControl_WordInfo(wordSelected, this);
-                    Father.panel_Main.Controls.Add(wordInfo);
+                    father.panel_Main.Controls.Add(wordInfo);
                     wordInfo.Show();
                     this.Hide();
                 }
             }
             else {
-                if (Father.IsEnToVi) {
+                if (father.IsEnToVi) {
                     isWordInfoOn = true;
                     DataRowView row = (DataRowView)listBox_Search.SelectedItem;
                     EnViDTO wordSelected = new EnViDTO(row);
-                    if (!Father.RecentlyEnVi.Contains(wordSelected)) {
-                        if (Father.RecentlyEnVi.Count == 15) {
-                            Father.RecentlyEnVi.RemoveAt(14);
+
+                    if (!father.RecentlyEnVi.Contains(wordSelected)) {
+                        if (father.RecentlyEnVi.Count == 15) {
+                            father.RecentlyEnVi.RemoveAt(14);
                         }
-                        Father.RecentlyEnVi.Insert(0, wordSelected);
+                        father.RecentlyEnVi.Insert(0, wordSelected);
                     }
                     else {
-                        Father.RecentlyEnVi.RemoveAt(Father.RecentlyEnVi.IndexOf(wordSelected));
-                        Father.RecentlyEnVi.Insert(0, wordSelected);
+                        father.RecentlyEnVi.RemoveAt(father.RecentlyEnVi.IndexOf(wordSelected));
+                        father.RecentlyEnVi.Insert(0, wordSelected);
                     }
+
                     wordInfo = new UserControl_WordInfo(wordSelected, this);
-                    Father.panel_Main.Controls.Add(wordInfo);
+                    father.panel_Main.Controls.Add(wordInfo);
                     wordInfo.Show();
                     this.Hide();
                 }
@@ -171,18 +173,20 @@ namespace GUI {
                     isWordInfoOn = true;
                     DataRowView row = (DataRowView)listBox_Search.SelectedItem;
                     ViEnDTO wordSelected = new ViEnDTO(row);
-                    if (!Father.RecentlyViEn.Contains(wordSelected)) {
-                        if (Father.RecentlyViEn.Count == 15) {
-                            Father.RecentlyViEn.RemoveAt(14);
+
+                    if (!father.RecentlyViEn.Contains(wordSelected)) {
+                        if (father.RecentlyViEn.Count == 15) {
+                            father.RecentlyViEn.RemoveAt(14);
                         }
-                        Father.RecentlyViEn.Insert(0, wordSelected);
+                        father.RecentlyViEn.Insert(0, wordSelected);
                     }
                     else {
-                        Father.RecentlyViEn.RemoveAt(Father.RecentlyViEn.IndexOf(wordSelected));
-                        Father.RecentlyViEn.Insert(0, wordSelected);
+                        father.RecentlyViEn.RemoveAt(father.RecentlyViEn.IndexOf(wordSelected));
+                        father.RecentlyViEn.Insert(0, wordSelected);
                     }
+
                     wordInfo = new UserControl_WordInfo(wordSelected, this);
-                    Father.panel_Main.Controls.Add(wordInfo);
+                    father.panel_Main.Controls.Add(wordInfo);
                     wordInfo.Show();
                     this.Hide();
                 }
@@ -196,13 +200,13 @@ namespace GUI {
 
         private void metroTextBox_Searchbar_Enter(object sender, EventArgs e) {
             if (metroTextBox_Searchbar.Text == string.Empty) {
-                if (Father.IsEnToVi) {
-                    listBox_Search.DataSource = Father.RecentlyEnVi;
+                if (father.IsEnToVi) {
+                    listBox_Search.DataSource = father.RecentlyEnVi;
                     listBox_Search.DisplayMember = "English";
                     listBox_Search.Visible = true;
                 }
                 else {
-                    listBox_Search.DataSource = Father.RecentlyViEn;
+                    listBox_Search.DataSource = father.RecentlyViEn;
                     listBox_Search.DisplayMember = "Vietnamese";
                     listBox_Search.Visible = true;
                 }

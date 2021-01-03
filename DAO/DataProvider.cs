@@ -8,7 +8,7 @@ namespace DAO {
     public class DataProvider {
         #region properties
         private static DataProvider instance;
-        private static string connectionString = Properties.Settings.Default.ConnectionString;
+        private static string connectionString = DAO.Properties.Settings.Default.ConnectionString;
 
         public static DataProvider Instance {
             get {
