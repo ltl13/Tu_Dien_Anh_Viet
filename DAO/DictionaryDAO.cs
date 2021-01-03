@@ -33,7 +33,7 @@ namespace DAO {
 
             query = "";
             for (int i = 0; i < favorite.Rows.Count; i++) {
-                query += string.Format("INSERT INTO dbo.[FavoriteWord] VALUES ({0}, '{1}', '{2}');", favorite.Rows[i]["ID"], favorite.Rows[i]["English"], favorite.Rows[i]["VietNamese"]);
+                query += string.Format("INSERT INTO dbo.[FavoriteWord] VALUES ({0}, N'{1}', N'{2}');", favorite.Rows[i]["ID"], favorite.Rows[i]["English"], favorite.Rows[i]["VietNamese"]);
             }
             DataProvider.Instance.ExecuteNonQuery(query);
         }

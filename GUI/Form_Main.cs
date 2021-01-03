@@ -226,8 +226,10 @@ namespace GUI {
             try {
                 BUS.DictionaryBUS.Instance.SetFavorite(loginAccount.ID, favorite);
             }
-            catch {
-                MessageBox.Show("Không thể lưu từ yêu thích do không thể kết nối tới database", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            catch (Exception ex) {
+                if (ex is System.Data.SqlClient.SqlException) {
+                    MessageBox.Show("Không thể lưu từ yêu thích do không thể kết nối tới database", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
