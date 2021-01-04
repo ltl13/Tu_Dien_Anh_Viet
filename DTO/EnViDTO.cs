@@ -24,7 +24,7 @@
             this.vietNamese = row["VietNamese"].ToString();
         }
 
-        public static bool operator==(EnViDTO word1, EnViDTO word2) {
+        public static bool operator ==(EnViDTO word1, EnViDTO word2) {
             if (word1.english == word2.english && word1.vietNamese == word2.vietNamese) {
                 return true;
             }

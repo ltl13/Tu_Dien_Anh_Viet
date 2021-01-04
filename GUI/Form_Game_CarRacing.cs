@@ -163,21 +163,18 @@ namespace GUI {
         }
         #endregion
 
-        private void Form_Game_CarRacing_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (father != null)
-            {
+        private void Form_Game_CarRacing_FormClosing(object sender, FormClosingEventArgs e) {
+            if (father != null) {
                 father.Dispose();
             }
         }
 
-        private void Form_Game_CarRacing_Paint(object sender, PaintEventArgs e)
-        {
+        private void Form_Game_CarRacing_Paint(object sender, PaintEventArgs e) {
             e.Graphics.DrawImage(Run_2D_Draw(), positionXcar, positionYcar);
 
             if (positionXcar + RunFrame.Width > 1400) pictureBox1.Hide();
 
-                if (check && isclick && !colision) e.Graphics.DrawImage(Coin_2D_Draw(), positionXcoin, positionYcoin);
+            if (check && isclick && !colision) e.Graphics.DrawImage(Coin_2D_Draw(), positionXcoin, positionYcoin);
             else if (!check && isclick && !colision) e.Graphics.DrawImage(rock, positionXcoin, positionYcoin);
             else if (!check && isclick && isboom) {
                 e.Graphics.DrawImage(pow, positionXcoin, positionYcoin);
@@ -200,24 +197,19 @@ namespace GUI {
                 }
             }
 
-            if (positionXcar > 1500)
-            {
+            if (positionXcar > 1500) {
                 showAllButton();
 
-                if (n > 0)
-                {
+                if (n > 0) {
                     label_Time.Visible = true;
                     timer1.Start();
                 }
-                else
-                {
+                else {
                     hideAllButton();
-                    if ((float)point / numberOfQuestion >= 0.8)
-                    {
+                    if ((float)point / numberOfQuestion >= 0.8) {
                         label_Question.Text = "You win";
                     }
-                    else
-                    {
+                    else {
                         label_Question.Text = "You lose";
                     }
 
@@ -263,8 +255,7 @@ namespace GUI {
             if (music) musicBackGround.Ctlcontrols.play(); else musicBackGround.Ctlcontrols.stop();
         }
 
-        private void xuiButton_Back_Click(object sender, EventArgs e)
-        {
+        private void xuiButton_Back_Click(object sender, EventArgs e) {
             this.FormClosing -= this.Form_Game_CarRacing_FormClosing;
             father.Show();
             stopAllMusic();
@@ -281,12 +272,10 @@ namespace GUI {
             hideAllButton();
 
 
-            if ((float)point / numberOfQuestion >= 0.8)
-            {
+            if ((float)point / numberOfQuestion >= 0.8) {
                 label_Question.Text = "You win";
             }
-            else
-            {
+            else {
                 label_Question.Text = "You lose";
             }
 
@@ -309,17 +298,13 @@ namespace GUI {
             xuiButton_D.ButtonText = key[6].ToString();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
+        private void timer1_Tick(object sender, EventArgs e) {
             label_Time.Text = countDown.ToString();
-            if (--countDown == -1)
-            {
-                if (--n == 0)
-                {
+            if (--countDown == -1) {
+                if (--n == 0) {
                     ketthuc();
                 }
-                else
-                {
+                else {
                     taotrachnghiem();
                 }
             }
@@ -329,8 +314,7 @@ namespace GUI {
             Invalidate();
         }
 
-        void hideAllButton()
-        {
+        void hideAllButton() {
             xuiButton_A.Visible = false;
             xuiButton_B.Visible = false;
             xuiButton_C.Visible = false;
@@ -366,8 +350,7 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 0)
-            {
+            if (n-- > 0) {
                 taotrachnghiem();
             }
             else {
@@ -392,8 +375,7 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 0)
-            {
+            if (n-- > 0) {
                 taotrachnghiem();
             }
             else {
@@ -418,8 +400,7 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 0)
-            {
+            if (n-- > 0) {
                 taotrachnghiem();
             }
             else {
@@ -444,8 +425,7 @@ namespace GUI {
             }
             else check = false;
 
-            if (n-- > 0)
-            {
+            if (n-- > 0) {
                 taotrachnghiem();
             }
             else {

@@ -235,8 +235,7 @@ namespace GUI {
                 textBox_Answer.Hide();
                 isclick = true;
                 countDown = timeCountDown;
-                if (textBox_Answer.Text == key["Answer"].ToString())
-                {
+                if (textBox_Answer.Text == key["Answer"].ToString()) {
                     pictureBox1.Show();
                     check = true;
                     point++;
@@ -260,10 +259,8 @@ namespace GUI {
 
         }
 
-        private void Form_Game_BuildBridge_Paint(object sender, PaintEventArgs e)
-        {
-            if (lose)
-            {
+        private void Form_Game_BuildBridge_Paint(object sender, PaintEventArgs e) {
+            if (lose) {
                 pictureBox1.Hide();
                 pictureBox2.Show();
                 timer_countDown.Stop();
@@ -273,8 +270,7 @@ namespace GUI {
                 label_Time.Hide();
             }
 
-            if (win)
-            {
+            if (win) {
                 pictureBox1.Hide();
                 pictureBox2.Hide();
                 timer_countDown.Stop();
@@ -288,23 +284,18 @@ namespace GUI {
                 }
                 label_Time.Hide();
             }
-            else if (!isclick)
-            {
+            else if (!isclick) {
                 pictureBox1.Hide();
                 pictureBox2.Hide();
                 e.Graphics.DrawImage(run1, positionX, positionY);
             }
 
-            if (isclick)
-            {
-                if (check && !win && !lose)
-                {
-                    if (time++ < 100)
-                    {
-                       // e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
+            if (isclick) {
+                if (check && !win && !lose) {
+                    if (time++ < 100) {
+                        // e.Graphics.DrawImage(Ham_2D_Draw(), positionX + 150, positionY + 10);
                     }
-                    else
-                    {
+                    else {
                         pictureBox1.Hide();
                         pictureBox2.Hide();
                         isclick = false;
@@ -317,7 +308,7 @@ namespace GUI {
                 else if (!check && !lose && !win) {
                     if (time++ < 80) {
                         e.Graphics.DrawImage(run1, positionX, positionY);
-                     //   e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
+                        //   e.Graphics.DrawImage(Boom_2D_Draw(), positionX + 130, positionY - 120);
                     }
                     else {
                         isclick = false;
@@ -338,8 +329,7 @@ namespace GUI {
                 textBox_Answer.Hide();
                 isclick = true;
                 countDown = timeCountDown;
-                if (textBox_Answer.Text == key["Answer"].ToString())
-                {
+                if (textBox_Answer.Text == key["Answer"].ToString()) {
                     pictureBox1.Show();
                     check = true;
                     point++;
